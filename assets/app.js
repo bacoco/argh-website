@@ -1,126 +1,183 @@
-const copy = {
+const ui = {
   fr: {
-    navDossiers: "Dossiers", navAtlas: "Atlas", eyebrow: "Intelligence publique · Harnais d’agents",
-    metricDossiers: "dossiers publics", metricPrimitives: "primitives de contrôle",
-    metricSources: "source privée exposée", edition: "Projection statique",
-    fieldNotes: "Incidents → mécanismes → leçons", dossiersTitle: "Dossiers",
-    searchLabel: "Rechercher un dossier", searchPlaceholder: "Rechercher…",
-    controlPlane: "Plan de contrôle", atlasTitle: "Atlas", all: "Tous",
-    results: count => `${count} dossier${count > 1 ? "s" : ""}`,
-    open: "Lire le mécanisme", mechanism: "Mécanisme", response: "Réponse", lesson: "Leçon",
-    footer: "publie des conclusions éditoriales, jamais sa provenance privée.",
-    loadError: "La projection publique ne peut pas être chargée."
+    dossier: ["Dossiers", "Incidents, mécanismes, réponses et leçons reliés."],
+    project: ["Projets", "La trajectoire publique de chaque système, réunie sans provenance privée."],
+    pattern: ["Motifs", "Les mêmes formes de panne et de contrôle, expliquées à deux niveaux de lecture."],
+    atlas: ["Atlas", "Les motifs publics qui relient les dossiers et les projets."],
+    dossiers: "Dossiers", projects: "Projets", patterns: "Motifs", atlasNav: "Atlas",
+    search: "Rechercher…", loading: "Chargement du magasin public…", open: "Lire le dossier",
+    entries: count => `${count} entrée${count > 1 ? "s" : ""}`,
+    error: "Le magasin public ne peut pas être chargé."
   },
   en: {
-    navDossiers: "Cases", navAtlas: "Atlas", eyebrow: "Public intelligence · Agent harnesses",
-    metricDossiers: "public cases", metricPrimitives: "control primitives",
-    metricSources: "private sources exposed", edition: "Static projection",
-    fieldNotes: "Incidents → mechanisms → lessons", dossiersTitle: "Cases",
-    searchLabel: "Search cases", searchPlaceholder: "Search…",
-    controlPlane: "Control plane", atlasTitle: "Atlas", all: "All",
-    results: count => `${count} case${count > 1 ? "s" : ""}`,
-    open: "Read the mechanism", mechanism: "Mechanism", response: "Response", lesson: "Lesson",
-    footer: "publishes editorial conclusions, never its private provenance.",
-    loadError: "The public projection could not be loaded."
+    dossier: ["Cases", "Connected incidents, mechanisms, responses and lessons."],
+    project: ["Projects", "Each system’s public trajectory, without private provenance."],
+    pattern: ["Patterns", "Recurring failure and control shapes, explained at two reading levels."],
+    atlas: ["Atlas", "The public patterns connecting cases and projects."],
+    dossiers: "Cases", projects: "Projects", patterns: "Patterns", atlasNav: "Atlas",
+    search: "Search…", loading: "Loading the public store…", open: "Read the case",
+    entries: count => `${count} entr${count === 1 ? "y" : "ies"}`,
+    error: "The public store could not be loaded."
   }
 };
 
-const savedLanguage = localStorage.getItem("argh-language");
-const state = { lang: ["fr", "en"].includes(savedLanguage) ? savedLanguage : "fr", category: "all", query: "", dossiers: [], intel: null, meta: null };
+const body = document.body;
+const requestedType = body.dataset.type || "dossier";
+const entityType = requestedType === "atlas" ? "pattern" : requestedType;
+const dataRoot = body.dataset.dataRoot || "data";
+const allowedLanguages = ["fr", "en"];
+const allowedViews = ["simple", "expert"];
+const query = new URLSearchParams(location.search);
+
+function stored(key) {
+  try { return localStorage.getItem(key); } catch (_) { return null; }
+}
+
+function remember(key, value) {
+  try { localStorage.setItem(key, value); } catch (_) { /* storage is optional */ }
+}
+
+function selected(allowed, requested, remembered, fallback) {
+  if (allowed.includes(requested)) return requested;
+  if (allowed.includes(remembered)) return remembered;
+  return fallback;
+}
+
+const state = {
+  lang: selected(allowedLanguages, query.get("lang"), stored("argh-language"), "fr"),
+  view: selected(allowedViews, query.get("view"), stored("argh-reader"), "simple"),
+  search: "",
+  entities: []
+};
+
 const $ = selector => document.querySelector(selector);
 
-function text(key) { return copy[state.lang][key]; }
-function localized(item, key) { return item[`${key}_${state.lang}`] || item[key] || ""; }
-function el(tag, className, value) {
-  const node = document.createElement(tag);
-  if (className) node.className = className;
-  if (value !== undefined) node.textContent = value;
-  return node;
+function node(tag, className, text) {
+  const element = document.createElement(tag);
+  if (className) element.className = className;
+  if (text !== undefined) element.textContent = text;
+  return element;
 }
 
-function renderCopy() {
-  document.documentElement.lang = state.lang;
-  document.querySelectorAll("[data-copy]").forEach(node => { node.textContent = text(node.dataset.copy); });
-  $("#search").placeholder = text("searchPlaceholder");
-  $("#language").textContent = state.lang === "fr" ? "EN" : "FR";
-  $("#language").setAttribute("aria-label", state.lang === "fr" ? "Afficher le site en anglais" : "Show the site in French");
-  document.title = state.lang === "fr" ? "ARGH — Atlas des harnais d’agents" : "ARGH — Agent harness atlas";
+function modeName() {
+  if (state.view === "expert") return "expert";
+  return state.lang === "fr" ? "cuisine" : "kitchen";
 }
 
-function renderHero() {
-  $("#headline").textContent = state.intel.headline[state.lang];
-  $("#deck").textContent = state.intel.headline[`deck_${state.lang}`];
-  $("#dossier-count").textContent = state.dossiers.length;
-  $("#atlas-count").textContent = state.intel.atlas.length;
-  $("#edition-date").textContent = new Intl.DateTimeFormat(state.lang, { dateStyle: "long" }).format(new Date(state.meta.generated_at));
+function authored(quad) {
+  return quad?.[state.lang]?.[modeName()] || "";
 }
 
-function renderCategories() {
-  const root = $("#categories");
-  const categories = ["all", ...new Set(state.dossiers.map(item => item.category).sort())];
-  root.replaceChildren(...categories.map(category => {
-    const button = el("button", "", category === "all" ? text("all") : category);
-    button.type = "button";
-    button.setAttribute("aria-pressed", String(state.category === category));
-    button.addEventListener("click", () => { state.category = category; renderCategories(); renderDossiers(); });
-    return button;
-  }));
-}
-
-function dossierCard(item) {
-  const card = el("article", "dossier");
-  card.append(el("div", "dossier-meta", `${item.category} · ${item.projects.join(" / ")}`));
-  card.append(el("h3", "", localized(item, "title")));
-  card.append(el("p", "", localized(item, "summary")));
-  const details = el("details");
-  details.append(el("summary", "", text("open")));
-  [["mechanism", "mechanism"], ["response", "response"], ["lesson", "lesson"]].forEach(([key, label]) => {
-    const paragraph = el("p", key === "lesson" ? "lesson" : "");
-    const strong = el("strong", "", `${text(label)}. `);
-    paragraph.append(strong, document.createTextNode(localized(item, key)));
-    details.append(paragraph);
+function setQuery() {
+  const url = new URL(location.href);
+  url.searchParams.set("lang", state.lang);
+  url.searchParams.set("view", state.view);
+  history.replaceState(history.state, "", url.pathname + url.search + url.hash);
+  document.querySelectorAll("nav a").forEach(link => {
+    const target = new URL(link.href, location.href);
+    target.searchParams.set("lang", state.lang);
+    target.searchParams.set("view", state.view);
+    link.href = target.pathname + target.search;
   });
-  card.append(details);
+}
+
+function renderChrome() {
+  const copy = ui[state.lang];
+  const page = copy[requestedType];
+  document.documentElement.lang = state.lang;
+  document.title = `ARGH — ${page[0]}`;
+  $("#headline").textContent = page[0];
+  $("#deck").textContent = page[1];
+  $("#search").placeholder = copy.search;
+  $("#nav-dossiers").textContent = copy.dossiers;
+  $("#nav-projects").textContent = copy.projects;
+  $("#nav-patterns").textContent = copy.patterns;
+  $("#nav-atlas").textContent = copy.atlasNav;
+  document.querySelectorAll("[data-lang]").forEach(button => {
+    button.setAttribute("aria-pressed", String(button.dataset.lang === state.lang));
+  });
+  document.querySelectorAll("[data-view]").forEach(button => {
+    button.setAttribute("aria-pressed", String(button.dataset.view === state.view));
+  });
+  $("#mode-label").textContent = state.lang === "fr"
+    ? (state.view === "simple" ? "Cuisine" : "Technique")
+    : (state.view === "simple" ? "Kitchen" : "Technical");
+  setQuery();
+}
+
+function entityCard(entity) {
+  const hero = entity.slots.find(slot => slot.id === "hero");
+  const card = node("article", "dossier");
+  const relationNames = [...entity.relationships.projects, ...entity.relationships.patterns];
+  card.append(node("div", "dossier-meta", relationNames.slice(0, 5).join(" · ") || entity.type));
+  card.append(node("h2", "", authored(hero.heading)));
+  hero.body.forEach(paragraph => card.append(node("p", "summary", authored(paragraph))));
+
+  const remaining = entity.slots.filter(slot => slot.id !== "hero");
+  if (remaining.length) {
+    const details = node("details");
+    details.append(node("summary", "", ui[state.lang].open));
+    remaining.forEach(slot => {
+      const section = node("section", "entity-slot");
+      section.append(node("h3", "", authored(slot.heading)));
+      slot.body.forEach(paragraph => section.append(node("p", "", authored(paragraph))));
+      details.append(section);
+    });
+    card.append(details);
+  }
   return card;
 }
 
-function renderDossiers() {
-  const needle = state.query.toLocaleLowerCase(state.lang);
-  const filtered = state.dossiers.filter(item => {
-    const inCategory = state.category === "all" || item.category === state.category;
-    const haystack = [localized(item, "title"), localized(item, "summary"), item.category, ...item.projects, ...item.patterns].join(" ").toLocaleLowerCase(state.lang);
-    return inCategory && haystack.includes(needle);
+function renderEntities() {
+  const needle = state.search.toLocaleLowerCase(state.lang);
+  const filtered = state.entities.filter(entity => {
+    if (!needle) return true;
+    const text = entity.slots.flatMap(slot => [
+      authored(slot.heading), ...slot.body.map(authored)
+    ]).concat(entity.relationships.projects, entity.relationships.patterns).join(" ");
+    return text.toLocaleLowerCase(state.lang).includes(needle);
   });
-  $("#results").textContent = text("results")(filtered.length);
-  $("#dossier-grid").replaceChildren(...filtered.map(dossierCard));
+  $("#results").textContent = ui[state.lang].entries(filtered.length);
+  $("#entity-grid").replaceChildren(...filtered.map(entityCard));
 }
 
-function renderAtlas() {
-  $("#atlas-grid").replaceChildren(...state.intel.atlas.map((item, index) => {
-    const card = el("article", "atlas-card");
-    card.append(el("div", "index", String(index + 1).padStart(2, "0")));
-    card.append(el("h3", "", item.primitive));
-    card.append(el("p", "", item[`why_${state.lang}`]));
-    return card;
-  }));
+function render() {
+  renderChrome();
+  renderEntities();
 }
 
-function render() { renderCopy(); renderHero(); renderCategories(); renderDossiers(); renderAtlas(); }
-
-$("#language").addEventListener("click", () => {
-  state.lang = state.lang === "fr" ? "en" : "fr";
-  localStorage.setItem("argh-language", state.lang);
+document.querySelectorAll("[data-lang]").forEach(button => button.addEventListener("click", () => {
+  state.lang = button.dataset.lang;
+  remember("argh-language", state.lang);
   render();
+}));
+
+document.querySelectorAll("[data-view]").forEach(button => button.addEventListener("click", () => {
+  state.view = button.dataset.view;
+  remember("argh-reader", state.view);
+  render();
+}));
+
+$("#search").addEventListener("input", event => {
+  state.search = event.target.value.trim();
+  renderEntities();
 });
-$("#search").addEventListener("input", event => { state.query = event.target.value.trim(); renderDossiers(); });
 
-Promise.all([
-  fetch("data/dossiers-v1.json").then(response => response.ok ? response.json() : Promise.reject()),
-  fetch("data/public-intelligence.json").then(response => response.ok ? response.json() : Promise.reject()),
-  fetch("data/meta.json").then(response => response.ok ? response.json() : Promise.reject())
-]).then(([dossiers, intel, meta]) => {
-  state.dossiers = dossiers.dossiers;
-  state.intel = intel;
-  state.meta = meta;
+async function loadEntities() {
+  const indexResponse = await fetch(`${dataRoot}/entities/index.json`);
+  if (!indexResponse.ok) throw new Error("index unavailable");
+  const index = await indexResponse.json();
+  const prefix = `${entityType}s/`;
+  const paths = Object.keys(index.entries).filter(path => path.startsWith(prefix));
+  const entities = await Promise.all(paths.map(async path => {
+    const response = await fetch(`${dataRoot}/entities/${path}`);
+    if (!response.ok) throw new Error(`entity unavailable: ${path}`);
+    return response.json();
+  }));
+  state.entities = entities.sort((left, right) => left.slug.localeCompare(right.slug));
   render();
-}).catch(() => { $("#headline").textContent = text("loadError"); });
+}
+
+renderChrome();
+$("#results").textContent = ui[state.lang].loading;
+loadEntities().catch(() => { $("#results").textContent = ui[state.lang].error; });
