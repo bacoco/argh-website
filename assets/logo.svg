@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 170" role="img" aria-label="ARGH — Agent Reliability &amp; Guard for Harnesses">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#171717" d="M8 126 70 20h47l62 106h-42l-12-23H64l-13 23H8Zm74-56-10 17h43l-10-17-12-23-11 23Z"/>
+    <path fill="#F05423" d="M139 102h42l19 24h-42z"/>
+    <text x="220" y="104" fill="#171717" font-family="Arial Black, Helvetica Neue, Arial, sans-serif" font-size="86" font-weight="900" letter-spacing="2">ARGH</text>
+    <text x="224" y="142" fill="#171717" font-family="Arial, Helvetica Neue, sans-serif" font-size="17" font-weight="700" letter-spacing="5">AGENT </text>
+    <text x="314" y="142" fill="#F05423" font-family="Arial, Helvetica Neue, sans-serif" font-size="17" font-weight="800" letter-spacing="5">RELIABILITY</text>
+    <text x="482" y="142" fill="#171717" font-family="Arial, Helvetica Neue, sans-serif" font-size="17" font-weight="700" letter-spacing="5"> &amp; GUARD FOR HARNESSES</text>
+  </g>
+</svg>

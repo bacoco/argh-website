@@ -1,0 +1,8 @@
+{
+  "schema": "argh/static-projection/v1",
+  "generated_at": "2026-09-13T09:08:00+02:00",
+  "source_repository": "bacoco/harness-intelligence",
+  "source_head": "413d97ab1784a707642e16e43a6587d6d4f9de79",
+  "dossier_count": 54,
+  "publication_mode": "static_github_pages"
+}
