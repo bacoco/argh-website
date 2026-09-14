@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ARGH observe les incidents des harnais d'agents et publie leurs leçons vérifiables.">
+  <title>ARGH — Atlas des harnais d’agents</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="ARGH, accueil">
+      <img src="assets/logo.svg" alt="" width="42" height="42">
+      <span>ARGH</span>
+    </a>
+    <nav aria-label="Navigation principale">
+      <a href="#dossiers" data-copy="navDossiers">Dossiers</a>
+      <a href="#atlas" data-copy="navAtlas">Atlas</a>
+      <button id="language" type="button" aria-label="Afficher le site en anglais">EN</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="headline">
+      <p class="eyebrow" data-copy="eyebrow">Intelligence publique · Harnais d’agents</p>
+      <h1 id="headline">Chargement…</h1>
+      <p id="deck" class="deck"></p>
+      <div class="metrics" aria-label="État de la collection">
+        <div><strong id="dossier-count">—</strong><span data-copy="metricDossiers">dossiers publics</span></div>
+        <div><strong id="atlas-count">—</strong><span data-copy="metricPrimitives">primitives de contrôle</span></div>
+        <div><strong>0</strong><span data-copy="metricSources">source privée exposée</span></div>
+      </div>
+      <p class="edition"><span data-copy="edition">Projection statique</span> · <span id="edition-date">—</span></p>
+    </section>
+
+    <section id="dossiers" class="section" aria-labelledby="dossiers-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-copy="fieldNotes">Incidents → mécanismes → leçons</p>
+          <h2 id="dossiers-title" data-copy="dossiersTitle">Dossiers</h2>
+        </div>
+        <label class="search">
+          <span class="sr-only" data-copy="searchLabel">Rechercher un dossier</span>
+          <input id="search" type="search" placeholder="Rechercher…" autocomplete="off">
+        </label>
+      </div>
+      <div id="categories" class="filters" aria-label="Catégories"></div>
+      <p id="results" class="results" aria-live="polite"></p>
+      <div id="dossier-grid" class="dossier-grid"></div>
+    </section>
+
+    <section id="atlas" class="section atlas-section" aria-labelledby="atlas-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-copy="controlPlane">Plan de contrôle</p>
+          <h2 id="atlas-title" data-copy="atlasTitle">Atlas</h2>
+        </div>
+      </div>
+      <div id="atlas-grid" class="atlas-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>ARGH</strong> <span data-copy="footer">publie des conclusions éditoriales, jamais sa provenance privée.</span></p>
+    <p><a href="https://github.com/bacoco/harness-intelligence-website">GitHub</a></p>
+  </footer>
+
+  <noscript>Ce site nécessite JavaScript pour afficher sa projection JSON statique.</noscript>
+</body>
+</html>
