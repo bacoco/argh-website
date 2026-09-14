@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ARGH publie les incidents, motifs et trajectoires des harnais d’agents.">
-  <title>ARGH — Dossiers</title>
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/style.css">
-  <script src="assets/app.js" defer></script>
+  <meta name="description" content="ARGH — intelligence publique des harnais d’agents.">
+  <title>ARGH — Motifs</title>
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/app.js" defer></script>
 </head>
-<body data-type="dossier" data-data-root="data">
+<body data-type="pattern" data-data-root="../data">
   <header class="topbar">
-    <a class="brand" href="./" aria-label="ARGH, accueil"><img src="assets/logo.svg" alt="" width="42" height="42"><span>ARGH</span></a>
+    <a class="brand" href="../" aria-label="ARGH, accueil"><img src="../assets/logo.svg" alt="" width="42" height="42"><span>ARGH</span></a>
     <nav aria-label="Navigation principale">
-      <a id="nav-dossiers" href="dossiers/">Dossiers</a>
-      <a id="nav-patterns" href="patterns/">Motifs</a>
-      <a id="nav-projects" href="projects/">Projets</a>
-      <a id="nav-atlas" href="atlas/">Atlas</a>
+      <a id="nav-dossiers" href="../dossiers/">Dossiers</a>
+      <a id="nav-patterns" href="../patterns/">Motifs</a>
+      <a id="nav-projects" href="../projects/">Projets</a>
+      <a id="nav-atlas" href="../atlas/">Atlas</a>
     </nav>
     <div class="controls">
       <div class="toggle" aria-label="Niveau de lecture"><button type="button" data-view="simple">Cuisine</button><button type="button" data-view="expert">Tech</button></div>
@@ -24,7 +24,7 @@
     </div>
   </header>
   <main>
-    <section class="hero"><p class="eyebrow">ARGH · Agent Reliability &amp; Guard for Harnesses</p><h1 id="headline">Dossiers</h1><p id="deck" class="deck"></p><p class="edition">Mode : <strong id="mode-label">Cuisine</strong></p></section>
+    <section class="hero"><p class="eyebrow">ARGH · Agent Reliability &amp; Guard for Harnesses</p><h1 id="headline">Motifs</h1><p id="deck" class="deck"></p><p class="edition">Mode : <strong id="mode-label">Cuisine</strong></p></section>
     <section class="section"><div class="section-head"><p id="results" class="results" aria-live="polite"></p><label class="search"><span class="sr-only">Recherche</span><input id="search" type="search" placeholder="Rechercher…" autocomplete="off"></label></div><div id="entity-grid" class="dossier-grid"></div></section>
   </main>
   <footer><p><strong>ARGH</strong> · projection statique sans provenance privée.</p><p><a href="https://github.com/bacoco/harness-intelligence-website">GitHub</a></p></footer>

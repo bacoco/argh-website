@@ -19,7 +19,7 @@ button, input { font: inherit; }
 
 .topbar {
   position: sticky; top: 0; z-index: 10; display: flex; align-items: center;
-  justify-content: space-between; gap: 1rem; padding: .75rem max(1rem, calc((100vw - var(--max)) / 2));
+  justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding: .75rem max(1rem, calc((100vw - var(--max)) / 2));
   border-bottom: 1px solid var(--line); background: rgb(9 17 15 / 92%); backdrop-filter: blur(14px);
 }
 .brand { display: flex; align-items: center; gap: .65rem; text-decoration: none; font-weight: 900; letter-spacing: .08em; }
@@ -28,6 +28,11 @@ nav { display: flex; align-items: center; gap: 1rem; }
 nav a { color: var(--muted); text-decoration: none; font-weight: 650; }
 nav a:hover, nav a:focus-visible { color: var(--ink); }
 nav button { border: 1px solid var(--acid); border-radius: 999px; background: transparent; color: var(--acid); padding: .35rem .75rem; cursor: pointer; }
+.controls { display: flex; align-items: center; gap: .6rem; }
+.toggle { display: flex; border: 1px solid var(--line); }
+.toggle button { border: 0; border-right: 1px solid var(--line); background: transparent; color: var(--muted); padding: .38rem .65rem; cursor: pointer; }
+.toggle button:last-child { border-right: 0; }
+.toggle button[aria-pressed="true"] { background: var(--acid); color: #09110f; }
 
 main, footer { max-width: var(--max); margin: 0 auto; padding-inline: 1rem; }
 .hero { min-height: 74vh; display: grid; align-content: center; padding-block: 5rem; border-bottom: 1px solid var(--line); }
@@ -55,11 +60,15 @@ h2 { margin: 0; font-size: clamp(2.5rem, 6vw, 5rem); letter-spacing: -.055em; li
 .dossier:nth-child(odd) { border-right: 1px solid var(--line); }
 .dossier:nth-child(even) { padding-left: 1.4rem; }
 .dossier-meta { color: var(--acid); font: 700 .75rem ui-monospace, monospace; text-transform: uppercase; }
-.dossier h3 { margin: .7rem 0; font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.08; letter-spacing: -.025em; }
+.dossier h2 { margin: .7rem 0; font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.08; letter-spacing: -.025em; }
 .dossier p { color: var(--muted); }
 .dossier details { margin-top: 1rem; border-left: 2px solid var(--cyan); padding-left: 1rem; }
 .dossier summary { cursor: pointer; color: var(--cyan); font-weight: 700; }
 .dossier .lesson { color: var(--ink); }
+.entity-slot { padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.entity-slot:last-child { border-bottom: 0; }
+.entity-slot h3 { margin: 0 0 .5rem; font-size: 1.05rem; color: var(--ink); }
+.entity-slot p { margin: .45rem 0 0; }
 
 .atlas-section { background: linear-gradient(120deg, rgb(114 233 255 / 5%), transparent 45%); }
 .atlas-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
@@ -73,6 +82,9 @@ footer { display: flex; justify-content: space-between; gap: 1rem; padding-block
 
 @media (max-width: 760px) {
   nav a { display: none; }
+  .topbar { justify-content: center; }
+  .brand { margin-right: auto; }
+  .controls { width: 100%; justify-content: space-between; }
   .hero { min-height: auto; padding-block: 4rem; }
   .metrics, .atlas-grid { grid-template-columns: 1fr; }
   .section-head { align-items: stretch; flex-direction: column; }
