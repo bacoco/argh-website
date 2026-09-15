@@ -1,1 +1,154 @@
-{"schema":"argh/public-entity/v1","id":"pattern:ownership","type":"pattern","slug":"ownership","route":"/patterns/ownership/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Claude Code","LangGraph","MCP ecosystem"],"patterns":[],"dossiers":["remote-tools-injected-without-local-ownership","timeout-left-descendants-running","multiuser-connection-ownership"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Chaque outil et chaque tâche doivent avoir un responsable clair","expert":"Propriété et responsabilité"},"en":{"kitchen":"Every tool and task needs a clear owner","expert":"Ownership"}},"body":[{"fr":{"cuisine":"La brigade doit savoir qui possède une connexion, une tâche ou un processus pour pouvoir l’arrêter et en répondre.","expert":"L’ownership associe explicitement une ressource ou un travail à l’identité responsable de son cycle de vie et de son autorité."},"en":{"kitchen":"The crew must know who owns a connection, task or process in order to stop it and account for it.","expert":"Ownership explicitly binds a resource or work item to the identity responsible for its lifecycle and authority."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:ownership",
+  "type": "pattern",
+  "slug": "ownership",
+  "route": "/patterns/ownership/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Claude Code",
+      "LangGraph",
+      "MCP ecosystem"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "remote-tools-injected-without-local-ownership",
+      "timeout-left-descendants-running",
+      "multiuser-connection-ownership"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Trois maisons où personne ne répondait du plat en cours",
+          "expert": "Un contrôle qui répond sans détenir le travail qu’il prétend arrêter"
+        },
+        "en": {
+          "kitchen": "Three houses where nobody answered for the dish in hand",
+          "expert": "A control that answers without holding the work it claims to stop"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez LangGraph, le chef annule la table douze : celui qui attendait s’arrête, le feu continue. Chez Claude Code, des plats arrivent au passe sans qu’aucun cuisinier de la maison les ait lancés. Chez MCP, deux tables tiennent le même bon, et l’assiette part à la mauvaise. Aucun de ces plats ne portait le nom de qui en répond.",
+            "expert": "Trois incidents distincts exposent la même absence : aucune identité nommée ne détenait la ressource ou le travail au moment décisif. Dans LangGraph, un timeout à la frontière de l’appelant ne terminait pas nécessairement le travail sous-jacent, laissant une tentative de remplacement recouvrir l’exécution d’origine. Dans l’écosystème MCP, un état de connexion global et mutable permettait à une session ultérieure de remplacer la connexion courante, rendant possible une livraison croisée. Dans Claude Code, des connecteurs distants pouvaient apparaître dans le CLI local, dupliquer des serveurs configurés localement et contourner la sémantique de suppression locale."
+          },
+          "en": {
+            "kitchen": "LangGraph’s chef kills table twelve; the waiting stops, the fire does not. At Claude Code, dishes land at the pass that no cook in this house ever started. At MCP, two sittings hold one order pad, so a plate meant for the first goes to the second. Not one of those dishes had a name on it.",
+            "expert": "Three separate incidents expose one missing element: no named identity held the resource or the work at the moment that mattered. In LangGraph a caller-side timeout did not necessarily terminate the underlying work, so a replacement attempt could overlap the original run. In the MCP ecosystem, shared mutable connection state let a later session displace the currently global connection, making cross-session delivery possible. In Claude Code, remote connectors could surface in the local CLI, duplicate locally configured servers and bypass the local deletion semantics users expected."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Les signes qu’un plat n’a pas de nom",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "How you spot a dish with no name on it",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On annule, on entend que c’est noté, et rien ne s’éteint derrière. Un même plat existe en double au passe, et retirer l’un ne fait pas disparaître l’autre. Au moment d’envoyer, personne ne relit le bon : on regarde qui est là et on donne l’assiette.",
+            "expert": "Le motif se signale quand une opération de contrôle rend la main sans exposer d’état terminal du travail visé. Il se signale aussi quand l’identité du détenteur est relue au moment de l’usage, depuis un état partagé, au lieu d’être transportée par l’événement. Il se signale enfin quand deux autorités peuvent muter la même surface d’outils runtime sans modèle de propriété unifié, et qu’une suppression locale ne révoque pas la source distante."
+          },
+          "en": {
+            "kitchen": "You call a stop, the answer comes back, and behind you nothing actually goes out. The same dish sits twice at the pass, and clearing one does not clear the other. At send-out nobody reads the pad again; they look at who happens to be standing there and hand over the plate.",
+            "expert": "The pattern shows when a control operation returns without exposing a terminal state for the work it targeted. It shows again when holder identity is re-read from shared state at use time rather than carried by the event itself. And it shows when two authorities can mutate the same runtime tool surface with no unified ownership model, so a local delete leaves the remote source in place."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi l’ordre a l’air d’avoir porté",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why the order looks like it landed",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "L’ordre part, quelqu’un répond, et cette réponse est vraie. Seulement, celui qui a répondu tenait l’attente, pas la casserole. Le chef croit avoir arrêté le plat parce qu’il a arrêté l’homme qui l’attendait. Même chose à l’envoi : on demande qui est là plutôt que pour qui le plat avait été lancé.",
+            "expert": "Dans chacun des trois cas, le contrôle existe et répond honnêtement ; son périmètre ne couvre simplement pas l’effet. Le timeout possédait l’attente de l’appel, pas le processus descendant ni le job distant porteur de l’effet réel. La livraison possédait l’état courant à l’instant de l’envoi, pas l’identité de la session d’origine. La configuration locale possédait une vue, pas l’état distant du compte capable de muter la même surface."
+          },
+          "en": {
+            "kitchen": "The call goes out, someone answers, and that answer is honest. What that someone held was the waiting, not the pan on the fire. Stopping the man who waits is not stopping the dish. Same at send-out: the house asks who is standing there instead of who the plate was started for.",
+            "expert": "In all three cases the control exists and answers truthfully; its scope simply does not cover the effect. The timeout owned the call’s wait, not the descendant process or the remote job carrying the real side effects. Delivery owned whichever connection was current at send time, not the originating session’s identity. Local configuration owned a view, not the account-level remote state able to mutate the same surface."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Écrire le nom, et garder le moyen de rappeler le plat",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Write the name, keep a way to call the dish back",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Quand on annule, on éteint le feu soi-même, puis on va voir la casserole avant de relancer. Le nom de la table part avec le bon, de la commande jusqu’à l’envoi, et personne ne le redemande en route. Pour chaque plat au passe, on sait qui l’a lancé et comment le faire retirer.",
+            "expert": "Une deadline doit terminer ou fencer le travail qu’elle possède, puis exposer un état terminal observable ; un retry ne part qu’après lecture de cet état, jamais sur la seule expiration de l’attente. Une identité de corrélation session et utilisateur immuable voyage avec l’événement sur l’intégralité du chemin de livraison, aucune étape ne redemandant qui est courant. Chaque outil runtime expose sa source, son propriétaire et son état de révocation ; les services équivalents sont dédupliqués et l’injection distante est rendue explicite."
+          },
+          "en": {
+            "kitchen": "Killing a table means killing the fire yourself, then looking in the pan before anything starts again. The table’s name rides on the pad from order to send-out, and nobody along the way asks again who it was for. Every dish at the pass shows who started it and how to have it pulled.",
+            "expert": "A deadline must terminate or fence the work it owns and then publish an observable terminal state; a retry is allowed only after reading that state, never on wait expiry alone. An immutable session and user correlation identity must travel with the event across the whole delivery path, with no step asking again who is current. Every runtime tool must expose its source, its owner and its revocation state, equivalent services must be deduplicated, and remote injection must be made explicit."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Un plat sans nom n’est à personne",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "A dish with no name belongs to nobody",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Écris sur chaque bon le nom de celui qui répond du plat, et garde le moyen de le rappeler. Sans ce nom, on n’arrête rien, on ne retire rien, et l’assiette finit parfois sur la mauvaise table.",
+            "expert": "Un contrôle ne vaut que sur ce qu’il possède réellement, et la propriété doit voyager avec l’événement plutôt que se reconstruire à l’usage. Nommer le détenteur, exposer un état terminal et ouvrir un chemin de révocation sont les trois conditions pour qu’arrêter, livrer ou retirer signifie quelque chose."
+          },
+          "en": {
+            "kitchen": "Put a name on every pad and keep the means to call that dish back. With no name, nothing stops, nothing is pulled, and the plate sometimes lands on the wrong table.",
+            "expert": "A control is only worth what it actually owns, and ownership has to travel with the event instead of being rebuilt at use time. A named holder, an observable terminal state and a revocation path are the three conditions under which stopping, delivering or removing means anything."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,217 @@
-{"schema":"argh/public-entity/v1","id":"dossier:conversation-rewind-workspace-stayed-mutated","type":"dossier","slug":"conversation-rewind-workspace-stayed-mutated","route":"/dossiers/conversation-rewind-workspace-stayed-mutated/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Codex"],"patterns":["checkpoint","state-split"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le ticket est revenu en arrière, mais le plan de travail est resté modifié","expert":"La conversation a été rembobinée. Le filesystem, non."},"en":{"kitchen":"The ticket rolled back, but the workbench stayed changed","expert":"The conversation rewound. The filesystem did not."}},"body":[{"fr":{"cuisine":"Le ticket est revenu en arrière, mais le plan de travail est resté modifié. Rouvrir le carnet de commandes ne recrée pas automatiquement les mêmes fours, outils, postes ni la même mission restante.","expert":"Un rewind pouvait restaurer l’historique conversationnel tout en laissant les modifications de fichiers en place, produisant un état divisé entre ce dont l’agent se souvenait et ce que contenait le workspace."},"en":{"kitchen":"The ticket rolled back, but the workbench stayed changed. Reopening the order notebook does not automatically restore the same ovens, tools, stations or remaining mission.","expert":"A rewind could restore conversational history while leaving file edits in place, producing a split-brain state between what the agent remembered and what the workspace contained."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Le client remonte le carnet de commandes à une page précédente.","expert":"L’utilisateur rembobine une session vers un point conversationnel antérieur."},"en":{"kitchen":"The customer rewinds the order book to an earlier page.","expert":"The user rewound a session to an earlier conversational point."}},{"fr":{"cuisine":"La conversation revient en arrière, mais les plats déjà préparés restent sur le plan de travail.","expert":"L’historique du chat recule."},"en":{"kitchen":"Conversation goes backward, but dishes already prepared stay on the worktop.","expert":"Chat history moved backward."}},{"fr":{"cuisine":"Le nouveau cuisinier lit donc un ancien carnet devant une cuisine qui a continué à changer.","expert":"Les modifications de fichiers créées par l’agent restent dans le working tree."},"en":{"kitchen":"The resumed cook therefore reads an old book in a kitchen that kept changing.","expert":"Agent-created file changes remained in the working tree."}},{"fr":{"cuisine":"Le ticket revient en arrière, mais le plan de travail garde les changements faits après ce point.","expert":"L’agent repris raisonne depuis une conversation antérieure contre un filesystem plus récent."},"en":{"kitchen":"The ticket goes back, but the workbench keeps changes made after that point.","expert":"The resumed agent reasoned from an earlier conversation against a later filesystem."}},{"fr":{"cuisine":"D’où la demande de tickets de reprise qui montrent à la fois la page choisie, les plats présents et les conflits.","expert":"Une demande apparaît pour des checkpoints unifiés avec preview et gestion des conflits."},"en":{"kitchen":"Hence the request for restart tickets that show the chosen page, present dishes and conflicts together.","expert":"A request emerged for unified checkpoints with preview and conflict handling."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Rembobiner le carnet ne rembobine pas les fichiers : l’agent reprend une ancienne histoire devant un établi plus récent.","expert":"L’état conversationnel et l’état du workspace étaient traités comme des historiques indépendants alors que la tâche dépend de leur alignement."},"en":{"kitchen":"Rewinding the notebook does not rewind files: the agent resumes an older story at a newer workbench.","expert":"Conversation state and workspace state were treated as independent histories even though the task depended on their alignment."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Un vrai point de reprise doit montrer les mutations du plan de travail et les conflits avant de remettre le ticket au cuisinier.","expert":"Un vrai rewind a besoin d’un modèle de checkpoint capable de restaurer ou préserver explicitement les mutations du workspace et d’afficher les conflits avant application."},"en":{"kitchen":"A real recovery point must show workbench mutations and conflicts before handing the ticket back to the cook.","expert":"A true rewind needs a checkpoint model that can restore or explicitly preserve workspace mutations and show conflicts before applying them."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"Reprendre un service veut désormais dire reprendre aussi son plan de travail, pas seulement son récit.","expert":"La direction de design des harnais évolue vers le traitement de l’environnement d’exécution comme partie de l’état reprenable."},"en":{"kitchen":"Resuming service now means resuming the worktop as well as the story.","expert":"The design direction across harnesses is toward treating execution environment as part of resumable state."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Une reprise ne réussit que lorsque le ticket restant et l’établi utile reviennent ensemble.","expert":"Un identifiant de conversation n’est pas un checkpoint d’exécution."},"en":{"kitchen":"Recovery succeeds only when the remaining ticket and the needed workbench return together.","expert":"A conversation ID is not an execution checkpoint."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:conversation-rewind-workspace-stayed-mutated",
+  "type": "dossier",
+  "slug": "conversation-rewind-workspace-stayed-mutated",
+  "route": "/dossiers/conversation-rewind-workspace-stayed-mutated/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Codex"
+    ],
+    "patterns": [
+      "checkpoint",
+      "state-split"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "On a remonté le carnet de commandes, pas le plan de travail",
+          "expert": "La conversation a été rembobinée, le working tree non"
+        },
+        "en": {
+          "kitchen": "The order book was turned back; the worktop was not",
+          "expert": "The conversation rewound; the working tree did not"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Codex, on a remonté le carnet de commandes de trois pages. Le cuisinier reprend donc une commande d’il y a vingt minutes. Mais sur le plan de travail, tout ce qu’il a préparé entre-temps est encore là, découpé, assaisonné, entamé. Il lit un passé et travaille dans un présent.",
+            "expert": "Un rewind pouvait restaurer l’historique conversationnel en laissant les modifications de fichiers en place. Le résultat est un état divisé entre ce dont l’agent se souvient et ce que contient réellement le workspace."
+          },
+          "en": {
+            "kitchen": "At Codex the order book was turned back three pages. The cook picks up a ticket from twenty minutes ago. But on the worktop, everything he prepared since then is still there, cut, seasoned, half started. He reads one past and works in another present.",
+            "expert": "A rewind could restore conversational history while leaving file edits in place. The result is a split state between what the agent remembers and what the workspace actually contains."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui s’est passé, page après page",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "What happened, page by page",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le client fait remonter le carnet jusqu’à une commande antérieure.",
+            "expert": "L’utilisateur rembobine une session vers un point conversationnel antérieur."
+          },
+          "en": {
+            "kitchen": "The customer has the order book turned back to an earlier ticket.",
+            "expert": "The user rewound a session to an earlier conversational point."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Les pages écrites après ce point disparaissent du carnet.",
+            "expert": "L’historique de la conversation recule jusqu’à ce point."
+          },
+          "en": {
+            "kitchen": "The pages written after that point vanish from the book.",
+            "expert": "Chat history moved back to that point."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Les préparations faites pendant ces pages, elles, restent entières sur le plan de travail.",
+            "expert": "Les modifications de fichiers produites par l’agent restent dans le working tree."
+          },
+          "en": {
+            "kitchen": "The preparations made during those pages stay intact on the worktop.",
+            "expert": "File changes produced by the agent remained in the working tree."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le cuisinier raisonne donc sur une commande ancienne, devant un plan de travail plus récent qu’elle.",
+            "expert": "L’agent repris raisonne depuis une conversation antérieure contre un filesystem plus récent."
+          },
+          "en": {
+            "kitchen": "The cook therefore reasons from an old ticket, facing a worktop newer than the ticket itself.",
+            "expert": "The resumed agent reasoned from an earlier conversation against a later filesystem."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Une demande est apparue : que remonter le carnet montre aussi ce qui reste sur le plan de travail, et ce qui se contredit. Rien n’établit qu’elle ait été satisfaite.",
+            "expert": "Une demande de checkpoints unifiés, avec prévisualisation et gestion des conflits, est apparue. Aucun correctif fusionné n’est établi ici."
+          },
+          "en": {
+            "kitchen": "A request appeared: turning the book back should also show what is left on the worktop, and what clashes. Nothing establishes that it was met.",
+            "expert": "A request for unified checkpoints, with preview and conflict handling, emerged. No merged fix is established here."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Deux mémoires qui ne reviennent pas ensemble",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Two memories that do not come back together",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le carnet et le plan de travail gardent chacun leur propre mémoire. On a remonté l’un sans toucher à l’autre. Or le cuisinier a besoin des deux au même instant pour savoir ce qui lui reste à faire.",
+            "expert": "L’état conversationnel et l’état du workspace étaient traités comme deux historiques indépendants, chacun avec son propre point de restauration. La tâche, elle, dépend de leur alignement : rembobiner un seul des deux produit une divergence silencieuse."
+          },
+          "en": {
+            "kitchen": "The book and the worktop each keep their own memory. One was turned back and the other was left alone. Yet the cook needs both to agree at the same instant to know what is left to do.",
+            "expert": "Conversation state and workspace state were treated as two independent histories, each with its own restore point. The task depends on their alignment, so rewinding only one produces a silent divergence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’un vrai retour en arrière devrait montrer",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What a real turn-back should show",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Remonter le carnet devrait aussi dire ce qui reste sur le plan de travail, et ce qui se contredit. Tout cela avant de rendre la commande au cuisinier. C’est ce qui a été demandé. Ce n’est pas ce qui est établi comme fait.",
+            "expert": "Un rewind correct demande un modèle de checkpoint capable de restaurer ou de préserver explicitement les mutations du workspace, et d’afficher les conflits avant application. C’est la réponse proposée, pas un correctif dont la livraison soit établie."
+          },
+          "en": {
+            "kitchen": "Turning the book back should also say what remains on the worktop, and what clashes, before the ticket goes back to the cook. That is what was asked for. It is not what is established as done.",
+            "expert": "A correct rewind requires a checkpoint model able to restore or explicitly preserve workspace mutations, and to surface conflicts before applying them. This is the proposed response, not a fix whose delivery is established."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Où en est la question",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "Where the question stands",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La direction prise, dans plusieurs maisons, est de compter le plan de travail comme faisant partie de ce qu’on reprend. Aucune correction n’est établie ici.",
+            "expert": "La direction de design observée à travers plusieurs harnais traite l’environnement d’exécution comme une partie de l’état reprenable. Aucun correctif fusionné n’est établi sur ce point."
+          },
+          "en": {
+            "kitchen": "The direction taken across several houses is to count the worktop as part of what gets resumed. No correction is established here.",
+            "expert": "The design direction observed across several harnesses treats the execution environment as part of resumable state. No merged fix is established on this point."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’une page rendue ne rend pas",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What a returned page does not return",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Rendre au cuisinier une commande d’il y a vingt minutes ne lui rend pas la cuisine d’il y a vingt minutes. Une reprise ne tient que si la commande et le plan de travail reviennent au même instant.",
+            "expert": "Un identifiant de conversation n’est pas un checkpoint d’exécution. Restaurer l’un sans l’autre laisse un état que ni la trace ni le disque ne décrit correctement."
+          },
+          "en": {
+            "kitchen": "Handing the cook a twenty-minute-old ticket does not hand him a twenty-minute-old kitchen. A resume holds only when the ticket and the worktop come back to the same instant.",
+            "expert": "A conversation ID is not an execution checkpoint. Restoring one without the other leaves a state that neither the transcript nor the disk describes correctly."
+          }
+        }
+      ]
+    }
+  ]
+}

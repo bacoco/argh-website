@@ -1,1 +1,165 @@
-{"schema":"argh/public-entity/v1","id":"pattern:skills-runtime","type":"pattern","slug":"skills-runtime","route":"/patterns/skills-runtime/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Claude Code","Cline","Codex","Gemini CLI","Goose","OpenHands","Superpowers","agent-scripts","pstack"],"patterns":[],"dossiers":["nested-skills-discovery-drift","skills-default-on-docs-lag","runtime-skill-inventory-not-filesystem","codex-skills-context-budget","superpowers-skills-methodology-rise","skills-cross-harness-convergence","control-plane-convergence","agent-claims-need-evidence-labels"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Les fiches disponibles doivent être celles que l’IA voit réellement","expert":"Skills en exécution"},"en":{"kitchen":"The available recipe cards must be the ones the AI actually sees","expert":"Skills Runtime"}},"body":[{"fr":{"cuisine":"Une fiche de consignes ne compte que si elle est réellement découverte, chargée et applicable pendant le service.","expert":"Ce motif couvre la présence, découverte, chargement, portée et disponibilité effective des skills au runtime."},"en":{"kitchen":"A recipe card only counts if it is actually discovered, loaded and applicable during service.","expert":"This pattern covers runtime presence, discovery, loading, scope and effective availability of skills."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:skills-runtime",
+  "type": "pattern",
+  "slug": "skills-runtime",
+  "route": "/patterns/skills-runtime/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Claude Code",
+      "Cline",
+      "Codex",
+      "Gemini CLI",
+      "Goose",
+      "OpenHands",
+      "Superpowers",
+      "agent-scripts",
+      "pstack"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "nested-skills-discovery-drift",
+      "skills-default-on-docs-lag",
+      "runtime-skill-inventory-not-filesystem",
+      "codex-skills-context-budget",
+      "superpowers-skills-methodology-rise",
+      "skills-cross-harness-convergence",
+      "control-plane-convergence",
+      "agent-claims-need-evidence-labels"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le classeur est plein ; ce qui compte tient dans les mains du commis",
+          "expert": "Un catalogue de skills est une ressource d’exécution, pas un ensemble de fichiers"
+        },
+        "en": {
+          "kitchen": "The binder is full; what counts fits in the cook’s hands",
+          "expert": "A skills catalog is an execution resource, not a set of files"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une maison peut avoir trois cents fiches au classeur et n’en sortir que douze au coup de feu. Chez Codex, le classeur a grossi au point qu’il fallait décider combien de fiches tiennent sur le passe. Une fiche rangée n’est pas une fiche lue : elle ne compte que si elle arrive dans les mains, au bon moment.",
+            "expert": "Le système de skills de Codex a évolué vers un ordre de discovery explicite, des sémantiques de confiance, des toggles, des watchers et des contraintes de budget de prompt. Un catalogue de skills y est traité comme une ressource runtime, et non comme un ensemble de fragments de prompt. La présence d’un skill au catalogue n’établit ni son chargement, ni sa visibilité, ni son application."
+          },
+          "en": {
+            "kitchen": "A house can hold three hundred cards in the binder and pull twelve at service. At Codex the binder grew until someone had to decide how many cards fit on the pass. A filed card is not a read card: it counts only when it reaches a pair of hands in time.",
+            "expert": "The Codex skills system evolved toward explicit discovery order, trust semantics, toggles, watchers and prompt-budget constraints. A skills catalog is handled there as a runtime resource rather than a set of prompt fragments. Presence in the catalog establishes neither loading, nor visibility, nor application."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Trois façons de s’apercevoir qu’une fiche ne sort jamais",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "Three ways to notice a card never leaves the drawer",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Claude Code, les fiches glissées dans une pochette du classeur ne sortaient jamais. On les ressortait à la main chaque matin, jusqu’au jour où l’ouverture de la maison a changé. Chez Gemini, le classeur était devenu le mode normal alors que l’affiche au mur parlait encore d’essai. Chez Codex et dans agent-scripts, compter les fiches rangées ne dit plus rien : il faut lire celles qu’on tend vraiment.",
+            "expert": "Trois signaux distincts. Chez Claude Code, les skills imbriqués n’étaient pas découverts, ce qui a poussé les utilisateurs à les exposer par des hooks de démarrage ; une évolution ultérieure du démarrage a cassé ce contournement alors qu’aucun fichier de skill n’avait changé. Chez Gemini CLI, les Agent Skills sont passés d’un opt-in expérimental à un comportement activé par défaut tandis que documentation et UI conservaient l’ancien vocabulaire expérimental. Chez Codex et agent-scripts, l’audit a dû passer du scan de répertoires à la lecture de l’inventaire exact injecté dans le prompt, aliases et ordre compris."
+          },
+          "en": {
+            "kitchen": "At Claude Code, cards tucked into a sleeve inside the binder never came out. Cooks pulled them by hand every morning, until the day the house changed how it opened. At Gemini the binder had become the normal way of working while the notice on the wall still said trial. At Codex and in agent-scripts, counting filed cards says nothing; you read the ones actually handed over.",
+            "expert": "Three distinct signals. At Claude Code nested skills were not discovered, pushing users to expose them through startup hooks; a later startup change broke that workaround although no skill file had changed. At Gemini CLI, Agent Skills moved from experimental opt-in to on-by-default while documentation and UI kept the older experimental vocabulary. At Codex and agent-scripts the audit had to move from directory scanning to reading the exact inventory injected into the prompt, aliases and ordering included."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi une bonne fiche ne suffit pas",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a good card is not enough",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une fiche peut être parfaite et rester au fond du classeur. Entre le classeur et la main, il y a celui qui range et l’ordre des pochettes. Il y a aussi la place sur le passe, et la confiance qu’on accorde à la fiche. Chacune de ces étapes peut l’écarter sans qu’un mot de la recette ait bougé.",
+            "expert": "Le skill n’est plus seulement du contenu : sa correction dépend de la manière dont il est découvert, sélectionné, chargé, ordonné et exposé au modèle. Installation, résolution des aliases, precedence, sémantiques de confiance et filtrage par budget de contexte modifient tous ce qui atteint le modèle, en aval du fichier. Dès que les catalogues sont larges, les descriptions se disputent le contexte avant qu’un seul skill soit invoqué : le coût est porté par la taille du catalogue, pas par son usage."
+          },
+          "en": {
+            "kitchen": "A card can be perfect and stay at the back of the binder. Between the binder and the hand stand whoever files them and the order of the sleeves. There is also the room left on the pass, and how far the card is trusted. Any of those steps can push it aside without a word of the recipe moving.",
+            "expert": "A skill is no longer just content: its correctness depends on how it is discovered, selected, loaded, ordered and exposed to the model. Installation, alias resolution, precedence, trust semantics and context-budget filtering all change what reaches the model, downstream of the file. Once catalogs are large, descriptions compete for context before any single skill is invoked: the cost is borne by catalog size, not by use."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Montrer la pile qu’on tend vraiment",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Show the stack you actually hand over",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Affiche la pile de fiches réellement tendue au coup de feu, dans son ordre, et donne-lui une place limitée. Tiens à jour la façon dont on les trouve et préviens quand elle change : des maisons entières s’appuient dessus. Chez pstack, une fiche a été réécrite pour qu’on dise d’où vient ce qu’on affirme, vu, déduit ou supposé. Son effet sur le travail réel n’a pas été mesuré.",
+            "expert": "Auditer d’abord la représentation runtime effective — inventaire injecté, ordre, aliases — et traiter le catalogue comme une ressource budgétée plutôt que comme un répertoire. Versionner la sémantique de discovery, publier l’inventaire chargé au démarrage et traiter les points d’extension utilisés par les contournements comme une surface de compatibilité ; un changement de défaut exige la même conscience des versions côté documentation. Chez pstack, une révision de consigne impose que chaque affirmation porte sa preuve ou sa qualification : mesuré, déduit, supposé. La modification est vérifiable dans les sources ; son effet sur le comportement réel n’a pas été mesuré."
+          },
+          "en": {
+            "kitchen": "Post the stack of cards actually handed out at service, in its order, and give that stack a fixed size. Keep the way cards are found up to date, and say so when it changes; whole houses lean on it. At pstack a card was rewritten so every claim says where it comes from: seen, worked out, or assumed. Whether that changed the work itself was not measured.",
+            "expert": "Audit the effective runtime representation first — injected inventory, ordering, aliases — and treat the catalog as a budgeted resource rather than a directory. Version discovery semantics, publish the inventory loaded at startup, and treat the extension points used by workarounds as a compatibility surface; a default change calls for the same version awareness on the documentation side. At pstack a workflow-instruction revision requires every claim to carry its evidence or its qualification: measured, inferred, assumed. The change is verifiable in the sources; its effect on real behavior was not measured."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La règle que laissent les classeurs de Codex, Claude Code et Gemini",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The rule left by the binders at Codex, Claude Code and Gemini",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une fiche ne vaut pas par ce qui est écrit dessus, mais par le chemin qui la met dans les mains. Claude Code, Codex, Gemini, Cline, Goose et OpenHands se ressemblent désormais moins par leurs recettes que par la façon de tenir ce chemin. Chez Superpowers, c’est justement une manière de faire qui a voyagé de maison en maison, avant tout classeur.",
+            "expert": "La correction d’un skill est une propriété du chemin de livraison, pas du fichier. Le même constat se généralise au control plane que Claude Code, Codex, Gemini CLI, Cline, Goose et OpenHands convergent à construire : discovery, activation, confiance, délégation, reprise, workspaces. La diffusion de Superpowers montre par ailleurs qu’une méthode peut traverser les hôtes avant d’exister comme fonctionnalité produit."
+          },
+          "en": {
+            "kitchen": "A card is worth not what is written on it, but the road that puts it into a pair of hands. Claude Code, Codex, Gemini, Cline, Goose and OpenHands now resemble each other less in their recipes than in how they keep that road. At Superpowers it was a way of working that travelled house to house, ahead of any binder.",
+            "expert": "Skill correctness is a property of the delivery path, not of the file. The same finding generalizes to the control plane Claude Code, Codex, Gemini CLI, Cline, Goose and OpenHands are converging on: discovery, activation, trust, delegation, resume, workspaces. The spread of Superpowers further shows a method can cross hosts before existing as a product feature."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,208 @@
-{"schema":"argh/public-entity/v1","id":"dossier:session-scope-lock-became-global-state","type":"dossier","slug":"session-scope-lock-became-global-state","route":"/dossiers/session-scope-lock-became-global-state/","template":"dossier","updated_at":"2026-09-13T09:08:00+02:00","relationships":{"projects":["gstack"],"patterns":["cross-session-state","scope-boundary","stale-control"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Un garde prévu pour un service a continué à surveiller les suivants","expert":"Un garde limité à une session est devenu une politique globale à la machine"},"en":{"kitchen":"A guard meant for one job kept policing later jobs","expert":"A session-scoped guard became a machine-wide policy"}},"body":[{"fr":{"cuisine":"Une règle temporaire a été conservée dans un état partagé après la fin du service. Comme elle utilisait un chemin relatif, elle pouvait ensuite viser un autre dossier et contraindre une session qui ne l’avait jamais demandée.","expert":"Un verrou de périmètre de débogage stockait une frontière relative dans un état global à la machine sans la supprimer. La même valeur persistée pouvait donc changer de sens avec le répertoire de travail suivant et contraindre des sessions ultérieures sans rapport."},"en":{"kitchen":"A temporary rule stayed in shared state after its job ended. Because it used a relative path, the same saved rule could later point at a different folder and constrain a session that never asked for it.","expert":"A debugging scope lock stored a relative boundary in machine-global state and did not clear it. The same persisted value could therefore change meaning with the next working directory and constrain unrelated later sessions."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Ce qui s’est passé en cuisine","expert":"Chronologie"},"en":{"kitchen":"What happened in the kitchen","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Un service a enregistré la zone dans laquelle il avait le droit de travailler, mais sous forme de chemin relatif.","expert":"Un workflow de débogage a écrit sa frontière d’édition autorisée sous forme de chemin relatif dans un état persistant partagé."},"en":{"kitchen":"One job saved the area it was allowed to edit, but saved it as a relative path.","expert":"A debugging workflow wrote its allowed edit boundary as a relative path into shared persistent state."}},{"fr":{"cuisine":"Le contrôle relisait ensuite cette valeur à partir du dossier courant du moment, pas du dossier d’origine.","expert":"Le hook d’enforcement a ensuite résolu cette valeur par rapport au répertoire de travail courant de chaque appel."},"en":{"kitchen":"The guard later interpreted that value from whatever folder happened to be current, not from the original folder.","expert":"The enforcement hook later resolved that value against each call's current working directory."}},{"fr":{"cuisine":"Un autre service pouvait donc hériter du vieux garde, avec une frontière désormais déplacée.","expert":"Un dépôt ou worktree ultérieur pouvait donc hériter d’une frontière effective différente à partir du même état périmé."},"en":{"kitchen":"A later job could therefore inherit the old guard, now pointing at a different effective boundary.","expert":"A later repository or worktree could therefore inherit a different effective boundary from the same stale state."}},{"fr":{"cuisine":"Le problème a été reproduit ; aucun correctif livré n’était établi au moment de l’observation.","expert":"Le rapport a reproduit l’effet inter-session et montré que le verrou survivait à la session qui l’avait créé. Aucun correctif fusionné ou livré n’était alors établi."},"en":{"kitchen":"The cross-session failure was reproduced; no shipped correction was established at the observed cutoff.","expert":"The report reproduced the cross-session effect and showed that the lock outlived the session that created it. No merged or released fix was established at the observed cutoff."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Ce qui a déraillé","expert":"Mécanisme"},"en":{"kitchen":"What went wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Le garde avait perdu deux informations essentielles : l’adresse exacte qu’il protégeait et le moment où son autorité devait prendre fin.","expert":"Deux frontières ont été confondues : l’identité du chemin et la durée de vie du contrôle. Un chemin relatif n’a pas d’identité stable sans son répertoire de base d’origine, tandis qu’une persistance globale à la machine donnait à une décision supposée limitée à la session une durée de vie supérieure à son autorité."},"en":{"kitchen":"The guard lost two essential facts: the exact place it was protecting and when its authority was supposed to end.","expert":"Two boundaries were conflated: path identity and control lifetime. A relative path has no stable identity without its original base directory, while machine-global persistence gave a supposedly session-scoped decision a lifetime longer than its authority."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade doit changer","expert":"Réponse"},"en":{"kitchen":"What the crew should change","expert":"Response"}},"body":[{"fr":{"cuisine":"Enregistrer une cible absolue avec le propriétaire du verrou, isoler l’état par session ou workspace et ne supprimer que le verrou exact créé par cette session.","expert":"Persister les frontières porteuses d’autorité avec une identité absolue stable et une propriété explicite. Les isoler par session/workspace, enregistrer leur créateur et les libérer avec une sémantique de comparaison puis suppression afin qu’un nettoyage ne puisse pas supprimer une frontière plus récente ou appartenant à l’utilisateur."},"en":{"kitchen":"Store an absolute target together with the lock owner, isolate it by session or workspace, and remove only the exact lock created by that session.","expert":"Persist authority-bearing boundaries with stable absolute identity and explicit ownership. Namespace them by session/workspace, record who created them, and release them with compare-and-delete semantics so cleanup cannot remove a newer or user-owned boundary."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est la cuisine","expert":"État actuel"},"en":{"kitchen":"Where the kitchen stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"La panne est documentée et reproductible. Le dossier ne prétend pas qu’un correctif a été fusionné, livré ou observé sur le terrain.","expert":"Le rapport est ouvert et reproductible. Aucun correctif fusionné, aucune version livrée, aucune correction installée ni récupération observée sur le terrain n’est établie."},"en":{"kitchen":"The failure is documented and reproducible. This dossier does not claim that a fix was merged, shipped, installed or observed in the field.","expert":"The report is open and reproducible. No merged fix, released build, installed correction, or field-observed recovery is established."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à retenir","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Une règle temporaire doit savoir exactement où elle s’applique et quand elle cesse d’avoir autorité.","expert":"Un état porteur d’autorité a besoin à la fois d’une identité stable et d’une durée de vie explicite."},"en":{"kitchen":"A temporary rule must know exactly where it applies and when its authority ends.","expert":"Authority-bearing state needs both a stable identity and an explicit lifetime."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:session-scope-lock-became-global-state",
+  "type": "dossier",
+  "slug": "session-scope-lock-became-global-state",
+  "route": "/dossiers/session-scope-lock-became-global-state/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T09:08:00+02:00",
+  "relationships": {
+    "projects": [
+      "gstack"
+    ],
+    "patterns": [
+      "cross-session-state",
+      "scope-boundary",
+      "stale-control"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Une consigne écrite pour un seul service commandait encore la cuisine du lendemain",
+          "expert": "Un verrou de débogage prévu pour une session a survécu en état global à la machine"
+        },
+        "en": {
+          "kitchen": "A note written for one service was still giving orders the next day",
+          "expert": "A debugging lock scoped to one session survived as machine-wide state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez gstack, une consigne de dépannage restait punaisée au mur une fois le service terminé. Elle disait « la réserve du fond » sans préciser dans quelle maison. Le lendemain, dans une autre cuisine, les mêmes mots désignaient une autre réserve et bridaient une brigade qui n’avait rien demandé.",
+            "expert": "gstack conservait dans un état global à la machine la frontière d’édition d’un mode de débogage, exprimée en chemin relatif et jamais effacée. Résolue plus tard depuis un autre répertoire de travail, cette même valeur désignait une autre zone et contraignait des sessions sans lien avec celle qui l’avait posée."
+          },
+          "en": {
+            "kitchen": "gstack pinned a troubleshooting note at the station and nobody took it down at closing time. The note named a shelf, but not the room it belonged to. On the next service, in another room, the same note fenced in a crew that had never asked for it.",
+            "expert": "gstack kept a debugging mode’s edit boundary in machine-global state, expressed as a relative path and never cleared. Resolved later from a different working directory, that single stored value designated a different area and constrained sessions unrelated to the one that set it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "La consigne, du mur au service suivant",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "The note, from the wall to the next service",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Pendant un dépannage, quelqu’un note au mur la seule zone où il a le droit de toucher, désignée par sa place dans la pièce.",
+            "expert": "Un mode de débogage écrit sa frontière d’édition autorisée en chemin relatif, dans un état persistant partagé par la machine."
+          },
+          "en": {
+            "kitchen": "During a repair, someone chalks up the one area they are allowed to touch, named by where it sits in the room.",
+            "expert": "A debugging mode writes its allowed edit boundary as a relative path into state persisted and shared machine-wide."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le garde relit cette consigne depuis la pièce où il se trouve au moment du contrôle, jamais depuis celle où elle fut écrite.",
+            "expert": "Le hook chargé de l’appliquer résout ensuite cette valeur contre le répertoire de travail courant de chaque invocation."
+          },
+          "en": {
+            "kitchen": "The guard reads that note from whichever room he happens to be standing in, never from the room where it was written.",
+            "expert": "The hook that enforces it then resolves that value against the current working directory of each invocation."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Une autre maison hérite donc de la vieille consigne, qui interdit désormais une tout autre réserve.",
+            "expert": "Un dépôt ou un worktree ultérieur hérite ainsi d’une frontière effective différente à partir du même état périmé."
+          },
+          "en": {
+            "kitchen": "Another house therefore inherits the old note, which now fences off an entirely different pantry.",
+            "expert": "A later repository or worktree therefore inherits a different effective boundary from the same stale state."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La panne a été refaite à volonté : la consigne survit bien au service qui l’avait écrite. À la date d’observation, aucune réparation livrée n’était établie.",
+            "expert": "Le rapport reproduit l’effet inter-session et établit que le verrou survit à la session qui l’a créé. Aucun correctif fusionné ni livré n’était établi à la date d’observation."
+          },
+          "en": {
+            "kitchen": "The failure was reproduced at will: the note does outlive the service that wrote it. At the observed cutoff, no delivered repair was established.",
+            "expert": "The report reproduces the cross-session effect and establishes that the lock outlives the session that created it. No merged or released fix was established at the observed cutoff."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que la consigne avait oublié d’écrire",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "What the note forgot to say",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "À cette consigne, il manquait deux choses. L’adresse complète du coin qu’elle protégeait, et l’heure à laquelle elle cessait de valoir. Sans elles, un bout de papier vieux d’un jour commande encore un service qu’il n’a jamais vu.",
+            "expert": "Deux frontières distinctes ont été traitées comme une seule : l’identité du chemin et la durée de vie du contrôle. Un chemin relatif ne possède pas d’identité stable hors du répertoire de base contre lequel il a été écrit. Et une persistance globale à la machine donnait à une décision censée mourir avec sa session une durée de vie supérieure à son autorité."
+          },
+          "en": {
+            "kitchen": "Two things were missing from that note. The full address of the corner it protected, and the hour its authority ran out. Without them, yesterday’s scrap of paper still gives orders to a service it never saw.",
+            "expert": "Two distinct boundaries were treated as one: path identity and control lifetime. A relative path holds no stable identity away from the base directory it was written against. Machine-global persistence then granted a decision meant to die with its session a lifetime longer than its authority."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Écrire la consigne pour qu’elle meure avec le service",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Writing the note so it dies with the service",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Sur la consigne, écris l’adresse entière du coin visé, et signe-la de ta main. Accroche-la au tableau de ton service, pas au tableau commun de la maison. À la fermeture, ne décroche que ce papier-là : si un autre, plus récent, a pris sa place, il ne t’appartient pas.",
+            "expert": "Persister une frontière porteuse d’autorité sous une identité absolue stable et avec une propriété explicite. La cantonner par session ou par workspace, enregistrer son créateur, et la libérer par comparaison puis suppression, afin qu’un nettoyage ne puisse pas retirer une frontière plus récente ou appartenant à l’utilisateur."
+          },
+          "en": {
+            "kitchen": "Give the note a full address, not a corner named from wherever you happen to stand. Sign it, and hang it on your own service board rather than the house board everyone shares. At closing, take down only the slip you wrote; a newer one in its place belongs to somebody else.",
+            "expert": "Persist an authority-bearing boundary under a stable absolute identity with explicit ownership. Namespace it per session or workspace, record its creator, and release it with compare-and-delete semantics, so cleanup cannot remove a newer boundary or one the user owns."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Le papier est toujours au mur",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "The note is still on the wall",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez gstack, la panne est décrite et se refait quand on veut. Rien ici ne dit qu’une réparation a été adoptée, livrée, installée, ni constatée dans une vraie cuisine.",
+            "expert": "Le rapport est ouvert et reproductible. Aucun correctif fusionné, aucune version livrée, aucune correction installée, aucune récupération observée sur le terrain n’est établie."
+          },
+          "en": {
+            "kitchen": "At gstack the failure is written down and repeats on demand. Nothing here says a repair was accepted, delivered, installed, or seen working in a real kitchen.",
+            "expert": "The report is open and reproducible. No merged fix, no released build, no installed correction, and no field-observed recovery is established."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’une consigne doit porter",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What a note has to carry",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une consigne provisoire doit dire où elle s’applique, exactement, et le moment où elle cesse de valoir.",
+            "expert": "Un état porteur d’autorité exige à la fois une identité stable et une durée de vie explicite."
+          },
+          "en": {
+            "kitchen": "A temporary note must say exactly where it applies, and the moment it stops counting.",
+            "expert": "Authority-bearing state requires both a stable identity and an explicitly bounded lifetime."
+          }
+        }
+      ]
+    }
+  ]
+}

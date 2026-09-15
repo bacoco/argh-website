@@ -1,1 +1,217 @@
-{"schema":"argh/public-entity/v1","id":"dossier:codex-managed-worktrees","type":"dossier","slug":"codex-managed-worktrees","route":"/dossiers/codex-managed-worktrees/","template":"dossier","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Codex"],"patterns":["worktrees","state-isolation"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Chaque cuisinier parallèle reçoit enfin son propre plan de travail","expert":"Les worktrees sont passés d’une technique utilisateur au runtime de l’agent"},"en":{"kitchen":"Each parallel cook finally gets a dedicated workbench","expert":"Worktrees moved from user technique into the agent runtime"}},"body":[{"fr":{"cuisine":"Tant qu’un seul cuisinier travaillait, partager le même plan de travail restait tolérable. Avec plusieurs agents, les collisions ont forcé la cuisine à attribuer des espaces séparés.","expert":"Les worktrees gérés sont entrés dans le chemin d’exécution des sessions CLI, faisant de l’isolation du workspace une capacité de première classe plutôt qu’une convention externe."},"en":{"kitchen":"Sharing one workbench was tolerable with a single cook. Parallel agents made collisions common enough that the kitchen had to allocate separate spaces.","expert":"Managed worktrees entered the execution path for CLI sessions, making workspace isolation a first-class agent capability rather than an external convention."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Ce qui s’est passé en cuisine","expert":"Chronologie"},"en":{"kitchen":"What happened in the kitchen","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Les services à un seul agent partagent facilement un même espace.","expert":"Les workflows parallèles et reprenables augmentent la pression sur les working directories partagés."},"en":{"kitchen":"Single-agent service can share one workspace.","expert":"Parallel and resumable agent workflows increased pressure on shared working directories."}},{"fr":{"cuisine":"Le travail parallèle multiplie les collisions entre préparations.","expert":"Les worktrees existent comme technique Git externe."},"en":{"kitchen":"Parallel work multiplies collisions between preparations.","expert":"Worktrees existed as an external Git technique."}},{"fr":{"cuisine":"L’attribution d’un plan de travail devient une option annoncée, encore au stade expérimental.","expert":"L’allocation gérée devient une fonctionnalité expérimentale explicite."},"en":{"kitchen":"Assigning a workbench becomes an announced option, still at the experimental stage.","expert":"Managed allocation became an explicit experimental feature."}},{"fr":{"cuisine":"Les nouveaux services comme les services fourchés peuvent recevoir chacun leur propre plan de travail.","expert":"Les sessions nouvelles et forkées peuvent recevoir des worktrees dédiés."},"en":{"kitchen":"New and forked services can each receive their own workbench.","expert":"New and forked sessions could receive dedicated worktrees."}},{"fr":{"cuisine":"Le harnais doit alors savoir quel fil tient quel plan : cette propriété entre dans son modèle d’exécution.","expert":"La propriété entre thread et checkout devient partie du modèle runtime."},"en":{"kitchen":"The harness must then know which thread holds which bench: ownership enters its runtime model.","expert":"Ownership between thread and checkout became part of the runtime model."}}]},{"id":"mechanism","kind":"section","heading":{"fr":{"cuisine":"Ce qui a déraillé","expert":"Mécanisme"},"en":{"kitchen":"What went wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"L’isolation ne peut plus être une discipline manuelle quand la brigade crée elle-même plusieurs cuisiniers en parallèle.","expert":"L’isolation du workspace ne peut rester une convention manuelle lorsque le harnais crée lui-même des sessions parallèles et fork l’état d’exécution."},"en":{"kitchen":"Isolation cannot remain a manual convention when the brigade itself creates parallel cooks.","expert":"Workspace isolation cannot remain a manual convention when the harness itself creates parallel sessions and forks execution state."}}]},{"id":"response","kind":"section","heading":{"fr":{"cuisine":"Ce que la brigade a changé","expert":"Réponse"},"en":{"kitchen":"What the brigade changed","expert":"Response"}},"body":[{"fr":{"cuisine":"Faire du plan de travail une partie de l’identité de chaque exécution, avec allocation, nettoyage et reprise gérés.","expert":"Faire posséder l’identité et le lifecycle du workspace par le harnais, y compris allocation, binding, cleanup et reprise."},"en":{"kitchen":"Make workspace identity part of execution identity, with allocation, cleanup and resume managed by the harness.","expert":"Make workspace identity and lifecycle owned by the harness, including allocation, binding, cleanup and resume semantics."}}]},{"id":"current","kind":"section","heading":{"fr":{"cuisine":"Où en est la cuisine","expert":"État actuel"},"en":{"kitchen":"Where the kitchen stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"C’est une direction active vers une meilleure isolation entre agents.","expert":"Une direction active vers une isolation plus forte entre exécutions d’agents."},"en":{"kitchen":"This is an active direction toward stronger isolation between agents.","expert":"An active forward direction toward stronger isolation between agent executions."}}]},{"id":"lesson","kind":"section","heading":{"fr":{"cuisine":"La règle à retenir","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Un cuisinier parallèle a besoin de son propre plan de travail.","expert":"Les agents parallèles ont besoin d’une propriété de workspace de première classe."},"en":{"kitchen":"A parallel cook needs an owned workbench.","expert":"Parallel agents need first-class workspace ownership."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:codex-managed-worktrees",
+  "type": "dossier",
+  "slug": "codex-managed-worktrees",
+  "route": "/dossiers/codex-managed-worktrees/",
+  "template": "dossier",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Codex"
+    ],
+    "patterns": [
+      "worktrees",
+      "state-isolation"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Trois commis sur un seul billot, et les préparations se mélangeaient",
+          "expert": "L’allocation de worktrees est entrée dans le chemin d’exécution, à titre expérimental"
+        },
+        "en": {
+          "kitchen": "Three cooks on one bench, and the preparations kept running into each other",
+          "expert": "Worktree allocation entered the execution path, as an experimental feature"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Codex, avec un seul commis, partager le billot ne gênait personne. Dès qu’ils ont travaillé à plusieurs en même temps, les préparations se sont mélangées. La maison a commencé à attribuer un billot par commis. Ce n’est pas encore la règle partout : c’est un essai en cours.",
+            "expert": "L’allocation gérée de worktrees est entrée dans le chemin d’exécution des sessions CLI. L’isolation du workspace devient ainsi une capacité de première classe du harnais plutôt qu’une convention appliquée par l’utilisateur. La fonctionnalité est explicitement expérimentale ; rien n’établit qu’elle soit devenue le comportement par défaut."
+          },
+          "en": {
+            "kitchen": "One cook on a shared bench bothered nobody at Codex. Put several on it at once and the preparations run into each other. So the house started handing out a bench per cook. It is not yet how every service runs — it is a trial.",
+            "expert": "Managed worktree allocation moved into the execution path of CLI sessions. Workspace isolation thereby becomes a harness capability rather than a convention users are expected to apply themselves. The feature is explicitly experimental, and nothing establishes it as the default."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Comment le billot est devenu personnel",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "How the bench became personal",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un commis seul travaille très bien sur le billot commun.",
+            "expert": "Les workflows parallèles et reprenables augmentent la pression sur les working directories partagés."
+          },
+          "en": {
+            "kitchen": "A single cook works perfectly well on the shared bench.",
+            "expert": "Parallel and resumable workflows raise pressure on shared working directories."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Dès qu’ils sont plusieurs sur la même planche, les préparations se heurtent.",
+            "expert": "Les worktrees existent alors comme technique Git externe, appliquée à la main."
+          },
+          "en": {
+            "kitchen": "Put several on the same board and the preparations start colliding.",
+            "expert": "Worktrees exist at this point as an external Git technique, applied by hand."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La maison propose d’attribuer un billot, sans promettre que ce sera la règle.",
+            "expert": "L’allocation gérée devient une fonctionnalité explicitement expérimentale."
+          },
+          "en": {
+            "kitchen": "The house offers to hand out a bench, without promising it becomes the rule.",
+            "expert": "Managed allocation becomes an explicitly experimental feature."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Un commis qui arrive, ou qui reprend le travail d’un autre, peut recevoir le sien.",
+            "expert": "Les sessions nouvelles et forkées peuvent recevoir des worktrees dédiés."
+          },
+          "en": {
+            "kitchen": "A cook starting fresh, or picking up another’s work, can be given one of his own.",
+            "expert": "New and forked sessions can each receive a dedicated worktree."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Il faut alors savoir en permanence quel billot appartient à qui.",
+            "expert": "La propriété entre thread et checkout entre dans le modèle runtime."
+          },
+          "en": {
+            "kitchen": "From then on the house must always know which bench belongs to whom.",
+            "expert": "Ownership between thread and checkout enters the runtime model."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "section",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi la discipline ne suffisait plus",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why discipline stopped being enough",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Tant que c’est le chef qui appelle un commis, il peut lui dire où s’installer. Ici, c’est la maison elle-même qui fait apparaître des commis en pleine soirée. Personne n’est là pour leur désigner une place libre. Il faut donc que la place arrive avec le commis.",
+            "expert": "L’isolation du workspace ne peut rester une convention manuelle dès lors que le harnais crée lui-même des sessions parallèles et fork l’état d’exécution. Une convention suppose un opérateur présent au moment de la création ; ici la création est interne et sans opérateur."
+          },
+          "en": {
+            "kitchen": "As long as a chef calls a cook in, he can tell him where to stand. Here the house conjures cooks up mid-service on its own. Nobody is standing by to point them at a free bench. So the bench has to arrive with the cook.",
+            "expert": "Workspace isolation cannot stay a manual convention once the harness creates parallel sessions and forks execution state on its own. A convention assumes a human present at creation time, and creation here happens inside the system with no one present."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "section",
+      "heading": {
+        "fr": {
+          "cuisine": "Le billot fait désormais partie du poste",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "The bench is now part of the post",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un commis ne reçoit plus seulement un ordre : il reçoit une place. La maison la lui attribue, la garde pendant son absence, et la nettoie quand il a fini. La place fait partie de son poste, au même titre que ses couteaux.",
+            "expert": "L’identité et le lifecycle du workspace deviennent propriété du harnais : allocation, binding à une exécution, cleanup et sémantique de reprise. Ces quatre points définissent la capacité visée ; ils ne sont pas décrits comme achevés."
+          },
+          "en": {
+            "kitchen": "A cook is no longer handed only an order; he is handed a place. The house assigns it, keeps it while he steps away, and clears it when he is done. The place belongs to the post the way his knives do.",
+            "expert": "Workspace identity and lifecycle become harness-owned: allocation, binding to an execution, cleanup, and resume semantics. Those four points define the intended capability; the record describes them as a direction under way, not as a finished one."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "section",
+      "heading": {
+        "fr": {
+          "cuisine": "Un essai qui avance, pas encore une maison réglée",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "A trial moving forward, not a settled house",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La maison va vers un billot par commis, et elle y va pour de bon. Mais on parle d’une direction prise, pas d’un service qui tourne déjà comme ça tous les soirs.",
+            "expert": "Direction active vers une isolation plus forte entre exécutions parallèles. L’état de preuve est celui d’une trajectoire annoncée et partiellement livrée sous statut expérimental, non d’une isolation garantie."
+          },
+          "en": {
+            "kitchen": "The house is moving toward one bench per cook, and moving in earnest. Still, this is a direction taken, not a service that already runs this way every night.",
+            "expert": "An active direction toward stronger isolation between parallel executions. The evidence supports a declared trajectory shipped under experimental status, not a guarantee of isolation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "section",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on retient : la place vient avec le commis",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What to keep: the bench comes with the cook",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Si tu fais travailler plusieurs commis en même temps, donne à chacun sa planche. Sinon c’est toi qui passeras la soirée à démêler leurs préparations.",
+            "expert": "Des exécutions parallèles exigent une propriété de workspace de première classe. Tant qu’elle reste une convention externe, elle n’est appliquée que là où un humain est présent pour l’appliquer."
+          },
+          "en": {
+            "kitchen": "If several cooks work at once, give each one his own board. Otherwise you spend the night working out whose preparation is whose.",
+            "expert": "Parallel executions require first-class workspace ownership. While it stays an external convention it holds only where a human happens to be present to enforce it."
+          }
+        }
+      ]
+    }
+  ]
+}

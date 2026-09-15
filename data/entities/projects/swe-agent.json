@@ -1,1 +1,267 @@
-{"schema":"argh/public-entity/v1","id":"project:swe-agent","type":"project","slug":"swe-agent","route":"/projects/swe-agent/","template":"project","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":[],"patterns":["budget","concurrency","convergence","cost-guards","hooks-enforcement","project-mortality","repository-identity","retry","state-isolation"],"dossiers":["hook-shared-state-crossed-workers","sweagent-repository-identity-move","sweagent-cost-guard-retry-rebilling","project-mortality-state-machine"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"SWE-agent","expert":"SWE-agent"},"en":{"kitchen":"SWE-agent","expert":"SWE-agent"}},"body":[{"fr":{"cuisine":"Quatre dossiers publics pour suivre SWE-agent quand plusieurs cuisiniers travaillent : budget, tentatives répétées, identité du dépôt et état partagé entre workers.","expert":"4 dossiers publics rattachés à SWE-agent."},"en":{"kitchen":"Four public dossiers for following SWE-agent when several cooks work together: budget, repeated attempts, repository identity, and state shared between workers.","expert":"4 public dossiers associated with SWE-agent."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "project:swe-agent",
+  "type": "project",
+  "slug": "swe-agent",
+  "route": "/projects/swe-agent/",
+  "template": "project",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [],
+    "patterns": [
+      "budget",
+      "concurrency",
+      "convergence",
+      "cost-guards",
+      "hooks-enforcement",
+      "project-mortality",
+      "repository-identity",
+      "retry",
+      "state-isolation"
+    ],
+    "dossiers": [
+      "hook-shared-state-crossed-workers",
+      "sweagent-repository-identity-move",
+      "sweagent-cost-guard-retry-rebilling",
+      "project-mortality-state-machine"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "SWE-agent",
+          "expert": "SWE-agent"
+        },
+        "en": {
+          "kitchen": "SWE-agent",
+          "expert": "SWE-agent"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "SWE-agent a changé de rue. L’ancienne porte renvoie à la nouvelle et la maison tourne toujours : qui ne regarde que l’ancienne adresse la croit fermée. Dedans, deux ennuis. Des commis qui écrivent sur la même ardoise, et une addition qui ne correspond plus à ce qui a été cuisiné.",
+            "expert": "SWE-agent a changé d’identité de repository : l’ancien chemin d’organisation redirige et le repository canonique actif se résout sous une nouvelle organisation. Quatre dossiers s’y rattachent : ce transfert lu à tort comme une disparition, un contrôle dont l’état par exécution était partagé entre exécutions parallèles, et une famille de défauts de contrôle des coûts où limites nominales et dépense réelle divergent."
+          },
+          "en": {
+            "kitchen": "SWE-agent moved streets. The old door points to the new one and the house is still open, so anyone watching only the old address calls it shut. Inside, two troubles: cooks writing on one another’s board, and a bill that no longer matches what was cooked.",
+            "expert": "SWE-agent changed repository identity: the former organization path redirects and the active canonical repository resolves under a new organization. Four dossiers attach here: that transfer misread as disappearance, a control whose per-run state was shared across parallel runs, and a family of cost-control defects where nominal limits and actual spend diverge."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "La maison a changé de rue, puis l’addition a cessé de correspondre",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "The house moved streets, then the tally stopped adding up",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Au début, la maison a une adresse, connue de tous ceux qui la suivent.",
+            "expert": "Le projet est publié sous le chemin de repository de l’organisation Princeton-NLP."
+          },
+          "en": {
+            "kitchen": "At first the house has one address, and everyone following it knows that address.",
+            "expert": "The project is published under the Princeton-NLP organization repository path."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Puis elle déménage. On laisse un mot sur l’ancienne porte pour indiquer la nouvelle.",
+            "expert": "Un transfert et un renommage d’organisation interviennent ; l’ancien chemin commence à rediriger."
+          },
+          "en": {
+            "kitchen": "Then it moves. A note stays on the old door pointing to the new one.",
+            "expert": "An organization transfer and rename occur; the former path starts redirecting."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La nouvelle adresse est la bonne, et le service y continue tous les jours.",
+            "expert": "Le repository canonique actif se résout désormais sous l’organisation SWE-agent, et le développement actif y continue."
+          },
+          "en": {
+            "kitchen": "The new address is the real one, and service runs there every day.",
+            "expert": "The active canonical repository now resolves under the SWE-agent organization, and active development continues there."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le service passe au coup de feu : plusieurs commandes en même temps. Deux commis se retrouvent à écrire sur la même ardoise et effacent les notes l’un de l’autre. Un plat finit inscrit sur la mauvaise table.",
+            "expert": "Un contrôle conservait, pour chaque exécution, conditions d’environnement et données de problème dans des champs ordinaires d’une instance unique. Le mode par lots a fait partager cette instance par des exécutions concurrentes, qui pouvaient s’écraser mutuellement et enregistrer une sortie sous le mauvais dossier de problème."
+          },
+          "en": {
+            "kitchen": "Service goes to the rush, several orders at once. Two cooks end up writing on one board, each rubbing out the other’s notes. A plate gets logged against the wrong table.",
+            "expert": "A control kept each run’s environment conditions and problem data in ordinary fields of a single instance. Batch mode made concurrent runs share that instance, so they could overwrite one another and record an output under the wrong problem folder."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "On a donné son propre carnet à chaque commis. Puis on a refait exprès deux commandes en même temps pour vérifier que ça tenait.",
+            "expert": "Le correctif a déplacé l’état par exécution vers un stockage propre au thread, avec un test de régression déterministe à deux exécutions."
+          },
+          "en": {
+            "kitchen": "Each cook was given his own pad. Then two orders were deliberately run together to check that it held.",
+            "expert": "The fix moved per-run state into thread-local storage, with a deterministic two-run regression test."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Une commande de six couverts. Un seul plat rate au dernier moment. On refait les six, et on paie les six une deuxième fois au fournisseur.",
+            "expert": "Reproduit sur main : la politique de retry enveloppe un lot de n échantillons au lieu de l’échantillon en échec, donc une défaillance de queue transitoire refacture des appels fournisseur déjà réussis."
+          },
+          "en": {
+            "kitchen": "An order of six covers. One plate fails at the last moment. All six go again, and the supplier is paid twice for all six.",
+            "expert": "Reproduced on main: retry policy wraps an n-sample batch rather than the failed sample, so a transient tail failure rebills provider calls that already succeeded."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le patron avait dit : passé cette somme, on arrête net. Quelqu’un au milieu entend l’ordre, le range parmi les ennuis ordinaires, et laisse le service continuer.",
+            "expert": "Reproduit également : une couche auxiliaire de sélection intercepte l’exception de limite de coût que la couche d’orchestration définit comme fatale, et la convertit en repli générique. Une borne dure de budget devient ainsi une poursuite d’exécution."
+          },
+          "en": {
+            "kitchen": "The owner had said: past this figure we stop dead. Someone in the middle hears the order, files it with the ordinary troubles, and lets service run on.",
+            "expert": "Also reproduced: a helper selection layer catches the cost-limit exception that the orchestration layer defines as fatal and converts it into a generic fallback. A hard budget boundary thereby becomes continuation behavior."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Un poste avait été mis hors de l’enveloppe, volontairement. Il a fini par ne plus figurer du tout sur la note. Ce qu’il coûte existe, mais personne ne le lit nulle part.",
+            "expert": "Reproduit enfin, sur les chemins internes réels de comptabilité de coût avec réseau simulé : le coût du sélecteur, délibérément exclu d’un budget, est aussi omis des statistiques de trajectoire rapportées, ce qui rend la dépense réelle invisible."
+          },
+          "en": {
+            "kitchen": "One station had been left outside the envelope on purpose. It ended up missing from the bill altogether. What it costs is real, yet nobody reads it anywhere.",
+            "expert": "Reproduced last, over the real internal cost-accounting paths with mocked network: the chooser’s cost, deliberately excluded from one budget, is also omitted from reported trajectory statistics, which makes actual spend invisible."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Les corrections sont écrites sur un coin de table. Aucune n’est passée en cuisine à ce jour.",
+            "expert": "Au cutoff observé, les correctifs de coût identifiés restent des propositions ouvertes et non fusionnées ; aucun correctif n’est revendiqué."
+          },
+          "en": {
+            "kitchen": "The repairs are written on a scrap of paper. Not one has reached the stoves so far.",
+            "expert": "At the observed cutoff the identified cost repairs remain open, unmerged proposals; no fix is claimed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Qui tient vraiment les comptes pendant le service",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Who is really keeping count during service",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "À chaque fois, la même erreur : celui qui compte n’est pas celui qui voit tout le travail. On fixe une somme à ne pas dépasser sans savoir combien de fois un plat repart. On donne une ardoise commune à des commis qui, hier encore, travaillaient chacun leur tour. Et on suit une maison par le nom écrit sur la porte, pas par la maison elle-même.",
+            "expert": "Les trois familles partagent une forme : un contrôle est placé à une couche qui ne possède pas le graphe qu’il prétend borner. L’enforcement du budget vivait à une couche sans vue complète des retries et des choix de modèle, faisant diverger opération logique et opérations facturables. Le contrôle d’exécution supposait une durée de vie égale à une exécution unique, et le passage au parallèle a changé le modèle de propriété sans que le modèle de stockage suive. Le monitoring, lui, était lié à un chemin de repository mutable et confondait migration d’identité et absence."
+          },
+          "en": {
+            "kitchen": "Same mistake every time: whoever counts is not whoever sees the whole job. A ceiling on spending is set without knowing how often a plate goes back. One board is handed to cooks who, until yesterday, worked one at a time. And a house is followed by the name on its door rather than by the house.",
+            "expert": "The three families share one shape: a control sits at a layer that does not own the graph it claims to bound. Budget enforcement lived at a layer with no complete view of retries and model choices, so logical operation and billable operations drifted apart. The execution control assumed a lifetime equal to a single run, and going parallel changed the ownership model while the storage model stayed put. Monitoring, in turn, was bound to a mutable repository path and read identity migration as absence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Refaire le plat raté, pas toute la commande",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Redo the plate that failed, not the whole order",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Si un plat rate, tu refais ce plat, pas la table entière déjà servie et déjà payée. Un ordre du patron qui dit d’arrêter doit arriver intact au bout de la chaîne. Un poste sorti de l’enveloppe reste quand même écrit sur la note. Et chaque commis garde son carnet, même au coup de feu.",
+            "expert": "Ne réessayer que la plus petite opération en échec, et n’enrober jamais un lot d’appels déjà réussis et déjà facturés dans la même borne de retry sans idempotence ni rollback. Les exceptions qui portent une limite dure de politique — coût, permission, sûreté — doivent conserver leur type sémantique à travers chaque couche auxiliaire et contourner les gestionnaires de repli génériques. Une exclusion de budget délibérée n’autorise jamais une exclusion de reporting : la comptabilité suit tout l’arbre des descendants d’une tâche logique. L’état par exécution s’isole par thread, tâche ou identité d’exécution explicite, et l’identité stable du repository ainsi que ses aliases se résolvent avant tout calcul de santé projet."
+          },
+          "en": {
+            "kitchen": "If one plate fails, redo that plate, not a table already served and already paid for. An owner’s order to stop must reach the far end of the line intact. A station kept out of the envelope still belongs on the bill. And every cook keeps his own pad, rush or no rush.",
+            "expert": "Retry only the smallest operation that failed, and never wrap a batch of already-billed successful calls inside the same retry boundary without idempotency or rollback. Exceptions carrying a hard policy limit — cost, permission, safety — must keep their semantic type through every helper layer and bypass generic fallback handlers. A deliberate budget exclusion never authorizes a reporting exclusion: accounting follows the full descendant tree of a logical task. Per-run state is isolated by thread, task or explicit run identity, and stable repository identity with its aliases is resolved before any project-health computation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "La maison tourne, les corrections dorment",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "The house is running, the repairs are sleeping",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La maison est ouverte à sa nouvelle adresse et le service y tourne. Peu de nouvelles cartes ne veut pas dire qu’on a éteint les fourneaux. Les carnets séparés, eux, sont en place. Pour l’addition, la panne a été refaite devant témoin, et rien n’est encore passé en cuisine.",
+            "expert": "Actif après changement d’identité : le repository canonique continue sous la nouvelle organisation et l’ancien chemin redirige. Des releases espacées n’impliquent ici aucune mort, la cadence seule ne classant ni la santé ni la fin d’un projet. Le partage d’état par exécution dispose d’un correctif établi. Les trois défauts de coût disposent d’une reproduction, et leurs correctifs restent ouverts et non fusionnés au cutoff observé."
+          },
+          "en": {
+            "kitchen": "The house is open at its new address and service runs there. Few new menus does not mean the stoves went cold. The separate pads are in place. On the bill, the fault was staged again in front of witnesses, and nothing has reached the stoves yet.",
+            "expert": "Active after an identity change: the canonical repository continues under the new organization and the old path redirects. Sparse releases imply no death here, since cadence alone classifies neither project health nor project end. The per-run state sharing has an established fix. The three cost defects have reproductions, and their repairs stay open and unmerged as of the observed cutoff."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on retient : changer de rue n’est pas fermer",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What to keep: a new street is not a closed house",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une maison qui déménage n’est pas une maison qui ferme. Et une somme à ne pas dépasser ne tient que si celui qui la garde voit tout le travail qu’on facture. Cette deuxième règle, on l’a vue échouer ; on ne l’a pas encore vue réparée.",
+            "expert": "L’état d’un repository n’est pas la cause d’un projet : archive, read-only, maintenance et transfert se classent séparément, et une redirection signifie continuité, pas mort. Une limite n’est tenue que si la couche qui l’applique possède le graphe complet du travail qu’elle facture ; sinon les budgets suivent le nombre d’appels et non le travail logique. Ici, cette seconde règle repose sur des reproductions, pas sur des correctifs fusionnés."
+          },
+          "en": {
+            "kitchen": "A house that moves is not a house that closes. And a ceiling on spending holds only if whoever guards it sees every bit of work being charged. That second rule has been watched failing; it has not yet been watched fixed.",
+            "expert": "Repository state is not project cause: archive, read-only, maintenance and transfer classify separately, and a redirect means continuity rather than death. A limit only holds when the layer enforcing it owns the full graph of the work it bills; otherwise budgets track call counts instead of logical work. Here that second rule rests on reproductions, not on merged fixes."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,152 @@
-{"schema":"argh/public-entity/v1","id":"pattern:testing","type":"pattern","slug":"testing","route":"/patterns/testing/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Cline","Hermes"],"patterns":[],"dossiers":["green-test-wrong-seam","apply-patch-add-overwrite"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Goûter le plat réellement servi, pas seulement la sauce","expert":"Tests"},"en":{"kitchen":"Test the dish actually served, not only the sauce","expert":"Testing"}},"body":[{"fr":{"cuisine":"Un test utile doit passer par le même chemin que l’utilisateur ou l’agent réellement exposé à la panne.","expert":"La valeur d’un test dépend de la frontière qu’il exerce et de sa capacité à reproduire le chemin d’exécution pertinent."},"en":{"kitchen":"A useful test must exercise the same path used by the user or agent exposed to the failure.","expert":"A test’s value depends on the boundary it exercises and its ability to reproduce the relevant execution path."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:testing",
+  "type": "pattern",
+  "slug": "testing",
+  "route": "/patterns/testing/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Cline",
+      "Hermes"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "green-test-wrong-seam",
+      "apply-patch-add-overwrite"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Deux cuisines où le goûteur se tenait à trois pas de l’endroit qui rate",
+          "expert": "Un vert mesure la couture traversée, pas le chemin dont dépend l’utilisateur"
+        },
+        "en": {
+          "kitchen": "Two kitchens where the taster stood three steps from the spot that failed",
+          "expert": "A green measures the seam it crossed, not the path the user depends on"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Hermes, on goûtait le bol du commis, et l’assiette partait en salle sans ce qu’on avait demandé. Chez Cline, celui qui devait vérifier la place lisait sa feuille au lieu de regarder la table. Les deux carnets étaient verts. Celui qui goûtait se tenait simplement ailleurs que là où le plat se perd.",
+            "expert": "Un test établit une propriété au point de la chaîne qu’il traverse, et rien au-delà. Chez Hermes, une assertion au niveau helper validait la construction des arguments pendant que le chemin de lancement réel perdait ensuite l’option importante. Chez Cline, un garde d’ajout consultait un état incomplet au lieu de la destination, au point même où le remplacement pouvait se produire. Dans les deux cas, le vert était exact et sans rapport avec la défaillance vécue."
+          },
+          "en": {
+            "kitchen": "At Hermes the taster worked from the prep bowl, and the plate left the pass missing what the guest had ordered. At Cline the cook meant to check whether the spot was free read his sheet instead of looking at the table. Both books came back green. Nobody was standing where the dish actually goes wrong.",
+            "expert": "A test proves a property at the seam it crosses and nothing past it. In Hermes a helper-level assertion covered argument construction while the real launch path then dropped the option that mattered. In Cline an add guard consulted incomplete state rather than the destination itself, at the exact point where replacement could occur. The green was accurate in both cases, and unrelated to the failure users met."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui doit inquiéter quand tout le carnet est vert",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "What should worry you when the whole book comes back green",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La panne revient du client alors que rien n’a jamais sonné en cuisine. On goûte ce qui tient dans une main, un bol ou une feuille, jamais l’assiette qui traverse trois paires de mains. Et plus la maison multiplie les contrôles, mieux elle dort.",
+            "expert": "Le signal principal est une suite verte posée à côté d’une défaillance rapportée depuis le chemin réel. Deux formes reviennent : la couverture s’arrête en amont du point où la valeur se perd, et une précondition interroge une représentation de l’état au lieu de l’objet qu’elle protège. La confiance croît alors avec le nombre d’assertions, jamais avec le placement de la couverture."
+          },
+          "en": {
+            "kitchen": "The failure comes back from the room while nothing ever rang in the kitchen. Tasting happens on whatever sits still in one hand, a bowl or a sheet, never on the plate that travels. And the more checks a house runs, the better it sleeps.",
+            "expert": "The leading signal is a green suite standing next to a failure reported from the real path. Two shapes recur: coverage stops upstream of the point where the value is lost, and a precondition queries a representation of state instead of the object it guards. Confidence then scales with assertion count rather than with where the coverage sits."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi on goûte toujours là où c’est commode",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why the tasting always happens where it is easy",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un bol tient en place, il ne bouge plus, il est facile à goûter. L’assiette qui part change encore de mains après le passe. On prend donc la preuve là où elle est simple à prendre, puis on la lit comme si elle valait pour tout le trajet.",
+            "expert": "Une assertion est locale par construction : bon marché là où l’état a cessé de bouger, coûteuse là où il change encore. Le vert obtenu reste exact pour ce point précis, pendant que le lecteur le prend pour une propriété du produit livré. Rien dans le résultat n’expose la distance entre le point couvert et le point de défaillance."
+          },
+          "en": {
+            "kitchen": "A bowl holds still, so tasting it costs nothing. The plate leaving the pass changes hands twice more before the guest sees it. Proof gets taken where taking it is easy, then read as though it covered the whole run.",
+            "expert": "An assertion is local by construction: cheap where state has settled, expensive where it is still moving. The green stays accurate for that one point while the reader takes it as a property of what ships. Nothing in the result exposes the distance between the covered point and the failing one."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Goûter au dernier geste, pas au premier",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Taste at the last gesture, not the first",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Fais passer le goûteur par le chemin du client : la vraie commande, le vrai dressage, la vraie sortie. Pour tout geste qui peut écraser quelque chose, regarde la place elle-même juste avant de poser. Chez Cline, la réparation est faite et éprouvée ; rien ne dit encore qu’elle est descendue dans toutes les cuisines.",
+            "expert": "Exercer le test à travers la couture finale — lancement, empaquetage, transport ou interface selon le cas — et observer l’effet réellement produit. Vérifier une précondition destructive contre l’état de la destination, au point exact où le remplacement peut se produire, et conserver des destinations préexistantes dans les régressions. Chez Cline, un correctif est mergé et testé en régression ; livré, installé et corrigé-observé restent non prouvés au cutoff observé."
+          },
+          "en": {
+            "kitchen": "Send the taster down the road the guest’s plate takes: real order, real plating, real send. Before any gesture that can wipe something out, look at the spot itself. At Cline the repair is made and tried; whether it reached every kitchen is still unknown.",
+            "expert": "Exercise the test through the final seam — spawn, packaging, transport or interface, whichever applies — and observe the effect actually produced. Check destructive preconditions against the destination’s own state at the exact point replacement can happen, and keep pre-existing destinations in the regression set. In Cline a fix is merged and regression-tested; shipped, installed and fix-observed remain unproven at the observed cutoff."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que Hermes et Cline laissent au goûteur",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What Hermes and Cline leave the taster",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un vert ne vaut que par l’endroit où il a été pris. Tant que ce n’est pas le dernier geste avant le client, il ne promet rien.",
+            "expert": "Un test vert peut couvrir la mauvaise chose : sa valeur tient à la couture traversée, pas au nombre d’assertions. Une opération qui promet d’ajouter doit prouver l’absence de la destination au point où un remplacement pourrait se produire."
+          },
+          "en": {
+            "kitchen": "A green book is worth exactly as much as the place it was taken from. Until that place is the last gesture before the guest, it promises nothing.",
+            "expert": "A green test can cover the wrong thing: its worth comes from the seam crossed, not from the number of assertions. An operation that promises to add must prove the destination absent at the point where a replacement could occur."
+          }
+        }
+      ]
+    }
+  ]
+}

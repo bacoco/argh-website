@@ -1,1 +1,157 @@
-{"schema":"argh/public-entity/v1","id":"pattern:runtime-identity","type":"pattern","slug":"runtime-identity","route":"/patterns/runtime-identity/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Archon","Claude Code","Cline","Codex","OpenHands","gstack"],"patterns":[],"dossiers":["gstack-false-green-second-fix","archon-session-resume-checkpoint","recovery-state-convergence"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Savoir exactement quelle cuisine est en service","expert":"Identité d’exécution"},"en":{"kitchen":"Know exactly which kitchen is actually running","expert":"Runtime Identity"}},"body":[{"fr":{"cuisine":"Reprendre ou diagnostiquer un service exige de connaître le vrai poste, les outils et la version qui exécutent la mission.","expert":"L’identité d’exécution regroupe les dimensions nécessaires pour identifier précisément le contexte runtime actif."},"en":{"kitchen":"Resuming or diagnosing service requires knowing the real station, tools and version executing the mission.","expert":"Runtime identity comprises the dimensions needed to precisely identify the active execution context."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:runtime-identity",
+  "type": "pattern",
+  "slug": "runtime-identity",
+  "route": "/patterns/runtime-identity/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Archon",
+      "Claude Code",
+      "Cline",
+      "Codex",
+      "OpenHands",
+      "gstack"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "gstack-false-green-second-fix",
+      "archon-session-resume-checkpoint",
+      "recovery-state-convergence"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "On lui a dit que le poste était prêt, ce n’était pas le sien",
+          "expert": "Le contexte d’exécution actif est rarement celui que le système croit décrire"
+        },
+        "en": {
+          "kitchen": "He was told his station was ready; it was not his station",
+          "expert": "The active execution context is rarely the one the system believes it describes"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez gstack, un tableau annonçait que tout était en ordre et le service coinçait quand même. Le tableau parlait d’un poste voisin, avec un autre matériel et d’autres clés. Ce qui compte, c’est le poste où les mains travaillent, pas celui qu’on a inscrit au tableau.",
+            "expert": "L’identité d’exécution regroupe les dimensions nécessaires pour identifier précisément le contexte runtime actif : workspace, provider et modèle, exécutable, contexte d’authentification, outils et permissions. Chez gstack, un état de santé en cache déclarait l’environnement utilisable alors que le chemin de commande réel échouait, parce que la clé de cache était plus étroite que la clé de réussite. Le second correctif a élargi cette clé vers l’exécutable et le contexte d’authentification réel."
+          },
+          "en": {
+            "kitchen": "At gstack a board announced all clear, and the service jammed anyway. The board was describing the station next door — other equipment, other keys. The station that matters is the one the hands are in, never the one written up.",
+            "expert": "Runtime identity gathers the dimensions needed to identify the active execution context precisely: workspace, provider and model, executable, authentication context, tools and permissions. At gstack a cached health state declared the environment usable while the real command path failed, because the cache key was narrower than the success key. The second fix widened that key to the executable and the real authentication context."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui met en doute le poste où l’on croit être",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "What throws doubt on the station you think you are in",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Archon, un cuisinier reprend le service en sachant tout ce qui s’est dit, et pourtant rien ne tombe sous sa main. Le matériel n’est pas celui d’avant, la réserve non plus. Chez gstack, le tableau reste au vert pendant que la porte refuse de s’ouvrir.",
+            "expert": "Chez Archon, la continuité conversationnelle paraissait intacte après reprise tandis que l’état d’exécution restauré était incomplet ou incohérent, l’agent repris pouvant agir depuis un contexte incompatible avec celui de l’interruption. Chez Codex, Cline, OpenHands, Archon et Claude Code, les utilisateurs remontent des incompatibilités de provider, d’outils et de workspace après reprise. Chez gstack, le signal de santé déclare l’environnement utilisable alors que la commande réelle échoue."
+          },
+          "en": {
+            "kitchen": "At Archon a cook resumes the service remembering every word said, and nothing falls to hand. Different equipment, different pantry. At gstack the board holds its all-clear while the door will not open.",
+            "expert": "At Archon conversational continuity looked intact after resume while the restored execution state was incomplete or incoherent, the resumed agent able to act from a context incompatible with the interruption. At Codex, Cline, OpenHands, Archon and Claude Code, users report provider, tool and workspace mismatches after resume. At gstack the health signal declares the environment usable while the real command fails."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi deux postes qui se ressemblent ne se valent pas",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why two stations that look alike are not the same",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qu’on retient d’un service, ce sont les paroles : elles sont faciles à recopier. Le poste, lui, se redevine au dernier moment, à partir de ce qui traîne sous la main. Deux postes se ressemblent de loin et diffèrent exactement là où le service se joue.",
+            "expert": "L’état conversationnel était traité comme identité principale, tandis que l’identité d’exécution était reconstruite à partir des valeurs par défaut du moment. Le même écart produit le faux vert de gstack : un verdict de santé en cache était réutilisé entre contextes similaires en surface, qui différaient sur la dimension déterminant réellement le succès. La tromperie tient à ce que toutes les dimensions observées concordent, et que celle qui décide n’est pas dans la clé."
+          },
+          "en": {
+            "kitchen": "Talk is what gets carried across, because talk copies easily. The station is guessed at afresh, out of whatever happens to be standing there. From across the room two stations match; they part exactly where the service is decided.",
+            "expert": "Conversational state was treated as the primary identity, while execution identity was rebuilt from whatever defaults were current. The same gap produced the gstack false green: a cached health verdict was reused across contexts alike on the surface that differed on the dimension actually determining success. The deception is that every observed dimension agrees, and the deciding one is not in the key."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Faire parler le tableau du bon poste",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Make the board describe the right station",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Écris sur le tableau ce qui décide vraiment du service : le poste, le matériel, le fournisseur, les clés. Tout ce que tu laisses hors de cette liste pourra de nouveau afficher vert à tort. Et à la reprise, compare la liste au poste réel au lieu de la redeviner. Chez Archon, une correction éprouvée a amélioré les choses ; ailleurs, chaque maison avance à son rythme.",
+            "expert": "Persister les dimensions qui définissent l’identité d’exécution — mission, workspace, provider et modèle, outils, permissions, obligations ouvertes — puis les valider au moment de la reprise plutôt que les redériver. Indexer tout état de santé sur ces mêmes dimensions : exécutable, endpoint, authentification, workspace ou provider selon le cas, toute dimension absente de la clé restant une source possible de faux vert. Chez Archon, un correctif soutenu par des tests a amélioré le comportement ; la tendance reste convergente entre projets et inégalement implémentée."
+          },
+          "en": {
+            "kitchen": "Put on the board the things that actually decide the service: station, equipment, supplier, keys. Anything left off can go on showing all clear when it should not. Coming back, hold the list against the real station rather than guessing it again. At Archon a tested correction improved things; elsewhere each house moves at its own pace.",
+            "expert": "Persist the dimensions that define execution identity — mission, workspace, provider and model, tools, permissions, open obligations — then validate them at resume rather than re-deriving them. Index any health state on those same dimensions: executable, endpoint, authentication, workspace or provider as applicable, since any dimension missing from the key remains a possible false green. At Archon a test-backed fix improved behaviour; the trend stays convergent across projects and unevenly implemented."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La règle que gstack et Archon laissent au tableau",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The rule gstack and Archon leave on the board",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un tableau ne vaut que s’il décrit le poste où les mains travaillent à cet instant. Se souvenir de ce qui s’est dit ne dit pas où l’on se tient.",
+            "expert": "Les health checks doivent être liés à ce qui s’exécute réellement, et la mémoire conversationnelle n’est pas l’état d’exécution. Toute dimension d’identité exclue de la clé — de santé comme de reprise — reste une source possible de faux vert."
+          },
+          "en": {
+            "kitchen": "A board is only worth the station it actually describes, right now. Remembering what was said never tells you where you are standing.",
+            "expert": "Health checks must be bound to what actually runs, and conversational memory is not execution state. Any identity dimension excluded from the key — health or resume — remains a possible source of false green."
+          }
+        }
+      ]
+    }
+  ]
+}

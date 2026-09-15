@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:privacy-auditability","type":"pattern","slug":"privacy-auditability","route":"/patterns/privacy-auditability/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Codex"],"patterns":[],"dossiers":["encrypted-subagents-lost-audit-trail"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Protéger le message sans perdre la possibilité de vérifier le service","expert":"Confidentialité et auditabilité"},"en":{"kitchen":"Protect the message without losing the ability to audit the service","expert":"Privacy & Auditability"}},"body":[{"fr":{"cuisine":"Cacher une information sensible ne doit pas rendre impossible la reconstitution de ce qui s’est passé.","expert":"Ce motif traite de l’équilibre entre confidentialité des données et conservation d’une trace suffisante pour l’audit et le diagnostic."},"en":{"kitchen":"Hiding sensitive information must not make it impossible to reconstruct what happened.","expert":"This pattern covers the balance between data privacy and retaining enough trace for audit and diagnosis."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:privacy-auditability",
+  "type": "pattern",
+  "slug": "privacy-auditability",
+  "route": "/patterns/privacy-auditability/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Codex"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "encrypted-subagents-lost-audit-trail"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "La vitre dépolie protège le destinataire et aveugle le chef",
+          "expert": "Un même support portait le transport confidentiel et l’observabilité opérateur"
+        },
+        "en": {
+          "kitchen": "The frosted glass shields the recipient and blinds the chef",
+          "expert": "One representation carried both confidential transport and operator observability"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Codex, les sous-chefs se passent désormais le travail derrière une vitre dépolie. Plus personne ne lit par-dessus l’épaule du destinataire, et ce gain est réel. Mais le chef regardait le service par cette même vitre. Depuis, il ne sait plus qui a reçu quoi, ni ce qu’on lui a demandé.",
+            "expert": "Le chiffrement des communications agent-à-agent dans Codex a protégé la confidentialité des destinataires. Il a aussi retiré de l’historique normal du parent les traces lisibles des tâches et des messages, supprimant le support sur lequel les opérateurs lisaient le comportement de délégation. Aucune décision de réduire l’auditabilité n’a été prise : le système utilisait la même représentation pour les deux usages."
+          },
+          "en": {
+            "kitchen": "At Codex the second cooks now hand work to each other behind frosted glass. Nobody reads over the recipient’s shoulder any more, and that gain is real. But the chef used to watch service through that very glass. Since it was frosted he no longer knows who took what, or what they were asked to do.",
+            "expert": "Encrypting agent-to-agent communication in Codex protected recipient confidentiality. It also stripped readable task and message traces out of the parent’s normal history, removing the surface operators had been using to read delegation behaviour. No decision to reduce auditability was ever taken: the system used one representation for both purposes."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on ne voit plus une fois la vitre dépolie",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "What disappears once the glass is frosted",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un soin apporté à la discrétion fait disparaître une trace que personne n’avait décidé de retirer. Le chef cherche comment le travail a été réparti et ne trouve plus rien à lire. Ceux qui tiennent le service perdent la piste simple qui expliquait la soirée.",
+            "expert": "Le motif se reconnaît à un renforcement de confidentialité qui fait disparaître une trace que personne n’avait décidé de retirer. Chez Codex, le contenu des tâches et des messages est devenu moins inspectable depuis le parent, et les opérateurs ont perdu le support sur lequel ils lisaient la délégation. Le signe distinctif est l’absence de décision explicite : la perte arrive comme effet de bord d’un gain réel."
+          },
+          "en": {
+            "kitchen": "A step taken for discretion removes a record nobody ever decided to remove. The chef goes looking for how the work was split and finds nothing left to read. The people running service lose the plain trail that used to explain the evening.",
+            "expert": "The pattern shows when a confidentiality improvement removes a trace nobody chose to remove. At Codex, task and message content became less inspectable from the parent, and operators lost the surface they read delegation from. The distinguishing sign is the absence of an explicit decision: the loss arrives as a side effect of a genuine gain."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Une seule vitre pour deux besoins",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "One pane of glass for two needs",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La même vitre servait à deux choses : abriter le destinataire du regard des autres, et montrer au chef comment tournait le service. La dépolir pour l’un l’a fermée pour l’autre. Personne n’a arbitré entre les deux ; c’était la même vitre. Voilà pourquoi la perte ressemble à un choix alors qu’elle n’en est pas un.",
+            "expert": "Le système utilisait la même représentation pour le transport confidentiel et pour l’observabilité opérateur, si bien que chiffrer l’une efface mécaniquement l’autre. La tromperie tient à ce que la perte se présente comme un arbitrage de politique alors qu’elle est une conséquence structurelle du support partagé. Tant qu’un seul support porte les deux exigences, tout renforcement de l’une se paie sur l’autre."
+          },
+          "en": {
+            "kitchen": "That one pane did two jobs: shielding the recipient from other eyes, and showing the chef how service was running. Frosting it for the first closed it for the second. Nobody weighed one against the other; it was the same pane. Which is why the loss looks like a choice when it never was one.",
+            "expert": "The system used one representation for confidential transport and for operator observability, so encrypting the first mechanically erased the second. What deceives is that the loss presents itself as a policy tradeoff when it is a structural consequence of the shared medium. While a single medium carries both requirements, strengthening either one is paid for by the other."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Garder la vitre, tenir une ardoise à côté",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Keep the glass, hang a slate beside it",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On garde la vitre dépolie, et on accroche à côté une ardoise courte. Elle porte qui a reçu, à quelle heure, ce qui lui a été confié et ce qui en est ressorti. Cela raconte le partage du travail sans jamais montrer le contenu. Rien n’établit qu’une telle ardoise soit déjà tenue quelque part.",
+            "expert": "Séparer les payloads privés destinataire de métadonnées opérateur bornées. Identités, horodatages, décisions de routage, résultat et état de politique peuvent rester auditables sans exposer le contenu des messages. C’est la réponse proposée : aucune mise en œuvre n’est établie, et l’arbitrage reste un espace de design actif sans solution stabilisée."
+          },
+          "en": {
+            "kitchen": "Leave the glass frosted and hang a short slate next to it. On the slate: who took it, at what hour, what they were handed, what came back. That tells the story of how work was split without ever showing the content. Nothing establishes that such a slate is kept anywhere yet.",
+            "expert": "Separate recipient-private payloads from bounded operator metadata. Identities, timestamps, routing decisions, outcome and policy state can stay auditable without exposing message content. This is the proposed response: no implementation is established, and the tradeoff remains an active design space with no stabilised solution."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Deux besoins, deux supports",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Two needs, two surfaces",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui protège le destinataire ne peut pas être ce qui renseigne le chef. Il faut deux choses distinctes, et décider dès le départ ce que chacune porte.",
+            "expert": "Confidentialité et auditabilité sont deux exigences distinctes et demandent deux canaux. Tant qu’un seul support les porte, renforcer l’une dégrade l’autre sans qu’aucune décision n’ait été prise."
+          },
+          "en": {
+            "kitchen": "What shields the recipient cannot be the same thing that informs the chef. Two separate surfaces, and the split decided before service starts, not after.",
+            "expert": "Privacy and auditability are two distinct requirements and need two channels. While one medium carries both, strengthening either degrades the other with no decision ever being made."
+          }
+        }
+      ]
+    }
+  ]
+}

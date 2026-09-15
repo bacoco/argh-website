@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:pre-model-redaction","type":"pattern","slug":"pre-model-redaction","route":"/patterns/pre-model-redaction/","template":"pattern","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Gemini CLI"],"patterns":[],"dossiers":["redact-before-model-boundary"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Retirer les secrets avant de composer le panier du modèle","expert":"Caviardage avant modèle"},"en":{"kitchen":"Remove secrets before packing the model’s basket","expert":"Pre-model redaction"}},"body":[{"fr":{"cuisine":"Avant d’assembler le contexte pour le modèle, la brigade retire les secrets selon une règle déterministe.","expert":"Les secrets doivent être retirés de manière déterministe avant l’assemblage et l’envoi du contexte au modèle."},"en":{"kitchen":"Before assembling context for the model, the crew removes secrets by a deterministic rule.","expert":"Secrets should be removed deterministically before context is assembled and sent to the model."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:pre-model-redaction",
+  "type": "pattern",
+  "slug": "pre-model-redaction",
+  "route": "/patterns/pre-model-redaction/",
+  "template": "pattern",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Gemini CLI"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "redact-before-model-boundary"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "La consigne écrite sur la page part avec la page",
+          "expert": "Le caviardage doit précéder l’assemblage du contexte, non l’accompagner"
+        },
+        "en": {
+          "kitchen": "A note written on the page leaves with the page",
+          "expert": "Redaction must precede context assembly, not ride inside it"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Gemini, ce qui s’est dit au comptoir sert à nourrir la mémoire de la maison. On en recopie des morceaux sur une page, et la page part se faire lire dehors. Une ligne en tête demande de taire ce qui est privé : elle voyage avec le reste. Rayer ne vaut qu’à la porte, de la même main, à chaque sortie.",
+            "expert": "Une conception d’extraction de mémoire de Gemini CLI transmettait au modèle une sélection de contenu issu de transcriptions locales, puis s’en remettait à des instructions placées dans cette même interaction pour caviarder les secrets. Ce placement protège au mieux le texte produit ensuite. Le motif consiste à déplacer un nettoyage déterministe avant l’assemblage du prompt, et à l’appliquer de façon identique à chaque envoi."
+          },
+          "en": {
+            "kitchen": "At Gemini, what gets said at the counter feeds the house’s memory. Pieces of it are copied onto a page, and the page is sent out to be read. A line at the top asks the reader to keep private things quiet, and that line rides along with everything else. Crossing out only counts at the door, by the same hand, every time.",
+            "expert": "A Gemini CLI memory-extraction design passed the model a selection of content drawn from local transcripts, then relied on instructions inside that same interaction to redact secrets. That placement can at best govern the text produced afterwards. The pattern is to move a deterministic scrub ahead of prompt assembly and apply it identically on every send."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Comment repérer une page qui sort sans être rayée",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "How to spot a page that leaves uncrossed",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La règle de discrétion est écrite dans le texte qu’on envoie, pas appliquée avant de l’envoyer. Le contenu brut est recopié tel quel, sans passer par une main qui le nettoie. Et le bureau garde une copie entière de la même page, que personne n’a rayée non plus.",
+            "expert": "Le motif se reconnaît à un caviardage décrit dans le prompt plutôt qu’appliqué avant l’assemblage, et à une sélection de contenu brut qui entre telle quelle dans le contexte. Un troisième signe accompagne les deux premiers : une sérialisation diagnostique du contenu complet, distincte de l’entrée du modèle. Chez Gemini CLI, les critères de correction demandés visent séparément l’entrée du modèle, la journalisation et le contenu mémoire différé."
+          },
+          "en": {
+            "kitchen": "The rule about discretion sits inside the text being sent, instead of being applied before sending it. Raw material is copied across as it stands, with no hand cleaning it on the way. And the office keeps a full copy of that same page, which nobody crossed out either.",
+            "expert": "The pattern shows as redaction described in the prompt rather than applied before assembly, with raw selected content entering the context as it stands. A third sign travels with those two: diagnostic serialisation of full content, separate from the model input. At Gemini CLI the requested acceptance criteria target model input, logging and deferred memory content separately."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi une réponse propre ne prouve rien",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a clean answer proves nothing about the page",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce que le lecteur renvoie peut être parfaitement propre. Cela ne dit rien de ce qu’il a lu pour l’écrire. On juge la sortie, on croit avoir jugé l’entrée, et c’est là que la maison se trompe. Une demande adressée au lecteur arrive toujours après qu’il a lu.",
+            "expert": "Des instructions adressées au modèle s’exécutent après l’entrée des valeurs brutes dans son contexte et ne les en retirent pas rétroactivement. Le dispositif trompe parce que sa sortie paraît conforme : un texte généré sans secret ne renseigne pas sur l’entrée qui l’a précédé. La même erreur de placement se rejoue sur la journalisation et sur le contenu mémoire différé, qui sont des sorties distinctes de l’entrée du modèle."
+          },
+          "en": {
+            "kitchen": "What comes back from the reader can be spotless. That says nothing about what he had to read to write it. The house checks the answer, believes it has checked the page, and that is where it goes wrong. Any request addressed to the reader arrives after the reading, never before.",
+            "expert": "Instructions aimed at the model run after raw values have entered its context, and they do not retroactively remove them. The arrangement deceives because its output looks compliant: text generated without secrets tells you nothing about the input that produced it. The same placement error repeats on logging and on deferred memory content, which are outputs distinct from the model input."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Une seule main, toujours au même endroit",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "One hand, always at the same spot",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La même main nettoie chaque page avant qu’elle sorte, selon une règle qui ne change pas d’un service à l’autre. De la trace, on ne conserve que l’heure et le demandeur. La copie du bureau et les notes gardées pour plus tard passent par cette même main. Enfin, on fait circuler de faux secrets pour voir si l’un ressort.",
+            "expert": "Appliquer un nettoyage déterministe avant l’assemblage du prompt, ne conserver que des métadonnées d’audit sans secret, et assainir séparément la sérialisation diagnostique. Les tests doivent vérifier que des secrets représentatifs n’atteignent sous forme brute ni l’entrée du modèle, ni la journalisation, ni le contenu mémoire différé. Chez Gemini CLI, ces critères sont demandés dans un travail de sécurité resté ouvert : état cible, non contrôle déployé et vérifié."
+          },
+          "en": {
+            "kitchen": "One hand cleans every page before it leaves, by a rule that does not vary from one service to the next. Of the record, keep only the hour and who asked. The office copy and the notes put aside for later go through that same hand. Then push fake secrets through and watch whether any of them comes out.",
+            "expert": "Apply a deterministic scrub before prompt assembly, keep only secret-free audit metadata, and sanitise diagnostic serialisation separately. Tests must show that representative secrets never reach model input, logging or deferred memory content in raw form. At Gemini CLI these criteria sit in security work that remains open: a target state, not a deployed and verified control."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui ne doit pas sortir se raye au moment de sortir",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What must not leave gets crossed out on the way out",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui ne doit pas sortir se raye au moment de sortir, par la même main, à chaque fois. Une consigne écrite sur la page ne protège pas la page : elle voyage avec elle.",
+            "expert": "Placer les contrôles déterministes de confidentialité avant le composant qu’ils sont censés protéger. Un contrôle exécuté par ce composant dépend de sa coopération et ne constitue pas une garantie déterministe."
+          },
+          "en": {
+            "kitchen": "Whatever must not leave gets crossed out as it leaves, by the same hand, every single time. A note written on the page never protects the page; it travels with it.",
+            "expert": "Put deterministic privacy controls ahead of the component they are meant to protect. A control executed by that component depends on its cooperation and is not a deterministic guarantee."
+          }
+        }
+      ]
+    }
+  ]
+}

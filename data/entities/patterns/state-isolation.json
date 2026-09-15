@@ -1,1 +1,152 @@
-{"schema":"argh/public-entity/v1","id":"pattern:state-isolation","type":"pattern","slug":"state-isolation","route":"/patterns/state-isolation/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Codex","SWE-agent"],"patterns":[],"dossiers":["hook-shared-state-crossed-workers","codex-managed-worktrees"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Chaque brigade garde son propre carnet","expert":"Isolation d’état"},"en":{"kitchen":"Each crew keeps its own notebook","expert":"State Isolation"}},"body":[{"fr":{"cuisine":"Deux travaux parallèles ne doivent pas partager par accident leurs fichiers temporaires, décisions ou mémoire.","expert":"L’isolation d’état empêche qu’un contexte d’exécution modifie ou lise l’état privé d’un autre contexte sans contrat explicite."},"en":{"kitchen":"Parallel jobs must not accidentally share temporary files, decisions or memory.","expert":"State isolation prevents one execution context from reading or mutating another context’s private state without an explicit contract."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:state-isolation",
+  "type": "pattern",
+  "slug": "state-isolation",
+  "route": "/patterns/state-isolation/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Codex",
+      "SWE-agent"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "hook-shared-state-crossed-workers",
+      "codex-managed-worktrees"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Un seul plan de travail pour deux mains, et le service se mélange",
+          "expert": "Deux exécutions concurrentes partagent un état écrit pour une seule"
+        },
+        "en": {
+          "kitchen": "One bench, two pairs of hands, and the orders change owners",
+          "expert": "Two concurrent runs share state that was written for one"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez SWE-agent, un seul plan de travail servait à toutes les commandes. Tant qu’un cuisinier y travaillait seul, rien ne pouvait se mélanger. Le soir où ils ont été deux dessus, chacun a posé ses affaires sur celles de l’autre. Un plat est parti à la mauvaise table.",
+            "expert": "L’isolation d’état empêche qu’une exécution lise ou modifie l’état privé d’une autre sans contrat explicite. Chez SWE-agent, un contrôle conservait les conditions d’environnement et les données de problème de chaque exécution dans des champs ordinaires d’une instance unique. En exécution parallèle, deux exécutions pouvaient s’écraser mutuellement, et des sorties être enregistrées sous le mauvais dossier de problème."
+          },
+          "en": {
+            "kitchen": "At SWE-agent the same bench held whatever order was in hand. Alone, a cook could not get it wrong: everything on it was his. Put a second cook on that bench and each one’s work lands on top of the other’s. A plate leaves for the wrong table.",
+            "expert": "State isolation prevents one run from reading or mutating another run’s private state without an explicit contract. At SWE-agent, a control kept each run’s environment conditions and problem data in ordinary fields of a single instance. Under parallel execution two runs could overwrite one another, and outputs could be recorded under the wrong problem folder."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui apparaît le soir où la brigade double",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "What shows up the night the brigade doubles",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le travail est juste et il arrive au mauvais endroit : voilà le signe. Tout allait bien tant qu’un seul cuisinier tenait la place, et rien n’a changé dans les gestes. Ce qui a changé, c’est le nombre de mains sur le même plan.",
+            "expert": "Le signe est un résultat correct attribué au mauvais destinataire, apparu au passage au parallèle sans modification de la logique du contrôle. Chez SWE-agent, le mode par lots a introduit plusieurs exécutions concurrentes partageant la même instance, et une exécution réécrivait les champs communs pendant qu’une autre était encore en cours. L’inspection utile porte sur la durée de vie des champs, pas sur la logique métier."
+          },
+          "en": {
+            "kitchen": "Nothing in the cooking is wrong; the wrong table gets the plate. The house only notices the night two cooks work the same spot; one cook alone never could. Count the hands sharing a surface, not the steps of the recipe.",
+            "expert": "The symptom is a correct result attributed to the wrong owner, surfacing when execution goes parallel with no change to the control’s own logic. At SWE-agent, batch mode introduced several concurrent runs sharing one instance, and one run rewrote the common fields while another was still in flight. The useful inspection targets field lifetime, not business logic."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi le même geste tenait hier et casse aujourd’hui",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why yesterday’s safe habit breaks tonight",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un plan de travail commun marche parfaitement tant qu’il n’y a qu’une main. Rien dessus ne dit à qui appartient ce qui est posé, parce que la question ne se posait pas. Doubler la brigade change le propriétaire du geste, pas le meuble. On peut relire la recette autant qu’on veut : elle est juste.",
+            "expert": "L’objet de contrôle était traité comme si sa durée de vie coïncidait avec une exécution unique, ce qui rend un champ partagé indiscernable d’un champ privé. Le passage au parallèle change le modèle de propriété sans que le modèle de stockage suive : le contenu devient propre à chaque exécution alors que les champs restent communs. Le défaut est donc invisible à la lecture sérielle du code."
+          },
+          "en": {
+            "kitchen": "A shared bench works perfectly while one pair of hands uses it. Nothing on it says whose things these are, because until tonight the question had no meaning. Doubling the brigade changed who owns the work; it did not change the furniture. Read the recipe as often as you like — the recipe is right.",
+            "expert": "The control object was treated as if its lifetime coincided with a single run, which makes a shared field indistinguishable from a private one. Going parallel changes the ownership model while the storage model stays behind: content becomes per-run while the fields stay common. The defect is therefore invisible when the code is read serially."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Un plan de travail par cuisinier, donné par la maison",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "A bench per cook, handed out by the house",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez SWE-agent, chacun a reçu son propre plan de travail, et on a remonté le double service exprès pour vérifier. Chez Codex, c’est la maison elle-même qui distribue une place au cuisinier quand il prend son service. Ce second geste est encore à l’essai : rien ne dit qu’il soit devenu la règle.",
+            "expert": "L’état par exécution doit être isolé par tâche, par thread, par contexte asynchrone ou par identité d’exécution explicite, jamais par un champ partagé ; chez SWE-agent, le correctif a déplacé cet état vers un stockage propre au thread, avec un test de régression déterministe à deux exécutions. Les défauts de concurrence exigent des tests à barrières plutôt qu’un entrelacement laissé au hasard. Chez Codex, l’allocation gérée de worktrees porte l’isolation du workspace dans le chemin d’exécution des sessions CLI : la fonctionnalité est explicitement expérimentale, et rien n’établit qu’elle soit devenue le comportement par défaut."
+          },
+          "en": {
+            "kitchen": "SWE-agent gave every cook a bench of his own, then replayed the double service on purpose to be sure. Codex changed who provides it: the house itself hands out a place as the cook comes on, instead of leaving him to clear one. That second habit is still a trial, and nothing says it has become the rule.",
+            "expert": "Per-run state belongs to a task, a thread, an async context or an explicit run identity, never to a shared field; at SWE-agent the fix moved that state into thread-local storage, backed by a deterministic two-run regression test. Concurrency defects require barrier-based tests rather than incidental interleaving. At Codex, managed worktree allocation carries workspace isolation into the execution path of CLI sessions: the feature is explicitly experimental, and nothing establishes that it became default behavior."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que SWE-agent et Codex laissent au passe",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What SWE-agent and Codex leave at the pass",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Dès que deux mains travaillent au même endroit, une erreur cesse d’être la sienne : elle devient celle du voisin. Donne à chacun sa place, et que ce soit la maison qui la donne.",
+            "expert": "Des exécutions parallèles transforment tout état de contrôle partagé en risque de corruption partagé, dès la première concurrence réelle. La propriété du workspace devient alors une primitive de première classe et non une convention externe : une convention suppose un opérateur présent au moment de la création, absent quand le système crée lui-même les exécutions."
+          },
+          "en": {
+            "kitchen": "The moment two people share a surface, a mistake stops belonging to whoever made it. Give each cook a place of his own — and let the house be the one that gives it.",
+            "expert": "Parallel runs turn any shared control state into shared corruption risk, from the first real concurrency onward. Workspace ownership is therefore a first-class primitive rather than an external convention: a convention assumes an operator present at creation time, and the system creates those runs with no operator there."
+          }
+        }
+      ]
+    }
+  ]
+}

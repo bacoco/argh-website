@@ -1,1 +1,151 @@
-{"schema":"argh/public-entity/v1","id":"pattern:mission-state","type":"pattern","slug":"mission-state","route":"/patterns/mission-state/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Codex","OpenClaw"],"patterns":[],"dossiers":["memory-kept-history-lost-mission"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Se souvenir du service sans oublier la commande ouverte","expert":"État de mission"},"en":{"kitchen":"Remember the service without forgetting the open order","expert":"Mission State"}},"body":[{"fr":{"cuisine":"Conserver l’historique ne suffit pas si l’objectif encore à accomplir disparaît du carnet.","expert":"L’état de mission représente les objectifs, engagements et tâches encore actives, distincts de l’historique conversationnel."},"en":{"kitchen":"Keeping history is not enough if the unfinished objective disappears from the notebook.","expert":"Mission state represents active objectives, commitments and tasks, distinct from conversation history."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:mission-state",
+  "type": "pattern",
+  "slug": "mission-state",
+  "route": "/patterns/mission-state/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Codex",
+      "OpenClaw"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "memory-kept-history-lost-mission"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le carnet est plein, la commande a disparu",
+          "expert": "Ce qui reste dû ne survit pas dans l’historique"
+        },
+        "en": {
+          "kitchen": "The notebook is full, the order is gone",
+          "expert": "What is still owed does not survive inside the history"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez OpenClaw comme chez Codex, on garde le carnet de la soirée et on perd la commande en cours. Les notes des tables déjà servies restent lisibles. Ce qui disparaît, c’est ce qu’on doit encore envoyer, et à quoi on reconnaît que c’est fini. Le cuisinier relit tout et ne sait plus quoi faire.",
+            "expert": "L’état de mission regroupe les objectifs encore actifs, les engagements pris et la définition de « terminé » ; il est distinct de l’historique conversationnel. Chez OpenClaw et Codex, la compaction du contexte pouvait conserver des fragments d’historique tout en perdant l’obligation active. Ce qui subsistait n’était donc pas ce qui pilotait la suite du travail."
+          },
+          "en": {
+            "kitchen": "At OpenClaw and at Codex, the evening notebook is kept and the order in hand is lost. The tickets for tables already served stay legible. What goes missing is what still has to leave the pass, and how you know it is finished. The cook reads it all back and no longer knows what to do.",
+            "expert": "Mission state is the set of still-active objectives, standing commitments and the working definition of done; it is not the conversation history. In OpenClaw and Codex, context compaction could retain fragments of history while dropping the active obligation. What survived was therefore not what should have driven the rest of the work."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Un carnet complet et un passe qui hésite",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "A full notebook and a hesitant pass",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Rien n’a l’air perdu : le carnet est là, les pages se lisent. Le doute vient au moment d’envoyer. On relit, on reformule la commande à sa façon, on annonce que c’est parti sans savoir ce qui manquait. Un carnet complet et un passe hésitant, c’est ce signe-là.",
+            "expert": "Le motif se reconnaît à un contexte réduit qui paraît intact : l’historique reste citable, les échanges passés restent retrouvables. Ce qui manque n’apparaît qu’à l’usage — la tâche encore due, l’engagement pris, le critère d’achèvement. Une reprise qui reformule l’objectif, ou qui déclare le travail terminé sans critère, est le signe observable que l’obligation active n’a pas été transportée."
+          },
+          "en": {
+            "kitchen": "Nothing looks lost: the notebook is there, the pages read fine. The doubt arrives when it is time to send. Someone reads it back, restates the order in his own words, and calls it away without knowing what was missing. A full notebook and a hesitant pass: that is the sign.",
+            "expert": "The pattern shows up as a shrunk context that looks intact: history is still quotable, past exchanges are still findable. What is missing appears only in use — the task still owed, the commitment made, the completion criterion. A resumed run that restates the objective, or calls the work done without a criterion, is the observable sign that the active obligation was not carried over."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "À la relecture, tout se tient",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Read back, it all hangs together",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui trompe, c’est que le carnet reste crédible après coup. On a tout gardé sauf la seule ligne qui commandait la suite. Personne ne distingue une note de table déjà partie d’une note de table qui attend. À la relecture, tout se tient, et c’est bien là le piège.",
+            "expert": "La compaction optimise la trace, pas l’obligation. Historique et état de mission n’ont pas la même durée de vie : un échange ancien peut être jetable alors que l’engagement qu’il contient reste dû. Tant que les deux vivent dans le même flux et subissent la même règle de réduction, rien ne sépare ce qui est révolu de ce qui est encore à faire, et la perte passe inaperçue parce que ce qui reste se lit toujours comme un contexte cohérent."
+          },
+          "en": {
+            "kitchen": "The trap is that the notebook still reads true afterwards. Everything was kept except the one line that governed what came next. Nobody separates a ticket already sent from a ticket still waiting. Read back, it all hangs together, and that is exactly the problem.",
+            "expert": "Compaction optimizes the transcript, not the obligation. History and mission state do not share a lifetime: an old exchange may be disposable while the commitment inside it is still owed. As long as both live in the same stream under one reduction rule, nothing separates what is over from what is still due, and the loss goes unnoticed because what remains still reads as a coherent context."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Garder la commande hors du carnet",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Keep the order out of the notebook",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Tiens la commande en cours ailleurs que dans le carnet de la soirée. Une ligne par table : ce qui est promis, ce qui reste à envoyer, à quoi on voit que c’est fini. Quand tu allèges le carnet, relis d’abord cette ligne-là. Un carnet lisible ne prouve rien ; une commande énonçable, si.",
+            "expert": "Tenir l’état de mission hors de l’historique et le reconstruire explicitement à chaque reprise : objectif courant, engagements ouverts, critère d’achèvement. Lui donner ses propres règles de conservation, indépendantes de la compression du contexte, puisque son ancienneté ne dit rien de sa validité. Après réduction, vérifier que l’obligation reste énonçable plutôt que de vérifier que l’historique reste lisible."
+          },
+          "en": {
+            "kitchen": "Keep the order in hand somewhere other than the evening notebook. One line per table: what was promised, what still has to leave, how you know it is done. When you thin the notebook down, read that line first. A readable notebook proves nothing; an order you can still state does.",
+            "expert": "Keep mission state outside the transcript and rebuild it explicitly on every resume: current objective, open commitments, completion criterion. Give it its own retention rule, independent of context compression, since its age says nothing about its validity. After any reduction, check that the obligation can still be stated, not that the history can still be read."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que le carnet ne remplace pas",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What the notebook does not replace",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Se souvenir du service n’est pas savoir ce qu’on doit encore envoyer. La commande en cours se garde à part, sinon elle part avec le reste.",
+            "expert": "La mémoire n’est pas la mission. Un contexte conservé ne prouve pas qu’une obligation l’a été, et seule cette obligation peut décider que le travail est terminé."
+          },
+          "en": {
+            "kitchen": "Remembering the service is not knowing what still has to go out. Keep the order in hand apart, or it goes out with the rest.",
+            "expert": "Memory is not the mission. Retained context is no proof that an obligation was retained, and only that obligation can decide the work is finished."
+          }
+        }
+      ]
+    }
+  ]
+}

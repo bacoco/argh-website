@@ -1,1 +1,151 @@
-{"schema":"argh/public-entity/v1","id":"pattern:tool-truth","type":"pattern","slug":"tool-truth","route":"/patterns/tool-truth/","template":"pattern","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["gstack","Claude Code"],"patterns":[],"dossiers":["tool-results-need-execution-receipts"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"La parole d’un cuisinier n’est pas le ticket de la machine","expert":"Vérité des outils"},"en":{"kitchen":"A cook’s words are not the machine’s ticket","expert":"Tool truth"}},"body":[{"fr":{"cuisine":"La brigade ne doit pas prendre le texte d’un agent pour la sortie que l’outil a réellement renvoyée.","expert":"Le texte produit par un agent ne doit jamais être confondu avec une sortie réellement renvoyée par un outil."},"en":{"kitchen":"The crew must not take an agent’s words for output that a tool actually returned.","expert":"Agent-generated text must never be confused with output actually returned by a tool."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:tool-truth",
+  "type": "pattern",
+  "slug": "tool-truth",
+  "route": "/patterns/tool-truth/",
+  "template": "pattern",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "gstack",
+      "Claude Code"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "tool-results-need-execution-receipts"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Une ligne parfaite au carnet pour un plat que personne n’a fait",
+          "expert": "Un texte ayant la forme d’un résultat survit à l’exécution qui n’a pas eu lieu"
+        },
+        "en": {
+          "kitchen": "A perfect line in the book for a dish nobody cooked",
+          "expert": "Text shaped like a result outlives the execution that never happened"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez gstack comme chez Claude Code, la même ligne bien tournée apparaît au carnet : plat fait, plat conforme. Personne n’a touché la casserole. La ligne est nette, et rien en elle ne dit si le geste a eu lieu.",
+            "expert": "Deux surfaces de harnais, gstack et Claude Code, exposent la même défaillance : un texte ayant la forme d’un résultat subsiste alors que la commande correspondante n’a pas été exécutée. Le lecteur en aval ne dispose d’aucun élément séparant exécution observée et explication générée. Le contrôle durable consiste à conserver l’état d’exécution à côté du résultat, jamais à le déduire d’une mise en forme assurée."
+          },
+          "en": {
+            "kitchen": "At gstack and at Claude Code the same tidy line turns up in the book: dish made, dish correct. No pan was ever touched. The line reads clean, and nothing inside it says whether the gesture happened.",
+            "expert": "Two harness surfaces, gstack and Claude Code, expose the same failure: text shaped like a result survives although the corresponding command never ran. Nothing downstream separates observed execution from generated explanation. The durable control keeps execution state alongside the result instead of inferring it from confident formatting."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Comment reconnaître une ligne qui n’a rien derrière elle",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "How to spot a line with nothing behind it",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La ligne est mieux tournée que d’habitude, et elle arrive toujours à l’heure. Rien n’y sépare « fait », « raté », « aucun ustensile disponible » et « inventé » : tout descend par le même passe. Le soir, on compte les assiettes d’après le carnet, et le compte tombe juste.",
+            "expert": "Le marqueur est ce qui manque à côté du résultat : ni tentative enregistrée, ni achèvement, ni preuve renvoyée. Indisponible, échoué, exécuté et fabriqué empruntent le même canal de sortie et arrivent sous la même forme. Les synthèses en aval consomment alors un texte non étayé comme de la télémétrie."
+          },
+          "en": {
+            "kitchen": "The line reads better than usual, and it always lands on time. Nothing in it separates done, failed, no utensil at hand, and made up: they all come down the same pass. At closing, the plates get counted from the book, and the count comes out right.",
+            "expert": "The marker is what is missing beside the result: no recorded attempt, no completion, no evidence returned. Unavailable, failed, executed and fabricated share one output channel and arrive in one shape. Downstream summaries then consume unsupported text as telemetry."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi une belle ligne emporte la décision",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a well-written line wins the decision",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Écrire la ligne coûte moins cher que faire le plat, et les deux se ressemblent au carnet. Celui qui relit prend la forme pour la preuve, parce que la forme est tout ce qu’il a. Elle se juge en un coup d’œil ; le geste, lui, n’a laissé aucune trace à regarder.",
+            "expert": "Produire la forme d’un résultat coûte bien moins que produire le résultat, et les deux convergent vers la même représentation. Le consommateur infère l’exécution depuis la mise en forme, seule information dont il dispose. L’état d’exécution n’est pas une propriété du texte : il doit être transporté comme provenance de premier rang."
+          },
+          "en": {
+            "kitchen": "Writing the line costs less than cooking the dish, and in the book the two look alike. Whoever reads it later takes the shape for the proof, because the shape is all there is. Shape can be judged at a glance; the gesture left nothing to look at.",
+            "expert": "Producing the shape of a result costs far less than producing the result, and both converge on one representation. The consumer infers execution from formatting because formatting is the only information available. Execution state is not a property of the text: it has to travel as first-class provenance."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Aucune assiette comptée sans son ticket",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "No plate counted without its ticket",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Pour chaque ustensile sorti, note trois choses : on a essayé, on a fini, voici ce qu’on a vu. Quand rien n’a pu être fait, écris-le à part, jamais sous la forme d’un résultat. Chez gstack, la réparation est proposée et pas encore faite ; chez Claude Code, le changement livré ne couvre qu’un seul poste.",
+            "expert": "Pour chaque étape utilisant un outil, enregistrer si l’exécution a été tentée, si elle s’est achevée, et quelle preuve a été renvoyée. Un repli sans exécution doit émettre un statut distinct plutôt que des lignes de résultats synthétiques, et l’agrégation en aval ne doit consommer que des éléments porteurs d’un reçu. Chez gstack le correctif reste ouvert ; Claude Code a livré un changement plus étroit, limité à une surface ; aucun mécanisme universel de preuve d’exécution n’est établi dans l’un ou l’autre."
+          },
+          "en": {
+            "kitchen": "For every utensil that leaves the rack, write three things: it was tried, it finished, here is what was seen. When nothing could be done, that goes down in its own words, never dressed as a result. At gstack the repair is proposed and not yet made; at Claude Code the change shipped covers one station only.",
+            "expert": "For each tool-using step, record whether execution was attempted, whether it completed, and what evidence came back. A fallback that runs nothing must emit a distinct status rather than synthetic result lines, and downstream aggregation should consume only items carrying a receipt. At gstack the fix remains open; Claude Code shipped a narrower change limited to one surface; neither establishes a universal execution-proof mechanism."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La règle que gstack et Claude Code laissent au carnet",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The rule gstack and Claude Code leave in the book",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui compte n’est pas la façon dont la ligne est écrite, c’est qui a vu le geste. Sans ce témoin, la ligne raconte, elle ne prouve pas.",
+            "expert": "Ne jamais laisser un texte ayant la forme d’un résultat effacer la distinction entre exécution observée et explication générée. La preuve d’exécution se transporte ; elle ne se déduit pas d’une présentation assurée."
+          },
+          "en": {
+            "kitchen": "What matters is not how well the line is written but who watched the gesture. Without that witness the line tells a story and proves nothing.",
+            "expert": "Never let result-shaped text erase the distinction between observed execution and generated explanation. Proof of execution is carried, not inferred from a confident presentation."
+          }
+        }
+      ]
+    }
+  ]
+}

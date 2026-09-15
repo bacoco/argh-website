@@ -1,1 +1,151 @@
-{"schema":"argh/public-entity/v1","id":"pattern:observability-budget","type":"pattern","slug":"observability-budget","route":"/patterns/observability-budget/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Codex"],"patterns":[],"dossiers":["second-fix-real-boundary","observability-became-outage"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le suivi ne doit pas coûter plus cher que ce qu’il protège","expert":"Budget d’observabilité"},"en":{"kitchen":"Monitoring must not cost more than what it protects","expert":"Observability Budget"}},"body":[{"fr":{"cuisine":"Observer la cuisine aide à éviter les erreurs, mais trop de suivi peut lui-même ralentir ou casser le service.","expert":"Le budget d’observabilité borne le coût, la latence et le volume induits par l’instrumentation et la télémétrie."},"en":{"kitchen":"Watching the kitchen helps prevent mistakes, but too much monitoring can itself slow or break service.","expert":"An observability budget bounds the cost, latency and volume introduced by instrumentation and telemetry."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:observability-budget",
+  "type": "pattern",
+  "slug": "observability-budget",
+  "route": "/patterns/observability-budget/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Codex"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "second-fix-real-boundary",
+      "observability-became-outage"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le cahier de suivi a fini par bloquer le service",
+          "expert": "Quand l’instrumentation devient elle-même la panne"
+        },
+        "en": {
+          "kitchen": "The tally book ended up stalling the service",
+          "expert": "When the instrumentation becomes the outage itself"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Codex, on notait tout ce qui se passait, à la minute, sans jamais s’arrêter. Le cahier a fini par prendre la place et le temps du service. Il a fallu s’y reprendre à plusieurs fois pour réduire ce qu’on écrivait. Tenir les comptes est un vrai poste de travail, pas un geste gratuit.",
+            "expert": "Chez Codex, une télémétrie persistante a produit assez de churn local pour que l’observabilité devienne elle-même un problème de performance et de stockage. Plusieurs vagues de réduction ont été nécessaires. Le budget d’observabilité est la contrainte qui manquait : borner le coût, la latence et le volume induits par l’instrumentation avant qu’ils ne concurrencent le travail observé."
+          },
+          "en": {
+            "kitchen": "At Codex, everything that happened was written down, minute by minute, without a pause. In the end the book took the room and the time the service needed. It took several passes to cut down what was being written. Keeping the tally is a job of its own, not a free gesture.",
+            "expert": "In Codex, persistent telemetry generated enough local churn that observability itself turned into a performance and storage problem. Several waves of reduction were needed. The observability budget is the missing constraint: bound the cost, latency and volume that instrumentation introduces, before they compete with the work being observed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Deux réductions, et le cahier déborde encore",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "Two cuts, and the book still overflows",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le premier signe : la tenue du cahier pèse autant que le service lui-même. Le deuxième : on a réduit ce qu’on écrivait, la consigne est passée en salle, et ça déborde encore. Chez Codex, une autre façon de noter continuait de passer à côté de la consigne. Quand deux réductions ne suffisent pas, ce n’est plus une question de quantité.",
+            "expert": "Le motif apparaît quand la charge d’instrumentation se mesure du même ordre que la charge utile : chez Codex, churn local, coût de stockage et dégradation de performance attribuables à la seule télémétrie. Le second signal est un correctif qui ne tient pas : un chemin de journalisation massif avait été réduit et livré, mais un chemin d’événements transformés continuait de contourner le garde. Deux réductions successives insuffisantes indiquent que la mesure ne portait pas au bon endroit."
+          },
+          "en": {
+            "kitchen": "First sign: keeping the book weighs as much as the service itself. Second: the writing was cut down, the new rule went into use, and it still overflows. At Codex, another way of noting things kept slipping past that rule. When two cuts are not enough, the trouble is no longer quantity.",
+            "expert": "The pattern appears when instrumentation load reaches the same order as useful load: in Codex, local churn, storage cost and performance degradation attributable to telemetry alone. The second signal is a fix that does not hold: a massive logging path had been reduced and shipped, yet a transformed-events path kept bypassing the guard. Two successive reductions falling short indicate the measure was not applied where it mattered."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Plus le service est chargé, plus le cahier grossit",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "The busier the service, the fatter the book",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On croit que tenir le cahier coûte toujours pareil. En réalité, plus le service est chargé, plus il y a à écrire, et l’écriture mange le temps qu’il fallait pour cuisiner. Ensuite on surveille la main qu’on voit écrire, pas le cahier lui-même. Chez Codex, d’autres façons de noter arrivaient au même cahier sans passer devant personne.",
+            "expert": "L’instrumentation est raisonnée comme un coût fixe alors qu’elle est une charge de travail proportionnelle à l’activité observée : plus le système travaille, plus il écrit, et l’écriture concurrence le travail. La seconde tromperie est de placer le garde sur la représentation visible — un chemin de journalisation identifié — alors que d’autres chemins atteignent la même persistance ; chez Codex, des événements transformés continuaient de contourner le garde jusqu’à ce que l’enforcement soit déplacé vers la frontière finale de persistance."
+          },
+          "en": {
+            "kitchen": "People assume the tally always costs the same. In truth, the busier the service, the more there is to write, and the writing eats the time meant for cooking. Then the watch gets put on the hand you can see writing, not on the book. At Codex, other ways of noting reached the same book without passing anyone.",
+            "expert": "Instrumentation gets reasoned about as a fixed cost while it is a workload proportional to the activity observed: the harder the system works, the more it writes, and the writing competes with the work. The second deception is to put the guard on the visible representation — one identified logging path — when other paths reach the same store; in Codex, transformed events kept bypassing the guard until enforcement moved to the final persistence boundary."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Contrôler à l’entrée du cahier",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Stand the check at the mouth of the book",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Décide d’avance ce que la tenue des comptes a le droit de coûter, en place et en temps. Mets le contrôle à l’entrée du cahier, là où tout finit par s’écrire, pas sur une main en particulier. Si deux réductions n’ont pas suffi, arrête de rogner la même colonne. Change l’endroit où tu contrôles.",
+            "expert": "Donner à l’instrumentation un budget explicite — coût, latence, volume — et le traiter comme une contrainte de conception, pas comme un réglage a posteriori. Placer le garde à la frontière finale de persistance plutôt que sur une représentation visible, puisque c’est là que tous les chemins convergent et que l’effet devient irréversible. Après un correctif qui échoue deux fois, ne pas réduire davantage la même source : déplacer le point d’application."
+          },
+          "en": {
+            "kitchen": "Decide in advance what the tally is allowed to cost, in room and in time. Put the check at the mouth of the book, where everything ends up written, not on one particular hand. If two cuts have not been enough, stop shaving the same column. Move where the check stands.",
+            "expert": "Give instrumentation an explicit budget — cost, latency, volume — and treat it as a design constraint rather than a later tuning pass. Put the guard at the final persistence boundary instead of on a visible representation, since that is where every path converges and where the effect becomes irreversible. After a fix fails twice, stop shrinking the same source and move the point where the rule applies."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La part à réserver au cahier",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The share the book is owed",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Tenir les comptes coûte du temps et de la place : donne-lui sa part, décidée à l’avance. Et si deux corrections n’ont rien changé, c’est l’endroit du contrôle qu’il faut déplacer.",
+            "expert": "L’observabilité est une charge de travail et a besoin d’un budget. Quand un correctif échoue deux fois, cesser de patcher la représentation visible et déplacer le garde là où l’effet irréversible se produit réellement."
+          },
+          "en": {
+            "kitchen": "Keeping the tally costs time and room: give it a share, decided in advance. And if two fixes changed nothing, it is the place of the check that has to move.",
+            "expert": "Observability is a workload and needs a budget. When a fix fails twice, stop patching the visible representation and move the guard to where the irreversible effect actually happens."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,218 @@
-{"schema":"argh/public-entity/v1","id":"dossier:goose-protocol-pivot-acp","type":"dossier","slug":"goose-protocol-pivot-acp","route":"/dossiers/goose-protocol-pivot-acp/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Goose"],"patterns":["pivot","protocols","mcp"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le restaurant s’est mis à construire les règles du service plutôt qu’un plat de plus","expert":"Le centre de gravité du projet s’est déplacé des fonctionnalités produit vers une architecture de protocoles d’agents"},"en":{"kitchen":"The restaurant started building service rules instead of one more dish","expert":"The project’s center of gravity moved from product features toward agent protocol architecture"}},"body":[{"fr":{"cuisine":"Le restaurant s’est mis à construire les règles du service plutôt qu’un plat de plus. Une enseigne peut rester allumée alors que la cuisine, l’équipe ou la stratégie ont déjà déménagé. Les signaux administratifs ne disent pas seuls si le service vit encore.","expert":"Les branches actives et l’évolution des contrôles de Goose montrent un projet investissant fortement dans des agents protocolisés, l’interopérabilité et des hooks enforceables plutôt que dans de simples fonctionnalités utilisateur."},"en":{"kitchen":"The restaurant started building service rules instead of one more dish. A sign can stay lit after the kitchen, team or strategy has moved. Administrative activity alone does not prove the service is alive.","expert":"Goose’s active branches and control evolution show a project investing heavily in protocolized agents, interoperability and enforceable hooks rather than merely adding end-user features."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Goose avait déjà sa cuisine d’agents, d’extensions et d’outils.","expert":"Goose s’établit comme produit d’agents avec extensions et outils."},"en":{"kitchen":"Goose already had an agents, extensions and tools kitchen.","expert":"Goose established itself as an agent product with extensions and tools."}},{"fr":{"cuisine":"Le travail a ensuite débordé vers des passes-plats partagés entre agents.","expert":"Le travail de protocoles s’étend autour de surfaces d’agents interopérables."},"en":{"kitchen":"Work then spread to service hatches shared between agents.","expert":"Protocol work expanded around interoperable agent surfaces."}},{"fr":{"cuisine":"Les crochets ont pris davantage d’autorité au passage.","expert":"Les hooks évoluent vers un enforcement plus fort."},"en":{"kitchen":"Hooks gained more authority along the way.","expert":"Hooks moved toward stronger enforcement."}},{"fr":{"cuisine":"Les branches se remplissent d’agents, sous-agents, mémoire et protocoles.","expert":"Les branches reflètent de plus en plus agents, subagents, mémoire et protocoles."},"en":{"kitchen":"Branches fill with agents, subagents, memory, and protocol work.","expert":"Branches increasingly reflected agents, subagents, memory and protocol work."}},{"fr":{"cuisine":"Les rayons parlent maintenant d’agents, de sous-cuisines, de mémoire et de protocoles : ce n’est pas un simple ralentissement.","expert":"La trajectoire devient un pivot architectural plutôt qu’un ralentissement."},"en":{"kitchen":"The shelves now speak of agents, sub-kitchens, memory and protocols: this is not a simple slowdown.","expert":"The project’s trajectory became an architectural pivot rather than a slowdown."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Goose déplace sa concurrence : d’un agent autonome vers les règles et l’infrastructure capables de relier plusieurs environnements d’agents.","expert":"Le projet change de couche de compétition : d’une expérience agent autonome vers une infrastructure et des sémantiques de protocoles capables de connecter plusieurs environnements."},"en":{"kitchen":"Goose shifts its competition from a standalone agent toward rules and infrastructure that connect several agent environments.","expert":"The project is changing what layer it competes on: from a standalone agent experience toward infrastructure and protocol semantics that can connect multiple agent environments."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Pour suivre ce pivot, regarder les nouvelles primitives de contrôle et l’effort investi dans les protocoles, pas seulement le nombre de releases.","expert":"Suivre le pivot via les primitives de contrôle et l’investissement protocoles, pas seulement le volume de releases."},"en":{"kitchen":"To track this pivot, watch new control primitives and protocol investment, not only release count.","expert":"Track the pivot through control primitives and protocol investment, not only release volume."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"La cuisine est en pivot architectural actif, sans prétendre que le mouvement est achevé.","expert":"Pivot architectural actif."},"en":{"kitchen":"The kitchen is in an active architectural pivot, without claiming the move is complete.","expert":"Active architectural pivot."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Avant que les clients voient un nouveau plat, la cuisine peut déjà avoir quitté le service de table pour construire ses propres règles de circulation.","expert":"Un projet peut changer de catégorie avant que les utilisateurs ne voient un changement produit."},"en":{"kitchen":"Before customers see a new dish, the kitchen may already have left table service to build its own rules for moving work around.","expert":"A project can change category before users notice a product change."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:goose-protocol-pivot-acp",
+  "type": "dossier",
+  "slug": "goose-protocol-pivot-acp",
+  "route": "/dossiers/goose-protocol-pivot-acp/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Goose"
+    ],
+    "patterns": [
+      "pivot",
+      "protocols",
+      "mcp"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "La maison n’ajoute plus de plats : elle réécrit la circulation entre cuisines",
+          "expert": "Le centre de gravité s’est déplacé des fonctionnalités vers l’architecture de protocoles"
+        },
+        "en": {
+          "kitchen": "No new dishes on the card; the house is rebuilding how kitchens pass work",
+          "expert": "Center of gravity shifted from end-user features to agent protocol architecture"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Les clients de Goose attendent un plat de plus sur la carte. À l’arrière, on travaille à tout autre chose. On installe des passe-plats communs, on écrit qui peut retenir une assiette, on met des commis à s’échanger le travail. Le mouvement est engagé ; personne ne dit qu’il est fini.",
+            "expert": "Les branches actives et l’évolution des contrôles de Goose montrent un investissement lourd dans des agents protocolisés, l’interopérabilité et des hooks enforceables. L’effort porte sur cette couche plutôt que sur l’ajout de fonctionnalités utilisateur. Le pivot est en cours ; rien n’établit qu’il soit achevé."
+          },
+          "en": {
+            "kitchen": "Guests are waiting for one more dish on the Goose card. The back of the house is busy with something else entirely. Shared hatches go in, the right to hold a plate gets written down, prep cooks are set up to pass work to each other. The move is under way; nobody says it is finished.",
+            "expert": "Goose’s active branches and the evolution of its controls point to heavy investment in protocolized agents, interoperability and enforceable hooks. That layer, not end-user feature work, is where the effort sits. The pivot is in progress; nothing establishes that it has completed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Comment la maison a changé de chantier",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "How the house changed what it was building",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Au départ, une maison qui tourne : ses commis, ses outils, et de quoi étendre les postes selon le service.",
+            "expert": "Goose s’établit d’abord comme produit d’agents, avec extensions et outils."
+          },
+          "en": {
+            "kitchen": "At the start, a working house: its prep cooks, its tools, and ways to add stations as service demands.",
+            "expert": "Goose first established itself as an agent product carrying extensions and tools."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Puis le travail déborde : on construit des passe-plats que d’autres cuisines peuvent utiliser.",
+            "expert": "Le travail de protocoles s’étend ensuite autour de surfaces d’agents interopérables."
+          },
+          "en": {
+            "kitchen": "Then the work spills outward: hatches are built that other kitchens can use.",
+            "expert": "Protocol work widened next, organised around agent surfaces meant to interoperate."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Au même moment, ceux qui surveillent le passe gagnent le droit de retenir un plat.",
+            "expert": "En parallèle, les hooks évoluent vers un enforcement plus fort."
+          },
+          "en": {
+            "kitchen": "At the same time, whoever watches the pass gains the right to hold a plate.",
+            "expert": "In parallel, hooks shifted toward stronger enforcement."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Les chantiers ouverts à l’arrière ne parlent plus de plats, mais de commis, de sous-commis, de mémoire du service et de règles de circulation.",
+            "expert": "Les branches reflètent de plus en plus agents, subagents, mémoire et travail de protocoles."
+          },
+          "en": {
+            "kitchen": "The jobs open in the back no longer read like dishes: prep cooks, second cooks, what the house remembers, who hands work to whom.",
+            "expert": "Branch work increasingly carried agents, subagents, memory and protocol concerns."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Vu de la salle, on croirait la maison au ralenti. En cuisine, elle a simplement changé de chantier.",
+            "expert": "La trajectoire se lit comme un pivot architectural, non comme un ralentissement de maintenance."
+          },
+          "en": {
+            "kitchen": "From the dining room it looks like a house slowing down. In the kitchen it has only changed what it builds.",
+            "expert": "Read together, the trajectory is an architectural pivot, not a maintenance slowdown."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce n’est plus le même concours",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "It is not the same contest any more",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Tant qu’on compare des plats, on compare des cuisines. Cette maison-là ne joue plus à ça. Elle veut fournir les passe-plats, les règles et les rails que d’autres cuisines emprunteront pour se parler.",
+            "expert": "Le projet change la couche sur laquelle il concourt : d’une expérience agent autonome vers une infrastructure et des sémantiques de protocoles. La cible est de connecter plusieurs environnements d’agents plutôt que d’approfondir un seul."
+          },
+          "en": {
+            "kitchen": "Compare dishes and you are comparing kitchens. This house has stepped out of that contest. It wants to supply the hatches, the house rules and the runs that other kitchens will borrow to work together.",
+            "expert": "The project is changing which layer it competes on, moving from a standalone agent experience to infrastructure and protocol semantics. The target is connecting multiple agent environments rather than deepening a single one."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’il faut regarder pour voir le mouvement",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What to watch if you want to see the move",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Compter les nouveautés à la carte ne montre rien ici. Il faut regarder qui a désormais le droit d’arrêter un plat, et quels passe-plats se construisent à l’arrière. C’est là que le mouvement se voit.",
+            "expert": "Suivre le pivot via les primitives de contrôle et l’investissement protocoles, pas via le volume de releases. Le débit de livraison produit ne mesure pas un déplacement de couche."
+          },
+          "en": {
+            "kitchen": "Counting new items on the card shows nothing here. Look instead at who may now stop a plate, and at which hatches are going in at the back. That is where the move is visible.",
+            "expert": "Track the pivot through control primitives and protocol investment rather than release volume. Shipping cadence does not measure a change of layer."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Le chantier est ouvert, pas terminé",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "The work is open, not finished",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le chantier est ouvert et se voit. Rien, dans ce qu’on observe, ne dit qu’il est terminé.",
+            "expert": "Le pivot architectural est actif. Son achèvement n’est pas établi par les éléments observés."
+          },
+          "en": {
+            "kitchen": "The work is open and it shows. Nothing in what can be seen says it is done.",
+            "expert": "The architectural pivot is active. Completion is not established by what was observed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "On change de métier avant que la salle s’en aperçoive",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "A house changes trade before the dining room notices",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une maison peut avoir changé de métier pendant que sa carte reste la même. Les clients le verront des mois plus tard, quand une assiette arrivera de la cuisine voisine. Le vrai mouvement se lit à l’arrière, jamais à la carte.",
+            "expert": "Un projet peut changer de catégorie avant qu’un changement produit soit visible pour les utilisateurs. La surface utilisateur est un indicateur retardé du déplacement architectural."
+          },
+          "en": {
+            "kitchen": "A house can change trade while its card stays exactly as printed. Guests will see it months later, when a plate arrives from the kitchen next door. The move reads at the back, never on the card.",
+            "expert": "A project can change category before any product change is visible to its users. The user-facing surface lags the architectural move that produced it."
+          }
+        }
+      ]
+    }
+  ]
+}

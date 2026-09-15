@@ -1,1 +1,223 @@
-{"schema":"argh/public-entity/v1","id":"dossier:project-mortality-state-machine","type":"dossier","slug":"project-mortality-state-machine","route":"/dossiers/project-mortality-state-machine/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Roo Code","AutoGen","Continue","TaskWeaver","CodeGate","SWE-agent","Aider"],"patterns":["project-mortality","convergence"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Un restaurant n’est pas seulement « ouvert » ou « fermé »","expert":"« Vivant ou mort » s’est révélé être le mauvais modèle de projet"},"en":{"kitchen":"A restaurant is not merely “open” or “closed”","expert":"‘Alive or dead’ turned out to be the wrong project model"}},"body":[{"fr":{"cuisine":"Une enseigne peut être en fermeture organisée, maintenance, passage de relais, lecture seule, archive, pivot, déménagement ou ralentissement : une seule étiquette ne raconte pas ces destins différents.","expert":"La reconstruction historique a produit plusieurs formes incompatibles de « mort » : sunset stratégique, maintenance, supersession, read-only, archive à cause inconnue, pivot raté, déplacement de repository et fort ralentissement."},"en":{"kitchen":"A restaurant can be in an organized wind-down, maintenance, handoff, read-only state, archive, pivot, move, or slowdown: one label cannot tell those different stories.","expert":"Historical reconstruction produced multiple incompatible ‘death’ shapes: strategic sunset, maintenance, supersession, read-only, archive with unknown cause, failed pivot, repository move and severe slowdown."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Roo montre une fermeture stratégique annoncée.","expert":"Roo démontre un sunset stratégique explicite."},"en":{"kitchen":"Roo shows an announced strategic sunset.","expert":"Roo demonstrated explicit strategic sunset."}},{"fr":{"cuisine":"AutoGen passe le relais à un successeur tout en maintenant encore l’ancien service.","expert":"AutoGen démontre une supersession avec maintenance."},"en":{"kitchen":"AutoGen hands work to a successor while still maintaining the old service.","expert":"AutoGen demonstrated supersession with maintenance."}},{"fr":{"cuisine":"Continue reste consultable, mais ne reçoit plus les changements d’un projet actif, sans avoir besoin d’être marqué archivé.","expert":"Continue démontre un état read-only sans dépendre du flag archive."},"en":{"kitchen":"Continue remains visible but no longer receives active-project changes, without needing an archive flag.","expert":"Continue demonstrated read-only without needing archive metadata."}},{"fr":{"cuisine":"TaskWeaver est archivé, mais la raison de cette archive reste inconnue.","expert":"TaskWeaver démontre une archive à cause incertaine."},"en":{"kitchen":"TaskWeaver is archived, but the reason for that archive remains unknown.","expert":"TaskWeaver demonstrated archive with uncertain cause."}},{"fr":{"cuisine":"SWE-agent change d’identité sans mourir ; Aider ralentit sans annoncer de fin officielle.","expert":"SWE-agent démontre un changement d’identité sans mort, tandis qu’Aider démontre un ralentissement sans déclaration officielle de fin."},"en":{"kitchen":"SWE-agent changes identity without dying; Aider slows down without an official end announcement.","expert":"SWE-agent demonstrated identity move without death, while Aider demonstrated slowdown without an official death declaration."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Compter les commits mélange des causes incompatibles : cela peut faire croire à la mort d’un service vivant, ou à la vie d’un service déjà abandonné.","expert":"La fréquence de commits écrase de nombreux états causaux différents dans une seule métrique et crée à la fois de fausses morts et de fausses vies."},"en":{"kitchen":"Counting commits mixes incompatible causes: it can make a living service look dead or a departed service look alive.","expert":"Commit frequency collapses many different causal states into one metric and creates both false deaths and false lives."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"La brigade suit les passages entre croissance, pivot, maintenance, successeur, ralentissement, fermeture, archive, transfert et continuation.","expert":"Suivre la trajectoire comme transitions : croissance, pivot, maintenance, successeur, ralentissement, sunset, archive, transfert et continuation."},"en":{"kitchen":"The crew follows transitions through growth, pivot, maintenance, successor, slowdown, sunset, archive, transfer, and continuation.","expert":"Track project trajectory as transitions: growth, pivot, maintenance, successor, slowdown, sunset, archive, transfer and continuation."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"Cette carte des trajectoires fait désormais partie du modèle de projet ARGH.","expert":"Désormais un modèle de première classe de l’intelligence projet ARGH."},"en":{"kitchen":"This trajectory map is now part of the ARGH project model.","expert":"Now a first-class ARGH project-intelligence model."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Pour savoir si le restaurant meurt, suivre ses passages entre service actif, pivot, maintenance et fermeture plutôt que guetter le silence.","expert":"La mort d’un projet est un graphe de transitions, pas du silence."},"en":{"kitchen":"To know whether a restaurant is dying, follow its moves through active service, pivot, maintenance, and closure rather than wait for silence.","expert":"Project death is a graph of transitions, not silence."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:project-mortality-state-machine",
+  "type": "dossier",
+  "slug": "project-mortality-state-machine",
+  "route": "/dossiers/project-mortality-state-machine/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Roo Code",
+      "AutoGen",
+      "Continue",
+      "TaskWeaver",
+      "CodeGate",
+      "SWE-agent",
+      "Aider"
+    ],
+    "patterns": [
+      "project-mortality",
+      "convergence"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Fermé ne veut pas dire la même chose d’une maison à l’autre",
+          "expert": "« Vivant ou mort » est le mauvais modèle de trajectoire de projet"
+        },
+        "en": {
+          "kitchen": "“Closed” does not mean the same thing from one house to the next",
+          "expert": "‘Alive or dead’ is the wrong model for a project’s trajectory"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Descendez une rue de restaurants — Roo Code, AutoGen, Continue, TaskWeaver, CodeGate, SWE-agent, Aider : plusieurs rideaux sont baissés et aucun ne raconte la même histoire. L’un a annoncé sa dernière soirée, l’autre a rouvert deux rues plus loin sous un autre nom. Un troisième laisse sa carte en vitrine sans plus servir personne. Le même rideau baissé recouvre des fins qui n’ont rien à voir entre elles.",
+            "expert": "La reconstruction historique fait apparaître plusieurs formes de « mort » incompatibles entre elles : sunset stratégique, maintenance, supersession, read-only, archive à cause inconnue, pivot raté, déplacement de repository et fort ralentissement. Un état binaire ne peut pas représenter ces trajectoires sans perdre la cause."
+          },
+          "en": {
+            "kitchen": "Walk down a street of restaurants — Roo Code, AutoGen, Continue, TaskWeaver, CodeGate, SWE-agent, Aider: several shutters are down, and no two tell the same story. One announced its last service; another reopened two streets away under a new name. A third leaves its menu in the window and serves nobody. The same closed shutter covers endings with nothing in common.",
+            "expert": "Historical reconstruction surfaced several mutually incompatible shapes of ‘death’: strategic sunset, maintenance, supersession, read-only, archive with unknown cause, failed pivot, repository move and severe slowdown. A binary state cannot represent those trajectories without discarding the cause."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Six rideaux baissés, six histoires différentes",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "Six shutters down, six different stories",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une maison annonce sa dernière soirée, avec la date et la raison.",
+            "expert": "Roo illustre un sunset stratégique explicite et annoncé."
+          },
+          "en": {
+            "kitchen": "One house announces its last service, with a date and a reason.",
+            "expert": "Roo demonstrates an explicit, announced strategic sunset."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Une autre ouvre sa nouvelle adresse et continue d’entretenir l’ancienne salle.",
+            "expert": "AutoGen illustre une supersession assortie d’une maintenance continue."
+          },
+          "en": {
+            "kitchen": "Another opens its new address and still keeps the old room in order.",
+            "expert": "AutoGen demonstrates supersession alongside continued maintenance."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Une troisième laisse la carte lisible en vitrine, mais ne sert plus une seule table.",
+            "expert": "Continue illustre un état read-only, sans recourir au flag d’archive."
+          },
+          "en": {
+            "kitchen": "A third keeps its menu readable in the window but serves not one table.",
+            "expert": "Continue demonstrates a read-only state without relying on archive metadata."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Une quatrième a baissé le rideau pour de bon, et personne ne sait pourquoi.",
+            "expert": "TaskWeaver illustre une archive dont la cause reste inconnue."
+          },
+          "en": {
+            "kitchen": "A fourth pulled its shutter down for good, and nobody knows why.",
+            "expert": "TaskWeaver demonstrates an archive whose cause remains unknown."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Une cinquième a changé de nom et de rue sans fermer ; une sixième ralentit sans rien annoncer.",
+            "expert": "SWE-agent illustre un changement d’identité sans mort, et Aider un fort ralentissement sans déclaration de fin."
+          },
+          "en": {
+            "kitchen": "A fifth changed its name and its street without closing; a sixth slows down and announces nothing.",
+            "expert": "SWE-agent demonstrates an identity move without death; Aider demonstrates severe slowdown with no declared end."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Compter les lumières allumées ne dit pas qui cuisine",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Counting lit windows does not tell you who is cooking",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Juger une maison au bruit qui en sort mélange des situations sans rapport. Une salle silencieuse peut très bien tourner à emporter ; une salle bruyante peut n’avoir plus personne aux fourneaux. On enterre alors des vivants, et on croit vivants des partis.",
+            "expert": "La fréquence de commits agrège des états causaux distincts dans une métrique unique. Elle produit donc simultanément des faux morts, projets stables et maintenus, et des fausses vies, où l’activité de surface survit à toute direction."
+          },
+          "en": {
+            "kitchen": "Judging a house by the noise coming out of it mixes up situations that have nothing to do with each other. A quiet room may be running fine on takeaway; a loud one may have nobody left at the stoves. So the living get buried, and the departed get counted as open.",
+            "expert": "Commit frequency folds distinct causal states into a single metric. It therefore produces false deaths — stable, maintained projects — and false lives, where surface activity outlasts any remaining direction."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Suivre les passages d’un état à l’autre",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Follow the moves from one state to the next",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On note les passages, pas le volume : la maison grandit, change de carte, se contente d’entretenir, passe la main. Elle ralentit, annonce sa fin, baisse le rideau, change de propriétaire, ou continue autrement. Chaque passage a sa cause, et c’est la cause qui renseigne.",
+            "expert": "Suivre la trajectoire comme une suite de transitions nommées : croissance, pivot, maintenance, successeur, ralentissement, sunset, archive, transfert, continuation. Chaque transition porte une cause, ce que ne conserve aucune métrique d’activité agrégée."
+          },
+          "en": {
+            "kitchen": "Record the moves, not the volume: a house grows, changes its menu, settles for upkeep, hands over. It slows, announces its end, pulls the shutter, changes owner, or carries on differently. Each move has a cause, and the cause is what tells you something.",
+            "expert": "Track trajectory as a sequence of named transitions: growth, pivot, maintenance, successor, slowdown, sunset, archive, transfer, continuation. Each transition carries a cause, which no aggregate activity metric preserves."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "C’est devenu la façon de lire une maison",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "It has become the way a house gets read",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Cette carte des passages sert maintenant à lire chaque maison suivie ici. On demande d’abord quel passage vient d’avoir lieu, avant de dire si la maison va bien.",
+            "expert": "Le modèle est désormais une primitive de première classe de l’intelligence projet ARGH. La trajectoire d’un projet s’y lit comme une transition d’état, non comme un niveau d’activité."
+          },
+          "en": {
+            "kitchen": "That map of moves is now how every house followed here gets read. The first question is which move just happened, before anyone says whether the house is doing well.",
+            "expert": "The model is now a first-class primitive in ARGH project intelligence. A project’s trajectory is read as a state transition rather than an activity level."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Le silence n’est pas une fermeture",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Silence is not a closure",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une maison ne meurt pas parce qu’elle fait moins de bruit. Pour savoir où elle en est, il faut suivre ses passages : elle grandit, elle entretient, elle passe la main, ou elle baisse le rideau.",
+            "expert": "La mort d’un projet est un graphe de transitions, pas un silence observé. L’absence d’activité reste un signal ambigu tant que la transition qui l’a produite n’est pas identifiée."
+          },
+          "en": {
+            "kitchen": "A house does not die because it has gone quiet. To know where it stands, follow its moves: growing, keeping up, handing over, or pulling the shutter down.",
+            "expert": "Project death is a graph of transitions, not observed silence. Absent activity stays ambiguous until the transition that produced it is identified."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,236 @@
-{"schema":"argh/public-entity/v1","id":"project:archon","type":"project","slug":"archon","route":"/projects/archon/","template":"project","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":[],"patterns":["checkpoint","convergence","failed-fix","installed-vs-source","release-state","runtime-identity","runtime-visible-state","second-fix"],"dossiers":["archon-installed-skill-drift","archon-session-resume-checkpoint","recovery-state-convergence","release-does-not-equal-observed-fix"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Archon","expert":"Archon"},"en":{"kitchen":"Archon","expert":"Archon"}},"body":[{"fr":{"cuisine":"Quatre dossiers publics pour suivre le parcours d’Archon : reprendre une session, vérifier ce qui est installé et ne pas confondre sortie de version avec correction observée.","expert":"4 dossiers publics rattachés à Archon."},"en":{"kitchen":"Four public dossiers following Archon’s trail: resuming a session, checking what is installed, and not mistaking a release for an observed fix.","expert":"4 public dossiers associated with Archon."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "project:archon",
+  "type": "project",
+  "slug": "archon",
+  "route": "/projects/archon/",
+  "template": "project",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [],
+    "patterns": [
+      "checkpoint",
+      "convergence",
+      "failed-fix",
+      "installed-vs-source",
+      "release-state",
+      "runtime-identity",
+      "runtime-visible-state",
+      "second-fix"
+    ],
+    "dossiers": [
+      "archon-installed-skill-drift",
+      "archon-session-resume-checkpoint",
+      "recovery-state-convergence",
+      "release-does-not-equal-observed-fix"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Archon",
+          "expert": "Archon"
+        },
+        "en": {
+          "kitchen": "Archon",
+          "expert": "Archon"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Archon, le déroulé de chaque service est dessiné à l’avance. Qui fait quoi, dans quel ordre, et où il faut une signature avant d’envoyer. C’est pendant ces attentes de signature que la maison s’est fait prendre.",
+            "expert": "Archon est un orchestrateur de flux agentiques : graphe de nœuds mêlant étapes IA, shell, script et approbation humaine, registre de fournisseurs, isolation par worktree, place de marché de flux épinglés et constructeur visuel. Deux lignées observées portent sur ce qu’un flux conserve pendant une attente humaine, et sur ce qu’un correctif posé au niveau des instructions ne peut pas garantir."
+          },
+          "en": {
+            "kitchen": "At Archon every service is drawn out in advance. Who does what, in what order, and where a signature is needed before anything goes out. It is during those waits for a signature that the house got caught.",
+            "expert": "Archon is an agentic workflow orchestrator: a node graph mixing AI, shell, script and human-approval steps, a provider registry, per-worktree isolation, a marketplace of pinned flows and a visual builder. Two observed lineages concern what a workflow keeps across a human wait, and what an instruction-level fix cannot guarantee."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui se passe pendant qu’on attend la signature",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "What happens while the signature is awaited",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La maison écrit ses déroulés à l’avance. Certaines étapes sont tenues par des machines, d’autres attendent qu’un humain signe.",
+            "expert": "Archon formalise chaque flux en graphe de nœuds, dont des nœuds d’approbation humaine, avec une isolation par worktree pour chaque exécution."
+          },
+          "en": {
+            "kitchen": "The house writes its runs out in advance. Some steps are held by machines, others wait for a person to sign.",
+            "expert": "Archon formalizes each flow as a node graph, human-approval nodes included, with per-worktree isolation for every run."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Au moment de la pause, on note tout pour pouvoir reprendre. On note aussi le numéro d’une réservation prise chez un fournisseur extérieur.",
+            "expert": "Un point de reprise durable conserve l’identifiant de session du fournisseur pendant l’attente humaine."
+          },
+          "en": {
+            "kitchen": "At the pause, everything gets written down so the run can be picked up again. Including the number of a booking held with an outside supplier.",
+            "expert": "A durable workflow checkpoint carried a provider session identifier across the human wait."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "L’attente dure. La réservation chez le fournisseur a une fin, et personne ne l’a écrite sur le papier.",
+            "expert": "Le bail de session côté fournisseur peut expirer pendant cette attente ; le point de reprise ne porte pas cette durée de vie."
+          },
+          "en": {
+            "kitchen": "The wait runs long. The supplier's booking has an end of its own, and nobody wrote that on the slip.",
+            "expert": "The provider-side session lease can expire during that wait; the checkpoint carries no such lifetime."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Autre histoire, même maison. On avait dit aux commis de ne pas glisser leurs brouillons dans le carton du client. Ça n’a pas suffi : un deuxième chemin laissait passer.",
+            "expert": "Sur une autre lignée, un correctif posé dans les instructions de l’agent laissait subsister un second chemin : des artefacts locaux de brouillon ou de valeurs par défaut pouvaient entrer silencieusement dans une proposition de changement."
+          },
+          "en": {
+            "kitchen": "Another story, same house. The commis were told not to slip their drafts into the customer's box. It was not enough: a second route let them through.",
+            "expert": "On a separate lineage, a fix placed in agent instructions left a second path open: local scratch and default artifacts could still enter an agent-generated change proposal unnoticed."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La première vraie réparation a été abandonnée avant d’être mise en service. Une seconde, refaite, a été adoptée : cette fois le carton lui-même refuse de se fermer sur un brouillon.",
+            "expert": "Une première réparation structurelle a été fermée sans être intégrée ; une garde en échec rapide, reconstruite, a ensuite été intégrée."
+          },
+          "en": {
+            "kitchen": "The first real repair was dropped before it ever went into service. A second one, rebuilt, was taken up: now the box itself refuses to close on a draft.",
+            "expert": "A first structural repair was closed unmerged; a rebuilt fail-fast guard was merged afterwards."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le défaut de la signature, lui, a été corrigé et vérifié en cuisine. Personne n’a encore vu la correction tenir un vrai soir de service.",
+            "expert": "Le correctif du point de reprise est intégré et validé en tests unitaires et d’intégration ; la confirmation en version publiée et en exécution réelle reste en attente."
+          },
+          "en": {
+            "kitchen": "The signature fault was corrected and checked inside the kitchen itself. Nobody has yet seen the correction hold through a real night of service.",
+            "expert": "The checkpoint fix is merged and validated by unit and integration tests; confirmation on a published release and a running runtime is still pending."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’un papier de reprise ne peut pas promettre",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "What a resume slip cannot promise",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le papier dit ce que la maison avait prévu. Il ne dit rien de ce que le fournisseur, lui, tient encore. Pendant l’attente, la maison n’a pas bougé et l’extérieur, si. Le brouillon dans le carton dit la même chose : une consigne au commis ne vaut pas un carton qui refuse de se fermer.",
+            "expert": "Deux contrôles ont été posés au mauvais niveau. Un point de reprise durable a traité un identifiant de session fournisseur comme une donnée dont il était propriétaire, alors que sa validité est tenue à l’extérieur et peut expirer pendant le temps d’attente humain. Un invariant portant sur ce qui peut entrer dans un artefact livré a été posé dans les instructions de l’agent, où il n’est pas déterministe, plutôt qu’à la frontière déterministe de données ou de construction."
+          },
+          "en": {
+            "kitchen": "The slip says what the house had planned. It says nothing about what the outside supplier still holds. During the wait the house stood still and the outside did not. The draft in the box tells the same thing another way: a rule given to a commis is not a box that refuses to close.",
+            "expert": "Two controls sat at the wrong level. A durable checkpoint treated a provider session identifier as data it owned, while that identifier's validity is held externally and can lapse across human wait time. An invariant governing what may enter a shipped artifact was placed in agent instructions, where it is not deterministic, rather than at the deterministic data or build boundary."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Écrire ce qu’on tient, et ce qu’on ne tient pas",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Write down what you hold, and what you do not",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Sur le papier de reprise, ne compter que sur ce qui appartient à la maison. Tout ce qui vient de l’extérieur se redemande au moment de s’en servir. Et une règle qui doit toujours tenir se met dans le geste, pas sur un papier punaisé au mur.",
+            "expert": "Un point de reprise persisté ne doit pas supposer qu’une session, un bail ou une poignée externes restent valides pendant le temps d’attente humain ; il les revalide au moment de l’usage. Quand un invariant protège ce qui peut entrer dans un artefact livré, il s’applique à la frontière déterministe de données ou de construction plutôt que dans les seules instructions de l’agent. Un mode de permission affiché n’est pas une preuve de capacité effective : le harnais doit exposer et vérifier l’ensemble d’outils et de droits réellement remis à l’agent en cours d’exécution."
+          },
+          "en": {
+            "kitchen": "On the resume slip, count only on what the house owns. Anything held outside gets asked for again at the moment it is used. And a rule that must always hold does not go on the wall: it goes into the gesture, where it cannot be skipped.",
+            "expert": "A persisted checkpoint must not assume that an external session, lease or handle stays valid across human wait time; it revalidates at the point of use. Where an invariant protects what may enter a shipped artifact, enforce it at the deterministic data or build boundary rather than in agent instructions alone. A displayed permission mode is not evidence of effective capability: the harness should expose and verify the tool and permission set actually delivered to the running agent."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Où en est Archon",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "Where Archon stands",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Les deux réparations sont en service, mais aucune n’a encore été vue tenir un vrai soir. Une autre maison a signalé la même forme : un refus d’outil accepté sur le papier, absent une fois au piano. Et une piste, encore faible, parle de fiches installées restées périmées pendant que le contrôle du matin disait tout bon.",
+            "expert": "Le correctif du point de reprise est intégré et validé en tests unitaires et d’intégration ; la corrélation avec une version publiée et une exécution réelle reste en attente. La garde structurelle en échec rapide est intégrée après la fermeture sans intégration d’une première réparation ; aucune preuve de version publiée ni d’artefact installé n’a encore été corrélée. Un second projet a rapporté la même forme sur un refus d’outil déclaré dans un nœud de boucle : accepté, mais absent de l’exécution effective, sans avertissement dans le validateur destiné à l’auteur. Une piste héritée, de faible confiance, décrit des compétences locales restées obsolètes après une montée de version alors que le diagnostic restait au vert."
+          },
+          "en": {
+            "kitchen": "Both repairs are in service, but neither has been seen holding through a real night yet. Another house reported the same shape: a tool refusal accepted on paper, missing once at the stoves. And one weak lead speaks of installed cards left out of date while the morning check called everything fine.",
+            "expert": "The checkpoint fix is merged and validated by unit and integration tests; correlation with a published release and a running runtime is still pending. The structural fail-fast guard is merged after a first repair was closed unmerged; no release or installed-artifact evidence has been correlated yet. A second project reported the same shape on a declared tool denial inside a loop node: accepted, yet omitted from effective execution, with no warning in the author-facing validator. One inherited low-confidence lead describes repo-local skills left stale after an upgrade while the doctor check stayed green."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on retient de l’attente",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What the wait teaches",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qu’on note sur un papier ne vaut que pour ce qui appartient à la maison. Et la deuxième réparation est souvent celle qui montre où le contrôle devait être posé.",
+            "expert": "Un point de reprise persisté ne peut engager que l’état dont il est propriétaire ; toute validité tenue à l’extérieur se revérifie au moment de l’usage. La seconde réparation révèle souvent la vraie frontière d’abstraction : elle nomme le niveau auquel le contrôle aurait dû être posé dès le départ."
+          },
+          "en": {
+            "kitchen": "What you write on a slip is only good for what the house owns. And the second repair is usually the one that shows where the control belonged.",
+            "expert": "A persisted checkpoint can only commit state it owns; any validity held externally has to be rechecked at the point of use. The second fix often reveals the real abstraction boundary: it names the level where the control belonged in the first place."
+          }
+        }
+      ]
+    }
+  ]
+}

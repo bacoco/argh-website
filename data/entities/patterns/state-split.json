@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:state-split","type":"pattern","slug":"state-split","route":"/patterns/state-split/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Codex"],"patterns":[],"dossiers":["conversation-rewind-workspace-stayed-mutated"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Revenir en arrière doit remettre ensemble tous les morceaux du service","expert":"État scindé"},"en":{"kitchen":"Rewinding must bring all parts of the service back together","expert":"State Split"}},"body":[{"fr":{"cuisine":"Remonter le carnet sans remettre le plan de travail dans le même état crée deux versions incompatibles du même service.","expert":"Un state split apparaît lorsque plusieurs composantes d’un même état logique évoluent ou sont restaurées indépendamment et deviennent incohérentes."},"en":{"kitchen":"Rewinding the notebook without restoring the workbench creates two incompatible versions of one service.","expert":"A state split occurs when components of one logical state evolve or are restored independently and become inconsistent."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:state-split",
+  "type": "pattern",
+  "slug": "state-split",
+  "route": "/patterns/state-split/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Codex"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "conversation-rewind-workspace-stayed-mutated"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "L’annulation arrive au carnet et n’arrive jamais au piano",
+          "expert": "Une même tâche vit dans deux historiques que l’on restaure séparément"
+        },
+        "en": {
+          "kitchen": "The cancellation reaches the book and never reaches the stove",
+          "expert": "One task lives in two histories that get restored separately"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Codex, on efface du carnet ce qui vient d’être dit : la commande redevient ce qu’elle était. Sur le piano, rien ne bouge — le plat a déjà avancé, et il reste tel quel. La maison tient alors deux versions de la même soirée, et chacune se défend très bien toute seule.",
+            "expert": "Un state split apparaît quand plusieurs composantes d’un même état logique évoluent ou sont restaurées indépendamment et cessent d’être cohérentes. Chez Codex, un rewind pouvait restaurer l’historique conversationnel en laissant en place les modifications de fichiers, produisant une divergence entre ce dont l’agent se souvient et ce que contient le workspace. Aucune des deux moitiés n’est fausse prise isolément."
+          },
+          "en": {
+            "kitchen": "Strike the line off the book at Codex and the order goes back to what it was. On the stoves nothing moves: the dish has already come along, and it stays where it got to. The house now holds two accounts of one evening, and neither of them looks wrong.",
+            "expert": "A state split appears when components of one logical state evolve or are restored independently and stop agreeing. At Codex a rewind could restore conversational history while leaving file modifications in place, producing a divergence between what the agent remembers and what the workspace holds. Neither half is wrong taken on its own."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui trahit une maison qui se souvient de deux soirées",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "What gives away a house holding two versions of one night",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le cuisinier se met à un travail qu’il croit encore à faire, et il l’a déjà fait. Rien ne proteste : ni le carnet, ni le plat. Le désaccord ne se voit qu’en regardant les deux au même instant, ce que personne ne fait pendant le coup de feu.",
+            "expert": "L’agent repris raisonne juste depuis une conversation antérieure et faux contre un filesystem plus récent, sans que rien dans la trace ne signale l’écart. Chaque moitié est cohérente en elle-même : le transcript est complet sur ce qui a été dit, le working tree exact sur ce qui a été écrit. Le signal n’existe qu’au rapprochement des deux, et aucun des deux ne l’émet seul."
+          },
+          "en": {
+            "kitchen": "A cook sets out to do work he has already done, and nothing on either side contradicts him. Read the book: it holds. Look at the pans: they hold too. The gap only shows when someone sets the two side by side, which nobody does mid-service.",
+            "expert": "The resumed agent reasons correctly from an earlier conversation and incorrectly against a newer filesystem, with nothing in the trace flagging the mismatch. Each half is internally consistent: the transcript is complete about what was said, the working tree accurate about what was written. The signal exists only in the comparison, and neither side emits it alone."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi les deux moitiés ont l’air d’accord",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why both halves look perfectly in order",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le carnet garde ce qui a été dit, le piano garde ce qui a été fait. Ce sont deux mémoires, et l’encre ne revient que sur l’une. Rien n’a raté : on a fait exactement ce qu’on demandait. L’addition arrive au premier geste qui suppose les deux au même point.",
+            "expert": "État conversationnel et état du workspace sont deux historiques indépendants, chacun avec son propre point de restauration, alors que la tâche dépend de leur alignement. Rembobiner un seul des deux ne produit pas une erreur mais une divergence silencieuse, parce que l’opération réussit exactement comme demandé. Le coût est reporté sur la première action qui suppose les deux au même point."
+          },
+          "en": {
+            "kitchen": "Two memories run side by side: words on paper, and heat already put into the food. Only one of them comes back with a pen. Nothing failed — what was asked for is exactly what happened. The bill arrives at the first move that assumes both are at the same point.",
+            "expert": "Conversational state and workspace state are independent histories with separate restore points, while the task depends on their alignment. Rewinding only one produces no error but a silent divergence, because the operation succeeds exactly as asked. The cost lands on the first action that assumes both sit at the same point."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Effacer des deux côtés, ou montrer ce qui ne s’efface pas",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Clear both sides, or show what will not clear",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qu’on efface d’un côté, on le défait de l’autre, ou bien on dit clairement ce qui reste. Avant de revenir en arrière, montre au cuisinier le travail qui ne reviendra pas, et laisse-le trancher. Chez Codex, c’est ce qu’on réclame ; rien n’établit que ce soit en place.",
+            "expert": "Un rewind correct demande un modèle de checkpoint capable de restaurer les mutations du workspace ou de les préserver explicitement, et d’afficher les conflits avant application. C’est la réponse proposée, avec une demande de checkpoints unifiés incluant prévisualisation et gestion des conflits ; ce n’est pas un correctif dont la livraison soit établie. La direction observée à travers plusieurs harnais traite l’environnement d’exécution comme une partie de l’état restaurable."
+          },
+          "en": {
+            "kitchen": "Undo it on both sides, or say out loud what will not undo. Before anything is taken back, put the work that stays in front of the cook, and let him choose. That is what people are asking Codex for; nothing establishes it is in place.",
+            "expert": "A correct rewind requires a checkpoint model that either restores workspace mutations or preserves them explicitly, and surfaces conflicts before applying anything. That is the proposed response, alongside a request for unified checkpoints with preview and conflict handling; it is not a fix whose delivery is established. The direction observed across several harnesses treats the execution environment as part of restorable state."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La règle que Codex laisse entre le carnet et le piano",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The rule Codex leaves between the book and the stove",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Revenir sur ce qui a été dit ne défait rien de ce qui a été cuit. Une soirée reprise d’un seul côté n’est pas une soirée rattrapée.",
+            "expert": "Un identifiant de conversation n’est pas un checkpoint d’exécution. Restaurer l’un sans l’autre ne rend pas un état antérieur : cela laisse un état que ni la trace ni le disque ne décrit correctement."
+          },
+          "en": {
+            "kitchen": "Taking back the words takes nothing back off the heat. An evening put right on one side only is not an evening put right.",
+            "expert": "A conversation identifier is not an execution checkpoint. Restoring one without the other does not yield an earlier state; it yields a state that neither the trace nor the disk describes correctly."
+          }
+        }
+      ]
+    }
+  ]
+}

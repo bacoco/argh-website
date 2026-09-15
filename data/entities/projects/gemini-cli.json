@@ -1,1 +1,262 @@
-{"schema":"argh/public-entity/v1","id":"project:gemini-cli","type":"project","slug":"gemini-cli","route":"/projects/gemini-cli/","template":"project","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":[],"patterns":["checkpoint","control-files","convergence","cross-harness","defaults","documentation-drift","hooks-enforcement","logging","mcp","pre-model-redaction","privacy-boundary","release-state","routing","runtime-visible-state","second-fix","skills-runtime","subagents","trust-boundary"],"dossiers":["skills-default-on-docs-lag","gemini-trust-couples-hooks-mcp-instructions","mcp-common-protocol-local-policy","skills-cross-harness-convergence","hooks-cross-harness-convergence","subagents-delegation-control-plane","release-does-not-equal-observed-fix","control-files-interoperability","control-plane-convergence","redact-before-model-boundary"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Gemini CLI","expert":"Gemini CLI"},"en":{"kitchen":"Gemini CLI","expert":"Gemini CLI"}},"body":[{"fr":{"cuisine":"Dix dossiers publics pour suivre Gemini CLI côté cuisine : des consignes qui arrivent trop tard, des outils reliés par MCP, des sous-agents et le filtrage avant d’envoyer au modèle.","expert":"10 dossiers publics rattachés à Gemini CLI."},"en":{"kitchen":"Ten public dossiers on Gemini CLI’s kitchen side: instructions that arrive too late, MCP-connected tools, subagents, and filtering before data reaches the model.","expert":"10 public dossiers associated with Gemini CLI."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "project:gemini-cli",
+  "type": "project",
+  "slug": "gemini-cli",
+  "route": "/projects/gemini-cli/",
+  "template": "project",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [],
+    "patterns": [
+      "checkpoint",
+      "control-files",
+      "convergence",
+      "cross-harness",
+      "defaults",
+      "documentation-drift",
+      "hooks-enforcement",
+      "logging",
+      "mcp",
+      "pre-model-redaction",
+      "privacy-boundary",
+      "release-state",
+      "routing",
+      "runtime-visible-state",
+      "second-fix",
+      "skills-runtime",
+      "subagents",
+      "trust-boundary"
+    ],
+    "dossiers": [
+      "skills-default-on-docs-lag",
+      "gemini-trust-couples-hooks-mcp-instructions",
+      "mcp-common-protocol-local-policy",
+      "skills-cross-harness-convergence",
+      "hooks-cross-harness-convergence",
+      "subagents-delegation-control-plane",
+      "release-does-not-equal-observed-fix",
+      "control-files-interoperability",
+      "control-plane-convergence",
+      "redact-before-model-boundary"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Gemini CLI",
+          "expert": "Gemini CLI"
+        },
+        "en": {
+          "kitchen": "Gemini CLI",
+          "expert": "Gemini CLI"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Gemini CLI, une belle fiche punaisée au tableau a fait croire à un plat. Le plat existe aujourd’hui, mais il vient d’une autre main, par un autre chemin. Et le jour où un essai est passé à la carte, le menu imprimé disait encore « à l’essai ».",
+            "expert": "Deux lignées structurent cette page. Une proposition de hooks très convaincante a été fermée sans merge, alors qu’un sous-système de hooks existe bien aujourd’hui dans la source observée, construit par une autre voie. Et les Agent Skills sont passés d’expérimental opt-in à activé par défaut, puis au retrait du drapeau hérité, la corrélation release et paquet restant à faire."
+          },
+          "en": {
+            "kitchen": "At Gemini CLI, a fine card pinned to the board made people believe in a dish. The dish does exist today, but it came from another hand, by another route. And the day a trial moved onto the menu, the printed card still said “trial”.",
+            "expert": "Two lineages carry this page. A highly persuasive hooks proposal closed unmerged, while a hooks subsystem does exist in the observed source today, built along a different path. And Agent Skills moved from opt-in experiment to default-on, then to removal of the legacy flag, with release and package correlation still outstanding."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Du tableau des propositions à la carte du soir",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "From the proposals board to tonight’s menu",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une fiche est punaisée au tableau : le plat est si bien décrit qu’on le voit presque dans l’assiette. Elle est décrochée sans jamais passer au feu.",
+            "expert": "La proposition d’origine pour les hooks a été fermée sans merge. Son corps, très argumenté, décrivait un sous-système complet."
+          },
+          "en": {
+            "kitchen": "A card goes up on the board: the dish is so well written you can almost see the plate. It comes down again without ever reaching the stove.",
+            "expert": "The original hooks proposal closed unmerged. Its body argued in detail for a complete subsystem."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Pourtant, si on pousse la porte aujourd’hui, le plat est là. Quelqu’un d’autre l’a monté, autrement : points de contrôle, ordre de passage, liste de ce à quoi on se fie.",
+            "expert": "Des documents mergés plus tard et la source actuelle établissent l’existence d’un sous-système de hooks : runner, planner, registre, agrégateur, hooks de confiance, confiance de dossier, migration depuis les hooks Claude. La capacité est réelle, mais elle ne vient pas de la proposition fermée."
+          },
+          "en": {
+            "kitchen": "Push the door today, though, and the dish is there. Somebody else built it, another way: checkpoints, an order of passage, a list of what is trusted.",
+            "expert": "Later merged documentation and the current source establish a real hooks subsystem: runner, planner, registry, aggregator, trusted hooks, folder trust, and a migration path from Claude hooks. The capability is real, but it did not come from the closed proposal."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Deux autres fiches du même tableau ont fini pareil. Elles se lisent encore très bien. Elles n’ont jamais nourri personne.",
+            "expert": "Deux autres propositions de la même lignée, mode plan et limite de récursion, sont elles aussi fermées sans merge. Elles restent des preuves de conception, pas des capacités."
+          },
+          "en": {
+            "kitchen": "Two more cards from the same board ended the same way. They still read beautifully. They never fed anyone.",
+            "expert": "Two further proposals in the same lineage, plan mode and a recursion limit, also closed unmerged. They remain design evidence, not capability."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Changement de tableau. Les fiches de recettes arrivent d’abord en essai : il faut demander pour y avoir droit.",
+            "expert": "Les Agent Skills sont d’abord livrés en mode expérimental opt-in, derrière un drapeau explicite. L’activation reste une décision de l’utilisateur."
+          },
+          "en": {
+            "kitchen": "Different board. The recipe cards arrive on trial first: you have to ask before you may use them.",
+            "expert": "Agent Skills first ship as an opt-in experiment behind an explicit flag. Activation stays a user decision."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Puis elles passent à la carte principale : tout le monde y a droit sans rien demander. Mais le menu imprimé et l’ardoise disent encore « à l’essai ».",
+            "expert": "Une transition mergée les active par défaut. Documentation et interface conservent pourtant le vocabulaire expérimental antérieur, pour compatibilité, ce qui désaligne le comportement réel et la description publiée."
+          },
+          "en": {
+            "kitchen": "Then they move onto the main menu: everyone gets them without asking. But the printed card and the chalkboard still say “trial”.",
+            "expert": "A merged transition switches them on by default. Documentation and UI nonetheless keep the older experimental vocabulary for compatibility, so real behaviour and published description drift apart."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le ménage arrive ensuite. L’ancienne mention disparaît du menu, et les fiches sont récrites pour dire ce qui se passe vraiment.",
+            "expert": "Un changement mergé supprime ensuite le drapeau expérimental hérité et nettoie la documentation. Le vocabulaire publié rejoint le comportement par défaut."
+          },
+          "en": {
+            "kitchen": "The clean-up comes after. The old wording leaves the menu, and the cards are rewritten to say what actually happens.",
+            "expert": "A later merged change removes the legacy experimental flag and cleans the documentation. Published vocabulary catches up with default behaviour."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Reste une chose qu’on n’a pas faite : aller voir, dans les cartons partis chez les clients, ce qu’ils ont réellement reçu.",
+            "expert": "La corrélation entre release et paquet reste à compléter. Tant qu’elle ne l’est pas, le déploiement terrain de l’activation par défaut n’est pas pleinement prouvé."
+          },
+          "en": {
+            "kitchen": "One thing is still undone: opening the crates that went out to customers, to see what they actually received.",
+            "expert": "Release and package correlation remains to be completed. Until it is, the field rollout of the default-on change is not fully proven."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi une fiche bien écrite ressemble à un plat servi",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a well-written card looks like a plate that went out",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une fiche bien écrite raconte le plat au présent. On la lit, on l’imagine, on la range dans sa tête au rayon « ça existe ». Le tableau des propositions et le passe ne sont pourtant pas le même endroit, et rien n’oblige une fiche à traverser.",
+            "expert": "Un lecteur d’historique qui prend le corps d’une PR pour la capacité fabrique une roadmap. État de merge, implémentation canonique, release et observation à l’exécution sont quatre enregistrements distincts, et une proposition fermée n’en atteste aucun. Le même écart apparaît sur l’activation par défaut : basculer un drapeau ne migre ni la configuration, ni la découvrabilité, ni les tests, ni la documentation."
+          },
+          "en": {
+            "kitchen": "A well-written card tells the dish in the present tense. You read it, you picture it, you file it under “this exists”. The proposals board and the pass are not the same place, though, and nothing obliges a card to cross.",
+            "expert": "A historical scanner that reads a pull request body as capability fabricates a roadmap. Merge state, canonical implementation, release and runtime observation are four separate records, and a closed proposal attests to none of them. The same gap shows up in the default-on change: flipping a flag migrates neither configuration, nor discoverability, nor tests, nor documentation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Quatre preuves à réclamer, et un local qui s’éteint d’un bloc",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Four proofs to ask for, and a room that goes dark all at once",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On ne croit plus une fiche sur parole. On demande si elle est passée au feu, et ce que le client a trouvé dans son carton. Gemini CLI applique déjà cette prudence ailleurs. Dans un local dont on ne répond pas, contrôles posés, fournisseurs du dehors et consignes punaisées s’éteignent ensemble : tous font agir la cuisine.",
+            "expert": "La réponse documentée est méthodologique : ne jamais inférer une capacité produit d’un corps de PR persuasif, et suivre séparément état de merge, implémentation canonique, release et preuve d’exécution. Promouvoir une primitive de harnais en activation par défaut se traite comme un cycle de vie par étapes — migration de configuration, découvrabilité, tests, documentation cohérente entre canaux de release. Côté produit, le modèle de confiance de Gemini CLI désactive ensemble hooks projet, serveurs MCP et fichiers d’instructions dans les dossiers non fiables, les traitant comme une même classe d’influence exécutable."
+          },
+          "en": {
+            "kitchen": "No card is taken on its word any more: ask whether it reached the stove, and what the customer found in the crate. Gemini CLI already applies that caution elsewhere. In a room it does not vouch for, posted checks, outside suppliers and pinned notices go dark together. All three can make the kitchen act.",
+            "expert": "The documented response is methodological: never infer product capability from a persuasive pull request body, and track merge state, canonical implementation, release and runtime evidence separately. Promoting a harness primitive to default-on is handled as a staged lifecycle — config migration, discoverability, tests, and documentation kept coherent across release channels. On the product side, Gemini CLI’s trust model disables project hooks, MCP servers and instruction files together in untrusted folders, treating them as one class of executable influence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui est sorti du passe, ce qui n’est resté qu’écrit",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "What left the pass, and what stayed on paper",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le plat existe, ça se vérifie en poussant la porte. Le passage à la carte principale s’est fait, et le menu a été récrit derrière. Ce qu’on n’a pas vérifié, c’est le carton du client. Et les fiches décrochées, elles, n’ont jamais rien nourri.",
+            "expert": "Établi : un sous-système de hooks présent dans la source observée, la transition mergée vers l’activation par défaut, et le retrait mergé du drapeau expérimental hérité. Non établi : la corrélation release et paquet du déploiement, qui laisse le rollout terrain en deçà du pleinement prouvé. Les propositions fermées sans merge — hooks d’origine, mode plan, limite de récursion — n’ont livré aucune capacité et restent des preuves de conception."
+          },
+          "en": {
+            "kitchen": "The dish exists; push the door and you see it. The move onto the main menu happened, and the wording was rewritten afterwards. What has not been checked is the customer’s crate. And the cards taken down never fed anyone.",
+            "expert": "Established: a hooks subsystem present in the observed source, the merged transition to default-on, and the merged removal of the legacy experimental flag. Not established: release and package correlation for the rollout, which leaves field deployment short of fully proven. The proposals that closed unmerged — the original hooks one, plan mode, the recursion limit — delivered no capability and remain design evidence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Une fiche n’a jamais nourri personne",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "A card never fed anyone",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui est écrit sur le tableau n’est pas ce qui sort du passe. Va voir l’assiette, puis va voir le carton du client.",
+            "expert": "Une proposition persuasive n’est pas une capacité : état de merge, implémentation, release et exécution se suivent séparément. Et une bascule par défaut est un cycle de vie, pas un booléen."
+          },
+          "en": {
+            "kitchen": "What is written on the board is not what leaves the pass. Go and look at the plate, then go and look at the customer’s crate.",
+            "expert": "A persuasive proposal is not a capability: merge state, implementation, release and runtime evidence are tracked apart. And a default-on switch is a lifecycle, not a boolean."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,152 @@
-{"schema":"argh/public-entity/v1","id":"pattern:regression","type":"pattern","slug":"regression","route":"/patterns/regression/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Claude Code","Codex"],"patterns":[],"dossiers":["subagent-routing-hidden-capability","permission-ui-approved-wrong-action"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Une réparation peut rouvrir une ancienne panne","expert":"Régression"},"en":{"kitchen":"A repair can bring an old failure back","expert":"Regression"}},"body":[{"fr":{"cuisine":"Un changement utile aujourd’hui peut casser demain un comportement qui fonctionnait déjà.","expert":"Une régression est la réapparition ou l’introduction d’un défaut sur un comportement précédemment valide après une modification."},"en":{"kitchen":"A useful change today can break behavior that already worked yesterday.","expert":"A regression is the reappearance or introduction of a defect in previously valid behavior after a change."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:regression",
+  "type": "pattern",
+  "slug": "regression",
+  "route": "/patterns/regression/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Claude Code",
+      "Codex"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "subagent-routing-hidden-capability",
+      "permission-ui-approved-wrong-action"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "La même faute approuvée deux fois, à des mois d’écart",
+          "expert": "Un défaut qui revient après un correctif structurel"
+        },
+        "en": {
+          "kitchen": "The same wrong nod given twice, months apart",
+          "expert": "A defect that returns after a structural fix"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Claude Code, la fiche soumise au patron pouvait mettre en avant un geste sans importance et laisser derrière celui qui comptait. La faute avait été traitée une fois, puis elle est revenue. C’est ce retour qui prouve la panne, plus que la première fois.",
+            "expert": "Une régression est la réapparition ou l’introduction d’un défaut sur un comportement précédemment valide après une modification. Sur les commandes shell composées de Claude Code, le prompt de permission pouvait mettre en avant un changement de répertoire anodin tandis que l’opération Git significative restait masquée derrière. Dans cette famille d’incidents, c’est la récidive après un correctif structurel qui constitue l’élément probant."
+          },
+          "en": {
+            "kitchen": "At Claude Code the slip put before the boss could lead with a harmless step and leave the one that mattered behind it. The fault was dealt with once, and then it came back. That return is the proof, far more than the first time was.",
+            "expert": "A regression is the reappearance or introduction of a defect in previously valid behavior after a change. On composed shell commands in Claude Code, the permission prompt could foreground a benign directory change while the significant Git operation stayed hidden behind it. In that incident family, recurrence after a structural fix is the probative element."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui revient, et ce qui disparaît sans bruit",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "What comes back, and what quietly goes missing",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une même mauvaise approbation, deux fois à des mois d’écart, n’est pas de la malchance. Chez Codex, on a caché des mentions sur la fiche, par discrétion. Ces mentions servaient aussi à choisir qui préparait le plat, et rien n’a prévenu que ce choix avait disparu.",
+            "expert": "Deux signaux : la récidive d’un comportement fautif après un correctif, et la suppression d’un champ qui portait aussi une décision. Un changement de Codex masque par défaut des métadonnées de subagent dans le schéma visible par le modèle ; les champs retirés portaient la sélection du comportement délégué, type d’agent et choix de modèle. Aucune des deux formes ne se signale par une erreur : la première se voit à la répétition, la seconde à la capacité disparue."
+          },
+          "en": {
+            "kitchen": "The same wrong nod twice, months apart, is not bad luck. At Codex, lines were hidden on the slip for the sake of discretion. Those lines also decided who cooked the dish, and nothing announced that the choice had gone.",
+            "expert": "Two signals: a faulty behavior recurring after a fix, and the removal of a field that also carried a decision. A Codex change hides subagent metadata by default in the model-visible schema; the removed fields carried delegated-behavior selection — agent type and model choice. Neither form raises an error: the first shows as repetition, the second as a capability that is simply gone."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi une fiche qu’on allège devient dangereuse",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a tidied slip turns dangerous",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La fiche sert à deux choses à la fois : montrer, et décider. Quand on l’allège pour la rendre plus lisible, on retire parfois ce qui décidait. Et quand elle met en avant le geste anodin, le patron approuve ce qu’il lit, pas ce qui sera fait.",
+            "expert": "Dans un système d’agents, une surface d’affichage est aussi une surface exécutable : retirer un champ retire, avec l’information, la décision que le modèle prenait à partir d’elle. Le découpage peut rester syntaxiquement correct alors que l’interface retient un segment à faible risque comme action représentative. Dans les deux cas, la modification poursuit un objectif légitime — confidentialité, simplification, lisibilité — et le défaut n’apparaît qu’au comportement."
+          },
+          "en": {
+            "kitchen": "The slip does two jobs at once: it shows, and it decides. Tidy it up for legibility and you sometimes remove the part that was deciding. Lead with the harmless step and the boss approves what he reads, never what will actually be done.",
+            "expert": "In an agent system a display surface is also an executable surface: removing a field removes, along with the information, the decision the model was making from it. Parsing can stay syntactically correct while the interface picks a low-risk segment as the representative action. In both cases the change pursues a legitimate goal — privacy, simplification, legibility — and the defect surfaces only in behavior."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on vérifie après avoir touché à une fiche",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What to check after touching a slip",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Après chaque retouche, refais passer le cas qui avait déjà mal tourné. Vérifie que ce que le patron lit sur la fiche est bien ce qui sera fait. Et avant de retirer une mention, demande si quelqu’un s’en servait pour décider.",
+            "expert": "Traiter tout champ à partir duquel le modèle peut agir comme appartenant à la surface de capacité, et non comme un élément d’affichage : son retrait se teste comme un changement de comportement. Pour une surface d’approbation, vérifier que le libellé présenté couvre l’autorité réellement accordée. La récidive après correctif se couvre par un cas de non-régression dédié, la répétition étant ici le seul indicateur disponible."
+          },
+          "en": {
+            "kitchen": "After every touch-up, run the case that already went wrong back through. Check that what the boss reads on the slip is what will actually happen. And before removing a line, ask whether anyone was using it to decide.",
+            "expert": "Treat any field the model can act on as part of the capability surface rather than as display, and test its removal as a behavior change. For an approval surface, verify that the label shown covers the authority actually granted. Cover post-fix recurrence with a dedicated non-regression case, since repetition is the only indicator available here."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La règle que laissent ces deux fiches",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The rule those two slips leave behind",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une faute qui revient après réparation en dit plus long que la première fois. Et approuver la mauvaise ligne d’une fiche, ce n’est pas approuver.",
+            "expert": "Approuver la mauvaise description n’est pas une approbation éclairée : l’accord ne couvre que ce que le libellé énonce. Et un champ à partir duquel le modèle peut agir appartient à la surface de capacité, quelle que soit son apparence d’affichage ; le modifier est un changement de comportement, à traiter comme tel."
+          },
+          "en": {
+            "kitchen": "A fault that returns after a repair says more than the first one did. And nodding at the wrong line on a slip is not approval at all.",
+            "expert": "Approving the wrong description is not informed approval: consent covers only what the label states. And a field the model can act on belongs to the capability surface whatever it looks like on screen; changing it is a behavior change and is handled as one."
+          }
+        }
+      ]
+    }
+  ]
+}

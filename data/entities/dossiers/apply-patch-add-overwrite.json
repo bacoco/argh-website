@@ -1,1 +1,218 @@
-{"schema":"argh/public-entity/v1","id":"dossier:apply-patch-add-overwrite","type":"dossier","slug":"apply-patch-add-overwrite","route":"/dossiers/apply-patch-add-overwrite/","template":"dossier","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Cline"],"patterns":["destructive-write","runtime-boundary","testing"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"« Ajouter une nouvelle assiette » a commencé par jeter l’ancienne","expert":"« Ajouter un fichier » est silencieusement devenu « remplacer le fichier »"},"en":{"kitchen":"“Add a new plate” started by throwing away the old one","expert":"‘Add file’ silently became ‘replace file’"}},"body":[{"fr":{"cuisine":"Une opération présentée comme un ajout pouvait remplacer silencieusement ce qui se trouvait déjà à la place. Le contrôle regardait une liste incomplète au lieu de vérifier la vraie table au moment du remplacement.","expert":"Une primitive d’édition décrite comme une opération d’ajout pouvait remplacer silencieusement un fichier existant parce que son contrôle de sécurité consultait un état incomplet au lieu de la destination à la frontière destructive."},"en":{"kitchen":"An operation described as an add could silently replace what was already there. The guard checked an incomplete list instead of the real table at the point of replacement.","expert":"A file-editing primitive described as an add operation could silently replace an existing file because its safety check consulted incomplete state instead of the destination at the destructive boundary."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Ce qui s’est passé en cuisine","expert":"Chronologie"},"en":{"kitchen":"What happened in the kitchen","expert":"Timeline"}},"body":[{"fr":{"cuisine":"La commande dit explicitement « ajouter ».","expert":"L’opération possédait un garde explicite destiné à refuser une destination déjà existante."},"en":{"kitchen":"The order explicitly says “add.”","expert":"The operation had an explicit guard intended to reject an existing destination."}},{"fr":{"cuisine":"Le garde consulte une représentation qui ne contient pas toutes les destinations existantes.","expert":"Le garde consultait une représentation mémoire partielle qui ne contenait pas les cibles d’ajout seules."},"en":{"kitchen":"The guard consults a representation that omits some existing destinations.","expert":"The guard consulted a partial in-memory representation that did not contain add-only targets."}},{"fr":{"cuisine":"Le fichier existant atteint l’écriture finale : l’ajout annoncé devient un remplacement silencieux.","expert":"Un fichier existant pouvait donc atteindre l’écriture finale et être remplacé sans avertissement."},"en":{"kitchen":"The existing file reaches the final write: the promised add becomes a silent replacement.","expert":"An existing file could therefore reach the final write and be replaced without warning."}},{"fr":{"cuisine":"Le correctif consulte enfin la destination réelle et son test de régression garde le fichier d’origine intact.","expert":"Le correctif a réintroduit l’état réel de la destination dans le chemin de décision et ajouté un test de régression qui préserve le fichier d’origine."},"en":{"kitchen":"The repair finally checks the real destination, and its regression test keeps the original file intact.","expert":"The repair moved the missing destination state into the decision path and added a regression test that preserves the original file."}},{"fr":{"cuisine":"Le correctif est mergé et couvert en régression ; la release qui l’emporte et la récupération observée restent inconnues au cutoff.","expert":"Le correctif est mergé et testé en régression ; son inclusion dans une release et la récupération terrain n’étaient pas établies au cutoff observé."},"en":{"kitchen":"The repair is merged and regression-tested; the release carrying it and observed field recovery remain unknown at the cutoff.","expert":"The repair is merged and regression-tested; release inclusion and field recovery were not established at the observed cutoff."}}]},{"id":"mechanism","kind":"section","heading":{"fr":{"cuisine":"Ce qui a déraillé","expert":"Mécanisme"},"en":{"kitchen":"What went wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Le contrôle de sécurité ne regardait pas l’état réel à la frontière destructive.","expert":"La décision de sécurité était prise à partir d’un cache dont la sémantique d’appartenance ne correspondait pas à l’opération filesystem qu’il protégeait. L’écriture finale avait des effets plus forts que ceux compris par le contrôle préalable."},"en":{"kitchen":"The safety check did not inspect real destination state at the destructive boundary.","expert":"The safety decision was made against a cache whose membership semantics did not match the filesystem operation it was guarding. The final write had stronger side-effect semantics than the precondition check understood."}}]},{"id":"response","kind":"section","heading":{"fr":{"cuisine":"Ce que la brigade a changé","expert":"Réponse"},"en":{"kitchen":"What the brigade changed","expert":"Response"}},"body":[{"fr":{"cuisine":"Vérifier la destination réelle juste avant toute écriture susceptible de remplacer, et tester systématiquement le cas où quelque chose existe déjà.","expert":"Vérifier les préconditions destructives contre l’état réel de la destination au point où le remplacement peut se produire, et inclure des destinations préexistantes dans les tests de régression de chaque primitive d’écriture."},"en":{"kitchen":"Check the actual destination immediately before any write that could replace it, and test pre-existing destinations for every write primitive.","expert":"Check destructive preconditions against the real destination state at the point replacement can occur, and include pre-existing destinations in regression tests for every write primitive."}}]},{"id":"current","kind":"section","heading":{"fr":{"cuisine":"Où en est la cuisine","expert":"État actuel"},"en":{"kitchen":"Where the kitchen stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"Le correctif est mergé et testé ; sa livraison complète et la récupération terrain n’étaient pas encore prouvées au point observé.","expert":"Un correctif est mergé et testé en régression. Les états shipped, installed et observed-fixed restent non prouvés au cutoff observé."},"en":{"kitchen":"The repair is merged and regression-tested; full shipping and field recovery were not yet proven at the observed point.","expert":"A repair is merged and regression-tested. Shipped, installed and observed-fixed remain unproven states at the observed cutoff."}}]},{"id":"lesson","kind":"section","heading":{"fr":{"cuisine":"La règle à retenir","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Si on promet d’ajouter une assiette, il faut d’abord prouver que la place est libre.","expert":"Si une opération promet d’ajouter, elle doit prouver l’absence de la destination au point où un remplacement pourrait se produire."},"en":{"kitchen":"If you promise to add a plate, first prove the place is empty.","expert":"If an operation promises to add, it must prove the destination is absent at the point replacement could occur."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:apply-patch-add-overwrite",
+  "type": "dossier",
+  "slug": "apply-patch-add-overwrite",
+  "route": "/dossiers/apply-patch-add-overwrite/",
+  "template": "dossier",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Cline"
+    ],
+    "patterns": [
+      "destructive-write",
+      "runtime-boundary",
+      "testing"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "« Dresse une assiette de plus » a commencé par jeter celle qui était déjà là",
+          "expert": "Une opération d’ajout pouvait remplacer un fichier existant sans avertissement"
+        },
+        "en": {
+          "kitchen": "“Set one more plate” began by binning the plate already there",
+          "expert": "An add operation could replace an existing file with no warning"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Cline, la commande disait « ajoute ». Le commis chargé de vérifier que la place était libre regardait sa feuille, pas la table. Il y avait déjà une assiette posée ; elle est partie à la plonge.",
+            "expert": "Une primitive d’édition décrite comme un ajout pouvait remplacer silencieusement un fichier existant : son contrôle de sécurité interrogeait un état incomplet au lieu de la destination réelle, au point même où le remplacement se produit."
+          },
+          "en": {
+            "kitchen": "At Cline the order said “add.” The cook meant to check the place was free looked at his own sheet instead of the table. A plate was already down, and it went into the bin.",
+            "expert": "A file-editing primitive presented as an add could silently overwrite an existing file. Its safety check read incomplete state rather than the destination itself, at the very point where replacement happens."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "De la commande à l’assiette jetée",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "From the order to the binned plate",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le geste avait bien une sécurité : refuser la place si elle est déjà occupée.",
+            "expert": "L’opération disposait d’un garde explicite censé refuser une destination déjà existante."
+          },
+          "en": {
+            "kitchen": "The move did have a safeguard: refuse the place when it is already taken.",
+            "expert": "The operation carried an explicit guard meant to reject an already-existing destination."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Mais cette sécurité consultait une feuille tenue de tête, où certaines places n’avaient jamais été inscrites.",
+            "expert": "Ce garde interrogeait une représentation mémoire partielle, qui ne contenait pas les cibles atteintes par le seul chemin d’ajout."
+          },
+          "en": {
+            "kitchen": "But that safeguard read a sheet kept from memory, and some places had never been written on it.",
+            "expert": "That guard queried a partial in-memory representation which never held targets reached only through the add path."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Sur la feuille, la place semblait libre. L’assiette neuve descend, l’ancienne dégage, personne n’est prévenu.",
+            "expert": "Un fichier existant pouvait donc atteindre l’écriture finale et être remplacé sans avertissement."
+          },
+          "en": {
+            "kitchen": "On the sheet the place looked free. The new plate comes down, the old one goes, nobody is told.",
+            "expert": "An existing file could therefore reach the final write and be replaced with no warning at all."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La réparation fait regarder la table, pas la feuille. Un essai vérifie qu’une assiette déjà posée reste intacte.",
+            "expert": "Le correctif réintroduit l’état réel de la destination dans le chemin de décision et ajoute un test de régression qui vérifie la préservation du fichier d’origine."
+          },
+          "en": {
+            "kitchen": "The repair makes the cook look at the table, not the sheet. A trial checks that a plate already down stays untouched.",
+            "expert": "The repair pulled real destination state into the decision path and added a regression test asserting the original file survives."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La réparation est adoptée et l’essai la surveille. Reste inconnu : si elle est déjà arrivée dans les cuisines, et si on a cessé de perdre des assiettes en salle.",
+            "expert": "Le correctif est mergé et couvert par un test de régression. Son inclusion dans une release publiée et la récupération observée sur le terrain ne sont pas établies au cutoff observé."
+          },
+          "en": {
+            "kitchen": "The repair is taken up and the trial watches it. Still unknown: whether it reached the kitchens, and whether plates stopped disappearing out front.",
+            "expert": "The fix is merged and regression-covered. Whether a shipped release carries it, and whether the field recovered, was not established at the observed cutoff."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "section",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi la sécurité n’a rien vu",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why the safeguard saw nothing",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La feuille et la table ne disaient pas la même chose. On a tranché sur la feuille, alors que c’est la table qui perd une assiette. Le geste final faisait plus de dégâts que ce que la sécurité croyait couvrir.",
+            "expert": "La décision de sécurité s’appuyait sur un cache dont la sémantique d’appartenance ne correspondait pas à l’opération de fichier qu’il protégeait. L’écriture finale avait des effets de bord plus forts que ceux que la précondition supposait."
+          },
+          "en": {
+            "kitchen": "Sheet and table did not agree. The decision was taken on the sheet, but the table is what loses a plate. The final move did more damage than the safeguard believed it covered.",
+            "expert": "The safety decision ran against a cache whose membership semantics did not match the filesystem operation it guarded. The final write carried stronger side effects than the precondition ever modelled."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "section",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on regarde maintenant avant de poser",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What gets checked now before a plate goes down",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Regarder la vraie place, juste avant de poser, et pas cinq minutes plus tôt sur un papier. Et pour chaque geste qui peut écraser quelque chose, essayer d’abord le cas où la place est déjà prise.",
+            "expert": "Vérifier les préconditions destructives contre l’état réel de la destination, au point exact où le remplacement peut se produire. Inclure systématiquement des destinations préexistantes dans les tests de régression de chaque primitive d’écriture."
+          },
+          "en": {
+            "kitchen": "Look at the actual place, right before setting down, not five minutes earlier on paper. And for every move that can crush something, trial the case where the place is already taken.",
+            "expert": "Evaluate destructive preconditions against real destination state at the exact point replacement becomes possible. Every write primitive should carry regression coverage for a destination that already exists."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "section",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui est réglé, ce qui ne l’est pas",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "What is settled and what is not",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La réparation existe, elle est adoptée, un essai la tient. Rien ne dit encore qu’elle est descendue jusqu’aux cuisines, ni qu’on a cessé de perdre des assiettes.",
+            "expert": "Un correctif est mergé et testé en régression. Les états livré, installé et corrigé-observé restent non prouvés au cutoff observé."
+          },
+          "en": {
+            "kitchen": "The repair exists, it is taken up, a trial holds it. Nothing yet says it came down to the kitchens, or that plates stopped disappearing.",
+            "expert": "A fix is merged and regression-tested. Shipped, installed and observed-fixed all remain unproven states at the observed cutoff."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "section",
+      "heading": {
+        "fr": {
+          "cuisine": "Regarder la place avant de poser l'assiette",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Look at the space before setting the plate down",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Qui promet d’ajouter une assiette regarde la place, pas sa feuille.",
+            "expert": "Une opération qui promet d’ajouter doit prouver l’absence de la destination au point où un remplacement pourrait se produire."
+          },
+          "en": {
+            "kitchen": "Promise to add a plate, and the place is what you look at — not your sheet.",
+            "expert": "An add must establish that the destination is absent, and establish it where overwriting could actually take place."
+          }
+        }
+      ]
+    }
+  ]
+}

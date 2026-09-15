@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:maintenance-slowdown","type":"pattern","slug":"maintenance-slowdown","route":"/patterns/maintenance-slowdown/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Aider"],"patterns":[],"dossiers":["aider-false-success-family"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le restaurant reste ouvert mais évolue moins","expert":"Ralentissement de maintenance"},"en":{"kitchen":"The restaurant stays open but evolves more slowly","expert":"Maintenance Slowdown"}},"body":[{"fr":{"cuisine":"Un projet peut continuer à fonctionner tout en recevant moins de corrections, de nouveautés ou d’attention.","expert":"Le ralentissement de maintenance décrit une baisse durable du rythme d’évolution sans nécessairement signifier l’abandon du projet."},"en":{"kitchen":"A project can keep operating while receiving fewer fixes, features or attention.","expert":"Maintenance slowdown is a sustained reduction in development pace without necessarily implying project abandonment."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:maintenance-slowdown",
+  "type": "pattern",
+  "slug": "maintenance-slowdown",
+  "route": "/patterns/maintenance-slowdown/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Aider"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "aider-false-success-family"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "La maison sert encore, personne ne répare le passe",
+          "expert": "Un produit encore en service dont la réparation n’arrive plus"
+        },
+        "en": {
+          "kitchen": "The house still serves, nobody repairs the pass",
+          "expert": "A product still in service whose repairs stop arriving"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Aider, pendant plus d’un an, des ratés de toutes sortes sont ressortis annoncés comme des assiettes parties. Une maison peut rester ouverte et servir tous les soirs sans que personne ne répare le passe. C’est ce décalage qu’on regarde ici, pas une enseigne éteinte.",
+            "expert": "Le ralentissement de maintenance est une baisse durable du rythme de correction et d’évolution, distincte de l’abandon : le produit reste en service, la réparation n’arrive pas. Chez Aider, des mécanismes de panne différents ont pu se terminer sur un code de succès pendant plus d’un an, cassant le contrat fondamental de l’automatisation headless. Ce que cette fenêtre établit, c’est une durée, pas une intention."
+          },
+          "en": {
+            "kitchen": "At Aider, for more than a year, all kinds of failures came back announced as plates that had gone out. A house can stay open and serve every night while nobody repairs the pass. That gap is what this page watches, not a sign switched off.",
+            "expert": "Maintenance slowdown is a sustained drop in the pace of repair and evolution, distinct from abandonment: the product stays in service while the repair does not land. In Aider, unrelated failure mechanisms could exit with a success code for more than a year, breaking the fundamental contract of headless automation. What that window establishes is a duration, not an intent."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Le même raté qui revient, mois après mois",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "The same fault coming back, month after month",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On ne le voit pas à la porte fermée. On le voit au même défaut qui revient, mois après mois, par des chemins différents. Chez Aider, l’annonce restait bonne quelle que soit la raison du raté. Quand un seul rattrapage ne suffirait pas, ce n’est plus un mauvais soir : c’est de l’entretien en retard.",
+            "expert": "Le signal n’est pas le silence : le produit continue de tourner. C’est la durée de vie d’une même famille de défauts qui compte — chez Aider, plus d’un an pendant lequel des mécanismes de panne distincts rendaient le même verdict de succès. Une famille qui survit à plusieurs mécanismes indique une correction qui ne remonte pas jusqu’au contrat, pas un cas particulier manqué."
+          },
+          "en": {
+            "kitchen": "You do not spot it by a closed door. You spot it in one fault returning, month after month, by different routes. At Aider the call stayed good whatever had gone wrong. When no single catch-up would clear it, that is not a bad night: it is upkeep running late.",
+            "expert": "The signal is not silence; the product keeps running. What counts is the lifetime of a single defect family — in Aider, more than a year in which distinct failure mechanisms returned the same success verdict. A family that outlives several mechanisms points at repair that never reaches the contract, not at one missed case."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Servir tous les soirs n’est pas entretenir",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Serving every night is not keeping up",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "L’erreur, c’est de prendre une maison qui sert pour une maison qu’on répare. Tant que l’annonce sort au passe, personne en salle ne sait ce qui s’est joué derrière. Chez Aider, l’annonce sortait même quand rien n’était parti. Celui qui n’a que l’annonce pour décider ne voit pas le retard s’installer.",
+            "expert": "Disponibilité et maintenance sont lues comme une seule grandeur, et c’est l’erreur. Un produit qui s’installe, répond et rend un verdict paraît tenu, même quand le verdict est faux : chez Aider, le code de succès sortait par des chemins de panne sans rapport entre eux. L’automatisation headless n’a que ce verdict pour décider, donc la dégradation ne remonte jamais jusqu’à l’appelant."
+          },
+          "en": {
+            "kitchen": "The error is to take a house that serves for a house that gets repaired. As long as the call goes out at the pass, nobody in the room learns what happened behind it. At Aider the call went out even when nothing had left. Whoever works from the call alone never sees the delay settle in.",
+            "expert": "Availability and upkeep get read as one quantity, and that is the error. A product that installs, answers and returns a verdict looks maintained even when the verdict is wrong: in Aider the success code came out of failure paths unrelated to each other. Headless automation has nothing but that verdict to act on, so the decay never reaches the caller."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Goûter, compter les retours, puis s’engager",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Taste it, count the returns, then decide",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Goûte ce qui sort avant de l’annoncer, et refais l’essai avec un plat volontairement raté. S’il ressort annoncé comme bon, la maison n’entend plus ses propres pannes. Compte les défauts qui reviennent, pas les journées bien remplies. Engage-toi sur cette maison à hauteur de ce qu’elle répare, pas de ce qu’elle ouvre.",
+            "expert": "Traiter le verdict rendu comme une surface de contrat et l’éprouver comme une fonctionnalité : un cas de panne doit produire un échec observable, pas seulement une trace. Suivre le rythme de correction par famille de défauts plutôt que par volume d’activité, puisque c’est la persistance d’une famille qui signe le ralentissement. Dimensionner sa dépendance sur la fenêtre de réparation observée, pas sur la disponibilité apparente."
+          },
+          "en": {
+            "kitchen": "Taste what leaves before you call it away, then run the test again with a dish you spoiled on purpose. If it still comes back called good, the house can no longer hear its own failures. Count the faults that return, not the busy days. Lean on that house as far as it repairs, not as far as it opens.",
+            "expert": "Treat the returned verdict as contract surface and exercise it like a feature: a failing case must produce an observable failure, not merely a log line. Track repair pace per defect family rather than by activity volume, since a family’s persistence is what marks the slowdown. Size your dependency on the observed repair window, not on apparent availability."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que dit une porte encore ouverte",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What an open door actually tells you",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une annonce juste fait partie du plat ; ce n’est pas de la décoration. Une maison ne se juge pas à sa porte ouverte, mais au temps qu’elle laisse un défaut vivre.",
+            "expert": "Un verdict vert fait partie du contrat produit ; ce n’est pas un détail cosmétique. Un ralentissement de maintenance se mesure au temps pendant lequel ce contrat reste cassé, pas à l’annonce d’un arrêt."
+          },
+          "en": {
+            "kitchen": "An honest call is part of the dish, not garnish. Judge a house by how long it lets a fault live, not by its open door.",
+            "expert": "A green verdict is part of the product contract, not a cosmetic detail. A maintenance slowdown is measured by how long that contract stays broken, not by any announcement of a stop."
+          }
+        }
+      ]
+    }
+  ]
+}

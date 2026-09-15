@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:budget","type":"pattern","slug":"budget","route":"/patterns/budget/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["SWE-agent"],"patterns":[],"dossiers":["sweagent-cost-guard-retry-rebilling"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le même plat ne doit pas être facturé plusieurs fois","expert":"Budget"},"en":{"kitchen":"Do not pay twice for the same dish","expert":"Budget"}},"body":[{"fr":{"cuisine":"Une reprise ou une nouvelle tentative doit garder l’addition sous contrôle.","expert":"Le budget impose une limite vérifiable aux coûts cumulés d’une exécution et de ses reprises."},"en":{"kitchen":"A retry or resume must keep the bill under control.","expert":"A budget places a verifiable bound on cumulative execution and retry cost."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:budget",
+  "type": "pattern",
+  "slug": "budget",
+  "route": "/patterns/budget/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "SWE-agent"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "sweagent-cost-guard-retry-rebilling"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le plat refait trois fois et compté trois fois",
+          "expert": "La limite annoncée et la dépense réelle divergent dès qu’une reprise refacture le même travail"
+        },
+        "en": {
+          "kitchen": "The dish remade three times and charged three times",
+          "expert": "The advertised bound and the real spend diverge once a retry rebills the same work"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une commande part, elle rate, on la refait. Chez SWE-agent, chaque reprise s’ajoutait à l’addition comme si une nouvelle commande était arrivée. Le client n’avait pourtant demandé qu’un plat, et la maison croyait tenir sa limite de dépense.",
+            "expert": "Un budget pose une limite vérifiable sur le coût cumulé d’une exécution et de ses reprises. Chez SWE-agent, une famille de problèmes de contrôle des coûts a montré comment retries, sélection de modèle et exceptions de budget avalées peuvent faire diverger limite nominale et dépense réelle. La limite restait annoncée pendant que le même travail logique était refacturé."
+          },
+          "en": {
+            "kitchen": "One guest, one plate. The dish failed, the cooks began it again, and the bill grew as though a second order had walked in. Through all of it SWE-agent went on announcing a spending limit it believed it was holding.",
+            "expert": "A budget places a verifiable bound on the cumulative cost of an execution and its retries. At SWE-agent a family of cost-control issues showed how retries, model selection and swallowed budget exceptions can pull nominal limits apart from real spend. The bound stayed advertised while the same logical work was rebilled."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui trahit une addition qui gonfle toute seule",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "What gives away a bill that grows on its own",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "L’addition monte plus vite que le nombre de plats passés en salle. Une commande reprise coûte comme deux, sans que rien dans le carnet ne le dise. Et quand la caisse crie qu’on a dépassé, personne aux fourneaux ne l’entend.",
+            "expert": "Le signal est l’écart entre le nombre d’opérations logiques et le nombre d’opérations facturables, visible dès qu’une tâche reprise coûte plusieurs fois son unité. Une condition fatale de budget avalée par le contrôle interne en est un second : la limite est franchie sans que l’exécution s’arrête. Le choix de modèle peut ajouter des dimensions de coût que le compteur nominal n’expose pas."
+          },
+          "en": {
+            "kitchen": "The bill climbs faster than plates reach the room. One restarted order costs like two, and nothing in the book says a word about it. Then the till shouts that the limit is gone, and not one cook hears it.",
+            "expert": "The signal is the gap between logical operations and billable ones, visible as soon as one retried task costs several times its unit. A fatal budget condition swallowed by internal control is the second: the bound is crossed without execution stopping. Model selection can add cost dimensions the nominal counter never exposes."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi la maison croit tenir sa dépense",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why the house believes its spending holds",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Celui qui tient la caisse compte les plats qui passent, pas ceux qu’on recommence derrière. Il voit un bout du travail, et le coût est à l’autre bout. Tant que ce qu’il compte n’est pas ce que le client a commandé, sa limite ne protège personne.",
+            "expert": "L’enforcement du budget vivait à une couche qui ne possédait pas le graphe complet des retries et des choix de modèle. Opération logique et opérations facturables divergent alors sans qu’aucun compteur ne l’affiche. La tromperie tient à ce que la limite reste exacte pour ce qu’elle mesure, et sans rapport avec ce que la tâche coûte."
+          },
+          "en": {
+            "kitchen": "Whoever holds the till counts plates going through, not the ones being started over behind them. That view covers one end of the work; the cost sits at the other. As long as the count is not the guest’s order, the limit protects nobody.",
+            "expert": "Budget enforcement sat at a layer that did not own the full graph of retries and model choices. Logical operation and billable operations then diverge with no counter showing it. The deception is that the bound stays accurate for what it measures, and unrelated to what the task costs."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Compter la commande, pas les allers-retours au fourneau",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Count the order, not the trips back to the stove",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Rattache chaque reprise à la commande d’origine et fais-les tenir dans la même enveloppe. Quand la limite est atteinte, le passe doit s’arrêter net au lieu d’avaler l’avertissement. Chez SWE-agent, des corrections ont été proposées ; toutes n’étaient pas en place au moment observé.",
+            "expert": "La comptabilité du budget doit suivre tout l’arbre des descendants d’une tâche logique, retries et appels imbriqués compris. Les échecs terminaux de budget doivent se propager au lieu d’être avalés par le contrôle interne. Des correctifs à fort signal ont été proposés chez SWE-agent ; tous n’étaient pas prouvés livrés au cutoff observé."
+          },
+          "en": {
+            "kitchen": "Pin every restart to the order it came from, and hold them inside one envelope. When the limit is reached the pass has to stop dead rather than swallow the warning. At SWE-agent fixes were proposed; not all of them were in place at the point observed.",
+            "expert": "Budget accounting has to follow the whole descendant tree of a logical task, retries and nested calls included. Terminal budget failures must propagate instead of being swallowed by internal control. High-signal fixes were proposed at SWE-agent; not all were proven shipped at the observed cutoff."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La règle que SWE-agent laisse sur l’addition",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The rule SWE-agent leaves on the bill",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une limite de dépense doit porter sur la commande du client, pas sur le nombre de fois où la cuisine s’y reprend. Sinon elle rassure sans rien retenir.",
+            "expert": "Les budgets de retry doivent suivre le travail logique, pas seulement le nombre d’appels API. Une limite posée sur la mauvaise unité reste exacte et sans effet."
+          },
+          "en": {
+            "kitchen": "A spending limit belongs on the guest’s order, not on how many times the kitchen starts over. Otherwise it reassures everyone and holds nothing back.",
+            "expert": "Retry budgets must follow the logical work, not just the API call count. A bound placed on the wrong unit stays accurate and ineffective."
+          }
+        }
+      ]
+    }
+  ]
+}

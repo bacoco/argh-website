@@ -1,1 +1,218 @@
-{"schema":"argh/public-entity/v1","id":"dossier:gemini-trust-couples-hooks-mcp-instructions","type":"dossier","slug":"gemini-trust-couples-hooks-mcp-instructions","route":"/dossiers/gemini-trust-couples-hooks-mcp-instructions/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Gemini CLI"],"patterns":["trust-boundary","hooks-enforcement","mcp"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"La clé de la cuisine commande désormais recettes, outils et contrôles","expert":"La confiance est devenue une frontière commune pour hooks, outils et fichiers d’instructions"},"en":{"kitchen":"One kitchen key now governs recipes, tools and checks","expert":"Trust became a shared boundary for hooks, tools and instruction files"}},"body":[{"fr":{"cuisine":"La clé de la cuisine commande désormais recettes, outils et contrôles. Un contrôle placé à la passe peut observer, bloquer ou décider. Le risque apparaît quand son rôle change sans que la brigade sache exactement quelle autorité il possède.","expert":"Le modèle de confiance de Gemini CLI désactive ensemble hooks projet, serveurs MCP et fichiers d’instructions dans les dossiers non fiables, les traitant comme une même classe d’influence exécutable."},"en":{"kitchen":"One kitchen key now governs recipes, tools and checks. A check at the pass can observe, block or decide. Risk appears when its role changes without the brigade knowing exactly what authority it has.","expert":"Gemini CLI’s trust model disabled project hooks, MCP servers and instruction files together in untrusted folders, treating them as one class of executable influence."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Le cahier posé dans le dossier peut déjà orienter le cuisinier.","expert":"Les instructions locales du projet peuvent influencer le comportement du modèle."},"en":{"kitchen":"The book placed in the folder can already steer the cook.","expert":"Project-local instructions could influence model behavior."}},{"fr":{"cuisine":"Les outils et crochets rangés au même endroit peuvent, eux aussi, agir ou arrêter un geste.","expert":"Les outils et hooks locaux peuvent aussi exécuter ou contraindre des actions."},"en":{"kitchen":"Tools and hooks stored there can also act or stop a move.","expert":"Project-local tools and hooks could also execute or constrain actions."}},{"fr":{"cuisine":"La confiance est donc donnée à la porte du dossier, pas feuille par feuille.","expert":"Une décision de confiance s’applique à la frontière du dossier."},"en":{"kitchen":"Trust is therefore granted at the folder door, not page by page.","expert":"A trust decision was applied at the folder boundary."}},{"fr":{"cuisine":"Dans un dossier non fiable, hooks, serveurs MCP et consignes locales sont mis au repos ensemble.","expert":"Les dossiers non fiables désactivent plusieurs surfaces de contrôle ensemble."},"en":{"kitchen":"In an untrusted folder, hooks, MCP servers, and local instructions are put to rest together.","expert":"Untrusted folders disabled multiple control surfaces together."}},{"fr":{"cuisine":"Derrière une porte non fiable, plusieurs leviers se taisent ensemble : le dossier est traité comme une influence exécutable complète.","expert":"Le design converge vers une notion unifiée d’influence exécutable du projet."},"en":{"kitchen":"Behind an untrusted door, several levers go quiet together: the folder is treated as one executable influence.","expert":"The design converged on a unified notion of executable project influence."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Carnets, crochets et serveurs sont différents, mais ouvrir leur dépôt peut permettre à chacun d’influencer ou d’exécuter le service.","expert":"Fichiers de prompt, hooks et serveurs MCP sont techniquement différents mais partagent une propriété de sécurité : ouvrir un repository peut leur permettre d’influencer ou exécuter du comportement."},"en":{"kitchen":"Notebooks, hooks, and servers differ, but opening their repository can let each influence or execute service.","expert":"Prompt files, hooks and MCP servers look different technically but share one security property: opening a repository can cause them to influence or execute behavior."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"La même décision de confiance couvre toutes les surfaces d’exécution et de contexte du projet, au lieu de les traiter une par une.","expert":"Appliquer les décisions de confiance à toutes les surfaces d’exécution et de contexte contrôlées par le projet, pas sous-système par sous-système."},"en":{"kitchen":"The same trust decision covers every project-controlled execution and context surface instead of treating them one by one.","expert":"Apply trust decisions across all project-controlled execution and context surfaces, not one subsystem at a time."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"C’est un couplage mûr : une seule décision de confiance gouverne tout le passe-plat local.","expert":"Un exemple mature de couplage de confiance à travers le control plane du harnais."},"en":{"kitchen":"It is a mature coupling: one trust decision governs the whole local pass.","expert":"A mature example of trust coupling across the harness control plane."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Si ouvrir un dépôt peut influencer le service, il mérite la même confiance qu’un plan de contrôle complet.","expert":"Si un repository peut influencer l’exécution, traiter sa confiance comme celle d’un control plane complet."},"en":{"kitchen":"If opening a repository can influence service, it deserves the same trust treatment as a complete control plane.","expert":"If a repository can influence execution, trust it as a whole control plane."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:gemini-trust-couples-hooks-mcp-instructions",
+  "type": "dossier",
+  "slug": "gemini-trust-couples-hooks-mcp-instructions",
+  "route": "/dossiers/gemini-trust-couples-hooks-mcp-instructions/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Gemini CLI"
+    ],
+    "patterns": [
+      "trust-boundary",
+      "hooks-enforcement",
+      "mcp"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Entrer dans la cuisine d’un autre, c’est accepter ses consignes et ses outils d’un coup",
+          "expert": "Une seule décision de confiance couvre hooks, serveurs MCP et fichiers d’instructions"
+        },
+        "en": {
+          "kitchen": "Walking into someone else’s kitchen means taking its orders and its tools in one go",
+          "expert": "A single trust decision covers hooks, MCP servers and instruction files"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Vous entrez dans une cuisine que vous ne connaissez pas. Il y a des consignes punaisées au mur, des outils déjà installés, une porte de service par où arrivent des marchandises. Aucun des trois ne ressemble aux autres. Chez Gemini, les trois peuvent décider à votre place de ce qui sortira ce soir.",
+            "expert": "Le modèle de confiance de Gemini CLI désactive ensemble les hooks projet, les serveurs MCP et les fichiers d’instructions dans les dossiers non fiables. Les trois sont traités comme une même classe d’influence exécutable, et non comme trois sous-systèmes indépendants."
+          },
+          "en": {
+            "kitchen": "You walk into a kitchen you do not know. There are orders pinned to the wall, tools already set up, a service door where goods arrive. None of the three looks like the others. At Gemini all three can decide, in your place, what leaves tonight.",
+            "expert": "Gemini CLI’s trust model disables project hooks, MCP servers and instruction files together in untrusted folders. All three are treated as one class of executable influence rather than three independent subsystems."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Comment on en est venu à tout fermer d’un coup",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "How it came to closing everything at once",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une consigne laissée au mur suffit déjà à orienter le cuisinier qui entre.",
+            "expert": "Les instructions locales du projet peuvent influencer le comportement du modèle."
+          },
+          "en": {
+            "kitchen": "An order left on the wall is already enough to steer the cook who walks in.",
+            "expert": "Project-local instructions could influence model behavior."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Les outils déjà installés et les contrôles posés au passe peuvent, eux, agir ou retenir un geste.",
+            "expert": "Les outils et hooks locaux peuvent aussi exécuter ou contraindre des actions."
+          },
+          "en": {
+            "kitchen": "The tools already set up and the checks placed at the pass can act, or hold a move back.",
+            "expert": "Project-local tools and hooks could also execute or constrain actions."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La décision de faire confiance se prend donc à la porte, une fois, pour toute la pièce.",
+            "expert": "La décision de confiance est appliquée à la frontière du dossier."
+          },
+          "en": {
+            "kitchen": "So the decision to trust is taken at the door, once, for the whole room.",
+            "expert": "The trust decision was applied at the folder boundary."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Dans une cuisine en qui on n’a pas confiance, consignes, outils et porte de service sont mis au repos ensemble.",
+            "expert": "Les dossiers non fiables désactivent plusieurs surfaces de contrôle ensemble."
+          },
+          "en": {
+            "kitchen": "In a kitchen you have no reason to trust, orders, tools and the service door all go quiet together.",
+            "expert": "Untrusted folders disabled multiple control surfaces together."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La question n’est plus de savoir quel outil est dangereux, mais si l’on ouvre cette cuisine.",
+            "expert": "Le design converge vers une notion unifiée d’influence exécutable du projet."
+          },
+          "en": {
+            "kitchen": "The question stops being which tool is dangerous and becomes whether to open this kitchen at all.",
+            "expert": "The design converged on a unified notion of executable project influence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Trois choses qui ne se ressemblent pas, un seul pouvoir",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Three things that look nothing alike, one shared power",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une feuille punaisée, un appareil installé et une porte de service n’ont rien en commun à regarder. Elles ont pourtant la même chose en commun à l’usage. Chacune peut peser sur ce que fait le cuisinier, sans qu’on la lui ait présentée. Les classer par apparence sépare ce qui devrait aller ensemble.",
+            "expert": "Fichiers de prompt, hooks et serveurs MCP sont techniquement distincts mais partagent une propriété de sécurité : ouvrir un repository peut suffire à leur faire influencer ou exécuter du comportement. Les classer par sous-système sépare des surfaces qui portent le même risque."
+          },
+          "en": {
+            "kitchen": "A sheet on the wall, a machine already set up and a service door have nothing in common to look at. They do share one thing in use. Each can weigh on what the cook does without ever being introduced to him. Sorting them by appearance splits what belongs together.",
+            "expert": "Prompt files, hooks and MCP servers are technically distinct but share one security property: opening a repository can be enough to let them influence or execute behavior. Classifying them by subsystem separates surfaces that carry identical risk."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Une seule décision, prise à la porte",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "One decision, taken at the door",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La décision se prend une fois, à l’entrée, et elle vaut pour tout ce que la pièce contient. Décider outil par outil laisse toujours une porte ouverte qu’on avait oublié de compter.",
+            "expert": "Appliquer les décisions de confiance à toutes les surfaces d’exécution et de contexte contrôlées par le projet, et non sous-système par sous-système. Une décision partielle laisse ouverte toute surface non énumérée."
+          },
+          "en": {
+            "kitchen": "The decision is taken once, at the entrance, and it covers everything the room holds. Deciding tool by tool always leaves one door open that nobody thought to count.",
+            "expert": "Apply trust decisions across every project-controlled execution and context surface, not one subsystem at a time. A partial decision leaves every unenumerated surface open."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que cette maison applique déjà",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "What that house already runs",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Cette maison-là traite déjà sa porte comme un seul choix, pas comme trois. C’est le cas le plus abouti observé sur ce point.",
+            "expert": "Le cas est un exemple mature de couplage de confiance à travers le control plane du harnais. Il est décrit comme un comportement en place, non comme une proposition."
+          },
+          "en": {
+            "kitchen": "That house already treats its door as one choice rather than three. It is the most fully worked example observed on this point.",
+            "expert": "The case is a mature example of trust coupling across the harness control plane. It is described as behavior in place, not as a proposal."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La règle à retenir en franchissant une porte",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The rule worth keeping at someone else’s door",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Si entrer quelque part suffit à changer ce que vous cuisinerez, alors cet endroit commande votre service. Il mérite la même prudence que si vous lui donniez les clés.",
+            "expert": "Si ouvrir un repository peut influencer l’exécution, sa confiance doit être traitée comme celle d’un control plane complet. Le critère n’est pas la nature du fichier, mais sa capacité d’influence."
+          },
+          "en": {
+            "kitchen": "If simply walking somewhere is enough to change what you will cook, then that place commands your service. It deserves the same caution as handing over the keys.",
+            "expert": "If opening a repository can influence execution, its trust must be handled as that of a complete control plane. The criterion is not the nature of the file but its capacity to influence."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,217 @@
-{"schema":"argh/public-entity/v1","id":"dossier:taskweaver-archive-cause-unknown","type":"dossier","slug":"taskweaver-archive-cause-unknown","route":"/dossiers/taskweaver-archive-cause-unknown/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["TaskWeaver"],"patterns":["project-mortality","uncertainty"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le restaurant a baissé le rideau sans laisser la raison dans le cahier","expert":"Le projet a été archivé ; la cause est restée incertaine"},"en":{"kitchen":"The restaurant pulled down the shutter without recording why","expert":"The project was archived; the cause remained uncertain"}},"body":[{"fr":{"cuisine":"Le restaurant a baissé le rideau sans laisser la raison dans le cahier. Une enseigne peut rester allumée alors que la cuisine, l’équipe ou la stratégie ont déjà déménagé. Les signaux administratifs ne disent pas seuls si le service vit encore.","expert":"TaskWeaver a été archivé après avoir reconnu des ressources limitées, mais cela ne suffit pas à affirmer une cause unique de l’archivage."},"en":{"kitchen":"The restaurant pulled down the shutter without recording why. A sign can stay lit after the kitchen, team or strategy has moved. Administrative activity alone does not prove the service is alive.","expert":"TaskWeaver was archived after acknowledging constrained resources, but that is not enough to assert a single causal explanation for the archive."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"TaskWeaver est encore sur la carte, mais son service est désormais archivé.","expert":"Le projet existe comme framework d’agents actif."},"en":{"kitchen":"TaskWeaver is still on the menu, but its service is now archived.","expert":"The project existed as an active agent framework."}},{"fr":{"cuisine":"La fermeture est visible ; sa cause ne l’est pas dans les éléments disponibles.","expert":"Ses propres matériaux reconnaissent des ressources limitées."},"en":{"kitchen":"The closure is visible; its cause is not in the available material.","expert":"Its own materials acknowledged limited resources."}},{"fr":{"cuisine":"Donner une raison à cette fermeture rendrait le menu plus net, mais ajouterait un fait que personne n’a observé.","expert":"Le développement continue pendant un temps."},"en":{"kitchen":"Giving this closure a reason would make the menu tidier, but add a fact nobody observed.","expert":"Development continued for a period."}},{"fr":{"cuisine":"Croiser l’archive, l’activité et la direction connue ; cela établit la fermeture sans remplir à l’aveugle la case « pourquoi ».","expert":"Le repository est finalement archivé."},"en":{"kitchen":"Read the archive, activity, and known direction together; that establishes closure without blindly filling the “why” box.","expert":"The repository was eventually archived."}},{"fr":{"cuisine":"La bonne étiquette est donc « cause inconnue », pas une explication choisie après coup.","expert":"Aucune déclaration de première main n’établit une chaîne causale définitive entre ressources limitées et archive."},"en":{"kitchen":"The right label is therefore “cause unknown,” not an explanation chosen afterward.","expert":"No single first-party statement established a definitive causal chain from resource limits to archive."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"L’archivage est sur le ticket, mais rien n’explique pourquoi les fourneaux se sont arrêtés ; combler ce silence serait inventer le plat manquant.","expert":"Les analystes comblent naturellement les trous causaux avec des histoires plausibles. C’est précisément là que l’analyse de mortalité a besoin d’un état unknown explicite."},"en":{"kitchen":"Archiving is on the ticket, but nothing explains why the stoves stopped; filling that silence would invent the missing dish.","expert":"Analysts naturally fill causal gaps with plausible stories. That is exactly where project-mortality analysis needs an explicit unknown state."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Mettre côte à côte l’archive, l’activité, la direction annoncée et les chemins de migration ; constater le changement sans lui prêter une cause absente.","expert":"Séparer transition observée et cause inférée. L’archive peut être certaine tandis que la cause reste inconnue."},"en":{"kitchen":"Set archive, activity, stated direction, and migration paths side by side; observe the change without assigning it an absent cause.","expert":"Separate observed transition from inferred cause. Archive can be certain while cause remains unknown."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"La fiche garde l’archivage comme constat, et laisse ouverte la question de ce qui l’a provoqué.","expert":"Archivé ; cause exacte non établie."},"en":{"kitchen":"The card keeps archiving as an observation and leaves open the question of what caused it.","expert":"Archived; exact cause not established."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Une archive dit que la porte est fermée aujourd’hui ; elle ne raconte pas pourquoi le restaurant a fermé.","expert":"Ne pas transformer une corrélation en récit de post-mortem."},"en":{"kitchen":"An archive says the door is closed today; it does not explain why the restaurant closed.","expert":"Do not turn correlation into a post-mortem narrative."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:taskweaver-archive-cause-unknown",
+  "type": "dossier",
+  "slug": "taskweaver-archive-cause-unknown",
+  "route": "/dossiers/taskweaver-archive-cause-unknown/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "TaskWeaver"
+    ],
+    "patterns": [
+      "project-mortality",
+      "uncertainty"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "TaskWeaver a baissé le rideau sans écrire pourquoi dans le cahier",
+          "expert": "TaskWeaver a été archivé ; la cause exacte n’est pas établie"
+        },
+        "en": {
+          "kitchen": "TaskWeaver pulled the shutter down and left the reason unwritten",
+          "expert": "TaskWeaver was archived; the exact cause is not established"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "TaskWeaver a servi longtemps, puis la maison a baissé le rideau. Son propre cahier parle de moyens trop justes, sans dire que c’est pour cela qu’on a fermé. Devant une porte close, on invente vite une raison. Ici, personne ne l’a écrite.",
+            "expert": "TaskWeaver a existé comme framework d’agents actif, puis son dépôt a été archivé. Ses propres matériaux reconnaissent des ressources limitées, ce qui ne suffit pas à établir une chaîne causale. L’état de preuve retenu est donc : archivage certain, cause inconnue."
+          },
+          "en": {
+            "kitchen": "TaskWeaver ran a full service for years, then the shutter came down. Its own book mentions short means, but never says that is why the doors closed. A locked door invites a story. Nobody wrote this one down.",
+            "expert": "TaskWeaver existed as an active agent framework before its repository was archived. Its own materials acknowledge constrained resources, which is not sufficient to establish a causal chain to that archive. Evidence state: the archive is certain, the cause is unknown."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "De la salle pleine au rideau baissé",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "From a full room to a lowered shutter",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Au départ, TaskWeaver ouvre chaque jour et fait un vrai service.",
+            "expert": "TaskWeaver existe comme framework d’agents actif."
+          },
+          "en": {
+            "kitchen": "At first TaskWeaver opens every day and runs a real service.",
+            "expert": "TaskWeaver existed as an active agent framework."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La maison écrit elle-même qu’elle manque de bras et de moyens.",
+            "expert": "Ses propres matériaux reconnaissent des ressources limitées."
+          },
+          "en": {
+            "kitchen": "The house writes, in its own hand, that means and hands are short.",
+            "expert": "Its own materials acknowledged limited resources."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le service continue pourtant pendant un moment, sans rien annoncer.",
+            "expert": "Le développement continue pendant un temps."
+          },
+          "en": {
+            "kitchen": "Service still carries on for a while, with nothing announced.",
+            "expert": "Development continued for a period."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Puis le rideau descend pour de bon.",
+            "expert": "Le dépôt est finalement archivé."
+          },
+          "en": {
+            "kitchen": "Then the shutter comes down for good.",
+            "expert": "The repository was eventually archived."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Nulle part la maison n’écrit que le manque de moyens a fermé la porte.",
+            "expert": "Aucune déclaration de première main n’établit de chaîne causale entre ressources limitées et archivage."
+          },
+          "en": {
+            "kitchen": "Nowhere does the house write that short means closed the door.",
+            "expert": "No first-party statement established a causal chain from limited resources to the archive."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi une porte close reçoit toujours une raison",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a closed door always gets a reason",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une porte close appelle une explication, et celui qui passe devant la fournit lui-même. Dans le quartier, on dira que c’était le loyer, ou le manque de bras. Le cahier, lui, ne dit rien de tel.",
+            "expert": "Un trou causal se comble spontanément par l’hypothèse la plus disponible, ici la contrainte de ressources. L’analyse de mortalité de projet a donc besoin d’un état unknown explicite, distinct de non documenté et de non survenu."
+          },
+          "en": {
+            "kitchen": "A closed door asks for an explanation, and passers-by supply one themselves. Down the street they will say it was the rent, or the missing hands. The book says no such thing.",
+            "expert": "A causal gap gets filled with whatever hypothesis is nearest to hand, here the resource constraint. Project-mortality analysis therefore needs an explicit unknown state, distinct from undocumented and from did-not-happen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Lire la porte, pas les rumeurs du quartier",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Read the door, not the talk on the street",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On note ce qu’on voit : le rideau baissé, la date, les derniers services, ce que la maison annonçait faire ensuite. Pour le reste, on laisse la ligne vide. Une ligne vide se remplit plus tard ; une raison inventée ne se retire plus.",
+            "expert": "Séparer la transition observée de la cause inférée : archivage, activité, direction annoncée et chemins de migration s’observent chacun indépendamment. La certitude sur la transition n’autorise aucune certitude sur la cause."
+          },
+          "en": {
+            "kitchen": "Write what can be seen: the shutter down, the date, the last services, what the house said it would do next. Leave the rest of the line blank. A blank line can be filled later; an invented reason cannot be taken back.",
+            "expert": "Separate the observed transition from the inferred cause: archive, activity, stated direction and migration paths are each observable on their own. Certainty about the transition licenses no certainty about the cause."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Rideau baissé, case du pourquoi vide",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "Shutter down, the why line still blank",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Aujourd’hui, TaskWeaver reste fermé. La case du pourquoi, elle, reste vide, et on la laisse ainsi.",
+            "expert": "Archivé. Cause exacte non établie à partir des éléments disponibles."
+          },
+          "en": {
+            "kitchen": "Today TaskWeaver stays shut. The why line stays blank, and blank is where it stays.",
+            "expert": "Archived. Exact cause not established from the available material."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’un rideau baissé raconte vraiment",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What a lowered shutter actually tells you",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un rideau baissé dit que la maison est fermée aujourd’hui. Il ne dit pas pourquoi, et deux faits posés côte à côte ne font pas une cause.",
+            "expert": "Ne pas convertir une corrélation en récit de post-mortem. L’inconnu est un résultat publiable."
+          },
+          "en": {
+            "kitchen": "A lowered shutter tells you the house is shut today. It does not tell you why, and two facts standing side by side do not make a cause.",
+            "expert": "Do not convert correlation into a post-mortem narrative. Unknown is a publishable result."
+          }
+        }
+      ]
+    }
+  ]
+}

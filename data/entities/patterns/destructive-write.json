@@ -1,1 +1,152 @@
-{"schema":"argh/public-entity/v1","id":"pattern:destructive-write","type":"pattern","slug":"destructive-write","route":"/patterns/destructive-write/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Claude Code","Cline"],"patterns":[],"dossiers":["apply-patch-add-overwrite","heredoc-write-truncation"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Ne pas jeter l’ancien avant que le nouveau soit prêt","expert":"Écriture destructive"},"en":{"kitchen":"Do not discard the old one before the replacement is ready","expert":"Destructive Write"}},"body":[{"fr":{"cuisine":"Si l’ancien plat disparaît avant que le nouveau soit vérifié, un simple blocage peut laisser la table vide.","expert":"Une écriture destructive altère ou supprime l’état précédent avant que le remplacement ne soit garanti."},"en":{"kitchen":"If the old dish disappears before the replacement is verified, a simple blockage can leave the table empty.","expert":"A destructive write alters or removes previous state before the replacement is guaranteed."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:destructive-write",
+  "type": "pattern",
+  "slug": "destructive-write",
+  "route": "/patterns/destructive-write/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Claude Code",
+      "Cline"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "apply-patch-add-overwrite",
+      "heredoc-write-truncation"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "On débarrasse la place avant de savoir si le remplaçant arrivera",
+          "expert": "L’état précédent disparaît avant que le remplacement soit garanti"
+        },
+        "en": {
+          "kitchen": "The spot gets cleared before anyone knows the replacement is coming",
+          "expert": "Previous state disappears before the replacement is guaranteed"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une assiette est déjà posée à la place demandée. Le commis la fait disparaître, puis va chercher la nouvelle ; chez Cline, un ordre qui disait « ajoute » a suffi pour ça. Chez Claude Code, la place a été libérée et le plat s’est bloqué en chemin. Le client regarde une place nue.",
+            "expert": "Une écriture destructive altère ou supprime l’état précédent avant que le remplacement soit garanti. Chez Cline, une primitive décrite comme un ajout pouvait remplacer silencieusement un fichier existant, son garde interrogeant un état incomplet au lieu de la destination. Chez Claude Code, une redirection de sortie pouvait tronquer la destination avant que le contenu de remplacement soit écrit en sécurité."
+          },
+          "en": {
+            "kitchen": "A plate is already standing on the place that was asked for. The cook makes it vanish, then goes to fetch the new one; at Cline an order saying “add” was enough for that. At Claude Code the place was cleared and the replacement jammed on the way. The diner looks at bare wood.",
+            "expert": "A destructive write alters or removes prior state before the replacement is guaranteed. At Cline an edit primitive described as an add could silently replace an existing file, its guard reading incomplete state instead of the destination. At Claude Code output redirection could truncate the destination before the replacement payload was safely written."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "À quoi on voit qu’une place se vide trop tôt",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "How to spot a place emptied too early",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le mot employé est doux : « ajoute », « écris », « remplace ». Personne n’y entend une perte. On vérifie sur une feuille, ou cinq minutes trop tôt, jamais sur la table au moment de poser. Et une interruption banale, qui coûtait une attente, ne laisse plus rien à servir.",
+            "expert": "Le motif se reconnaît à l’ordre des effets : la destination est mutée à l’entrée de l’opération et non à son point de validation. Le garde consulte autre chose que la destination — chez Cline, une représentation mémoire partielle qui ne contenait pas les cibles atteintes par le seul chemin d’ajout. Une interruption au milieu devient alors une perte : chez Claude Code, un blocage ordinaire laissait la destination vide, avec une exposition dépendante de l’environnement."
+          },
+          "en": {
+            "kitchen": "The word used is gentle: add, write, replace. Nobody hears a loss in it. The check happens on a sheet, or five minutes early, never on the table at the moment of setting down. And an ordinary interruption, once worth only a wait, now leaves nothing to serve.",
+            "expert": "The pattern shows in the ordering of effects: the destination mutates at the entry of the operation rather than at its commit point. The guard consults something other than the destination — at Cline, a partial in-memory view that did not hold targets reached through the add path alone. A mid-operation stall then becomes a loss: at Claude Code an ordinary block left the destination empty, with environment-dependent exposure."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi la sécurité paraît tenue alors que l’assiette est déjà partie",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why the safeguard looks satisfied after the plate is gone",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La sécurité est vérifiée ailleurs que là où la perte se produit. Sur la feuille la place est libre ; sur la table, il y a une assiette. Le geste final fait plus de dégâts que ce que le contrôle croyait couvrir, et le contrôle, lui, répond oui.",
+            "expert": "L’opération se nomme par son intention alors que son effet à la destination est plus fort que la précondition supposée. Le contrôle est évalué avant le point destructif, et sur un objet distinct de celui qui subit la perte. Chez Claude Code, la destination est mutée avant que le chemin producteur ait progressé, ce qui transforme un blocage ordinaire en validation destructive partielle."
+          },
+          "en": {
+            "kitchen": "The safeguard is checked somewhere other than where the loss happens. On the sheet the place is free; on the table a plate is standing. The final move does more damage than the check believed it covered, and the check still answers yes.",
+            "expert": "The operation is named for its intent while its effect at the destination is stronger than the precondition assumed. The check is evaluated before the destructive point, and against a different object from the one that takes the loss. At Claude Code the destination mutates before the producing path has progressed, turning an ordinary stall into a partial destructive commit."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Préparer à côté, échanger seulement à la fin",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Prepare beside, swap only at the end",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On prépare le remplaçant à côté, on le contrôle, et on ne débarrasse qu’au moment de poser. Chez Cline, la réparation est adoptée, et un essai vérifie qu’une assiette déjà posée reste intacte. Sa descente jusqu’aux cuisines n’est pas établie. Chez Claude Code, rien de livré n’est établi.",
+            "expert": "Vérifier les préconditions destructives contre l’état réel de la destination, au point exact où le remplacement peut se produire, et inclure une destination préexistante dans les tests de régression de chaque primitive d’écriture. Écrire le remplacement à côté et n’échanger qu’une fois celui-ci durable, de sorte qu’un échec avant validation laisse l’original intact. Chez Cline, un correctif est mergé et couvert par un test de régression, sans que livraison ni récupération observée soient établies ; chez Claude Code, aucune mitigation produit livrée n’est établie au cutoff observé."
+          },
+          "en": {
+            "kitchen": "Build the replacement beside the old one, check it, and clear the place only as you set down. At Cline the repair is taken up, and a trial checks that a plate already down stays untouched. Whether it reached the kitchens is not established. At Claude Code nothing delivered is established.",
+            "expert": "Check destructive preconditions against the real state of the destination, at the exact point where replacement can occur, and put a pre-existing destination into the regression tests of every write primitive. Write the replacement alongside and swap only once it is durable, so that a failure before commit leaves the original intact. At Cline a fix is merged and covered by a regression test, with delivery and observed recovery unestablished; at Claude Code no shipped product mitigation is established at the observed cutoff."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Tant que le remplaçant n’est pas là, on ne débarrasse pas",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Until the replacement is in hand, nothing gets cleared",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Qui promet d’ajouter regarde la place, pas sa feuille. Et tant que le remplaçant n’est pas complet, ce qui est posé reste posé : c’est la seule version dont on soit sûr.",
+            "expert": "Une opération qui promet d’ajouter doit prouver l’absence de la destination au point où un remplacement peut se produire. Un échec survenu avant validation doit laisser la dernière version connue bonne intacte."
+          },
+          "en": {
+            "kitchen": "Promise to add and the place is what you look at, not your sheet. Until the replacement is complete, what stands stays standing: it is the only version anyone is sure of.",
+            "expert": "An operation that promises to add must prove the destination is absent at the point where replacement could occur. A failure before commit must leave the last known-good version intact."
+          }
+        }
+      ]
+    }
+  ]
+}

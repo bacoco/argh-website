@@ -1,1 +1,208 @@
-{"schema":"argh/public-entity/v1","id":"dossier:redact-before-model-boundary","type":"dossier","slug":"redact-before-model-boundary","route":"/dossiers/redact-before-model-boundary/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Gemini CLI"],"patterns":["privacy-boundary","pre-model-redaction","logging"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le secret doit être retiré avant d’entrer en cuisine, pas après cuisson","expert":"Caviarder dans le prompt est déjà trop tard"},"en":{"kitchen":"Remove the secret before it enters the kitchen, not after cooking","expert":"Redacting inside the prompt is already too late"}},"body":[{"fr":{"cuisine":"Des extraits de transcriptions locales étaient envoyés au modèle avant qu’une consigne lui demande de cacher les secrets : la porte avait déjà été franchie.","expert":"Une conception d’extraction de mémoire envoyait au modèle une sélection de contenu provenant de transcriptions locales et comptait sur des instructions dans cette interaction pour caviarder les secrets. Cela peut au mieux protéger le texte produit ensuite ; cela ne protège pas la frontière du modèle que le contenu brut a déjà franchie."},"en":{"kitchen":"Local transcript excerpts were sent to the model before an instruction asked it to hide secrets: the door had already been crossed.","expert":"A memory-extraction design sent selected local transcript content to a model and relied on instructions inside that model interaction to redact secrets. That protects later text at best; it does not protect the model boundary the raw content already crossed."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"La mémoire compose en arrière-plan des demandes à partir de transcriptions locales.","expert":"La fonction de mémoire consommait des éléments issus de transcriptions locales pour construire des requêtes d’extraction en arrière-plan."},"en":{"kitchen":"Memory builds background requests from local transcripts.","expert":"The memory feature consumed local transcript-derived material to build background extraction requests."}},{"fr":{"cuisine":"La consigne de caviardage n’arrive qu’une fois les extraits déjà dans le contexte du modèle.","expert":"Le caviardage était décrit dans le prompt d’extraction, après que le contenu sélectionné avait déjà rejoint le contexte du modèle."},"en":{"kitchen":"The redaction instruction arrives only after excerpts are already in model context.","expert":"Redaction was described inside the extraction prompt, after selected content had already entered model context."}},{"fr":{"cuisine":"Le nettoyage devient déterministe avant l’envoi, et les diagnostics complets sont réduits séparément.","expert":"Les critères de correction déplacent le nettoyage déterministe avant l’envoi au modèle et réduisent séparément la journalisation diagnostique du contenu complet."},"en":{"kitchen":"Cleaning becomes deterministic before sending, and full diagnostics are reduced separately.","expert":"The remediation criteria moved deterministic scrubbing before model submission and separately reduced full-content diagnostic logging."}},{"fr":{"cuisine":"La sécurité reste un travail ouvert : la nouvelle frontière est un objectif, pas un contrôle livré et vérifié.","expert":"Le travail de sécurité reste ouvert dans les éléments examinés ; la correction de frontière constitue donc un état cible et non un contrôle déployé vérifié."},"en":{"kitchen":"Security work remains open: the new boundary is a target, not a shipped and verified control.","expert":"The security work remains open in the evidence examined, so the boundary correction is a target state rather than a verified deployed control."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Une instruction ne retire pas les données brutes déjà vues par le modèle ; elle ne nettoie pas non plus automatiquement journaux, correctifs en attente ni mémoire différée.","expert":"Une frontière de confidentialité ne protège que les données qui ne l’ont pas encore franchie. Des instructions au modèle ne peuvent pas retirer rétroactivement les valeurs brutes de son contexte. La journalisation constitue une seconde frontière : une entrée modèle assainie ne garantit pas des diagnostics, correctifs en attente ou états mémoire assainis."},"en":{"kitchen":"An instruction cannot remove raw data already seen by the model, nor does it automatically clean logs, pending patches, or deferred memory.","expert":"A privacy boundary only protects data that has not crossed it yet. Model instructions cannot retroactively remove raw values from model context. Logging is a second boundary: sanitized model input does not guarantee sanitized diagnostics, pending patches or memory state."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Avant de composer le prompt, la brigade retire les secrets, garde seulement des métadonnées d’audit, assainit aussi les diagnostics et teste qu’aucun secret représentatif n’atteint modèle, journaux ou mémoire brute.","expert":"Appliquer un nettoyage déterministe avant l’assemblage du prompt, ne conserver que des métadonnées d’audit sans secret et assainir séparément la sérialisation diagnostique. Les tests doivent vérifier que des secrets représentatifs n’atteignent jamais sous forme brute l’entrée du modèle, les journaux ou le contenu mémoire différé."},"en":{"kitchen":"Before building the prompt, the crew removes secrets, keeps only audit metadata, cleans diagnostics too, and tests that representative secrets never reach model input, logs, or raw deferred memory.","expert":"Apply deterministic scrubbing before prompt assembly, retain only non-secret audit metadata, and sanitize diagnostic serialization separately. Tests should assert that representative secrets never reach model input, logs or deferred memory content in raw form."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"Le problème de frontière et les critères de réparation sont établis, mais pas un incident démontré, une fréquence mesurée ni une correction livrée.","expert":"La correction est suivie comme une tâche de sécurité ouverte. Les éléments examinés établissent le problème de placement de la frontière et les critères de correction demandés, mais ni incident de secret démontré, ni fréquence mesurée, ni correction livrée."},"en":{"kitchen":"The boundary problem and repair criteria are established, but not a demonstrated incident, measured prevalence, or shipped correction.","expert":"The remediation is tracked as an open security task. The evidence examined establishes the boundary-placement problem and the requested acceptance criteria, but not a demonstrated secret incident, measured prevalence or shipped correction."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Avant d’envoyer le ticket au modèle, retirer les informations privées à la porte de la cuisine ; après le passage, elles ne sont plus rattrapables.","expert":"Placer les contrôles déterministes de confidentialité avant le composant qu’ils sont censés protéger."},"en":{"kitchen":"Before sending the ticket to the model, remove private information at the kitchen door; after crossing it, it cannot be recalled.","expert":"Put deterministic privacy controls before the component they are meant to protect."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:redact-before-model-boundary",
+  "type": "dossier",
+  "slug": "redact-before-model-boundary",
+  "route": "/dossiers/redact-before-model-boundary/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Gemini CLI"
+    ],
+    "patterns": [
+      "privacy-boundary",
+      "pre-model-redaction",
+      "logging"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on raye sur la page est déjà parti avec elle",
+          "expert": "Caviarder dans le prompt est déjà trop tard"
+        },
+        "en": {
+          "kitchen": "What you cross out has already left with the page",
+          "expert": "Redacting inside the prompt is already too late"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Gemini, la maison recopie des bouts de ce qui s’est dit au comptoir et les envoie lire dehors. En haut de la page, une ligne demande au lecteur de taire ce qui est privé. La page est déjà sortie entière. Ce qu’il écrira ensuite sera peut-être propre ; ce qu’il a lu, non.",
+            "expert": "Une conception d’extraction de mémoire de Gemini CLI transmettait au modèle une sélection de contenu issu de transcriptions locales, puis s’en remettait à des instructions placées dans cette même interaction pour caviarder les secrets. Ce placement protège au mieux le texte produit ensuite. Il ne protège pas la frontière que le contenu brut a déjà franchie."
+          },
+          "en": {
+            "kitchen": "At Gemini, the house copies out scraps of what was said at the counter and sends them to be read outside. A line at the top of the page asks the reader to keep private matters quiet. The page left whole. Whatever he writes back may be clean; what he read is not.",
+            "expert": "A Gemini CLI memory-extraction design passed selected local transcript content to the model, then relied on instructions inside that same interaction to redact secrets. At best this protects the text produced afterwards. It does not protect the boundary the raw content has already crossed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Comment la page est sortie sans être rayée",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "How the page went out uncrossed",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La mémoire de la maison se nourrit en arrière-plan de ce qui a été noté au comptoir.",
+            "expert": "La fonction de mémoire consommait du matériel issu de transcriptions locales pour composer des requêtes d’extraction en arrière-plan."
+          },
+          "en": {
+            "kitchen": "The house memory feeds itself in the background from what was written down at the counter.",
+            "expert": "The memory feature consumed local transcript-derived material to compose background extraction requests."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La consigne de taire le privé est écrite sur la page, donc elle part avec elle.",
+            "expert": "Le caviardage était décrit dans le prompt d’extraction, donc après l’entrée du contenu sélectionné dans le contexte du modèle."
+          },
+          "en": {
+            "kitchen": "The instruction to keep private matters quiet is written on the page, so it leaves with the page.",
+            "expert": "Redaction was specified inside the extraction prompt, that is, after the selected content had entered model context."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Les critères demandés rayent la page à la porte, toujours de la même manière, et allègent aussi les copies gardées au bureau.",
+            "expert": "Les critères de correction déplacent un nettoyage déterministe avant l’envoi au modèle et réduisent séparément la journalisation diagnostique du contenu complet."
+          },
+          "en": {
+            "kitchen": "The criteria asked for strike the page at the door, the same way every time, and also thin the copies kept in the back office.",
+            "expert": "The remediation criteria move deterministic scrubbing ahead of model submission and separately reduce full-content diagnostic logging."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Rien de tout cela n’est posé : le travail reste ouvert, et la nouvelle façon de faire est une intention, pas une garde en place.",
+            "expert": "Le travail de sécurité reste ouvert dans les éléments examinés ; la correction de placement constitue donc un état cible, non un contrôle déployé et vérifié."
+          },
+          "en": {
+            "kitchen": "None of it is in place: the work stays open, and the new way of doing it is an intention, not a guard standing at the door.",
+            "expert": "The security work remains open in the evidence examined, so the placement correction is a target state, not a deployed and verified control."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Une page lue ne se dé-lit pas, et la copie du bureau reste entière",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "A page once read cannot be unread, and the back-office copy stays whole",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une page lue ne se dé-lit pas. Écrire en marge « oublie ça » n’efface rien chez celui qui a déjà lu. Et la maison garde au bureau une copie entière, que personne n’a rayée non plus.",
+            "expert": "Une frontière de confidentialité ne protège que les données qui ne l’ont pas encore franchie. Des instructions au modèle ne retirent pas rétroactivement les valeurs brutes de son contexte. La journalisation forme une seconde frontière : une entrée modèle assainie ne garantit ni diagnostics, ni correctifs en attente, ni état mémoire assainis."
+          },
+          "en": {
+            "kitchen": "A page once read cannot be unread. A note in the margin saying forget this erases nothing for the man who already read it. And the house keeps a whole copy in the back office, which nobody crossed out either.",
+            "expert": "A privacy boundary protects only data that has not crossed it yet. Model instructions do not retroactively remove raw values from model context. Logging is a second boundary: sanitized model input guarantees nothing about diagnostics, pending patches or memory state."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Rayer à la porte, pas chez le lecteur",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Cross it out at the door, not at the reader’s table",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Rayer la page avant qu’elle ne quitte la maison, toujours de la même main. Ne garder en trace que l’heure et qui a demandé, jamais le contenu. Rayer aussi la copie du bureau. Puis glisser de faux secrets pour vérifier qu’aucun ne franchit la porte.",
+            "expert": "Appliquer un nettoyage déterministe avant l’assemblage du prompt, ne conserver que des métadonnées d’audit sans secret, et assainir séparément la sérialisation diagnostique. Les tests doivent vérifier que des secrets représentatifs n’atteignent jamais sous forme brute l’entrée du modèle, la journalisation ou le contenu mémoire différé."
+          },
+          "en": {
+            "kitchen": "Strike the page before it leaves the house, always by the same hand. Keep only the hour and who asked, never the contents. Strike the back-office copy too. Then slip in decoy secrets and check that none of them gets through the door.",
+            "expert": "Apply deterministic scrubbing before prompt assembly, keep only non-secret audit metadata, and sanitize diagnostic serialization separately. Tests must assert that representative secrets never reach model input, logs or deferred memory content in raw form."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Le défaut est nommé, la réparation n’est pas faite",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "The flaw is named; the repair is not done",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui est acquis : le mauvais placement est nommé, et la réparation demandée est écrite. Ce qui ne l’est pas : aucun secret sorti n’a été montré, personne n’a compté à quelle fréquence cela arrive, et rien n’a été réparé.",
+            "expert": "La correction est suivie comme une tâche de sécurité ouverte. Les éléments examinés établissent le problème de placement et les critères d’acceptation demandés, mais ni incident de secret démontré, ni fréquence mesurée, ni correction livrée."
+          },
+          "en": {
+            "kitchen": "What is settled: the wrong placement is named, and the repair asked for is written down. What is not: no secret has been shown to have left, nobody counted how often it happens, and nothing has been repaired.",
+            "expert": "The remediation is tracked as an open security task. The evidence examined establishes the placement problem and the requested acceptance criteria, but neither a demonstrated secret incident, nor measured prevalence, nor a shipped correction."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Rayer avant la porte",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Cross it out before the door",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui doit rester dans la maison se raye avant la porte, pas chez celui qui a déjà lu la page.",
+            "expert": "Placer les contrôles déterministes de confidentialité avant le composant qu’ils sont censés protéger."
+          },
+          "en": {
+            "kitchen": "What must stay in the house gets struck before the door, not at the table of the man who already read the page.",
+            "expert": "Place deterministic privacy controls ahead of the component they are meant to protect."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,218 @@
-{"schema":"argh/public-entity/v1","id":"dossier:roo-code-sunset-with-full-backlog","type":"dossier","slug":"roo-code-sunset-with-full-backlog","route":"/dossiers/roo-code-sunset-with-full-backlog/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Roo Code"],"patterns":["project-mortality","backlog-fossil","sunset"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"La salle était pleine de commandes alors que le restaurant avait déjà fermé","expert":"Un projet est mort stratégiquement alors que des centaines d’issues semblaient encore vivantes"},"en":{"kitchen":"The order board was full after the restaurant had already closed","expert":"A project died strategically while hundreds of issues still looked alive"}},"body":[{"fr":{"cuisine":"La salle était pleine de commandes alors que le restaurant avait déjà fermé. Une enseigne peut rester allumée alors que la cuisine, l’équipe ou la stratégie ont déjà déménagé. Les signaux administratifs ne disent pas seuls si le service vit encore.","expert":"Roo Code ne s’est pas éteint par simple inactivité. Le produit a été arrêté volontairement, des surfaces majeures ont été supprimées, une version finale a été livrée et la continuité s’est déplacée vers des alternatives et forks communautaires."},"en":{"kitchen":"The order board was full after the restaurant had already closed. A sign can stay lit after the kitchen, team or strategy has moved. Administrative activity alone does not prove the service is alive.","expert":"Roo Code did not fade out through inactivity. The product was deliberately wound down, major surfaces were removed, a final release shipped and continuity moved toward alternatives and community forks."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Né d’un fork, Roo ouvre peu à peu sa propre salle avec une carte cloud et enterprise.","expert":"Roo grandit depuis un fork vers un produit important avec ses propres ambitions cloud et enterprise."},"en":{"kitchen":"Born from a fork, Roo gradually opens its own dining room with a cloud and enterprise menu.","expert":"Roo grew from a fork into a substantial product with its own cloud and enterprise ambitions."}},{"fr":{"cuisine":"Le tableau de commandes et les possibilités de contribution restent très fournis.","expert":"Le backlog et la surface de contribution restent très importants."},"en":{"kitchen":"The order board and contribution surface remain very full.","expert":"The backlog and contribution surface remained very large."}},{"fr":{"cuisine":"La direction change pourtant : cloud, enterprise, télémétrie et marketplace commencent à disparaître.","expert":"La stratégie change : le produit commence à retirer cloud, enterprise, télémétrie et marketplace."},"en":{"kitchen":"Strategy changes nevertheless: cloud, enterprise, telemetry, and marketplace surfaces begin to disappear.","expert":"Strategy changed: the product began removing cloud, enterprise, telemetry and marketplace surfaces."}},{"fr":{"cuisine":"Une dernière version officialise l’arrêt du service.","expert":"Une version finale formalise l’arrêt."},"en":{"kitchen":"A final release makes the wind-down official.","expert":"A final release formalized the wind-down."}},{"fr":{"cuisine":"Le dépôt est archivé tandis que la continuité passe ailleurs.","expert":"Le repository est archivé tandis que la continuité se déplace ailleurs."},"en":{"kitchen":"The repository is archived while continuity moves elsewhere.","expert":"The repository was archived while continuity shifted elsewhere."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Le backlog plein ressemblait à de l’activité, mais c’était surtout des commandes abandonnées après le départ de la stratégie et de son propriétaire.","expert":"Les métriques d’activité mesuraient du travail inachevé, pas un engagement stratégique. Issues et branches ouvertes sont devenues les fossiles d’une roadmap qui n’avait plus de propriétaire produit prêt à la livrer."},"en":{"kitchen":"The full backlog looked like activity, but mostly held abandoned orders after strategy and its owner had left.","expert":"Activity metrics measured unfinished work, not strategic commitment. Open issues and branches became fossils of a roadmap that no longer had a product owner willing to ship it."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Pour comprendre Roo, regarder la dernière release, les surfaces retirées, le changement de direction et où la continuité est partie — pas seulement les tickets encore ouverts.","expert":"La santé d’un projet doit suivre changements de direction, releases finales, suppression de surfaces, successeurs ou forks et déclarations des mainteneurs — pas seulement les commits."},"en":{"kitchen":"To understand Roo, look at the final release, removed surfaces, changed direction, and where continuity went—not only tickets still open.","expert":"Project health must track direction changes, final releases, surface removal, successor or fork continuity and maintainer statements — not commit counts alone."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"La brigade distingue maintenant mieux ce qui est seulement écrit, ce qui est livré et ce qui a été réellement observé ; les zones encore non vérifiées restent explicitement ouvertes.","expert":"Roo Code original est un sunset stratégique avec continuation en dehors du produit d’origine."},"en":{"kitchen":"The brigade now separates what is merely written, what has shipped and what was actually observed; anything still unverified remains explicitly open.","expert":"Original Roo Code is a strategic sunset with continuation outside the original product."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Un tableau de commandes plein peut n’être que le garde-manger d’une cuisine qui retire ses plats, ferme sa salle et passe la suite ailleurs.","expert":"Un backlog plein peut être une preuve de mort, pas de vie, lorsque la stratégie est déjà partie ailleurs."},"en":{"kitchen":"A full order board can be only the pantry of a kitchen that removes dishes, closes its room, and moves what comes next elsewhere.","expert":"A full backlog can be evidence of death, not life, when strategy has already moved on."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:roo-code-sunset-with-full-backlog",
+  "type": "dossier",
+  "slug": "roo-code-sunset-with-full-backlog",
+  "route": "/dossiers/roo-code-sunset-with-full-backlog/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Roo Code"
+    ],
+    "patterns": [
+      "project-mortality",
+      "backlog-fossil",
+      "sunset"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Des centaines de commandes au tableau, et la maison déjà fermée",
+          "expert": "Un arrêt stratégique pendant que des centaines d’issues restaient ouvertes"
+        },
+        "en": {
+          "kitchen": "Hundreds of orders on the board, and the house already closed",
+          "expert": "A strategic wind-down while hundreds of issues stayed open"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le tableau de Roo Code portait encore des centaines de commandes quand la maison a fermé. Elle ne s’est pas éteinte faute de clients : on a décidé de l’arrêter. Des pans entiers de la carte ont été retirés, une dernière fournée est sortie, et ceux qui voulaient continuer ont ouvert ailleurs.",
+            "expert": "Roo Code ne s’est pas éteint par inactivité. Le produit a été arrêté délibérément : des surfaces majeures ont été supprimées, une version finale a été livrée, et la continuité s’est déplacée vers des alternatives et des forks communautaires."
+          },
+          "en": {
+            "kitchen": "Roo Code’s board still carried hundreds of orders when the house closed. It did not go quiet for want of custom: closing it was a decision. Whole sections of the menu came down, a last batch went out, and whoever wanted to carry on opened somewhere else.",
+            "expert": "Roo Code did not fade out through inactivity. The product was wound down deliberately: major surfaces were removed, a final release shipped, and continuity moved toward alternatives and community forks."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Comment Roo Code a fermé avec son tableau plein",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "How Roo Code closed with a full board",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Roo Code part de la recette d’une autre maison, puis ouvre la sienne, avec la vente à emporter et les contrats de groupe en tête.",
+            "expert": "Roo Code grandit depuis un fork jusqu’à un produit important, avec ses propres ambitions cloud et enterprise."
+          },
+          "en": {
+            "kitchen": "Roo Code starts from another house’s recipe, then opens its own, with takeaway and group contracts in mind.",
+            "expert": "Roo Code grew from a fork into a substantial product with its own cloud and enterprise ambitions."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le tableau déborde, et beaucoup de monde veut encore mettre la main à la pâte.",
+            "expert": "Le backlog et la surface de contribution restent très importants."
+          },
+          "en": {
+            "kitchen": "The board overflows, and plenty of hands still want a turn at the bench.",
+            "expert": "The backlog and contribution surface remained very large."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La direction change : la vente à emporter, les contrats de groupe, le comptage des couverts et l’étal disparaissent de la carte.",
+            "expert": "La stratégie change : le produit commence à retirer les surfaces cloud, enterprise, télémétrie et marketplace."
+          },
+          "en": {
+            "kitchen": "Direction changes: takeaway, group contracts, the covers count and the stall come off the menu.",
+            "expert": "Strategy changed: the product began removing its cloud, enterprise, telemetry and marketplace surfaces."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Une dernière fournée sort, et elle dit clairement que c’est la dernière.",
+            "expert": "Une version finale formalise l’arrêt."
+          },
+          "en": {
+            "kitchen": "A last batch goes out, and it says plainly that it is the last.",
+            "expert": "A final release formalized the wind-down."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le rideau tombe pour de bon, le tableau encore plein, pendant que la suite s’écrit ailleurs.",
+            "expert": "Le repository est archivé tandis que la continuité se déplace ailleurs."
+          },
+          "en": {
+            "kitchen": "The shutter comes down for good, the board still full, while what comes next is written somewhere else.",
+            "expert": "The repository was archived while continuity shifted elsewhere."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Un tableau plein n’est pas une cuisine qui tourne",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "A full board is not a kitchen still working",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un tableau plein ressemble à une maison qui tourne. Ce sont pourtant des commandes que plus personne n’avait l’intention d’envoyer. Une fois la direction partie, ce qui reste écrit au mur n’est plus un programme mais une pile de souhaits.",
+            "expert": "Les métriques d’activité mesurent du travail inachevé, pas un engagement stratégique. Issues et branches ouvertes sont devenues les fossiles d’une roadmap sans propriétaire produit disposé à la livrer."
+          },
+          "en": {
+            "kitchen": "A full board looks like a house still working. Those are orders nobody intended to send any more. Once direction had left, what stayed chalked on the wall was no longer a plan but a pile of wishes.",
+            "expert": "Activity metrics measure unfinished work, not strategic commitment. Open issues and branches became fossils of a roadmap with no product owner willing to ship it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’il faut lire à la place du tableau",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What to read instead of the board",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Pour savoir si une maison vit, lire la dernière fournée, ce qui a disparu de la carte, le changement de direction, ce qu’en disent ceux qui la tenaient, et où la suite s’est installée. Pas le tableau.",
+            "expert": "La santé d’un projet doit suivre les changements de direction, les releases finales, la suppression de surfaces, la continuité par successeur ou fork, et les déclarations des mainteneurs — pas les seuls commits."
+          },
+          "en": {
+            "kitchen": "To tell whether a house is alive, read the last batch, what vanished from the menu, the change of direction, what the people who ran it say, and where the next thing settled. Not the board.",
+            "expert": "Project health must track direction changes, final releases, surface removal, successor or fork continuity, and maintainer statements — not commit counts alone."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’est devenu Roo Code",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "What Roo Code became",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La maison d’origine est fermée, et c’est une décision, pas un essoufflement. Ce qui continue continue ailleurs, sous d’autres enseignes.",
+            "expert": "Roo Code original relève d’un sunset stratégique, avec continuation en dehors du produit d’origine."
+          },
+          "en": {
+            "kitchen": "The original house is closed, and that was a decision, not exhaustion. What carries on carries on elsewhere, under other signs.",
+            "expert": "Original Roo Code is a strategic sunset, with continuation outside the original product."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Un tableau plein peut être une preuve de mort",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "A full board can be proof of death",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un tableau couvert de commandes peut être le dernier signe d’une maison qui a déjà retiré ses plats et fermé sa salle.",
+            "expert": "Un backlog plein peut être une preuve de mort, non de vie, lorsque la stratégie est déjà partie ailleurs."
+          },
+          "en": {
+            "kitchen": "A board covered in orders can be the last sign of a house that has already pulled its dishes and shut its room.",
+            "expert": "A full backlog can be evidence of death, not life, when strategy has already moved on."
+          }
+        }
+      ]
+    }
+  ]
+}

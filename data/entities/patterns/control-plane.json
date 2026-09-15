@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:control-plane","type":"pattern","slug":"control-plane","route":"/patterns/control-plane/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Cline"],"patterns":[],"dossiers":["cline-hooks-control-layer"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"L’organisation autour des cuisiniers compte autant qu’eux","expert":"Plan de contrôle"},"en":{"kitchen":"The organization around the cooks matters too","expert":"Control Plane"}},"body":[{"fr":{"cuisine":"Les règles, outils et contrôles qui entourent un cuisinier IA déterminent ce qu’il peut réellement faire.","expert":"Le plan de contrôle regroupe les mécanismes qui configurent, autorisent, observent et contraignent l’exécution des agents."},"en":{"kitchen":"Rules, tools and checks around an AI cook determine what it can actually do.","expert":"The control plane comprises mechanisms that configure, authorize, observe and constrain agent execution."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:control-plane",
+  "type": "pattern",
+  "slug": "control-plane",
+  "route": "/patterns/control-plane/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Cline"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "cline-hooks-control-layer"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le talent du cuisinier ne dit pas qui peut arrêter l’assiette",
+          "expert": "Ce qui entoure l’exécution décide de ce qu’un modèle peut réellement faire"
+        },
+        "en": {
+          "kitchen": "A cook’s talent does not say who may stop the plate",
+          "expert": "What surrounds execution decides what a model can actually do"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un cuisinier peut être excellent ; cela ne dit pas qui, dans la maison, peut arrêter son assiette avant qu’elle parte. Chez Cline, la main posée au passe a changé de nature. D’abord un simple coup d’œil, puis un bras qui retient le plat, puis une voix qui tranche. Regarder, retenir, trancher : trois pouvoirs différents, et rien ne dit lequel a été donné tant que la maison ne l’écrit pas.",
+            "expert": "Chez Cline, les hooks sont passés d’un point d’extension scripté à une couche de contrôle runtime dédiée, avec mapping d’événements, logs, connecteurs, timeouts d’exécution bornés et intégration à la compaction. Observer, bloquer et décider sont trois niveaux d’autorité distincts, et rien ne les rend lisibles tant que la conception ne dit pas lequel un mécanisme donné détient. Le plan de contrôle est cette couche périphérique, pas la capacité du modèle."
+          },
+          "en": {
+            "kitchen": "A cook can be excellent; that says nothing about who in the house may stop his plate before it leaves. At Cline the hand resting at the pass changed in kind. First a glance, then an arm that holds the plate back, then a voice that settles it. Watching, holding and settling are three different powers, and nothing tells you which one was handed over until the house writes it down.",
+            "expert": "At Cline, hooks moved from a scripted extension point to a dedicated runtime control layer with event mapping, logs, connectors, bounded execution timeouts and compaction integration. Observing, blocking and deciding are three distinct levels of authority, and none of them is legible until the design states which one a given mechanism holds. The control plane is that peripheral layer, not the model’s capability."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "La maison se met à chronométrer le passe",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "The house starts timing the pass",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On le reconnaît quand un geste de politesse reçoit un cahier et une horloge. On note qui a regardé quoi. On limite le temps pendant lequel un plat peut être retenu, et des gens de l’extérieur suivent ce qui se passe au passe. Ce qu’on voit, c’est une maison qui s’organise ; personne n’a mesuré ce que ça donne au coup de feu.",
+            "expert": "Le mécanisme périphérique acquiert une machinerie de niveau produit : mapping d’événements dédié, chemins d’exécution propres, logs, connecteurs externes, timeouts bornés, réutilisation jusqu’à la compaction personnalisée. Second signal : l’autorité n’est pas déclarée, et l’on ne sait pas si le mécanisme observe, bloque ou décide. Ce que ces signaux établissent est une trajectoire architecturale, pas une mesure de fiabilité en production."
+          },
+          "en": {
+            "kitchen": "You recognise it when a courtesy gesture acquires a ledger and a clock. Someone records who looked at what. A held plate may only be held so long, and people outside the kitchen follow what happens at the pass. What you can see is a house organising itself; nobody has measured how it holds up during the rush.",
+            "expert": "The peripheral mechanism acquires product-grade machinery: a dedicated event mapping, its own execution paths, logs, external connectors, bounded timeouts, reuse as far as custom compaction. Second signal: authority is left undeclared, so whether the mechanism observes, blocks or decides is unknown. What these signals establish is an architectural trajectory, not a production reliability measurement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Un bras qui retient devient un poste, sans que personne l’ait décidé",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "An arm that holds plates becomes a station nobody staffed",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Tant que ce bras n’était qu’une politesse, personne ne demandait ce qui se passe s’il n’est pas là. Maintenant qu’il peut retenir un plat, son absence décide à sa place : le plat part, ou il ne part jamais. La question n’a pas été posée le jour où on l’a installé. Elle se pose le soir où il manque, et c’est le service qui répond.",
+            "expert": "Dès qu’un mécanisme périphérique est sur le chemin critique, il hérite des exigences des autres composants runtime : lifecycle défini, observabilité, sémantique d’échec explicite. Là où la sémantique d’échec n’est pas déclarée, le comportement en cas de défaillance devient une propriété découverte à l’exécution plutôt qu’une propriété de conception. L’autorité, elle, a été acquise par accumulation, sans décision correspondante."
+          },
+          "en": {
+            "kitchen": "While that arm was only a courtesy, nobody asked what happens when it is not there. Now that it can hold a plate, its absence decides in its place: the plate leaves, or it never leaves at all. The question went unasked on the day the arm was put there. It gets asked on the night the arm is missing, and service answers it.",
+            "expert": "Once a peripheral mechanism sits on the critical path, it inherits what other runtime components must provide: a defined lifecycle, observability, explicit failure semantics. Where failure semantics are undeclared, failure behaviour becomes a property discovered at run time rather than a property of the design. The authority itself was acquired by accumulation, with no matching decision."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Écrire le pouvoir à côté de la main qui le tient",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Write the power beside the hand that holds it",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "À côté de chaque main posée au passe, écris ce qu’elle a le droit de faire : regarder, retenir ou trancher. Écris aussi combien de temps elle peut retenir, et ce qui se passe si elle ne répond pas. Au même endroit, sur la même feuille, le jour où on la met en place. Pas après, quand le service a déjà tranché à sa place.",
+            "expert": "Promouvoir ces mécanismes de scripts hétérogènes à primitives runtime typées et observables. Le typage et l’observabilité rendent l’autorité de chacun lisible avant exécution, au lieu d’être déduite après coup de ses effets. Autorité, timeout et comportement en échec se déclarent là où le mécanisme lui-même est déclaré."
+          },
+          "en": {
+            "kitchen": "Beside every hand at the pass, write what it is allowed to do: watch, hold, or settle. Write how long it may hold a plate, and what happens if it never answers. Same page, same day you put it there. Not afterwards, once service has already decided in its place.",
+            "expert": "Promote these mechanisms from heterogeneous scripts to typed, observable runtime primitives. Typing and observability make each one’s authority legible before execution instead of inferred afterwards from its effects. Authority, timeout and failure behaviour are declared where the mechanism itself is declared."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Qui tient le passe tient le service",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Whoever holds the pass holds the service",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qu’on a monté autour du cuisinier décide de ce qu’il peut vraiment envoyer. Dès qu’une main peut retenir un plat, elle tient un poste : son pouvoir, sa durée et son absence s’écrivent le jour où on l’installe.",
+            "expert": "Dès qu’un mécanisme périphérique contrôle le lifecycle, il exige des sémantiques runtime de niveau produit. Autorité, timeout et comportement en échec se déclarent avec lui, pas après coup."
+          },
+          "en": {
+            "kitchen": "What has been built around a cook decides what he can actually send out. The moment a hand can hold a plate, it is holding a station. Its power, its limit and its absence get written down the day it is put there.",
+            "expert": "Once a peripheral mechanism controls the lifecycle, it demands product-level runtime semantics. Authority, timeout and failure behaviour are declared alongside it, never after the fact."
+          }
+        }
+      ]
+    }
+  ]
+}

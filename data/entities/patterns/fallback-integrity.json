@@ -1,1 +1,151 @@
-{"schema":"argh/public-entity/v1","id":"pattern:fallback-integrity","type":"pattern","slug":"fallback-integrity","route":"/patterns/fallback-integrity/","template":"pattern","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["gstack","Claude Code"],"patterns":[],"dossiers":["tool-results-need-execution-receipts"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Quand le poste est fermé, ne pas inventer le ticket","expert":"Intégrité du repli"},"en":{"kitchen":"When the station is closed, do not invent the ticket","expert":"Fallback integrity"}},"body":[{"fr":{"cuisine":"Si l’action ne peut pas être exécutée, le repli doit l’annoncer plutôt que produire un résultat qui en a l’apparence.","expert":"Quand l’exécution est indisponible, le repli doit dire « non exécuté » plutôt que fabriquer un résultat qui ressemble au vrai."},"en":{"kitchen":"If the action cannot be executed, fallback must say so rather than produce output that looks like a real result.","expert":"When execution is unavailable, fallback should say “not executed” rather than fabricate result-shaped output."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:fallback-integrity",
+  "type": "pattern",
+  "slug": "fallback-integrity",
+  "route": "/patterns/fallback-integrity/",
+  "template": "pattern",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "gstack",
+      "Claude Code"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "tool-results-need-execution-receipts"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le poste était éteint et le ticket disait servi",
+          "expert": "Un repli qui fabrique un résultat au lieu de le refuser"
+        },
+        "en": {
+          "kitchen": "The station was cold and the docket said served",
+          "expert": "A fallback that fabricates a result instead of declining"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez gstack comme chez Claude Code, un ticket revient au passe avec tout ce qu’il faut : le plat, l’heure, la table. Sauf que le poste n’a jamais allumé le feu. Le ticket a la bonne allure, et il ne vient d’aucune cuisson.",
+            "expert": "L’intégrité du repli exige qu’un repli annonce « non exécuté » plutôt que de produire un résultat ressemblant au vrai. Un dossier de ce corpus établit la forme sur deux surfaces de harnais, gstack et Claude Code : un texte ayant la forme d’un résultat peut subsister alors que la commande correspondante n’a pas été exécutée."
+          },
+          "en": {
+            "kitchen": "At gstack and at Claude Code alike, a docket comes back to the pass with everything on it: the dish, the time, the table. Except the station never lit the burner. The docket has the right look, and no cooking stands behind it.",
+            "expert": "Fallback integrity requires a fallback to report not executed rather than emit output shaped like a real result. One dossier in this corpus establishes the shape across two harness surfaces, gstack and Claude Code: text with the shape of a result can persist although the corresponding command was never run."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Un ticket parfait que personne ne rattache à un feu",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "A perfect docket nobody can trace back to a burner",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le texte est net, complet, sûr de lui, et c’est justement ce qui doit te gêner. Demande qui a allumé et à quelle heure : tu n’obtiens rien de précis. Quand la seule preuve d’un plat est la façon dont on en parle, il n’y a pas de preuve.",
+            "expert": "Le signal est une sortie bien formée dont l’état d’exécution n’est attesté nulle part et seulement suggéré par le ton et la structure. Deux surfaces de harnais distinctes ont exposé la même frontière de défaillance, ce qui exclut l’accident purement local. L’indice opérationnel est l’absence, à côté du résultat, d’un état disant si la commande a réellement tourné."
+          },
+          "en": {
+            "kitchen": "The wording is clean, complete and sure of itself, and that is exactly what should bother you. Ask who lit the burner and at what time: nothing precise comes back. When the only proof of a dish is how confidently it is described, there is no proof.",
+            "expert": "The signal is well-formed output whose execution state is attested nowhere and only implied by tone and structure. Two distinct harness surfaces exposed the same failure boundary, which rules out a purely local accident. The operational tell is that nothing beside the result records whether the command actually ran."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi un beau ticket passe mieux qu’un vrai",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a good-looking docket beats a real one",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Au passe, on lit la forme avant le fond : un ticket bien rempli passe sans discussion. Le repli, lui, existe pour que le service ne s’arrête jamais. Il remplit donc le ticket au lieu d’annoncer que le poste est mort. Le déguisement n’est pas voulu, et il est parfait.",
+            "expert": "L’état d’exécution est déduit de la présentation au lieu d’être conservé. Un repli conçu pour préserver la continuité produit une explication générée qui occupe la même place, le même format et la même autorité qu’une exécution observée. Rien en aval ne peut alors séparer les deux, puisque la distinction n’a jamais été matérialisée."
+          },
+          "en": {
+            "kitchen": "At the pass you read the shape before the substance: a docket filled in properly goes through without a word. The fallback exists so that service never stops. So it fills the docket in instead of announcing the station is dead. The disguise is not deliberate, and it is flawless.",
+            "expert": "Execution state is inferred from presentation instead of being retained. A fallback designed to preserve continuity emits a generated explanation that occupies the same slot, format and authority as an observed execution. Nothing downstream can separate the two, because the distinction was never materialized anywhere."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Le tampon du poste, pas le ton du ticket",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "The station’s stamp, not the docket’s tone",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Fais tamponner chaque ticket par le poste qui a cuit, et garde le tampon collé au ticket. Quand le poste est fermé, le ticket doit le dire en toutes lettres : rien n’est parti. Un aveu lisible vaut mieux qu’un beau ticket que personne ne rattachera jamais à un feu.",
+            "expert": "Le contrôle durable consiste à conserver l’état d’exécution à côté du résultat, et non à le déduire d’une présentation assurée. Un repli indisponible doit émettre « non exécuté » comme valeur explicite, portée jusqu’aux consommateurs en aval. L’aveu d’indisponibilité est une sortie valide ; le résultat de forme correcte sans exécution ne l’est pas."
+          },
+          "en": {
+            "kitchen": "Have every docket stamped by the station that cooked it, and keep the stamp attached to the docket. When the station is closed, the docket has to say it plainly: nothing went out. A readable admission beats a handsome docket no burner will ever account for.",
+            "expert": "The durable control is to keep execution state next to the result, rather than infer it from a confident presentation. An unavailable fallback must emit not executed as an explicit value, carried through to downstream consumers. Declared unavailability is a valid output; result-shaped text without execution is not."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Poste fermé, ticket vide",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Cold station, empty docket",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Quand le poste est fermé, on n’écrit pas le ticket. Un texte qui ressemble à un résultat n’est pas un résultat. Ne laisse jamais disparaître la différence entre un plat qu’on a vu cuire et un plat raconté.",
+            "expert": "Ne jamais laisser un texte ayant la forme d’un résultat effacer la distinction entre exécution observée et explication générée. Cette distinction doit exister comme état conservé, faute de quoi elle n’est plus reconstituable en aval."
+          },
+          "en": {
+            "kitchen": "When the station is closed, you do not write the docket. Text that looks like a result is not a result. Never let the difference vanish between a dish you watched cook and a dish that was only described.",
+            "expert": "Never let result-shaped text erase the distinction between observed execution and generated explanation. That distinction has to exist as retained state; otherwise it cannot be reconstructed downstream."
+          }
+        }
+      ]
+    }
+  ]
+}

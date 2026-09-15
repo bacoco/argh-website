@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:hooks-as-sensors","type":"pattern","slug":"hooks-as-sensors","route":"/patterns/hooks-as-sensors/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Claude Code"],"patterns":[],"dossiers":["hook-canary-behavior-drift"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Les contrôles peuvent aussi montrer ce qui se passe","expert":"Hooks comme capteurs"},"en":{"kitchen":"Checks can also reveal what is happening","expert":"Hooks as Sensors"}},"body":[{"fr":{"cuisine":"Un contrôle placé au bon endroit peut servir de témoin pour détecter un changement de comportement réel.","expert":"Un hook peut instrumenter l’exécution et fournir un signal d’observation indépendant de sa fonction éventuelle d’enforcement."},"en":{"kitchen":"A check placed at the right point can act as a witness to real behavior changes.","expert":"A hook can instrument execution and provide an observation signal independently of any enforcement role."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:hooks-as-sensors",
+  "type": "pattern",
+  "slug": "hooks-as-sensors",
+  "route": "/patterns/hooks-as-sensors/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Claude Code"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "hook-canary-behavior-drift"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le carnet tenu pour punir s’est mis à mesurer",
+          "expert": "Un contrôle d’enforcement devient un instrument de mesure"
+        },
+        "en": {
+          "kitchen": "The book kept to punish started to measure",
+          "expert": "An enforcement check becomes a measuring instrument"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un habitué de Claude Code interdit une phrase au passe et coche chaque fois qu’elle est dite. Le carnet reste presque vide des mois durant. Puis les croix reviennent en paquet, sans que la consigne ait bougé. Le carnet posé pour punir dit maintenant que la maison a changé.",
+            "expert": "Un contrôle déterministe installé pour bloquer enregistre aussi, à chaque déclenchement, une observation datée. Sur Claude Code, un stop-phrase guard construit côté utilisateur a accumulé brusquement un groupe de violations après un changement de comportement, alors que la règle imposée n’avait pas bougé. Le hook d’enforcement local a fonctionné comme canari quantitatif de cette dérive."
+          },
+          "en": {
+            "kitchen": "A regular at Claude Code bans one phrase at the pass and marks the book every time it is said. The book stays nearly empty for months. Then the marks come back in a bunch, with the house rule untouched. What was kept to punish now says the house has changed.",
+            "expert": "A deterministic check installed to block also records a timestamped observation on every activation. In Claude Code, a user-built stop-phrase guard abruptly accumulated a cluster of violations following a behavioral change, while the enforced rule itself stayed fixed. The local enforcement hook worked as a quantitative canary for that drift."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Les croix reviennent alors que la consigne n’a pas changé",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "The marks come back though the house rule has not moved",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On reconnaît le motif à ceci : le nombre de croix change, la consigne non. Elles arrivent groupées, pas une de temps en temps. Et rien d’autre dans la maison ne dit ce qui s’est passé : le carnet est la seule trace datée.",
+            "expert": "Le motif se reconnaît à une rupture de taux sur un contrôle dont la règle est restée stable, et à un groupement des violations plutôt qu’à des occurrences isolées. La longue période sans déclenchement fournit la ligne de base qui rend la rupture lisible. Aucune instrumentation produit ne couvre l’événement : la seule série datée est celle du contrôle lui-même."
+          },
+          "en": {
+            "kitchen": "You know the shape by this: the count moves, the house rule does not. The marks arrive in a bunch, not one now and then. And nothing else in the house records it: the book is the only dated trace there is.",
+            "expert": "The pattern shows as a rate discontinuity on a check whose rule stayed fixed, with violations clustering rather than appearing in isolation. The long activation-free stretch supplies the baseline that makes the break readable. No product instrumentation covers the event: the only dated series is the check's own."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Un carnet vide a l’air inutile jusqu’au jour où il se remplit",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "An empty book looks useless until the day it fills",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui trompe, c’est l’usage qu’on croit lui connaître. On a posé le carnet pour reprendre les commis, alors on le lit comme une liste de fautes. Les mois vides passent pour du papier perdu. Ils sont en fait la seule comparaison dont la maison dispose.",
+            "expert": "Le contrôle est lu à travers sa fonction déclarée, bloquer, et sa sortie est traitée comme un journal de discipline plutôt que comme une mesure. Cette lecture masque sa propriété statistique : un contrôle appliqué de façon stable échantillonne le comportement observé à chaque exécution. La longue période sans violation constitue alors une ligne de base que peu d’instrumentations produit fournissent."
+          },
+          "en": {
+            "kitchen": "What fools you is the job you think it has. The book went up to correct the crew, so it reads as a list of faults. The empty months pass for wasted paper. They are in fact the only comparison the house holds.",
+            "expert": "The check gets read through its declared function, blocking, and its output is handled as a discipline log rather than a measurement. That reading hides the statistical property: a consistently applied check samples observed behavior on every run. The long violation-free stretch is then a baseline that product instrumentation rarely supplies."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Garder les croix, les dates, et ce que la maison faisait ce soir-là",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Keep the marks, the dates, and how the house ran that night",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un carnet qu’on recommence chaque soir ne mesure rien. Gardez les croix, la date, et ce que la maison faisait tourner ce jour-là. Un rappel à l’ordre devient alors un relevé, et le jour où ça a tourné se lit tout seul.",
+            "expert": "Traiter certains contrôles comme sources de télémétrie : conserver compteurs, versions et timestamps plutôt que réinitialiser à chaque exécution. Les déclenchements forment alors une série corrélable à un changement produit. La corrélation reste une corrélation : la rupture est établie, le mécanisme causal ne l’est pas."
+          },
+          "en": {
+            "kitchen": "A book started fresh each evening measures nothing. Keep the marks, the date, and what the house was running that night. A call to order then becomes a reading, and the day things turned shows by itself.",
+            "expert": "Run selected checks as telemetry: persist counters, versions and timestamps instead of resetting on every run. Activations then form a series that can be lined up against a product change. Correlation stays correlation: the discontinuity is established, the causal mechanism is not."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Une règle tenue longtemps finit par mesurer la maison",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "A rule held long enough ends up measuring the house",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une règle qu’on tient sans faiblir pendant des mois finit par en dire plus sur la maison que sur les commis. Gardez son carnet. Le jour où quelque chose bouge ailleurs, c’est là que ça se verra d’abord, et avec une date.",
+            "expert": "Un hook est un capteur autant qu’un bloqueur. Un contrôle déterministe appliqué de façon stable produit une série temporelle exploitable sur un système que le produit observé n’instrumente pas nécessairement lui-même. La conclusion s’arrête là : le signal date la rupture, il ne l’explique pas."
+          },
+          "en": {
+            "kitchen": "A rule held without slack for months ends up saying more about the house than about the crew. Keep its book. When something shifts elsewhere, that is where it shows first, and with a date on it.",
+            "expert": "A hook is a sensor as much as a blocker. A deterministic check applied consistently yields a usable time series about a system the observed product may not instrument at all. The conclusion stops there: the signal dates the discontinuity, it does not explain it."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,178 @@
-{"schema":"argh/public-entity/v1","id":"project:langgraph","type":"project","slug":"langgraph","route":"/projects/langgraph/","template":"project","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":[],"patterns":["ownership","retry","timeout"],"dossiers":["timeout-left-descendants-running"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"LangGraph","expert":"LangGraph"},"en":{"kitchen":"LangGraph","expert":"LangGraph"}},"body":[{"fr":{"cuisine":"Un dossier public sur le moment où le minuteur de LangGraph sonne, mais laisse encore des tâches enfants travailler en cuisine.","expert":"1 dossiers publics rattachés à LangGraph."},"en":{"kitchen":"One public dossier about the moment LangGraph’s timer rings while child tasks are still working in the kitchen.","expert":"1 public dossiers associated with LangGraph."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "project:langgraph",
+  "type": "project",
+  "slug": "langgraph",
+  "route": "/projects/langgraph/",
+  "template": "project",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [],
+    "patterns": [
+      "ownership",
+      "retry",
+      "timeout"
+    ],
+    "dossiers": [
+      "timeout-left-descendants-running"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "LangGraph",
+          "expert": "LangGraph"
+        },
+        "en": {
+          "kitchen": "LangGraph",
+          "expert": "LangGraph"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "LangGraph tient une cuisine où l’on reprend un plat commencé par quelqu’un d’autre. Onze postes ont été passés en revue, et le relevé dit lui-même qu’il reste des trous. Un dossier y est rattaché : le minuteur qui sonne pendant que la casserole continue de chauffer.",
+            "expert": "LangGraph a été rebaselinée sur onze surfaces, avec une couverture qualifiée complète avec lacunes. L’observation porte sur les checkpoints, la durabilité, les interruptions, les retries, le cache et les tests, comparés à une référence non identifiée. Un dossier public lui est rattaché, sur un timeout qui laisse des descendants s’exécuter."
+          },
+          "en": {
+            "kitchen": "LangGraph runs the kind of kitchen where one cook picks up a dish another cook started. Eleven stations were walked, and the write-up says plainly that gaps remain. One dossier hangs off it: the timer that rings while the pan keeps cooking.",
+            "expert": "LangGraph was rebaselined across eleven surfaces, with coverage recorded as complete with gaps. The observed area covers checkpoints, durability, interrupts, retries, cache and tests, measured against a reference that is not identified. One public dossier is attached, covering a timeout that left descendants running."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Onze postes passés en revue, des trous assumés",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "Eleven stations walked, gaps written down",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Il n’y a pas de dates à dérouler ici. On a fait le tour de onze postes chez LangGraph. On a noté ce qu’on met de côté pour reprendre, ce qui tient quand on coupe, ce qu’on refait. Puis ce qu’on garde au chaud, les essais, et personne n’a écrit à quelle maison on comparait.",
+            "expert": "La matière ne fournit aucune chronologie datée. Ce qui est établi tient dans un relevé unique : onze surfaces couvertes, couverture qualifiée complète avec lacunes, six domaines observés — checkpoints, durabilité, interruptions, retries, cache, tests. La référence de comparaison n’est pas identifiée."
+          },
+          "en": {
+            "kitchen": "No run of dates belongs on this page. The walk-through covered eleven stations at LangGraph. What is set aside to resume, what survives a stop, what gets redone, what is held warm, and the trials — all noted. Nobody wrote down which house it was all compared with.",
+            "expert": "No dated sequence is established. The record is a single observation pass: eleven surfaces, coverage marked complete with gaps, and six observed areas — checkpoints, durability, interrupts, retries, cache and tests. The comparison reference is unidentified."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi la mémoire d’un commis ne suffit pas",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a cook’s memory is not a record",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un commis qui garde la commande dans sa tête emporte le plat avec lui quand il sort. Celui qui reprend le poste ne retrouve ni la cuisson déjà faite, ni ce qui reste à faire. LangGraph part de l’autre côté : l’état du plat est écrit, pas récité.",
+            "expert": "Un travail long ou réparti entre plusieurs exécutants ne se reprend pas de façon fiable après interruption si son état n’existe que sous forme de texte de prompt reconstruit. Plusieurs frameworks, dont LangGraph, exposent au contraire des objets d’état explicites qui survivent aux interruptions, aux passages de main et aux reprises. Ces deux constats sont donnés à confiance haute."
+          },
+          "en": {
+            "kitchen": "Shift change is the test. When the only record of an order lives in one cook’s head, whoever takes the station inherits a pan and no instructions. LangGraph keeps that record on the board instead, where a second pair of hands can read it.",
+            "expert": "Long-running or multi-agent work cannot be reliably recovered after an interruption when its state exists only as reconstructed prompt text. Several frameworks, LangGraph among them, instead expose explicit state objects that survive or structure interruptions, handoffs and resumed work. Both statements carry high confidence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que LangGraph écrit noir sur blanc",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What LangGraph puts in writing",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La règle tirée du relevé tient en une ligne. On écrit où en est chaque plat ; on ne se fie pas aux souvenirs. Attention, personne n’affirme ici qu’une correction a été apportée quelque part. C’est une façon de tenir la cuisine, pas un plat rattrapé.",
+            "expert": "La pratique retenue, à confiance haute, est de persister un état d’exécution structuré plutôt que de le reconstruire depuis le texte du prompt. Le relevé ne cite aucun correctif fusionné ni changement livré du côté de LangGraph. Il décrit une orientation de conception, observée sur les surfaces de checkpoints, d’interruptions et de retries."
+          },
+          "en": {
+            "kitchen": "The rule the write-up draws is plain: put the state of every dish on the board, and trust nothing that is only remembered. No one here claims a repair was made anywhere. This is how a house chooses to run service, not a dish that got saved.",
+            "expert": "The stated practice, at high confidence, is to persist structured execution state instead of rebuilding it from prompt text. The record names no merged fix and no shipped change on the LangGraph side. It describes a design direction, observed on the checkpoint, interrupt and retry surfaces."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Où en est LangGraph au passe",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "Where LangGraph stands at the pass",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qu’on sait de LangGraph vient d’un tour de cuisine, pas d’un service complet passé derrière les fourneaux. Le relevé annonce lui-même ses trous. Ce qu’on en dit sur la coordination et la tenue dans la durée reste une impression sérieuse, pas une certitude.",
+            "expert": "L’état de preuve est une observation de surfaces, non une mesure de comportement. La couverture est explicitement incomplète et la référence de comparaison n’est pas identifiée. Le thème rattaché — orchestration, exécution durable, évolutions de release — est porté à confiance moyenne."
+          },
+          "en": {
+            "kitchen": "What is known about LangGraph comes from walking the kitchen, not from standing a full service there. The sheet admits its own gaps. The read on how the house coordinates, and how it lasts a long night, is a serious impression, not a verdict.",
+            "expert": "The evidence state is a surface observation, not a behavioural measurement. Coverage is explicitly incomplete and the comparison reference is unidentified. The attached theme — agent orchestration, durable execution, release changes — is carried at medium confidence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui doit rester écrit",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Keep the board, not the memory",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui n’est pas écrit au tableau n’existe plus au changement d’équipe.",
+            "expert": "Un travail reprenable doit persister un état d’exécution structuré plutôt que dépendre d’une reconstruction depuis le texte du prompt."
+          },
+          "en": {
+            "kitchen": "If the board does not say where the dish stands, the next cook is starting it again.",
+            "expert": "Resumable work must persist structured execution state rather than depend on reconstructing that state from prompt text."
+          }
+        }
+      ]
+    }
+  ]
+}

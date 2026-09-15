@@ -1,1 +1,218 @@
-{"schema":"argh/public-entity/v1","id":"dossier:timeout-left-descendants-running","type":"dossier","slug":"timeout-left-descendants-running","route":"/dossiers/timeout-left-descendants-running/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["LangGraph"],"patterns":["timeout","ownership","retry"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le minuteur a sonné, mais les fours du fond ont continué à tourner","expert":"Le timeout est revenu ; les descendants coûteux ont continué"},"en":{"kitchen":"The timer rang, but the ovens in back kept running","expert":"The timeout returned; the expensive descendants kept running"}},"body":[{"fr":{"cuisine":"Le minuteur a sonné, mais les fours du fond ont continué à tourner. Relancer la même commande peut sembler prudent, mais chaque nouvelle tentative consomme à nouveau du temps, des ingrédients et parfois la facture entière.","expert":"Un timeout à la frontière de l’appelant ne terminait pas nécessairement le travail sous-jacent, permettant à des tentatives de remplacement de chevaucher l’exécution originale."},"en":{"kitchen":"The timer rang, but the ovens in back kept running. Retrying the same order may look safe, but every attempt consumes time, ingredients and sometimes the full bill again.","expert":"A timeout at the caller boundary did not necessarily terminate the underlying work, allowing replacement attempts to overlap with the original execution."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Une préparation longue dépasse le temps qui lui était accordé.","expert":"Une opération longue dépasse sa deadline."},"en":{"kitchen":"A long preparation exceeds its allotted time.","expert":"A long-running operation exceeded its deadline."}},{"fr":{"cuisine":"Le poste qui attend reçoit le signal du minuteur.","expert":"L’appelant reçoit un résultat de timeout."},"en":{"kitchen":"The station that is waiting receives the timer signal.","expert":"The caller received a timeout outcome."}},{"fr":{"cuisine":"Au fond, la préparation peut pourtant continuer à tourner.","expert":"Le travail sous-jacent peut rester vivant."},"en":{"kitchen":"In back, the preparation may still keep running.","expert":"Underlying work could remain alive."}},{"fr":{"cuisine":"Une nouvelle préparation ou un remplacement peut alors démarrer par-dessus la première.","expert":"Un retry ou remplacement peut démarrer."},"en":{"kitchen":"A new preparation or replacement can then start on top of the first.","expert":"A retry or replacement could start."}},{"fr":{"cuisine":"Le même effet et la même facture peuvent ainsi être produits deux fois.","expert":"Des effets de bord et coûts en double deviennent possibles."},"en":{"kitchen":"The same effect and the same bill can then be produced twice.","expert":"Duplicate side effects and cost became possible."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Le sablier arrêtait l’attente du serveur, pas le sous-cuisinier ou le four distant qui continuait réellement le plat.","expert":"Le timeout possédait l’attente de l’appel, pas le processus descendant ou job distant réalisant l’effet réel."},"en":{"kitchen":"The hourglass stopped the waiter’s wait, not the sub-cook or remote oven that actually kept making the dish.","expert":"The timeout owned the waiting call, not the descendant process or remote job that performed the actual side effect."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Une deadline doit finir ou clôturer le travail qu’elle possède, puis montrer cet état final avant qu’une nouvelle commande parte.","expert":"Les deadlines doivent terminer ou fence le travail qu’elles possèdent et exposer un état terminal avant qu’un retry puisse continuer."},"en":{"kitchen":"A deadline must finish or fence the work it owns, then show that terminal state before another order goes out.","expert":"Deadlines must terminate or fence the work they own and expose terminal state before retries can proceed."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"Ce piège reste durable pour les outils et tâches de fond des agents : le silence de l’appelant ne prouve pas l’arrêt du travail.","expert":"Un pattern durable pour l’exécution d’outils et tâches de fond des agents."},"en":{"kitchen":"This trap remains durable for agent tools and background tasks: the caller’s silence does not prove the work stopped.","expert":"A durable pattern for agent tool execution and background tasks."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Un timeout qui ne coupe pas le feu ne chronomètre que le serveur qui attend.","expert":"Un timeout qui n’arrête pas le travail n’est qu’un timeout de l’observateur."},"en":{"kitchen":"A timeout that does not turn off the heat only times the waiter who is waiting.","expert":"A timeout that does not stop the work is only a timeout of the observer."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:timeout-left-descendants-running",
+  "type": "dossier",
+  "slug": "timeout-left-descendants-running",
+  "route": "/dossiers/timeout-left-descendants-running/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "LangGraph"
+    ],
+    "patterns": [
+      "timeout",
+      "ownership",
+      "retry"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Chez LangGraph, le minuteur sonne au passe et le four du fond continue",
+          "expert": "Chez LangGraph, le timeout de l’appelant ne terminait pas le travail descendant"
+        },
+        "en": {
+          "kitchen": "At LangGraph the timer rings at the pass and the back oven keeps going",
+          "expert": "In LangGraph, the caller’s timeout did not terminate descendant work"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le minuteur sonne au passe : pour LangGraph, la commande est perdue. Au fond, personne n’a coupé le feu et le plat continue de cuire. On relance donc la même commande, et deux plats avancent en même temps. Le temps, les produits et l’addition comptent double.",
+            "expert": "Dans LangGraph, un timeout à la frontière de l’appelant ne terminait pas nécessairement le travail sous-jacent. Une tentative de remplacement pouvait alors recouvrir l’exécution d’origine, avec des effets de bord et un coût dupliqués."
+          },
+          "en": {
+            "kitchen": "The timer rings at the pass, so LangGraph writes the order off as lost. Nobody in back turned off the heat, and the dish keeps cooking. The same order goes out again, and two plates now move at once. Time, produce and the bill all count twice.",
+            "expert": "In LangGraph, a timeout at the caller boundary did not necessarily terminate the underlying work. A replacement attempt could then overlap the original execution, duplicating side effects and cost."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Du minuteur à la double addition",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "From the timer to the doubled bill",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une cuisson longue dépasse le temps qu’on lui avait donné.",
+            "expert": "Une opération longue dépasse son délai imparti."
+          },
+          "en": {
+            "kitchen": "A long cook runs past the time it was given.",
+            "expert": "A long-running operation exceeded its deadline."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Au passe, le minuteur sonne et la commande est notée perdue.",
+            "expert": "L’appelant reçoit un résultat de timeout."
+          },
+          "en": {
+            "kitchen": "At the pass the timer rings and the order is written off.",
+            "expert": "The caller received a timeout outcome."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Au fond, rien n’a été coupé : la cuisson continue.",
+            "expert": "Le travail sous-jacent peut rester vivant."
+          },
+          "en": {
+            "kitchen": "In back nothing was switched off: the cooking carries on.",
+            "expert": "The underlying work could remain alive."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "On relance la même commande pour rattraper le retard.",
+            "expert": "Un retry ou un remplacement peut démarrer."
+          },
+          "en": {
+            "kitchen": "The same order is fired again to catch up.",
+            "expert": "A retry or replacement could start."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Deux plats identiques sortent, et l’addition les compte tous les deux.",
+            "expert": "Des effets de bord et des coûts dupliqués deviennent possibles."
+          },
+          "en": {
+            "kitchen": "Two identical plates leave, and the bill counts both.",
+            "expert": "Duplicate side effects and cost became possible."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Le minuteur ne commandait pas le feu",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "The timer never controlled the heat",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le minuteur du passe mesure l’attente de celui qui attend. Il ne tient pas la main du cuisinier au fond, ni le four du traiteur d’à côté. Ce sont eux qui font le plat, et rien ne les arrête.",
+            "expert": "Le timeout possédait l’attente de l’appel, pas le processus descendant ni le job distant porteur de l’effet réel. Annuler une attente n’annule que l’attente : la propriété de l’effet n’a jamais été transférée à celui qui pose la deadline."
+          },
+          "en": {
+            "kitchen": "The timer at the pass measures the waiting of whoever waits. It does not hold the hand of the cook in back, nor the oven of the caterer next door. Those two make the dish, and nothing stops them.",
+            "expert": "The timeout owned the waiting call, not the descendant process or the remote job carrying the real side effect. Cancelling a wait cancels only the wait: ownership of the effect was never transferred to whoever set the deadline."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Couper le feu avant de relancer",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Kill the heat before firing again",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Avant de relancer, on éteint le feu soi-même, ou on met le plat de côté pour qu’il ne parte jamais en salle. Puis on l’écrit au passe : cette commande est close. Tant que personne ne l’a écrit, on ne relance pas.",
+            "expert": "Une deadline doit terminer ou fencer le travail qu’elle possède, puis exposer un état terminal observable. Un retry ne devrait être autorisé qu’après lecture de cet état, jamais sur la seule expiration de l’attente."
+          },
+          "en": {
+            "kitchen": "Before firing again, turn the heat off yourself, or set the dish aside so it can never reach the room. Then write it at the pass: this order is finished. Until someone writes that down, nothing gets fired again.",
+            "expert": "A deadline must terminate or fence the work it owns, then expose an observable terminal state. A retry should be gated on reading that state, never on the mere expiry of the wait."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que le silence du fond ne prouve pas",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "What silence from the back does not prove",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le piège tient toujours, chez LangGraph comme partout où une préparation continue hors de vue. Le silence du fond ne prouve pas que le feu est éteint.",
+            "expert": "Pattern durable pour l’exécution d’outils et les tâches de fond des agents. Un retour de timeout côté appelant n’y vaut toujours pas état terminal du travail."
+          },
+          "en": {
+            "kitchen": "The trap still holds, at LangGraph and anywhere a preparation carries on out of sight. Silence from the back is no proof the heat is off.",
+            "expert": "A durable pattern in agent tool execution and background tasks. A caller-side timeout outcome still does not amount to terminal state for the work."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que mesure vraiment un minuteur",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What a timer actually measures",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un minuteur qui ne coupe pas le feu mesure une seule chose : la patience de celui qui attend au passe.",
+            "expert": "Un timeout qui n’arrête pas le travail est un timeout de l’observateur, pas du travail."
+          },
+          "en": {
+            "kitchen": "A timer that does not turn off the heat measures one thing only: the patience of whoever waits at the pass.",
+            "expert": "A timeout that does not stop the work is a timeout of the observer, not of the work."
+          }
+        }
+      ]
+    }
+  ]
+}

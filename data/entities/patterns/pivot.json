@@ -1,1 +1,152 @@
-{"schema":"argh/public-entity/v1","id":"pattern:pivot","type":"pattern","slug":"pivot","route":"/patterns/pivot/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["CodeGate","Goose"],"patterns":[],"dossiers":["codegate-low-adoption-pivot-deprecation","goose-protocol-pivot-acp"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le restaurant change de direction sans forcément fermer","expert":"Pivot"},"en":{"kitchen":"The restaurant changes direction without necessarily closing","expert":"Pivot"}},"body":[{"fr":{"cuisine":"Une équipe peut conserver une partie de son travail tout en déplaçant son effort vers un autre produit, protocole ou usage.","expert":"Un pivot modifie l’orientation stratégique ou fonctionnelle d’un projet sans impliquer nécessairement son arrêt."},"en":{"kitchen":"A team can preserve part of its work while shifting effort toward another product, protocol or use.","expert":"A pivot changes a project’s strategic or functional direction without necessarily ending it."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:pivot",
+  "type": "pattern",
+  "slug": "pivot",
+  "route": "/patterns/pivot/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "CodeGate",
+      "Goose"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "codegate-low-adoption-pivot-deprecation",
+      "goose-protocol-pivot-acp"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Deux maisons qui changent de direction sans baisser le rideau",
+          "expert": "Deux changements de direction, deux issues distinctes"
+        },
+        "en": {
+          "kitchen": "Two houses that change direction without pulling the shutter",
+          "expert": "Two direction changes, two distinct outcomes"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "CodeGate avait ouvert grand pour une seule spécialité, et la salle est restée vide. La maison l’a dit tout haut, a réécrit sa carte pour une autre clientèle, puis a baissé le rideau quand même. Goose, elle, n’ajoute plus de plats : à l’arrière, elle rebâtit la façon dont des cuisines voisines se passent le travail. Ce chantier est ouvert ; rien ne dit qu’il soit fini.",
+            "expert": "CodeGate a reconnu explicitement une adoption faible pour sa thèse initiale de protection des assistants de code, a pivoté vers les workflows d’agents, puis a été déclaré déprécié en tant qu’expérimentation. Goose montre, dans ses branches actives et l’évolution de ses contrôles, un investissement lourd dans des agents protocolisés, l’interopérabilité et des hooks enforceables plutôt que dans des fonctionnalités utilisateur. Le premier pivot est suivi d’une dépréciation déclarée ; le second est actif et son achèvement n’est pas établi."
+          },
+          "en": {
+            "kitchen": "CodeGate had built a wide room around one speciality, and the covers never filled. The house said so out loud, rewrote the board for a different crowd, and the shutter came down anyway. Goose is not adding dishes at all; at the back it is rebuilding how neighbouring kitchens hand work to each other. That job is open, and nothing says it is finished.",
+            "expert": "CodeGate explicitly acknowledged weak adoption for its original thesis of protecting code assistants, pivoted toward agent workflows, and was then declared deprecated as an experiment. Goose shows, through its active branches and the evolution of its controls, heavy investment in protocolised agents, interoperability and enforceable hooks rather than in user-facing features. The first pivot was followed by a declared deprecation; the second is live and its completion is not established."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Où se voit un changement de direction",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "Where a change of direction shows",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "D’abord, la maison dit elle-même pourquoi elle tourne : pas un four cassé, une salle vide. Ensuite, l’effort se déplace là où les clients ne regardent pas — l’arrière, la circulation, les règles du passe. La carte, elle, ne bouge pas, et c’est pour ça qu’on croit la maison au ralenti.",
+            "expert": "Le motif se lit à un motif de changement énoncé publiquement avant l’arrêt : chez CodeGate, une adoption jugée insuffisante pour la proposition de valeur initiale. Il se lit ensuite à un déplacement d’effort vers une couche que la surface utilisateur n’expose pas : chez Goose, primitives de contrôle, interopérabilité et travail de protocoles portés par les branches actives. Ni le volume de releases ni la cadence des commits ne signalent l’un ou l’autre."
+          },
+          "en": {
+            "kitchen": "First, the house states its own reason for turning: not a broken stove, an empty room. Then the effort moves where no diner looks — the back, the walkways, who may hold a plate at the pass. The board itself stays put, which is exactly why the place reads as slowing down.",
+            "expert": "The pattern reads first in a publicly stated reason for turning, ahead of any stoppage: at CodeGate, adoption judged insufficient for the original value proposition. It reads next in effort moving to a layer the user surface does not expose: at Goose, control primitives, interoperability and protocol work carried by the active branches. Neither release volume nor commit cadence signals either one."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi on lit mal ce moment-là",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why that moment gets read wrong",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On juge une maison à ce qui sort en salle, parce que c’est tout ce qu’on voit. Chez CodeGate, rien n’avait lâché en cuisine : ce sont les clients qui manquaient, puis l’élan. Chez Goose, le travail est bien là, mais il ne passe pas par la carte. Regarder la salle donne deux fois la mauvaise réponse.",
+            "expert": "Un pivot déplace la couche sur laquelle le projet concourt, et cette couche n’est pas celle que l’observateur mesure. Chez CodeGate, l’échec porte sur la thèse produit et non sur le code : aucune cause technique n’est établie dans la séquence. Chez Goose, la surface utilisateur est un indicateur retardé du déplacement architectural, ce qui fait lire un pivot en cours comme un ralentissement de maintenance."
+          },
+          "en": {
+            "kitchen": "A house gets judged on what reaches the room, because that is all anyone sees. At CodeGate nothing had failed on the stoves; what was missing was diners, then momentum. At Goose the work is real, it simply never travels through the board. Watching the room gives the wrong answer both times.",
+            "expert": "A pivot moves the layer a project competes on, and that layer is not the one observers measure. At CodeGate the failure is in the product thesis rather than the code: no technical cause is established anywhere in the sequence. At Goose the user surface is a lagging indicator of architectural movement, which makes a live pivot read as a maintenance slowdown."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Regarder l’arrière, pas la carte",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Watch the back, not the board",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Noter pourquoi la maison tourne, pas seulement le jour où les livraisons s’arrêtent. Le motif est souvent dit tout haut bien avant le silence. Et pour voir le mouvement, regarder qui a désormais le droit d’arrêter un plat et quels passages se construisent à l’arrière.",
+            "expert": "Le suivi de projet doit capturer le motif du changement de direction, pas seulement la date d’arrêt de la cadence. Le pivot se lit aux primitives de contrôle et à l’investissement protocoles, pas au volume de releases. Les deux états observés restent à tenir séparés : dépréciation déclarée par l’équipe d’un côté, pivot actif d’achèvement non établi de l’autre."
+          },
+          "en": {
+            "kitchen": "Write down why a house turns, not only the day its deliveries stop. The reason is usually said out loud long before the silence. To see the movement itself, look at who now has the right to hold a plate, and at what passageways are being built out back.",
+            "expert": "Project tracking has to capture the reason a direction changes, not merely the date cadence stops. A pivot reads in control primitives and protocol investment, not in release volume. The two observed states must be kept apart: a deprecation declared by the team on one side, a live pivot of unestablished completion on the other."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Changer de direction n’est pas se sauver",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Turning is not surviving",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une maison qui tourne a compris quelque chose ; elle n’a rien garanti. Apprendre et durer se jugent séparément. Et le métier peut avoir changé longtemps avant que la salle s’en aperçoive.",
+            "expert": "Un pivot atteste un apprentissage, pas une survie ; les deux se jugent séparément. Un projet peut par ailleurs changer de catégorie avant qu’un changement produit soit visible pour ses utilisateurs."
+          },
+          "en": {
+            "kitchen": "A house that turns has understood something; it has guaranteed nothing. Learning and lasting are judged apart from each other. And the trade can change long before the room notices anything at all.",
+            "expert": "A pivot is evidence of learning, not a guarantee of survival, and the two are assessed separately. A project can also change category before any product change becomes visible to its users."
+          }
+        }
+      ]
+    }
+  ]
+}

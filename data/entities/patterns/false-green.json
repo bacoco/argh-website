@@ -1,1 +1,157 @@
-{"schema":"argh/public-entity/v1","id":"pattern:false-green","type":"pattern","slug":"false-green","route":"/patterns/false-green/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Aider","Hermes","OpenClaw","gstack"],"patterns":[],"dossiers":["aider-false-success-family","gstack-false-green-second-fix","unknown-flattened-to-empty","delivery-finished-user-got-nothing","green-test-wrong-seam"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Tout semble fonctionner alors que ce n’est pas le cas","expert":"Faux vert"},"en":{"kitchen":"Everything looks green while something is still broken","expert":"False Green"}},"body":[{"fr":{"cuisine":"Le voyant vert ne vaut rien s’il ne mesure pas le résultat qui compte réellement pour le service.","expert":"Un faux vert est un succès apparent produit par un signal ou un test qui ne couvre pas le comportement réellement attendu."},"en":{"kitchen":"A green light is worthless if it does not measure the outcome that actually matters.","expert":"A false green is apparent success produced by a signal or test that does not cover the behavior actually required."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:false-green",
+  "type": "pattern",
+  "slug": "false-green",
+  "route": "/patterns/false-green/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Aider",
+      "Hermes",
+      "OpenClaw",
+      "gstack"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "aider-false-success-family",
+      "gstack-false-green-second-fix",
+      "unknown-flattened-to-empty",
+      "delivery-finished-user-got-nothing",
+      "green-test-wrong-seam"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le tableau est effacé et la table neuf n’a rien eu",
+          "expert": "Un succès apparent produit par un signal qui ne mesure pas le résultat"
+        },
+        "en": {
+          "kitchen": "The board is wiped clean and table nine ate nothing",
+          "expert": "Apparent success from a signal that measures the wrong outcome"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "En fin de service, chaque ligne du tableau est barrée : tout est parti. Chez OpenClaw, la table n’avait pourtant rien reçu. Le tableau n’a jamais su ce qui arrivait sur la table ; il savait seulement ce qui quittait la cuisine.",
+            "expert": "Un faux vert est un succès apparent produit par un signal ou un test qui ne couvre pas le comportement réellement attendu. Cinq dossiers de ce corpus l’exposent, sur OpenClaw, Aider, Hermes et gstack. Sur OpenClaw, la complétion interne pouvait être vraie alors que le résultat n’atteignait jamais l’utilisateur, ce qui a révélé generated, persisted, queued, sent et received comme états distincts."
+          },
+          "en": {
+            "kitchen": "At the end of service every line on the board is crossed off: all away. At OpenClaw the table had still been served nothing. The board never knew what reached the table; it only knew what left the kitchen.",
+            "expert": "A false green is apparent success produced by a signal or test that does not cover the behavior actually required. Five dossiers in this corpus exhibit it, across OpenClaw, Aider, Hermes and gstack. In OpenClaw internal completion could be true while the result never reached the user, exposing generated, persisted, queued, sent and received as distinct states."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Barré chez Aider, chez Hermes, chez gstack",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "Crossed off at Aider, at Hermes, at gstack",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Aider, pendant plus d’un an, des plats ratés de plusieurs façons différentes ressortaient tous comme envoyés. Chez Hermes, on vérifiait la ligne écrite au crayon et jamais l’assiette qui partait. Toujours chez Hermes, une réserve devenue muette se lisait comme une réserve vide. Chez gstack, le tableau parlait d’un poste qui n’était plus celui qui cuisinait.",
+            "expert": "Chez Aider, pendant plus d’un an, des mécanismes de panne différents pouvaient tous se terminer avec un code de succès. Sur Hermes, un test au niveau helper validait la construction d’arguments tandis que le vrai chemin de lancement perdait ensuite l’option importante ; sur le même projet, l’indisponibilité d’une source d’historique produisait un résultat vide au lieu d’un inconnu. Sur gstack, un faux vert corrigé a récidivé sous une incompatibilité d’identité structurellement similaire."
+          },
+          "en": {
+            "kitchen": "At Aider, for more than a year, plates that failed in several different ways all came back marked as sent. At Hermes the pencil line was checked and never the plate that left. At Hermes again, a pantry gone silent read as a pantry gone empty. At gstack the board named a station that was no longer the one cooking.",
+            "expert": "In Aider, for over a year, different failure mechanisms could all terminate with a success code. In Hermes a helper-level test validated argument construction while the real launch path then dropped the option that mattered; in the same project, an unavailable history source yielded an empty result instead of an unknown. In gstack a false green that had been fixed recurred under a structurally similar identity mismatch."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi un tableau propre rassure plus qu’une salle pleine",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a clean board reassures more than a full room",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le tableau est plus près de toi que la table : c’est lui que tu regardes, et il est toujours d’accord avec toi. Il mesure la sortie de cuisine, pas l’assiette mangée, et les deux se ressemblent jusqu’au jour où elles divergent. Une case restée blanche s’y lit comme un rien à faire, jamais comme un je ne sais pas.",
+            "expert": "Le signal vert est mesuré au point le plus accessible, pas au point qui porte l’exigence : sortie interne plutôt que réception, construction d’arguments plutôt que chemin de lancement réel. L’écart reste invisible tant que les deux points coïncident, et le vert conserve son autorité après la divergence. L’aplatissement de l’inconnu vers le vide amplifie l’effet : l’absence d’information prend la forme d’une information négative."
+          },
+          "en": {
+            "kitchen": "The board sits closer to you than the table does: it is what you look at, and it always agrees with you. It measures what leaves the kitchen, not what gets eaten, and the two look alike until the day they part. A box left blank reads as nothing to do, never as I do not know.",
+            "expert": "The green signal is measured where it is cheapest to read, not where the requirement lives: internal emission rather than receipt, argument construction rather than the real launch path. The gap stays invisible while the two points coincide, and the green keeps its authority after they diverge. Flattening unknown into empty amplifies this: missing information takes the shape of negative information."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Barrer la ligne devant la table, pas devant le passe",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Crossing the line off at the table, not at the pass",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ne barre la ligne que lorsque le client a l’assiette devant lui, pas quand elle quitte la cuisine. Si tu ne sais pas, écris que tu ne sais pas : laisse la case parler au lieu de la laisser blanche. Et vérifie que le tableau parle bien du poste qui cuisine ce soir.",
+            "expert": "Le point de mesure doit être le comportement exigé : réception par l’utilisateur, chemin de lancement réel, code de sortie reflétant l’échec effectif. L’inconnu doit traverser l’interface en tant qu’inconnu, sans être aplati en vide. Le second correctif de gstack a élargi la clé de cache vers l’exécutable et le vrai contexte d’authentification, ce qui lie le health check à ce qui s’exécute réellement."
+          },
+          "en": {
+            "kitchen": "Cross a line off only when the guest has the plate in front of them, not when it leaves the kitchen. If you do not know, write that you do not know: let the box speak instead of leaving it blank. And check the board is talking about the station cooking tonight.",
+            "expert": "Measure at the behavior actually required: delivery to the user, the real launch path, an exit code reflecting the actual failure. Unknown must cross the interface as unknown rather than be flattened into empty. The gstack second fix widened the cache key to the executable and the real authentication context, binding the health check to what actually runs."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Tout barré ne veut pas dire tout servi",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "All crossed off does not mean all served",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Terminé en cuisine n’est pas terminé pour le client. Un tableau tout barré peut mesurer la mauvaise chose. Un vert ne vaut jamais plus que l’endroit où tu es allé le prendre.",
+            "expert": "Terminé en interne n’est pas terminé pour l’utilisateur, et un test vert peut tester la mauvaise chose. Un code de sortie vert fait partie du contrat produit ; unknown est une information qui doit survivre à l’interface, et les health checks doivent être liés à ce qui s’exécute réellement."
+          },
+          "en": {
+            "kitchen": "Finished in the kitchen is not finished for the guest. A fully crossed-off board can be measuring the wrong thing. A green is never worth more than the place you went to read it.",
+            "expert": "Internally finished is not finished for the user, and a green test can test the wrong thing. A green exit code is part of the product contract; unknown is information that must survive the interface, and health checks must be bound to what actually runs."
+          }
+        }
+      ]
+    }
+  ]
+}
