@@ -14,4 +14,4 @@ The browser selects an authored string from the entity JSON. It never translates
 simplifies or rewrites editorial text.
 
 Private evidence, source acquisition, scheduler state and operational provenance
-remain in `bacoco/harness-intelligence` and are never copied here.
+remain in `bacoco/argh` and are never copied here.
