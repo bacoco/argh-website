@@ -1,1 +1,208 @@
-{"schema":"argh/public-entity/v1","id":"dossier:agent-claims-need-evidence-labels","type":"dossier","slug":"agent-claims-need-evidence-labels","route":"/dossiers/agent-claims-need-evidence-labels/","template":"dossier","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["pstack"],"patterns":["evidence-boundary","verification","skills-runtime"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le cuisinier a dit « c’est servi » alors que l’assiette était encore en cuisine","expert":"Une réponse assurée de l’agent n’est pas un résultat de vérification"},"en":{"kitchen":"The cook said “served” while the plate was still in the kitchen","expert":"A confident agent reply is not a verification result"}},"body":[{"fr":{"cuisine":"Une réponse très assurée peut donner l’impression qu’un résultat a été vérifié alors qu’il s’agit parfois d’une prédiction, d’une cause supposée ou d’une action non observée.","expert":"Une révision de skill impose d’accompagner les affirmations de l’agent d’une preuve ou d’une qualification claire : mesuré, déduit ou supposé. Elle demande aussi à l’agent d’exécuter les contrôles à sa portée au lieu de les renvoyer à l’opérateur. Le changement est visible dans le skill ; son effet sur le comportement réel des agents n’a pas été mesuré ici."},"en":{"kitchen":"A confident answer can sound verified even when it is only a prediction, an inferred cause or an unobserved action.","expert":"A workflow-skill revision requires agent claims to carry their evidence or a clear measured, inferred or guess label. It also tells agents to run checks they can perform rather than hand those checks back to the operator. The change is visible in the skill; its effect on real agent behaviour has not been measured here."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Ce qui s’est passé en cuisine","expert":"Chronologie"},"en":{"kitchen":"What happened in the kitchen","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Le cuisinier annonce un résultat avec beaucoup d’assurance.","expert":"La description du changement identifie un problème récurrent de compte rendu : des prédictions et des causes non observées présentées comme des faits."},"en":{"kitchen":"The cook announces an outcome with confidence.","expert":"The change description identifies a recurring reporting problem: predictions and unseen causes presented as facts."}},{"fr":{"cuisine":"Le chef ne voit pas immédiatement si cette phrase vient d’une vérification, d’une déduction ou d’une supposition.","expert":"Le 9 septembre, le skill de workflow a été modifié et sa version déclarée est passée à 0.15.1."},"en":{"kitchen":"The chef cannot immediately tell whether the statement is observed, inferred or guessed.","expert":"On 9 September, the workflow skill was amended and its declared version moved to 0.15.1."}},{"fr":{"cuisine":"Chaque promesse du carnet reçoit désormais son ticket de caisse, ou une étiquette disant franchement ce qui reste inconnu.","expert":"La nouvelle instruction associe une preuve ou une qualification d’incertitude à chaque affirmation et laisse à l’agent les contrôles qu’il peut exécuter."},"en":{"kitchen":"Each promise in the book now gets its receipt, or a label plainly saying what remains unknown.","expert":"The new instruction attaches evidence or an uncertainty label to each claim and keeps executable checks with the agent."}},{"fr":{"cuisine":"On peut voir que cette nouvelle consigne est écrite, mais pas encore prouver qu’elle est chargée par toutes les cuisines ni qu’elle change leur comportement.","expert":"L’inspection actuelle des sources confirme le changement d’instruction. Elle ne fournit ni comparaison comportementale indépendante ni preuve que tous les agents en cours le chargent."},"en":{"kitchen":"We can see the new instruction is written, but not yet prove every kitchen loads it or changes behaviour because of it.","expert":"Current source inspection confirms the instruction change. It supplies neither an independent behavioural comparison nor proof that every running agent loads it."}}]},{"id":"mechanism","kind":"section","heading":{"fr":{"cuisine":"Ce qui a déraillé","expert":"Mécanisme"},"en":{"kitchen":"What went wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"La forme de la phrase masquait le statut réel de ce qui était affirmé.","expert":"Une explication soignée peut masquer l’écart entre un résultat observé, une déduction et une prédiction. Qualifier chaque affirmation rend cet écart visible au moment où l’opérateur décide. Ce contrôle relève de l’instruction : un agent peut encore mal qualifier une affirmation ou ne pas suivre le skill ; la qualification ne constitue donc pas elle-même une preuve."},"en":{"kitchen":"Wording hid the actual evidence status of the statement.","expert":"A polished explanation can hide the gap between an observed result, an inference and a prediction. Qualifying each claim makes that gap visible where the operator makes a decision. This is an instruction-level control: an agent can still mislabel a claim or fail to follow the skill, so the label is not itself evidence."}}]},{"id":"response","kind":"section","heading":{"fr":{"cuisine":"Ce que la brigade a changé","expert":"Réponse"},"en":{"kitchen":"What the brigade changed","expert":"Response"}},"body":[{"fr":{"cuisine":"Associer chaque affirmation importante à une observation, une mesure ou une étiquette claire « inféré / estimé / supposé », puis tester que cette règle est réellement appliquée.","expert":"La réponse documentée renforce le contrat de compte rendu, et non les poids du modèle. Une équipe qui reprend cette idée devrait conserver le contrôle exécuté et son résultat à côté des affirmations importantes, distinguer les contrôles indisponibles des contrôles échoués et vérifier si le skill chargé modifie le comportement. Ces étapes sont des recommandations, pas des tests réalisés pour ce dossier."},"en":{"kitchen":"Pair each important claim with observation, measurement or a clear inferred/estimated/guess label, then test whether the rule is actually followed.","expert":"The documented response tightens the reporting contract rather than the model's weights. A team adopting the idea should retain the executed check and its result beside important claims, distinguish unavailable checks from failed ones, and test whether the loaded skill changes behaviour. Those validation steps are recommendations, not tests performed for this dossier."}}]},{"id":"current","kind":"section","heading":{"fr":{"cuisine":"Où en est la cuisine","expert":"État actuel"},"en":{"kitchen":"Where the kitchen stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"La règle source a été renforcée, mais son efficacité runtime n’est pas encore mesurée de manière contrôlée.","expert":"La révision des sources et la déclaration de version sont vérifiées. L’adoption, le chargement à l’exécution, le respect de la consigne et la réduction des affirmations non étayées restent non vérifiés. Il s’agit d’un contrôle transposable, pas d’une preuve d’apprentissage du modèle ou d’un gain de fiabilité démontré."},"en":{"kitchen":"The source rule was strengthened, but controlled evidence of runtime effectiveness is still missing.","expert":"The source revision and version declaration are verified. Adoption, runtime loading, compliance and the reduction in unsupported claims remain unverified. This is a reusable control design, not evidence of model learning or a demonstrated reliability gain."}}]},{"id":"lesson","kind":"section","heading":{"fr":{"cuisine":"La règle à retenir","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Une phrase sûre d’elle n’est pas une assiette vérifiée.","expert":"Garder la preuve à côté de l’affirmation et tester la règle de compte rendu au lieu de prendre la règle pour une preuve."},"en":{"kitchen":"A confident sentence is not a verified plate.","expert":"Keep the evidence beside the claim, and test the reporting rule instead of treating the rule as proof."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:agent-claims-need-evidence-labels",
+  "type": "dossier",
+  "slug": "agent-claims-need-evidence-labels",
+  "route": "/dossiers/agent-claims-need-evidence-labels/",
+  "template": "dossier",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "pstack"
+    ],
+    "patterns": [
+      "evidence-boundary",
+      "verification",
+      "skills-runtime"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le commis criait « parti ! » sans avoir vu l’assiette quitter le passe",
+          "expert": "Une réponse assurée n’est pas un résultat de vérification"
+        },
+        "en": {
+          "kitchen": "The cook called “away!” without watching the plate leave the pass",
+          "expert": "A confident reply is not a verification result"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez pstack, le ton ne dit rien. « Parti », « ça vient », « c’est prêt » sonnent pareil, que le commis ait vu l’assiette partir, qu’il l’ait déduit du bruit ou qu’il l’ait simplement supposé. Le chef décide sur cette phrase.",
+            "expert": "Une révision de la consigne de workflow impose désormais que chaque affirmation de l’agent porte sa preuve ou une qualification explicite : mesuré, déduit ou supposé. Elle laisse aussi à l’agent les contrôles qu’il peut exécuter lui-même, au lieu de les renvoyer à l’opérateur. La modification est vérifiable dans les sources ; son effet sur le comportement réel n’a pas été mesuré ici."
+          },
+          "en": {
+            "kitchen": "At pstack, “away,” “coming,” “ready” all sound the same. The cook may have watched the plate go, guessed from the noise, or simply assumed it. The chef decides on that one word.",
+            "expert": "A workflow-instruction revision now requires every agent claim to carry its evidence or an explicit measured, inferred or guessed qualifier. It also puts executable checks back on the agent instead of handing them to the operator. The edit is verifiable in source; its effect on observed behaviour has not been measured here."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on a entendu au passe, dans l’ordre",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "What was called at the pass, in order",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Pendant des mois, la même chose revient. Un commis annonce une cause qu’il n’a pas vue, ou une suite qu’il devine, et ça sort du passe comme un fait.",
+            "expert": "Le descriptif du changement identifie un défaut de compte rendu récurrent : des prédictions et des causes non observées présentées comme des faits établis."
+          },
+          "en": {
+            "kitchen": "The same thing keeps coming back. A cook names a cause he never saw, or predicts what follows, and it leaves the pass as fact.",
+            "expert": "The change description identifies a recurring reporting defect: predictions and unobserved causes stated as established fact."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le 9 septembre, la consigne punaisée au mur est récrite. Le feuillet change de numéro : 0.15.1.",
+            "expert": "Le 9 septembre, la consigne de workflow a été amendée et sa version déclarée portée à 0.15.1."
+          },
+          "en": {
+            "kitchen": "On 9 September the notice on the wall is rewritten. The sheet takes a new number: 0.15.1.",
+            "expert": "The amendment landed on 9 September, carrying a declared version of 0.15.1."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La nouvelle règle est courte. Quand tu annonces, tu dis ce que tu as vu. Ce que tu peux aller vérifier toi-même, tu vas le vérifier, tu ne le renvoies pas au chef.",
+            "expert": "L’instruction associe à chaque affirmation soit sa preuve, soit une qualification d’incertitude, et conserve auprès de l’agent les contrôles qu’il est en mesure d’exécuter."
+          },
+          "en": {
+            "kitchen": "The rule is short. Say what you saw when you call it. Anything you can go and check yourself, you check — you do not hand it back to the chef.",
+            "expert": "Each claim must now arrive with evidence or an uncertainty qualifier, and checks the agent can run stay with the agent rather than the operator."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "On peut lire la consigne au mur, elle y est. Personne n’a encore montré que tous les postes l’ont lue, ni que les annonces ont changé depuis.",
+            "expert": "L’inspection des sources confirme la modification de l’instruction. Elle n’apporte ni comparaison comportementale indépendante, ni preuve que toutes les exécutions en cours chargent la version amendée."
+          },
+          "en": {
+            "kitchen": "The notice is on the wall; anyone can read it. Nobody has yet shown that every station reads it, or that the calls at the pass changed.",
+            "expert": "Source inspection confirms the edit and nothing beyond it. No independent before/after behavioural comparison exists, and no evidence shows that every live run loads the amended version."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "section",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi une phrase bien dite trompe le chef",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a well-turned sentence fools the chef",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une belle phrase couvre la différence entre ce qu’on a vu, ce qu’on a déduit et ce qu’on espère. L’étiquette remet cette différence sous le nez du chef, au moment où il décide. Mais une étiquette se pose mal, ou pas du tout. L’étiquette n’est pas l’assiette.",
+            "expert": "Une formulation soignée masque l’écart entre un résultat observé, une déduction et une prédiction. La qualification rend cet écart visible au point de décision de l’opérateur. Le contrôle reste de niveau instruction : un agent peut mal qualifier une affirmation ou ne pas suivre la consigne, et la qualification ne constitue donc pas une preuve."
+          },
+          "en": {
+            "kitchen": "Polish hides the gap between seen, inferred and hoped for. A label drags that gap back in front of the chef while the decision is still open. Labels can be put on wrong, or skipped entirely. The label is still not the plate.",
+            "expert": "Fluent prose flattens observed results, inferences and predictions into a single register. Qualification restores the distinction where the operator actually decides. The control lives at instruction level only: mislabelling and non-compliance remain possible, so a label is not evidence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "section",
+      "heading": {
+        "fr": {
+          "cuisine": "La règle affichée au passe",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "The rule now posted at the pass",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chaque annonce qui compte part avec ce qu’on a vu : l’assiette, l’heure, le plat. Sinon on le dit franchement — deviné, estimé, entendu dire. Et on éprouve la règle elle-même, parce qu’une règle affichée n’est pas une règle suivie.",
+            "expert": "La réponse documentée durcit le contrat de compte rendu, pas le modèle. Une équipe qui reprend l’idée devrait conserver le contrôle exécuté et son résultat à côté de l’affirmation, distinguer un contrôle indisponible d’un contrôle en échec, et mesurer si la consigne chargée déplace le comportement. Ces étapes sont des recommandations, pas des tests réalisés ici."
+          },
+          "en": {
+            "kitchen": "Every call that matters leaves with what was actually seen: the plate, the time, the dish. Otherwise say it plainly — guessed, estimated, heard from someone. Then test the rule itself, because a posted rule is not a followed rule.",
+            "expert": "What was tightened is the reporting contract, not the model. Adopters should keep the executed check and its result next to the claim, separate an unavailable check from a failed one, and measure whether the loaded instruction moves behaviour. None of those validation steps were performed for this case."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "section",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on sait ce soir",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "What we know tonight",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La consigne est écrite et affichée, ça c’est sûr. Rien ne dit encore que les annonces au passe sont devenues plus honnêtes. On a une bonne règle de maison, pas une preuve.",
+            "expert": "La révision des sources et la version déclarée sont vérifiées. L’adoption, le chargement à l’exécution, le respect de la consigne et la baisse des affirmations non étayées restent non vérifiés. C’est une conception de contrôle transposable, pas une preuve d’apprentissage du modèle ni un gain de fiabilité démontré."
+          },
+          "en": {
+            "kitchen": "The notice exists and is posted; that much is certain. Nothing yet says the calls at the pass got more honest. What we hold is a sound house rule, not proof.",
+            "expert": "Verified: the source revision and the declared version. Unverified: adoption, load at runtime, compliance, and any reduction in unsupported claims. Read it as a reusable control design, not as model learning or a measured reliability gain."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "section",
+      "heading": {
+        "fr": {
+          "cuisine": "Demander ce qu'il a vu, pas ce qu'il croit",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Ask what he saw, not what he believes",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un commis sûr de lui n’est pas une assiette sortie. Demande-lui ce qu’il a vu, pas ce qu’il croit.",
+            "expert": "Garder la preuve contre l’affirmation, et éprouver la règle de compte rendu au lieu de la prendre pour la preuve."
+          },
+          "en": {
+            "kitchen": "A confident cook is not a plate that left. Ask him what he saw, not what he believes.",
+            "expert": "Bind the evidence to the claim, and test the reporting rule rather than counting it as proof."
+          }
+        }
+      ]
+    }
+  ]
+}

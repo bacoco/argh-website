@@ -1,1 +1,151 @@
-{"schema":"argh/public-entity/v1","id":"pattern:human-gates","type":"pattern","slug":"human-gates","route":"/patterns/human-gates/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Claude Code","Codex"],"patterns":[],"dossiers":["human-gate-timeout"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le silence du chef n’est pas un feu vert","expert":"Validation humaine"},"en":{"kitchen":"The chef’s silence is not approval","expert":"Human Gates"}},"body":[{"fr":{"cuisine":"Quand une décision humaine est requise, l’absence de réponse doit rester une absence de décision.","expert":"Une human gate suspend ou conditionne l’exécution à une décision humaine explicite et vérifiable."},"en":{"kitchen":"When a human decision is required, no response must remain no decision.","expert":"A human gate suspends or conditions execution on an explicit, verifiable human decision."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:human-gates",
+  "type": "pattern",
+  "slug": "human-gates",
+  "route": "/patterns/human-gates/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Claude Code",
+      "Codex"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "human-gate-timeout"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le commis a attendu, personne n’a répondu, l’assiette est partie",
+          "expert": "Une question adressée à un humain se résout en poursuite autonome"
+        },
+        "en": {
+          "kitchen": "The commis waited, nobody answered, the plate went out",
+          "expert": "A question meant for a human resolves into autonomous continuation"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le commis lève la tête : « Chef, j’envoie ? » Le chef est au téléphone et ne répond pas. Au bout d’un moment, le commis tranche seul et l’assiette part. Claude Code et Codex ont montré la même scène : la question posée, le silence, puis le service qui continue.",
+            "expert": "Une human gate suspend l’exécution jusqu’à une décision humaine explicite. Deux systèmes d’agents indépendants — Claude Code et Codex — ont exposé la même forme dangereuse : la question destinée à l’humain portait un délai, et son expiration se résolvait en poursuite autonome de l’exécution. Le défaut n’est pas l’existence du délai, mais ce que le système conclut de son expiration."
+          },
+          "en": {
+            "kitchen": "The commis looks up: “Chef, do I send it?” The chef is on the phone and says nothing. After a while the commis calls it himself and the plate goes out. Claude Code and Codex both showed that same scene: the question asked, the silence, then service carrying on.",
+            "expert": "A human gate suspends execution until an explicit human decision arrives. Two independent agent systems — Claude Code and Codex — exposed the same dangerous shape: the question posed to the human carried a deadline, and its expiry resolved into autonomous continuation. The defect is not that a deadline exists, but what the system concludes from it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "La question a une horloge, et l’horloge répond à votre place",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "The question has a clock, and the clock answers for you",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une chose trahit le motif : la question a une durée. Regardez ce qui se passe quand elle s’éteint. Si le service repart, ce n’est plus le patron qui décide, c’est la minuterie. Et sur le ticket, rien ne distingue son accord de son silence.",
+            "expert": "Le motif se reconnaît à une question bloquante assortie d’un délai, dont le chemin d’expiration est défini ailleurs que là où la question est posée. Le test décisif est la valeur produite à l’expiration : si elle équivaut à « approuvé » ou à « continuer », l’autorité a été déplacée du décideur vers le mécanisme de délai. Second signal : aucune trace ne distingue une approbation explicite d’une expiration."
+          },
+          "en": {
+            "kitchen": "One thing gives the shape away: the question has a running time. Look at what happens when it runs out. If service resumes, the owner is not the one deciding — the timer is. And on the ticket, nothing separates his yes from his silence.",
+            "expert": "The pattern shows as a blocking question carrying a deadline whose expiry path is defined somewhere other than where the question is asked. The decisive test is the value produced on expiry: if it is equivalent to approved or continue, authority has moved from the decider to the timeout mechanism. Second signal: no trace separates an explicit approval from an expiry."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "On a réglé le plat qui refroidit, pas l’accord du patron",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "The cold plate got solved; the owner's word did not",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui trompe, c’est que la minuterie a été posée pour une bonne raison. Un plat ne peut pas attendre indéfiniment, et une cuisine qui ne repart jamais est une cuisine morte. Entre les deux sorties possibles, on a pris celle qui fait repartir le service. Le silence ressemble alors à un accord, et rien ne vient dire le contraire.",
+            "expert": "Le défaut est sémantique, pas temporel. Le système confond trois états qui ne portent pas la même autorité : approbation explicite, repli conçu à l’avance, absence de réponse. Le délai est introduit comme correctif de liveness, et la résolution la plus simple à implémenter est celle qui débloque le flux, ce qui fait de « continuer » le défaut implicite. L’expiration d’un délai n’établit rien sur l’intention de l’humain."
+          },
+          "en": {
+            "kitchen": "What fools you is that the timer was put there for a good reason. A plate cannot wait forever, and a kitchen that never restarts is a dead kitchen. Of the two ways out, the one taken keeps service moving. Silence then looks like agreement, and nothing says otherwise.",
+            "expert": "The defect is semantic, not temporal. The system collapses three states that do not carry the same authority: explicit approval, a fallback designed in advance, and no answer at all. The deadline arrives as a liveness fix, and the resolution easiest to implement is the one that unblocks the flow, which makes continue the implicit default. An expired deadline establishes nothing about the human's intent."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Quand personne ne répond, l’assiette reste au passe",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "When nobody answers, the plate stays at the pass",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Décidez ce que veut dire le silence avant le service, pas pendant. Chez nous il veut dire non : l’assiette reste, ou on va chercher quelqu’un d’autre. Et le ticket dit lequel des deux s’est produit, l’accord ou l’attente vaine. Ce n’est pas la même chose, et demain personne ne s’en souviendra.",
+            "expert": "Le comportement à l’expiration se rend visible et configurable plutôt qu’implicite. Les décisions à forte autorité échouent en mode fermé par défaut — arrêt, mise en attente ou escalade vers un autre décideur — sauf repli sûr explicitement conçu en amont. La sortie de la gate distingue approbation, refus et expiration, afin qu’un délai écoulé ne soit jamais relu plus tard comme un accord."
+          },
+          "en": {
+            "kitchen": "Settle what silence means before service, not during it. Here it means no: the plate stays, or someone else is fetched. And the ticket records which of the two happened, the word or the empty wait. They are not the same thing, and by tomorrow nobody will remember which it was.",
+            "expert": "Expiry behavior is made visible and configurable rather than implicit. High-authority decisions fail closed by default — halt, park, or escalate to another decider — unless a safe fallback was explicitly designed up front. The gate's output separates approval, refusal and expiry, so an elapsed deadline is never re-read later as consent."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ne rien dire, ce n’est pas dire oui",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Saying nothing is not saying yes",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une maison qui demande l’avis du patron et sert quand même s’il se tait n’a rien demandé : elle s’est donné raison. Si vous posez la question, gardez l’assiette tant que la réponse n’est pas venue. Si vous ne comptez pas la garder, ne posez pas la question.",
+            "expert": "Le silence n’est pas une approbation. L’autorité humaine doit survivre au traitement du délai : une gate dont l’expiration produit une poursuite autonome n’est pas une gate, c’est un délai avant exécution. La convergence observée est architecturale et ne constitue pas une preuve de code partagé entre les systèmes concernés."
+          },
+          "en": {
+            "kitchen": "A house that asks the owner and serves anyway when he says nothing never asked: it agreed with itself. If you ask, hold the plate until the answer comes. If you will not hold it, do not ask.",
+            "expert": "Silence is not approval. Human authority has to survive timeout handling: a gate whose expiry produces autonomous continuation is not a gate, it is a delay before execution. The convergence observed is architectural and is not evidence of shared code between the systems involved."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,152 @@
-{"schema":"argh/public-entity/v1","id":"pattern:forward-signals","type":"pattern","slug":"forward-signals","route":"/patterns/forward-signals/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Codex","Roo Code","agent-scripts"],"patterns":[],"dossiers":["branch-name-roadmap-decay"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Les indices de demain apparaissent avant la carte officielle","expert":"Signaux avancés"},"en":{"kitchen":"Tomorrow’s clues appear before the official menu","expert":"Forward Signals"}},"body":[{"fr":{"cuisine":"Branches, travaux en cours et changements préparatoires peuvent annoncer une direction sans encore la prouver.","expert":"Les signaux avancés indiquent une évolution possible avant son intégration ou sa publication et doivent rester qualifiés comme tels."},"en":{"kitchen":"Branches, work in progress and preparatory changes can reveal direction without proving it yet.","expert":"Forward signals indicate possible evolution before merge or release and must remain qualified as such."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:forward-signals",
+  "type": "pattern",
+  "slug": "forward-signals",
+  "route": "/patterns/forward-signals/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Codex",
+      "Roo Code",
+      "agent-scripts"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "branch-name-roadmap-decay"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le nom écrit à la craie avant que le plat existe",
+          "expert": "Un indice d’évolution qui précède l’intégration"
+        },
+        "en": {
+          "kitchen": "The name chalked up before the dish exists",
+          "expert": "An early indication that runs ahead of integration"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez agent-scripts, chez Roo Code, chez Codex, une ardoise du fond porte les essais en cours. Les noms y sont beaux et disent où va la maison. Certains de ces noms ne sont jamais arrivés sur la carte imprimée, et l’ardoise ne dit pas lesquels.",
+            "expert": "Les signaux avancés indiquent une évolution possible avant son intégration ou sa publication, et doivent rester qualifiés comme tels. Un dossier de ce corpus en établit la forme sur agent-scripts, Roo Code et Codex : des branches nommées peuvent révéler l’architecture planifiée avant les releases. Une forte divergence transforme alors un nom impressionnant en signal de roadmap trompeur."
+          },
+          "en": {
+            "kitchen": "At agent-scripts, at Roo Code, at Codex, a back board carries the trials under way. The names chalked there are fine ones and they tell you where the house is heading. Some of those names never reached the printed menu, and the board never says which.",
+            "expert": "Forward signals point at a possible evolution before it is merged or released, and they must stay qualified as such. One dossier in this corpus establishes the shape across agent-scripts, Roo Code and Codex: named branches can reveal planned architecture ahead of releases. Strong divergence then turns an impressive name into a misleading roadmap signal."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Un beau nom à la craie et personne au fourneau",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "A fine name in chalk and nobody at the stove",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le nom sur l’ardoise annonce plus que ce qui mijote réellement. Regarde la date, regarde qui y touche encore, regarde ce qui est passé sur la carte depuis. Un essai laissé longtemps sans personne dessus reste parfaitement lisible, et c’est bien ce qui trompe.",
+            "expert": "Le signal est un nom qui décrit une architecture cible et non un état livré. La qualification tient à trois observables : la date du travail, sa divergence avec la ligne principale, et l’existence d’une release correspondante. Une forte divergence sans intégration indique un signal en train de se périmer."
+          },
+          "en": {
+            "kitchen": "The chalked name promises more than what is actually simmering. Look at the date, at who still touches it, at what has genuinely reached the menu since. A trial left untouched for a long time stays perfectly legible, and that is exactly what misleads.",
+            "expert": "The signal is a name describing a target architecture rather than a shipped state. Qualification rests on three observables: how recent the work is, how far it has diverged from the mainline, and whether a matching release exists. Wide divergence without integration marks a signal going stale."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi la craie se lit comme la carte",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why chalk gets read like the printed menu",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un nom écrit tient tout seul : il n’a pas besoin d’être cuit pour être lu. Plus il est précis, plus on le croit, alors qu’il dit une intention et pas un plat. Le temps travaille contre lui, et rien sur l’ardoise ne vieillit visiblement.",
+            "expert": "Un nom porte une intention structurée et se lit comme un état, parce que rien dans sa forme ne distingue le planifié du livré. La précision du nom augmente la confiance accordée sans augmenter la preuve. Le signal ne se périme pas visiblement : il conserve sa lisibilité initiale pendant que la divergence s’accroît."
+          },
+          "en": {
+            "kitchen": "A written name stands on its own: it does not need to be cooked to be read. The more precise it is, the more it is believed, though it states an intention and not a dish. Time works against it, and nothing on that board visibly ages.",
+            "expert": "A name carries structured intent and reads as a state, because nothing in its form separates planned from shipped. Greater precision in the name raises the confidence granted without raising the evidence. The signal does not visibly expire: it keeps its original legibility while divergence grows."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Garder l’ardoise, la dater, ne pas l’annoncer en salle",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Keeping the board, dating it, not announcing it out front",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Garde l’ardoise : elle te dit où la maison veut aller, et c’est précieux. Mais écris la date à côté, et ne l’annonce jamais en salle comme un plat du jour. Ce qui compte pour le client, c’est la carte imprimée, pas le fond de la cuisine.",
+            "expert": "Le signal avancé se conserve, mais qualifié : direction observée, jamais état livré. Le rattacher à la date du travail et à la divergence mesurée empêche qu’un nom ancien soit relu comme un fait présent. Une affirmation publique doit reposer sur l’intégration ou la release, jamais sur le nom seul."
+          },
+          "en": {
+            "kitchen": "Keep the board: it tells you where the house wants to go, and that is worth having. But write the date beside it, and never announce it out front as a dish of the day. What counts for the guest is the printed menu, not the back of the kitchen.",
+            "expert": "Keep the forward signal, but keep it qualified: observed direction, never shipped state. Binding it to the date of the work and to measured divergence stops an old name from being reread as a present fact. A public claim must rest on merge or release, never on the name alone."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La craie annonce, elle ne sert pas",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Chalk announces, chalk does not serve",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un nom sur l’ardoise est un indice, pas une promesse. Il te dit qu’on y pense. Il ne te dit pas qu’on le sert ce soir, ni qu’on le servira un jour.",
+            "expert": "Une branche est un signal, pas une promesse. Un signal avancé garde sa valeur tant qu’il reste qualifié comme direction possible et rattaché à sa date ; sans cette qualification, il devient un signal de roadmap trompeur."
+          },
+          "en": {
+            "kitchen": "A name on the board is a clue, not a promise. It tells you the house is thinking about it. It does not tell you it is served tonight, or ever.",
+            "expert": "A branch is a signal, not a promise. A forward signal keeps its value while it stays qualified as a possible direction and tied to its date; without that qualification it becomes a misleading roadmap signal."
+          }
+        }
+      ]
+    }
+  ]
+}

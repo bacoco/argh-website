@@ -1,1 +1,220 @@
-{"schema":"argh/public-entity/v1","id":"project:agent-scripts","type":"project","slug":"agent-scripts","route":"/projects/agent-scripts/","template":"project","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":[],"patterns":["branches","forward-signals","runtime-visible-state","skills-runtime"],"dossiers":["runtime-skill-inventory-not-filesystem","branch-name-roadmap-decay"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"agent-scripts","expert":"agent-scripts"},"en":{"kitchen":"agent-scripts","expert":"agent-scripts"}},"body":[{"fr":{"cuisine":"Deux dossiers publics à la carte pour voir ce qui arrive quand les compétences et les branches d’agent-scripts ne correspondent plus à ce qui tourne réellement.","expert":"2 dossiers publics rattachés à agent-scripts."},"en":{"kitchen":"Two public dossiers on the menu, showing what can happen when agent-scripts skills and branches no longer match what is actually running.","expert":"2 public dossiers associated with agent-scripts."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "project:agent-scripts",
+  "type": "project",
+  "slug": "agent-scripts",
+  "route": "/projects/agent-scripts/",
+  "template": "project",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [],
+    "patterns": [
+      "branches",
+      "forward-signals",
+      "runtime-visible-state",
+      "skills-runtime"
+    ],
+    "dossiers": [
+      "runtime-skill-inventory-not-filesystem",
+      "branch-name-roadmap-decay"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "agent-scripts",
+          "expert": "agent-scripts"
+        },
+        "en": {
+          "kitchen": "agent-scripts",
+          "expert": "agent-scripts"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Deux fiches publiques portent le nom d’agent-scripts. Toutes deux racontent le même écart : ce qui est écrit sur l’ardoise n’est pas toujours ce qui sort des fourneaux ce soir. Les tours de main annoncés et les plats promis ne valent pas inventaire du service.",
+            "expert": "Deux dossiers publics sont rattachés à agent-scripts. Tous deux portent le même écart : la présence d’un élément en source ou en configuration ne prouve pas son état chargé ou exécutable."
+          },
+          "en": {
+            "kitchen": "Two public cards carry the agent-scripts name. Both tell the same gap: what is chalked on the board is not always what leaves the stoves tonight. Announced techniques and promised dishes are no inventory of the service.",
+            "expert": "Two public dossiers are associated with agent-scripts. Both carry the same gap: presence in source or configuration does not prove loaded or executable state."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que l’ardoise promet, ce que le service montre",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "What the board promises, what service shows",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "À chaque changement de carte, agent-scripts écrit noir sur blanc ce qui change dans la façon de travailler. Cline, OpenHands et les fiches de Matt Pocock le font aussi.",
+            "expert": "agent-scripts inscrit des sémantiques explicites de contrôle du harnais dans ses notes de version, comme les skills de Matt Pocock, Cline et OpenHands."
+          },
+          "en": {
+            "kitchen": "Whenever the menu changes, agent-scripts writes down exactly what changes in the way the house works. Cline, OpenHands and Matt Pocock’s cards do the same.",
+            "expert": "agent-scripts ships explicit harness-control semantics in its release notes, as do Matt Pocock’s skills, Cline and OpenHands."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Survoler ce mot comme un simple changement de saison fait manquer l’essentiel : qui a le droit de faire quoi, et avec quels ustensiles.",
+            "expert": "Lire ces notes comme un simple incrément de version fait perdre les changements annoncés de visibilité des skills, de découverte des plugins, d’orchestration et de contrôles runtime."
+          },
+          "en": {
+            "kitchen": "Skimming that note as a mere change of season misses the real point: who may do what, and with which utensils.",
+            "expert": "Reading those notes as a generic version bump loses the stated changes to skill visibility, plugin discovery, orchestration and runtime controls."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Pour savoir ce que la brigade sait faire, on a cessé de compter les livres sur l’étagère. On lit la feuille remise au cuisinier ce soir-là.",
+            "expert": "Un audit de skills est passé du scan de répertoires à la lecture de l’inventaire exact injecté dans le prompt du modèle, aliases et ordre compris."
+          },
+          "en": {
+            "kitchen": "To learn what the brigade can actually do, they stopped counting books on the shelf. They read the sheet handed to the cook that night.",
+            "expert": "A skills audit moved from scanning directories to reading the exact inventory injected into the model prompt, aliases and ordering included."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "L’écart revient souvent : le livre contient la recette, la feuille du soir ne la porte pas.",
+            "expert": "La présence en source ou en configuration diverge de façon répétée de l’état chargé ou exécutable."
+          },
+          "en": {
+            "kitchen": "The gap keeps coming back: the book holds the recipe, the evening sheet does not carry it.",
+            "expert": "Presence in source or configuration repeatedly diverged from loaded or executable state."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "De même, un plat annoncé à la craie révèle les intentions de la maison, jusqu’au jour où il n’arrive jamais en salle.",
+            "expert": "Les branches nommées peuvent révéler l’architecture planifiée avant les versions, mais une forte divergence transforme un nom impressionnant en signal de roadmap trompeur."
+          },
+          "en": {
+            "kitchen": "In the same way, a dish chalked up early shows the house’s intentions, until the day it never reaches the room.",
+            "expert": "Named branches can reveal planned architecture ahead of releases, but strong divergence turns an impressive name into a misleading roadmap signal."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "L’étagère n’est pas la feuille du soir",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "The shelf is not the evening sheet",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le livre sur l’étagère dit ce que la maison sait faire un jour. La feuille du soir dit ce que le cuisinier a vraiment sous la main. Chez agent-scripts, les deux s’écartent souvent, et c’est la feuille qui commande le service.",
+            "expert": "La présence d’un fichier, d’un nom de branche ou d’une note de version décrit une intention déclarée, pas un état chargé. Les skills se déplacent vers des composants runtime découvrables, permissionnés et communs à plusieurs harnais, ce qui élargit l’écart entre l’arborescence et l’inventaire effectivement injecté."
+          },
+          "en": {
+            "kitchen": "The book on the shelf says what the house can do some day. The evening sheet says what the cook actually has to hand. At agent-scripts those two drift apart often, and the sheet is what runs service.",
+            "expert": "A file, a branch name or a release note describes declared intent, not loaded state. Skills are moving toward discoverable, permissioned, cross-harness runtime components, which widens the gap between the tree on disk and the inventory actually injected."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Lire la feuille, pas l’étagère",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Read the sheet, not the shelf",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On lit ce que le cuisinier a reçu ce soir, dans l’ordre où il l’a reçu, avec les noms exacts. Et quand la maison annonce un changement de façon de travailler, on le traite comme un vrai changement de service. Annoncer n’est pas encore avoir goûté.",
+            "expert": "Auditer l’inventaire runtime — celui que le modèle reçoit, aliases et ordre compris — plutôt que l’arborescence. Traiter les notes de version comme des deltas de contrôle du harnais de premier rang lorsqu’elles modifient visibilité des skills, découverte de plugins, permissions, orchestration ou comportement runtime, sans confondre cette déclaration avec une validation terrain."
+          },
+          "en": {
+            "kitchen": "Read what the cook was handed tonight, in the order he got it, with the exact names. When the house announces a change in the way it works, treat it as a real change of service. Announcing is still not tasting.",
+            "expert": "Audit the runtime inventory the model receives, aliases and ordering included, rather than the directory tree. Treat release notes as first-class harness-control deltas when they change skill visibility, plugin discovery, permissions, orchestration or runtime behavior, without mistaking the claim for field validation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Deux fiches à la carte, et l’écart toujours là",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "Two cards on the menu, and the gap still there",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Deux fiches publiques restent rattachées à agent-scripts : celle des tours de main, celle des plats annoncés trop tôt. L’écart entre l’ardoise et le service y est tenu pour solide. Ce qu’une maison annonce n’a pas été goûté pour autant.",
+            "expert": "Deux dossiers publics rattachés à agent-scripts : dérive de l’inventaire de skills, et décroissance du signal porté par les noms de branches. La divergence source/runtime et le déplacement des skills vers des composants runtime sont tenus pour très probables ; lire les notes de version comme deltas de contrôle reste une pratique déclarative, non une validation terrain."
+          },
+          "en": {
+            "kitchen": "Two public cards stay attached to agent-scripts: one on the techniques, one on dishes chalked up too early. The gap between board and service is held to be solid there. What a house announces has still not been tasted.",
+            "expert": "Two public dossiers are associated with agent-scripts: skill-inventory drift, and decay of the signal carried by branch names. The source/runtime divergence and the move of skills toward runtime components are held at very high confidence; reading release notes as control deltas remains a declarative practice, not field validation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui compte, c’est ce qu’on a en main au coup de feu",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What counts is what is in your hands when the rush starts",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un plat écrit à la craie est une intention, pas une promesse. Seul compte ce que le cuisinier a devant lui au coup de feu.",
+            "expert": "Un nom de branche est un signal, pas un engagement. La configuration qui compte est celle que le modèle reçoit à l’exécution."
+          },
+          "en": {
+            "kitchen": "A dish chalked on the board is an intention, not a promise. What counts is what the cook has in front of him when the rush starts.",
+            "expert": "A branch name is a signal, not a commitment. The configuration that counts is the one the model receives at runtime."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,178 @@
-{"schema":"argh/public-entity/v1","id":"project:pstack","type":"project","slug":"pstack","route":"/projects/pstack/","template":"project","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":[],"patterns":["evidence-boundary","skills-runtime","verification"],"dossiers":["agent-claims-need-evidence-labels"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"pstack","expert":"pstack"},"en":{"kitchen":"pstack","expert":"pstack"}},"body":[{"fr":{"cuisine":"Un dossier public pour séparer, chez pstack, ce qu’un agent affirme de ce que la cuisine peut réellement montrer par une preuve étiquetée.","expert":"1 dossiers publics rattachés à pstack."},"en":{"kitchen":"One public dossier for separating, with pstack, what an agent claims from what the kitchen can actually show with labelled evidence.","expert":"1 public dossiers associated with pstack."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "project:pstack",
+  "type": "project",
+  "slug": "pstack",
+  "route": "/projects/pstack/",
+  "template": "project",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [],
+    "patterns": [
+      "evidence-boundary",
+      "skills-runtime",
+      "verification"
+    ],
+    "dossiers": [
+      "agent-claims-need-evidence-labels"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "pstack",
+          "expert": "pstack"
+        },
+        "en": {
+          "kitchen": "pstack",
+          "expert": "pstack"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez pstack, on a demandé que personne n’annonce un plat sans dire comment il le sait : goûté, jugé à l’œil, ou seulement supposé. Et si le contrôle est à portée de main, on le fait soi-même au lieu de l’envoyer au chef. Un dossier public y est rattaché.",
+            "expert": "Une révision de skill chez pstack impose d’accompagner chaque affirmation d’une preuve ou d’une qualification explicite : mesuré, déduit ou supposé. La même révision demande d’exécuter les contrôles à portée plutôt que de les renvoyer à l’opérateur. Un dossier public est rattaché à ce changement."
+          },
+          "en": {
+            "kitchen": "pstack asked its people to stop calling a dish ready without saying how they know: tasted, judged by eye, or merely assumed. And where the check is within arm’s reach, do it yourself instead of passing it up to the chef. One public dossier hangs on this.",
+            "expert": "A skill revision at pstack requires every claim to arrive with evidence or an explicit qualifier: measured, inferred or assumed. The same revision asks that reachable checks be run rather than handed back to the operator. One public dossier is attached to that change."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Une consigne affichée, pas encore un service observé",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "A note on the wall, not yet a service watched",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Il n’y a pas d’histoire à dérouler ici, pas de service raté à raconter. Ce qu’on a, c’est une consigne écrite et affichée. Personne n’a encore regardé si elle change quelque chose au passe.",
+            "expert": "Aucune chronologie n’est établie. Le seul élément fixé est le changement lui-même : la règle de compte rendu existe dans le skill révisé, et son effet sur le comportement réel n’a pas été mesuré ici."
+          },
+          "en": {
+            "kitchen": "No run of events belongs here, and no service went wrong. What exists is a written note, pinned up. Nobody has yet stood at the pass to see whether it changes anything.",
+            "expert": "No sequence is established. The one fixed element is the change itself: the reporting rule exists in the revised skill, and its effect on actual behaviour was not measured here."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "« C’est prêt » n’est pas « j’ai goûté »",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "“Ready” is not “I tasted it”",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Deux commis annoncent la même chose au passe. L’un a goûté, l’autre a regardé la couleur et parié. À l’oreille, les deux phrases sont identiques, et c’est tout le problème.",
+            "expert": "L’affirmation et sa preuve sont deux objets distincts. Sans étiquette, un résultat mesuré et une supposition se présentent au lecteur sous la même forme. Étiqueter mesuré, déduit ou supposé rend cette distinction lisible au moment de la lecture, et non après coup."
+          },
+          "en": {
+            "kitchen": "Two cooks call the same words down the pass. One of them tasted it; the other looked at the colour and bet. The words sound exactly alike, and that is the whole trouble.",
+            "expert": "A claim and its evidence are separate objects. Without a label, a measured result and a guess reach the reader in the same shape. Labelling measured, inferred or assumed makes the difference readable at reading time rather than afterwards."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Goûté, jugé, ou supposé : on le dit",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Tasted, judged, or assumed — say which",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On annonce en disant comment on sait : goûté, jugé, ou supposé. Et ce qu’on peut vérifier en deux gestes, on le vérifie soi-même. Reste à voir si la consigne est suivie : l’afficher ne prouve pas qu’elle tient.",
+            "expert": "La règle demande deux choses : garder la preuve à côté de l’affirmation, et exécuter soi-même les contrôles à portée plutôt que de les déléguer à l’opérateur. Elle demande aussi de tester la règle de compte rendu, plutôt que de prendre l’existence de la règle pour une preuve."
+          },
+          "en": {
+            "kitchen": "Call the dish, and say how you know it: tasted, judged, or assumed. Whatever can be checked in two moves, check it yourself. Then watch whether the note is obeyed — pinning it up proves nothing.",
+            "expert": "The rule asks for two things: keep the evidence beside the claim, and run the reachable checks instead of delegating them to the operator. It also asks that the reporting rule itself be tested, rather than treated as evidence because it exists."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "La consigne est au mur, l’effet n’est pas mesuré",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "The note is up; the effect is unmeasured",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La consigne est bien au mur, personne n’en doute. Ce qui se passe ensuite, au feu, n’a pas été regardé. On en est là : une règle écrite, un service pas encore observé.",
+            "expert": "Le changement est visible dans le skill révisé. Son effet sur le comportement réel n’a pas été mesuré ici : l’état de preuve porte sur le texte de la règle, pas sur son application. Aucune mesure de terrain n’est associée."
+          },
+          "en": {
+            "kitchen": "The note is on the wall; nobody disputes that. What happens afterwards, at the stoves, has not been watched. That is where it stands: a rule written, a service not yet observed.",
+            "expert": "The change is visible in the revised skill. Its effect on real behaviour was not measured here: the evidence covers the text of the rule, not its application. No field measurement is attached."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La preuve reste à côté de l’assiette",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Proof travels with the plate",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une annonce sans façon de savoir n’est qu’un espoir dit à voix haute.",
+            "expert": "Garder la preuve à côté de l’affirmation, et tester la règle de compte rendu au lieu de prendre la règle pour une preuve."
+          },
+          "en": {
+            "kitchen": "A dish called ready, with no word on how you know, is only hope said out loud.",
+            "expert": "Keep the evidence beside the claim, and test the reporting rule instead of taking the rule for evidence."
+          }
+        }
+      ]
+    }
+  ]
+}

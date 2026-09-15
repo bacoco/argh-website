@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:delivery-stages","type":"pattern","slug":"delivery-stages","route":"/patterns/delivery-stages/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["OpenClaw"],"patterns":[],"dossiers":["delivery-finished-user-got-nothing"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Un plat prêt n’est pas encore un plat servi","expert":"Étapes de livraison"},"en":{"kitchen":"A ready dish is not yet a served dish","expert":"Delivery Stages"}},"body":[{"fr":{"cuisine":"La préparation, l’envoi et la réception sont trois étapes différentes qui doivent chacune être vérifiées.","expert":"Les étapes de livraison distinguent génération, transmission et réception effective afin d’éviter les faux succès."},"en":{"kitchen":"Preparation, sending and receipt are separate stages and each needs verification.","expert":"Delivery stages separate generation, transmission and effective receipt to prevent false-success states."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:delivery-stages",
+  "type": "pattern",
+  "slug": "delivery-stages",
+  "route": "/patterns/delivery-stages/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "OpenClaw"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "delivery-finished-user-got-nothing"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "La commande est cochée, le client attend toujours",
+          "expert": "La complétion enregistrée chez le producteur, jamais chez le destinataire"
+        },
+        "en": {
+          "kitchen": "The order is ticked off, and the guest is still waiting",
+          "expert": "Completion recorded at the producer, never at the recipient"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La commande est cochée sur le carnet, et le carnet a raison : le plat existe, il est dressé, il est prêt. Entre ce coup de crayon et la table du client, il reste quatre gestes que le carnet ne connaît pas. OpenClaw a montré un soir où ces gestes n’ont pas eu lieu.",
+            "expert": "Les étapes de livraison séparent production, persistance, mise en file, envoi et réception effective, afin d’empêcher un faux succès. Sur OpenClaw, la complétion interne pouvait être vraie alors que le résultat final n’atteignait jamais l’utilisateur : un unique drapeau de complétion confondait ces cinq états distincts."
+          },
+          "en": {
+            "kitchen": "The order is ticked off, and the book is not lying: the dish exists, it is plated, it is ready. Past that tick there are four more moves before anything reaches a guest, and the book knows none of them. OpenClaw showed an evening where those moves never happened.",
+            "expert": "Delivery stages keep generation, persistence, queueing, sending and effective receipt apart so that a false success cannot be recorded. In OpenClaw, internal completion could be true while the final result never reached the user, because one completion flag collapsed those five distinct states into a single mark."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Un carnet parfait et une salle qui râle",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "A perfect book and a room full of complaints",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le carnet annonce une soirée sans faute pendant qu’une table attend toujours. Les réclamations portent sur des commandes que votre propre compte donne pour servies. Rien de ce qui se passe en salle ne revient jamais corriger le carnet. Et un seul coup de crayon couvre cinq gestes différents.",
+            "expert": "Le taux de succès interne reste élevé alors que des destinataires signalent une absence de résultat. Les réclamations portent sur des tâches marquées terminées, et aucun signal issu de la couche de livraison ne remonte invalider un succès déjà enregistré. Un unique drapeau couvre des états qui peuvent échouer indépendamment les uns des autres."
+          },
+          "en": {
+            "kitchen": "The book reports a flawless evening while a table is still waiting. Complaints land on orders your own tally counts as served. Nothing that happens out in the room ever travels back to correct the book. One stroke of the pencil stands in for five separate moves.",
+            "expert": "Internal success rates stay high while recipients report receiving nothing. Complaints target tasks already marked complete, and no signal from the delivery layer travels back to invalidate a recorded success. One flag covers states that can each fail on their own."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "On compte à la porte de la cuisine, pas à la table",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "The count is taken at the kitchen door, not at the table",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "« Parti » a été décidé à la porte de la cuisine, pas devant le client. Tout ce qui arrive après cette porte est invisible pour celui qui tient le carnet. Un échec en salle ne peut donc plus annuler un succès déjà écrit. Le carnet n’est pas faux, il s’arrête trop tôt.",
+            "expert": "La complétion est définie à la frontière du producteur plutôt qu’au résultat observable de l’extérieur. Un échec survenant après cette frontière ne peut donc pas invalider le succès déjà enregistré, et l’écart entre les deux vues n’est jamais détecté. Les états intermédiaires étant collapsés, l’étape où la livraison s’est interrompue n’est pas localisable."
+          },
+          "en": {
+            "kitchen": "Gone was decided at the kitchen door, not in front of the guest. Everything past that door is invisible to whoever holds the book. A failure out in the room can no longer cancel a success already written down. The book is not wrong; it simply stops too early.",
+            "expert": "Completion is defined at the producer boundary rather than at the externally observable outcome. A failure past that boundary therefore cannot invalidate the success already recorded, and the gap between the two views goes undetected. With intermediate states collapsed, the stage at which delivery stopped cannot be located."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ne cocher qu’une fois le plat posé devant quelqu’un",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Tick it off only once the plate is down in front of someone",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Gardez les cinq gestes séparés sur le carnet : dressé, mis de côté, en attente d’un porteur, emporté, posé devant le client. Ne cochez la commande qu’au dernier. Ouvrez un chemin de retour depuis la salle, pour qu’une table vide puisse corriger le carnet.",
+            "expert": "Suivre la livraison comme une machine à états et ne déclarer le succès qu’après réception ou acquittement par l’observateur final. Maintenir les états intermédiaires distincts plutôt que les collapser dans un unique drapeau, afin de localiser l’étape défaillante. Prévoir un chemin de retour de la couche de livraison vers l’état de la tâche."
+          },
+          "en": {
+            "kitchen": "Keep the five moves apart on the book: plated, set aside, waiting for a runner, carried out, put down in front of the guest. Tick the order only on the last one. Open a way back from the room, so an empty table can correct the book itself.",
+            "expert": "Model delivery as a state machine and claim success only after the final intended observer has received or acknowledged the result. Keep intermediate states distinct instead of collapsing them into one flag, so the failing stage can be located. Provide a feedback path from the delivery layer back to task state."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "C’est la table qui dit qu’un service est fini",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The table is what says a service is over",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le compte du passe n’est pas le compte de la salle. Tant que personne à table n’a le plat devant lui, la commande n’est pas partie, quoi qu’en dise le carnet.",
+            "expert": "Terminé en interne n’est pas terminé pour l’utilisateur. Le seul témoin valable de la complétion est le destinataire du résultat, jamais le composant qui l’a produit."
+          },
+          "en": {
+            "kitchen": "The count at the pass is not the count in the room. Until somebody at a table has the plate in front of them, the order has not left, whatever the book says.",
+            "expert": "Done internally is not done for the user. The only valid witness of completion is the party the result was meant for, never the component that produced it."
+          }
+        }
+      ]
+    }
+  ]
+}

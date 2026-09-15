@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:evidence-boundary","type":"pattern","slug":"evidence-boundary","route":"/patterns/evidence-boundary/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["pstack"],"patterns":[],"dossiers":["agent-claims-need-evidence-labels"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Dire « c’est fait » exige de regarder la table","expert":"Frontière de preuve"},"en":{"kitchen":"Saying “done” requires checking the table","expert":"Evidence Boundary"}},"body":[{"fr":{"cuisine":"Une affirmation doit rester distinguable de l’observation qui permet réellement de la confirmer.","expert":"La frontière de preuve sépare une affirmation, une inférence ou une intention de l’évidence qui permet de la considérer comme vérifiée."},"en":{"kitchen":"A claim must stay distinguishable from the observation that actually confirms it.","expert":"The evidence boundary separates a claim, inference or intention from the evidence required to treat it as verified."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:evidence-boundary",
+  "type": "pattern",
+  "slug": "evidence-boundary",
+  "route": "/patterns/evidence-boundary/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "pstack"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "agent-claims-need-evidence-labels"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "« C’est parti » et « je crois que c’est parti » s’annoncent du même ton",
+          "expert": "L’affirmation et ce qui l’établit ne voyagent pas ensemble"
+        },
+        "en": {
+          "kitchen": "“It’s away” and “I think it’s away” get called the same way",
+          "expert": "A claim and what establishes it do not travel together"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Au passe, le ton ne trie rien. Le commis a vu l’assiette partir, ou l’a déduit du bruit, ou l’a simplement supposé : la phrase sort pareille. Chez pstack, une consigne réécrite demande désormais de dire lequel des trois, et de faire soi-même les vérifications à portée de main.",
+            "expert": "La frontière de preuve sépare une affirmation, une inférence ou une intention de l’évidence qui permet de la tenir pour vérifiée. Chez pstack, une révision de consigne impose d’accompagner chaque affirmation de sa preuve ou d’une qualification explicite — mesuré, déduit, supposé — et laisse à l’agent les contrôles qu’il peut exécuter lui-même. La modification est vérifiable dans les sources ; son effet sur le comportement réel n’a pas été mesuré."
+          },
+          "en": {
+            "kitchen": "At the pass, tone sorts nothing. The cook watched the plate go, or guessed it from the noise, or simply assumed it: the words come out the same. At pstack a rewritten notice now asks which of the three it is, and asks the cook to run the checks within his own reach.",
+            "expert": "The evidence boundary separates a claim, an inference or an intention from the evidence that lets it count as verified. At pstack a revised instruction requires every claim to carry its evidence or an explicit qualification — measured, inferred, assumed — and keeps with the agent the checks it can run itself. The revision is verifiable in the sources; its effect on actual behavior was not measured."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui doit faire redemander « tu l’as vue partir ? »",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "What should make the chef ask “did you see it go?”",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La réponse est nette, rapide, sans une once d’hésitation, et personne ne peut dire ce qui a été vu. Une raison est donnée pour un plat en retard que personne n’a suivi jusqu’au four. Et le commis renvoie au chef une vérification qu’il pouvait faire lui-même, au passe, en trois secondes.",
+            "expert": "Affirmations et contrôles partagent un même canal et un même registre. Le compte rendu nomme une cause que personne n’a observée, ou présente une prédiction comme un fait établi — le défaut de compte rendu identifié chez pstack. Un contrôle à portée de l’agent est renvoyé à l’opérateur, et l’assurance de la formulation croît avec le soin apporté, non avec la preuve."
+          },
+          "en": {
+            "kitchen": "The answer is crisp, fast, without a flicker of hesitation, and nobody can say what was seen. A reason is offered for a late dish that nobody followed as far as the oven. And the cook hands the chef a check he could have run himself at the pass, in three seconds.",
+            "expert": "Claims and checks share one channel and one register. The report names a cause nobody observed, or presents a prediction as established fact — the reporting defect identified at pstack. A check within the agent’s reach is deferred to the operator, and confidence grows with polish rather than with evidence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi une phrase bien dite emporte la décision",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a well-turned sentence carries the decision",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une phrase soignée ne garde aucune trace d’où elle vient. Le chef décide dessus parce qu’il n’a rien d’autre au passe. L’étiquette remet la différence sous ses yeux au bon moment, mais elle se pose mal, ou pas du tout : l’étiquette n’est pas l’assiette.",
+            "expert": "Une formulation soignée masque l’écart entre un résultat observé, une déduction et une prédiction. La qualification rend cet écart visible au point de décision de l’opérateur, mais le contrôle reste de niveau instruction. Un agent peut mal qualifier une affirmation ou ne pas suivre la consigne ; la qualification ne constitue donc pas une preuve."
+          },
+          "en": {
+            "kitchen": "A polished sentence keeps no trace of where it came from. The chef decides on it because there is nothing else at the pass. A label drags that difference back in front of him at the right moment. But labels get put on wrong, or skipped: a label is not a plate.",
+            "expert": "Careful phrasing hides the gap between an observed result, an inference and a prediction. The qualification makes that gap visible at the operator’s decision point, but the control stays at instruction level. An agent can mislabel a claim or ignore the instruction, so the qualification is not itself evidence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui part avec l’annonce, et ce qu’on éprouve ensuite",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What leaves with the call, and what gets tested afterwards",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chaque annonce qui compte part avec ce qui a été vu : l’assiette, l’heure, le poste. Une vérification impossible se dit telle quelle, et ne se confond pas avec une vérification qui a échoué. Chez pstack la consigne est affichée et datée ; que la brigade la lise et la suive n’est pas établi.",
+            "expert": "Conserver le contrôle exécuté et son résultat auprès de l’affirmation, et distinguer un contrôle indisponible d’un contrôle en échec. Laisser à l’agent les vérifications qu’il peut exécuter, au lieu de les renvoyer à l’opérateur. Mesurer si la consigne chargée déplace le comportement : chez pstack, la révision des sources et la version déclarée sont vérifiées, tandis qu’adoption, chargement à l’exécution et respect de la consigne ne le sont pas."
+          },
+          "en": {
+            "kitchen": "Every call that matters leaves with what was seen: the plate, the time, the station. A check that could not be run is said so plainly, and never confused with a check that failed. At pstack the notice is posted and dated; whether the brigade reads and follows it is not established.",
+            "expert": "Keep the executed check and its result next to the claim, and distinguish an unavailable check from a failed one. Leave with the agent the verifications it can run rather than deferring them to the operator. Measure whether the loaded instruction moves behavior: at pstack the source revision and declared version are verified, while adoption, load at runtime and compliance are not."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "L’assurance n’est pas une assiette",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Confidence is not a plate",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "L’assurance d’un commis n’a jamais fait sortir une assiette. Et une consigne affichée au mur n’est pas une consigne suivie : elle s’éprouve comme le reste.",
+            "expert": "Garder la preuve contre l’affirmation, et éprouver la règle de compte rendu au lieu de la prendre pour la preuve."
+          },
+          "en": {
+            "kitchen": "A cook’s confidence never put a plate on a table. And a notice on the wall is not a notice followed: it gets tested like everything else.",
+            "expert": "Keep the evidence against the claim, and test the reporting rule instead of mistaking the rule for evidence."
+          }
+        }
+      ]
+    }
+  ]
+}

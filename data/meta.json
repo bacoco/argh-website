@@ -1,8 +1,8 @@
 {
   "schema": "argh/static-projection/v1",
-  "generated_at": "2026-09-14T22:23:26+02:00",
-  "source_repository": "bacoco/harness-intelligence",
-  "source_head": "ede383eab2fe054c70f6e41ec6b7f402202c6549",
+  "generated_at": "2026-09-15T22:10:53+02:00",
+  "source_repository": "bacoco/argh",
+  "source_head": "f2d8ddeb66e96bdf67ad264342ee09b5e5cba9d6",
   "dossier_count": 59,
   "project_count": 22,
   "pattern_count": 83,

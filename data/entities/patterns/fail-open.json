@@ -1,1 +1,154 @@
-{"schema":"argh/public-entity/v1","id":"pattern:fail-open","type":"pattern","slug":"fail-open","route":"/patterns/fail-open/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Claude Code","Codex","Goose"],"patterns":[],"dossiers":["human-gate-timeout","goose-hooks-observer-to-enforcer","safety-control-failure-became-permission"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Quand le garde-fou tombe, la cuisine continue quand même","expert":"Échec ouvert"},"en":{"kitchen":"The kitchen keeps going when the guardrail fails","expert":"Fail-Open"}},"body":[{"fr":{"cuisine":"Un contrôle en panne ne doit pas être confondu avec une autorisation de poursuivre.","expert":"Un comportement fail-open poursuit l’exécution lorsque le mécanisme censé contrôler ou autoriser l’action échoue."},"en":{"kitchen":"A failed control must not be mistaken for permission to continue.","expert":"Fail-open behavior continues execution when the mechanism meant to control or authorize an action fails."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:fail-open",
+  "type": "pattern",
+  "slug": "fail-open",
+  "route": "/patterns/fail-open/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Claude Code",
+      "Codex",
+      "Goose"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "human-gate-timeout",
+      "goose-hooks-observer-to-enforcer",
+      "safety-control-failure-became-permission"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Plus personne pour regarder l’assiette, et elle part quand même",
+          "expert": "Le contrôle tombe, l’exécution continue"
+        },
+        "en": {
+          "kitchen": "Nobody left to look at the plate, and it goes out anyway",
+          "expert": "The control fails, execution continues"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Goose, chez Claude Code, chez Codex, une assiette doit être vue avant de partir. Le jour où celui qui la regarde tombe, l’assiette part quand même. Personne ne l’a validée. Personne ne l’a refusée non plus, et c’est passé pour un oui.",
+            "expert": "Le fail-open est le comportement d’un système qui poursuit l’exécution lorsque le mécanisme censé autoriser ou bloquer l’action échoue lui-même. Trois dossiers de ce corpus l’exposent, sur Goose, Claude Code et Codex. La panne du contrôle n’est convertie ni en refus ni en incertitude explicite : elle est absorbée comme une permission."
+          },
+          "en": {
+            "kitchen": "At Goose, at Claude Code, at Codex, a plate has to be looked at before it leaves. The day the one who looks at it goes down, the plate leaves all the same. Nobody waved it through. Nobody held it back either, and that counted as a yes.",
+            "expert": "Fail-open names a system that keeps executing when the mechanism meant to authorize or block the action is itself broken. Three dossiers in this corpus exhibit it, across Goose, Claude Code and Codex. The control’s own failure is turned into neither a refusal nor declared uncertainty; it is absorbed as permission."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on n’avait jamais décidé avant le coup de feu",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "What was never settled before the rush",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Celui qui contrôle ne sait dire que oui : personne n’a écrit ce qui arrive quand c’est lui qui tombe. La question posée au patron a une heure limite, et l’heure limite laisse partir l’assiette. Chez Goose, celui qui regardait passer les assiettes a fini par pouvoir les arrêter. Il a fallu ensuite décider ce qui se passe quand lui-même manque.",
+            "expert": "Le signal principal est un contrôle dont la sémantique d’échec n’est pas définie : la spécification couvre autoriser et bloquer, jamais tomber. Chez Goose, le lifecycle des hooks est passé de callbacks non bloquants à un blocage PreToolUse explicite, puis à un comportement configurable lorsque le hook lui-même échoue. Second signal, un timeout sur une demande d’approbation humaine qui se résout en poursuite autonome, observé indépendamment sur Claude Code et Codex."
+          },
+          "en": {
+            "kitchen": "The one who checks only knows how to say yes: nobody wrote down what happens when he is the one who drops. The question put to the owner carries a deadline, and the deadline lets the plate go. At Goose, the man who only watched plates go by was finally given the power to stop them. Then someone had to decide what happens when he is missing.",
+            "expert": "The leading signal is a control whose failure semantics are undefined: the specification covers allow and block, never crash. In Goose the hook lifecycle moved from non-blocking callbacks to explicit PreToolUse blocking, then to configurable behavior when the hook itself fails. A second signal is a timeout on a human approval request resolving into autonomous continuation, seen independently in Claude Code and Codex."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi le silence au passe ressemble à un accord",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why silence at the pass sounds like agreement",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une cuisine lancée ne s’arrête pas toute seule ; c’est le refus qui l’arrête. Quand le refus manque, rien ne manque à l’œil nu : le service continue, propre et régulier. Le silence de celui qui devait regarder n’a pas la valeur d’un oui. Il produit pourtant exactement la même assiette.",
+            "expert": "La poursuite est le chemin par défaut, et seul un refus explicite l’interrompt. Une panne du contrôle supprime ce refus sans produire d’erreur observable en aval, si bien que le résultat est indiscernable d’une autorisation accordée. Le timeout rejoue la même confusion sur l’axe temporel : l’absence de réponse humaine est consommée comme une réponse, alors que l’autorité humaine n’a rien décidé."
+          },
+          "en": {
+            "kitchen": "A kitchen in full service does not stop by itself; the refusal is what stops it. When the refusal never comes, nothing looks missing: the service runs on, clean and steady. Silence from the man who was meant to look is not a yes. It still puts out exactly the same plate.",
+            "expert": "Continuation is the default path, and only an explicit refusal interrupts it. A failed control removes that refusal without raising any downstream error, so the outcome is indistinguishable from a granted authorization. A timeout replays the confusion on the time axis: a missing human answer is consumed as an answer, although the human authority decided nothing."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Décider d’avance ce qu’on fait sans personne au passe",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Deciding in advance what happens with nobody at the pass",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Décide avant le service ce qui arrive quand celui qui regarde n’est pas là : on arrête, on refait passer, ou on met l’assiette de côté en le disant. Ce choix s’écrit, il ne s’improvise pas au coup de feu. Et une question laissée sans réponse reste une question : l’heure qui tourne ne la transforme jamais en oui.",
+            "expert": "La panne du contrôle doit correspondre à une décision explicite : bloquer, réessayer, ou exposer l’incertitude comme telle, jamais poursuivre par défaut. Un hook ne devient un garde-fou qu’une fois sa propre sémantique d’échec définie et configurable, ce que le cheminement de Goose rend visible. Pour une porte humaine, la gestion du timeout doit préserver l’autorité : expiration signifie non résolu, pas approuvé."
+          },
+          "en": {
+            "kitchen": "Settle before service what happens when the man who checks is away: you hold, you send it round again, or you set the plate aside and say so. That choice gets written down, never improvised in the rush. And a question left unanswered stays a question; the clock running out never turns it into a yes.",
+            "expert": "A control failure has to map to an explicit decision: block, retry, or surface the uncertainty as such, never continue by default. A hook becomes a guardrail only once its own failure semantics are defined and configurable, which the Goose trajectory makes visible. For a human gate, timeout handling must preserve authority: expiry means unresolved, not approved."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Rien dit n’est pas oui dit",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Nothing said is not yes said",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La panne de celui qui contrôle n’est pas son accord. Le silence non plus. Tant que tu n’as pas écrit ce que fait ta cuisine quand le contrôle tombe, tu n’as pas de contrôle. Tu as une habitude de continuer.",
+            "expert": "La panne d’un contrôle de sécurité n’est pas une décision d’approbation, et le silence n’est pas une approbation. Un garde-fou n’existe qu’à partir du moment où sa propre sémantique d’échec est définie, et l’autorité humaine doit survivre à la gestion du timeout."
+          },
+          "en": {
+            "kitchen": "The checker breaking down is not the checker agreeing. Neither is silence. Until you have written what your kitchen does when the check fails, you have no check. You have a habit of carrying on.",
+            "expert": "The failure of a safety control is not an approval decision, and silence is not approval. A guardrail exists only once its own failure semantics are defined, and human authority must survive timeout handling."
+          }
+        }
+      ]
+    }
+  ]
+}

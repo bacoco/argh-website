@@ -1,1 +1,152 @@
-{"schema":"argh/public-entity/v1","id":"pattern:branches","type":"pattern","slug":"branches","route":"/patterns/branches/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Codex","Roo Code","agent-scripts"],"patterns":[],"dossiers":["branch-name-roadmap-decay"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Une piste de travail annonce parfois la suite","expert":"Branches"},"en":{"kitchen":"A work branch can reveal what comes next","expert":"Branches"}},"body":[{"fr":{"cuisine":"Les pistes de travail en cours peuvent révéler une direction future avant qu’elle n’apparaisse dans la carte officielle.","expert":"Les branches constituent des signaux avancés utiles, mais restent des intentions ou travaux en cours tant qu’ils ne sont pas intégrés."},"en":{"kitchen":"Active work branches can reveal future direction before it reaches the official menu.","expert":"Branches are useful forward signals but remain work in progress until integrated."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:branches",
+  "type": "pattern",
+  "slug": "branches",
+  "route": "/patterns/branches/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Codex",
+      "Roo Code",
+      "agent-scripts"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "branch-name-roadmap-decay"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Une ardoise annonce un plat que personne n’a commencé",
+          "expert": "Un nom de travail en cours annonce une direction sans rien garantir de sa livraison"
+        },
+        "en": {
+          "kitchen": "A chalkboard promising a dish nobody has started",
+          "expert": "A work-in-progress name announces direction while guaranteeing nothing about delivery"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une ardoise annonce un plat qui donne envie, et elle dit vraiment où la maison voulait aller. Chez Codex, Roo Code et agent-scripts, on a vu de ces ardoises rester écrites telles quelles pendant que la salle enchaînait des centaines de couverts. Le plat, lui, n’avait pas avancé de trois gestes.",
+            "expert": "Un nom de branche est un signal avancé : il expose une architecture envisagée avant qu’une release ne la porte. Chez Codex, Roo Code et agent-scripts, une branche au nom crédible est restée en avance de quelques commits pendant que main avançait de plusieurs centaines. Le nom ne dit rien de la livraison ; la divergence, elle, dit tout."
+          },
+          "en": {
+            "kitchen": "Read the board and you learn what the house was aiming for, which is honest enough. At Codex, Roo Code and agent-scripts, boards like that stayed exactly as chalked while hundreds of covers went through the room. Three steps of work, then nothing.",
+            "expert": "A branch name is a forward signal: it exposes intended architecture before any release carries it. At Codex, Roo Code and agent-scripts, a credibly named branch stayed a handful of commits ahead while main advanced by several hundred. The name says nothing about delivery; the divergence says everything."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui sépare une ardoise vivante d’une ardoise oubliée",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "Telling a live board from a forgotten one",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Regarde la date de la dernière main qui y a touché. Regarde l’écart entre ce qu’elle annonce et ce que la maison sert vraiment depuis. Puis demande si quelqu’un travaille encore à faire entrer ce plat dans le service.",
+            "expert": "Trois variables déterminent la force du signal : la fraîcheur du dernier commit, la distance ahead/behind par rapport à main, et le rattachement à un travail d’intégration actif. Une branche fraîche et proche de main est un signal fort ; une branche figée et très en retard est un fossile. Les projets archivés en conservent des ensembles entiers, qui documentent une intention et non une livraison."
+          },
+          "en": {
+            "kitchen": "Find out when a hand last touched it. Measure the distance between what it promises and what the house has actually been sending out since. Then ask whether anyone is still working to bring that dish into service.",
+            "expert": "Three variables set the strength of the signal: recency of the last commit, ahead/behind distance from main, and attachment to active integration work. A fresh branch close to main reads strong; a frozen branch far behind is a fossil. Archived projects keep entire sets of them, documenting intent rather than delivery."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi une ardoise se lit trop vite",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a chalkboard gets read too fast",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une ardoise est écrite ou elle ne l’est pas : rien, dans les lettres, ne dit depuis quand elles sont là. Un nom bien tourné se lit comme une promesse pour ce soir, alors qu’il ne porte qu’une intention d’un jour passé. Faire la liste des ardoises sans leurs dates, c’est perdre ce qui les sépare d’un plat réel.",
+            "expert": "L’existence d’une branche est binaire ; la confiance qu’on peut lui accorder ne l’est pas. Lu seul, un nom est pris pour une livraison proche, parce qu’un nom porte l’ambition et jamais l’âge. Un inventaire qui ne retient que la présence du nom perd exactement l’information qui sépare une intention d’une livraison."
+          },
+          "en": {
+            "kitchen": "A board is either chalked or blank, and the lettering never says how long it has been up. A well-turned name reads like tonight’s promise when it records an intention from some earlier day. Drop the dates from your list of boards and you drop the one thing separating them from real food.",
+            "expert": "A branch either exists or does not; the confidence it deserves is not binary in the same way. Read alone, a name is taken for imminent delivery, because a name carries ambition and never age. An inventory that records only the name’s presence loses precisely what separates intent from delivery."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on fait d’une ardoise avant d’y croire",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What to do with a board before trusting it",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ne mets pas toutes les ardoises sur le même rang. Classe-les par date et par écart avec ce qui sort réellement des fourneaux. Tant qu’un plat n’est pas passé en salle, il reste une intention annoncée, et tu le présentes comme telle.",
+            "expert": "Pondérer les branches par fraîcheur et par divergence plutôt que les énumérer à plat. Tant qu’aucune preuve d’intégration ou de release n’apparaît, elles restent classées en signal avancé et ne sont pas promues en travail livré. Cette qualification explicite est ce qui rend l’intelligence de branches exploitable."
+          },
+          "en": {
+            "kitchen": "Never line every board up as equal. Rank them by date, and by the gap with what actually leaves the stoves. Until a dish has gone out to the room it stays an announced intention, and you say so whenever you speak of it.",
+            "expert": "Weight branches by recency and divergence instead of enumerating them flat. Absent evidence of integration or release, they stay classified as forward signal and are never promoted to delivered work. That explicit qualification is what makes branch intelligence usable at all."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La règle que laissent les ardoises de Codex et de Roo Code",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The rule left by the boards at Codex and Roo Code",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une ardoise dit où la maison voulait aller, jamais ce qu’elle a servi. Lis toujours la date à côté du nom.",
+            "expert": "Une branche est un signal, pas une promesse. Son nom ne porte aucune information de livraison ; seules sa fraîcheur et sa divergence en portent."
+          },
+          "en": {
+            "kitchen": "A chalkboard tells you where the house meant to go, never what it served. Always read the date beside the name.",
+            "expert": "A branch is a signal, not a promise. Its name carries no delivery information; only its recency and its divergence do."
+          }
+        }
+      ]
+    }
+  ]
+}

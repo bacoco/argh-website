@@ -1,1 +1,217 @@
-{"schema":"argh/public-entity/v1","id":"dossier:delivery-finished-user-got-nothing","type":"dossier","slug":"delivery-finished-user-got-nothing","route":"/dossiers/delivery-finished-user-got-nothing/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["OpenClaw"],"patterns":["delivery-stages","false-green"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le plat était prêt en cuisine, mais n’est jamais arrivé à table","expert":"L’agent a terminé le travail et a quand même échoué pour l’utilisateur"},"en":{"kitchen":"The dish was ready in the kitchen but never reached the table","expert":"The agent finished the work and still failed the user"}},"body":[{"fr":{"cuisine":"Le plat était prêt en cuisine, mais n’est jamais arrivé à table. Un tableau « vert » ou « vide » peut simplement signifier que le thermomètre regarde au mauvais endroit ou n’a pas pu lire la cuisine.","expert":"La complétion interne pouvait être vraie alors que le résultat final n’atteignait jamais l’utilisateur, révélant generated, persisted, queued, sent et received comme états distincts."},"en":{"kitchen":"The dish was ready in the kitchen but never reached the table. A “green” or “empty” board may simply mean the thermometer looked in the wrong place or could not read the kitchen.","expert":"Internal completion could be true while the final result never reached the user, exposing generated, persisted, queued, sent and received as separate states."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Le plat est bien terminé en cuisine.","expert":"L’agent produit un résultat final valide."},"en":{"kitchen":"The dish is properly finished in the kitchen.","expert":"The agent produced a valid final result."}},{"fr":{"cuisine":"Il est rangé sur l’étagère interne, et le système coche « terminé ».","expert":"Le résultat est persisté en interne."},"en":{"kitchen":"It is stored on an internal shelf and the system ticks “finished.”","expert":"The result was persisted internally."}},{"fr":{"cuisine":"Mais le passe vers la salle tombe en panne ou ne finit jamais son trajet.","expert":"Le système considère la tâche comme terminée."},"en":{"kitchen":"But the pass to the dining room fails or never completes its trip.","expert":"The system considered the task complete."}},{"fr":{"cuisine":"Le plat peut rester coincé au passe ou ne jamais atteindre la salle : il faut suivre ce trajet précis, pas seulement la préparation.","expert":"Le chemin de livraison finale échoue ou ne se termine pas."},"en":{"kitchen":"A dish can stick at the pass or never reach the dining room: follow that exact route, not just preparation.","expert":"The final delivery path failed or never completed."}},{"fr":{"cuisine":"Le client attend donc sans rien voir, malgré un succès que seule l’arrière-cuisine a constaté.","expert":"L’utilisateur n’observe aucun résultat malgré le succès interne."},"en":{"kitchen":"The customer waits with nothing to see, despite success observed only backstage.","expert":"The user observed no result despite internal success."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"La cuisine avait déclaré le plat fini à sa propre porte, avant de savoir si quelqu’un dehors pouvait réellement le recevoir.","expert":"La complétion était définie à la frontière du producteur plutôt qu’au résultat observable de l’extérieur."},"en":{"kitchen":"The kitchen had declared the dish finished at its own door before knowing whether anyone outside could receive it.","expert":"Completion was defined at the producer boundary rather than the externally observable outcome."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Le ticket de livraison doit suivre ses états jusqu’à l’acquittement de la bonne table, car c’est elle qui peut dire que le plat est arrivé.","expert":"Suivre la livraison comme machine à états et ne déclarer le succès que lorsque l’observateur final a reçu ou acquitté le résultat."},"en":{"kitchen":"The delivery ticket must follow its states to acknowledgement by the right table, because only it can say the dish arrived.","expert":"Track delivery as a state machine and claim success only when the final intended observer has received or acknowledged the result."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"Un service asynchrone n’est fini que lorsque la personne à table a reçu quelque chose.","expert":"Un invariant durable de livraison pour les systèmes d’agents asynchrones."},"en":{"kitchen":"An asynchronous service is finished only when the person at the table has received something.","expert":"A durable delivery invariant for asynchronous agent systems."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Un plat rangé dans l’arrière-cuisine n’est pas un plat servi au client.","expert":"Terminé en interne n’est pas terminé pour l’utilisateur."},"en":{"kitchen":"A dish stored backstage is not a dish served to the customer.","expert":"Done internally is not done for the user."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:delivery-finished-user-got-nothing",
+  "type": "dossier",
+  "slug": "delivery-finished-user-got-nothing",
+  "route": "/dossiers/delivery-finished-user-got-nothing/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "OpenClaw"
+    ],
+    "patterns": [
+      "delivery-stages",
+      "false-green"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le plat était prêt, personne ne l’a jamais posé sur la table",
+          "expert": "Travail terminé côté producteur, résultat jamais reçu côté utilisateur"
+        },
+        "en": {
+          "kitchen": "The plate was ready; nobody ever set it on the table",
+          "expert": "Work completed on the producer side, result never received by the user"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez OpenClaw, le plat était prêt, dressé, parfait. La cuisine a coché la commande comme terminée, et de son point de vue elle avait raison. Sauf que le client, en salle, n’a rien vu arriver. Entre le passe et sa table, quelque chose s’est arrêté sans prévenir.",
+            "expert": "La complétion interne pouvait être vraie alors que le résultat final n’atteignait jamais l’utilisateur. Le cas expose generated, persisted, queued, sent et received comme cinq états distincts, qu’un seul drapeau de complétion confondait."
+          },
+          "en": {
+            "kitchen": "At OpenClaw the plate was ready, plated, perfect. The kitchen ticked the order off as finished, and from where it stood that was true. Except the customer, out in the room, never saw anything arrive. Between the pass and the table, something stopped without a word.",
+            "expert": "Internal completion could be true while the final result never reached the user. The case exposes generated, persisted, queued, sent and received as five distinct states that a single completion flag conflated."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Du passe à la table, étape par étape",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "From the pass to the table, step by step",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le plat sort correctement de la cuisine, rien à redire dessus.",
+            "expert": "L’agent produit un résultat final valide."
+          },
+          "en": {
+            "kitchen": "The plate leaves the kitchen properly; there is nothing wrong with it.",
+            "expert": "The agent produced a valid final result."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Il est posé sur l’étagère du passe, et la commande est cochée.",
+            "expert": "Le résultat est persisté en interne."
+          },
+          "en": {
+            "kitchen": "It is set on the pass shelf, and the order is ticked off.",
+            "expert": "The result was persisted internally."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La cuisine considère le service fait : pour elle, la commande est sortie.",
+            "expert": "Le système considère la tâche comme terminée."
+          },
+          "en": {
+            "kitchen": "The kitchen counts the service as done: as far as it knows, the order left.",
+            "expert": "The system considered the task complete."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Mais le trajet du passe jusqu’à la table échoue, ou ne se termine jamais.",
+            "expert": "Le chemin de livraison finale échoue ou ne se termine pas."
+          },
+          "en": {
+            "kitchen": "But the trip from the pass to the table fails, or never finishes.",
+            "expert": "The final delivery path failed or never completed."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le client attend devant une table vide, pendant que la cuisine se félicite d’un service qu’elle croit terminé.",
+            "expert": "L’utilisateur n’observe aucun résultat malgré le succès interne enregistré."
+          },
+          "en": {
+            "kitchen": "The customer waits at an empty table while the kitchen congratulates itself on a service it believes is over.",
+            "expert": "The user observed no result despite the internal success recorded."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "La cuisine s’est arrêtée de compter au mauvais endroit",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "The kitchen stopped counting at the wrong place",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La cuisine a décidé que « terminé » voulait dire « sorti de chez moi ». Sa porte n’est pas la table du client. Tant qu’on compte au passe, ce qui arrive après reste invisible, et un échec en salle ne remonte jamais jusqu’au tableau.",
+            "expert": "La complétion était définie à la frontière du producteur plutôt qu’au résultat observable de l’extérieur. Un échec survenu après cette frontière ne pouvait donc pas invalider le succès déjà enregistré."
+          },
+          "en": {
+            "kitchen": "The kitchen decided that finished meant out of my door. Its door is not the customer’s table. Count at the pass and everything after it stays invisible; a failure in the room never travels back to the board.",
+            "expert": "Completion was defined at the producer boundary rather than at the externally observable outcome. A failure occurring past that boundary therefore could not invalidate the success already recorded."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’il faut suivre jusqu’au bout",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What has to be followed all the way",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Suivre la commande jusqu’à ce que quelqu’un à table confirme l’avoir reçue. Chaque étape du trajet compte à part : dressé, posé au passe, emporté, arrivé. Tant que la dernière n’est pas confirmée, le service n’est pas fini.",
+            "expert": "Suivre la livraison comme une machine à états et ne déclarer le succès que lorsque l’observateur final a reçu ou acquitté le résultat. Les états intermédiaires doivent rester distincts plutôt que collapsés dans un unique drapeau de complétion."
+          },
+          "en": {
+            "kitchen": "Follow the order until somebody at the table confirms they got it. Each leg of the trip counts on its own: plated, at the pass, carried, arrived. Until the last one is confirmed, service is not over.",
+            "expert": "Track delivery as a state machine and claim success only once the final intended observer has received or acknowledged the result. Intermediate states must stay distinct rather than collapse into a single completion flag."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que ce service laisse comme règle",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "What that service leaves behind as a rule",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La règle dépasse ce soir-là. Dès que le plat et le client cessent d’être au même endroit au même moment, elle s’applique.",
+            "expert": "Le cas établit un invariant de livraison durable pour les systèmes d’agents asynchrones, où production et réception sont séparées dans le temps."
+          },
+          "en": {
+            "kitchen": "The rule outlives that one evening. It applies as soon as the plate and the customer stop being in the same place at the same moment.",
+            "expert": "The case establishes a durable delivery invariant for asynchronous agent systems, where production and reception are separated in time."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Un plat sur l’étagère n’est pas un plat servi",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "A plate on the shelf is not a plate served",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un plat posé sur l’étagère du passe n’est pas un plat servi. Ce n’est pas la cuisine qui décide qu’un service est fini, c’est la table.",
+            "expert": "Terminé en interne n’est pas terminé pour l’utilisateur. Le seul témoin valable de la complétion est celui qui devait recevoir le résultat, pas celui qui l’a produit."
+          },
+          "en": {
+            "kitchen": "A plate sitting on the pass shelf is not a plate served. The kitchen does not get to declare service over; the table does.",
+            "expert": "Done internally is not done for the user. The only valid witness of completion is the party meant to receive the result, not the one that produced it."
+          }
+        }
+      ]
+    }
+  ]
+}

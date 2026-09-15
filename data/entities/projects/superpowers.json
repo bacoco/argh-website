@@ -1,1 +1,228 @@
-{"schema":"argh/public-entity/v1","id":"project:superpowers","type":"project","slug":"superpowers","route":"/projects/superpowers/","template":"project","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":[],"patterns":["cross-harness","rising-project","skills-runtime"],"dossiers":["superpowers-skills-methodology-rise"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Superpowers","expert":"Superpowers"},"en":{"kitchen":"Superpowers","expert":"Superpowers"}},"body":[{"fr":{"cuisine":"Un dossier public sur Superpowers et la montée d’une méthode de compétences : ce que cette recette apporte quand plusieurs harnais se croisent.","expert":"1 dossiers publics rattachés à Superpowers."},"en":{"kitchen":"One public dossier on Superpowers and the rise of a skills method: what that recipe brings when several harnesses meet.","expert":"1 public dossiers associated with Superpowers."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "project:superpowers",
+  "type": "project",
+  "slug": "superpowers",
+  "route": "/projects/superpowers/",
+  "template": "project",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [],
+    "patterns": [
+      "cross-harness",
+      "rising-project",
+      "skills-runtime"
+    ],
+    "dossiers": [
+      "superpowers-skills-methodology-rise"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Superpowers",
+          "expert": "Superpowers"
+        },
+        "en": {
+          "kitchen": "Superpowers",
+          "expert": "Superpowers"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Superpowers n’est pas un plat, c’est une manière de tenir le service, écrite pour que d’autres la reprennent. Des cuisines qui ne se connaissaient pas travaillent maintenant pareil, et c’est ce qui l’a fait passer de curiosité à maison suivie de près. Deux mauvaises surprises voyagent avec elle. Des consignes qui semblent en place mais n’arrivent jamais aux commis, et des goûteurs qui coûtent cher sans rattraper plus d’erreurs.",
+            "expert": "Superpowers a émergé comme méthodologie de workflow et de skills dont l’influence traverse plusieurs environnements d’agents de code, ce qui a justifié sa promotion de candidat à projet suivi. Deux constats l’accompagnent : des skills installés et un hook enregistré peuvent paraître sains alors que le chemin d’enforcement reste inerte, et des sous-agents relecteurs peuvent coûter davantage sans détecter davantage de défauts."
+          },
+          "en": {
+            "kitchen": "Superpowers is not a dish. It is a way of running service, written down so other houses can lift it, and houses that never met now work alike. That is what moved it from curiosity to a house worth watching. Two nasty surprises ride along: notes that look posted but never reach the line, and tasters who cost plenty and catch no more.",
+            "expert": "Superpowers emerged as a workflow-and-skills methodology whose influence crosses several coding-agent environments, which justified promotion from candidate to tracked project. Two findings travel with it: installed skills and a registered hook can look healthy while the enforcement path stays inert, and reviewer subagents can cost more without detecting more defects."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Comment un cahier de recettes est passé de cuisine en cuisine",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "How one house notebook travelled from kitchen to kitchen",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Au départ, un cahier de recettes bien tenu. Pas des fiches jetées dans un tiroir : une méthode complète pour préparer, envoyer, vérifier.",
+            "expert": "Un repository de skills ciblé établit une méthodologie de workflow cohérente, activement maintenue plutôt que collection de prompts ponctuelle."
+          },
+          "en": {
+            "kitchen": "It starts as one notebook, kept up to date. Not loose cards in a drawer, but a whole way to prep, send and check.",
+            "expert": "A focused skills repository establishes a coherent workflow methodology, actively maintained rather than a one-off prompt collection."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Autour du cahier, des étagères et des comptoirs se montent pour le faire circuler.",
+            "expert": "Des repositories liés et des surfaces de distribution apparaissent autour de la méthodologie."
+          },
+          "en": {
+            "kitchen": "Shelves and counters go up around that notebook so copies travel.",
+            "expert": "Related repositories and distribution surfaces appear around the methodology."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Des chefs l’emportent dans d’autres maisons, avec d’autres machines aux fourneaux. La méthode y tient encore : elle ne parle plus d’une seule cuisine.",
+            "expert": "Des praticiens l’appliquent dans plusieurs environnements d’agents de code ; le projet franchit le seuil de repository intéressant à signal d’écosystème."
+          },
+          "en": {
+            "kitchen": "Chefs carry it into other houses, with different machines at the stoves. It still holds there, so it stops being one house’s habit.",
+            "expert": "Practitioners apply it across multiple coding-agent environments; the project crosses the threshold from interesting repository to ecosystem signal."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Premier accroc. Les fiches sont bien au mur, le contrôleur est bien en poste. Pourtant la consigne du matin n’arrive jamais jusqu’aux commis.",
+            "expert": "Premier constat : un harnais peut rapporter que des skills existent et qu’un hook est enregistré alors qu’un décalage d’ordonnancement, de plateforme ou de contrat d’évènement rend le chemin d’enforcement inerte. Les instructions d’amorçage n’atteignent alors jamais le modèle."
+          },
+          "en": {
+            "kitchen": "First snag. The cards are up on the wall and the checker is at his post. The morning order still never reaches the cooks.",
+            "expert": "First finding: a harness can report that skills exist and a hook is registered while an ordering, platform or event-contract mismatch leaves the enforcement path inert. Bootstrap instructions then never reach the model."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Les versions suivantes cessent de croire que toutes les cuisines s’appellent pareil. Chacune est allée écouter comment la sienne annonce vraiment le passe.",
+            "expert": "L’historique de releases du praticien et la source courante montrent des changements successifs qui vérifient le contrat d’évènement réel, au lieu de supposer un comportement identique d’un harnais à l’autre."
+          },
+          "en": {
+            "kitchen": "Later printings stop assuming every house calls out the same way. Each one goes and listens to how its own pass is really called.",
+            "expert": "The practitioner’s release history and current source show successive changes that verify the actual event contract, instead of assuming identical behavior across harnesses."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Deuxième accroc, ailleurs. On avait ajouté des goûteurs pour repasser derrière la brigade. Ils prennent du temps et des bras, et trouvent à peu près autant qu’un coup d’œil donné au passe, bien moins cher.",
+            "expert": "Second constat : des sous-agents relecteurs ajoutent lectures de contexte complet, tours supplémentaires et boucles de révision ; sans calibrage, leur détection marginale de défauts peut tomber sous leur coût en tokens et en latence. Une release du praticien rapporte un taux de défauts comparable avec un mécanisme inline nettement moins cher."
+          },
+          "en": {
+            "kitchen": "Second snag, elsewhere. Tasters had been added to go back over the brigade’s work. They eat time and hands, and catch about what one glance at the pass catches, for far less.",
+            "expert": "Second finding: reviewer subagents add full-context reads, extra turns and revision loops; without calibration their marginal defect detection can fall below their token and latency cost. A practitioner release reports a comparable defect rate from a materially cheaper inline mechanism."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui voyage bien, et ce qui se perd en route",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "What travels well, and what gets lost on the way",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui voyage, ce n’est pas une fiche isolée. C’est un ordre de travail — préparer, envoyer, vérifier — que n’importe quelle maison peut reprendre. Et c’est justement ce qui la fragilise : chaque maison annonce le passe à sa façon. Une consigne écrite pareil n’y est pas entendue pareil.",
+            "expert": "La valeur n’est pas un skill isolé mais une manière répétable de structurer planification, exécution et vérification à travers des harnais hôtes différents. C’est cette portabilité même qui expose le premier constat : chaque hôte possède son propre contrat d’évènement, donc un contrôle déclaré à l’identique n’y est pas exécuté à l’identique. Présence, enregistrement et ordonnancement décrivent l’installation, jamais l’exécution."
+          },
+          "en": {
+            "kitchen": "What travels is not a single card. It is an order of work — prep, send, check — any house can adopt. That is also where it breaks: every house calls its pass differently. The same words on the wall are not heard the same way.",
+            "expert": "The value is not one skill but a repeatable way to structure planning, execution and verification across different host harnesses. That portability is what exposes the first finding: each host carries its own event contract, so a control declared identically is not executed identically. Presence, registration and ordering describe installation, never execution."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Regarder le plat, pas la fiche au mur",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Watch the plate, not the card on the wall",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ne crois pas la fiche punaisée : regarde si le plat change quand la consigne tombe. Une fiche au mur et un contrôleur en poste ne prouvent rien. Et n’ajoute un goûteur que si tu as compté ce qu’il rattrape vraiment.",
+            "expert": "Valider l’exécution d’un contrôle au point d’évènement : installation, enregistrement et présence de fichier ne sont pas des preuves qu’un hook ou un skill agit sur le modèle. N’ajouter une étape de relecteur ou de sous-agent que lorsque sa détection marginale de défauts, mesurée, justifie le contexte, la latence et les tokens qu’elle consomme."
+          },
+          "en": {
+            "kitchen": "Do not trust the card on the wall; watch whether the plate changes when the order is called. A card posted and a checker at his post prove nothing. Add a taster only once you have counted what he actually saves.",
+            "expert": "Validate control execution at the event boundary: installation, registration and file presence are not evidence that a hook or skill affects the model. Add a reviewer or subagent stage only when its measured marginal defect detection justifies the context, latency and tokens it consumes."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Suivie de près, avec une question ouverte sur les goûteurs",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "Worth watching, with one open question about tasters",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La méthode monte assez pour qu’on la suive de près, pas seulement qu’on en parle. Ce qu’on sait du sort des consignes est solide. Ce qu’on sait du prix des goûteurs l’est moins : ça se compte maison par maison.",
+            "expert": "En progression et promu de candidat à projet suivi. Les constats sur l’exécution réelle des contrôles sont tenus à confiance élevée. La règle de calibrage des relecteurs reste à confiance moyenne : elle dépend d’une mesure propre à chaque installation."
+          },
+          "en": {
+            "kitchen": "It has risen far enough to be watched, not merely discussed. What we know about orders going astray is solid. What we know about the price of tasters is thinner: that gets counted house by house.",
+            "expert": "Rising, and promoted from candidate to tracked project. The findings on actual control execution are held at high confidence. The reviewer-calibration rule stays at medium confidence: it depends on a measurement taken per installation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on retient : la méthode voyage avant le nom",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What to keep: the method travels before the name does",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une manière de travailler se répand souvent avant d’avoir une enseigne. Elle voyage par ceux qui la reprennent, pas par la maison qui l’a inventée. Suis le geste : il te dira où va le métier.",
+            "expert": "Les idées de harnais les plus durables peuvent se diffuser comme méthodes avant de devenir des fonctionnalités produit. Suivre une méthodologie qui survit au changement d’hôte revient à suivre une convergence d’architecture au-dessus d’un produit particulier."
+          },
+          "en": {
+            "kitchen": "A way of working usually spreads before it ever gets a sign over a door. It travels through the people who adopt it, not the house that invented it. Follow the gesture and you see where the trade is heading.",
+            "expert": "The most durable harness ideas can spread as methods before they become product features. Tracking a methodology that survives a change of host means tracking architecture converging above any single product."
+          }
+        }
+      ]
+    }
+  ]
+}

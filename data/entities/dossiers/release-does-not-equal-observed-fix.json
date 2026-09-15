@@ -1,1 +1,221 @@
-{"schema":"argh/public-entity/v1","id":"dossier:release-does-not-equal-observed-fix","type":"dossier","slug":"release-does-not-equal-observed-fix","route":"/dossiers/release-does-not-equal-observed-fix/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Codex","Archon","Claude Code","Gemini CLI"],"patterns":["release-state","runtime-visible-state","second-fix"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Recette corrigée, menu imprimé, plat servi : trois preuves différentes","expert":"Merged, released, installed et observed-fixed se sont révélés être des états différents"},"en":{"kitchen":"Recipe fixed, menu printed, dish served: three different proofs","expert":"Merged, released, installed and observed-fixed kept turning out to be different states"}},"body":[{"fr":{"cuisine":"Le correctif peut passer par la recette source, le code fusionné, la release, la copie installée et enfin le terrain : aucune de ces étapes ne remplace les autres.","expert":"Plusieurs lineages indépendantes ont montré que correctif source, code mergé, release, artefact installé et récupération terrain ne peuvent pas être réduits à une seule étiquette « fixed »."},"en":{"kitchen":"A fix can pass through source, merged code, release, installed copy, and finally the field: none of these steps replaces the others.","expert":"Several independent lineages showed that source fixes, merged code, releases, installed artifacts and field recovery cannot be collapsed into one ‘fixed’ label."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Un bug reçoit une modification dans la recette.","expert":"Un bug reçoit un correctif d’implémentation."},"en":{"kitchen":"A bug receives a change in the recipe.","expert":"A bug receives an implementation fix."}},{"fr":{"cuisine":"La modification est fusionnée et peut être déclarée terminée.","expert":"Le changement merge et peut être marqué terminé."},"en":{"kitchen":"The recipe has joined the main menu, but that only records a merge—not a dish reaching diners.","expert":"The change merges and may be labeled complete."}},{"fr":{"cuisine":"Une release peut ne pas contenir exactement ce correctif.","expert":"Une release peut ou non contenir exactement le correctif."},"en":{"kitchen":"A release may not contain that exact fix.","expert":"A release may or may not include the exact fix."}},{"fr":{"cuisine":"Des utilisateurs peuvent encore travailler avec une ancienne copie installée.","expert":"Les utilisateurs peuvent encore exécuter un ancien artefact ou une copie installée différente de la source."},"en":{"kitchen":"Users may still be working with an older installed copy.","expert":"Users may still run an older artifact or an installed copy that differs from source."}},{"fr":{"cuisine":"Seul le comportement réel peut montrer la récupération, et une régression peut rouvrir l’histoire.","expert":"Seul le comportement runtime peut établir la récupération observée, et des régressions peuvent encore rouvrir la lineage."},"en":{"kitchen":"Only real behavior can show recovery, and a regression can reopen the story.","expert":"Only runtime behavior can establish observed recovery, and regressions can still reopen the lineage."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Prendre une étape intermédiaire pour la fin du service masque toutes les pannes possibles en aval.","expert":"La livraison logicielle est une chaîne de transitions d’état. Traiter une transition intermédiaire comme terminale efface les modes de panne qui apparaissent en aval."},"en":{"kitchen":"Treating a middle step as the end of service hides every failure still possible downstream.","expert":"Software delivery is a chain of state transitions. Treating a middle transition as terminal erases the failure modes that occur downstream."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"La brigade nomme chaque état de livraison et peut rouvrir l’histoire après une release.","expert":"Représenter explicitement chaque état de livraison et permettre aux lineages de se rouvrir après release."},"en":{"kitchen":"The crew names every delivery state and can reopen the story after a release.","expert":"Represent each delivery state explicitly and allow lineages to reopen after release."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"Cette distinction est désormais une règle centrale d’ARGH, et non un cas isolé.","expert":"C’est désormais un invariant central d’ARGH plutôt qu’une observation spécifique à un produit."},"en":{"kitchen":"This distinction is now a core ARGH rule, not an isolated case.","expert":"This is now a core ARGH invariant rather than a product-specific observation."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Un correctif passe par plusieurs passe-plats : mergé, publié, installé, puis enfin constaté chez les convives.","expert":"« Fixed » n’est pas un état unique."},"en":{"kitchen":"A fix crosses several passes: merged, released, installed, and finally observed by diners.","expert":"Fixed is not a single state."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:release-does-not-equal-observed-fix",
+  "type": "dossier",
+  "slug": "release-does-not-equal-observed-fix",
+  "route": "/dossiers/release-does-not-equal-observed-fix/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Codex",
+      "Archon",
+      "Claude Code",
+      "Gemini CLI"
+    ],
+    "patterns": [
+      "release-state",
+      "runtime-visible-state",
+      "second-fix"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Corriger la recette, l’imprimer, la servir : trois preuves qui ne se remplacent pas",
+          "expert": "Merged, released, installed et observed-fixed se sont révélés être des états différents"
+        },
+        "en": {
+          "kitchen": "Fix the recipe, print it, serve it: three proofs that do not replace one another",
+          "expert": "Merged, released, installed and observed-fixed kept turning out to be different states"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le chef rature la recette, un commis la recopie dans le livre de la maison, l’imprimeur sort une nouvelle carte. Le commis du fond travaille encore sur l’ancienne. Le client, lui, n’a que son assiette. Codex, Archon, Claude Code et Gemini ont tous buté là-dessus.",
+            "expert": "Plusieurs lineages indépendantes — Codex, Archon, Claude Code, Gemini CLI — montrent que correctif source, code mergé, release, artefact installé et récupération observée sur le terrain ne se réduisent pas à une seule étiquette « fixed ». Atteindre l’un de ces états n’entraîne pas d’atteindre le suivant."
+          },
+          "en": {
+            "kitchen": "The chef scratches out the recipe, a cook copies it into the house book, the printer runs a new menu. The cook at the back is still working off the old one. The diner has nothing but the plate in front of him. Codex, Archon, Claude Code and Gemini all ran into this.",
+            "expert": "Several independent lineages — Codex, Archon, Claude Code, Gemini CLI — show that a source fix, merged code, a release, an installed artifact and observed field recovery do not collapse into a single “fixed” label. Reaching any one of these states does not entail reaching the next."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Le chemin d’une correction, du livre jusqu’à la table",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "A correction’s route, from the book to the table",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un défaut est repéré, et la recette est corrigée à la main.",
+            "expert": "Un bug reçoit un correctif d’implémentation."
+          },
+          "en": {
+            "kitchen": "A fault is spotted, and the recipe gets corrected by hand.",
+            "expert": "A bug receives an implementation fix."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La correction rejoint le livre de la maison, et là, beaucoup considèrent l’affaire close.",
+            "expert": "Le changement est mergé et peut être marqué terminé à ce stade."
+          },
+          "en": {
+            "kitchen": "The correction reaches the house book, and at that point many call the matter closed.",
+            "expert": "The change merges and may be marked complete at that point."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La carte suivante ne reprend pas forcément cette correction-là.",
+            "expert": "Une release peut contenir ou non exactement ce correctif."
+          },
+          "en": {
+            "kitchen": "The next menu does not necessarily carry that particular correction.",
+            "expert": "A release may or may not contain that exact fix."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Des commis travaillent encore sur un vieux carnet, différent du livre.",
+            "expert": "Les utilisateurs peuvent encore exécuter un artefact ancien, ou une copie installée différente de la source."
+          },
+          "en": {
+            "kitchen": "Some cooks are still working from an old booklet that differs from the book.",
+            "expert": "Users may still run an older artifact, or an installed copy that differs from source."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Seule l’assiette qui arrive à table prouve la reprise, et un mauvais service peut rouvrir l’affaire.",
+            "expert": "Seul le comportement runtime établit la récupération observée, et une régression peut rouvrir la lineage."
+          },
+          "en": {
+            "kitchen": "Only the plate reaching the table proves recovery, and one bad service can reopen the matter.",
+            "expert": "Only runtime behavior establishes observed recovery, and a regression can reopen the lineage."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "S’arrêter au livre, c’est ne jamais regarder l’assiette",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Stop at the book and you never look at the plate",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Prendre une étape du milieu pour la fin, c’est cesser de regarder tout ce qui peut encore rater après elle. Une recette corrigée ne cuit pas, ne dresse pas, ne traverse pas la salle.",
+            "expert": "La livraison logicielle est une chaîne de transitions d’état. Traiter une transition intermédiaire comme terminale efface les modes de panne qui n’apparaissent qu’en aval."
+          },
+          "en": {
+            "kitchen": "Take a middle step for the end and you stop watching everything that can still go wrong after it. A corrected recipe does not cook, does not plate, does not cross the room.",
+            "expert": "Software delivery is a chain of state transitions. Treating an intermediate transition as terminal erases the failure modes that only occur downstream."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Nommer chaque étape, et garder le droit de rouvrir",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Name every step, and keep the right to reopen",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Donner un nom à chaque étape, du livre jusqu’à la table, et garder le droit de rouvrir l’affaire une fois la carte imprimée.",
+            "expert": "Représenter explicitement chaque état de livraison et autoriser la réouverture d’une lineage après release."
+          },
+          "en": {
+            "kitchen": "Give every step its own name, from the book to the table, and keep the right to reopen the matter once the menu is printed.",
+            "expert": "Represent every delivery state explicitly and allow a lineage to reopen after release."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que la maison en a tiré comme règle",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "What the house turned this into",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La distinction n’est plus un cas particulier : ARGH en a fait une règle qui vaut pour toutes les maisons.",
+            "expert": "C’est désormais un invariant central d’ARGH, et non une observation spécifique à un produit."
+          },
+          "en": {
+            "kitchen": "The distinction is no longer one odd case: ARGH turned it into a rule that holds for every house.",
+            "expert": "This is now a core ARGH invariant rather than a product-specific observation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La correction n’est finie qu’à table",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "A correction is done only at the table",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Tant que personne n’a mangé le plat, la correction n’est qu’une rature dans un livre.",
+            "expert": "« Fixed » n’est pas un état unique."
+          },
+          "en": {
+            "kitchen": "Until somebody has eaten the plate, the correction is only a scratch in a book.",
+            "expert": "Fixed is not a single state."
+          }
+        }
+      ]
+    }
+  ]
+}

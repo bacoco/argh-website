@@ -1,1 +1,217 @@
-{"schema":"argh/public-entity/v1","id":"dossier:codex-skills-context-budget","type":"dossier","slug":"codex-skills-context-budget","route":"/dossiers/codex-skills-context-budget/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Codex"],"patterns":["skills-runtime","context-budget"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le plan de travail ne peut pas accueillir toutes les recettes en même temps","expert":"Les skills sont devenus assez nombreux pour nécessiter un budget de contexte"},"en":{"kitchen":"The workbench cannot hold every recipe at once","expert":"Skills became numerous enough to need a context budget"}},"body":[{"fr":{"cuisine":"Le plan de travail ne peut pas accueillir toutes les recettes en même temps. Une fiche de recette sur l’étagère ne prouve ni que la brigade l’a chargée, ni qu’elle la voit, ni qu’elle la suit pendant le service.","expert":"Le système de skills de Codex a évolué vers ordre de discovery, confiance, toggles, watchers et contraintes explicites de budget de prompt, montrant que les catalogues de skills sont désormais des ressources runtime."},"en":{"kitchen":"The workbench cannot hold every recipe at once. A recipe card on the shelf proves neither that the brigade loaded it, sees it, nor follows it during service.","expert":"Codex’s skill system evolved toward discovery ordering, trust, toggles, watchers and explicit prompt-budget constraints, showing that skill catalogs are now runtime resources."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Les recettes sont sorties des tiroirs de prompts pour devenir des fiches que la cuisine peut réellement retrouver.","expert":"Les skills deviennent des objets runtime découvrables plutôt que de simples fragments de prompt."},"en":{"kitchen":"Recipes left prompt drawers and became cards the kitchen can actually find.","expert":"Skills became discoverable runtime objects rather than ad hoc prompt snippets."}},{"fr":{"cuisine":"On indique alors dans quel ordre chercher les fiches et où se trouve leur exemplaire de référence.","expert":"L’ordre de discovery et les chemins canoniques deviennent explicites."},"en":{"kitchen":"The kitchen then marks the search order and the reference copy for each card.","expert":"Discovery order and canonical paths became explicit."}},{"fr":{"cuisine":"Certaines fiches peuvent désormais être appelées d’elles-mêmes, mais seulement selon des règles de confiance déclarées.","expert":"Invocation implicite et sémantiques de confiance sont ajoutées."},"en":{"kitchen":"Some cards can now be called automatically, but only under declared trust rules.","expert":"Implicit invocation and trust semantics were added."}},{"fr":{"cuisine":"Des surveillants et interrupteurs font varier l’inventaire des fiches visibles pendant le service.","expert":"Watchers et toggles rendent l’inventaire dynamique."},"en":{"kitchen":"Watchers and switches make the inventory of visible cards change during service.","expert":"Watchers and toggles made the inventory dynamic."}},{"fr":{"cuisine":"Le classeur reçoit finalement une jauge : trop de descriptions à la fois encombreraient la table de préparation.","expert":"Le catalogue gagne des limites explicites de contexte pour éviter une consommation non bornée du prompt."},"en":{"kitchen":"The binder finally gets a gauge: too many descriptions at once would crowd the prep table.","expert":"The catalog gained explicit context-budget limits to stop descriptions consuming unbounded prompt space."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Quand les fiches deviennent nombreuses et se chargent dynamiquement, leurs descriptions se disputent déjà la place dans le carnet du modèle avant même d’être appelées.","expert":"Une fois les skills nombreux et chargés dynamiquement, leurs descriptions se disputent le contexte du modèle avant même qu’un skill soit invoqué."},"en":{"kitchen":"When cards become numerous and load dynamically, their descriptions already compete for room in the model’s notebook before any is called.","expert":"Once skills are numerous and dynamically loaded, their descriptions compete for model context before any skill is even invoked."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"La brigade traite l’inventaire comme un catalogue runtime rationné, avec un ordre, une visibilité et une confiance déclarés.","expert":"Traiter l’inventaire de skills comme un catalogue runtime budgété avec ordre, visibilité et confiance explicites."},"en":{"kitchen":"The crew treats inventory as a rationed runtime catalog with declared order, visibility, and trust.","expert":"Treat skill inventory as a budgeted runtime catalog with explicit ordering, visibility and trust semantics."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"Les fiches sont donc aussi une ressource à rationner, pas seulement de nouvelles capacités à empiler.","expert":"Les skills sont désormais un problème de gestion de ressources de première classe autant qu’un mécanisme de capacité."},"en":{"kitchen":"These cards are therefore a resource to ration, not merely more capabilities to stack up.","expert":"Skills are now a first-class resource-management problem as well as a capability mechanism."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Un catalogue de capacités prend de la place dans le contexte avant même qu’une capacité serve.","expert":"Un catalogue de capacités consomme du contexte avant même d’être utilisé."},"en":{"kitchen":"A capability catalog takes context room before any capability is used.","expert":"A capability catalog consumes context even before it is used."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:codex-skills-context-budget",
+  "type": "dossier",
+  "slug": "codex-skills-context-budget",
+  "route": "/dossiers/codex-skills-context-budget/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Codex"
+    ],
+    "patterns": [
+      "skills-runtime",
+      "context-budget"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le tableau des consignes s’est rempli avant qu’on cuisine quoi que ce soit",
+          "expert": "Le catalogue de skills est devenu assez large pour exiger un budget de contexte"
+        },
+        "en": {
+          "kitchen": "The instruction board filled up before a single dish was cooked",
+          "expert": "The skill catalog grew large enough to need a context budget"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Codex, chaque nouvelle recette arrive avec une ligne à afficher au tableau, pour que la brigade sache qu’elle existe. Le tableau, lui, n’a jamais grandi. À force d’ajouter des lignes, il ne reste plus de place pour le service du soir. Et une recette affichée ne prouve pas qu’on l’a prise, vue, ni suivie.",
+            "expert": "Le système de skills de Codex a évolué vers un ordre de discovery explicite, des sémantiques de confiance, des toggles, des watchers et des contraintes de budget de prompt. Un catalogue de skills est donc traité comme une ressource runtime et non comme un ensemble de fragments de prompt. La présence d’un skill au catalogue n’établit ni son chargement, ni sa visibilité, ni son application."
+          },
+          "en": {
+            "kitchen": "At Codex every new recipe arrives with one line to post on the board, so the brigade knows it exists. The board never got any bigger. Add enough lines and there is no room left for tonight’s own service. A posted recipe proves nothing about whether anyone took it down, saw it, or followed it.",
+            "expert": "Codex’s skill system moved toward explicit discovery ordering, trust semantics, toggles, watchers and prompt-budget constraints. A skill catalog is consequently handled as a runtime resource rather than a pile of prompt fragments. Presence in the catalog establishes neither loading, nor visibility, nor that the skill was followed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Comment le classeur est devenu une charge",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "How the recipe binder became a cost",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Les recettes sortent des carnets personnels et deviennent des fiches que la maison range.",
+            "expert": "Les skills deviennent des objets runtime découvrables plutôt que des fragments de prompt improvisés."
+          },
+          "en": {
+            "kitchen": "Recipes leave private notebooks and become cards the house files properly.",
+            "expert": "Skills become discoverable runtime objects rather than improvised prompt fragments."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "On écrit où les chercher, dans quel ordre, et laquelle fait foi.",
+            "expert": "L’ordre de discovery et les chemins canoniques deviennent explicites."
+          },
+          "en": {
+            "kitchen": "The house writes down where to look, in what order, and which copy rules.",
+            "expert": "Discovery ordering and canonical paths become explicit."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Certaines fiches peuvent s’appliquer sans qu’on les demande, mais seulement si on les a déclarées sûres.",
+            "expert": "Invocation implicite et sémantiques de confiance sont ajoutées."
+          },
+          "en": {
+            "kitchen": "Some cards may apply without being asked for, but only once declared trustworthy.",
+            "expert": "Implicit invocation and trust semantics are added."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Des interrupteurs et des surveillants font apparaître ou disparaître des fiches en plein service.",
+            "expert": "Watchers et toggles rendent l’inventaire dynamique en cours d’exécution."
+          },
+          "en": {
+            "kitchen": "Switches and watchers make cards appear and disappear mid-service.",
+            "expert": "Watchers and toggles make the inventory dynamic at run time."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le tableau reçoit enfin une limite : au-delà, on n’affiche plus rien.",
+            "expert": "Le catalogue gagne des limites de contexte explicites, qui bornent la consommation de prompt par les descriptions."
+          },
+          "en": {
+            "kitchen": "The board finally gets a ceiling: past it, nothing more goes up.",
+            "expert": "The catalog gains explicit context limits so descriptions cannot consume prompt space without bound."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que coûte une fiche qu’on n’utilise pas",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "What an unused card still costs",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une fiche rangée dans un tiroir ne coûte rien. Une fiche annoncée au tableau coûte la place de sa ligne, tous les soirs, qu’on la cuisine ou pas. Quand les fiches se comptent par dizaines, elles se disputent le tableau avant que le premier client soit assis.",
+            "expert": "Dès que les skills sont nombreux et chargés dynamiquement, leurs descriptions se disputent le contexte du modèle avant même qu’un skill soit invoqué. Le coût est donc porté par la taille du catalogue et non par son usage."
+          },
+          "en": {
+            "kitchen": "A card left in a drawer costs nothing. A card announced on the board costs its line every night, cooked or not. Once the cards run into the dozens they are already fighting over the board before the first diner sits down.",
+            "expert": "Once skills are numerous and dynamically loaded, their descriptions compete for model context before any skill is invoked. The cost therefore tracks catalog size rather than catalog usage."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que la maison fait maintenant de son tableau",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "How the house now runs its board",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le tableau est rationné comme le reste de la maison. On décide de l’ordre des lignes, de celles qui restent affichées, et de celles qu’on croit sur parole. Une fiche doit gagner sa ligne ; elle ne l’obtient pas parce qu’elle existe.",
+            "expert": "L’inventaire de skills est traité comme un catalogue runtime budgété, avec ordre, visibilité et confiance explicites. Le budget est la contrainte de premier rang ; ordre et visibilité servent à l’arbitrer."
+          },
+          "en": {
+            "kitchen": "The board is rationed like everything else in the house. Someone decides the order of the lines, which ones stay up, and which are taken on trust. A card has to earn its line; existing is not enough.",
+            "expert": "Skill inventory is handled as a budgeted runtime catalog with explicit ordering, visibility and trust. The budget is the primary constraint; ordering and visibility exist to arbitrate it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’une fiche est devenue",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "What a recipe card has turned into",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ajouter une recette n’est plus gratuit. Chaque fiche est une capacité de plus et une ligne de tableau en moins. On les compte maintenant comme on compte les couverts.",
+            "expert": "Les skills constituent désormais un problème de gestion de ressources autant qu’un mécanisme de capacité. Chaque ajout au catalogue a un coût de contexte indépendant de son utilité au moment de l’exécution."
+          },
+          "en": {
+            "kitchen": "Adding a recipe is no longer free. Each card is one more capability and one less line on the board. They get counted now, the way covers get counted.",
+            "expert": "Skills are now a resource-management problem as much as a capability mechanism. Every addition to the catalog carries a context cost independent of its usefulness at execution time."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on retient : une ligne au tableau se paie",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What to keep: a line on the board is paid for",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Tout ce que tu affiches au tableau, tu le paies au début du service, pas au moment où tu t’en sers. Plus la liste est belle, moins il reste de place pour le service qui commence.",
+            "expert": "Un catalogue de capacités consomme du contexte avant qu’une seule capacité soit utilisée. Le dimensionnement du catalogue est donc une décision d’exécution, pas une question d’exhaustivité."
+          },
+          "en": {
+            "kitchen": "Everything you post on the board is paid for at the start of service, not when you reach for it. The finer the list, the less room is left for the service actually beginning.",
+            "expert": "A capability catalog consumes context before a single capability is used. Sizing the catalog is therefore an execution decision, not a question of how complete you can make it."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,217 @@
-{"schema":"argh/public-entity/v1","id":"dossier:hook-canary-behavior-drift","type":"dossier","slug":"hook-canary-behavior-drift","route":"/dossiers/hook-canary-behavior-drift/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Claude Code"],"patterns":["hooks-as-sensors","behavior-drift"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le thermomètre de la cuisine a révélé une dérive que personne ne mesurait","expert":"Un garde-fou est devenu un capteur d’une régression que le produit ne mesurait pas"},"en":{"kitchen":"The kitchen thermometer exposed drift nobody was measuring","expert":"A guardrail became a sensor for a regression the product did not measure"}},"body":[{"fr":{"cuisine":"Le thermomètre de la cuisine a révélé une dérive que personne ne mesurait. Un contrôle placé à la passe peut observer, bloquer ou décider. Le risque apparaît quand son rôle change sans que la brigade sache exactement quelle autorité il possède.","expert":"Un stop-phrase guard construit par un utilisateur a accumulé soudainement de nombreuses violations après un changement de comportement, transformant un hook local d’enforcement en canari quantitatif."},"en":{"kitchen":"The kitchen thermometer exposed drift nobody was measuring. A check at the pass can observe, block or decide. Risk appears when its role changes without the brigade knowing exactly what authority it has.","expert":"A user-built stop-phrase guard accumulated a sudden cluster of violations after a behavioral change, turning a local enforcement hook into a quantitative canary."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Un petit canari à l’entrée du passe impose une règle locale à chaque service.","expert":"Un hook impose une règle comportementale locale."},"en":{"kitchen":"A small canary at the pass enforces a local rule on every service.","expert":"A hook enforced a local behavioral rule."}},{"fr":{"cuisine":"Pendant longtemps, ses carnets ne relèvent presque aucune entorse.","expert":"Les sessions historiques montrent pratiquement aucune violation."},"en":{"kitchen":"For a long time, its notebooks record almost no breaches.","expert":"Historical sessions showed essentially no violations."}},{"fr":{"cuisine":"Après un changement de produit, les entorses se mettent au contraire à revenir.","expert":"Après un changement produit, les violations apparaissent de manière répétée."},"en":{"kitchen":"After a product change, breaches begin recurring instead.","expert":"After a product change, violations appeared repeatedly."}},{"fr":{"cuisine":"Les journaux du canari deviennent son thermomètre : ils montrent que le comportement a changé de distribution.","expert":"Les logs du hook rendent la dérive mesurable."},"en":{"kitchen":"The canary’s logs become its thermometer: they show behaviour has shifted in distribution.","expert":"The hook’s logs made the drift measurable."}},{"fr":{"cuisine":"Les traces du canari dessinent la rupture, même si elles ne nomment pas avec certitude le mécanisme qui l’a causée.","expert":"Le mécanisme causal exact reste moins certain que la rupture comportementale elle-même."},"en":{"kitchen":"The canary’s traces draw the break, even if they cannot name its exact cause with certainty.","expert":"The exact causal mechanism remained less certain than the behavioral discontinuity itself."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Un garde déterministe, installé pour retenir des sorties, peut aussi révéler que les gestes du modèle se déplacent dans le temps.","expert":"Un contrôle de politique déterministe peut révéler des changements de distribution du comportement du modèle même s’il a été construit au départ uniquement pour bloquer des sorties."},"en":{"kitchen":"A deterministic guard installed to hold outputs back can also reveal that model actions shift over time.","expert":"A deterministic policy check can reveal distribution shifts in model behavior even when it was originally built only to block outputs."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Certains crochets doivent garder compteurs, versions et horodatages : chaque intervention du garde devient alors un signal de régression.","expert":"Traiter certains hooks comme sources de télémétrie : conserver compteurs, versions et timestamps afin que les activations du garde-fou deviennent des signaux de régression."},"en":{"kitchen":"Some hooks should retain counters, versions and timestamps: each guard intervention then becomes a regression signal.","expert":"Treat selected hooks as telemetry sources: retain counters, versions and timestamps so guardrail activations can become regression signals."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"La cause demande donc de la prudence, mais la façon de mesurer cette dérive reste réutilisable.","expert":"L’interprétation causale doit rester prudente, mais le pattern de mesure est réutilisable."},"en":{"kitchen":"The cause still calls for caution, but this way of measuring drift remains reusable.","expert":"The causal interpretation should remain conservative, but the measurement pattern is reusable."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Le crochet peut écouter la dérive autant qu’il sait bloquer un geste.","expert":"Un hook peut être un capteur autant qu’un bloqueur."},"en":{"kitchen":"A hook can listen for drift as well as block a move.","expert":"A hook can be a sensor as well as a blocker."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:hook-canary-behavior-drift",
+  "type": "dossier",
+  "slug": "hook-canary-behavior-drift",
+  "route": "/dossiers/hook-canary-behavior-drift/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Claude Code"
+    ],
+    "patterns": [
+      "hooks-as-sensors",
+      "behavior-drift"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le carnet des entorses s’est rempli d’un coup, alors que la règle n’avait pas bougé",
+          "expert": "Un garde-fou local est devenu le capteur d’une régression non mesurée"
+        },
+        "en": {
+          "kitchen": "The tally of slips filled up overnight, though the house rule had not moved",
+          "expert": "A local guardrail became the sensor for an unmeasured regression"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Claude Code interdit une phrase au passe et coche chaque fois qu’elle est dite. Pendant longtemps, le carnet reste presque vide. Après un changement venu d’ailleurs, les croix s’accumulent. Ce carnet, posé là pour punir, se met à mesurer.",
+            "expert": "Un stop-phrase guard construit par un utilisateur a accumulé brusquement un groupe de violations après un changement de comportement. Le hook, conçu pour l’enforcement local, s’est ainsi transformé en canari quantitatif. La rupture est mesurée par ses propres journaux, non par une instrumentation du produit."
+          },
+          "en": {
+            "kitchen": "At Claude Code one phrase is banned at the pass, and the book gets marked every time it is said. For a long stretch the book stays nearly empty. After a change that came from elsewhere, the marks pile up. The book, put there to punish, starts to measure.",
+            "expert": "A user-built stop-phrase guard suddenly accumulated a cluster of violations following a behavioral change. Built for local enforcement, the hook turned into a quantitative canary. The discontinuity is measured by the guard’s own logs, not by any product instrumentation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Un carnet presque vide, puis plein",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "A book almost empty, then full",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La règle est affichée au passe et tenue à chaque service.",
+            "expert": "Une règle comportementale locale est imposée par un hook construit côté utilisateur."
+          },
+          "en": {
+            "kitchen": "The rule is posted at the pass and held to at every service.",
+            "expert": "A hook enforced one local behavioral rule."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Pendant longtemps, le carnet ne reçoit pratiquement aucune croix.",
+            "expert": "Sur l’historique, les violations sont pratiquement absentes."
+          },
+          "en": {
+            "kitchen": "For a long stretch, the book takes almost no marks at all.",
+            "expert": "Across the prior history, violations were essentially absent."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Après un changement venu d’en haut, les croix reviennent, et pas une fois.",
+            "expert": "Un changement produit est suivi de violations répétées, et non d’un incident isolé."
+          },
+          "en": {
+            "kitchen": "After a change handed down from above, the marks return, and not once only.",
+            "expert": "Following a product change, violations recurred rather than appearing once."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le carnet devient l’instrument : il donne le nombre, la date et l’écart.",
+            "expert": "Les journaux du hook rendent la dérive mesurable."
+          },
+          "en": {
+            "kitchen": "The book becomes the instrument: it gives the count, the date and the gap.",
+            "expert": "The guard’s logs made the drift measurable."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Ce que le carnet montre, c’est la rupture. Il ne dit pas ce qui l’a causée.",
+            "expert": "Le mécanisme causal exact reste moins établi que la rupture comportementale elle-même."
+          },
+          "en": {
+            "kitchen": "What the book shows is the break. It does not say what caused it.",
+            "expert": "The exact causal mechanism is less established than the behavioral discontinuity it followed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Une règle qui punit finit par compter",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "A rule that punishes ends up counting",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une règle tenue longtemps donne une chose rare : un point de comparaison. Tant que le carnet reste vide, il paraît inutile. Le jour où il se remplit, il dit que les gestes ont changé, même si personne ne lui avait posé la question.",
+            "expert": "Un contrôle de politique déterministe peut révéler un déplacement de distribution du comportement du modèle. Cette propriété tient même lorsque le contrôle a été construit uniquement pour bloquer des sorties. La longue période sans violation fournit la ligne de base qui rend la rupture lisible."
+          },
+          "en": {
+            "kitchen": "A rule held for a long time gives something rare: a baseline. While the book stays empty it looks useless. The day it fills, it says the moves have changed, even though nobody asked it that question.",
+            "expert": "A deterministic policy check can surface a distribution shift in model behavior. That holds even when the check was built solely to block outputs. The long violation-free stretch supplies the baseline that makes the discontinuity readable."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Garder les croix, les dates et la façon dont tournait le service",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Keep the marks, the dates and how the house was being run",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un carnet qu’on jette chaque soir ne mesure rien. Il faut garder les croix, la date, et la manière dont la maison tournait ce jour-là. Alors chaque rappel à l’ordre devient un signal, pas une remontrance de plus.",
+            "expert": "Traiter certains hooks comme sources de télémétrie : conserver compteurs, versions et timestamps. Les activations du garde-fou deviennent alors des signaux de régression exploitables, corrélables à un changement produit."
+          },
+          "en": {
+            "kitchen": "A book thrown out each evening measures nothing. Keep the marks, the date, and the way the house was being run that night. Then every call to order becomes a signal rather than one more scolding.",
+            "expert": "Treat selected hooks as telemetry: persist counters, versions and timestamps. Guardrail activations then become usable regression signals that can be lined up against a product change."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "La mesure tient, la cause non",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "The measurement holds; the cause does not",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On sait que quelque chose a changé, et on sait quand. On ne sait pas ce qui l’a fait changer, et il vaut mieux le dire ainsi. La façon de compter, elle, se reprend dans n’importe quelle maison.",
+            "expert": "L’interprétation causale doit rester conservatrice : la rupture est établie, son mécanisme ne l’est pas. Le motif de mesure, lui, est réutilisable indépendamment de ce cas."
+          },
+          "en": {
+            "kitchen": "Something changed, and the date is known. What changed it is not known, and it is better said that way. The way of counting, though, travels to any house.",
+            "expert": "Causal interpretation should stay conservative: the discontinuity is established, its mechanism is not. The measurement pattern itself is reusable beyond this case."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui retient un geste sait aussi le compter",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Whatever holds a move back can also count it",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On installe une règle pour empêcher un geste. On oublie qu’elle enregistre, service après service, ce que la maison fait vraiment. Gardez ses carnets : le jour où quelque chose dérive ailleurs, c’est là que ça se verra en premier.",
+            "expert": "Un hook peut être un capteur autant qu’un bloqueur. Un contrôle déterministe appliqué de façon stable produit une série temporelle exploitable, que le produit observé n’instrumente pas nécessairement lui-même."
+          },
+          "en": {
+            "kitchen": "A rule goes up to stop a move. What gets forgotten is that it records, service after service, what the house actually does. Keep its books: when something drifts elsewhere, that is where it shows first.",
+            "expert": "A hook can serve as a sensor as much as a blocker. A deterministic check applied consistently yields a usable time series that the observed product may not instrument at all."
+          }
+        }
+      ]
+    }
+  ]
+}

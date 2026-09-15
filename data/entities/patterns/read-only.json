@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:read-only","type":"pattern","slug":"read-only","route":"/patterns/read-only/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Continue"],"patterns":[],"dossiers":["continue-readonly-without-archive"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le restaurant reste visible, mais on ne cuisine plus dedans","expert":"Lecture seule"},"en":{"kitchen":"The restaurant is still visible, but no one cooks there anymore","expert":"Read-Only"}},"body":[{"fr":{"cuisine":"Un projet en lecture seule reste consultable mais ne reçoit plus les mêmes changements qu’un projet actif.","expert":"L’état read-only conserve l’accès à l’historique tout en supprimant ou limitant les mutations futures."},"en":{"kitchen":"A read-only project remains visible but no longer receives changes like an active project.","expert":"Read-only state preserves access to history while removing or restricting future mutations."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:read-only",
+  "type": "pattern",
+  "slug": "read-only",
+  "route": "/patterns/read-only/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Continue"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "continue-readonly-without-archive"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "La carte reste en vitrine, les fourneaux ne s’allument plus",
+          "expert": "L’accès à l’historique survit à la fin des mutations"
+        },
+        "en": {
+          "kitchen": "The menu stays in the window, the stoves stay cold",
+          "expert": "History stays readable after the changes stop"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Continue, la carte est toujours lisible en vitrine et chacun peut la consulter. Ce qui a cessé, c’est la cuisine : plus de nouveaux plats, plus de retouches sur les anciens. L’équipe l’a annoncé elle-même, et la vitrine n’en montre rien.",
+            "expert": "L’état read-only conserve l’accès à l’historique tout en supprimant ou limitant les mutations futures. Continue produit l’inverse d’une heuristique courante : le projet est explicitement déclaré non maintenu activement sans que son dépôt soit archivé. L’état réel est porté par la déclaration des mainteneurs et une posture de release finale, pas par le flag de plateforme."
+          },
+          "en": {
+            "kitchen": "At Continue the menu is still in the window, and anyone can read it. What stopped is the cooking: no new dishes, no changes to the old ones. The crew announced it themselves, and the window shows none of it.",
+            "expert": "Read-only state preserves access to history while removing or restricting future mutations. Continue inverts a common heuristic: the project is explicitly declared no longer actively maintained while its repository stays unarchived. Real status is carried by the maintainers’ statement and a final-release posture, not by the platform flag."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui distingue une maison éteinte d’une maison fermée",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "Telling a cold kitchen from a closed one",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Rien n’est condamné, rien n’est barré. La carte se lit, les anciens menus aussi. Ce qui manque, c’est le plat du jour : plus rien de neuf n’arrive, et l’équipe a dit que plus rien n’arriverait.",
+            "expert": "La lecture reste ouverte tandis que les changements cessent ou sont restreints ; ni l’accessibilité ni la présence d’un historique ne distinguent cet état d’un projet actif. Le signal discriminant est la déclaration explicite de non-maintenance, associée à une posture de release finale. Chez Continue, le flag archive du dépôt ne porte pas cet état."
+          },
+          "en": {
+            "kitchen": "Nothing is boarded up, nothing is crossed out. The menu reads fine, and so do the older ones. What is missing is the day’s dish: nothing new arrives, and the crew has said nothing new will.",
+            "expert": "Reading stays open while changes stop or are restricted; neither accessibility nor a visible history separates that state from an active project. The discriminating signal is the explicit unmaintained declaration together with a final-release posture. In Continue the repository’s archive flag does not carry that state."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi une vitrine allumée trompe",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a lit window fools you",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une vitrine ne s’éteint pas toute seule. Elle reste allumée tant que quelqu’un paie la lumière, et cela ne dit rien des fourneaux. On la regarde parce qu’elle se voit de la rue ; la cuisine, elle, ne se voit pas.",
+            "expert": "L’accessibilité en lecture est indépendante de la maintenance : un dépôt non archivé reste indexable, clonable et navigable quel que soit l’état produit. Le flag de plateforme n’est soumis à aucune obligation de refléter la décision des mainteneurs, de sorte qu’un contrôle limité à ce flag conclut à tort que le projet est vivant."
+          },
+          "en": {
+            "kitchen": "A lit window does not switch itself off. It stays on as long as someone pays for the light, which says nothing about the stoves. People read it because it faces the street; the kitchen does not.",
+            "expert": "Read accessibility is independent of maintenance: an unarchived repository stays indexable, clonable and browsable whatever the product state. The platform flag carries no obligation to reflect the maintainers’ decision, so a check limited to that flag returns a false alive verdict."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on demande avant de commander",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What to ask before ordering",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Demande ce que l’équipe a annoncé en partant, et quel a été le dernier plat servi. Ces deux réponses valent mieux que la vitrine. Lis la carte autant que tu veux : sache seulement que personne ne la changera plus.",
+            "expert": "Qualifier l’état à partir de la déclaration des mainteneurs et de la posture de release, puis traiter le flag archive comme une preuve d’appoint. Un consommateur qui dépend du projet doit séparer ce qui reste garanti — lecture, historique, dernière version publiée — de ce qui ne l’est plus : correctifs, réponses aux signalements, évolutions."
+          },
+          "en": {
+            "kitchen": "Ask what the crew said on their way out, and which plate went out last. Those two answers beat the window every time. Read the menu all you like — just know nobody will change it again.",
+            "expert": "Qualify the state from maintainer statements and release posture, then treat the archive flag as supporting evidence only. A consumer depending on the project must separate what still holds — read access, history, the last published release — from what no longer does: fixes, issue responses, further change."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que laisse la vitrine de Continue",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What Continue’s window leaves behind",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une carte encore lisible ne promet aucun plat. Regarde qui allume les fourneaux, pas ce qui reste affiché dans la vitrine.",
+            "expert": "L’archivage est une preuve, pas la définition de la fin d’un projet. Un dépôt non archivé peut correspondre à un produit explicitement non maintenu, et l’accès en lecture n’engage rien sur les changements à venir."
+          },
+          "en": {
+            "kitchen": "A readable menu promises no dinner. Look for who lights the stoves, not for what is still posted in the window.",
+            "expert": "Archival is evidence, not the definition of a project’s end. An unarchived repository can correspond to an explicitly unmaintained product, and read access commits nothing about future change."
+          }
+        }
+      ]
+    }
+  ]
+}

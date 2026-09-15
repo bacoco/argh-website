@@ -1,1 +1,218 @@
-{"schema":"argh/public-entity/v1","id":"dossier:skills-default-on-docs-lag","type":"dossier","slug":"skills-default-on-docs-lag","route":"/dossiers/skills-default-on-docs-lag/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Gemini CLI"],"patterns":["skills-runtime","defaults","documentation-drift"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"La brigade avait changé de recette avant que le classeur ne soit corrigé","expert":"Le runtime a changé avant que la documentation ne sache qu’il avait changé"},"en":{"kitchen":"The brigade changed recipes before the binder caught up","expert":"The runtime changed before the documentation knew it had changed"}},"body":[{"fr":{"cuisine":"La brigade avait changé de recette avant que le classeur ne soit corrigé. Une fiche de recette sur l’étagère ne prouve ni que la brigade l’a chargée, ni qu’elle la voit, ni qu’elle la suit pendant le service.","expert":"Les Agent Skills sont passés d’un mode expérimental opt-in vers un comportement activé par défaut alors que documentation et UI conservaient un vocabulaire expérimental plus ancien pour compatibilité."},"en":{"kitchen":"The brigade changed recipes before the binder caught up. A recipe card on the shelf proves neither that the brigade loaded it, sees it, nor follows it during service.","expert":"Agent Skills moved from experimental opt-in toward default-on behavior while documentation and UI retained older experimental language for compatibility."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Au départ, les skills sont servis comme une option expérimentale.","expert":"Les skills commencent comme capacité expérimentale."},"en":{"kitchen":"At first, skills are served as an experimental option.","expert":"Skills began as an experimental capability."}},{"fr":{"cuisine":"La carte interne annonce une adoption plus large, avant que chaque client ne voie le même libellé.","expert":"Une roadmap interne suit leur adoption plus large."},"en":{"kitchen":"The internal menu announces wider adoption before every customer sees the same label.","expert":"An internal roadmap tracked broader adoption."}},{"fr":{"cuisine":"Puis la recette devient le réglage par défaut, tandis que son ancien nom continue de circuler.","expert":"La fonctionnalité est promue et activée par défaut."},"en":{"kitchen":"Then the recipe becomes the default while its older name keeps circulating.","expert":"The feature was promoted and enabled by default."}},{"fr":{"cuisine":"Les noms de réglages quittent peu à peu le vocabulaire expérimental pour désigner un comportement stable.","expert":"Les noms de configuration passent d’une sémantique expérimentale à stable."},"en":{"kitchen":"Setting names gradually leave experimental language to name stable behavior.","expert":"Configuration names moved from experimental to stable semantics."}},{"fr":{"cuisine":"Le décalage vient d’un même classeur qui essaie de décrire plusieurs générations de cuisine.","expert":"La documentation reste volontairement en retard pour éviter de casser les utilisateurs d’anciennes versions."},"en":{"kitchen":"The mismatch comes from one binder trying to describe several kitchen generations.","expert":"Documentation intentionally lagged to avoid breaking users on older versions."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Un seul classeur non versionné essayait de décrire plusieurs générations de cuisine qui ne suivaient plus les mêmes réglages.","expert":"Une documentation non versionnée tentait de décrire plusieurs générations de runtime en même temps."},"en":{"kitchen":"One unversioned binder tried to describe several kitchen generations that no longer followed the same settings.","expert":"A single unversioned documentation surface was trying to describe multiple runtime generations at once."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Versionner les pages qui annoncent un changement de comportement et montrer directement dans le produit quel réglage est réellement actif.","expert":"Versionner la documentation qui décrit des changements de comportement et afficher directement le setting runtime effectif dans le produit."},"en":{"kitchen":"Version pages that announce behavior changes and show directly in the product which setting is actually active.","expert":"Version behavior-changing documentation and show the effective runtime setting directly in the product."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"Les skills doivent désormais être lus comme des éléments du runtime, pas comme de simples cartes optionnelles.","expert":"Les skills se comportent désormais davantage comme des composants runtime que comme de simples prompts optionnels."},"en":{"kitchen":"Skills must now be read as runtime ingredients, not merely optional recipe cards.","expert":"Skills now behave more like runtime components than optional prompt snippets."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Quand un défaut change, le classeur doit dire pour quelles versions ce nouveau réglage est réellement servi.","expert":"Les changements de défaut ont besoin d’une documentation consciente des versions."},"en":{"kitchen":"When a default changes, the binder must say which versions actually serve the new setting.","expert":"Default changes need version-aware docs."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:skills-default-on-docs-lag",
+  "type": "dossier",
+  "slug": "skills-default-on-docs-lag",
+  "route": "/dossiers/skills-default-on-docs-lag/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Gemini CLI"
+    ],
+    "patterns": [
+      "skills-runtime",
+      "defaults",
+      "documentation-drift"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Chez Gemini, la brigade avait déjà changé de recette pendant que le classeur disait l’ancienne",
+          "expert": "Le comportement par défaut a changé avant que la documentation n’en rende compte"
+        },
+        "en": {
+          "kitchen": "At Gemini the brigade had already switched recipes while the binder still said the old one",
+          "expert": "Default behavior changed before the documentation caught up"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Gemini, les fiches de recette servaient d’essai : on les prenait si on voulait. Elles sont devenues le réglage normal du service. Le classeur et les écriteaux, eux, ont gardé l’ancien mot, pour ne pas perdre ceux qui travaillent encore comme avant.",
+            "expert": "Les Agent Skills sont passés d’un opt-in expérimental à un comportement activé par défaut, tandis que la documentation et l’UI conservaient l’ancien vocabulaire expérimental, par compatibilité."
+          },
+          "en": {
+            "kitchen": "At Gemini, recipe cards were a trial: you took one if you felt like it. Then they became the way the house cooks by default. The binder and the signs kept the old wording, so as not to lose the people still working the old way.",
+            "expert": "Agent Skills moved from experimental opt-in to default-on behavior, while documentation and UI kept the older experimental wording for compatibility."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "L’essai devenu le service normal",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "From trial run to normal service",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Au début, la fiche est servie comme un essai : qui veut la prend.",
+            "expert": "Les skills commencent comme une capacité expérimentale."
+          },
+          "en": {
+            "kitchen": "At first the card is served as a trial: take it if you want it.",
+            "expert": "Skills began as an experimental capability."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Une carte interne annonce qu’on va les servir plus largement, avant que le libellé ne change pour le client.",
+            "expert": "Une roadmap interne suit leur adoption plus large."
+          },
+          "en": {
+            "kitchen": "An internal plan says they will be served more widely, before the wording changes for the guest.",
+            "expert": "An internal roadmap tracked broader adoption."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La recette devient le réglage par défaut du service, pendant que son ancien nom continue de circuler.",
+            "expert": "La fonctionnalité est promue et activée par défaut."
+          },
+          "en": {
+            "kitchen": "The recipe becomes the default of the service, while its old name keeps doing the rounds.",
+            "expert": "The feature was promoted and enabled by default."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Les noms des réglages quittent peu à peu le vocabulaire de l’essai pour désigner ce qui est stable.",
+            "expert": "Les noms de configuration passent d’une sémantique expérimentale à une sémantique stable."
+          },
+          "en": {
+            "kitchen": "The names on the dials slowly leave the language of the trial and start naming what is settled.",
+            "expert": "Configuration names moved from experimental to stable semantics."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le classeur reste volontairement en retard, pour ne pas casser le travail de ceux qui n’ont pas suivi.",
+            "expert": "La documentation reste volontairement en retard pour ne pas casser les utilisateurs d’anciennes versions."
+          },
+          "en": {
+            "kitchen": "The binder lags on purpose, so as not to break the work of those who have not moved over.",
+            "expert": "Documentation intentionally lagged so as not to break users on older versions."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Un seul classeur pour plusieurs cuisines",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "One binder for several kitchens",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un seul classeur, sans date ni numéro, essayait de décrire plusieurs générations de cuisine à la fois. Elles ne tournaient plus avec les mêmes réglages.",
+            "expert": "Une surface de documentation unique et non versionnée tentait de décrire plusieurs générations de runtime en même temps."
+          },
+          "en": {
+            "kitchen": "One binder, with no date and no number on it, was trying to describe several generations of kitchen at once. They no longer ran on the same settings.",
+            "expert": "A single unversioned documentation surface was trying to describe several runtime generations at once."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Dater le classeur, montrer le réglage du soir",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Date the binder, show which dial is turned",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Toute page qui annonce un changement de réglage doit dire pour quelle génération elle vaut. Et la maison doit pouvoir montrer, sur place, quel réglage tourne réellement ce soir.",
+            "expert": "Versionner la documentation qui décrit un changement de comportement. Exposer directement dans le produit le setting runtime effectif."
+          },
+          "en": {
+            "kitchen": "Any page announcing a change in how the house cooks must say which generation it speaks for. And the house should be able to show, on the spot, which dial is actually turned tonight.",
+            "expert": "Version the documentation that describes a behavior change. Surface the effective runtime setting directly in the product."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "La fiche fait désormais partie du service",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "The card is part of service now",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Les fiches ne sont plus des extras qu’on prend ou qu’on laisse. Elles font partie de ce qui tourne pendant le service.",
+            "expert": "Les skills se comportent désormais davantage comme des composants runtime que comme de simples fragments de prompt optionnels."
+          },
+          "en": {
+            "kitchen": "Cards are no longer extras you take or leave. They are part of what runs during service.",
+            "expert": "Skills now behave more like runtime components than like optional prompt snippets."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Un réglage qui change se date",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The day the house changes its habit",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Quand le réglage normal change, le classeur doit dire à partir de quelle génération il est servi.",
+            "expert": "Un changement de défaut exige une documentation consciente des versions."
+          },
+          "en": {
+            "kitchen": "When the house changes what it serves by default, the binder must say from which generation that holds.",
+            "expert": "A default change demands version-aware documentation."
+          }
+        }
+      ]
+    }
+  ]
+}

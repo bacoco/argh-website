@@ -1,1 +1,218 @@
-{"schema":"argh/public-entity/v1","id":"dossier:sweagent-cost-guard-retry-rebilling","type":"dossier","slug":"sweagent-cost-guard-retry-rebilling","route":"/dossiers/sweagent-cost-guard-retry-rebilling/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["SWE-agent"],"patterns":["cost-guards","retry","budget"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"La même commande a été facturée à chaque nouvelle tentative","expert":"Les retries ont transformé un appel modèle en multiplicateur de coût caché"},"en":{"kitchen":"The same order was charged again at every retry","expert":"Retries turned one model call into a hidden cost multiplier"}},"body":[{"fr":{"cuisine":"La même commande a été facturée à chaque nouvelle tentative. Relancer la même commande peut sembler prudent, mais chaque nouvelle tentative consomme à nouveau du temps, des ingrédients et parfois la facture entière.","expert":"Une famille de problèmes de contrôle des coûts a montré comment retries, sélection de modèle et exceptions de budget avalées peuvent faire diverger limites nominales et dépense réelle."},"en":{"kitchen":"The same order was charged again at every retry. Retrying the same order may look safe, but every attempt consumes time, ingredients and sometimes the full bill again.","expert":"A cluster of cost-control problems showed how retries, model selection and swallowed budget exceptions can make nominal limits diverge from real spend."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Chaque plat demandé au modèle consomme une part mesurée du budget de la cuisine.","expert":"L’agent effectue du travail modèle coûteux sous budget."},"en":{"kitchen":"Each dish requested from the model consumes a measured share of the kitchen budget.","expert":"The agent performed costly model work under a budget."}},{"fr":{"cuisine":"Lors d’un nouvel essai, le caissier peut facturer à nouveau le même travail au lieu de le reconnaître comme une seule tentative.","expert":"Les chemins de retry peuvent refacturer du travail au lieu de traiter la tentative comme une seule opération logique."},"en":{"kitchen":"On a retry, the cashier can charge the same work again instead of recognising one logical attempt.","expert":"Retry paths could rebill work rather than treating the attempt as part of one logical operation."}},{"fr":{"cuisine":"Pire, une alarme de budget fatale peut être avalée dans les rouages internes et ne jamais arrêter le service.","expert":"Des conditions fatales de budget peuvent être avalées par le contrôle interne."},"en":{"kitchen":"Worse, a fatal budget alarm can be swallowed inside the machinery and never stop service.","expert":"Fatal budget conditions could be swallowed by internal control flow."}},{"fr":{"cuisine":"Le choix du four peut cacher d’autres additions à la note, même lorsque le plat semble soumis au même budget.","expert":"Le choix de modèle peut cacher des dimensions de coût supplémentaires."},"en":{"kitchen":"Choosing the oven can hide other additions to the bill, even when the dish seems under the same budget.","expert":"Model chooser behavior could hide additional cost dimensions."}},{"fr":{"cuisine":"Le choix du modèle peut encore cacher d’autres lignes de coût ; des réparations sont proposées, sans que toutes soient servies au cutoff.","expert":"Des correctifs sont proposés mais n’ont pas tous été livrés au cutoff observé."},"en":{"kitchen":"Model choice can still hide other cost lines; repairs are proposed, without all being served by the cutoff.","expert":"Repair work was proposed but had not all shipped at the observed cutoff."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Le gardien de budget regardait une couche qui ne voyait pas toute la famille des reprises et des choix de modèle ; une commande logique se fragmentait en factures séparées.","expert":"L’enforcement du budget vivait à une couche qui ne possédait pas le graphe complet des retries et choix de modèle, faisant diverger opération logique et opérations facturables."},"en":{"kitchen":"The budget guard watched a layer that could not see the whole family of retries and model choices; one logical order fragmented into separate bills.","expert":"Budget enforcement lived at a layer that did not own the complete retry and model-selection graph, so the logical operation and the billable operations diverged."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"La caisse doit suivre tout l’arbre de descendants d’une commande et laisser remonter une alarme budgétaire terminale au lieu de l’avaler.","expert":"La comptabilité du budget doit suivre tout l’arbre des descendants d’une tâche logique et propager les échecs terminaux de budget sans les avaler."},"en":{"kitchen":"The till must follow the whole descendant tree of an order and let a terminal budget alarm rise instead of swallowing it.","expert":"Budget accounting must follow the complete descendant tree of one logical task and propagate terminal budget failures without swallowing them."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"La famille de correctifs est prometteuse, mais certains plats annoncés ne sont pas encore prouvés livrés.","expert":"Famille de correctifs à fort signal dont certains n’étaient pas encore prouvés livrés au cutoff observé."},"en":{"kitchen":"The repair family is promising, but some announced dishes are not yet proven delivered.","expert":"High-signal repair cluster with some fixes still not proven shipped at the observed cutoff."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Le budget des reprises doit suivre le plat logique, pas seulement compter les coups de téléphone à la cuisine.","expert":"Les budgets de retry doivent suivre le travail logique, pas seulement le nombre d’appels API."},"en":{"kitchen":"Retry budget must follow the logical dish, not merely count calls to the kitchen.","expert":"Retry budgets must follow logical work, not API call count alone."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:sweagent-cost-guard-retry-rebilling",
+  "type": "dossier",
+  "slug": "sweagent-cost-guard-retry-rebilling",
+  "route": "/dossiers/sweagent-cost-guard-retry-rebilling/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "SWE-agent"
+    ],
+    "patterns": [
+      "cost-guards",
+      "retry",
+      "budget"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Chez SWE-agent, un plat refait a été facturé autant de fois qu’il est reparti",
+          "expert": "SWE-agent : les retries transforment un appel modèle en multiplicateur de coût caché"
+        },
+        "en": {
+          "kitchen": "At SWE-agent, a plate sent back was rung up again every time",
+          "expert": "SWE-agent: retries turn one model call into a hidden cost multiplier"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez SWE-agent, un plat qui repart une deuxième fois est compté deux fois à la caisse, comme si deux clients l’avaient demandé. Le plafond de dépense, lui, croit n’en avoir vu qu’un. Entre ce que la maison annonce dépenser et ce qu’elle paie vraiment, l’écart se creuse sans témoin.",
+            "expert": "Une famille de problèmes de contrôle des coûts montre comment retries, sélection de modèle et exceptions de budget avalées font diverger limites nominales et dépense réelle chez SWE-agent."
+          },
+          "en": {
+            "kitchen": "At SWE-agent, a plate that goes back on is rung up twice, as though two guests had ordered it. The spending ceiling still believes it saw one. What the house says it spends and what it truly pays drift apart with nobody watching.",
+            "expert": "A cluster of cost-control problems in SWE-agent showed how retries, model selection and swallowed budget exceptions can make nominal limits diverge from real spend."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Comment l’addition a doublé sans que le plafond bouge",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "How the bill doubled while the ceiling stayed put",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chaque plat envoyé coûte cher, et la maison travaille sous un plafond de dépense.",
+            "expert": "L’agent exécute du travail modèle coûteux sous une limite de budget."
+          },
+          "en": {
+            "kitchen": "Every plate sent out costs real money, and the house works under a spending ceiling.",
+            "expert": "The agent ran costly model work under a budget limit."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Quand le plat repart, la caisse peut le facturer à neuf au lieu d’y reconnaître la même commande.",
+            "expert": "Les chemins de retry peuvent refacturer un travail déjà payé, la tentative n’étant pas comptée comme une opération logique unique."
+          },
+          "en": {
+            "kitchen": "On a second attempt the till can charge afresh, instead of recognising the order it already took.",
+            "expert": "Retry paths could rebill work rather than treating the attempt as one logical operation."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Pire : l’alarme qui doit tout arrêter au plafond peut rester étouffée au fond de la maison.",
+            "expert": "Des conditions fatales de budget peuvent être avalées par le flot de contrôle interne et ne pas remonter."
+          },
+          "en": {
+            "kitchen": "Worse: the alarm meant to halt everything at the ceiling can stay muffled in the back.",
+            "expert": "Fatal budget conditions could be swallowed by internal control flow and never surface."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le choix du four ajoute encore des lignes à la note, alors que le plat semble tenir dans la même enveloppe.",
+            "expert": "Le comportement du sélecteur de modèle peut cacher des dimensions de coût supplémentaires."
+          },
+          "en": {
+            "kitchen": "Picking one range over another adds further lines to the bill, while the dish looks like it fits the same envelope.",
+            "expert": "Model chooser behavior could keep additional cost dimensions out of view."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Des réparations sont proposées ; au moment où l’on a regardé, toutes n’étaient pas en service.",
+            "expert": "Des travaux de correction sont proposés ; au cutoff observé, ils n’étaient pas tous livrés."
+          },
+          "en": {
+            "kitchen": "Repairs are proposed; when the house was last looked at, not all of them were in service.",
+            "expert": "Repair work was proposed; at the observed cutoff it had not all shipped."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "La caisse ne voyait qu’un bout du service",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "The till could only see part of the service",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le plafond était surveillé depuis un endroit qui ne voyait ni les plats refaits ni les fours plus chers. Une commande unique, du point de vue du client, se cassait en plusieurs additions séparées.",
+            "expert": "L’enforcement du budget vit à une couche qui ne possède pas le graphe complet des retries et des choix de modèle. Opération logique et opérations facturables divergent."
+          },
+          "en": {
+            "kitchen": "The ceiling was watched from a spot blind to the remade plates and to the dearer ranges. One order, as the guest understood it, broke into several separate bills.",
+            "expert": "Budget enforcement lived at a layer that did not own the complete retry and model-selection graph. The logical operation and the billable operations diverged."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Compter le plat, et laisser l’alarme sonner",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Count the dish, and let the alarm ring out",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La caisse doit suivre une commande jusqu’à son dernier renvoi, essais compris, au lieu de facturer chaque aller-retour à part. Quand le plafond est atteint, l’alarme doit traverser toute la maison, pas s’éteindre en chemin.",
+            "expert": "La comptabilité du budget doit suivre tout l’arbre des descendants d’une tâche logique. Les échecs terminaux de budget doivent se propager sans être avalés."
+          },
+          "en": {
+            "kitchen": "The till has to follow one order down to its last resend, tries included, rather than billing each trip on its own. When the ceiling is reached, the alarm must carry through the whole house instead of dying on the way.",
+            "expert": "Budget accounting must follow the complete descendant tree of one logical task. Terminal budget failures must propagate without being swallowed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Des réparations annoncées, pas toutes en service",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "Repairs announced, not all of them in service",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La famille de réparations est sérieuse et bien visée. Au moment où l’on a regardé, rien ne prouvait pourtant qu’elles étaient toutes en service.",
+            "expert": "Famille de correctifs à fort signal, dont certains n’étaient pas prouvés livrés au cutoff observé."
+          },
+          "en": {
+            "kitchen": "The set of repairs is serious and well aimed. At the moment the house was last looked at, there was no proof that all of them were in service.",
+            "expert": "High-signal repair cluster, with some fixes not proven shipped at the observed cutoff."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Compte les plats, pas les allers-retours",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Count the plates, not the trips",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce que le client a commandé une fois ne doit lui coûter qu’une fois, quel que soit le nombre de tentatives derrière la porte.",
+            "expert": "Un budget de retry se compte sur le travail logique, pas sur le nombre d’appels API."
+          },
+          "en": {
+            "kitchen": "What a guest ordered once should cost once, however many tries it took behind the doors.",
+            "expert": "A retry budget is counted against logical work, not against the number of API calls."
+          }
+        }
+      ]
+    }
+  ]
+}

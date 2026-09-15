@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:backlog-fossil","type":"pattern","slug":"backlog-fossil","route":"/patterns/backlog-fossil/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Roo Code"],"patterns":[],"dossiers":["roo-code-sunset-with-full-backlog"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"La liste de tâches survit au restaurant","expert":"Backlog fossile"},"en":{"kitchen":"The task list outlives the restaurant","expert":"Backlog Fossil"}},"body":[{"fr":{"cuisine":"Une longue liste de choses à faire peut rester visible alors que le projet n’a plus le même avenir.","expert":"Un backlog peut survivre à un changement de direction, de maintenance ou de fin de vie et ne prouve pas à lui seul l’activité future."},"en":{"kitchen":"A long task list can remain visible after the project’s future has already changed.","expert":"A backlog can survive a change of direction, maintenance state or sunset and does not by itself prove future activity."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:backlog-fossil",
+  "type": "pattern",
+  "slug": "backlog-fossil",
+  "route": "/patterns/backlog-fossil/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Roo Code"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "roo-code-sunset-with-full-backlog"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le tableau des bons reste plein quand la maison a déjà fermé",
+          "expert": "Un inventaire de travail ouvert survit à la décision qui l’a vidé de son sens"
+        },
+        "en": {
+          "kitchen": "The order board stays full long after the room has closed",
+          "expert": "An inventory of open work outlives the decision that drained it of meaning"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Roo Code, le tableau des bons était encore couvert le jour du dernier service. Personne n’avait décroché ces commandes : elles disaient ce que la maison aurait pu cuisiner, jamais ce qu’elle allait cuisiner. Un tableau chargé n’a jamais prouvé qu’il restait quelqu’un aux fourneaux.",
+            "expert": "Un backlog fossile est un inventaire de travail ouvert qui reste visible après la décision qui l’a vidé de son sens. Chez Roo Code, issues et branches ouvertes sont restées nombreuses alors que le produit était arrêté volontairement, ses surfaces majeures supprimées et une version finale livrée. Le volume mesurait du travail inachevé, pas un engagement à le livrer."
+          },
+          "en": {
+            "kitchen": "Nobody took the tickets down at Roo Code. They were still hanging, three deep, on the night the house served its last plate. Each one named a dish the kitchen could have cooked, and not one named a cook who still would.",
+            "expert": "A backlog fossil is an inventory of open work that stays visible after the decision that drained it of meaning. Roo Code kept a large issue and branch surface while the product was deliberately wound down, major surfaces removed and a final release shipped. Volume measured unfinished work, not any commitment to ship it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que le tableau montre quand la maison est déjà partie",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "What the board shows once the house has gone",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Regarde ce qui a disparu de la carte, pas ce qui reste au mur. Chez Roo Code, des pans entiers du service avaient été retirés, un dernier plat était sorti, et la suite se cuisinait ailleurs. Le tableau, lui, n’avait pas bougé d’un bon.",
+            "expert": "Le signal n’est pas le volume du backlog mais l’écart entre ce volume et les décisions produit observables : suppression de surfaces majeures, version finale livrée, dépôt archivé, continuité déplacée vers des alternatives et des forks communautaires. Les branches ouvertes d’un projet arrêté documentent une intention, pas une livraison. Une déclaration de mainteneur pèse plus qu’un compteur d’issues."
+          },
+          "en": {
+            "kitchen": "Read what left the menu rather than what stayed on the wall. Whole parts of the Roo Code service had been pulled, a last dish went out, and the cooking carried on in other houses. Not one ticket came down for any of it.",
+            "expert": "The signal is not backlog volume but the gap between that volume and observable product decisions: major surfaces removed, a final release shipped, the repository archived, continuity moved toward alternatives and community forks. Open branches on a halted project document intent, not delivery. A maintainer statement outweighs an issue count."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi un tableau chargé rassure à tort",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a crowded board is a comfort that lies",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un bon reste accroché tant que personne ne le décroche. Il ne sait pas que la maison a changé d’avis, et il n’a aucune raison de tomber tout seul. Ces bons comptaient le travail qu’on n’avait pas fini, jamais la volonté de le finir.",
+            "expert": "Un backlog enregistre des entrées, pas des sorties : rien ne le vide quand la direction change, parce que le clore demande un travail que plus personne ne fait. Les métriques d’activité mesurent alors du travail inachevé et non un engagement stratégique. L’inventaire devient le fossile d’une roadmap sans propriétaire produit prêt à la livrer."
+          },
+          "en": {
+            "kitchen": "A ticket hangs where it was put until a hand takes it down. It knows nothing about the house changing its mind, and it will not fall on its own. Those tickets counted work left unfinished; none of them counted anyone still willing to finish it.",
+            "expert": "A backlog records arrivals, not departures: nothing clears it when direction changes, because closing items is work no one is doing any more. Activity metrics then measure unfinished work rather than strategic commitment. The inventory becomes the fossil of a roadmap with no product owner left to ship it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on regarde avant de croire une maison ouverte",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What to check before believing a house is open",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Avant de dire qu’une maison tourne, compte les plats vraiment sortis et regarde ce qu’on a retiré de la carte. Demande qui tient encore les fourneaux, et où sont partis ceux qui cuisinaient. Le nombre de bons au mur ne répond à aucune de ces questions.",
+            "expert": "Évaluer la santé d’un projet sur les changements de direction, les versions finales, les suppressions de surfaces, l’existence de successeurs ou de forks et les déclarations de mainteneurs, plutôt que sur le volume d’activité. Le backlog n’entre dans le jugement qu’une fois daté et rapproché de ces décisions. Un compteur de commits ou d’issues n’établit pas seul la continuité."
+          },
+          "en": {
+            "kitchen": "Before calling a house open, count the plates that actually went out and note what was pulled from the menu. Ask who still stands at the stoves, and where the old cooks went to work. The pile of paper on the wall answers none of that.",
+            "expert": "Judge project health on direction changes, final releases, removed surfaces, the presence of successors or forks, and maintainer statements, rather than on activity volume. The backlog enters the judgment only once dated and set against those decisions. A commit or issue count alone does not establish continuity."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La règle que laisse le dernier service de Roo Code",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The rule Roo Code’s last service leaves behind",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un tableau plein ne dit pas que la cuisine vit ; il dit qu’on a cessé de décrocher les bons. Cherche le dernier plat sorti, et l’adresse où l’on cuisine maintenant.",
+            "expert": "Un backlog plein peut être une preuve de mort, pas de vie, lorsque la stratégie est déjà partie ailleurs. Il se lit avec les décisions produit qui l’entourent, jamais seul."
+          },
+          "en": {
+            "kitchen": "A full board does not say the kitchen is alive; it says nobody takes the tickets down any more. Look for the last plate served, and for the address where the cooking moved.",
+            "expert": "A full backlog can be evidence of death, not life, when strategy has already moved on. Read it against the surrounding product decisions, never on its own."
+          }
+        }
+      ]
+    }
+  ]
+}

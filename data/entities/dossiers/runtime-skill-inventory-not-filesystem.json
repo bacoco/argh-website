@@ -1,1 +1,218 @@
-{"schema":"argh/public-entity/v1","id":"dossier:runtime-skill-inventory-not-filesystem","type":"dossier","slug":"runtime-skill-inventory-not-filesystem","route":"/dossiers/runtime-skill-inventory-not-filesystem/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Codex","agent-scripts"],"patterns":["skills-runtime","runtime-visible-state"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le classeur disait une chose, la brigade en avait une autre sous les yeux","expert":"Le filesystem disait une chose. Le modèle voyait un autre ensemble de skills."},"en":{"kitchen":"The binder said one thing; the brigade saw another","expert":"The filesystem said one thing. The model saw another skill set."}},"body":[{"fr":{"cuisine":"Le classeur disait une chose, la brigade en avait une autre sous les yeux. Une fiche de recette sur l’étagère ne prouve ni que la brigade l’a chargée, ni qu’elle la voit, ni qu’elle la suit pendant le service.","expert":"Un audit de skills est passé du scan de répertoires à la lecture de l’inventaire exact de skills injecté dans le prompt du modèle, y compris aliases et ordre."},"en":{"kitchen":"The binder said one thing; the brigade saw another. A recipe card on the shelf proves neither that the brigade loaded it, sees it, nor follows it during service.","expert":"A skill audit evolved from scanning directories to reading the exact skill inventory placed into the model’s prompt, including aliases and order."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Le premier nettoyage parcourt les répertoires de skills déclarés.","expert":"Le cleaner initial scanne les racines de skills configurées."},"en":{"kitchen":"The first cleaner walks the declared skill directories.","expert":"The initial cleaner scanned configured skill roots."}},{"fr":{"cuisine":"Il repère les doublons, les fiches inutilisées et la place qu’elles prennent dans le prompt.","expert":"Il détecte doublons, fichiers inutilisés et pression sur le budget de prompt."},"en":{"kitchen":"It finds duplicates, unused cards, and the prompt space they consume.","expert":"It detected duplicates, unused files and prompt-budget pressure."}},{"fr":{"cuisine":"L’audit regarde ensuite l’inventaire réellement glissé dans le prompt du modèle.","expert":"Le travail ultérieur prend comme source de vérité l’inventaire réellement visible dans le prompt du modèle."},"en":{"kitchen":"The audit then looks at the inventory actually placed in the model prompt.","expert":"Later work switched the source of truth to the model-visible prompt inventory."}},{"fr":{"cuisine":"Le scan des dossiers devient un outil de diagnostic, non la preuve que la brigade a chargé une fiche.","expert":"Le scan filesystem devient un fallback diagnostique plutôt qu’une preuve de chargement."},"en":{"kitchen":"Directory scanning becomes a diagnostic tool, not proof that the crew loaded a card.","expert":"Filesystem scanning became a diagnostic fallback rather than proof of load."}},{"fr":{"cuisine":"Des tests vérifient désormais les alias, l’ordre des fiches et les preuves d’usage.","expert":"Des tests sont ajoutés pour aliases, ordre et preuves d’usage."},"en":{"kitchen":"Tests now check aliases, card ordering, and evidence of use.","expert":"Tests were added for aliases, ordering and usage evidence."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Entre l’étagère et le cuisinier, l’installation, la découverte, les alias, les priorités et le budget peuvent changer les fiches qui atteignent réellement la table.","expert":"Installation, discovery, résolution des aliases, precedence et filtrage par budget de contexte peuvent tous modifier ce qui atteint le modèle après le scan des fichiers."},"en":{"kitchen":"Between shelf and cook, installation, discovery, aliases, precedence and budget can change the cards that actually reach the table.","expert":"Installation, discovery, alias resolution, precedence and context-budget filtering can all change what reaches the model after the files have been scanned."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"On commence donc par compter les fiches présentes sur la table du modèle ; le disque sert seulement à expliquer pourquoi ce couvert diffère.","expert":"Auditer d’abord la représentation runtime effective ; utiliser l’état disque uniquement pour expliquer pourquoi l’inventaire runtime diffère."},"en":{"kitchen":"Start by counting the cards on the model’s table; disk only explains why that place setting differs.","expert":"Audit the effective runtime representation first; use disk state only to explain why the runtime inventory differs."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"Cette règle dépasse les fiches : les outils, serveurs MCP, plugins et fichiers de contrôle ont eux aussi un inventaire réellement présent au poste.","expert":"Ce principe se généralise désormais aux outils, serveurs MCP, plugins et fichiers de contrôle."},"en":{"kitchen":"This rule reaches beyond cards: tools, MCP servers, plugins and control files also have an inventory actually present at the station.","expert":"This principle now generalizes to tools, MCP servers, plugins and control files."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"La seule configuration qui compte est celle posée devant le modèle, pas celle qui dort dans le garde-manger.","expert":"La configuration vue par le modèle est celle qui compte."},"en":{"kitchen":"The only configuration that counts is the one set before the model, not the one sleeping in the pantry.","expert":"The configuration the model sees is the configuration that matters."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:runtime-skill-inventory-not-filesystem",
+  "type": "dossier",
+  "slug": "runtime-skill-inventory-not-filesystem",
+  "route": "/dossiers/runtime-skill-inventory-not-filesystem/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Codex",
+      "agent-scripts"
+    ],
+    "patterns": [
+      "skills-runtime",
+      "runtime-visible-state"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le classeur était en règle ; sur le passe, le commis n’avait pas les mêmes fiches",
+          "expert": "L’audit est passé du scan de répertoires à la lecture de l’inventaire de skills réellement injecté dans le prompt"
+        },
+        "en": {
+          "kitchen": "The binder was in order; at the pass the cook held different cards",
+          "expert": "The audit moved from directory scanning to reading the skill inventory actually injected into the prompt"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Codex, on a longtemps vérifié les fiches en comptant celles rangées sur l’étagère. Puis on a compté celles vraiment posées devant le commis, avec leurs petits noms et leur ordre de pile. Les deux comptes ne donnaient pas le même résultat.",
+            "expert": "L’audit de skills de Codex est passé du scan des répertoires déclarés à la lecture de l’inventaire exact injecté dans le prompt du modèle, aliases et ordre compris."
+          },
+          "en": {
+            "kitchen": "Codex used to check its recipe cards by counting what sat on the shelf. Then it counted what was actually laid out in front of the cook, nicknames and stacking order included. The two counts did not agree.",
+            "expert": "Codex’s skill audit moved from scanning declared directories to reading the exact inventory injected into the model’s prompt, aliases and ordering included."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "De l’étagère au passe",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "From shelf to pass",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le premier tri fait le tour des étagères où les fiches sont censées être rangées.",
+            "expert": "Le premier nettoyeur parcourt les racines de skills configurées."
+          },
+          "en": {
+            "kitchen": "The first sweep walks the shelves where the cards are supposed to live.",
+            "expert": "The initial cleaner walked the configured skill roots."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Il y trouve des doublons, des fiches que personne n’ouvre, et la place qu’elles prennent au passe.",
+            "expert": "Il y détecte des doublons, des fichiers inutilisés et une pression sur le budget de prompt."
+          },
+          "en": {
+            "kitchen": "It turns up duplicates, cards nobody opens, and the room they take up at the pass.",
+            "expert": "It surfaced duplicates, unused files and pressure on the prompt budget."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le travail suivant change de référence : on regarde ce que le commis a réellement sous les yeux.",
+            "expert": "Le travail suivant déplace la source de vérité vers l’inventaire visible dans le prompt du modèle."
+          },
+          "en": {
+            "kitchen": "The next round of work changes reference: look at what the cook truly has in front of him.",
+            "expert": "Later work moved the source of truth to the inventory visible in the model’s prompt."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Faire le tour des étagères devient un moyen d’expliquer l’écart, plus une preuve que la fiche a été prise.",
+            "expert": "Le scan du filesystem devient un repli diagnostique, non une preuve de chargement."
+          },
+          "en": {
+            "kitchen": "Walking the shelves becomes a way to explain the gap, no longer proof that a card was picked up.",
+            "expert": "Filesystem scanning became a diagnostic fallback rather than proof of load."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Des vérifications s’ajoutent sur les petits noms des fiches, leur ordre, et la trace qu’on s’en est servi.",
+            "expert": "Des tests sont ajoutés sur les aliases, l’ordre et les preuves d’usage."
+          },
+          "en": {
+            "kitchen": "Checks are added for card nicknames, their order, and the trace that one was actually used.",
+            "expert": "Tests were added for aliases, ordering and evidence of use."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui se perd entre l’étagère et le passe",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "What goes missing between shelf and pass",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Entre l’étagère et le passe, beaucoup de mains passent. On range, on cherche, on appelle la fiche par un surnom, on tranche les priorités, on écarte ce qui ne tient pas dans la pile. Ce qui arrive devant le commis n’est plus ce qu’on avait compté.",
+            "expert": "Installation, discovery, résolution des aliases, precedence et filtrage par budget de contexte modifient tous ce qui atteint le modèle, en aval du scan des fichiers."
+          },
+          "en": {
+            "kitchen": "Many hands come between shelf and pass. Cards get filed, hunted down, called by a nickname, ranked against each other, and dropped when the stack runs out of room. What reaches the cook is no longer what was counted.",
+            "expert": "Installation, discovery, alias resolution, precedence and context-budget filtering each change what reaches the model, downstream of the file scan."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Compter d’abord ce qui est sur le passe",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Count the pass first",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On commence donc par compter les fiches posées devant le commis. L’étagère ne sert plus qu’à expliquer pourquoi le compte diffère.",
+            "expert": "Auditer d’abord la représentation runtime effective. N’utiliser l’état disque que pour expliquer l’écart avec cet inventaire."
+          },
+          "en": {
+            "kitchen": "So the count starts with the cards laid in front of the cook. The shelf is kept only to explain why the two numbers differ.",
+            "expert": "Audit the effective runtime representation first. Use disk state only to account for the gap against that inventory."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "La règle ne s’arrête pas aux fiches",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "The rule reaches past the cards",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Cela ne s’arrête pas aux fiches. Les outils, les fournisseurs branchés du dehors, les extensions du poste et les consignes affichées ont eux aussi un inventaire réel : celui qu’on a devant soi pendant le service.",
+            "expert": "Le principe se généralise désormais aux outils, aux serveurs MCP, aux plugins et aux fichiers de contrôle."
+          },
+          "en": {
+            "kitchen": "This does not stop at the cards. Tools, outside suppliers wired into the station, add-ons and posted standing orders all have a real inventory too. It is the one in front of you during service.",
+            "expert": "The principle now generalizes to tools, MCP servers, plugins and control files."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La seule fiche qui compte",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The only card that counts",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La fiche qui compte est celle posée devant le commis, pas celle qui dort au garde-manger.",
+            "expert": "La configuration qui compte est celle que le modèle voit."
+          },
+          "en": {
+            "kitchen": "The card that counts is the one under the cook’s hand, not the one asleep in the pantry.",
+            "expert": "The configuration that matters is the one the model sees."
+          }
+        }
+      ]
+    }
+  ]
+}

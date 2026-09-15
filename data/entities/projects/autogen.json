@@ -1,1 +1,219 @@
-{"schema":"argh/public-entity/v1","id":"project:autogen","type":"project","slug":"autogen","route":"/projects/autogen/","template":"project","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":[],"patterns":["convergence","project-mortality","supersession"],"dossiers":["autogen-superseded-not-dead","project-mortality-state-machine"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"AutoGen","expert":"AutoGen"},"en":{"kitchen":"AutoGen","expert":"AutoGen"}},"body":[{"fr":{"cuisine":"Deux dossiers publics pour lire AutoGen sans raccourci : être remplacé n’est pas forcément disparaître, et l’état d’un projet mérite d’être regardé de près.","expert":"2 dossiers publics rattachés à AutoGen."},"en":{"kitchen":"Two public dossiers for reading AutoGen without shortcuts: being superseded does not necessarily mean disappearing, and a project’s state deserves a closer look.","expert":"2 public dossiers associated with AutoGen."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "project:autogen",
+  "type": "project",
+  "slug": "autogen",
+  "route": "/projects/autogen/",
+  "template": "project",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [],
+    "patterns": [
+      "convergence",
+      "project-mortality",
+      "supersession"
+    ],
+    "dossiers": [
+      "autogen-superseded-not-dead",
+      "project-mortality-state-machine"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "AutoGen",
+          "expert": "AutoGen"
+        },
+        "en": {
+          "kitchen": "AutoGen",
+          "expert": "AutoGen"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "AutoGen a ouvert avant les autres et montré comment plusieurs commis peuvent tenir un même service ensemble. La maison tient toujours, mais ce sont les habitués qui l’entretiennent. Les patrons construisent leur suite ailleurs.",
+            "expert": "AutoGen est un framework multi-agents issu de Microsoft Research, aujourd’hui classé comme remplacé après une croissance active, une phase active, puis une phase de maintenance seule. Le successeur est nommé et un chemin de migration existe : c’est cette paire, et non l’état du dépôt, qui établit la supersession stratégique."
+          },
+          "en": {
+            "kitchen": "AutoGen opened before the others and showed how several commis can hold one service together. The house still stands, but the regulars are the ones keeping it up. The owners build what comes next elsewhere.",
+            "expert": "AutoGen is a multi-agent framework out of Microsoft Research, now classified as superseded after active growth, an active phase, then a maintenance-only phase. The successor is named and a migration path exists: that pair, not repository state, is what establishes strategic supersession."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Comment la maison est passée aux mains des habitués",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "How the house passed to its regulars",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La maison ouvre du côté de la recherche. Elle montre comment plusieurs commis peuvent tenir un même service ensemble.",
+            "expert": "AutoGen naît comme framework multi-agents chez Microsoft Research."
+          },
+          "en": {
+            "kitchen": "The house opens on the research side. It shows how several commis can hold one service together.",
+            "expert": "AutoGen started as a multi-agent framework inside Microsoft Research."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "On refait la cuisine de fond en comble, pour qu’elle tienne plus de monde et casse moins souvent.",
+            "expert": "Une refonte en version 0.4 vise l’extensibilité et la robustesse."
+          },
+          "en": {
+            "kitchen": "The kitchen is rebuilt from the ground up, to hold more people and break less often.",
+            "expert": "A 0.4 redesign targeted extensibility and robustness."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Les idées de la maison se retrouvent dans une autre cuisine du même groupe, Semantic Kernel. Les deux cartes se ressemblent de plus en plus.",
+            "expert": "Les idées centrales convergent avec Semantic Kernel."
+          },
+          "en": {
+            "kitchen": "The house's ideas turn up in another kitchen of the same group, Semantic Kernel. The two menus start to look alike.",
+            "expert": "Its core ideas converged with Semantic Kernel."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le groupe tranche : une seule maison sera soutenue pour la suite, Microsoft Agent Framework.",
+            "expert": "Microsoft Agent Framework devient la fondation unifiée et supportée."
+          },
+          "en": {
+            "kitchen": "The group settles it: one single house will be backed from here on, Microsoft Agent Framework.",
+            "expert": "Microsoft Agent Framework became the unified, supported foundation."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "AutoGen reste ouverte, mais ce sont ses habitués qui l’entretiennent désormais.",
+            "expert": "AutoGen entre en maintenance tenue par la communauté."
+          },
+          "en": {
+            "kitchen": "AutoGen stays open, but its regulars are the ones keeping it up now.",
+            "expert": "AutoGen entered community-managed maintenance."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Une maison ouverte ne dit pas où va l’argent",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "An open house does not say where the money goes",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Pour savoir où va une maison, on ne compte pas les allées et venues. On regarde si les patrons ont ouvert ailleurs, s’ils l’ont dit, et s’ils expliquent aux clients comment y aller. Ici, les trois réponses sont oui.",
+            "expert": "L’état du dépôt n’est pas la cause du projet : archive, lecture seule, maintenance et transfert se classent causalement de façon distincte. Le signal décisif est ici un successeur nommé assorti d’un chemin de migration, qui établit la supersession stratégique plus solidement que le fait que l’ancien dépôt soit archivé ou non. La mortalité d’un projet se lit comme une transition orientée, pas comme un instantané à zéro commit."
+          },
+          "en": {
+            "kitchen": "To read where a house is going, do not count the coming and going. Look at whether the owners opened somewhere else, said so, and told customers how to get there. Here all three answers are yes.",
+            "expert": "Repository state is not project cause: archive, read-only, maintenance and transfer have to be classified causally and separately. The decisive signal here is a named successor with a migration path, which establishes strategic supersession more firmly than whether the old repository is archived. Project mortality reads as a directional transition, not a zero-commit snapshot."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’il faut lire avant de classer une maison",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What to read before filing a house away",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Avant de dire qu’une maison est finie, aller lire ce que les patrons ont écrit en dernier. C’est là qu’on trouve l’adresse de la nouvelle et le mot qui dit comment y aller. Une maison tenue par ses habitués n’est ni ouverte comme avant, ni fermée. Et pour un service qui dure, un carnet tenu à jour vaut mieux que ce que chacun croit se rappeler.",
+            "expert": "Classer séparément l’état du dépôt et la cause de la trajectoire, et traiter la maintenance tenue par la communauté comme un état distinct de l’abandon comme de la croissance active. Pour un travail long ou multi-agents, l’état d’exécution doit être persisté sous forme structurée plutôt que reconstruit depuis le texte du prompt : plusieurs frameworks exposent désormais des objets d’état explicites qui survivent aux interruptions, aux handoffs et aux reprises."
+          },
+          "en": {
+            "kitchen": "Before calling a house finished, go read what the owners wrote last. That is where the new address sits, and the note saying how to get there. A house kept up by its regulars is neither open as before nor shut. And for a long service, a book kept up to date beats what each person thinks they remember.",
+            "expert": "Classify repository state and trajectory cause separately, and treat community-managed maintenance as a state distinct from both abandonment and active growth. For long-running or multi-agent work, execution state should be persisted in structured form rather than reconstructed from prompt text: several frameworks now expose explicit state objects that survive interruption, handoff and resumption."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Où en est AutoGen",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "Where AutoGen stands",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La maison est ouverte, et ses habitués l’entretiennent. Ce qui est neuf se décide et se construit chez Microsoft Agent Framework, et c’est là qu’on envoie les nouveaux venus.",
+            "expert": "AutoGen est en maintenance tenue par la communauté ; Microsoft oriente le développement de nouvelles fonctionnalités et les utilisateurs vers Microsoft Agent Framework. La classification en état remplacé est solidement établie ; le détail de l’enchaînement vers un héritage en maintenance seule repose sur une preuve de niveau moyen. Les surfaces observées portent sur les handoffs, la terminaison, les exemples d’historique persistant et agentchat."
+          },
+          "en": {
+            "kitchen": "The house is open, and its regulars keep it up. What is new gets decided and built at Microsoft Agent Framework, and that is where newcomers are sent.",
+            "expert": "AutoGen sits in community-managed maintenance; Microsoft steers new feature development and users toward Microsoft Agent Framework. The superseded classification is firmly established; the detailed chain into a maintenance-only legacy rests on medium-strength evidence. The observed surfaces cover handoffs, termination, persistent-history examples and agentchat."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que la maison d’origine nous laisse",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What the first house leaves us",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une maison tenue n’est pas une maison sur laquelle on parie. Quand les patrons nomment l’autre adresse et expliquent le chemin, c’est là que se lit la suite, pas dans le nombre de lumières allumées.",
+            "expert": "Un successeur nommé assorti d’un chemin de migration est une preuve plus forte de supersession stratégique que l’état d’archivage de l’ancien dépôt. L’état du dépôt n’est pas la cause du projet."
+          },
+          "en": {
+            "kitchen": "A house kept up is not a house being bet on. When the owners name the other address and say how to get there, that is where the future reads. Not in how many lights are on.",
+            "expert": "A named successor with a migration path is stronger evidence of strategic supersession than the archive state of the old repository. Repository state is not project cause."
+          }
+        }
+      ]
+    }
+  ]
+}

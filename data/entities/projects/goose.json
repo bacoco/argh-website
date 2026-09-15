@@ -1,1 +1,257 @@
-{"schema":"argh/public-entity/v1","id":"project:goose","type":"project","slug":"goose","route":"/projects/goose/","template":"project","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":[],"patterns":["checkpoint","concurrency","convergence","credential-lifecycle","fail-open","hooks-enforcement","mcp","pivot","protocols","retry-semantics","routing","skills-runtime","subagents","trust-boundary"],"dossiers":["goose-hooks-observer-to-enforcer","goose-protocol-pivot-acp","mcp-common-protocol-local-policy","skills-cross-harness-convergence","hooks-cross-harness-convergence","subagents-delegation-control-plane","safety-control-failure-became-permission","control-plane-convergence","retryable-auth-errors-must-not-delete-credentials"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Goose","expert":"Goose"},"en":{"kitchen":"Goose","expert":"Goose"}},"body":[{"fr":{"cuisine":"Neuf dossiers publics pour suivre Goose quand le service se complique : hooks, protocole, identifiants, reprises et le risque de jeter une clé qui pouvait encore servir.","expert":"9 dossiers publics rattachés à Goose."},"en":{"kitchen":"Nine public dossiers for following Goose when service gets complicated: hooks, protocol, credentials, retries, and the risk of throwing away a key that could still work.","expert":"9 public dossiers associated with Goose."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "project:goose",
+  "type": "project",
+  "slug": "goose",
+  "route": "/projects/goose/",
+  "template": "project",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [],
+    "patterns": [
+      "checkpoint",
+      "concurrency",
+      "convergence",
+      "credential-lifecycle",
+      "fail-open",
+      "hooks-enforcement",
+      "mcp",
+      "pivot",
+      "protocols",
+      "retry-semantics",
+      "routing",
+      "skills-runtime",
+      "subagents",
+      "trust-boundary"
+    ],
+    "dossiers": [
+      "goose-hooks-observer-to-enforcer",
+      "goose-protocol-pivot-acp",
+      "mcp-common-protocol-local-policy",
+      "skills-cross-harness-convergence",
+      "hooks-cross-harness-convergence",
+      "subagents-delegation-control-plane",
+      "safety-control-failure-became-permission",
+      "control-plane-convergence",
+      "retryable-auth-errors-must-not-delete-credentials"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Goose",
+          "expert": "Goose"
+        },
+        "en": {
+          "kitchen": "Goose",
+          "expert": "Goose"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Goose, l’homme posté au passe ne se contente plus de regarder : il peut refuser un plat. La maison a aussi changé sa façon d’annoncer les commandes, pour prendre celle que tout le quartier utilise. Restent deux soirs mal expliqués, où un service lancé à l’avance s’est dit terminé sans l’être.",
+            "expert": "Goose est en pivot stratégique, pas en déclin. Les interfaces propriétaires goosed REST/SSE cèdent la place à une architecture multi-client standardisée sur ACP, tandis que les hooks passent de l’observation de lifecycle au refus de politique explicite, puis à un échec fermé configurable. Deux lignées de fiabilité restent ouvertes : un succès rapporté après échec de flux dans les recettes programmées, et un mode autonome dont l’affichage de permissions peut diverger de la capacité réellement délivrée à l’agent."
+          },
+          "en": {
+            "kitchen": "At Goose, the man posted at the pass no longer just watches: he can send a plate back. The house also changed how it calls its orders, taking up the way the whole street uses. Two evenings stay badly explained, where a service left to run alone called itself finished.",
+            "expert": "Goose is in a strategic pivot, not a decline. Custom goosed REST/SSE interfaces give way to an ACP-standardised multi-client architecture, while hooks move from lifecycle observation to explicit policy denial and then to configurable fail-closed behaviour. Two reliability lineages remain open: reported success after a mid-stream failure in scheduled recipes, and an autonomous mode whose permission display can diverge from the capability surface actually delivered to the agent."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "De la langue de la maison à l’homme qui peut refuser",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "From the house’s own calls to the man who can refuse",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Au départ, Goose parle sa propre langue. La cuisine et les salles s’entendent parce qu’elles ont grandi ensemble, et chaque salle a son comptoir à elle.",
+            "expert": "Goose expose d’abord une interface maison, goosed en REST/SSE, avec plusieurs clients d’interface distincts. L’interopérabilité dépend entièrement du produit."
+          },
+          "en": {
+            "kitchen": "At the start, Goose speaks its own language. Kitchen and rooms understand each other because they grew up together, and each room has a counter of its own.",
+            "expert": "Goose first exposes a custom goosed REST/SSE surface with several distinct UI clients. Interoperability depends entirely on the product itself."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Puis la maison adopte la façon de faire commune, celle que tout le quartier applique. Elle ne parle plus seulement à ses propres salles : elle parle à n’importe laquelle.",
+            "expert": "Goose bascule vers ACP, standard d’interopérabilité entre agents et clients. L’interopérabilité passe du sur-mesure produit à une surface commune."
+          },
+          "en": {
+            "kitchen": "Then the house takes up the common way of working, the one the whole street applies. It no longer talks to its own rooms alone: it talks to any of them.",
+            "expert": "Goose moves onto ACP, the agent-client interoperability standard. Interoperability shifts from a product-specific surface to a shared one."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Deux nouvelles salles sont montées directement sur cette façon commune : un comptoir sobre, et une grande salle. Aucune des deux n’a son dialecte à elle.",
+            "expert": "Une TUI TypeScript et l’application Desktop sont construites au-dessus d’ACP. Les nouveaux clients n’ajoutent pas de dialecte propriétaire."
+          },
+          "en": {
+            "kitchen": "Two new rooms are built straight onto that common way: a plain counter and a full dining room. Neither has a dialect of its own.",
+            "expert": "A TypeScript TUI and the Desktop application are built on top of ACP. The new clients add no proprietary dialect."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Côté contrôle, on commence petit. Quelqu’un est posté au passe et note ce qui se passe : les entrées, les sorties, l’heure. Il ne touche à rien.",
+            "expert": "Les premiers hooks de plugin observent le lifecycle. Ils notifient ; ils ne décident pas."
+          },
+          "en": {
+            "kitchen": "On the control side, it starts small. Someone stands at the pass and notes what happens: what comes in, what goes out, when. He touches nothing.",
+            "expert": "The first plugin hooks observe the lifecycle. They notify; they do not decide."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Puis on lui donne le droit de dire non. Avant que le commis n’attrape le couteau, il peut arrêter le geste. L’homme qui regardait est devenu l’homme qui décide.",
+            "expert": "Une politique bloquante apparaît sur PreToolUse : le hook peut refuser explicitement une action d’outil avant son exécution. Il cesse d’être un callback pour devenir une frontière d’enforcement."
+          },
+          "en": {
+            "kitchen": "Then he is given the right to say no. Before the cook picks up the knife, he can stop the move. The man who watched has become the man who decides.",
+            "expert": "A blocking policy lands on PreToolUse: the hook can explicitly deny a tool action before it runs. It stops being a callback and becomes an enforcement boundary."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Reste la question qui fâche : et si lui-même n’est pas là ? La maison a tranché, et la réponse se règle — on peut décider que rien ne passe tant qu’il manque.",
+            "expert": "Goose ajoute un comportement fail-closed configurable pour l’échec du hook PreToolUse lui-même. La panne du contrôle devient une décision de politique déclarée, pas un effet de bord."
+          },
+          "en": {
+            "kitchen": "Then the awkward question: what if he himself is missing? The house settled it, and the answer is adjustable — you can decide nothing moves while he is away.",
+            "expert": "Goose adds configurable fail-closed behaviour for failure of the PreToolUse hook itself. Control failure becomes a declared policy decision rather than a side effect."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le travail continue sur les services lancés à l’avance, ceux que personne ne surveille. C’est là que la maison n’a pas fini.",
+            "expert": "Le durcissement de fiabilité du scheduler se poursuit. C’est la zone où se concentrent les lignées encore ouvertes."
+          },
+          "en": {
+            "kitchen": "Work continues on the services left to run alone, the ones nobody watches. That is where the house is not finished.",
+            "expert": "Scheduler reliability hardening continues. That is where the still-open lineages are concentrated."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui arrive quand celui qui peut refuser n’est pas là",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "What happens when the man who can refuse is missing",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Tant qu’il regardait, son absence ne coûtait rien. Du jour où il peut refuser, son absence devient une autorisation. Même piège ailleurs : un service arrêté en route peut être annoncé terminé. Et une ardoise qui dit « tout est permis » n’est pas la liste des couteaux posés sur le billot.",
+            "expert": "Un hook qui peut bloquer est un contrôle ; dès lors, sa propre panne est une décision d’autorisation et non un incident neutre. La convergence des noms d’événements entre harnais ne garantit rien : la politique d’échec par défaut et la sémantique des codes de sortie diffèrent matériellement. Deux divergences de même famille apparaissent à l’exécution — un type de retour normal ou une session survivante tenus pour du travail accompli, et un mode d’interface annonçant un usage large d’outils alors que la surface de capacité reçue est plus étroite."
+          },
+          "en": {
+            "kitchen": "While he only watched, his absence cost nothing. The day he can refuse, his absence becomes permission. The same trap sits elsewhere: a service that stopped halfway can still be called finished. And a board reading “everything allowed” is not the list of knives laid on the block.",
+            "expert": "A hook that can block is a control, so its own failure is an authorisation decision rather than a neutral incident. Converging event names across harnesses guarantee nothing: default failure policy and exit-code semantics differ materially. Two divergences of the same family appear at runtime — a normal return type or a surviving session taken for completed work, and a UI mode advertising broad tool use while the delivered capability surface is narrower."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "La règle écrite pour les soirs où il manque quelqu’un",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "The rule written for nights when somebody is missing",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La maison a écrit ce qui se passe quand l’homme du passe manque, et ce choix se règle. Pour le reste, ce sont des consignes, pas encore des preuves. Un service lancé à l’avance ne doit dire « terminé » que si le plat est vraiment sorti. Et avant de se fier à une ardoise, on compte les couteaux sur le billot.",
+            "expert": "La réponse livrée est double : refus de politique explicite sur PreToolUse, et comportement fail-closed configurable quand le hook échoue lui-même. Les deux lignées de fiabilité n’ont produit que des pratiques — le succès d’un agent non surveillé doit représenter du travail accompli, pas une session survivante ni un type de retour normal, et le harnais doit exposer puis vérifier le jeu d’outils et de permissions réellement délivré à l’agent en cours d’exécution. La migration de protocole, elle, se lit comme un signal de stratégie : observer quelles interfaces propriétaires sont supprimées une fois le remplacement standardisé mûr."
+          },
+          "en": {
+            "kitchen": "The house wrote down what happens when the man at the pass is missing, and that choice is adjustable. For the rest there are rules, not proof yet. A service left to run alone may only say “finished” if the plate actually went out. And before trusting a board, count the knives on the block.",
+            "expert": "Two responses actually shipped: explicit policy denial on PreToolUse, and configurable fail-closed behaviour when the hook itself fails. The two reliability lineages produced practices only — unattended success must represent completed work rather than a surviving session or a normal return type, and the harness should expose and verify the tool and permission set genuinely delivered to the running agent. The protocol migration reads as a strategy signal: watch which custom interfaces get deleted once the standards-based replacement matures."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Une maison qui change de langue, deux soirs sans explication",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "A house changing language, two evenings still unexplained",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Goose bouge beaucoup, et ce n’est pas une maison qui s’éteint. Le service lancé à l’avance qui s’annonce terminé alors qu’il s’est arrêté : toujours signalé, toujours pas expliqué. L’ardoise qui promet plus que le billot : la maison dit que c’est réglé, sans qu’on retrouve le geste qui l’aurait fait. Une autre maison a raconté exactement la même chose de son côté.",
+            "expert": "L’état courant est un pivot stratégique, après une phase de croissance puis une extension de périmètre ; la lecture retenue est celle d’un pivot actif, pas d’un déclin. La lignée du scheduler — recette programmée échouant en cours de flux alors que résultat, télémétrie et listing peuvent indiquer completed — est ouverte et non résolue à la date de coupure, à confiance moyenne. La lignée du mode autonome est marquée fermée complétée, mais aucun commit, PR ou release correcteur n’a été reconstitué : le résultat n’est donc requalifié ni en implémenté ni en livré. Un second projet a rapporté un refus d’outil déclaré, accepté puis omis de l’exécution effective, sans avertissement dans le validateur destiné à l’auteur."
+          },
+          "en": {
+            "kitchen": "Goose is moving a great deal, and this is not a house going dark. The service left alone that reports itself finished after stopping halfway is still reported, still unexplained. On the board that promises more than the block holds, the house says it is settled, but nobody found the move that settled it. Another house told the very same story on its side.",
+            "expert": "Current state is a strategic pivot, after active growth and then a scope expansion; the reading retained is an active pivot, not a decline. The scheduler lineage — a scheduled recipe failing mid-stream while result, telemetry and listing can report completed — is open and unresolved at cutoff, at medium confidence. The autonomous-mode lineage is marked closed completed, yet no correcting commit, pull request or release has been reconstructed, so the outcome is upgraded neither to implemented nor to released. A second project reported a declared tool denial accepted and then omitted from effective execution, with no warning in the author-facing validator."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Celui qui peut refuser doit dire ce qu’on fait sans lui",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Whoever can refuse must say what happens without him",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Poster quelqu’un qui peut refuser, c’est bien. Écrire ce qu’on fait le soir où il n’est pas là, c’est ce qui en fait un vrai contrôle.",
+            "expert": "Tout hook bloquant a besoin d’une politique explicite pour sa propre défaillance ; sans elle, la panne du contrôle devient une approbation. Et ni un mode d’interface ni un type de retour ne prouvent la capacité effective : seuls le jeu réellement délivré, ou le travail réellement accompli, en tiennent lieu."
+          },
+          "en": {
+            "kitchen": "Posting someone who can refuse is a good start. Writing down what happens on the night he is absent is what turns it into a real control.",
+            "expert": "Every blocking hook needs an explicit policy for its own failure; without one, control failure quietly becomes approval. And neither a UI mode nor a return type proves effective capability: only the set actually delivered, or the work actually completed, does."
+          }
+        }
+      ]
+    }
+  ]
+}

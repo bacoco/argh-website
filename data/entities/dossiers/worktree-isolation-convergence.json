@@ -1,1 +1,221 @@
-{"schema":"argh/public-entity/v1","id":"dossier:worktree-isolation-convergence","type":"dossier","slug":"worktree-isolation-convergence","route":"/dossiers/worktree-isolation-convergence/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Codex","gstack","Claude Code","Cline"],"patterns":["worktrees","concurrency","convergence"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Chaque cuisinier parallèle finit par avoir besoin de son propre plan de travail","expert":"Les agents parallèles forcent l’isolation du workspace à entrer dans le harnais"},"en":{"kitchen":"Every parallel cook eventually needs a separate workbench","expert":"Parallel agents are forcing workspace isolation into the harness"}},"body":[{"fr":{"cuisine":"À mesure que les agents travaillent en parallèle, les plans de travail séparés cessent d’être une simple discipline de développeur et deviennent une installation que le runtime doit gérer.","expert":"Les worktrees et mécanismes équivalents d’isolation passent de discipline développeur à infrastructure gérée par le runtime à mesure que les agents parallèles deviennent normaux."},"en":{"kitchen":"As agents work in parallel, separate workbenches stop being mere developer discipline and become infrastructure the runtime must manage.","expert":"Worktrees and equivalent isolated workspace mechanisms are moving from developer discipline into runtime-managed infrastructure as parallel agents become normal."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Avec un seul cuisinier, un checkout partagé peut suffire.","expert":"Les workflows mono-agent tolèrent un checkout partagé."},"en":{"kitchen":"With one cook, a shared checkout can be enough.","expert":"Single-agent workflows could tolerate a shared checkout."}},{"fr":{"cuisine":"Des agents parallèles peuvent se heurter sur les mêmes fichiers et le même état Git.","expert":"Les agents parallèles augmentent le risque de collision sur fichiers et état Git."},"en":{"kitchen":"Parallel agents can collide over the same files and Git state.","expert":"Parallel agents increased collision risk in files and Git state."}},{"fr":{"cuisine":"Les projets ajoutent alors des commandes et des garde-fous qui connaissent les worktrees.","expert":"Les projets ajoutent des commandes et garde-fous conscients des worktrees."},"en":{"kitchen":"Projects begin giving each parallel cook instructions that recognize which bench belongs to whom.","expert":"Projects began adding worktree-aware commands and guardrails."}},{"fr":{"cuisine":"Certains runtimes attribuent eux-mêmes un worktree à chaque travail.","expert":"Certains runtimes passent à l’allocation gérée de worktrees."},"en":{"kitchen":"Some runtimes allocate a worktree to each job themselves.","expert":"Some runtimes moved to managed worktree allocation."}},{"fr":{"cuisine":"Posséder son plan de travail devient une part de l’identité de l’agent.","expert":"La propriété du workspace devient partie de l’identité de l’agent."},"en":{"kitchen":"Owning a workbench becomes part of agent identity.","expert":"Workspace ownership is becoming part of agent identity."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Isoler les conversations ne protège pas le dépôt partagé : deux gestes simultanés y produisent encore des effets de bord.","expert":"La concurrence crée des effets de bord dans une ressource mutable partagée — le repository — que l’isolation conversationnelle ne peut pas empêcher."},"en":{"kitchen":"Isolating conversations does not protect the shared repository: simultaneous moves there still create side effects.","expert":"Concurrency creates side effects in a shared mutable resource — the repository — that conversation-level isolation cannot prevent."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"La brigade lie un agent à son propre plan de travail et rend la fusion ou la réconciliation explicite.","expert":"Lier une identité d’exécution à un workspace possédé et rendre merge/réconciliation explicites."},"en":{"kitchen":"The crew binds an agent to its own workbench and makes merging or reconciliation explicit.","expert":"Bind one execution identity to one owned workspace and make merge/reconciliation explicit."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"La convergence est nette, même si les cuisines n’offrent pas toutes le même degré de maturité.","expert":"Forte convergence émergente, avec des niveaux de maturité différents selon les produits."},"en":{"kitchen":"The convergence is clear, though kitchens do not all offer the same level of maturity.","expert":"Strong emerging convergence, with different maturity levels across products."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Faire raisonner plusieurs cuisiniers demande autant de plans de travail séparés que de mains qui modifient la recette.","expert":"Le raisonnement parallèle a besoin d’une isolation parallèle du workspace."},"en":{"kitchen":"Making several cooks reason in parallel requires as many separate workbenches as hands changing the recipe.","expert":"Parallel reasoning needs parallel workspace isolation."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:worktree-isolation-convergence",
+  "type": "dossier",
+  "slug": "worktree-isolation-convergence",
+  "route": "/dossiers/worktree-isolation-convergence/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Codex",
+      "gstack",
+      "Claude Code",
+      "Cline"
+    ],
+    "patterns": [
+      "worktrees",
+      "concurrency",
+      "convergence"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le billot partagé ne tient plus quand les commis travaillent tous en même temps",
+          "expert": "L’isolation du workspace passe de discipline développeur à infrastructure gérée"
+        },
+        "en": {
+          "kitchen": "The shared bench stops working once every cook is on it at once",
+          "expert": "Workspace isolation is moving from developer discipline to managed infrastructure"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Tant qu’un seul commis travaillait, le billot commun suffisait. À plusieurs en même temps, les préparations se mélangent. Codex, gstack, Claude Code et Cline en viennent tous à donner un plan de travail par commis. Les quatre maisons n’en sont pas au même point.",
+            "expert": "Les worktrees et mécanismes équivalents d’isolation passent de discipline développeur à infrastructure gérée par le runtime, à mesure que l’exécution parallèle devient normale. Codex, gstack, Claude Code et Cline suivent la même trajectoire, à des niveaux de maturité différents."
+          },
+          "en": {
+            "kitchen": "While one cook worked alone, the shared bench was enough. Put several on it at once and the preparations run together. Codex, gstack, Claude Code and Cline all end up handing out one bench per cook. The four houses are not equally far along.",
+            "expert": "Worktrees and equivalent isolated-workspace mechanisms are moving from developer discipline into runtime-managed infrastructure as parallel execution becomes normal. Codex, gstack, Claude Code and Cline follow the same trajectory at different maturity levels."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Du billot commun au billot par commis",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "From one shared bench to a bench each",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Avec un seul commis, le billot commun ne gêne personne.",
+            "expert": "Les workflows mono-agent tolèrent un checkout partagé."
+          },
+          "en": {
+            "kitchen": "With one cook, the shared bench bothers nobody.",
+            "expert": "Single-agent workflows could tolerate a shared checkout."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "À plusieurs, les mains se croisent dans la même préparation.",
+            "expert": "L’exécution parallèle augmente le risque de collision sur les fichiers et l’état Git."
+          },
+          "en": {
+            "kitchen": "With several cooks, hands cross inside the same preparation.",
+            "expert": "Parallel execution increased collision risk in files and Git state."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Les maisons ajoutent des consignes qui disent quel billot appartient à qui.",
+            "expert": "Les projets ajoutent des commandes et des garde-fous conscients des worktrees."
+          },
+          "en": {
+            "kitchen": "Houses start adding rules that say which bench belongs to whom.",
+            "expert": "Projects began adding worktree-aware commands and guardrails."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Certaines vont plus loin et attribuent elles-mêmes un billot à chaque travail.",
+            "expert": "Certains runtimes passent à l’allocation gérée de worktrees."
+          },
+          "en": {
+            "kitchen": "Some go further and hand out a bench for each job themselves.",
+            "expert": "Some runtimes moved to managed worktree allocation."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Savoir à qui appartient un billot devient aussi important que savoir qui cuisine.",
+            "expert": "La propriété du workspace devient une part de l’identité d’exécution."
+          },
+          "en": {
+            "kitchen": "Knowing whose bench it is becomes as important as knowing who is cooking.",
+            "expert": "Workspace ownership is becoming part of execution identity."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Chacun son bon de commande, une seule casserole",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "A pad each, and still one pot",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Donner à chacun son bon de commande ne change rien au billot. Les commis parlent chacun dans leur coin, puis plongent la main dans la même préparation. Ce qu’un cuisinier ajoute, l’autre le retrouve sans l’avoir voulu.",
+            "expert": "La concurrence produit des effets de bord dans une ressource mutable partagée — le repository — que l’isolation au niveau de la conversation ne peut pas empêcher. Isoler le contexte n’isole ni l’état du système de fichiers ni l’index Git."
+          },
+          "en": {
+            "kitchen": "Giving each cook his own order pad changes nothing about the bench. They work in their own corners, then reach into the same preparation. What one cook adds, the next one finds without asking for it.",
+            "expert": "Concurrency produces side effects in a shared mutable resource — the repository — that conversation-level isolation cannot prevent. Isolating context isolates neither filesystem state nor the Git index."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Un commis, un billot, un retour annoncé",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "One cook, one bench, one announced hand-back",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chaque commis reçoit son billot et ne touche que le sien. Quand sa préparation est prête, il l’annonce et la remet dans le plat commun devant tout le monde. Ce retour se fait à voix haute, jamais en douce.",
+            "expert": "Lier une identité d’exécution à un workspace possédé, et rendre le merge ou la réconciliation explicites. Le retour dans l’état partagé doit être une opération nommée, pas un effet de bord de l’exécution."
+          },
+          "en": {
+            "kitchen": "Each cook gets a bench and touches only his own. When his preparation is ready, he calls it and folds it into the main pot in front of everyone. That hand-back is spoken out loud, never done quietly.",
+            "expert": "Bind one execution identity to one owned workspace and make merge or reconciliation explicit. The return into shared state must be a named operation, not a side effect of execution."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Quatre maisons, la même direction, des avancées inégales",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "Four houses, one direction, uneven progress",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La convergence est nette : les quatre maisons vont dans la même direction. Elles n’y sont pas arrivées ensemble, et n’offrent pas toutes la même solidité.",
+            "expert": "Convergence émergente forte, avec des niveaux de maturité différents selon les produits. La convergence porte sur la direction prise, pas sur un mécanisme commun."
+          },
+          "en": {
+            "kitchen": "The convergence is clear: the four houses are heading the same way. They did not get there together, and they do not all offer the same solidity.",
+            "expert": "Strong emerging convergence, with different maturity levels across products. The convergence is in the direction taken, not in a shared mechanism."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Autant de billots que de mains dans la préparation",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "As many benches as there are hands in the preparation",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Faire travailler plusieurs commis en même temps demande autant de plans de travail que de mains qui touchent la préparation.",
+            "expert": "Le raisonnement parallèle exige une isolation parallèle du workspace."
+          },
+          "en": {
+            "kitchen": "Running several cooks at once takes as many benches as there are hands in the preparation.",
+            "expert": "Parallel reasoning requires parallel workspace isolation."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,223 @@
-{"schema":"argh/public-entity/v1","id":"dossier:subagents-delegation-control-plane","type":"dossier","slug":"subagents-delegation-control-plane","route":"/dossiers/subagents-delegation-control-plane/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Claude Code","Codex","Gemini CLI","Goose","Cline","OpenHands"],"patterns":["subagents","convergence","routing"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Distribuer les postes est devenu un système à part entière","expert":"La délégation est devenue son propre control plane"},"en":{"kitchen":"Assigning stations became a system of its own","expert":"Delegation became its own control plane"}},"body":[{"fr":{"cuisine":"Distribuer les postes est devenu un système à part entière. Dès que plusieurs sous-chefs se partagent le service, la distribution des postes, des messages et des responsabilités devient un mécanisme de sûreté à part entière.","expert":"Les subagents ne sont plus de simples prompts imbriqués. Routage, handoff, choix du modèle, visibilité, audit, messagerie et retour forment désormais un sous-système distinct du harnais."},"en":{"kitchen":"Assigning stations became a system of its own. Once several sous-chefs share service, assigning stations, messages and responsibility becomes a safety mechanism of its own.","expert":"Subagents are no longer just nested prompts. Routing, handoff, model choice, visibility, audit, messaging and return semantics now form a distinct harness subsystem."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Au début, déléguer revient à confier une petite commande à un autre cuisinier par une simple note.","expert":"La délégation initiale consiste souvent à demander à un prompt agent-like de réaliser une sous-tâche."},"en":{"kitchen":"At first, delegation means handing a small order to another cook with a simple note.","expert":"Early delegation often meant asking another agent-like prompt to perform a subtask."}},{"fr":{"cuisine":"Les cuisines donnent ensuite un nom aux postes délégués et indiquent quel type de cuisinier reçoit quoi.","expert":"Les produits ajoutent des rôles nommés et des métadonnées de routage."},"en":{"kitchen":"Kitchens then name delegated stations and say which kind of cook receives what.","expert":"Products added named agent roles and routing metadata."}},{"fr":{"cuisine":"Les passages de main et les messages obtiennent à leur tour des règles explicites.","expert":"Les protocoles de handoff et messagerie deviennent explicites."},"en":{"kitchen":"Hand-offs and messages in turn gain explicit rules.","expert":"Handoff and messaging protocols became explicit."}},{"fr":{"cuisine":"Avec des sous-chefs privés, il faut choisir ce qui reste visible au chef et ce qui demeure confidentiel.","expert":"Des compromis confidentialité/auditabilité apparaissent."},"en":{"kitchen":"With private sous-chefs, the kitchen must choose what stays visible to the chef and what remains confidential.","expert":"Privacy and auditability trade-offs emerged."}},{"fr":{"cuisine":"Reste à choisir ce que le chef peut voir sans trahir les sous-cuisines ; le routage et l’état deviennent des commandes à éprouver.","expert":"Capacité de routage et état des subagents deviennent des surfaces de contrôle testables."},"en":{"kitchen":"The chef must still choose what to see without betraying sub-kitchens; routing and state become controls to test.","expert":"Routing capability and subagent state became testable control surfaces."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"La délégation crée un second réseau de travail : relier ses identités, droits et résultats au chef sans écraser son autonomie ni perdre la piste d’audit.","expert":"La délégation crée un second graphe d’exécution dont identité, permissions et résultats doivent être corrélés au parent sans écraser autonomie ou auditabilité."},"en":{"kitchen":"Delegation creates a second work graph: link its identities, rights, and results to the chef without erasing autonomy or losing the audit trail.","expert":"Delegation creates a second execution graph whose identity, permissions and outcomes must be correlated with the parent without collapsing autonomy or auditability."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Traiter chaque délégation comme un cycle de vie typé, avec une identité parent-enfant explicite et une visibilité bornée.","expert":"Traiter la délégation comme lifecycle typé avec identité parent-enfant explicite et observabilité bornée."},"en":{"kitchen":"Give every sous-chef a named ticket, a visible parent, and only the window into service that their station requires.","expert":"Treat delegation as a typed lifecycle with explicit parent-child identity and bounded observability."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"Les maisons convergent vite sur cette organisation, tout en gardant des règles très différentes pour router et auditer.","expert":"Convergence rapide, avec de grandes différences dans les sémantiques de routage et d’audit."},"en":{"kitchen":"Houses converge quickly on this organisation while keeping very different routing and audit rules.","expert":"Rapid convergence, with large differences in routing and audit semantics."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Un sous-chef n’est pas une simple suite de la consigne : c’est une identité d’exécution à part entière.","expert":"Un subagent est une identité d’exécution, pas seulement une continuation de prompt."},"en":{"kitchen":"A sous-chef is not merely the next prompt: it is an execution identity in its own right.","expert":"A subagent is an execution identity, not just a prompt continuation."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:subagents-delegation-control-plane",
+  "type": "dossier",
+  "slug": "subagents-delegation-control-plane",
+  "route": "/dossiers/subagents-delegation-control-plane/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Claude Code",
+      "Codex",
+      "Gemini CLI",
+      "Goose",
+      "Cline",
+      "OpenHands"
+    ],
+    "patterns": [
+      "subagents",
+      "convergence",
+      "routing"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Distribuer les postes est devenu un métier en soi",
+          "expert": "La délégation est devenue son propre control plane"
+        },
+        "en": {
+          "kitchen": "Handing out the stations became a craft of its own",
+          "expert": "Delegation became its own control plane"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Confier une part du service à un autre cuisinier n’est plus un mot glissé au passage. Il faut dire qui prend quoi, sur quel feu, ce qu’il rapporte, ce qu’il montre et ce qu’il garde pour lui. Ce tableau des postes est devenu une pièce de la maison au même titre que les fourneaux.",
+            "expert": "Les subagents ne sont plus de simples prompts imbriqués. Routage, handoff, choix du modèle, visibilité, audit, messagerie et sémantique de retour forment désormais un sous-système distinct du harnais."
+          },
+          "en": {
+            "kitchen": "Handing part of the service to another cook is no longer a word said in passing. Someone must set who takes what, on which range, what comes back, what is shown and what is kept quiet. That station board is now as much a fixture of the house as the stoves.",
+            "expert": "Subagents are no longer nested prompts. Routing, handoff, model choice, visibility, audit, messaging and return semantics now form a distinct subsystem of the harness."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Du mot glissé au passage au tableau des postes",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "From a word in passing to a station board",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Au début, déléguer tient en une phrase lancée au cuisinier d’à côté.",
+            "expert": "La délégation initiale se réduit le plus souvent à confier une sous-tâche à un prompt agent-like."
+          },
+          "en": {
+            "kitchen": "At the start, delegating fits into one sentence thrown sideways.",
+            "expert": "Early delegation usually amounted to handing a subtask to another agent-like prompt."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Les maisons donnent ensuite un nom à chaque poste et disent quel genre de cuisinier reçoit quoi.",
+            "expert": "Les produits introduisent ensuite des rôles nommés et des métadonnées de routage."
+          },
+          "en": {
+            "kitchen": "Houses then name each station and set out what kind of cook receives what.",
+            "expert": "Products added named roles and routing metadata."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Les passages de main et les mots échangés en service reçoivent à leur tour des règles écrites.",
+            "expert": "Les protocoles de handoff et de messagerie deviennent explicites."
+          },
+          "en": {
+            "kitchen": "Hand-overs, and the words traded across the room, get written rules of their own.",
+            "expert": "Handoff and messaging protocols were made explicit."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Avec des postes qui travaillent à l’abri, il faut arbitrer ce que le chef voit et ce qu’on lui épargne.",
+            "expert": "Des compromis entre confidentialité et auditabilité apparaissent."
+          },
+          "en": {
+            "kitchen": "With stations working out of sight, the house must weigh what the chef sees against what he is spared.",
+            "expert": "Privacy and auditability started to trade off against each other."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Qui reçoit quoi, et dans quel état se trouve chaque poste, devient une chose qu’on éprouve en service.",
+            "expert": "Capacité de routage et état des subagents deviennent des surfaces de contrôle que l’on teste."
+          },
+          "en": {
+            "kitchen": "Who gets what, and how each station stands, turns into something you test during service.",
+            "expert": "Routing capability and subagent state turned into control surfaces that get tested."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Une deuxième brigade sous la première",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "A second crew under the first",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Déléguer fait apparaître une deuxième équipe qui travaille en parallèle. Chacun doit garder son nom, ses droits et son plat rattachés au chef, sans qu’on lui attache les mains pour autant.",
+            "expert": "La délégation crée un second graphe d’exécution. Identité, permissions et résultats doivent y être corrélés au parent sans écraser l’autonomie ni l’auditabilité."
+          },
+          "en": {
+            "kitchen": "Delegation raises a second crew working alongside the first. Each of them keeps a name, a set of rights and a plate that traces back to the chef, without anyone having to tie their hands to do it.",
+            "expert": "Delegation creates a second execution graph. Its identity, permissions and outcomes must be correlated with the parent without collapsing autonomy or auditability."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Donner à chaque poste un nom et une fenêtre",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Give every station a name and a window",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chaque commis à qui l’on confie une part du service reçoit un nom, un chef auquel il répond, un début et une fin. On lui ouvre la vue sur le service dont son poste a besoin, pas davantage.",
+            "expert": "Traiter la délégation comme un lifecycle typé, avec identité parent-enfant explicite et observabilité bornée."
+          },
+          "en": {
+            "kitchen": "Every cook handed a share of the service gets a name, a chef he answers to, a start and an end. He is shown as much of the room as his station needs, and no more.",
+            "expert": "Model delegation as a typed lifecycle: explicit parent-child identity, bounded observability."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Les maisons s’alignent sur l’idée, pas sur les règles",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "Houses agree on the idea, not on the rules",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Des maisons comme Claude Code, Codex, Goose, Cline ou OpenHands adoptent vite cette organisation. Chacune garde pourtant ses propres règles pour désigner qui travaille, et pour savoir ensuite qui a fait quoi.",
+            "expert": "Convergence rapide chez Claude Code, Codex, Gemini CLI, Goose, Cline et OpenHands, avec de grandes différences dans les sémantiques de routage et d’audit."
+          },
+          "en": {
+            "kitchen": "Houses such as Claude Code, Codex, Goose, Cline and OpenHands take this up fast. Each keeps its own rules for naming who does the work, and for telling afterwards who did what.",
+            "expert": "Rapid convergence across Claude Code, Codex, Gemini CLI, Goose, Cline and OpenHands, with large differences in routing and audit semantics."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Un commis n’est pas une ligne de plus sur le ticket",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "A cook is not one more line on the ticket",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Celui à qui tu confies une part du service n’est pas la suite de ta phrase. C’est quelqu’un qui répond de son plat, et dont on doit retrouver le nom au moment de l’addition.",
+            "expert": "Un subagent constitue une identité d’exécution distincte, non la continuation du prompt parent."
+          },
+          "en": {
+            "kitchen": "The one you hand a share of the service to is not the rest of your sentence. He answers for his plate, and his name has to be findable when the bill is read back.",
+            "expert": "A subagent constitutes a distinct execution identity, not a continuation of the parent prompt."
+          }
+        }
+      ]
+    }
+  ]
+}

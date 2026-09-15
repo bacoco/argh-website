@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:scope-boundary","type":"pattern","slug":"scope-boundary","route":"/patterns/scope-boundary/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["gstack"],"patterns":[],"dossiers":["session-scope-lock-became-global-state"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Une règle locale ne doit pas devenir globale","expert":"Frontière de portée"},"en":{"kitchen":"A local rule must not become global","expert":"Scope Boundary"}},"body":[{"fr":{"cuisine":"Ce qui appartient à un poste, une session ou une mission ne doit pas gouverner toute la brigade sans décision explicite.","expert":"Une frontière de portée définit où une règle, un état ou une autorité commence et cesse de s’appliquer."},"en":{"kitchen":"What belongs to one station, session or mission must not govern the whole crew without explicit authority.","expert":"A scope boundary defines where a rule, state or authority begins and ends."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:scope-boundary",
+  "type": "pattern",
+  "slug": "scope-boundary",
+  "route": "/patterns/scope-boundary/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "gstack"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "session-scope-lock-became-global-state"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "La consigne d’un soir commandait encore des services qu’elle ne connaissait pas",
+          "expert": "Un contrôle destiné à une seule session a survécu en état global à la machine"
+        },
+        "en": {
+          "kitchen": "One night’s note was still running services it had never seen",
+          "expert": "A control meant for one session survived as machine-global state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez gstack, un soir difficile, quelqu’un punaise au mur : on ne touche qu’à cette réserve-là. La consigne ne dit pas quelle maison, ni qui l’a écrite, ni quand la retirer. Les services suivants la lisent encore, dans un autre bâtiment, et comprennent une autre réserve.",
+            "expert": "gstack conservait dans un état global à la machine la frontière d’édition d’un mode de débogage, écrite en chemin relatif et jamais effacée. Le hook chargé de l’appliquer résolvait cette valeur contre le répertoire de travail courant de chaque invocation : un dépôt ou un worktree ultérieur héritait donc d’une frontière effective différente à partir du même état périmé. L’effet inter-session est reproduit ; aucun correctif fusionné, aucune version livrée, aucune récupération terrain n’est établie."
+          },
+          "en": {
+            "kitchen": "At gstack, on a bad night, someone pins a note up: tonight we touch that store cupboard only. The note names no house, no author and no closing time. Later services still read it, in another building, and understand a different cupboard.",
+            "expert": "gstack kept the edit boundary of a debug mode in machine-global state, written as a relative path and never cleared. The hook enforcing it resolved that value against each invocation’s current working directory, so a later repository or worktree inherited a different effective boundary from the same stale state. The cross-session effect is reproduced; no merged fix, no shipped release and no field recovery is established."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Un poste bloqué sans que personne ait rien demandé",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "A station shut with nobody having asked for it",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un commis se fait arrêter alors qu’il n’a rien à voir avec l’affaire de la veille. La consigne au mur est toujours là, sans date, sans nom, et plus personne ne sait qui l’a mise. Chez gstack, on a pu refaire la scène à volonté : même consigne, autre bâtiment, autre réserve interdite.",
+            "expert": "Le signal est une contrainte qui s’applique à une session sans rapport avec celle qui l’a posée, sans propriétaire identifiable ni échéance. Un second signal est le déplacement de sens : la même valeur persistée désigne une zone différente selon le répertoire de travail courant. Chez gstack, l’effet est reproductible à la demande, ce qui distingue le défaut d’une anomalie ponctuelle."
+          },
+          "en": {
+            "kitchen": "A cook gets stopped although he has nothing to do with last night’s business. The note is still on the wall, no date, no name, and nobody remembers pinning it. At gstack the scene replayed on demand: same note, another building, another cupboard shut.",
+            "expert": "The signal is a constraint applying to a session unrelated to the one that set it, with no identifiable owner and no expiry. A second signal is the shift of meaning: the same persisted value designates a different zone depending on the current working directory. At gstack the effect reproduces on demand, which separates the defect from a one-off anomaly."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Deux oublis dans la même consigne",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Two things missing from the same note",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une consigne au mur dit « cette réserve », et tout le monde comprend celle qu’on a sous les yeux. Change de bâtiment : les mots ne bougent pas, la réserve désignée, si. Il manquait aussi l’heure de fin, et une consigne sans fin garde son autorité bien après le soir qui la justifiait.",
+            "expert": "Deux propriétés indépendantes ont été confondues sous un seul enregistrement : l’identité de ce qui est désigné et la durée pendant laquelle la désignation fait autorité. Un chemin relatif ne désigne rien de stable une fois sorti du répertoire de base contre lequel il a été écrit, tandis qu’un stockage global à la machine prolonge une décision au-delà de la session qui la justifiait. La tromperie est que l’enregistrement reste littéralement exact : la valeur relue est bien celle qui a été écrite."
+          },
+          "en": {
+            "kitchen": "A note says “that cupboard”, and everyone understands the one in front of them. Move buildings: the words hold still, the cupboard they name does not. The closing time was missing too, and a note without an end keeps its authority long past the night that earned it.",
+            "expert": "Two independent properties were collapsed into one record: the identity of what is designated, and how long that designation carries authority. A relative path designates nothing stable once it leaves the base directory it was written against, while machine-global storage extends a decision past the session that justified it. The deception is that the record stays literally accurate: the value read back is the value that was written."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Punaiser proprement : l’adresse, le nom, l’heure de fin",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Pin it properly: the address, the name, the closing time",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Écris l’adresse complète de la réserve, pas « celle d’à côté », et signe la consigne. Donne-lui une fin : le service, la mission, ton départ. En partant, retire la tienne et seulement la tienne, après avoir vérifié que c’est bien la même feuille. Chez gstack, rien de tel n’a encore été mis en place.",
+            "expert": "Persister une décision porteuse d’autorité sous une identité absolue stable, avec un propriétaire enregistré et une portée explicite, par session ou par workspace. La libération se fait par comparaison puis suppression de l’enregistrement exact créé, afin qu’un nettoyage ne retire pas une contrainte plus récente ou appartenant à l’utilisateur. Chez gstack, le rapport reste ouvert et aucun correctif fusionné n’est établi."
+          },
+          "en": {
+            "kitchen": "Write the cupboard’s full address, not “the one next door”, and sign the note. Give it an end: the service, the job, the moment you leave. On your way out take down yours and only yours, once you have checked it is the same sheet. At gstack nothing of the sort is in place yet.",
+            "expert": "Persist an authority-bearing decision under a stable absolute identity, with a recorded owner and an explicit scope, per session or per workspace. Release compares before deleting, removing only the exact record it created, so a cleanup cannot drop a newer or user-owned constraint. At gstack the report stays open and no merged fix is established."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La règle que la consigne de gstack a laissée au mur",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The rule the gstack note left on the wall",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une consigne qui commande doit dire où elle s’applique, qui l’a posée et quand elle tombe. Sans ces trois-là, elle finit par diriger un service qui ne l’a jamais demandée.",
+            "expert": "Un état porteur d’autorité exige à la fois une identité stable et une durée de vie explicite. L’absence de l’une des deux suffit : la portée effective d’une règle cesse alors d’être celle que son auteur avait décidée."
+          },
+          "en": {
+            "kitchen": "A note that gives orders must say where it applies, who pinned it and when it ends. Without those three it ends up running a service that never asked for it.",
+            "expert": "Authority-bearing state requires both a stable identity and an explicit lifetime. Missing either one is enough: the effective scope of a rule then stops being the one its author decided."
+          }
+        }
+      ]
+    }
+  ]
+}

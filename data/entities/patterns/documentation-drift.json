@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:documentation-drift","type":"pattern","slug":"documentation-drift","route":"/patterns/documentation-drift/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Gemini CLI"],"patterns":[],"dossiers":["skills-default-on-docs-lag"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"La carte décrit encore hier alors que la cuisine a changé","expert":"Dérive de documentation"},"en":{"kitchen":"The menu still describes yesterday’s kitchen","expert":"Documentation Drift"}},"body":[{"fr":{"cuisine":"Le lecteur peut suivre une règle devenue fausse si la documentation n’évolue pas avec le système réel.","expert":"La dérive de documentation apparaît lorsque la documentation publique ne reflète plus le comportement ou les valeurs par défaut effectifs."},"en":{"kitchen":"A reader can follow a rule that is no longer true when documentation lags behind the live system.","expert":"Documentation drift occurs when published documentation no longer reflects effective behavior or defaults."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:documentation-drift",
+  "type": "pattern",
+  "slug": "documentation-drift",
+  "route": "/patterns/documentation-drift/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Gemini CLI"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "skills-default-on-docs-lag"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "La cuisine a changé de réglage, le classeur est resté sur l’ancien",
+          "expert": "La documentation publiée ne décrit plus le comportement effectif"
+        },
+        "en": {
+          "kitchen": "The kitchen changed its setting, the binder stayed on the old one",
+          "expert": "Published documentation no longer describes effective behavior"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Gemini CLI, les fiches sont passées d’un essai qu’il fallait demander à un réglage servi d’office. Le classeur et les écrans ont gardé l’ancien mot, exprès, pour ne pas dérouter ceux qui travaillent encore à l’ancienne. Un lecteur y apprend donc un service qui n’est plus celui du jour.",
+            "expert": "La dérive de documentation apparaît lorsque la documentation publiée ne reflète plus le comportement ou les valeurs par défaut effectifs. Chez Gemini CLI, les skills sont passés d’un mode expérimental opt-in à un comportement activé par défaut, et les noms de configuration d’une sémantique expérimentale à une sémantique stable. Documentation et interface ont conservé le vocabulaire antérieur, volontairement, pour ne pas casser les utilisateurs d’anciennes versions."
+          },
+          "en": {
+            "kitchen": "At Gemini CLI the cards moved from a trial you had to ask for to a setting served by default. The binder and the screens kept the older word on purpose, so nobody still working the old way would be thrown. A reader there learns a service that is no longer today’s.",
+            "expert": "Documentation drift appears when published documentation no longer reflects effective behavior or defaults. At Gemini CLI, skills moved from experimental opt-in to on-by-default, and configuration names moved from experimental to stable semantics. Documentation and UI deliberately kept the earlier vocabulary so that users on older versions would not break."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Quand la page et le fourneau ne disent pas la même chose",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "When the page and the stove disagree",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le mot de la page appartient encore à la période d’essai, alors que le plat sort tout seul depuis des semaines. Le nom du réglage a changé sur le fourneau, pas dans le classeur. Et une même page doit être vraie pour plusieurs saisons à la fois, ce qui n’arrive jamais.",
+            "expert": "Le défaut documenté diverge du réglage effectivement appliqué à l’exécution. Le vocabulaire de configuration bascule d’expérimental à stable sans que la page publiée suive. Une seule page non versionnée prétend décrire plusieurs générations, et le retard peut être délibéré au nom de la compatibilité."
+          },
+          "en": {
+            "kitchen": "The word on the page still belongs to the trial period, while the dish has been going out on its own for weeks. The name of the setting changed on the stove, not in the binder. And one page is expected to be true for several seasons at once, which never happens.",
+            "expert": "The documented default diverges from the setting actually applied at runtime. Configuration vocabulary moves from experimental to stable while the published page does not follow. One unversioned page claims to describe several generations, and the lag may be deliberate in the name of compatibility."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi un classeur en retard ne paraît pas fautif",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a binder running late does not look wrong",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "L’ancien mot a été gardé pour rendre service, pas par négligence. Rien ne signale l’écart : la page est propre, elle a simplement raison pour une autre saison. Le lecteur applique une règle qui a cessé d’être vraie pour lui, sans aucune raison de s’en méfier.",
+            "expert": "Une documentation non versionnée tente de décrire plusieurs générations d’exécution en même temps. Le lecteur ne peut pas savoir pour quelle version la phrase est vraie, et un retard délibéré ressemble à un choix de compatibilité plutôt qu’à une erreur. C’est ce qui rend la dérive difficile à détecter : la page n’est fausse que relativement à la version employée."
+          },
+          "en": {
+            "kitchen": "The old word was kept as a kindness, not out of neglect. Nothing marks the gap: the page is clean, it is simply right about another season. The reader applies a rule that stopped being true for him, with no reason at all to distrust it.",
+            "expert": "Unversioned documentation tries to describe several runtime generations at once. The reader cannot tell which version a sentence is true for, and a deliberate lag looks like a compatibility choice rather than an error. That is what makes the drift hard to detect: the page is false only relative to the version in use."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Dater les pages, et montrer le réglage sur le fourneau",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Date the pages, and show the setting on the stove",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une page qui annonce un changement de réglage doit dire pour quelles saisons elle vaut. Et le réglage réellement en marche doit se lire sur le fourneau lui-même, pas dans le classeur. Personne ne devrait avoir à croire une page pour savoir ce que fait la cuisine.",
+            "expert": "Versionner la documentation qui décrit un changement de comportement, en nommant les versions auxquelles chaque valeur par défaut s’applique. Exposer dans le produit le réglage effectivement actif, pour que le lecteur constate au lieu de déduire. Chez Gemini CLI, les skills se comportent désormais davantage comme des composants d’exécution que comme de simples prompts optionnels."
+          },
+          "en": {
+            "kitchen": "A page that announces a change of setting must say which seasons it holds for. And the setting actually running should be readable on the stove itself, not in the binder. Nobody should have to believe a page to know what the kitchen is doing.",
+            "expert": "Version the documentation that describes a behavior change, naming the versions each default applies to. Surface the effective setting inside the product, so the reader observes instead of inferring. At Gemini CLI, skills now behave more like runtime components than like optional prompts."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Un classeur sans saison n’est vrai pour personne",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "A binder with no season is true for nobody",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Quand un réglage change, la page doit dire à partir de quand. Sinon elle reste vraie pour hier et fausse pour aujourd’hui, et le lecteur ne sait pas laquelle des deux il tient.",
+            "expert": "Un changement de valeur par défaut exige une documentation consciente des versions. La page doit nommer les versions pour lesquelles la nouvelle valeur est effectivement servie."
+          },
+          "en": {
+            "kitchen": "When a setting changes, the page must say from when. Otherwise it stays true for yesterday and false for today, and the reader cannot tell which of the two he is holding.",
+            "expert": "A default change requires version-aware documentation. The page must name the versions for which the new value is actually served."
+          }
+        }
+      ]
+    }
+  ]
+}

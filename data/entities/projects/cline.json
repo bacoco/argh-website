@@ -1,1 +1,248 @@
-{"schema":"argh/public-entity/v1","id":"project:cline","type":"project","slug":"cline","route":"/projects/cline/","template":"project","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":[],"patterns":["checkpoint","concurrency","control-plane","convergence","destructive-write","hooks-enforcement","mcp","routing","runtime-boundary","runtime-identity","skills-runtime","subagents","testing","trust-boundary","worktrees"],"dossiers":["cline-hooks-control-layer","mcp-common-protocol-local-policy","skills-cross-harness-convergence","hooks-cross-harness-convergence","subagents-delegation-control-plane","recovery-state-convergence","worktree-isolation-convergence","control-plane-convergence","apply-patch-add-overwrite"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Cline","expert":"Cline"},"en":{"kitchen":"Cline","expert":"Cline"}},"body":[{"fr":{"cuisine":"Neuf dossiers publics sur les gestes de cuisine difficiles avec Cline : répartir le travail, tenir les outils et les hooks sous contrôle, puis vérifier qu’une écriture n’a rien écrasé.","expert":"9 dossiers publics rattachés à Cline."},"en":{"kitchen":"Nine public dossiers about Cline’s tricky kitchen work: dividing work, keeping tools and hooks under control, then checking that a write did not overwrite anything.","expert":"9 public dossiers associated with Cline."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "project:cline",
+  "type": "project",
+  "slug": "cline",
+  "route": "/projects/cline/",
+  "template": "project",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [],
+    "patterns": [
+      "checkpoint",
+      "concurrency",
+      "control-plane",
+      "convergence",
+      "destructive-write",
+      "hooks-enforcement",
+      "mcp",
+      "routing",
+      "runtime-boundary",
+      "runtime-identity",
+      "skills-runtime",
+      "subagents",
+      "testing",
+      "trust-boundary",
+      "worktrees"
+    ],
+    "dossiers": [
+      "cline-hooks-control-layer",
+      "mcp-common-protocol-local-policy",
+      "skills-cross-harness-convergence",
+      "hooks-cross-harness-convergence",
+      "subagents-delegation-control-plane",
+      "recovery-state-convergence",
+      "worktree-isolation-convergence",
+      "control-plane-convergence",
+      "apply-patch-add-overwrite"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Cline",
+          "expert": "Cline"
+        },
+        "en": {
+          "kitchen": "Cline",
+          "expert": "Cline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Cline, on a longtemps compté sur la consigne dite à voix haute. Un commis peut l’entendre et faire autrement. Alors la maison a arrêté de demander et a posé des portes : on ne passe pas sans qu’elles s’ouvrent.",
+            "expert": "Chez Cline, les règles au niveau prompt n’étaient qu’indicatives : rien ne garantissait leur application. Les hooks sont devenus le point de contrôle structurel, d’abord aux frontières de prompt, d’outil, de tâche et de contexte, puis jusqu’à la frontière de compaction."
+          },
+          "en": {
+            "kitchen": "At Cline the house long relied on a rule said out loud. A commis can hear it and still do otherwise. So the house stopped asking and put in doors: nothing passes unless they open.",
+            "expert": "At Cline, prompt-level rules were advisory: nothing made them deterministically enforced. Hooks became the structural control point, first at prompt, tool, task and context boundaries, then out to the compaction boundary."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "De la consigne dite à la porte qui ferme",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "From a rule said out loud to a door that shuts",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Au départ, une règle est une phrase. On la donne, on espère qu’elle est suivie.",
+            "expert": "Les instructions au niveau prompt ou règle ne sont pas appliquées de façon déterministe."
+          },
+          "en": {
+            "kitchen": "At first a rule is a sentence. You give it and hope it is followed.",
+            "expert": "Prompt- and rule-level instructions are not deterministically enforced."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Une première porte est posée. Elle s’intercale aux moments qui comptent : avant de commander, avant de saisir un outil, au début et à la fin du travail.",
+            "expert": "Un premier ensemble de hooks est intégré : interception runtime aux frontières de prompt, d’outil, de tâche et de contexte."
+          },
+          "en": {
+            "kitchen": "A first door goes in. It sits at the moments that matter: before an order, before a tool is picked up, at the start and end of a job.",
+            "expert": "A first hook set is merged: runtime interception at prompt, tool, task and context boundaries."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La porte devient un vrai équipement. On note qui l’a franchie, on la relie à l’extérieur, on lui donne un temps au-delà duquel elle rend la main.",
+            "expert": "Les hooks deviennent un sous-système de premier rang : événements cartographiés, journaux, connecteurs, délais d’exécution."
+          },
+          "en": {
+            "kitchen": "The door becomes real equipment. Who went through gets logged, it plugs into the outside, and it is given a time after which it lets go.",
+            "expert": "Hooks become a first-class subsystem: mapped events, logs, connectors, execution timeouts."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Puis la porte atteint un moment délicat : celui où l’on recopie le carnet de service en plus court parce qu’il déborde.",
+            "expert": "Une extension intégrée porte les hooks jusqu’à la frontière de compaction du contexte."
+          },
+          "en": {
+            "kitchen": "Then the door reaches a delicate moment: the one where the service book gets copied out shorter because it has run over.",
+            "expert": "A merged extension carries hooks out to the context compaction boundary."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La maison sépare alors trois choses. Ce qu’on affiche aux commis, le carnet d’origine qu’on ne rature jamais, et la version courte qu’on peut refaire.",
+            "expert": "Des changements d’architecture intégrés séparent les instructions découvrables, l’historique canonique et le contexte de travail dérivé."
+          },
+          "en": {
+            "kitchen": "The house then separates three things. What is shown to the commis, the original book that is never crossed out, and the short version that can be redone.",
+            "expert": "Merged architecture changes separate discoverable instructions, canonical history and derived working context."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Désormais, ces changements-là sont annoncés en clair quand la maison présente ses nouveautés.",
+            "expert": "Les notes de version encodent explicitement ces changements de plan de contrôle : visibilité des skills, discovery de plugins, orchestration, comportements runtime."
+          },
+          "en": {
+            "kitchen": "These days those changes get spelled out plainly whenever the house presents what is new.",
+            "expert": "Release notes now explicitly encode these control-plane changes: skill visibility, plugin discovery, orchestration, runtime behavior."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi une phrase ne suffit pas",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a sentence is not enough",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une phrase peut être entendue de travers, ou simplement oubliée quand le service accélère. Une porte, non : elle s’ouvre ou elle ne s’ouvre pas. Et quand une porte prend cette place, il faut savoir ce qui se passe le jour où c’est elle qui casse.",
+            "expert": "Une instruction au niveau prompt n’a pas d’application déterministe : le flux a besoin d’une interception runtime à la frontière de cycle de vie concernée. Mais un hook qui garde la compaction n’est plus une liste de rappels : le harnais doit exposer exactement quel contexte lui est disponible, s’il peut annuler ou modifier, et ce qui se produit quand le hook lui-même échoue. Le même déplacement se lit ailleurs : une primitive décrite comme un ajout pouvait remplacer silencieusement un fichier existant parce que son contrôle de sécurité consultait un état incomplet au lieu d’interroger la destination à la frontière destructive."
+          },
+          "en": {
+            "kitchen": "A sentence can be heard wrong, or simply forgotten when service speeds up. A door cannot: it opens or it does not. And once a door holds that place, you need to know what happens the day the door itself breaks.",
+            "expert": "A prompt-level instruction has no deterministic enforcement: the workflow needs runtime interception at the relevant lifecycle boundary. But a hook that guards compaction is no longer a callback list: the harness must expose exactly what context it sees, whether it can cancel or modify, and what happens when the hook itself fails. The same displacement shows elsewhere: a primitive described as an add could silently replace an existing file because its safety check consulted incomplete state instead of interrogating the destination at the destructive boundary."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Où poser la porte, et quoi garder intact",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Where to hang the door, and what to keep whole",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une règle qui doit toujours tenir se pose là où le geste se fait, pas sur le mur. Le carnet d’origine se garde intact, à part. La version courte, on peut la refaire autant de fois qu’il faut ; elle ne doit jamais devenir la seule qui reste.",
+            "expert": "Quand une règle doit toujours tenir, la déplacer du conseil au niveau prompt vers une porte runtime à la frontière de cycle de vie concernée. Traiter chaque hook comme un contrôle doté de sémantiques d’échec déclarées, et non comme un simple point d’extension. Persister l’historique de conversation canonique indépendamment des skills, des résumés et des projections de compaction ; le contexte dérivé doit rester jetable et re-dérivable."
+          },
+          "en": {
+            "kitchen": "A rule that must always hold goes where the gesture happens, not on the wall. The original book is kept whole, kept apart. The short version can be redone as often as needed; it must never become the only one left.",
+            "expert": "When a rule must always hold, move it from prompt-level advice to a runtime gate at the relevant lifecycle boundary. Treat every hook as a control with declared failure semantics, not merely an extension point. Persist canonical conversation history independently of skills, summaries and compaction projections; derived context must stay disposable and re-derivable."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Où en est Cline",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "Where Cline stands",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Les portes sont posées, celle du carnet recopié comprise, et les trois carnets sont bien séparés. Ce qui manque, c’est de les avoir vues tenir dans les cuisines où l’on s’en sert vraiment. Et l’ordre exact des derniers ajouts n’a pas été reconstitué.",
+            "expert": "Le premier ensemble de hooks et l’extension de compaction sont intégrés, de même que les deux changements d’architecture séparant état source de vérité et contexte dérivé. Le schéma courant est plus riche que l’ensemble minimal intégré en 2025 ; la chronologie exacte des ajouts d’événements ultérieurs reste incomplète. La corrélation avec une version publiée et un runtime installé n’est pas faite. Un changement annoncé en notes de version reste une revendication, pas une validation terrain."
+          },
+          "en": {
+            "kitchen": "The doors are in, the one on the copied book included, and the three books are properly kept apart. What is missing is seeing them hold in the kitchens where they are actually used. And the exact order of the last additions has not been pieced back together.",
+            "expert": "The first hook set and the compaction extension are merged, as are both architecture changes separating source-of-truth state from derived context. The current schema is richer than the minimal set merged in 2025; the exact chronology of later event additions is still incomplete. Correlation with a published release tag and an installed runtime has not been done. A change announced in release notes remains a claim, not field validation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que la porte a appris à la maison",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What the door taught the house",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une règle qu’on répète est une règle qu’on peut oublier. Si elle doit toujours tenir, elle appartient au geste et pas à la phrase. Et une nouveauté annoncée reste une annonce tant que personne ne l’a vue tenir en plein service.",
+            "expert": "Une règle qui doit toujours tenir appartient à une porte runtime, pas à un conseil de prompt. Une note de version est un delta de plan de contrôle de premier rang, mais la revendication ne se confond pas avec une validation terrain."
+          },
+          "en": {
+            "kitchen": "A rule you keep repeating is a rule that can be forgotten. If it must always hold, it belongs in the gesture, not in the sentence. And an announced change stays an announcement until somebody has seen it hold through service.",
+            "expert": "A rule that must always hold belongs in a runtime gate, not in prompt advice. A release note is a first-class control-plane delta, but the claim is not the same thing as field validation."
+          }
+        }
+      ]
+    }
+  ]
+}

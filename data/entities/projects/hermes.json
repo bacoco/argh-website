@@ -1,1 +1,240 @@
-{"schema":"argh/public-entity/v1","id":"project:hermes","type":"project","slug":"hermes","route":"/projects/hermes/","template":"project","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":[],"patterns":["false-green","runtime-boundary","testing","uncertainty"],"dossiers":["unknown-flattened-to-empty","green-test-wrong-seam"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Hermes","expert":"Hermes"},"en":{"kitchen":"Hermes","expert":"Hermes"}},"body":[{"fr":{"cuisine":"Deux dossiers publics pour ne pas prendre un écran vert pour un plat réussi : l’inconnu ne devient pas vide, et un test peut très bien regarder au mauvais endroit.","expert":"2 dossiers publics rattachés à Hermes."},"en":{"kitchen":"Two public dossiers for not mistaking a green screen for a successful dish: unknown does not become empty, and a test can be looking in the wrong place.","expert":"2 public dossiers associated with Hermes."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "project:hermes",
+  "type": "project",
+  "slug": "hermes",
+  "route": "/projects/hermes/",
+  "template": "project",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [],
+    "patterns": [
+      "false-green",
+      "runtime-boundary",
+      "testing",
+      "uncertainty"
+    ],
+    "dossiers": [
+      "unknown-flattened-to-empty",
+      "green-test-wrong-seam"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Hermes",
+          "expert": "Hermes"
+        },
+        "en": {
+          "kitchen": "Hermes",
+          "expert": "Hermes"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Hermes a été pris à l’essai un soir, sur un seul plat et un seul fourneau. Il a très bien travaillé. Trois choses, ce soir-là, ne se règlent pas en changeant la consigne — et c’est pour ça qu’il n’a pas été embauché.",
+            "expert": "Hermes Agent est un agent CLI à outils — mémoire persistante, sous-agents, tâches programmées, skills auto-créés — dont la seule surface sans terminal interactif est le mode oneshot. Une sonde bornée l’a qualifié : une tâche, un modèle, une passerelle locale compatible OpenAI. Trois constats mesurés ne relèvent pas de la configuration, et Loriq refuse la liaison comme worker en code, pas en prose."
+          },
+          "en": {
+            "kitchen": "Hermes was given a trial shift: one dish, one stove, one evening. He worked well. Three things that night cannot be fixed by changing the instructions — and that is why he was not hired.",
+            "expert": "Hermes Agent is a tool-using CLI agent — persistent memory, subagents, scheduled tasks, self-authored skills — whose only non-interactive surface is oneshot mode. A bounded probe qualified it: one task, one model, one local OpenAI-compatible gateway. Three measured findings are not configuration problems, and Loriq refuses the worker binding in code rather than in prose."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Un soir d’essai, du premier geste au refus",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "One trial shift, from first move to refusal",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Rien que le faire entrer a demandé du soin. Il refuse d’être livré en caisse fermée, alors on l’a monté à part, dans un coin qui ne touche à rien.",
+            "expert": "Le paquet refuse d’être construit en wheel. L’installation s’est donc faite en mode éditable, dans un environnement isolé hors du dépôt."
+          },
+          "en": {
+            "kitchen": "Getting him through the door took care in itself. He refuses to arrive in a sealed crate, so he was set up apart, in a corner that touches nothing.",
+            "expert": "The package refuses to build as a wheel. Installation was therefore done editable, inside an isolated environment outside the repository."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Ensuite, il travaille. Sans qu’on lui tienne la main, il rend le plat demandé. Tout ce qu’il pose reste dans son coin, et quand on le reprend, il repart de la même ligne sans en ouvrir une seconde.",
+            "expert": "Contre une passerelle locale compatible OpenAI, Hermes répond correctement sans terminal interactif. Tout son état tient sous HERMES_HOME, et l’installation personnelle du propriétaire de la machine est restée identique. La reprise rouvre exactement la même ligne de session, sans créer un second enfant."
+          },
+          "en": {
+            "kitchen": "Then he works. Nobody holds his hand and the dish comes back. Everything he sets down stays in his corner, and picking him up again carries on the same line instead of opening a second one.",
+            "expert": "Against a local OpenAI-compatible gateway, Hermes answers correctly with no interactive terminal. All of its state stays under HERMES_HOME, and the machine owner’s personal installation was left untouched. Resume reopens exactly the same session line without spawning a second child."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Premier accroc : quand le fournisseur ne répond pas, il rend quand même l’assiette. Elle est vide, l’erreur est écrite dessus, mais il annonce un service normal.",
+            "expert": "Premier constat mesuré : un échec fournisseur — 400, 401, connexion refusée — sort en code 0, l’erreur étant écrite sur la sortie standard. Le statut de sortie ne distingue donc pas un appel abouti d’un appel refusé."
+          },
+          "en": {
+            "kitchen": "First snag: when the supplier does not answer, he still sends out a plate. It is empty, the error is written across it, but he calls it a normal service.",
+            "expert": "First measured finding: a provider failure — 400, 401, connection refused — exits with code 0 and writes the error to standard output. Exit status therefore cannot separate a completed call from a refused one."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Deuxième accroc : quand on le renvoie, une partie de lui reste. Le poste qu’il avait ouvert continue de tourner, rattaché à la maison, hors de tout ce qu’on sait éteindre.",
+            "expert": "Deuxième constat : après un SIGTERM, le shell de l’outil terminal survit, rattaché à PPID 1, hors du groupe de processus tué par l’appelant. L’arrêt du parent ne garantit pas l’arrêt de ce qu’il a lancé."
+          },
+          "en": {
+            "kitchen": "Second snag: when he is sent home, part of him stays. The station he opened keeps running, attached to the house itself, outside everything we know how to shut down.",
+            "expert": "Second finding: after SIGTERM the tool’s terminal shell survives, reparented to PPID 1 and outside the process group the caller kills. Stopping the parent does not guarantee stopping what it started."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Troisième accroc : un appel part sur un fourneau que personne n’a autorisé. Et il ne figure nulle part sur la note de fin de service.",
+            "expert": "Troisième constat : un appel auxiliaire tourne sur un modèle que personne n’a autorisé et n’apparaît pas dans le rapport d’usage du moteur. Le rapport n’est donc pas exhaustif sur la consommation réelle."
+          },
+          "en": {
+            "kitchen": "Third snag: a call goes out on a stove nobody authorised. And it appears nowhere on the end-of-service bill.",
+            "expert": "Third finding: an auxiliary call runs on a model nobody authorised and does not appear in the engine’s usage report. The report is therefore not exhaustive about real consumption."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Trois choses ont quand même été gardées de la soirée. La note de fin de service comme seule preuve que le travail a eu lieu. La liste des outils permis comme seule barrière une fois les autorisations tombées. Et l’obligation de lui donner son coin à lui, et la place où travailler.",
+            "expert": "Trois motifs ont été repris et rien d’autre : le rapport d’usage comme seul signal de succès, l’allowlist de jeux d’outils comme unique surface de droits une fois les approbations tombées, et le couple HERMES_HOME plus TERMINAL_CWD comme obligation. Le premier cloisonne l’état ; le second est le seul levier qui place l’enfant dans l’arbre candidat."
+          },
+          "en": {
+            "kitchen": "Three things were kept from that evening all the same. The end-of-service bill as the only proof that work happened. The list of permitted tools as the only barrier once approvals fall away. And the duty to give him his own corner, and the bench he works on.",
+            "expert": "Three patterns were taken and nothing else: the usage report as the only success signal, the toolset allowlist as the sole rights surface once approvals fall away, and the HERMES_HOME plus TERMINAL_CWD pair as an obligation. The first confines state; the second is the only lever that places the child in the candidate tree."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Au bout du compte, il n’a pas été embauché, et ce refus n’est pas qu’une phrase. La porte est fermée par écrit, et les outils qui laisseraient le moteur se donner du travail sont nommés et refusés. On ne prend jamais non plus le Hermes qu’on trouve sous la main : ce serait celui du patron, avec ses clés et ses souvenirs.",
+            "expert": "Le refus de lier Hermes comme worker est écrit en code, pas en prose. La fonction qui autoriserait la liaison refuse toujours en nommant les constats ; les jeux d’outils qui laisseraient le moteur créer du travail non autorisé sont refusés par leur nom ; la sonde de qualification est absente de la configuration par défaut. Hermes est également tenu hors de la détection par PATH : un binaire trouvé là serait l’installation personnelle du propriétaire de la machine, avec ses identifiants, ses sessions et sa mémoire. Le lanceur doit donc être un chemin absolu vers une installation isolée, refusé sinon dès la lecture de la configuration."
+          },
+          "en": {
+            "kitchen": "In the end he was not hired, and that refusal is more than a sentence. The door is shut in writing, and the tools that would let the engine make its own work are named and refused. Nor is the Hermes lying to hand ever the one taken: that one belongs to the owner, with his keys and his memory.",
+            "expert": "The refusal to wire Hermes as a worker is written in code, not prose. The function that would authorise the binding always refuses while naming the findings; the toolsets that would let the engine create unauthorised work are refused by name; the qualification probe is absent from the default configuration. Hermes is also kept out of PATH detection: a binary found there would be the machine owner’s personal installation, with its credentials, sessions and memory. The launcher must therefore be an absolute path to an isolated installation, refused at config read otherwise."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi un bon service peut cacher trois trous",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a good shift can hide three holes",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Les trois accrocs se ressemblent : ce qui devrait porter la mauvaise nouvelle ne la porte pas. L’assiette revient comme d’habitude, le renvoi ne renvoie pas tout, la note ne compte pas tout. Chaque fois, l’absence de signal passe pour un service normal.",
+            "expert": "Les trois constats partagent une frontière manquante. Le code de sortie ne porte pas l’échec fournisseur, le groupe de processus ne couvre pas le shell réparenté, et le rapport d’usage ne couvre pas l’appel auxiliaire. Un contrôle n’est une frontière que si son domaine d’interception et ses chemins de contournement sont explicites ; un domaine omis reste un chemin de contournement."
+          },
+          "en": {
+            "kitchen": "The three snags rhyme: whatever should carry the bad news does not carry it. The plate comes back as usual, sending him home sends only part of him, the bill counts only part. Each time, a missing signal passes for a normal service.",
+            "expert": "The three findings share a missing boundary. Exit status does not carry provider failure, the process group does not cover the reparented shell, and the usage report does not cover the auxiliary call. A control is a boundary only once its intercepted domain and its bypass paths are explicit; an omitted domain stays a bypass path."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on a gardé de lui, et la porte qu’on a fermée",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What was kept from him, and the door that was shut",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On a gardé ses bonnes habitudes sans le garder, lui. La note de fin de service dit si le travail a eu lieu. La liste des outils permis tient lieu de barrière quand plus personne ne surveille. Et la porte est fermée par écrit, pas par principe : on a noté pourquoi.",
+            "expert": "La réponse est une frontière, pas un correctif : Loriq consomme trois motifs d’Hermes et refuse la liaison comme worker, refus porté par le code et non par un paragraphe. Le rapport d’usage sert de seul signal de succès précisément parce que le code de sortie a été mesuré non fiable. L’allowlist de jeux d’outils devient l’unique surface de droits une fois les approbations tombées, et le cloisonnement d’état est une obligation, pas une option."
+          },
+          "en": {
+            "kitchen": "His good habits were kept; he was not. The end-of-service bill says whether the work happened. The list of permitted tools stands as the barrier once nobody is watching. And the door is shut in writing, not on principle: the reason is written down.",
+            "expert": "The response is a boundary, not a fix: Loriq consumes three patterns from Hermes and refuses the worker binding, the refusal carried by code rather than a paragraph. The usage report serves as the only success signal precisely because exit status was measured unreliable. The toolset allowlist becomes the sole rights surface once approvals fall away, and state confinement is an obligation rather than an option."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Un seul plat, un seul soir : ce que ça prouve",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "One dish, one evening: what that proves",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui a été éprouvé tient en peu de choses : un plat, un fourneau, une soirée. Le reste de ce qu’il sait faire n’a pas été essayé, et on n’en dira rien. Ce qu’une maison annonce savoir faire n’est pas ce qu’on a vu ici.",
+            "expert": "Ce qui est qualifié est une sonde bornée : une tâche, un modèle, une passerelle locale. Les backends SSH et conteneur, le mode plein écran, la passerelle de messagerie, les tâches programmées, les sous-agents, le MCP et tout autre modèle ne sont pas qualifiés. Une capacité annoncée par l’amont n’est pas une capacité vérifiée ici. L’observation de la surface skills — configuration, catalogues, index, audit — n’est rattachée à aucune référence connue."
+          },
+          "en": {
+            "kitchen": "What was tested comes to very little: one dish, one stove, one evening. The rest of what he can do was never tried, and nothing will be claimed about it. What a house advertises is not what was seen here.",
+            "expert": "What is qualified is a bounded probe: one task, one model, one local gateway. SSH and container backends, full-screen mode, the messaging gateway, scheduled tasks, subagents, MCP and every other model are not qualified. A capability advertised upstream is not a capability verified here. The observation of the skills surface — configuration, catalogues, index, audit — is not pinned to any known reference."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’un essai réussi ne dit pas",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What a good trial shift does not say",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un bon essai prouve qu’il sait faire ce plat-là, ce soir-là. Il ne dit rien du reste de la carte, ni de ce qui reste allumé quand il est parti.",
+            "expert": "Un signal de succès ne vaut que s’il porte l’échec : code de sortie, arrêt de processus et rapport d’usage doivent chacun couvrir leur domaine, sinon ils fabriquent du vert. Et une preuve bornée reste bornée — elle ne s’étend ni aux modèles, ni aux backends, ni aux surfaces qu’elle n’a pas touchés."
+          },
+          "en": {
+            "kitchen": "A good trial proves he can cook that dish, that night. It says nothing about the rest of the menu, nor about what stays lit after he leaves.",
+            "expert": "A success signal is only worth what its failure path carries: exit status, process termination and usage reporting must each cover their domain or they manufacture green. And bounded evidence stays bounded — it does not extend to models, backends or surfaces the probe never touched."
+          }
+        }
+      ]
+    }
+  ]
+}

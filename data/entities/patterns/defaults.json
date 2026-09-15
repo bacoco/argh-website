@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:defaults","type":"pattern","slug":"defaults","route":"/patterns/defaults/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Gemini CLI"],"patterns":[],"dossiers":["skills-default-on-docs-lag"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Ce qui se passe sans consigne explicite compte","expert":"Valeurs par défaut"},"en":{"kitchen":"What happens without an explicit instruction matters","expert":"Defaults"}},"body":[{"fr":{"cuisine":"La brigade suit toujours une règle, même quand personne ne l’a choisie explicitement pour ce service.","expert":"Les valeurs par défaut déterminent le comportement effectif en l’absence d’une configuration explicite et peuvent changer entre versions."},"en":{"kitchen":"The crew always follows some rule, even when nobody explicitly chose it for this service.","expert":"Defaults determine effective behavior when no explicit configuration is supplied and can change between versions."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:defaults",
+  "type": "pattern",
+  "slug": "defaults",
+  "route": "/patterns/defaults/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Gemini CLI"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "skills-default-on-docs-lag"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Personne n’a demandé ce plat, c’est pourtant celui qui sort",
+          "expert": "Le comportement effectif quand personne n’a rien configuré"
+        },
+        "en": {
+          "kitchen": "Nobody ordered it that way, and that is the way it goes out",
+          "expert": "Effective behaviour when nobody configured anything"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Personne n’a demandé de changer la sauce. Elle a changé quand même : la maison a changé sa règle, et cette règle s’applique dès que personne ne dit rien. Le cahier au mur décrit encore l’ancienne sauce, exprès, pour les maisons restées à l’édition d’avant. Gemini CLI a vécu ce décalage.",
+            "expert": "Les valeurs par défaut déterminent le comportement effectif en l’absence de configuration explicite, et elles changent entre versions. Sur Gemini CLI, les Agent Skills sont passés d’un mode expérimental opt-in à un comportement activé par défaut, tandis que documentation et interface conservaient volontairement l’ancien vocabulaire expérimental pour ne pas casser les versions précédentes."
+          },
+          "en": {
+            "kitchen": "Nobody asked for the sauce to change. It changed anyway: the house rule moved, and the house rule is what applies when no one specifies. The book on the wall still describes the old sauce, deliberately, for houses on the previous edition. Gemini CLI lived that gap.",
+            "expert": "Defaults decide effective behaviour when no explicit configuration is supplied, and they shift between versions. In Gemini CLI, Agent Skills moved from opt-in experimental to on-by-default while the documentation and UI deliberately kept the older experimental vocabulary so earlier versions would not break."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Le cahier dit une chose, l’assiette en dit une autre",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "The book says one thing, the plate says another",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le cahier annonce une option « à essayer » alors qu’elle est déjà la règle de la maison. Deux maisons d’éditions différentes lisent la même page et ne servent pas la même chose. Rien dans la salle ne dit quelle règle est réellement appliquée ce soir. On ne découvre le changement qu’en goûtant.",
+            "expert": "La documentation décrit une capacité comme expérimentale ou opt-in alors que le comportement est déjà activé par défaut. Les noms de configuration conservent une sémantique expérimentale après la promotion, et deux versions lisent la même documentation avec des comportements effectifs différents. Le réglage réellement appliqué n’est exposé nulle part dans le produit."
+          },
+          "en": {
+            "kitchen": "The book still offers something to try when it is already the house rule. Two houses on different editions read the same page and send out different plates. Nothing in the room tells you which rule is actually running tonight. You find the change out by tasting.",
+            "expert": "Documentation still frames a capability as experimental or opt-in while the behaviour is already on by default. Configuration names keep their experimental semantics after promotion, and two versions read the same page yet behave differently. The setting actually in force is surfaced nowhere in the product."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Une règle que personne n’a choisie, personne ne va la vérifier",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "A rule nobody chose is a rule nobody goes to check",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une règle de maison ne figure sur aucune commande : personne ne l’a choisie pour ce service, donc personne ne va la relire. Elle passe pour un décor, alors qu’elle décide. Et un cahier unique qui doit décrire plusieurs générations de maison ne peut pas être juste pour toutes. Il reste en retard, volontairement, et ce retard ressemble à une erreur.",
+            "expert": "Un défaut est le seul réglage que personne n’a écrit, et donc celui que personne ne relit avant de s’y fier. Une documentation non versionnée tente de décrire simultanément plusieurs générations de runtime ; son retard est délibéré, destiné à ne pas casser les versions antérieures, et devient indiscernable d’une erreur. Le lecteur ne peut donc pas déduire le comportement effectif de sa propre version."
+          },
+          "en": {
+            "kitchen": "A house rule shows up on no ticket: nobody picked it for tonight, so nobody goes back to read it. It passes for scenery while it is doing the deciding. And one book asked to describe several generations of house cannot be right for all of them. It lags on purpose, and the lag looks like a mistake.",
+            "expert": "A default is the one setting nobody wrote, and therefore the one nobody re-reads before relying on it. Unversioned documentation tries to describe several runtime generations at once; its lag is deliberate, meant to avoid breaking earlier versions, and becomes indistinguishable from an error. Readers cannot infer the effective behaviour of their own version."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Dater la page, et montrer la règle du soir dans la salle",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Date the page, and show tonight’s rule in the room",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Datez la page qui annonce un changement de règle et dites pour quelles éditions elle vaut. Affichez dans la salle la règle réellement appliquée ce soir, pas celle du cahier. Quand la maison promeut une option en règle, changez son nom au même moment, sinon l’ancien nom continue de circuler.",
+            "expert": "Versionner la documentation qui décrit un changement de comportement et indiquer explicitement à partir de quelle version le nouveau défaut s’applique. Exposer dans le produit le réglage effectif plutôt que le réglage documenté. Faire suivre le renommage des clés de configuration au moment de la promotion, afin que le vocabulaire expérimental ne survive pas au statut expérimental."
+          },
+          "en": {
+            "kitchen": "Date the page that announces a change of rule, and say which editions it holds for. Post in the room the rule that is actually running tonight, not the one in the book. When the house promotes an option into a rule, change its name at the same moment; otherwise the old name keeps travelling.",
+            "expert": "Version the documentation that describes a behaviour change and state explicitly from which release the new default applies. Surface the effective setting inside the product rather than the documented one. Rename configuration keys at promotion time so that experimental vocabulary does not outlive experimental status."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Une règle de maison qui change doit dire depuis quand",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "A house rule that changes must say since when",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qu’on fait quand personne n’a rien dit est une décision, pas un détail. Quand elle change, le cahier doit dire pour quelles éditions la nouvelle règle est réellement servie.",
+            "expert": "Les changements de défaut ont besoin d’une documentation consciente des versions. Un défaut promu sans renommage ni borne de version laisse coexister deux comportements sous un seul vocabulaire."
+          },
+          "en": {
+            "kitchen": "What you do when nobody has said anything is a decision, not a detail. When it changes, the book has to say which editions actually get the new rule.",
+            "expert": "Default changes need version-aware documentation. A default promoted without a rename or a version bound leaves two behaviours coexisting under one vocabulary."
+          }
+        }
+      ]
+    }
+  ]
+}

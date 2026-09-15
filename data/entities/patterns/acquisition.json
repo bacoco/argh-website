@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:acquisition","type":"pattern","slug":"acquisition","route":"/patterns/acquisition/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Continue"],"patterns":[],"dossiers":["continue-readonly-without-archive"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Une nouvelle source entre dans la cuisine","expert":"Acquisition de source"},"en":{"kitchen":"A new source joins the kitchen","expert":"Source Acquisition"}},"body":[{"fr":{"cuisine":"Une nouvelle source n’entre dans la veille qu’après avoir été identifiée, comprise et bornée.","expert":"Motif décrivant l’entrée contrôlée d’une nouvelle source dans le périmètre de recherche."},"en":{"kitchen":"A new source joins the watch only after it has been identified, understood and bounded.","expert":"Pattern describing controlled admission of a new source into the research perimeter."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:acquisition",
+  "type": "pattern",
+  "slug": "acquisition",
+  "route": "/patterns/acquisition/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Continue"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "continue-readonly-without-archive"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Avant d’ajouter une maison à sa liste, savoir lire sa devanture",
+          "expert": "Une source admise sans ses limites rend un verdict faux"
+        },
+        "en": {
+          "kitchen": "Before a house joins your list, learn to read its front",
+          "expert": "A source admitted without its limits returns a false verdict"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Avant d’ajouter une maison à la liste de celles qu’on suit, on apprend à lire sa devanture. Chez Continue, rien n’était condamné et aucun écriteau n’annonçait la fin. C’est l’équipe qui l’avait dite, pas la porte. Qui ne regarde que la porte repart en croyant qu’on sert encore.",
+            "expert": "Une source n’entre dans le périmètre de veille qu’une fois identifiée, comprise et bornée : ce que ses métadonnées encodent, et ce qu’elles n’encodent pas. Continue en donne le cas limite : le projet est explicitement déclaré non maintenu activement alors que son repository reste non archivé. Un contrôle limité au flag archive y conclut donc à tort que le projet est vivant."
+          },
+          "en": {
+            "kitchen": "Before a house goes on the list you follow, you learn to read its front. At Continue nothing was boarded up and no notice announced the end. The crew had said it, not the door. Anyone reading only the door walks away thinking dinner is still served.",
+            "expert": "A source enters the watch perimeter only once it is identified, understood and bounded: what its metadata encodes, and what it leaves out. Continue is the limiting case: the project is explicitly declared no longer actively maintained while its repository stays unarchived. A check limited to the archive flag therefore returns a wrong live verdict."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on regarde avant d’ajouter une maison à la liste",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "What you read before a house goes on your list",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La porte, la carte encore affichée, ce que l’équipe a annoncé en partant, et le nom de celui qui tient la maison aujourd’hui. Quatre choses, quatre histoires différentes. Chez Continue, la porte ne disait rien et l’équipe avait tout dit.",
+            "expert": "À l’admission, plusieurs signaux coexistent et ne prouvent pas la même chose : métadonnées de plateforme, annonce des mainteneurs, posture de release finale, changement de successeur ou de propriété. Sur Continue, l’état réel est porté par l’annonce et la posture de dernière release, tandis que le flag archive reste silencieux. Aucun de ces signaux ne suffit seul, et c’est ici le flag qui aurait produit la lecture fausse."
+          },
+          "en": {
+            "kitchen": "The door, the menu still posted, what the crew announced on their way out, and whose name is over the place now. Four things, four different stories. At Continue the door said nothing while the crew had said everything.",
+            "expert": "At admission several signals coexist and do not prove the same thing: platform metadata, maintainer announcements, final-release posture, successor or ownership change. On Continue, real status is carried by the announcement and the final-release posture while the archive flag stays silent. None of those signals is sufficient alone, and here it is the flag that would have produced the wrong reading."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi la devanture trompe sans mentir",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why the front misleads without lying",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui est écrit sur la porte est vrai ; ce n’est qu’un détail de la devanture. Rien n’oblige personne à le changer quand les fourneaux s’arrêtent. Et si tu as inscrit la maison sur ta liste en ne regardant que la porte, c’est la porte que tu reliras toujours.",
+            "expert": "Les métadonnées de plateforme ne sont qu’une source d’état parmi d’autres et ne portent aucune obligation de refléter la décision produit. L’admission hérite de cet écart : une source admise sur un seul signal est ensuite relue indéfiniment à travers ce signal. Le défaut ne se manifeste pas comme une panne, mais comme un verdict stable et faux."
+          },
+          "en": {
+            "kitchen": "What is written on the front is true; it is only one detail of the front. Nobody is obliged to change it when the stoves go cold. And if the house joined your list on the strength of the door alone, the door is all you will ever read.",
+            "expert": "Platform metadata is one source of status among others and carries no obligation to track the product decision. Admission inherits that gap: a source admitted on a single signal is then read through that signal indefinitely. The defect never surfaces as a breakdown, only as a stable and wrong verdict."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Écrire ce que la maison peut et ne peut pas dire",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Write down what the house can and cannot tell you",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Quand tu inscris une maison sur ta liste, note aussi ce que sa devanture ne te dira jamais. Demande ce que l’équipe a annoncé, et si quelqu’un a repris l’affaire. Une maison qu’on suit sans savoir lire ses signes répond toujours, mais jamais à la question posée.",
+            "expert": "Borner la source à l’admission : consigner quel signal fait autorité pour quelle question, et déclarer ce que la source ne peut pas établir. Croiser métadonnées, posture de maintenance annoncée et changements de propriété ou de successeur avant d’émettre un verdict. Une source entrée sans cette borne reste utilisable, mais son verdict n’est plus interprétable."
+          },
+          "en": {
+            "kitchen": "When a house joins your list, write down too what its front will never tell you. Ask what the crew announced, and whether anyone took the place over. A house you follow without knowing how to read it always answers, but never the question you asked.",
+            "expert": "Bound the source at admission: record which signal is authoritative for which question, and state what the source cannot establish. Cross metadata, stated maintenance posture and successor or ownership changes before issuing a verdict. A source admitted without that bound stays usable, but its verdict is no longer interpretable."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on retient : un écriteau n’est pas un verdict",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What to keep: a notice is not a verdict",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une liste ne vaut que par ce qu’on sait y lire. Inscrire une maison sans savoir ce que sa devanture tait, c’est s’acheter une réponse nette et fausse. Chez Continue, la devanture disait « ouvert » et les fourneaux étaient froids.",
+            "expert": "Admettre une source, c’est admettre en même temps ce que ses signaux ne prouvent pas. Le flag archive est une preuve, jamais la définition de la fin d’un projet : un repository non archivé peut correspondre à un produit explicitement non maintenu, et c’est exactement ce que Continue établit."
+          },
+          "en": {
+            "kitchen": "A list is only worth what you can read on it. Taking a house in without knowing what its front leaves unsaid buys you a clean, wrong answer. At Continue the front said open while the stoves were cold.",
+            "expert": "Admitting a source means admitting, at the same time, what its signals do not prove. The archive flag is evidence, never the definition of a project’s end: an unarchived repository can correspond to a product explicitly declared unmaintained, which is exactly what Continue establishes."
+          }
+        }
+      ]
+    }
+  ]
+}

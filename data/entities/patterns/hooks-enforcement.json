@@ -1,1 +1,164 @@
-{"schema":"argh/public-entity/v1","id":"pattern:hooks-enforcement","type":"pattern","slug":"hooks-enforcement","route":"/patterns/hooks-enforcement/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Claude Code","Cline","Codex","Gemini CLI","Goose","OpenHands","SWE-agent"],"patterns":[],"dossiers":["stop-hook-authority-overreach","hook-shared-state-crossed-workers","goose-hooks-observer-to-enforcer","cline-hooks-control-layer","openhands-hook-blocking-state","gemini-trust-couples-hooks-mcp-instructions","hooks-cross-harness-convergence","safety-control-failure-became-permission","control-plane-convergence"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Contrôler l’action au moment où elle se produit","expert":"Application des règles par hooks"},"en":{"kitchen":"Check the action at the moment it happens","expert":"Hooks Enforcement"}},"body":[{"fr":{"cuisine":"Une règle importante est plus fiable lorsqu’elle peut arrêter ou corriger l’action au point exact où elle se produit.","expert":"Les hooks d’enforcement appliquent une politique au moment de l’exécution plutôt que de dépendre uniquement d’une instruction préalable."},"en":{"kitchen":"An important rule is stronger when it can stop or correct the action at the exact point it happens.","expert":"Enforcement hooks apply policy at execution time rather than relying only on prior instructions."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:hooks-enforcement",
+  "type": "pattern",
+  "slug": "hooks-enforcement",
+  "route": "/patterns/hooks-enforcement/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Claude Code",
+      "Cline",
+      "Codex",
+      "Gemini CLI",
+      "Goose",
+      "OpenHands",
+      "SWE-agent"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "stop-hook-authority-overreach",
+      "hook-shared-state-crossed-workers",
+      "goose-hooks-observer-to-enforcer",
+      "cline-hooks-control-layer",
+      "openhands-hook-blocking-state",
+      "gemini-trust-couples-hooks-mcp-instructions",
+      "hooks-cross-harness-convergence",
+      "safety-control-failure-became-permission",
+      "control-plane-convergence"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Quelqu’un au passe qui peut retenir l’assiette",
+          "expert": "La politique s’applique au point d’action, plus en amont"
+        },
+        "en": {
+          "kitchen": "Someone at the pass who can hold the plate back",
+          "expert": "Policy applied at the point of action, not upstream"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Longtemps, on a affiché la consigne au tableau en espérant qu’elle soit lue. Chez Cline, Goose et OpenHands, quelqu’un se tient maintenant au passe et peut retenir l’assiette avant qu’elle parte. Le tableau explique ; l’homme au passe décide.",
+            "expert": "Un hook d’enforcement applique une politique au moment de l’exécution plutôt que de dépendre d’une instruction préalable. Dans les principaux harnais, les hooks ont convergé depuis de simples notifications de lifecycle vers le blocage, l’injection de contexte, la télémétrie et le contrôle de reprise. Le lifecycle de Goose trace cette trajectoire : callbacks non bloquants, puis blocage explicite PreToolUse, puis comportement configurable quand le hook lui-même échoue."
+          },
+          "en": {
+            "kitchen": "For years the rule went up on the board and you hoped it was read. At Cline, Goose and OpenHands, someone now stands at the pass and can hold a plate back before it leaves. The board explains; the one at the pass decides.",
+            "expert": "An enforcement hook applies policy at execution time instead of relying on a prior instruction. Across the major harnesses, hooks have converged from plain lifecycle notifications toward blocking, context injection, telemetry and resumption control. Goose's hook lifecycle traces that path: non-blocking callbacks, then explicit PreToolUse blocking, then configurable behavior when the hook itself fails."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui distingue un vrai contrôle au passe d’un écriteau",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "What tells a real check at the pass from a sign on the wall",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le vrai contrôle dit non, et on l’entend. Chez OpenHands, chaque assiette retenue laisse une marque : qui a arrêté quoi, et quand. La maison a aussi décidé combien de temps on l’attend, et ce qu’on fait s’il n’est pas là.",
+            "expert": "Trois marqueurs concrets identifient le motif : un verdict bloquant disponible au point d’appel, un timeout d’exécution borné, et un comportement défini quand le contrôle lui-même échoue. Cline l’a matérialisé en architecture explicite : événements mappés, journaux, connecteurs, timeouts d’exécution, intégration à la compaction. OpenHands expose les événements d’exécution de hooks avec résultats success et blocked via ses surfaces runtime et UI/API, ce qui rend la décision inspectable plutôt qu’invisible."
+          },
+          "en": {
+            "kitchen": "A real check says no, and you hear it. At OpenHands, every plate held back leaves a mark: who stopped what, and when. The house has also settled how long a plate waits for him, and what happens when he is not there.",
+            "expert": "Three concrete markers identify the pattern: a blocking verdict available at the call site, a bounded execution timeout, and defined behavior when the check itself fails. Cline turned this into explicit architecture: mapped events, logs, connectors, execution timeouts, compaction integration. OpenHands surfaces hook execution events with success and blocked outcomes through its runtime and UI/API layers, which makes the decision inspectable rather than invisible."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "On raisonne sur la consigne, jamais sur celui qui la tient",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "You reason about the rule, never about the one holding it",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "L’erreur est de penser à la consigne et d’oublier l’homme. Il peut tomber malade, et son absence n’est pas une autorisation de servir. Il peut confondre son rôle : posté pour retenir un plat, il se met à en commander un que personne n’a demandé. Et à deux services en parallèle, il mélange les tickets.",
+            "expert": "Un point d’enforcement est raisonné comme une règle alors que c’est un programme sur le chemin critique, avec sa propre panne, son propre scope et son propre état. Quand le contrôle échoue, le choix — continuer, bloquer, retry, exposer l’incertitude — devient lui-même une décision de sécurité. Un stop hook destiné à forcer la persistance a pu être interprété comme une autorité pour poursuivre l’exécution alors que l’utilisateur demandait seulement un plan. Une instance de hook stockant l’environnement et les données de problème de chaque run dans des champs ordinaires laissait des workers parallèles s’écraser mutuellement et enregistrer des résultats dans le mauvais run."
+          },
+          "en": {
+            "kitchen": "The mistake is to think about the rule and forget the man. He can fall ill, and his absence is not permission to serve. He can mistake his job: posted to hold a dish back, he starts ordering one nobody asked for. And with two services running at once, he mixes up the tickets.",
+            "expert": "An enforcement point gets reasoned about as a rule when it is a program on the critical path, with its own failure, its own scope and its own state. When the check fails, the choice — continue, block, retry, expose uncertainty — is itself a safety decision. A stop hook meant to force persistence could be read as authority to keep executing while the user had asked only for a plan. A hook instance holding each run's environment and problem data in ordinary fields let parallel workers overwrite one another and record results against the wrong run."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Lui dire jusqu’où il décide, et ce qu’on fait sans lui",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Tell him how far he decides, and what happens without him",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Écrivez ce qu’il a le droit d’arrêter, et ce qui ne le regarde pas. Décidez d’avance : s’il manque, on ferme le passe, on attend, ou on sert en le disant. Donnez-lui un carnet par service, jamais un carnet commun. Chez Gemini, personne du dehors ne place son homme au passe ni ne glisse sa note dans le carnet.",
+            "expert": "Un garde-fou a besoin d’un scope, pas seulement d’un objectif : l’intention d’un contrôle ne borne pas l’autorité qu’on lui prête. La panne d’un contrôle de sécurité n’est pas une décision d’approbation ; la sémantique d’échec — continuer, bloquer, retry, exposer l’incertitude — se définit avant la panne, ce que Goose a rendu configurable. L’état par run reste isolé plutôt que partagé entre instances. Le modèle de confiance de Gemini CLI désactive ensemble hooks projet, serveurs MCP et fichiers d’instructions dans les dossiers non fiables, les traitant comme une même classe d’influence exécutable."
+          },
+          "en": {
+            "kitchen": "Write down what he may stop, and what is none of his business. Decide in advance: if he is missing, the pass closes, the plate waits, or it goes out and the room is told. Give him one book per service, never a shared one. At Gemini, no outsider posts his own man at the pass, and no outside note enters the book.",
+            "expert": "A guardrail needs a scope, not only a goal: the intent behind a check does not bound the authority readers grant it. A safety control's failure is not an approval decision; the failure semantics — continue, block, retry, expose uncertainty — are settled before the failure, which is what Goose made configurable. Per-run state stays isolated rather than shared across instances. Gemini CLI's trust model disables project hooks, MCP servers and instruction files together in untrusted directories, treating them as one class of executable influence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Un contrôle vaut ce que valent ses limites",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "A check is worth exactly what its limits are worth",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui tient une maison n’est plus la note affichée, c’est ce qui se passe au passe, à l’instant où l’assiette part. Ce poste a donc besoin de limites écrites, d’un remplaçant prévu, et d’une marque laissée à chaque décision. Sinon ce n’est pas un contrôle, c’est une habitude.",
+            "expert": "Le control plane se rapproche des frontières d’action : les principaux produits d’agents convergent vers les mêmes mécanismes périphériques — hooks, skills, délégation, confiance, reprise, workspaces et protocoles. Dès qu’un hook contrôle le lifecycle, il exige des sémantiques runtime de niveau produit : scope explicite, sémantique d’échec définie, isolation d’état, trace observable de ce qu’il a décidé. En production, le harnais détermine de plus en plus si l’intelligence est réellement utile."
+          },
+          "en": {
+            "kitchen": "What holds a house together is no longer the note on the wall. It is what happens at the pass, the moment the plate leaves. So that post needs written limits, a stand-in agreed in advance, and a mark left for every call it makes. Otherwise it is not a check, it is a habit.",
+            "expert": "The control plane keeps moving toward action boundaries: the major agent products converge on the same peripheral mechanisms — hooks, skills, delegation, trust, resumption, workspaces and protocols. Once a hook controls the lifecycle it demands product-grade runtime semantics: explicit scope, defined failure semantics, state isolation, and an observable trace of what it decided. In production, the harness increasingly decides whether the intelligence is actually useful."
+          }
+        }
+      ]
+    }
+  ]
+}

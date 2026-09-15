@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:permissions","type":"pattern","slug":"permissions","route":"/patterns/permissions/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Claude Code"],"patterns":[],"dossiers":["permission-ui-approved-wrong-action"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Autoriser la bonne action, pas seulement cliquer sur oui","expert":"Permissions"},"en":{"kitchen":"Approve the right action, not merely click yes","expert":"Permissions"}},"body":[{"fr":{"cuisine":"Une autorisation n’est utile que si elle décrit exactement l’action qui sera réellement exécutée.","expert":"Les permissions bornent les actions possibles ; leur portée et leur représentation doivent correspondre à l’effet réel de l’opération."},"en":{"kitchen":"An approval is useful only when it describes the action that will actually happen.","expert":"Permissions bound allowed actions; their scope and representation must match the operation’s real effect."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:permissions",
+  "type": "pattern",
+  "slug": "permissions",
+  "route": "/patterns/permissions/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Claude Code"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "permission-ui-approved-wrong-action"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "On signe pour un pas de côté, on accorde le geste d’à côté",
+          "expert": "Le prompt mettait en avant le segment anodin d’une commande composée"
+        },
+        "en": {
+          "kitchen": "You sign for a step sideways, you grant the act riding behind it",
+          "expert": "The prompt foregrounded the harmless segment of a composed command"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Claude Code, on tend un papier à signer avant d’agir. Il annonce un geste sans conséquence : passer d’une pièce à l’autre. Dans le même mouvement, un second geste engage vraiment la maison, et le papier ne le nomme pas. On signe la première ligne, on accorde la seconde.",
+            "expert": "Sur des commandes shell composées, le prompt de permission de Claude Code pouvait mettre en avant un changement de répertoire anodin tandis que l’opération Git significative restait masquée derrière. L’utilisateur validait un libellé sans rapport avec l’autorité réellement accordée. Un correctif structurel a amélioré la segmentation et la priorité des règles de refus ; une récidive côté affichage a suivi. Cette récidive établit que la correction du parsing et la sémantique d’approbation sont deux problèmes distincts."
+          },
+          "en": {
+            "kitchen": "At Claude Code a slip comes up for signing before anything is done. It names a harmless move: step from one room into the next. Riding with it is a second act that truly binds the house, and the slip never says so. The signature covers the line you read, not the one you gave away.",
+            "expert": "On composed shell commands, Claude Code’s permission prompt could foreground an innocuous directory change while the meaningful Git operation stayed hidden behind it. The user approved a label unrelated to the authority actually granted. A structural fix improved segmentation and deny-rule precedence, and a later display-side recurrence followed. That recurrence is the evidence that parser correctness and approval semantics are two separate problems."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que dit un papier mal rédigé",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "What a badly written slip tells you",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le papier nomme toujours le plus petit des gestes demandés. Le geste qui engage la maison n’y figure nulle part. Et il revient à chaque service, identique, sans qu’on puisse jamais l’inscrire une fois pour toutes sur la liste des accords.",
+            "expert": "Trois signes suffisent. Le libellé soumis nomme un segment à faible risque d’une opération composée ; l’action de plus haute autorité contenue dans la même opération n’apparaît pas ; le prompt se répète sans qu’aucune règle d’autorisation durable puisse le couvrir utilement. La répétition n’est pas une gêne d’ergonomie, c’est le symptôme que la décision porte sur le mauvais objet."
+          },
+          "en": {
+            "kitchen": "The slip always names the smallest of the moves being asked for. The move that binds the house appears nowhere on it. And it comes back every service, word for word, so it can never be put on the standing list of things already agreed.",
+            "expert": "Three signs are enough. The submitted label names a low-risk segment of a composed operation; the highest-authority action inside that same operation is absent from the label; and the prompt repeats without any durable allow rule being able to cover it usefully. The repetition is not an ergonomic annoyance, it is the symptom that the decision is bound to the wrong object."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Bien découpé, mal annoncé",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Cut correctly, announced wrongly",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La maison a raison de découper la demande en gestes séparés : c’est ce qu’il faut faire. L’erreur vient d’après, quand elle choisit lequel écrire sur le papier. Elle retient le plus inoffensif, et c’est celui-là qu’on lit. Le client accorde ce qu’il lit, pas ce qui suit.",
+            "expert": "Le parser peut être syntaxiquement correct alors que l’interface retient un segment à faible risque comme action représentative. La tromperie tient à ce que la décision est réelle et appliquée : seule sa description est fausse. La répétition du prompt empêche par ailleurs toute mise en liste blanche utile, ce qui pousse à approuver plus vite et plus large."
+          },
+          "en": {
+            "kitchen": "Splitting the request into separate moves is right, and the house does it properly. The mistake comes one step later, in picking which move goes on the slip. It picks the most harmless one, and that is the one anybody reads. What is granted is what was read, never what came after.",
+            "expert": "A parser can be syntactically correct while the interface still picks a low-risk segment as the representative action. What makes it deceptive is that the decision is real and enforced: only its description is wrong. The repeated prompt also blocks any useful allow-listing, which pushes users to approve faster and broader."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Écrire sur le papier le geste le plus lourd",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Put the heaviest act on the slip",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Sur le papier, on écrit ce que la demande fait en entier, et d’abord le geste le plus lourd qu’elle contient. Le premier geste venu ne représente rien. Tant que le papier ment, soigner sa présentation ne répare rien : c’est la demande elle-même qu’il faut décrire.",
+            "expert": "Un prompt de permission doit résumer l’effet sémantique de la commande complète et afficher l’action de plus haute autorité qu’elle contient. Le premier segment parsable n’est pas un candidat acceptable pour représenter la décision. La récidive après le correctif structurel situe le travail restant dans la correction de l’enforcement, non dans sa présentation."
+          },
+          "en": {
+            "kitchen": "The slip must say what the whole request does, and lead with the heaviest act inside it. Whichever move comes first stands for nothing. While the slip lies, tidying how it looks fixes nothing; what has to be described is the request itself.",
+            "expert": "A permission prompt must summarise the semantic effect of the whole command and display the highest-authority action it contains. The first parsable segment is not an acceptable candidate to represent the decision. The recurrence after the structural fix places the remaining work inside enforcement correctness, not inside its presentation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "On n’accorde que ce que le papier dit",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "You grant only what the slip says",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On n’accorde jamais que ce qui est écrit sur le papier qu’on signe. Si le papier nomme le plus petit geste, le plus grand passe sans avoir été demandé à personne.",
+            "expert": "Approuver la mauvaise description n’est pas une approbation éclairée. L’accord ne couvre que ce que le libellé énonce, indépendamment de ce que le système exécute ensuite."
+          },
+          "en": {
+            "kitchen": "A signature covers the words on the slip and nothing else. Name the smallest move there and the biggest one goes through without ever having been asked for.",
+            "expert": "Approving the wrong description is not informed approval. Consent extends only as far as the label states, regardless of what the system then executes."
+          }
+        }
+      ]
+    }
+  ]
+}

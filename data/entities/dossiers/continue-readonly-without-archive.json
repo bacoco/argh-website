@@ -1,1 +1,218 @@
-{"schema":"argh/public-entity/v1","id":"dossier:continue-readonly-without-archive","type":"dossier","slug":"continue-readonly-without-archive","route":"/dossiers/continue-readonly-without-archive/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Continue"],"patterns":["project-mortality","read-only","acquisition"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"La porte était ouverte, mais plus personne ne pouvait cuisiner","expert":"Le repository semblait ouvert. Le produit était déjà devenu read-only."},"en":{"kitchen":"The door was open, but nobody could cook anymore","expert":"The repository looked open. The product had already become read-only."}},"body":[{"fr":{"cuisine":"La porte était ouverte, mais plus personne ne pouvait cuisiner. Une enseigne peut rester allumée alors que la cuisine, l’équipe ou la stratégie ont déjà déménagé. Les signaux administratifs ne disent pas seuls si le service vit encore.","expert":"Continue a montré l’inverse d’une heuristique courante : un repository n’a pas besoin d’être archivé pour que le projet soit explicitement déclaré non maintenu activement."},"en":{"kitchen":"The door was open, but nobody could cook anymore. A sign can stay lit after the kitchen, team or strategy has moved. Administrative activity alone does not prove the service is alive.","expert":"Continue demonstrated the inverse of a common heuristic: a repository need not be archived for the project to be explicitly no longer actively maintained."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"La cuisine fonctionnait comme un écosystème vivant autour de l’assistance au code.","expert":"Le projet fonctionne comme écosystème actif d’assistant de code."},"en":{"kitchen":"The kitchen operated as a living coding-assistant ecosystem.","expert":"The project operated as an active coding-assistant ecosystem."}},{"fr":{"cuisine":"Puis les conditions autour de l’équipe ont changé, avant même qu’un panneau ne le dise.","expert":"Le contexte organisationnel change."},"en":{"kitchen":"Then the team’s surrounding circumstances changed before any sign said so.","expert":"Organizational circumstances changed."}},{"fr":{"cuisine":"Une dernière fournée a été annoncée, avec la consigne de consulter le menu sans attendre de nouveau service.","expert":"Une release finale et une posture read-only sont communiquées."},"en":{"kitchen":"A final batch was announced, with the menu left readable but no new service promised.","expert":"A final release and read-only posture were communicated."}},{"fr":{"cuisine":"Le drapeau d’archive GitHub ne raconte pas à lui seul que le produit est déjà passé en lecture seule.","expert":"L’état archive de GitHub n’encode pas complètement le nouvel état produit."},"en":{"kitchen":"GitHub’s archive flag alone does not tell that the product has already become read-only.","expert":"GitHub archive state did not fully encode the new product state."}},{"fr":{"cuisine":"Le rideau GitHub n’a pourtant pas suffi à raconter ce changement : vérifier seulement l’archive aurait laissé croire au service.","expert":"Un simple check archive produirait donc un faux signal de vie."},"en":{"kitchen":"The GitHub shutter did not tell the whole story: checking archive status alone would falsely suggest service continued.","expert":"A superficial archive check would therefore produce a false alive signal."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Les métadonnées de plateforme ne sont qu’un indice : l’annonce des mainteneurs et la dernière release peuvent décrire l’état réel mieux que le drapeau d’archive.","expert":"Les métadonnées de plateforme ne sont qu’une source d’état projet. L’intention des mainteneurs et la posture de release finale peuvent primer sur le flag archive."},"en":{"kitchen":"Platform metadata is only one clue: maintainer intent and the final release can describe real status better than the archive flag.","expert":"Platform metadata is only one source of project state. Maintainer intent and final-release posture can outrank the archive flag."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Croiser les métadonnées du dépôt avec la posture de maintenance annoncée et les éventuels changements de successeur ou de propriétaire.","expert":"Combiner métadonnées du repository, posture explicite de maintenance et changements de successeur ou propriété."},"en":{"kitchen":"Combine repository metadata with the announced maintenance posture and any successor or ownership changes.","expert":"Combine repository metadata with explicit maintenance posture and successor/ownership changes."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"Le menu reste lisible, mais personne ne tient activement la cuisine, archive ou pas.","expert":"Read-only / non maintenu activement, sans dépendre uniquement du statut archive."},"en":{"kitchen":"The menu remains readable, but nobody is actively running the kitchen, archived or not.","expert":"Read-only / no longer actively maintained, despite not relying on archive status alone."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"L’archive est un indice parmi d’autres, jamais la définition suffisante de la fin d’un projet.","expert":"Archive est une preuve, pas la définition de la mort."},"en":{"kitchen":"Archive status is one clue, never a sufficient definition of a project’s end.","expert":"Archive is evidence, not the definition of death."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:continue-readonly-without-archive",
+  "type": "dossier",
+  "slug": "continue-readonly-without-archive",
+  "route": "/dossiers/continue-readonly-without-archive/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Continue"
+    ],
+    "patterns": [
+      "project-mortality",
+      "read-only",
+      "acquisition"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Aucun écriteau de fermeture sur la porte, et pourtant plus personne aux fourneaux",
+          "expert": "Le projet est passé en read-only sans que le repository soit archivé"
+        },
+        "en": {
+          "kitchen": "No closing notice on the door, and nobody at the stoves",
+          "expert": "The project went read-only without the repository being archived"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Continue, la porte n’était pas condamnée. Aucun écriteau ne disait que la maison avait fermé. En entrant, on trouvait la carte encore affichée et les fourneaux froids. C’est l’équipe qui avait annoncé la fin, pas la porte.",
+            "expert": "Continue a produit l’inverse d’une heuristique courante : le projet est explicitement déclaré non maintenu activement sans que le repository soit archivé. L’état réel est porté par l’annonce des mainteneurs et une posture de release finale, pas par le flag de plateforme. Un contrôle qui ne lit que le flag archive conclut ici à tort que le projet est vivant."
+          },
+          "en": {
+            "kitchen": "At Continue nothing was boarded up. No notice on the door said the place had closed. Walk in and you found the menu still posted and the stoves cold. The end had been announced by the crew, not by the door.",
+            "expert": "Continue inverts a common heuristic: the project is explicitly declared no longer actively maintained while the repository stays unarchived. Real status is carried by the maintainers’ announcement and a final-release posture, not by the platform flag. A check that reads only the archive flag returns a false alive verdict here."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Comment les fourneaux se sont éteints sans écriteau",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "How the stoves went cold with nothing on the door",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La maison tournait, avec ses habitués et toute une vie autour d’elle.",
+            "expert": "Le projet fonctionne comme un écosystème actif d’assistant de code."
+          },
+          "en": {
+            "kitchen": "The place was running, with regulars and a whole life around it.",
+            "expert": "The project operates as an active coding-assistant ecosystem."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Puis la situation de l’équipe a changé, bien avant qu’on l’écrive quelque part.",
+            "expert": "Le contexte organisationnel de l’équipe change."
+          },
+          "en": {
+            "kitchen": "Then the crew’s circumstances changed, well before anything was written down.",
+            "expert": "The team’s organizational circumstances change."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Une dernière fournée est annoncée. On peut lire la carte, personne ne promet de nouveau service.",
+            "expert": "Une release finale et une posture read-only sont communiquées publiquement."
+          },
+          "en": {
+            "kitchen": "A final batch is announced. The menu stays readable; no new service is promised.",
+            "expert": "A final release and a read-only posture are communicated publicly."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Sur la porte, rien ne change. Aucun écriteau ne vient dire ce qui s’est passé à l’intérieur.",
+            "expert": "L’état archive de la plateforme n’encode pas complètement le nouvel état produit."
+          },
+          "en": {
+            "kitchen": "Nothing changes on the door itself. No notice goes up to report what happened inside.",
+            "expert": "The platform’s archive state does not fully encode the new product state."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Quelqu’un qui regarde seulement la porte repart en croyant qu’on sert encore.",
+            "expert": "Un contrôle superficiel limité au flag archive produirait donc un faux signal de vie."
+          },
+          "en": {
+            "kitchen": "Anyone reading only the door walks away believing dinner is still served.",
+            "expert": "A superficial check limited to the archive flag therefore yields a false alive signal."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi la porte ne dit pas tout",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why the door does not tell you everything",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui est marqué sur la porte est vrai, mais ce n’est qu’un détail de la devanture. Ce que l’équipe a annoncé, et ce qu’elle a servi en dernier, disent bien mieux si la maison travaille encore. La porte suit parfois, parfois pas, et rien n’oblige personne à la changer.",
+            "expert": "Les métadonnées de plateforme ne sont qu’une source d’état projet parmi d’autres. L’intention déclarée des mainteneurs et la posture de release finale peuvent primer sur le flag archive, qui n’est soumis à aucune obligation de refléter la décision produit."
+          },
+          "en": {
+            "kitchen": "What is written on the door is true, but it is one detail of the frontage. What the crew announced, and what they last sent out, describe the state of the house far better. The door sometimes catches up and sometimes does not; nobody is obliged to change it.",
+            "expert": "Platform metadata is only one source of project state. Declared maintainer intent and final-release posture can outrank the archive flag, which carries no obligation to track the product decision."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’il faut regarder avant de conclure",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What to check before calling it",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Regarde la porte, mais ne t’arrête pas là. Demande ce que l’équipe a annoncé en partant. Demande aussi si quelqu’un a repris la maison, ou si elle a changé de patron.",
+            "expert": "L’évaluation combine les métadonnées du repository, la posture de maintenance explicitement annoncée et les éventuels changements de successeur ou de propriété. Aucune des trois ne suffit seule ; dans ce cas précis, c’est le flag archive qui aurait produit la lecture fausse."
+          },
+          "en": {
+            "kitchen": "Read the door, then keep walking. Ask what the crew said on their way out. Ask too whether anyone took the place over, or whether it changed hands.",
+            "expert": "Assessment combines repository metadata, explicitly stated maintenance posture, and any successor or ownership change. None of the three is sufficient alone, and in this case it was the archive flag that would have produced the wrong reading."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on trouve si on pousse la porte",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "What you find if you push the door",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La carte se lit toujours et on peut entrer. Mais personne ne tient les fourneaux, et ce n’est pas la porte qui permet de le dire.",
+            "expert": "Read-only et non maintenu activement, sans que cet état dépende du statut archive. La qualification repose sur l’annonce des mainteneurs, qui est ici la source directe."
+          },
+          "en": {
+            "kitchen": "The menu still reads and the door still opens. Nobody is running the stoves, though, and the door is not what tells you so.",
+            "expert": "Read-only and no longer actively maintained, with that status independent of archive state. The classification rests on the maintainers’ own announcement, which is the direct source here."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on retient : l’écriteau n’est pas le verdict",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What to keep: the notice on the door is not the verdict",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une maison ne ferme pas le jour où on visse l’écriteau sur la porte. Elle ferme le jour où plus personne n’allume les fourneaux. Regarde la cuisine avant de regarder la porte.",
+            "expert": "Le statut archive est une preuve parmi d’autres, jamais la définition de la fin d’un projet. Un repository non archivé peut correspondre à un produit explicitement non maintenu, et c’est exactement ce qui est établi ici."
+          },
+          "en": {
+            "kitchen": "A house does not close on the day the notice goes up on the door. It closes on the day nobody lights the stoves. Look at the kitchen before you look at the door.",
+            "expert": "Archive status is one piece of evidence, never the definition of a project’s end. An unarchived repository can correspond to a product explicitly declared unmaintained, which is what this case establishes."
+          }
+        }
+      ]
+    }
+  ]
+}

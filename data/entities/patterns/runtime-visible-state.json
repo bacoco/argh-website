@@ -1,1 +1,157 @@
-{"schema":"argh/public-entity/v1","id":"pattern:runtime-visible-state","type":"pattern","slug":"runtime-visible-state","route":"/patterns/runtime-visible-state/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Archon","Claude Code","Codex","Gemini CLI","agent-scripts"],"patterns":[],"dossiers":["plugin-init-before-control-load","runtime-skill-inventory-not-filesystem","archon-installed-skill-drift","release-does-not-equal-observed-fix"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"La brigade doit voir l’état réel, pas seulement la configuration prévue","expert":"État visible à l’exécution"},"en":{"kitchen":"The crew must see real state, not only intended configuration","expert":"Runtime-Visible State"}},"body":[{"fr":{"cuisine":"Un inventaire fiable doit montrer ce qui est effectivement chargé et disponible pendant le service.","expert":"L’état visible à l’exécution expose les capacités, configurations et ressources réellement actives au runtime."},"en":{"kitchen":"A reliable inventory must show what is actually loaded and available during service.","expert":"Runtime-visible state exposes capabilities, configuration and resources actually active during execution."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:runtime-visible-state",
+  "type": "pattern",
+  "slug": "runtime-visible-state",
+  "route": "/patterns/runtime-visible-state/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Archon",
+      "Claude Code",
+      "Codex",
+      "Gemini CLI",
+      "agent-scripts"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "plugin-init-before-control-load",
+      "runtime-skill-inventory-not-filesystem",
+      "archon-installed-skill-drift",
+      "release-does-not-equal-observed-fix"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "La liste au mur est juste, celle qu’on a en main ne l’est pas",
+          "expert": "L’état chargé à l’exécution diffère de l’état valide sur disque"
+        },
+        "en": {
+          "kitchen": "The list on the wall is right; the one in your hand is not",
+          "expert": "State loaded at execution differs from state valid on disk"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Claude Code, tout était en place dans la réserve, rangé, correct. Le commis avait pourtant pris sa feuille avant que la livraison ne soit rentrée. Il a fait tout le service avec une page vide, et personne n’est repassé la lui refaire.",
+            "expert": "L’état visible à l’exécution est ce qu’un système a réellement chargé et exposé, par opposition à ce qui est déclaré et valide sur disque. Chez Claude Code, un service de langage fourni par plugin s’est initialisé avant la fin de la découverte des plugins, figeant une liste vide malgré des fichiers corrects. Les plugins ont été chargés quelques millisecondes plus tard, sans reprise rétroactive de la surface attendue : la validation statique passait, la surface de contrôle n’existait pas."
+          },
+          "en": {
+            "kitchen": "At Claude Code the larder was stocked, everything in its place, nothing missing. The cook had taken his sheet before the delivery was put away. He worked the whole service off a blank page, and nobody came back to write it again.",
+            "expert": "Runtime-visible state is what a system has actually loaded and exposed, as opposed to what is declared and valid on disk. At Claude Code a plugin-provided language service initialized before plugin discovery completed, freezing an empty list although the files were correct. Plugins loaded milliseconds later with no retroactive pickup of the expected surface: static validation passed, the control surface was not there."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui ne colle pas entre la réserve et le passe",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "What does not add up between larder and pass",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Archon, la recette est corrigée sur le cahier du bureau, et rien ne change dans les assiettes. Chez Claude Code, la réserve est pleine et la feuille en main est vide. Chez Codex et dans agent-scripts, on a cessé de compter les étagères. On lit la feuille que le commis a vraiment en main, dans son ordre, avec ses abréviations.",
+            "expert": "Trois écarts distincts. Chez Archon, un artefact de contrôle corrigé dans le repository source laissait obsolète la copie installée, seule chargée à l’exécution, sans changement observable. Chez Claude Code, des fichiers valides coexistaient avec zéro serveur configuré au runtime. Chez Codex et agent-scripts, l’audit de skills a dû passer du scan de répertoires à la lecture de l’inventaire exact injecté dans le prompt du modèle, aliases et ordre compris."
+          },
+          "en": {
+            "kitchen": "At Archon the recipe is corrected in the office book, and nothing changes on the plates. At Claude Code the larder is full and the sheet in hand is empty. At Codex and in agent-scripts they stopped counting shelves. You read the sheet the cook truly holds, in its order, with its shorthand.",
+            "expert": "Three distinct gaps. At Archon a control artifact fixed in the source repository left the installed copy stale, and that copy was the only one loaded at execution, with no observable change. At Claude Code valid files coexisted with zero servers configured at runtime. At Codex and agent-scripts the skills audit had to move from directory scanning to reading the exact inventory injected into the model prompt, aliases and ordering included."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi une réserve bien tenue ne prouve rien",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why a well-kept larder proves nothing",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui rassure, c’est que la réserve est vérifiable : on ouvre la porte, on compte, tout y est. La feuille du commis, elle, s’est arrêtée à un instant précis et personne ne la relit. Entre les deux, il y a la livraison, le rangement, la recopie, l’ordre des lignes. Chacune de ces étapes peut retirer un produit sans toucher à l’étagère.",
+            "expert": "La validation statique porte sur des fichiers corrects et passe, ce qui déplace l’attention loin du défaut. Entre le disque et ce que le modèle voit s’interposent l’ordre d’initialisation, la distribution de l’artefact installé, la résolution des aliases, la precedence et le filtrage par budget de contexte. Un instantané unique pris avant la fin de la découverte n’est jamais réévalué, et plusieurs copies du même contrôle n’ont aucune identité garantie entre la source et l’installation chargée."
+          },
+          "en": {
+            "kitchen": "What reassures is that the larder can be checked: open the door, count, it is all there. The cook’s sheet stopped at one precise moment, and nobody reads it back. Between the two sit the delivery, the putting away, the copying out, the order of the lines. Any of those steps can drop an item without touching the shelf.",
+            "expert": "Static validation covers correct files and passes, which pulls attention away from the defect. Between disk and what the model sees sit initialization order, distribution of the installed artifact, alias resolution, precedence and context-budget filtering. A single snapshot taken before discovery completes is never re-evaluated, and multiple copies of one control carry no guaranteed identity between source and loaded installation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Demander au commis ce qu’il a sur sa feuille",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Ask the cook what is on his sheet",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Après le coup d’envoi, fais lire sa feuille au commis à voix haute : c’est elle qui commande, pas la réserve. Date chaque fiche affichée en cuisine, sinon personne ne sait laquelle des deux on suit. Et note où en est chaque correction : écrite au bureau, recopiée, affichée, vraiment suivie. Chez Archon, Claude Code, Codex et Gemini, ces quatre-là ne sont pas la même chose.",
+            "expert": "Vérifier après initialisation que la surface attendue répond réellement, et préférer un enregistrement dynamique à un instantané unique de découverte. Auditer d’abord la représentation runtime effective — inventaire injecté, ordre, aliases — et n’utiliser l’état disque que pour expliquer l’écart. Versionner l’artefact de contrôle, le hasher, tester la copie installée et exposer son identité à l’exécution. Représenter explicitement chaque état de livraison — mergé, releasé, installé, observé sur le terrain — car chez Archon, Claude Code, Codex et Gemini CLI, ces états se sont révélés distincts."
+          },
+          "en": {
+            "kitchen": "Once service has started, have the cook read his own sheet out loud; that sheet runs the night, not the larder. Date every card pinned in the kitchen, or nobody knows which of the two is being followed. And mark where each correction stands: written in the office, copied out, pinned up, actually cooked. At Archon, Claude Code, Codex and Gemini, those four are not one thing.",
+            "expert": "Verify after initialization that the expected surface actually answers, and prefer dynamic registration over a single discovery snapshot. Audit the effective runtime representation first — injected inventory, ordering, aliases — and use disk state only to explain the gap. Version the control artifact, hash it, test the installed copy and expose its identity at execution. Represent each delivery state explicitly — merged, released, installed, observed in the field — because at Archon, Claude Code, Codex and Gemini CLI those states proved distinct."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La règle que laissent la réserve pleine et la feuille vide",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The rule left by a full larder and a blank sheet",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce qui gouverne le service, c’est la feuille que le commis a en main, pas ce qui dort en réserve. Tant que tu ne l’as pas lue, tu ne sais rien de ce qui va sortir.",
+            "expert": "La présence d’un fichier valide n’établit ni son chargement, ni sa portée, ni son application. Seule la lecture de l’état effectivement exposé à l’exécution — inventaire, ordre, identité de l’artefact chargé — fait preuve, et un fichier source corrigé n’est pas un contrôle installé corrigé."
+          },
+          "en": {
+            "kitchen": "What runs service is the sheet in the cook’s hand, never what sleeps in the larder. Until you have read it, you know nothing about what will leave the pass.",
+            "expert": "The presence of a valid file establishes neither its loading, nor its scope, nor its application. Only a reading of the state actually exposed at execution — inventory, ordering, identity of the loaded artifact — counts as evidence, and a fixed source file is not a fixed installed control."
+          }
+        }
+      ]
+    }
+  ]
+}

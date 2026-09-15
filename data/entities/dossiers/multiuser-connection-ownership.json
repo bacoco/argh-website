@@ -1,1 +1,217 @@
-{"schema":"argh/public-entity/v1","id":"dossier:multiuser-connection-ownership","type":"dossier","slug":"multiuser-connection-ownership","route":"/dossiers/multiuser-connection-ownership/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["MCP ecosystem"],"patterns":["ownership","multiuser-isolation"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Une commande de la table A est partie par le plateau de la table B","expert":"Le message d’un utilisateur pouvait emprunter la connexion d’un autre"},"en":{"kitchen":"Table A’s order travelled on table B’s tray","expert":"One user’s message could ride another user’s connection"}},"body":[{"fr":{"cuisine":"Une commande de la table A est partie par le plateau de la table B. Partager le même plan de travail entre plusieurs cuisiniers paraît efficace jusqu’au moment où une commande, un fichier ou une clé change sous les mains d’un autre.","expert":"Un état de connexion mutable et partagé permettait à une session ultérieure de remplacer la connexion globalement courante, créant la possibilité d’une livraison croisée entre sessions."},"en":{"kitchen":"Table A’s order travelled on table B’s tray. Sharing one workbench across cooks looks efficient until an order, file or key changes under somebody else’s hands.","expert":"Shared mutable connection state allowed a later session to replace the globally current connection, creating the possibility of cross-session delivery."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Le restaurant garde une seule clé de connexion, posée sur le comptoir pour tous.","expert":"Un serveur conserve un état global mutable de connexion."},"en":{"kitchen":"The restaurant keeps one connection key on the counter for everyone.","expert":"A server held mutable global connection state."}},{"fr":{"cuisine":"Un second client arrive et remplace cette clé par la sienne.","expert":"Un second utilisateur ou session se connecte et le remplace."},"en":{"kitchen":"A second customer arrives and replaces that key with their own.","expert":"A second user/session connected and replaced it."}},{"fr":{"cuisine":"Quand une notification doit repartir vers le premier, la cuisine regarde encore la clé désormais courante.","expert":"Une notification est ensuite émise pour la première session."},"en":{"kitchen":"When a notification must return to the first, the kitchen still looks at the now-current key.","expert":"A notification was later emitted for the first session."}},{"fr":{"cuisine":"Au moment de servir, la cuisine prend la clé globale posée sur le comptoir, même si elle appartient désormais à une autre table.","expert":"La livraison utilise la connexion globalement courante à cet instant."},"en":{"kitchen":"At serving time, the kitchen takes the global key on the counter, even if it now belongs to another table.","expert":"Delivery looked up the then-current global connection."}},{"fr":{"cuisine":"Le message peut donc partir vers l’autre table : la propriété a franchi la frontière entre deux services.","expert":"La propriété peut donc traverser les frontières de session."},"en":{"kitchen":"The message can therefore go to the other table: ownership crossed the boundary between services.","expert":"Ownership could therefore cross session boundaries."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"La propriété n’avait pas voyagé avec le ticket : on la devinait au dernier moment depuis un comptoir mutable.","expert":"La propriété était reconstruite au moment de la livraison depuis un état global mutable au lieu d’être transportée avec l’événement dès sa création."},"en":{"kitchen":"Ownership had not travelled with the ticket: it was guessed at the last moment from a mutable counter.","expert":"Ownership was reconstructed at delivery time from global mutable state rather than carried with the event from creation."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Chaque ticket doit porter sa clé de session ou de table immuable sur tout son trajet jusqu’à la livraison.","expert":"Transporter une identité immutable de corrélation session/utilisateur avec chaque événement sur tout le chemin de livraison."},"en":{"kitchen":"Each ticket must carry its immutable session or table key all the way to delivery.","expert":"Carry immutable session/user correlation identity with every event through the complete delivery path."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"La leçon est réutilisable : une cuisine multi-utilisateurs doit garder une clé par table, pas une pour la salle entière.","expert":"Une leçon d’isolation réutilisable pour l’infrastructure d’agents multi-utilisateurs."},"en":{"kitchen":"The lesson is reusable: a multi-user kitchen needs one key per table, not one for the whole room.","expert":"A reusable isolation lesson for multi-user agent infrastructure."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Pour ne pas servir la mauvaise table, le propriétaire doit voyager avec la commande.","expert":"La propriété doit voyager avec l’événement."},"en":{"kitchen":"To avoid serving the wrong table, ownership must travel with the order.","expert":"Ownership must travel with the event."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:multiuser-connection-ownership",
+  "type": "dossier",
+  "slug": "multiuser-connection-ownership",
+  "route": "/dossiers/multiuser-connection-ownership/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "MCP ecosystem"
+    ],
+    "patterns": [
+      "ownership",
+      "multiuser-isolation"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le plat était pour la table d’avant, mais la fiche portait déjà un autre nom",
+          "expert": "Un état de connexion global et mutable pouvait faire livrer un message à la mauvaise session"
+        },
+        "en": {
+          "kitchen": "The plate belonged to the earlier table, but the card already carried another name",
+          "expert": "Shared mutable connection state could deliver a message to the wrong session"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez les maisons qui travaillent avec MCP, une seule fiche sur le comptoir indique la table qu’on sert. Chaque nouvelle arrivée remplace la fiche par la sienne. Le commis, lui, ne lit la fiche qu’au moment de partir. Un plat commandé par la table d’avant pouvait donc s’en aller vers celle d’après.",
+            "expert": "Un état de connexion partagé et mutable permettait à une session ultérieure de remplacer la connexion globalement courante. Une notification émise ensuite pour la première session pouvait donc emprunter la connexion d’une autre."
+          },
+          "en": {
+            "kitchen": "In the houses that work with MCP, one card on the counter says which table is being served. Every new party that sits down replaces it. The runner only reads the card at the moment he leaves the pass. So a plate ordered by the earlier table could walk out to the later one.",
+            "expert": "Shared mutable connection state let a later session replace the globally current connection. A notification raised afterwards for the first session could then ride another session’s connection."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Comment la fiche a changé de nom",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "How the card changed names",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La maison ne tient qu’une fiche à la fois pour dire qui on sert.",
+            "expert": "Un serveur conservait un état de connexion global et mutable."
+          },
+          "en": {
+            "kitchen": "The house keeps one card at a time to say who is being served.",
+            "expert": "A server held mutable, global connection state."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Une nouvelle table s’installe et sa fiche prend la place de la précédente.",
+            "expert": "Une seconde session s’est connectée et a remplacé cet état."
+          },
+          "en": {
+            "kitchen": "A new party sits down and its card takes the place of the last one.",
+            "expert": "A second session connected and replaced it."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Plus tard, une assiette est prête pour la table d’avant.",
+            "expert": "Une notification a ensuite été émise à destination de la première session."
+          },
+          "en": {
+            "kitchen": "Later, a plate comes up for the earlier table.",
+            "expert": "A notification was afterwards raised for the first session."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Au départ du plat, le commis lit la fiche du comptoir, celle qui s’y trouve à cet instant.",
+            "expert": "La livraison consultait la connexion globalement courante à l’instant de l’envoi."
+          },
+          "en": {
+            "kitchen": "On the way out, the runner reads the card on the counter — whichever card is there at that second.",
+            "expert": "Delivery read whichever connection was globally current at send time."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le plat pouvait donc sortir au nom de la table qui venait de s’asseoir.",
+            "expert": "La propriété pouvait donc franchir les limites de session."
+          },
+          "en": {
+            "kitchen": "So the plate could leave under the name of the party that had just sat down.",
+            "expert": "Ownership could therefore cross session boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi le plat ne savait pas pour qui il partait",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why the plate did not know who it was for",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le nom du destinataire n’était écrit nulle part sur le plat. On allait le chercher au dernier moment, sur une fiche que n’importe quelle arrivée pouvait changer. Deviner le propriétaire à la sortie n’est pas la même chose que l’avoir noté à la commande.",
+            "expert": "La propriété était reconstruite au moment de la livraison, depuis un état global mutable, au lieu d’être transportée avec l’événement dès sa création. Toute reconstruction tardive dépend d’un état qu’un tiers peut avoir modifié entre-temps."
+          },
+          "en": {
+            "kitchen": "Nothing on the plate said who it was for. The name was fetched at the last second, off a card any new arrival could change. Working out the owner on the way out is not the same as having written it down when the order came in.",
+            "expert": "Ownership was reconstructed at delivery time from global mutable state instead of being carried with the event from creation. Any late reconstruction depends on state a third party may have changed in between."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui doit partir avec la commande",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What must travel with the order",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le nom de la table part avec la commande, écrit dessus, et ne change plus jusqu’à l’assiette posée. Plus rien à lire sur le comptoir au moment de sortir.",
+            "expert": "Transporter avec chaque événement une identité de corrélation session et utilisateur immuable, sur l’intégralité du chemin de livraison. Aucune étape de ce chemin ne doit redemander qui est courant."
+          },
+          "en": {
+            "kitchen": "The table’s name travels with the order, written on it, unchanged until the plate is down. Nothing left to read off the counter on the way out.",
+            "expert": "Carry an immutable session and user correlation identity with every event, along the whole delivery path. No step on that path should ask again who is current."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que ça vaut ailleurs",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "What it is worth elsewhere",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La leçon se transporte : dès qu’une salle sert plusieurs tables à la fois, une fiche unique au comptoir ne suffit plus.",
+            "expert": "Le cas constitue une leçon d’isolation réutilisable pour toute infrastructure d’agents multi-utilisateurs."
+          },
+          "en": {
+            "kitchen": "The lesson travels: the moment a room serves several parties at once, one card on the counter stops being enough.",
+            "expert": "The case is a reusable isolation lesson for any multi-user agent infrastructure."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La règle de la fiche",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The rule of the card",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Écris le nom de la table sur la commande : ce qu’on lit au comptoir en partant appartient déjà à quelqu’un d’autre.",
+            "expert": "La propriété doit voyager avec l’événement."
+          },
+          "en": {
+            "kitchen": "Write the table on the order: what you read off the counter on your way out already belongs to somebody else.",
+            "expert": "Ownership must travel with the event."
+          }
+        }
+      ]
+    }
+  ]
+}

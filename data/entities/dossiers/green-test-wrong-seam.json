@@ -1,1 +1,218 @@
-{"schema":"argh/public-entity/v1","id":"dossier:green-test-wrong-seam","type":"dossier","slug":"green-test-wrong-seam","route":"/dossiers/green-test-wrong-seam/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Hermes"],"patterns":["testing","runtime-boundary","false-green"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le test goûtait la sauce sans vérifier le plat qui sortait en salle","expert":"Le test était vert parce qu’il n’a jamais traversé la couture dont dépendaient les utilisateurs"},"en":{"kitchen":"The test tasted the sauce without checking the dish sent to the dining room","expert":"The test was green because it never crossed the seam users depended on"}},"body":[{"fr":{"cuisine":"Le test goûtait la sauce sans vérifier le plat qui sortait en salle. Un tableau « vert » ou « vide » peut simplement signifier que le thermomètre regarde au mauvais endroit ou n’a pas pu lire la cuisine.","expert":"Un test au niveau helper validait la construction d’arguments tandis que le vrai chemin de lancement perdait ensuite l’option importante, produisant de la confiance sans couverture end-to-end."},"en":{"kitchen":"The test tasted the sauce without checking the dish sent to the dining room. A “green” or “empty” board may simply mean the thermometer looked in the wrong place or could not read the kitchen.","expert":"A helper-level test validated argument construction while the real launch path later dropped the important option, producing confidence without end-to-end coverage."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Un petit commis prépare exactement les ingrédients attendus pour une commande.","expert":"Un helper construit les arguments attendus."},"en":{"kitchen":"A small prep cook assembles exactly the ingredients expected for an order.","expert":"A helper built the expected arguments."}},{"fr":{"cuisine":"Le test goûte ce bol et le déclare parfait.","expert":"Les tests unitaires valident ce helper."},"en":{"kitchen":"The test tastes that bowl and declares it perfect.","expert":"Unit tests validated that helper."}},{"fr":{"cuisine":"Plus loin, au moment d’envoyer le plat, une option est pourtant transformée ou oubliée.","expert":"Le vrai chemin de lancement transforme ou omet l’option plus tard."},"en":{"kitchen":"Further along, when the dish is sent, an option is still changed or forgotten.","expert":"The actual application launch path transformed or omitted the option later."}},{"fr":{"cuisine":"Au vrai lancement, les clients reçoivent le mauvais résultat malgré le test vert du petit commis.","expert":"Les utilisateurs subissent le mauvais comportement runtime."},"en":{"kitchen":"At the real launch, customers get the wrong result despite the prep cook’s green test.","expert":"Users experienced the wrong runtime behavior."}},{"fr":{"cuisine":"Les clients reçoivent le mauvais résultat : le voyant vert surveillait la préparation, pas la couture du vrai service.","expert":"Le test vert couvrait la mauvaise couture."},"en":{"kitchen":"Customers get the wrong result: the green light watched prep, not the seam of real service.","expert":"The passing test had covered the wrong seam."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Un tableau « vert » ou « vide » peut simplement signifier que le thermomètre regarde au mauvais endroit ou n’a pas pu lire la cuisine.","expert":"Le test prouvait une fonction pure mais pas le chemin d’intégration qui assemblait et lançait réellement le produit."},"en":{"kitchen":"A “green” or “empty” board may simply mean the thermometer looked in the wrong place or could not read the kitchen.","expert":"The test proved a pure function but not the integration path that actually assembled and launched the product."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Tester le lancement, le paquet, le transport ou l’interface que le client utilise réellement, et nommer séparément succès, absence, indisponibilité et inconnu.","expert":"Tester via la couture finale de spawn/package/transport/UI et observer le résultat physique."},"en":{"kitchen":"Test the launch, package, transport, or interface the customer actually uses, and name success, absence, unavailable, and unknown separately.","expert":"Test through the final spawn/package/transport/UI seam and observe the physical outcome."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"Pour éviter ce faux vert, il faut goûter la sortie de cuisine, pas seulement le bol du commis.","expert":"Un pattern général anti-false-green pour les tests."},"en":{"kitchen":"To avoid this false green, taste the pass output, not just the prep cook’s bowl.","expert":"A general anti-false-green testing pattern."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Une preuve doit traverser le vrai chemin du service, pas seulement un test commode.","expert":"Un test vert peut tester la mauvaise chose."},"en":{"kitchen":"Evidence must cross the real service path, not merely a convenient test.","expert":"A green test can test the wrong thing."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:green-test-wrong-seam",
+  "type": "dossier",
+  "slug": "green-test-wrong-seam",
+  "route": "/dossiers/green-test-wrong-seam/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Hermes"
+    ],
+    "patterns": [
+      "testing",
+      "runtime-boundary",
+      "false-green"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "On goûtait le bol du commis, jamais l’assiette qui partait en salle",
+          "expert": "Le test était vert parce qu’il ne traversait pas la couture dont dépendaient les utilisateurs"
+        },
+        "en": {
+          "kitchen": "They tasted the prep bowl and never the plate that left for the room",
+          "expert": "The test passed because it never crossed the seam users depended on"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Hermes, le bol du commis était parfait. On l’a goûté, il respectait la commande au gramme près. Plus loin, entre ce bol et la salle, la consigne s’est perdue et l’assiette est partie avec ce que le client refusait.",
+            "expert": "Un test au niveau helper validait la construction des arguments. Le chemin de lancement réel perdait ensuite l’option importante, en aval du point couvert. Le vert obtenu mesurait donc une confiance, pas une couverture end-to-end."
+          },
+          "en": {
+            "kitchen": "At Hermes the prep bowl was faultless. Someone tasted it and it matched the order exactly. Further down the line the instruction was lost, and the plate went out carrying what the guest had refused.",
+            "expert": "A helper-level test checked how arguments were assembled. The real launch path then dropped the significant option, downstream of everything the test observed. The resulting green measured confidence, not end-to-end coverage."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Du bol à l’assiette, où la consigne s’est perdue",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "From bowl to plate, where the instruction went missing",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un commis rassemble exactement ce que la commande demande, rien de plus.",
+            "expert": "Au niveau helper, les arguments attendus sont assemblés."
+          },
+          "en": {
+            "kitchen": "A prep cook gathers exactly what the order asks for, nothing else.",
+            "expert": "A helper assembled the expected arguments."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "On goûte son bol, il est juste, on le note comme bon.",
+            "expert": "Des tests unitaires valident ce helper et rien d’autre."
+          },
+          "en": {
+            "kitchen": "His bowl is tasted, it is right, it goes down as good.",
+            "expert": "Unit tests covered that helper and nothing beyond it."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Plus loin, au dressage, la consigne du client est transformée ou oubliée.",
+            "expert": "Le chemin de lancement réel transforme ou omet ensuite l’option."
+          },
+          "en": {
+            "kitchen": "Further along, at plating, the guest’s instruction is altered or simply dropped.",
+            "expert": "The real launch path later transformed or omitted the option."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "L’assiette part quand même et le client reçoit ce qu’il ne voulait pas.",
+            "expert": "Les utilisateurs subissent le comportement erroné à l’exécution."
+          },
+          "en": {
+            "kitchen": "The plate goes out anyway and the guest gets what they did not want.",
+            "expert": "Users hit the wrong behavior at runtime."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le carnet du goûteur reste au vert : il n’avait jamais regardé ce qui sortait.",
+            "expert": "Le test vert couvrait une autre couture que celle où la panne se produit."
+          },
+          "en": {
+            "kitchen": "The taster’s book still reads good: he had never looked at what left the pass.",
+            "expert": "The passing test had covered a different seam from the one that broke."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Le goûteur était au bon endroit pour lui, pas pour le client",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "The taster stood where it suited him, not where the guest was served",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Goûter un bol est facile : il tient dans la main, il ne bouge plus. Ce qui sort en salle traverse trois paires de mains et un dressage. La preuve avait été prise là où elle était commode, pas là où le plat pouvait encore se perdre.",
+            "expert": "Le test prouvait une fonction pure, isolée de son contexte d’exécution. Il ne couvrait pas le chemin d’intégration qui assemble et lance réellement le produit. La couverture s’arrêtait en amont du point où l’option disparaissait."
+          },
+          "en": {
+            "kitchen": "Tasting a bowl is easy: it sits still and fits in one hand. What reaches the room passes three pairs of hands and a plating station. The proof was taken where it was convenient, not where the dish could still go wrong.",
+            "expert": "The test proved a pure function in isolation from its execution context. It did not cover the integration path that actually assembles and launches the product. Coverage stopped upstream of the point where the option disappeared."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Goûter ce qui part, pas ce qui attend",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Taste what leaves, not what is waiting",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le goût qui compte se prend sur l’assiette au moment où elle quitte le passe. On regarde ce que le client reçoit vraiment, pas ce que la brigade avait préparé. Toute preuve prise plus tôt ne dit rien sur la suite.",
+            "expert": "Exercer le test à travers la couture finale — spawn, packaging, transport ou UI selon le cas — et observer le résultat physique produit. Une assertion en amont de cette couture ne dit rien sur son franchissement."
+          },
+          "en": {
+            "kitchen": "The taste that counts is taken off the plate as it leaves the pass. You check what the guest actually receives, not what the brigade prepared. Any proof taken earlier says nothing about what happens after it.",
+            "expert": "Drive the test through the final seam — spawn, packaging, transport or UI, whichever applies — and observe the physical outcome. An assertion upstream of that seam says nothing about crossing it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce piège n’appartient pas à une seule cuisine",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "This trap belongs to no single kitchen",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce n’est pas l’histoire d’un commis maladroit. N’importe quelle maison peut placer son goûteur trop tôt dans la chaîne et dormir tranquille. Le carnet sera vert et les assiettes seront fausses.",
+            "expert": "Le cas relève d’un motif général de faux vert, indépendant du produit concerné. Ce qu’il met en cause est le placement de la couverture, pas une défaillance locale."
+          },
+          "en": {
+            "kitchen": "This is not the story of one clumsy prep cook. Any house can post its taster too early in the line and sleep soundly. The book stays green while the plates go out wrong.",
+            "expert": "The case generalises into a false-green pattern that is not specific to the product involved. What it indicts is where coverage was placed, not a local defect."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Un carnet vert peut parler d’autre chose",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "A green book can be about something else entirely",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un carnet vert ne dit pas que le service s’est bien passé. Il dit qu’à un endroit précis, quelqu’un a goûté et trouvé ça bon. Tant qu’on ne sait pas où il se tenait, ce vert ne vaut rien.",
+            "expert": "Un test vert peut porter sur autre chose que ce dont dépend l’utilisateur. La valeur du vert tient entièrement à la couture traversée, pas au nombre d’assertions."
+          },
+          "en": {
+            "kitchen": "A green book does not say service went well. It says that at one precise spot, someone tasted and found it good. Until you know where that person stood, the green is worth nothing.",
+            "expert": "A green test can be about something other than what the user depends on. What a green is worth depends entirely on which seam it crossed, not on how many assertions it holds."
+          }
+        }
+      ]
+    }
+  ]
+}

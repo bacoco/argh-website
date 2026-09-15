@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:stale-control","type":"pattern","slug":"stale-control","route":"/patterns/stale-control/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["gstack"],"patterns":[],"dossiers":["session-scope-lock-became-global-state"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Un vieux garde-fou ne doit pas gouverner le nouveau service","expert":"Contrôle périmé"},"en":{"kitchen":"An old guardrail must not govern a new service","expert":"Stale Control"}},"body":[{"fr":{"cuisine":"Une règle laissée derrière par une ancienne session peut devenir dangereuse si elle continue à s’appliquer sans contexte.","expert":"Un contrôle périmé reste actif après la disparition de la condition, session ou version qui justifiait son autorité."},"en":{"kitchen":"A rule left behind by an earlier session becomes dangerous if it keeps applying without context.","expert":"A stale control remains active after the condition, session or version that justified its authority has ended."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:stale-control",
+  "type": "pattern",
+  "slug": "stale-control",
+  "route": "/patterns/stale-control/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "gstack"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "session-scope-lock-became-global-state"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Le mot laissé au mur survit à la soirée qui l’a écrit",
+          "expert": "Un contrôle reste actif après la disparition de la condition qui fondait son autorité"
+        },
+        "en": {
+          "kitchen": "The note left on the wall outlives the night that wrote it",
+          "expert": "A control stays active after the condition that grounded its authority is gone"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un soir de casse chez gstack, on punaise un mot au passe : personne ne touche à ce coin-là. Le service finit, le mot reste. Le lendemain, dans une autre maison, les mêmes lettres désignent un autre coin et bloquent une brigade qui n’a rien demandé.",
+            "expert": "Un contrôle périmé reste en vigueur après la fin de la condition, de la session ou de la version qui fondait son autorité. Chez gstack, un verrou de périmètre de débogage écrivait une frontière d’édition en chemin relatif dans un état global à la machine, sans jamais l’effacer. Résolue plus tard depuis un autre répertoire de travail, la même valeur désignait une autre zone et contraignait des sessions sans lien avec celle qui l’avait posée."
+          },
+          "en": {
+            "kitchen": "The note carries no house on it and no closing time. It went up at the pass one bad night at gstack to keep hands off one corner, and nobody ever took it down. A day later, in another kitchen, the same words fence off a different corner and hold back a brigade that never asked.",
+            "expert": "A stale control remains in force after the condition, session or version that grounded its authority has ended. At gstack a debugging scope lock wrote an edit boundary as a relative path into machine-wide persistent state and never cleared it. Resolved later against a different working directory, that same value designated another area and constrained sessions unrelated to the one that set it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "À quoi on reconnaît un ordre qui n’a plus de patron",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "How to spot an order with nobody left behind it",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une brigade se retrouve empêchée sur un poste qu’elle n’a jamais choisi. Personne dans la maison ne reconnaît l’ordre, et personne ne sait qui l’a écrit. Le mot ne dit ni dans quelle cuisine il vaut, ni jusqu’à quand : voilà le vrai signe.",
+            "expert": "Le signe est un contrôle qui contraint une exécution sans que rien dans cette exécution ne l’ait demandé : un périmètre imposé depuis une valeur qu’aucune session courante n’a écrite. Deux propriétés manquent alors ensemble, et leur absence se vérifie : une identité stable avec un propriétaire nommé, et une durée de vie explicite. Ni l’une ni l’autre n’est visible depuis le comportement de l’exécution contrainte."
+          },
+          "en": {
+            "kitchen": "Watch for a brigade blocked at a station it never picked, by an instruction nobody in the room remembers giving. Ask which kitchen the note was meant for and when it stops counting. If the wall cannot answer either question, that is the signal.",
+            "expert": "The symptom is a control constraining a run that never requested it: a scope imposed from a value no current session wrote. Two properties are checkably absent together — a stable identity with a named owner, and an explicit lifetime. Neither is visible from the behavior of the run being constrained."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi un mot juste hier devient faux aujourd’hui",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why last night’s right note reads wrong tonight",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un mot au mur ne sait pas dans quelle maison on le relit. Écris « le coin du fond » : chaque cuisine a le sien, et le mot change de cible sans changer de lettres. Et il commande encore le lendemain, parce qu’une punaise ne tombe pas toute seule.",
+            "expert": "Le contrôle confond deux choses que rien n’oblige à coïncider : ce qu’il désigne, et combien de temps il a le droit de le désigner. Une valeur relative n’a pas d’identité hors du répertoire de base contre lequel elle a été écrite, donc sa cible suit celui qui la résout. Un stockage global à la machine, jamais purgé, donne ensuite à la décision une durée de vie supérieure à l’autorité qui l’a produite."
+          },
+          "en": {
+            "kitchen": "A note does not know which house is reading it. Write « the far corner » and every kitchen has one, so the same letters point somewhere new each time. And paper keeps its authority until a hand removes it, not until the night is over.",
+            "expert": "The control conflates two things nothing forces to coincide: what it designates, and how long it is entitled to designate it. A relative value has no identity outside the base directory it was written against, so its target follows whoever resolves it. Machine-wide storage that is never purged then grants the decision a lifetime longer than the authority that produced it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Signer le mot, et le retirer soi-même en partant",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Sign the note, and take it down yourself on the way out",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Écris sur le mot l’endroit exact, ton nom, et l’heure où il cesse de valoir. En partant, décroche-le toi-même, et ne décroche que le tien. Chez gstack, la panne a été refaite exprès pour la voir ; aucun remède posé n’est établi.",
+            "expert": "Persister un contrôle porteur d’autorité sous une identité absolue stable, avec un propriétaire enregistré et une durée de vie explicite, cantonnée à la session ou au workspace qui l’a créé. Le libérer par comparaison puis suppression du seul contrôle posé par cette session, afin qu’un nettoyage ne retire pas un contrôle plus récent ou appartenant à l’utilisateur. Le rapport gstack est ouvert et reproductible : aucun correctif fusionné, aucune version livrée, aucune correction installée, aucune récupération observée n’est établie."
+          },
+          "en": {
+            "kitchen": "Put three things on the note: the exact spot, your name, and the hour it stops counting. Take down your own note when you leave, and only your own. At gstack the fault was reproduced on purpose; no remedy is established as being in place.",
+            "expert": "Persist an authority-bearing control under a stable absolute identity, with a recorded owner and an explicit lifetime scoped to the session or workspace that created it. Release it by matching then deleting only the control that session set, so cleanup cannot remove a newer control or one belonging to the user. The gstack report is open and reproducible: no merged fix, no shipped release, no installed correction and no observed recovery is established."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La règle que gstack laisse punaisée au mur",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The rule gstack leaves pinned to the wall",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un mot qui donne des ordres doit dire où, de qui, et jusqu’à quand. Sans ces trois-là, il finira par commander un soir qui ne l’a jamais demandé.",
+            "expert": "Un état porteur d’autorité exige à la fois une identité stable et une durée de vie explicite. L’un sans l’autre suffit à produire un contrôle qui s’applique au mauvais endroit, ou au bon endroit bien trop longtemps."
+          },
+          "en": {
+            "kitchen": "Anything on the wall that gives orders owes three answers: which spot, whose hand, until when. Miss one and it will run a night that never asked for it.",
+            "expert": "Authority-bearing state requires both a stable identity and an explicit lifetime. Either one missing is enough to produce a control that applies in the wrong place, or in the right place for far too long."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,218 @@
-{"schema":"argh/public-entity/v1","id":"dossier:superpowers-skills-methodology-rise","type":"dossier","slug":"superpowers-skills-methodology-rise","route":"/dossiers/superpowers-skills-methodology-rise/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Superpowers"],"patterns":["skills-runtime","cross-harness","rising-project"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Une méthode de brigade a commencé à circuler de cuisine en cuisine","expert":"Une méthodologie de skills a commencé à se diffuser au-delà des frontières de harnais"},"en":{"kitchen":"A brigade method started travelling from kitchen to kitchen","expert":"A skills methodology started spreading across harness boundaries"}},"body":[{"fr":{"cuisine":"Une méthode de brigade a commencé à circuler de cuisine en cuisine. Une enseigne peut rester allumée alors que la cuisine, l’équipe ou la stratégie ont déjà déménagé. Les signaux administratifs ne disent pas seuls si le service vit encore.","expert":"Superpowers a émergé comme méthodologie distinctive de workflows et skills dont l’influence traverse plusieurs environnements d’agents de code, justifiant sa promotion de candidat à projet suivi."},"en":{"kitchen":"A brigade method started travelling from kitchen to kitchen. A sign can stay lit after the kitchen, team or strategy has moved. Administrative activity alone does not prove the service is alive.","expert":"Superpowers emerged as a distinctive workflow-and-skills methodology whose influence crossed individual coding-agent environments, justifying promotion from candidate to tracked project."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Un cahier de savoir-faire ciblé propose une méthode cohérente pour tenir le service.","expert":"Un repository de skills ciblé établit une méthodologie cohérente de workflow."},"en":{"kitchen":"A focused know-how book offers one coherent method for running service.","expert":"A focused skills repository established a coherent workflow methodology."}},{"fr":{"cuisine":"Il reste entretenu au fil des jours, au lieu de dormir comme un simple paquet de recettes.","expert":"Le projet reste activement maintenu plutôt qu’une simple collection de prompts."},"en":{"kitchen":"It keeps being maintained rather than sleeping as a mere bundle of recipes.","expert":"The project remained actively maintained rather than a one-off prompt collection."}},{"fr":{"cuisine":"D’autres étagères et comptoirs de distribution se construisent autour de ce cahier.","expert":"Des repositories et surfaces de distribution liés apparaissent."},"en":{"kitchen":"Other shelves and distribution counters grow around that book.","expert":"Related repositories and distribution surfaces appeared."}},{"fr":{"cuisine":"Valider une méthode par son adoption, ses versions et le comportement qu’elle conserve lorsqu’elle passe d’une cuisine hôte à une autre.","expert":"Des praticiens appliquent la méthodologie dans plusieurs environnements d’agents de code."},"en":{"kitchen":"Validate a method through adoption, versions, and the behavior it preserves as it moves from one host kitchen to another.","expert":"Practitioners began applying the methodology across multiple coding-agent environments."}},{"fr":{"cuisine":"Des praticiens emportent cette manière de travailler dans plusieurs cuisines d’agents : le dépôt devient un signal d’écosystème.","expert":"Le projet franchit le seuil de repository intéressant à signal d’écosystème."},"en":{"kitchen":"Practitioners carry this way of working into several agent kitchens: the repository becomes an ecosystem signal.","expert":"The project crossed the threshold from interesting repository to ecosystem signal."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Superpowers ne monte pas grâce à une fiche isolée : sa méthode organise de façon répétable planification, exécution et vérification dans plusieurs cuisines hôtes.","expert":"La valeur n’est pas un skill isolé mais une manière répétable de structurer planification, exécution et vérification à travers différents harnais hôtes."},"en":{"kitchen":"Superpowers rises not through one card but through a repeatable method for planning, execution, and verification across host kitchens.","expert":"The value is not a single skill but a repeatable way to structure planning, execution and verification across different host harnesses."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Suivre la même méthode quand elle passe d’un hôte à l’autre : quelles versions la portent, qui l’adopte et quel comportement elle conserve au service.","expert":"Suivre les méthodologies qui survivent aux changements d’hôte comme signaux de convergence architecturale au-dessus d’un produit particulier."},"en":{"kitchen":"Follow the same method as it crosses hosts: which versions carry it, who adopts it, and what behavior it preserves in service.","expert":"Track methodologies that survive host changes as signals of architecture converging above any one product."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"Le mouvement progresse assez pour entrer dans le suivi actif, pas seulement dans la curiosité de la semaine.","expert":"En progression et promu au suivi actif."},"en":{"kitchen":"The movement has progressed enough for active tracking, not merely this week’s curiosity.","expert":"Rising and promoted into active tracking."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Une méthode vaut par les cuisines qui l’adoptent, les versions qui la transmettent et le geste qu’elle garde intact — pas par le bruit autour du nom.","expert":"Les idées de harnais les plus durables peuvent se diffuser comme méthodes avant de devenir des fonctionnalités produit."},"en":{"kitchen":"A method is measured by kitchens that adopt it, versions that carry it, and the practice it preserves—not by noise around its name.","expert":"The most durable harness ideas may spread as methods before they become product features."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:superpowers-skills-methodology-rise",
+  "type": "dossier",
+  "slug": "superpowers-skills-methodology-rise",
+  "route": "/dossiers/superpowers-skills-methodology-rise/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Superpowers"
+    ],
+    "patterns": [
+      "skills-runtime",
+      "cross-harness",
+      "rising-project"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Superpowers voyage de maison en maison dans la veste des cuisiniers",
+          "expert": "Superpowers : une méthodologie de skills qui franchit les frontières de harnais"
+        },
+        "en": {
+          "kitchen": "Superpowers travels house to house in the cooks’ jackets",
+          "expert": "Superpowers: a skills methodology crossing harness boundaries"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Superpowers n’est pas une recette, c’est une façon de tenir le service. Des cuisiniers l’ont emportée en changeant de maison, et elle a continué de fonctionner ailleurs. C’est ce qui l’a fait passer de curiosité passagère à référence qu’on suit de près.",
+            "expert": "Superpowers a émergé comme méthodologie distinctive de workflows et de skills. Son influence traverse plusieurs environnements d’agents de code, ce qui justifie sa promotion de candidat à projet suivi."
+          },
+          "en": {
+            "kitchen": "Superpowers is not a recipe, it is a way of running the service. Cooks carried it with them when they changed houses, and it kept working somewhere else. That is what moved it from a curiosity to a house worth following.",
+            "expert": "Superpowers emerged as a distinctive workflow-and-skills methodology. Its influence crossed individual coding-agent environments, which justified promotion from candidate to tracked project."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "D’un carnet de maison à une façon de faire commune",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "From one house’s notebook to a shared way of working",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un carnet de savoir-faire resserré propose une façon cohérente de mener le service.",
+            "expert": "Un repository de skills ciblé établit une méthodologie de workflow cohérente."
+          },
+          "en": {
+            "kitchen": "A tight notebook of know-how lays out one coherent way to run a service.",
+            "expert": "A narrow skills repository set out a coherent workflow methodology."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "On l’entretient jour après jour, au lieu de le laisser jaunir au fond d’un tiroir.",
+            "expert": "Le projet reste activement maintenu, et non figé en collection de prompts."
+          },
+          "en": {
+            "kitchen": "It is kept up day after day, rather than left to yellow at the back of a drawer.",
+            "expert": "The project stayed actively maintained instead of settling into a one-off prompt collection."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Autour de lui se montent d’autres carnets, et des comptoirs où l’on vient se servir.",
+            "expert": "Des repositories liés et des surfaces de distribution apparaissent."
+          },
+          "en": {
+            "kitchen": "Other notebooks grow up around it, and counters where cooks come to help themselves.",
+            "expert": "Related repositories and distribution surfaces formed around it."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Des cuisiniers l’appliquent dans plusieurs maisons, pas seulement dans celle qui l’a écrit.",
+            "expert": "Des praticiens appliquent la méthodologie hors de son environnement d’origine, dans plusieurs environnements d’agents de code."
+          },
+          "en": {
+            "kitchen": "Cooks put it to work in several houses, not only the one that wrote it down.",
+            "expert": "Practitioners carried the methodology beyond its origin, into multiple coding-agent environments."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Superpowers cesse alors d’être un carnet intéressant : c’est une façon de faire qui circule.",
+            "expert": "Le projet passe du statut de repository intéressant à celui de signal d’écosystème."
+          },
+          "en": {
+            "kitchen": "At that point Superpowers stops being an interesting notebook: it is a practice on the move.",
+            "expert": "The project moved from interesting repository to ecosystem signal."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qui voyage n’est pas la fiche, c’est l’ordre des gestes",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "What travels is not the card, it is the order of the moves",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Superpowers ne monte pas grâce à une fiche en particulier. Ce qui se transmet, c’est l’ordre des gestes : on prépare, on exécute, on vérifie — et cela tient dans n’importe quelle maison.",
+            "expert": "La valeur n’est pas un skill isolé mais une manière répétable de structurer planification, exécution et vérification. Elle se conserve à travers différents harnais hôtes."
+          },
+          "en": {
+            "kitchen": "Superpowers does not rise on the strength of any one card. What carries over is the order of the moves: plan it, cook it, check it — and that holds in whatever house you take it to.",
+            "expert": "The value is not a single skill but a repeatable way to structure planning, execution and verification. It survives across different host harnesses."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Suivre une façon de faire jusque dans la maison suivante",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Following the practice into the next house",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On suit cette façon de faire là où elle atterrit : qui l’adopte, ce qu’elle devient dans la maison d’après, et ce qu’elle garde intact quand tout le reste change.",
+            "expert": "Suivre les méthodologies qui survivent au changement d’hôte comme signaux de convergence architecturale au-dessus d’un produit particulier."
+          },
+          "en": {
+            "kitchen": "Follow the practice to wherever it lands: who takes it up, what it becomes in the next house, and what it keeps intact when everything around it changes.",
+            "expert": "Track methodologies that survive a change of host as signals of architecture converging above any single product."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Assez avancé pour qu’on le suive de près",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "Far enough along to be watched closely",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Superpowers avance assez pour qu’on le suive de près, et plus seulement du coin de l’œil.",
+            "expert": "En progression, et promu au suivi actif."
+          },
+          "en": {
+            "kitchen": "Superpowers has come far enough to be watched closely, not just out of the corner of an eye.",
+            "expert": "Rising, and promoted into active tracking."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Une façon de faire s’installe avant d’avoir un nom sur la carte",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "A practice settles in before it has a name on the menu",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Les idées qui durent voyagent d’abord dans la tête des cuisiniers. Elles n’arrivent sur la carte que plus tard, quand une maison décide enfin de les servir sous un nom.",
+            "expert": "Une idée de harnais durable peut se diffuser comme méthode bien avant d’exister comme fonctionnalité produit."
+          },
+          "en": {
+            "kitchen": "The ideas that last travel first in the cooks’ heads. They reach the menu later, when a house finally decides to serve them under a name.",
+            "expert": "A durable harness idea can spread as a method well before it exists as a product feature."
+          }
+        }
+      ]
+    }
+  ]
+}

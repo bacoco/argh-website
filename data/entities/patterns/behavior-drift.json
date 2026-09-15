@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:behavior-drift","type":"pattern","slug":"behavior-drift","route":"/patterns/behavior-drift/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Claude Code"],"patterns":[],"dossiers":["hook-canary-behavior-drift"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le comportement change sans que la règle ait changé","expert":"Dérive de comportement"},"en":{"kitchen":"Behavior changes even though the rule did not","expert":"Behavior Drift"}},"body":[{"fr":{"cuisine":"La même consigne peut produire un autre résultat après une évolution du système qui l’exécute.","expert":"La dérive de comportement désigne un changement observable à règles apparentes constantes, souvent dû à l’environnement d’exécution."},"en":{"kitchen":"The same instruction can produce a different result after the system underneath it changes.","expert":"Behavior drift is an observable change under apparently unchanged rules, often caused by runtime evolution."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:behavior-drift",
+  "type": "pattern",
+  "slug": "behavior-drift",
+  "route": "/patterns/behavior-drift/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Claude Code"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "hook-canary-behavior-drift"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Même consigne au mur, et soudain les croix s’accumulent",
+          "expert": "Le comportement observé change alors que la règle écrite est restée identique"
+        },
+        "en": {
+          "kitchen": "Same note on the wall, and suddenly the marks pile up",
+          "expert": "Observed behavior changes while the written rule stays identical"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Claude Code, une consigne punaisée au mur n’avait presque jamais été enfreinte. Puis les croix se sont mises à tomber, coup sur coup, après que la maison eut changé quelque chose à son service. La consigne, elle, n’avait pas été retouchée d’un mot.",
+            "expert": "La dérive de comportement est un changement observable des sorties sous une règle écrite inchangée. Chez Claude Code, un stop-phrase guard construit côté utilisateur, presque sans violation sur tout son historique, a accumulé brusquement un groupe de violations après un changement produit. La règle n’avait pas bougé ; la distribution des sorties, si."
+          },
+          "en": {
+            "kitchen": "Months of clean tallies, then a run of marks inside a single stretch. At Claude Code the note on the wall was the same note, word for word, before and after. What had moved was something the house did to its own service.",
+            "expert": "Behavior drift is an observable change of output under an unchanged written rule. At Claude Code a user-built stop-phrase guard, historically almost violation-free, suddenly accumulated a cluster of violations after a product change. The rule had not moved; the output distribution had."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "À quoi on voit que le service a glissé",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "How you notice the service has slipped",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce n’est pas une entorse isolée qui alerte, c’est la série. Une longue période propre derrière soi, puis plusieurs croix rapprochées, et rien de réécrit sur le mur entre les deux. Ce sont vos propres croix qui le montrent : personne d’autre ne tenait le compte.",
+            "expert": "Le signal est un groupe de violations rapproché, et non un incident isolé, sur un contrôle dont la règle n’a pas changé. La longue période sans violation fournit la ligne de base qui rend la rupture lisible. La rupture est mesurée par les journaux du contrôle lui-même, pas par une instrumentation du produit observé."
+          },
+          "en": {
+            "kitchen": "One slip proves nothing; a run of them does. A long clean stretch behind you, several marks close together, and nothing rewritten on the wall in between. Your own tally is what shows it, because nobody else was keeping count.",
+            "expert": "The signal is a clustered run of violations rather than an isolated incident, on a check whose rule did not change. The long violation-free stretch supplies the baseline that makes the break legible. The break is measured by the check’s own logs, not by instrumentation inside the observed product."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi on relit la consigne au lieu de regarder les assiettes",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why the note takes the blame instead of the plates",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Quand les croix tombent, on relit la consigne, parce que c’est la seule chose écrite. Elle est intacte, donc on se dit qu’il n’y a rien à voir. Mais ce qui sort de la cuisine a bougé, et rien dans la maison n’était prévu pour s’en apercevoir.",
+            "expert": "Un contrôle déterministe appliqué de façon stable transforme un déplacement de distribution en série mesurable, même s’il n’a été construit que pour bloquer des sorties. La tromperie tient à ce qu’on cherche la cause du côté de la règle, inchangée et vérifiable, alors que l’écart est dans le comportement observé. La rupture est établie ; le mécanisme causal exact ne l’est pas."
+          },
+          "en": {
+            "kitchen": "When marks start landing, everyone rereads the note, since the note is the only thing written down. It is untouched, so the house decides nothing happened. What comes off the stoves has shifted, and nothing here was built to notice that.",
+            "expert": "A deterministic check applied without variation turns a distribution shift into a measurable series, even when it was built only to block outputs. The deception is that attention goes to the rule, which is unchanged and verifiable, while the divergence sits in the observed behavior. The break is established; the exact causal mechanism is not."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Tenir le carnet des entorses comme on tient un inventaire",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Keep the tally the way you keep stock",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ne jette pas le carnet quand la semaine est propre : c’est lui qui donnera la mesure quand elle ne le sera plus. Note la date, le nombre, et comment la maison tournait ce jour-là. Garde la prudence : le carnet prouve la rupture, jamais sa cause.",
+            "expert": "Traiter ce type de contrôle comme une source de télémétrie : conserver compteurs, versions et horodatages, puis les corréler aux changements produit. Les activations deviennent alors des signaux de régression exploitables sur un système qu’on n’instrumente pas soi-même. L’interprétation causale reste conservatrice : on documente une corrélation, pas une attribution."
+          },
+          "en": {
+            "kitchen": "Do not bin the tally on a clean week; a clean week is the measure you will need when a bad one lands. Write the date, the count, and how the house was running that evening. Stay careful: the tally proves the break, never its cause.",
+            "expert": "Treat this class of check as a telemetry source: keep counters, versions and timestamps, and correlate them with product changes. Activations then become usable regression signals over a system you do not instrument yourself. The causal reading stays conservative: record a correlation, not an attribution."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que le carnet de Claude Code a appris à la maison",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What the tally at Claude Code taught the house",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une consigne qui arrête un geste peut aussi, sans rien changer, tenir le compte de ceux qu’elle arrête. Garde ce compte : c’est souvent la seule mesure disponible quand la maison change sans le dire.",
+            "expert": "Un contrôle d’enforcement est aussi un capteur : appliqué de façon stable, il produit une série temporelle que le système observé n’instrumente pas nécessairement lui-même. Cette série établit la rupture, pas son origine."
+          },
+          "en": {
+            "kitchen": "A note that stops a gesture can also, unchanged, count every gesture it stops. Keep that count: it is often the only measure you hold when the house changes quietly.",
+            "expert": "An enforcement check is also a sensor: applied consistently, it yields a time series the observed system does not necessarily instrument itself. That series establishes the break, not its origin."
+          }
+        }
+      ]
+    }
+  ]
+}

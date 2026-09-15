@@ -1,1 +1,285 @@
-{"schema":"argh/public-entity/v1","id":"project:codex","type":"project","slug":"codex","route":"/projects/codex/","template":"project","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":[],"patterns":["branches","checkpoint","compaction","concurrency","context-budget","control-files","convergence","cross-harness","fail-open","forward-signals","hooks-enforcement","human-gates","mcp","mission-state","observability-budget","privacy-auditability","regression","release-state","routing","runtime-boundary","runtime-identity","runtime-visible-state","schema-capability","second-fix","skills-runtime","state-isolation","state-split","subagents","trust-boundary","worktrees"],"dossiers":["second-fix-real-boundary","human-gate-timeout","subagent-routing-hidden-capability","encrypted-subagents-lost-audit-trail","conversation-rewind-workspace-stayed-mutated","runtime-skill-inventory-not-filesystem","branch-name-roadmap-decay","codex-skills-context-budget","codex-managed-worktrees","mcp-common-protocol-local-policy","skills-cross-harness-convergence","hooks-cross-harness-convergence","subagents-delegation-control-plane","recovery-state-convergence","release-does-not-equal-observed-fix","observability-became-outage","memory-kept-history-lost-mission","safety-control-failure-became-permission","worktree-isolation-convergence","control-files-interoperability","control-plane-convergence"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Codex","expert":"Codex"},"en":{"kitchen":"Codex","expert":"Codex"}},"body":[{"fr":{"cuisine":"Vingt-et-un dossiers publics pour suivre Codex de la recette au service : garder le cap après une compaction, isoler les worktrees, encadrer les sous-agents et vérifier les résultats d’outils.","expert":"21 dossiers publics rattachés à Codex."},"en":{"kitchen":"Twenty-one public dossiers following Codex from recipe to service: staying on course after compaction, isolating worktrees, bounding subagents, and checking tool results.","expert":"21 public dossiers associated with Codex."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "project:codex",
+  "type": "project",
+  "slug": "codex",
+  "route": "/projects/codex/",
+  "template": "project",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [],
+    "patterns": [
+      "branches",
+      "checkpoint",
+      "compaction",
+      "concurrency",
+      "context-budget",
+      "control-files",
+      "convergence",
+      "cross-harness",
+      "fail-open",
+      "forward-signals",
+      "hooks-enforcement",
+      "human-gates",
+      "mcp",
+      "mission-state",
+      "observability-budget",
+      "privacy-auditability",
+      "regression",
+      "release-state",
+      "routing",
+      "runtime-boundary",
+      "runtime-identity",
+      "runtime-visible-state",
+      "schema-capability",
+      "second-fix",
+      "skills-runtime",
+      "state-isolation",
+      "state-split",
+      "subagents",
+      "trust-boundary",
+      "worktrees"
+    ],
+    "dossiers": [
+      "second-fix-real-boundary",
+      "human-gate-timeout",
+      "subagent-routing-hidden-capability",
+      "encrypted-subagents-lost-audit-trail",
+      "conversation-rewind-workspace-stayed-mutated",
+      "runtime-skill-inventory-not-filesystem",
+      "branch-name-roadmap-decay",
+      "codex-skills-context-budget",
+      "codex-managed-worktrees",
+      "mcp-common-protocol-local-policy",
+      "skills-cross-harness-convergence",
+      "hooks-cross-harness-convergence",
+      "subagents-delegation-control-plane",
+      "recovery-state-convergence",
+      "release-does-not-equal-observed-fix",
+      "observability-became-outage",
+      "memory-kept-history-lost-mission",
+      "safety-control-failure-became-permission",
+      "worktree-isolation-convergence",
+      "control-files-interoperability",
+      "control-plane-convergence"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Codex",
+          "expert": "Codex"
+        },
+        "en": {
+          "kitchen": "Codex",
+          "expert": "Codex"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Codex est une très grande maison. On y note tout, on poste quelqu’un à la porte, et une partie du travail part à des commis qu’on ne voit pas. Les histoires réunies ici ont toutes la même forme : le contrôle était posté trop loin de l’endroit où le geste devient définitif.",
+            "expert": "Codex accumule un plan de contrôle périphérique : hooks, skills chargés à l’exécution, délégation à des sous-agents, portes d’approbation humaine. Les lignées réunies ici répètent une même défaillance structurelle — un contrôle installé en amont de la frontière qu’il prétend tenir. Deux d’entre elles portent un correctif livré et versionné ; les autres restent ouvertes ou non corrélées à un commit, une release et une observation à l’exécution."
+          },
+          "en": {
+            "kitchen": "Codex runs a very big house. Everything gets written down, someone is posted at a door, and a share of the work leaves with cooks nobody watches. The failures collected here share one shape: the check stood too far from the spot where the move becomes final.",
+            "expert": "Codex has accumulated a peripheral control plane: hooks, runtime-loaded skills, subagent delegation, human approval gates. The lineages gathered here repeat one structural defect — a control installed upstream of the boundary it claims to hold. Two of them carry a shipped, versioned fix; the rest are open, or not yet correlated to a commit, a release and a runtime observation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Deux portes surveillées, puis un carnet qui dévore la réserve",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "Two watched doors, then a logbook that eats the storeroom",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Au début, la maison ne surveille que deux moments : l’ouverture et la fermeture du service. On sait qui entre et qui sort. Entre les deux, chaque geste part sans être vu.",
+            "expert": "Les premiers hooks répondent à une demande de la communauté par un MVP à deux événements, placés aux bornes de session. Ce que couvre cette surface, c’est l’orchestration, pas l’action."
+          },
+          "en": {
+            "kitchen": "At first the house watches two moments only: the start of service and its end. You know who came in and who left. In between, every move goes out unseen.",
+            "expert": "The first hooks answered community demand with a two-event MVP bound to session start and end. What that surface covers is orchestration, not the individual action."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Or c’est entre les deux que tout se joue. C’est là qu’on jette une casserole entière, qu’on sort une bouteille qu’on n’avait pas le droit de sortir, qu’on laisse filer un plat bâclé.",
+            "expert": "Ces rappels de bornes n’ont aucune prise structurelle sur l’action individuelle d’un outil, c’est-à-dire là où apparaissent les commandes destructrices, les secrets et les défauts de qualité."
+          },
+          "en": {
+            "kitchen": "But everything happens in between. That is where a whole pan gets thrown out, where a bottle leaves the cellar that never should have, where a sloppy plate goes through.",
+            "expert": "Boundary callbacks have no structural grip on the individual tool action — precisely where destructive commands, secrets and quality defects enter."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La maison a beaucoup ajouté depuis mars : des points de contrôle un peu partout, une façon de relire ce qui a été décidé. Personne n’a retrouvé la date de chaque ajout.",
+            "expert": "La source observée contient aujourd’hui un sous-système de hooks nettement plus riche que ce MVP de mars : couches d’exigences, surface de relecture, plugins de cœur. La correspondance historique entre chaque événement ajouté et sa PR ou sa version reste incomplète."
+          },
+          "en": {
+            "kitchen": "The house has added a great deal since March: checkpoints almost everywhere, a way to read back what was decided. Nobody has dated each addition.",
+            "expert": "The observed source now holds a hooks subsystem far richer than that March MVP: requirement layers, a review surface, core plugins. Mapping each added event back to a pull request or a release is still incomplete."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le répertoire des recettes a suivi le même chemin. Il ne traîne plus dans un tiroir. On choisit ce qu’on en sort, on surveille ce qui change, on décide à quelles fiches on se fie.",
+            "expert": "Les skills suivent la même trajectoire : sélection, configuration, surveillance des changements et garde des skills de confiance apparaissent dans la même source. Un catalogue de capacités devient une ressource d’exécution, plus un simple fichier de prompt."
+          },
+          "en": {
+            "kitchen": "The recipe file followed the same road. It no longer sits in a drawer: you pick what comes out, you watch what changes, you decide which cards you trust.",
+            "expert": "Skills travel the same path: selection, configuration, change watching and trusted-skill guarding all appear in the same source. A capability catalogue becomes a runtime resource rather than a prompt file."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Puis un client signale autre chose. La maison note chaque détail, et note deux fois les mêmes lignes. Le carnet grossit si vite qu’il abîme la réserve où on le range.",
+            "expert": "Une charge réelle signalée montre que la journalisation TRACE persistante et les événements dupliqués produisent un churn SQLite extrême et une amplification d’écriture sur SSD."
+          },
+          "en": {
+            "kitchen": "Then a customer reports something else. The house writes down every detail, and writes some lines twice. The ledger grows so fast it wears out the room it is kept in.",
+            "expert": "A reported workload shows persistent TRACE logging plus mirrored events producing extreme SQLite churn and SSD write amplification."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Deux corrections partent en 0.142.0. Un responsable de la maison regarde de plus près : une partie des lignes passait encore, par un chemin que le tri ne voyait pas.",
+            "expert": "Deux correctifs sont livrés en 0.142.0. Un suivi de mainteneur identifie ensuite un chemin résiduel : après réécriture des métadonnées par les adaptateurs, des enregistrements échappaient au filtre amont."
+          },
+          "en": {
+            "kitchen": "Two corrections go out in 0.142.0. A maintainer looks closer: a share of the lines still got through, by a route the sorting never saw.",
+            "expert": "Two fixes ship in 0.142.0. Maintainer follow-up then identifies a residual path: once adapters rewrote event metadata, records escaped the upstream filter."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le second correctif déplace le contrôle : plus au tri, mais au moment où l’on écrit vraiment dans le carnet. Il part en 0.143.0. Le client qui avait signalé annonce environ 85 % de moins ; personne d’autre n’a mesuré depuis.",
+            "expert": "Le second correctif, structurel, déplace l’enforcement vers le sink final et est livré en 0.143.0. L’utilisateur à l’origine du signalement rapporte environ 85 % de réduction pour l’ensemble des correctifs. Aucune mesure terrain indépendante n’a été conduite après 0.143.0."
+          },
+          "en": {
+            "kitchen": "The second fix moves the check: not at the sorting, but where the line is actually written into the ledger. It goes out in 0.143.0. The customer who reported it says roughly 85 percent less; nobody else has measured since.",
+            "expert": "The second, structural fix moves enforcement into the final sink and ships in 0.143.0. The reporting user measured roughly an 85% reduction across the set of fixes. No independent field measurement has been taken since 0.143.0."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi le tri à l’entrée laisse passer ce qui a changé de nom",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why sorting at the door misses whatever changed its name",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le tri se faisait à l’entrée, sur l’étiquette. Entre l’entrée et le carnet, les étiquettes changeaient. Ce qui avait été recollé passait tranquillement. La même erreur se retrouve ailleurs dans la maison : on surveille l’annonce, pas le geste.",
+            "expert": "Le défaut commun est la distance entre le point de contrôle et la frontière où l’effet devient irréversible. Le filtre de journalisation s’appliquait avant que les adaptateurs ne réécrivent les métadonnées : après réécriture, les enregistrements n’étaient plus reconnus. La même distance sépare un hook de bornes de session de l’action d’outil qu’il prétend encadrer. Elle sépare aussi un drapeau présenté comme cosmétique, hide_spawn_agent_metadata activé par défaut, du schéma spawn_agent visible par le modèle auquel il retirait des champs de routage."
+          },
+          "en": {
+            "kitchen": "Sorting happened at the door, off the label. Between the door and the ledger, labels were rewritten. Anything relabelled walked straight through. The same mistake sits elsewhere in the house: the call is watched, the move is not.",
+            "expert": "The shared defect is distance between the control point and the boundary where the effect becomes irreversible. The logging filter ran before adapters rewrote event metadata, so rewritten records were no longer recognised. The same distance separates a session-boundary hook from the tool action it claims to gate. It also separates a flag presented as cosmetic metadata, hide_spawn_agent_metadata defaulting to true, from the model-visible spawn_agent schema whose routing fields it removed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que la maison a déplacé, et ce qui n’est encore qu’une consigne",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What the house moved, and what is still only a rule on paper",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Pour le carnet, le contrôle a été déplacé jusqu’au point d’écriture ; ça, c’est fait. Pour le reste, il y a des règles, pas encore des preuves. Surveiller le geste et non l’annonce, garder une trace lisible même quand on scelle les messages entre commis. Et ne jamais laisser une question posée au chef se répondre toute seule au bout d’une minute.",
+            "expert": "Pour la journalisation, la réponse livrée est structurelle : l’enforcement est validé au sink final plutôt qu’en amont. Les autres lignées n’ont produit que des pratiques, pas des correctifs observés. Un hook d’enforcement doit s’exécuter à la frontière d’action qu’il revendique, avec une sémantique de blocage et d’échec explicite, et une configuration qui retire des champs du schéma visible par le modèle relève de la logique d’agent, donc de tests d’intégration. Les portes d’approbation humaine doivent échouer en fermé, et la confidentialité du destinataire ne doit pas supprimer la trace locale bornée dont l’opérateur a besoin."
+          },
+          "en": {
+            "kitchen": "For the ledger, the check was moved down to the point of writing; that much is done. For the rest there are rules, not yet proof. Watch the move rather than the call, and keep a readable record even when the cooks’ notes are sealed. And never let a question put to the chef answer itself after a minute.",
+            "expert": "For logging, the shipped response is structural: enforcement is validated at the final sink instead of upstream. The other lineages produced practices, not observed fixes. A hook meant to enforce must run at the action boundary it claims, with explicit block and failure semantics; configuration that strips fields from the model-visible schema is agent logic and needs integration tests. Human approval gates should fail closed, and recipient encryption should not destroy the bounded local trace an operator needs to debug delegation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Le carnet est tenu ; les autres portes ne le sont pas",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "The logbook is under control; the other doors are not",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le carnet, c’est réglé, et on sait par quoi. Le reste, non : les messages scellés entre commis restent signalés ouverts, comme la porte qui se refermait seule après une minute. Pour le champ retiré des fiches, la maison dit que c’est corrigé, sans qu’on ait retrouvé le geste qui l’aurait corrigé. Et depuis, personne d’autre que le client d’origine n’a remesuré le carnet.",
+            "expert": "Établi : les deux vagues de correctifs de journalisation et leurs versions, ainsi qu’un sous-système de hooks nettement plus riche dans la source observée. Non établi : toute mesure terrain indépendante après 0.143.0, et la correspondance historique entre chaque événement de hook et sa PR ou sa version. Le signalement des sous-agents chiffrés était ouvert au moment de la collecte, et celui de la porte humaine expirant à soixante secondes reste ouvert côté Codex à la date de coupure. Le bug de métadonnées de spawn est marqué complété dans le dépôt, mais le commit correcteur, la version et l’observation à l’exécution restent à corréler."
+          },
+          "en": {
+            "kitchen": "The ledger is settled, and we know what settled it. The rest is not: the sealed notes between cooks are still reported open, and so is the door that shut itself after a minute. On the field stripped from the cooks’ slips, the house says it is fixed, but nobody has found the move that fixed it. And no one beyond the original customer has measured the ledger again.",
+            "expert": "Established: both waves of logging fixes with their versions, and a substantially richer hooks subsystem in the observed source. Not established: any independent field measurement after 0.143.0, and the historical mapping from each hook event to a pull request or release. The encrypted-subagent report was open at retrieval; the sixty-second human-gate issue remains open on the Codex side at cutoff. The spawn-metadata bug is marked completed in the repository, but the correcting commit, the release and a runtime observation still need correlation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Poste le contrôle là où le geste devient définitif",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Stand the check where the move becomes final",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un contrôle posté loin du geste ne contrôle que l’annonce. Mets-le là où la chose devient impossible à reprendre, puis va voir qu’il y est vraiment.",
+            "expert": "Un contrôle n’encadre que ce qui passe par lui : il doit s’exécuter à la frontière où l’effet devient irréversible, avec une sémantique d’échec déclarée. Après correctif, c’est le chemin d’ingestion réel qu’il faut vérifier, pas la représentation visible au départ."
+          },
+          "en": {
+            "kitchen": "A check standing far from the move only checks the call. Put it where the thing can no longer be taken back, then go and see that it is really there.",
+            "expert": "A control only governs what passes through it, so it belongs at the boundary where the effect becomes irreversible, with declared failure semantics. After a fix, verify the actual ingestion path rather than the representation visible at the start."
+          }
+        }
+      ]
+    }
+  ]
+}

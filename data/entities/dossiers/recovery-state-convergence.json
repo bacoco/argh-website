@@ -1,1 +1,222 @@
-{"schema":"argh/public-entity/v1","id":"dossier:recovery-state-convergence","type":"dossier","slug":"recovery-state-convergence","route":"/dossiers/recovery-state-convergence/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Codex","Cline","OpenHands","Archon","Claude Code"],"patterns":["checkpoint","runtime-identity","convergence"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Rouvrir le carnet ne suffit plus à remettre la cuisine dans le même état","expert":"La reprise de conversation se sépare de la reprise d’exécution"},"en":{"kitchen":"Reopening the notebook no longer restores the same kitchen","expert":"Conversation recovery is separating from execution recovery"}},"body":[{"fr":{"cuisine":"Retrouver le carnet ne rend pas automatiquement les mêmes outils, le même plan de travail ni les tâches encore dues : ces histoires se tiennent ensemble sans être la même chose.","expert":"Dans plusieurs harnais, les fonctions de reprise et rewind exposent la même abstraction manquante : transcript, workspace et identité d’exécution sont des historiques différents mais interdépendants."},"en":{"kitchen":"Recovering the notebook does not automatically restore the same tools, workbench, or unfinished duties: those histories belong together without being the same thing.","expert":"Across harnesses, resume and rewind features are exposing the same missing abstraction: transcript state, workspace state and execution identity are different but interdependent histories."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Les premières reprises ne ramènent que la conversation.","expert":"Les premières reprises se concentrent sur l’historique conversationnel."},"en":{"kitchen":"Early recovery brings back only the conversation.","expert":"Early resume focused on conversation history."}},{"fr":{"cuisine":"Après la reprise, les fournisseurs, outils ou plans de travail ne correspondent plus toujours au carnet.","expert":"Les utilisateurs découvrent des incompatibilités de provider, outils ou workspace après reprise."},"en":{"kitchen":"After recovery, providers, tools, or workspaces no longer always match the notebook.","expert":"Users discovered provider, tool or workspace mismatches after resume."}},{"fr":{"cuisine":"Un rewind peut remettre le chat en arrière sans remettre les fichiers au même moment.","expert":"Rewind révèle des splits chat/filesystem."},"en":{"kitchen":"A rewind can move chat backward without restoring files to the same moment.","expert":"Rewind exposed chat/filesystem splits."}},{"fr":{"cuisine":"Les worktrees et points de reprise entrent peu à peu dans la cuisine elle-même.","expert":"Worktrees et checkpoints entrent progressivement dans le runtime."},"en":{"kitchen":"Worktrees and checkpoints are gradually entering the kitchen itself.","expert":"Worktrees and checkpoints began moving into the runtime."}},{"fr":{"cuisine":"Le modèle qui émerge conserve la mission et l’identité d’exécution comme un état durable et structuré.","expert":"Le modèle émergent traite mission et identité d’exécution comme état structuré durable."},"en":{"kitchen":"The emerging kitchen keeps the order and the cook’s badge in a durable card that survives a restart.","expert":"The emerging model treats mission and execution identity as durable structured state."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Le transcript raconte ce qui a été dit, mais pas à lui seul dans quel environnement l’agent avait le droit et les moyens d’agir.","expert":"Un transcript peut reconstruire ce qui a été dit mais ne peut pas reconstruire à lui seul dans quel environnement l’agent était autorisé et capable d’agir."},"en":{"kitchen":"The transcript tells what was said, but not by itself the environment in which the agent was allowed and able to act.","expert":"A transcript can reconstruct what was said but cannot by itself reconstruct what environment the agent was authorized and able to act in."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"À côté du carnet, conserver mission, plan de travail, fournisseur et modèle, outils, permissions et obligations ouvertes.","expert":"Persister mission, workspace, provider/modèle, outils, permissions et obligations ouvertes aux côtés de l’état conversationnel."},"en":{"kitchen":"Alongside the notebook, keep the mission, workspace, provider and model, tools, permissions, and open obligations.","expert":"Persist mission, workspace, provider/model, tools, permissions and open obligations alongside conversation state."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"C’est une convergence forte entre projets, même si chaque cuisine l’applique encore à sa manière.","expert":"Une forte tendance architecturale inter-projets, encore implémentée de manière inégale."},"en":{"kitchen":"This is a strong cross-project convergence, though each kitchen still implements it unevenly.","expert":"A strong cross-project architecture trend, still implemented unevenly."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Une reprise est réussie quand le travail restant et l’environnement utile sont réellement revenus ensemble.","expert":"La mémoire n’est pas la mission, et le transcript n’est pas l’état d’exécution."},"en":{"kitchen":"A resumed service needs both the unfinished order and the kitchen that can still cook it; a transcript alone is neither.","expert":"Memory is not mission, and transcript is not execution state."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:recovery-state-convergence",
+  "type": "dossier",
+  "slug": "recovery-state-convergence",
+  "route": "/dossiers/recovery-state-convergence/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Codex",
+      "Cline",
+      "OpenHands",
+      "Archon",
+      "Claude Code"
+    ],
+    "patterns": [
+      "checkpoint",
+      "runtime-identity",
+      "convergence"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "On rend le carnet au commis, mais pas le poste qu’il avait",
+          "expert": "La reprise de conversation se sépare de la reprise d’exécution"
+        },
+        "en": {
+          "kitchen": "Handing back the pad does not hand back the station",
+          "expert": "Conversation recovery is separating from execution recovery"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le commis revient, on lui rend son carnet. Il y relit chaque commande prise. Mais ses casseroles ont bougé, la réserve n’est plus la même, et personne ne lui dit ce qu’il doit encore. Codex, Cline, OpenHands, Archon et Claude Code butent tous sur ce même trou.",
+            "expert": "Les fonctions de reprise et de rewind de Codex, Cline, OpenHands, Archon et Claude Code exposent la même abstraction manquante. État conversationnel, état du workspace et identité d’exécution sont trois historiques distincts mais interdépendants. Restaurer le transcript ne restaure ni les outils, ni le plan de travail, ni les obligations restées ouvertes."
+          },
+          "en": {
+            "kitchen": "Hand a returning cook his pad and he can read back every order he took. It does not tell him which pans are on his station, which pantry he draws from now, or what he still owes the pass. Codex, Cline, OpenHands, Archon and Claude Code all run into the same gap.",
+            "expert": "Resume and rewind in Codex, Cline, OpenHands, Archon and Claude Code keep surfacing one missing abstraction. Transcript state, workspace state and execution identity are separate histories that depend on each other. Restoring the transcript restores neither the tool surface, nor the workspace, nor the obligations still outstanding."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Comment le carnet a cessé de suffire",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "How the pad turned out not to be enough",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Au début, reprendre voulait dire rendre le carnet, rien de plus.",
+            "expert": "Les premières implémentations de reprise se limitent à l’historique conversationnel."
+          },
+          "en": {
+            "kitchen": "At first, coming back meant getting the pad, and nothing else.",
+            "expert": "Early resume implementations covered conversation history only."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Puis les commis ont vu que le fournisseur, les ustensiles et le plan de travail ne suivaient pas.",
+            "expert": "Les utilisateurs remontent ensuite des incompatibilités de provider, d’outils et de workspace après reprise."
+          },
+          "en": {
+            "kitchen": "Then cooks found the supplier, the utensils and the bench no longer matched the pad.",
+            "expert": "Users then reported provider, tool and workspace mismatches after a resume."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Revenir en arrière dans le carnet ne ramenait pas la réserve au même moment.",
+            "expert": "Le rewind met au jour des désynchronisations entre historique de conversation et système de fichiers."
+          },
+          "en": {
+            "kitchen": "Winding the pad back did not wind the pantry back with it.",
+            "expert": "Rewind exposed splits between conversation history and the filesystem."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Les plans de travail séparés et les points de reprise entrent peu à peu dans la cuisine elle-même.",
+            "expert": "Worktrees et checkpoints entrent progressivement dans le runtime lui-même."
+          },
+          "en": {
+            "kitchen": "Separate benches and pick-up points start being built into the kitchen itself.",
+            "expert": "Worktrees and checkpoints began moving into the runtime itself."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Ce qui se dessine garde la commande due et le poste du commis sur une fiche qui survit à la coupure.",
+            "expert": "Le modèle émergent traite la mission et l’identité d’exécution comme un état structuré durable."
+          },
+          "en": {
+            "kitchen": "What is taking shape keeps the order still owed and the cook’s station on a card that survives the break.",
+            "expert": "The emerging model treats mission and execution identity as durable structured state."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Le carnet dit ce qui a été commandé, pas ce qu’on avait sous la main",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "The pad holds the orders, not the station that filled them",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le carnet garde ce qui a été commandé. Il ne garde pas ce que le commis avait sous la main, ni ce qu’on l’autorisait à toucher. Relire les commandes ne rallume pas les feux.",
+            "expert": "Un transcript reconstruit ce qui a été dit. Il ne reconstruit pas à lui seul l’environnement dans lequel l’agent était autorisé et capable d’agir."
+          },
+          "en": {
+            "kitchen": "The pad holds what was ordered. It does not hold what the cook had within reach, nor what he was cleared to touch. Reading the orders back does not relight the stoves.",
+            "expert": "A transcript reconstructs what was said. It cannot by itself reconstruct the environment in which the agent was authorized and able to act."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’il faut ranger à côté du carnet",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What gets stored next to the pad",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ranger à côté du carnet la commande encore due, le poste, le fournisseur et la marchandise choisie, les ustensiles autorisés et ce qui reste à rendre.",
+            "expert": "Persister mission, workspace, provider et modèle, outils, permissions et obligations ouvertes aux côtés de l’état conversationnel."
+          },
+          "en": {
+            "kitchen": "Store beside the pad the order still owed, the station, the supplier and the goods chosen, the utensils allowed, and whatever is still due.",
+            "expert": "Persist mission, workspace, provider and model, tool surface, permissions and open obligations alongside conversation state."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Cinq maisons, la même correction en cours",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "Five houses, the same repair under way",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La direction est la même dans les cinq maisons. Chacune la met en place à son rythme, et aucune n’est au bout.",
+            "expert": "Tendance architecturale forte et convergente entre projets, encore implémentée de manière inégale."
+          },
+          "en": {
+            "kitchen": "All five houses are heading the same way. Each moves at its own pace, and none has arrived.",
+            "expert": "A strong convergent architecture trend across projects, still unevenly implemented."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Reprendre, c’est retrouver le poste autant que le carnet",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Coming back means finding the station, not just the pad",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un commis n’a repris son service que le jour où il retrouve, avec son carnet, le poste capable d’envoyer ce qui reste dû.",
+            "expert": "La mémoire n’est pas la mission, et le transcript n’est pas l’état d’exécution."
+          },
+          "en": {
+            "kitchen": "A cook is only back on service when the pad comes back with a station able to send what is still owed.",
+            "expert": "Memory is not mission, and transcript is not execution state."
+          }
+        }
+      ]
+    }
+  ]
+}

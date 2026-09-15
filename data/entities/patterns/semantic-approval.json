@@ -1,1 +1,150 @@
-{"schema":"argh/public-entity/v1","id":"pattern:semantic-approval","type":"pattern","slug":"semantic-approval","route":"/patterns/semantic-approval/","template":"pattern","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":["Claude Code"],"patterns":[],"dossiers":["permission-ui-approved-wrong-action"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le chef doit approuver ce qui va vraiment être fait","expert":"Approbation sémantique"},"en":{"kitchen":"The chef must approve what will actually happen","expert":"Semantic Approval"}},"body":[{"fr":{"cuisine":"L’autorisation doit porter sur le vrai effet de l’action, pas sur une étiquette rassurante ou incomplète.","expert":"L’approbation sémantique lie le consentement à la signification et aux effets réels de l’opération, pas seulement à sa représentation UI."},"en":{"kitchen":"Approval must cover the action’s real effect, not a reassuring or incomplete label.","expert":"Semantic approval binds consent to the real meaning and effects of an operation, not merely its UI representation."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "pattern:semantic-approval",
+  "type": "pattern",
+  "slug": "semantic-approval",
+  "route": "/patterns/semantic-approval/",
+  "template": "pattern",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [
+      "Claude Code"
+    ],
+    "patterns": [],
+    "dossiers": [
+      "permission-ui-approved-wrong-action"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Il demandait s’il pouvait passer au frigo, pas ce qu’il allait y faire",
+          "expert": "L’accord portait sur le segment affiché, pas sur l’autorité réellement accordée"
+        },
+        "en": {
+          "kitchen": "He asked to step into the cold room, not what he would do there",
+          "expert": "Consent covered the displayed segment, not the authority actually granted"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Claude Code, le commis annonce un geste de rien du tout : il passe au frigo. Le chef dit oui, parce que la phrase qu’on lui montre ne dit que ça. Derrière ce premier geste en venait un autre, autrement lourd, que personne ne lui avait lu.",
+            "expert": "Sur des commandes shell composées, le prompt de permission de Claude Code pouvait mettre en avant un changement de répertoire anodin tandis que l’opération Git significative restait masquée derrière. L’utilisateur validait donc un libellé sans rapport avec l’autorité réellement accordée. Un correctif structurel avait déjà amélioré la segmentation et la priorité des règles de refus ; le mauvais sous-ordre restait affiché ensuite."
+          },
+          "en": {
+            "kitchen": "At Claude Code the cook announces something harmless: he is stepping into the cold room. The chef says yes, because the line he is shown says only that. Behind that first move came another one, far heavier, that nobody had read out to him.",
+            "expert": "On composed shell commands, the Claude Code permission prompt could foreground a harmless directory change while the significant Git operation stayed hidden behind it. The user therefore approved a label unrelated to the authority actually granted. A structural fix had already improved segmentation and deny-rule priority; the wrong sub-command was still being displayed afterwards."
+          }
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "La demande qui revient sans qu’on puisse jamais la régler",
+          "expert": "Signaux"
+        },
+        "en": {
+          "kitchen": "The question that keeps coming back and never settles",
+          "expert": "Signals"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On te redemande la même autorisation dix fois dans le service, et tu ne peux rien accorder une fois pour toutes. Ce qu’on te lit est toujours court, toujours anodin, toujours le début du geste. Chez Claude Code, la maison avait déjà revu sa façon de découper les demandes, et l’affichage se trompait encore.",
+            "expert": "Le signal est un prompt répété sur la même famille d’opérations, impossible à mettre en liste blanche utilement. Le second est l’écart entre le segment affiché — le plus court, le moins risqué — et l’effet de la commande complète. Chez Claude Code, la récidive après un correctif structurel de parsing établit que correction du parsing et sémantique d’approbation sont deux problèmes distincts."
+          },
+          "en": {
+            "kitchen": "The same permission is asked of you ten times a service, and you can grant nothing once and for all. What gets read to you is always short, always harmless, always the start of the move. At Claude Code the house had already reworked how it cut requests apart, and the display still picked wrong.",
+            "expert": "One signal is a prompt repeating over the same family of operations, impossible to whitelist usefully. The second is the gap between the displayed segment — shortest, least risky — and the effect of the complete command. At Claude Code, recurrence after a structural parsing fix establishes that parsing correctness and approval semantics are two distinct problems."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Une phrase juste peut désigner le mauvais geste",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "A true sentence can name the wrong move",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le commis n’a pas menti : il a bien annoncé son premier pas. La maison, elle, a choisi de lire ce premier pas plutôt que le plus lourd. Un oui donné sur cette phrase-là ne couvre que cette phrase, quoi qu’il arrive ensuite.",
+            "expert": "Le découpage peut être syntaxiquement correct alors que l’interface retient un segment à faible risque comme action représentative. La tromperie est là : le libellé est vrai, vérifiable, et sans rapport avec l’autorité accordée. L’accord ne couvre que ce que le libellé énonce, indépendamment de ce que le système exécute ensuite."
+          },
+          "en": {
+            "kitchen": "The cook did not lie: he announced his first step, exactly. The house chose to read out that first step rather than the heaviest one. A yes given on that sentence covers that sentence only, whatever follows it.",
+            "expert": "Segmentation can be syntactically correct while the interface keeps a low-risk segment as the representative action. That is the deception: the label is true, checkable, and unrelated to the authority granted. Consent covers only what the label states, regardless of what the system executes next."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Lire au chef le geste le plus lourd, pas le premier",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Read the chef the heaviest move, not the first one",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Avant de demander un oui, dis toute la manœuvre et mets en avant le geste le plus lourd. Le premier pas n’est pas un résumé : c’est seulement ce qui vient en premier. Chez Claude Code, mieux découper les demandes n’a pas suffi ; choisir ce qu’on montre est un problème à part.",
+            "expert": "Un prompt de permission doit résumer l’effet sémantique de la commande complète et afficher l’action de plus haute autorité. Le premier segment parsable n’est pas un candidat acceptable pour représenter la décision. Chez Claude Code, la récidive montre que l’UX de sécurité appartient à la correction de l’enforcement et non à sa présentation : améliorer le parsing ne corrige pas le choix du représentant."
+          },
+          "en": {
+            "kitchen": "Before asking for a yes, say the whole manoeuvre and put the heaviest move in front. The first step is not a summary; it is merely what comes first. At Claude Code, cutting requests apart better was not enough; choosing what to show is its own problem.",
+            "expert": "A permission prompt must summarize the semantic effect of the complete command and display the highest-authority action. The first parsable segment is not an acceptable candidate to represent the decision. At Claude Code the recurrence shows security UX belongs to enforcement correctness rather than to its presentation: improving parsing does not fix the choice of representative."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que le oui de trop a appris chez Claude Code",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What one yes too many taught at Claude Code",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un oui ne couvre que ce qu’on a lu à celui qui le donne. Si on lui a lu le petit geste, il n’a pas autorisé le grand.",
+            "expert": "Approuver la mauvaise description n’est pas une approbation éclairée. Le consentement se lie à l’effet réel de l’opération, pas à sa représentation dans l’interface : un affichage exact sur le mauvais segment laisse l’autorité accordée sans contrôle."
+          },
+          "en": {
+            "kitchen": "A yes covers only what was read out to the person giving it. Read him the small move, and he has not allowed the large one.",
+            "expert": "Approving the wrong description is not informed approval. Consent binds to the real effect of the operation, not to its representation in the interface: an accurate display of the wrong segment leaves the granted authority unchecked."
+          }
+        }
+      ]
+    }
+  ]
+}

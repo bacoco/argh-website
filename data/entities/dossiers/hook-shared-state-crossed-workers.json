@@ -1,1 +1,218 @@
-{"schema":"argh/public-entity/v1","id":"dossier:hook-shared-state-crossed-workers","type":"dossier","slug":"hook-shared-state-crossed-workers","route":"/dossiers/hook-shared-state-crossed-workers/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["SWE-agent"],"patterns":["hooks-enforcement","concurrency","state-isolation"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Deux cuisiniers ont partagé le même carnet et ont mélangé leurs commandes","expert":"Un hook sûr avec un seul worker a corrompu l’état sous agents parallèles"},"en":{"kitchen":"Two cooks shared one notebook and mixed their orders","expert":"A hook that was safe in one worker corrupted state under parallel agents"}},"body":[{"fr":{"cuisine":"Deux cuisiniers ont partagé le même carnet et ont mélangé leurs commandes. Un contrôle placé à la passe peut observer, bloquer ou décider. Le risque apparaît quand son rôle change sans que la brigade sache exactement quelle autorité il possède.","expert":"Une instance de hook stockait l’environnement et les données de problème de chaque run dans des champs ordinaires. Des workers parallèles pouvaient s’écraser mutuellement et enregistrer des résultats dans le mauvais run."},"en":{"kitchen":"Two cooks shared one notebook and mixed their orders. A check at the pass can observe, block or decide. Risk appears when its role changes without the brigade knowing exactly what authority it has.","expert":"A hook instance stored per-run environment and problem data in ordinary instance fields. Parallel workers could overwrite each other and save results to the wrong run."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Avec un seul cuisinier, le carnet du crochet semble parfaitement tenir.","expert":"Un hook fonctionne correctement en exécution sérielle."},"en":{"kitchen":"With one cook, the hook’s notebook appears to hold perfectly.","expert":"A hook worked correctly in serial execution."}},{"fr":{"cuisine":"Le service en lots met plusieurs cuisiniers autour du même carnet.","expert":"Le mode batch introduit plusieurs workers partageant la même instance de hook."},"en":{"kitchen":"Batch service puts several cooks around the same notebook.","expert":"Batch mode introduced multiple workers sharing the hook instance."}},{"fr":{"cuisine":"Pendant qu’A travaille, B peut y réécrire l’état et déplacer l’étiquette de la commande.","expert":"Le worker B peut écraser l’état pendant que le worker A tourne encore."},"en":{"kitchen":"While A works, B can rewrite its state and move the order label.","expert":"Worker B could overwrite state while worker A was still running."}},{"fr":{"cuisine":"Quand deux cuisiniers écrivent dans le même carnet, une sortie peut recevoir l’étiquette du mauvais dossier.","expert":"Les sorties peuvent être attribuées au mauvais dossier de problème."},"en":{"kitchen":"When two cooks write in the same notebook, an output can receive the wrong folder’s label.","expert":"Outputs could be attributed to the wrong problem directory."}},{"fr":{"cuisine":"Les sorties risquent alors d’atterrir dans le mauvais dossier ; le remède donne à chaque cuisinier son état et rejoue la course à deux.","expert":"Le correctif déplace l’état vers du thread-local et ajoute un test de régression déterministe à deux workers."},"en":{"kitchen":"Outputs can then land in the wrong folder; the remedy gives each cook its own state and reruns the two-worker race.","expert":"The fix moved state into thread-local storage and added a deterministic two-worker regression test."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Le crochet croyait vivre le temps d’un seul service ; le parallèle a changé le propriétaire du carnet sans changer la façon dont son état était rangé.","expert":"L’objet hook était traité comme si son cycle de vie correspondait à un seul run. Le parallélisme a changé le modèle de propriété sans changer le modèle d’état de l’objet."},"en":{"kitchen":"The hook believed it lived for one service; parallel work changed the notebook’s owner without changing how its state was stored.","expert":"The hook object was treated as if its lifecycle matched a single run. Parallelism changed the ownership model without changing the object’s state model."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Chaque service, fil ou contexte doit avoir son propre compartiment, et la course doit être rejouée avec des barrières déterministes.","expert":"L’état par run doit être isolé par tâche, thread, contexte async ou identité explicite de run, et les bugs de concurrence nécessitent des tests déterministes avec barrières."},"en":{"kitchen":"Each service, thread or context needs its own compartment, and the race must be replayed with deterministic barriers.","expert":"Per-run state must be isolated by task, thread, async context or explicit run identity, and concurrency bugs need deterministic barrier-based tests."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"C’est l’avertissement à garder avant de paralléliser un contrôle imaginé pour un seul cuisinier.","expert":"C’est un avertissement canonique pour tout harnais ajoutant des subagents parallèles à des contrôles conçus pour l’exécution sérielle."},"en":{"kitchen":"This is the warning to keep before parallelising a control designed for one cook.","expert":"This is a canonical warning for every harness adding parallel subagents to controls written for serial execution."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Des agents parallèles transforment le même état de crochet en même risque de corruption pour tous.","expert":"Les agents parallèles transforment l’état partagé d’un hook en risque de corruption partagée."},"en":{"kitchen":"Parallel agents turn one shared hook state into one shared corruption risk for all.","expert":"Parallel agents turn shared hook state into shared corruption risk."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:hook-shared-state-crossed-workers",
+  "type": "dossier",
+  "slug": "hook-shared-state-crossed-workers",
+  "route": "/dossiers/hook-shared-state-crossed-workers/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "SWE-agent"
+    ],
+    "patterns": [
+      "hooks-enforcement",
+      "concurrency",
+      "state-isolation"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Deux cuisiniers, une seule ardoise, et le plat est parti à la mauvaise table",
+          "expert": "Un contrôle sûr en exécution sérielle a corrompu son état en exécution parallèle"
+        },
+        "en": {
+          "kitchen": "One slate, two cooks, and a plate sent to the wrong table",
+          "expert": "A check that was safe when runs were serial corrupted its state once runs overlapped"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Au passe de SWE-agent, il y a une ardoise et une craie. Le cuisinier y écrit sa table et le plat qu’il monte, puis il efface en envoyant. Tant qu’il travaillait seul, la ligne était toujours la sienne. Le jour où ils ont été deux à écrire dessus, un plat est parti à la mauvaise table.",
+            "expert": "Un contrôle conservait, pour chaque exécution, les conditions d’environnement et les données du problème dans des champs ordinaires d’une instance unique. Sous exécution parallèle, deux exécutions partageaient cette instance et pouvaient s’écraser mutuellement. Des sorties ont pu être enregistrées sous le mauvais dossier de problème."
+          },
+          "en": {
+            "kitchen": "SWE-agent keeps one slate at the pass and one stick of chalk. A cook writes his table and his dish on it, then wipes the line when the plate goes out. Working alone, he never read anything but his own handwriting. Put a second cook on the same slate and a plate leaves for the wrong table.",
+            "expert": "A check stored per-run environment conditions and problem data in ordinary fields on a single shared instance. Once runs overlapped, two of them shared that instance and could overwrite each other’s values. Outputs could be recorded against the wrong problem directory."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Comment la ligne a changé de main",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "How the line changed hands",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un seul cuisinier au passe, une seule ligne à la craie. Rien ne se mélange, parce que personne d’autre n’écrit.",
+            "expert": "En exécution sérielle, le contrôle fonctionnait correctement : une seule exécution vivait à la fois."
+          },
+          "en": {
+            "kitchen": "One cook at the pass, one chalk line at a time. Nothing crosses, because nobody else is writing.",
+            "expert": "Run one at a time and the check behaved correctly; only one run was ever live."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le service en rafale met plusieurs cuisiniers au même passe. L’ardoise, elle, reste unique.",
+            "expert": "Le mode par lots a introduit plusieurs exécutions concurrentes partageant la même instance de contrôle."
+          },
+          "en": {
+            "kitchen": "Batch service crowds several cooks onto the same pass. The slate stays the same single slate.",
+            "expert": "Batch mode introduced several concurrent runs sharing one control instance."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le second efface la ligne du premier et écrit la sienne pendant qu’il travaille encore. Le premier n’a rien vu passer.",
+            "expert": "Une exécution pouvait réécrire les champs partagés pendant qu’une autre était encore en cours."
+          },
+          "en": {
+            "kitchen": "The second cook wipes the first one’s line and chalks his own while the first is still working. The first never looks up.",
+            "expert": "One run could rewrite the shared fields while another was still in flight."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Quand le premier plat est prêt, le passe lit la table inscrite maintenant. Ce n’est plus la sienne.",
+            "expert": "Au moment d’enregistrer un résultat, le contrôle relisait ces champs et pouvait l’attribuer au mauvais dossier de problème."
+          },
+          "en": {
+            "kitchen": "When the first plate is ready, the pass reads whatever table is chalked up now. It is not his.",
+            "expert": "At write time the control re-read those fields and could file a result under the wrong problem directory."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "On a donné son ardoise à chaque cuisinier, puis on a remonté le double service exprès pour vérifier.",
+            "expert": "Le correctif a déplacé l’état par exécution vers un stockage propre au thread, avec un test de régression déterministe à deux exécutions."
+          },
+          "en": {
+            "kitchen": "Each cook got a slate of his own, and the double service was staged again on purpose to check.",
+            "expert": "The fix moved per-run state into thread-local storage and added a deterministic two-worker regression test."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Pourquoi personne n’a vu venir",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "Why nobody saw it coming",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "L’ardoise avait été pensée pour un homme qui écrit et efface tout seul. Doubler la brigade a changé le nombre de mains, pas la façon d’écrire. Personne ne s’est demandé si une ligne pouvait appartenir à quelqu’un d’autre.",
+            "expert": "L’objet de contrôle était traité comme si sa durée de vie coïncidait avec une exécution unique. Le passage au parallèle a changé le modèle de propriété sans que le modèle de stockage suive. Les champs sont restés communs alors que leur contenu était devenu propre à chaque exécution."
+          },
+          "en": {
+            "kitchen": "The slate was built for one man who writes and wipes his own line. Adding cooks changed how many hands reach for the chalk, not how the slate works. Nobody asked whether a line could belong to somebody else.",
+            "expert": "The control object was treated as though its lifetime matched a single run. Parallelism changed the ownership model while the storage model stayed where it was. The fields remained common after their contents had become private to each run."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on a changé au passe",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What changed at the pass",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une ardoise par cuisinier, avec son nom dessus, et plus rien de commun qui traîne au passe. Et pour en être sûr, on rejoue le double service à froid, avec les deux mains au même instant.",
+            "expert": "L’état par exécution doit être isolé par tâche, par thread, par contexte asynchrone ou par identité d’exécution explicite, jamais par un champ partagé. Les défauts de concurrence exigent des tests déterministes à barrières, et non un entrelacement laissé au hasard."
+          },
+          "en": {
+            "kitchen": "Give every cook his own slate with his own name on it, and leave nothing shared at the pass. Then stage the two-handed service deliberately, instead of waiting for a busy night to show you.",
+            "expert": "Per-run state belongs to a task, a thread, an async context or an explicit run identity — never to a shared field. Concurrency defects need barrier-based deterministic tests rather than hoped-for interleavings."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce que ça vaut pour les autres cuisines",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "What it is worth to other kitchens",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "C’est l’avertissement à relire avant de doubler la brigade sur un passe conçu pour un seul cuisinier. La panne est patiente : elle attend le soir où deux mains écrivent ensemble.",
+            "expert": "Le cas sert d’avertissement canonique à tout système qui ajoute des exécutions parallèles à des contrôles écrits pour l’exécution sérielle."
+          },
+          "en": {
+            "kitchen": "Read this one again before you put a second cook on a pass built for one. The failure is patient: it waits for the night when two hands write at once.",
+            "expert": "The case stands as a canonical warning for any system adding parallel runs on top of controls written for serial execution."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "La ligne à retenir",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "The line to keep",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Une ardoise partagée, c’est une erreur partagée : dès qu’on est deux à écrire dessus, plus personne ne sait à qui appartient la ligne.",
+            "expert": "Un état de contrôle partagé devient un risque de corruption partagé dès la première exécution concurrente."
+          },
+          "en": {
+            "kitchen": "Share the slate and you share the mistake: with two hands on the chalk, no line has an owner any more.",
+            "expert": "Shared control state becomes shared corruption risk the moment two runs overlap."
+          }
+        }
+      ]
+    }
+  ]
+}

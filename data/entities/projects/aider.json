@@ -1,1 +1,231 @@
-{"schema":"argh/public-entity/v1","id":"project:aider","type":"project","slug":"aider","route":"/projects/aider/","template":"project","updated_at":"2026-09-12T17:50:00+02:00","relationships":{"projects":[],"patterns":["convergence","false-green","headless-contract","maintenance-slowdown","project-mortality"],"dossiers":["aider-false-success-family","project-mortality-state-machine"]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Aider","expert":"Aider"},"en":{"kitchen":"Aider","expert":"Aider"}},"body":[{"fr":{"cuisine":"Deux dossiers publics au menu : l’un décortique un succès trompeur, l’autre aide à distinguer un projet remplacé d’un projet vraiment arrêté.","expert":"2 dossiers publics rattachés à Aider."},"en":{"kitchen":"Two public dossiers on the menu: one unpacks a misleading success, the other helps tell a replaced project from one that has truly stopped.","expert":"2 public dossiers associated with Aider."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "project:aider",
+  "type": "project",
+  "slug": "aider",
+  "route": "/projects/aider/",
+  "template": "project",
+  "updated_at": "2026-09-12T17:50:00+02:00",
+  "relationships": {
+    "projects": [],
+    "patterns": [
+      "convergence",
+      "false-green",
+      "headless-contract",
+      "maintenance-slowdown",
+      "project-mortality"
+    ],
+    "dossiers": [
+      "aider-false-success-family",
+      "project-mortality-state-machine"
+    ]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Aider",
+          "expert": "Aider"
+        },
+        "en": {
+          "kitchen": "Aider",
+          "expert": "Aider"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Au passe, on annonce que le plat est parti, et l’assiette est encore sur la planche. Chez Aider, cette panne-là revient depuis plus d’un an, sous des formes différentes. Et la maison, qui sortait une nouveauté presque chaque semaine, a nettement ralenti.",
+            "expert": "Aider porte deux lignes d’observation distinctes : une famille de faux succès en exécution non surveillée, et un ralentissement de trajectoire. La famille reste non résolue sur la branche principale. La trajectoire est classée en ralentissement et effondrement d’activité, pas en mort ni en abandon."
+          },
+          "en": {
+            "kitchen": "The pass calls a plate away, and the plate is still sitting on the board. At Aider that fault keeps coming back, in different shapes, for more than a year. Meanwhile the house that once put out something new almost weekly has slowed right down.",
+            "expert": "Aider carries two distinct observation lines: a false-success family in unattended execution, and a trajectory slowdown. The family is unresolved on the default branch. The trajectory is classified as slowing and activity collapse, not dead or abandoned."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Une maison qui envoyait vite, puis presque plus",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "A house that sent fast, then barely sent at all",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Pendant longtemps, la maison sort une nouveauté presque chaque semaine. Ce rythme fait sa réputation.",
+            "expert": "Aider tient une cadence de publication rapide comme outil de codage en ligne de commande."
+          },
+          "en": {
+            "kitchen": "For a long stretch the house puts out something new almost every week. That rhythm is its reputation.",
+            "expert": "Aider sustained a rapid release cadence as a command-line coding agent."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "De plus en plus de clients commandent sans venir. Personne ne surveille la cuisine : on envoie la commande, on attend le plat.",
+            "expert": "L’usage non interactif et automatisé augmente."
+          },
+          "en": {
+            "kitchen": "More and more orders arrive with nobody in the room. The order goes in, the plate is expected, and no one watches the stoves.",
+            "expert": "Headless and automated usage grew."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "C’est là que le défaut se voit. Le service se termine proprement et rien n’est parti. Le problème dure, et il n’est pas réglé.",
+            "expert": "Une famille de faux succès s’installe et reste ouverte : des mécanismes de panne différents se terminent malgré tout en succès."
+          },
+          "en": {
+            "kitchen": "That is where the flaw shows. Service closes clean and nothing has left the pass. The problem persists, and it is not settled.",
+            "expert": "A persistent false-success family stayed open: distinct failure mechanisms still terminated as success."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Puis la maison ralentit d’un coup. Les nouveautés s’espacent, puis s’arrêtent presque.",
+            "expert": "La cadence de publication et l’activité sur la branche principale s’effondrent."
+          },
+          "en": {
+            "kitchen": "Then the house slows hard. New dishes come further apart, then all but stop.",
+            "expert": "Release cadence and default-branch activity collapsed."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Les clients, eux, continuent. Ils décrivent la panne avec précision et proposent des corrections toutes prêtes.",
+            "expert": "La communauté continue de déposer des signalements reproductibles et des correctifs intégrables."
+          },
+          "en": {
+            "kitchen": "The regulars keep at it. They describe the fault precisely and hand over ready-made corrections.",
+            "expert": "The community kept filing reproducible reports and mergeable fixes."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Et la question finit par se poser à voix haute : est-ce que quelqu’un tient encore cette cuisine ?",
+            "expert": "L’état de la maintenance est publiquement mis en question."
+          },
+          "en": {
+            "kitchen": "And the question gets asked out loud: is anyone still holding this kitchen?",
+            "expert": "Maintainer status was publicly questioned."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Un service qui se termine bien ne prouve pas que le plat est sorti",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "A clean close does not prove the plate left",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Trois pannes différentes se terminent de la même façon. Le commis annonce que c’est fait, et rien n’a été fait. Parfois la commande arrive dans une tournure que la cuisine ne reconnaît pas, et du travail juste est jeté. Parfois le geste se perd au milieu d’une autre demande, et toute la suite raisonne sur un plat qui n’existe pas.",
+            "expert": "Le point commun est l’absence de réconciliation entre l’intention du modèle et l’état réellement persisté. Un tour composé mêlant une édition et une demande interactive d’ajout de fichier n’est pas transactionnel : l’édition peut être abandonnée pendant que le raisonnement continue comme si elle avait abouti, et l’écart ne remonte que plus tard, sur un remplacement sans correspondance. Un format d’édition inattendu produit un tour vide plutôt qu’une erreur, ce qui jette du travail correct. Dans les deux cas, le code de sortie et la télémétrie de complétion restent au vert."
+          },
+          "en": {
+            "kitchen": "Three different faults end the same way. The commis says it is done, and nothing was done. Sometimes the order comes in a wording the kitchen does not recognise, and correct work gets thrown out. Sometimes the gesture is lost inside another request, and everything after it reasons about a plate that was never made.",
+            "expert": "The shared mechanism is a missing reconciliation between model-intended change and actually persisted state. A compound turn carrying an edit plus an interactive file-add request is not transactional: the edit can be dropped while reasoning proceeds as though it landed, and the mismatch only surfaces later, on a search-and-replace that finds no match. An unexpected edit format yields an empty turn instead of an error, discarding correct work. In both paths the exit code and completion telemetry stay green."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’il faut regarder avant d’annoncer",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "What to check before calling a plate away",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Avant d’annoncer, on regarde la planche. Si le plat n’y est pas, on crie ; on ne laisse pas passer. Et quand une commande arrive mal tournée, on le dit tout de suite au lieu de rendre une assiette vide.",
+            "expert": "Après un tour interactif ou multi-actions, réconcilier les changements voulus avec l’état persisté avant d’autoriser l’étape de raisonnement suivante. Quand une sortie ressemble à un protocole valide mais inattendu, échouer bruyamment en nommant l’écart plutôt que de produire silencieusement un tour vide. Le succès d’une exécution non surveillée doit représenter du travail terminé, pas une session survivante ni un type de retour ordinaire."
+          },
+          "en": {
+            "kitchen": "Before calling a plate away, look at the board. If it is not there, shout; do not let it pass. And when an order comes in badly worded, say so at once instead of handing back an empty plate.",
+            "expert": "After an interactive or multi-action turn, reconcile intended changes against persisted state before the next reasoning step is allowed. When output resembles a valid but unexpected protocol, fail loudly and name the mismatch instead of silently emitting a no-op. Unattended success must stand for completed work, not for a surviving session or an ordinary return type."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Où en est Aider",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "Where Aider stands",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Rien n’est réglé. Les corrections proposées attendent, prêtes, et personne ne les reprend. La maison n’est pas fermée : elle a ralenti, et on ne sait pas pourquoi.",
+            "expert": "La famille de faux succès reste non résolue sur la branche principale ; un correctif ciblé est ouvert et intégrable, non intégré à la date de coupure. L’incident d’édition perdue reste ouvert, et le correctif communautaire sur le format d’édition reste lui aussi ouvert et intégrable. La trajectoire est classée en ralentissement, pas en mort ni en abandon : l’écart de publication renforce ce constat sans en établir la cause."
+          },
+          "en": {
+            "kitchen": "Nothing is settled. The offered corrections sit there, ready, and nobody takes them up. The house is not shut: it has slowed, and why is not known.",
+            "expert": "The false-success family is unresolved on the default branch; one targeted fix is open and mergeable, unmerged at cutoff. The dropped-edit lineage is still open, and the community fix on edit-format handling is likewise open and mergeable. The trajectory is classified as slowing, not dead or abandoned: the release gap strengthens that reading without establishing its cause."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’on retient du passe",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What the pass teaches",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Annoncer n’est pas servir. Tant que personne ne regarde la planche, la maison croit avoir nourri des gens repartis à jeun. Et quand une maison ralentit, dire qu’on ignore pourquoi vaut mieux qu’inventer une raison.",
+            "expert": "Le code de sortie et la télémétrie de complétion sont des sorties de premier rang du harnais, au même titre qu’un résultat d’outil, et exigent des tests de non-régression. Sur la trajectoire, l’inconnu reste un résultat causal valide : un signal d’avertissement plausible ne s’élève pas au rang d’explication de la mort d’un projet."
+          },
+          "en": {
+            "kitchen": "Calling a plate away is not serving it. While nobody checks the board, the house believes it fed people who left hungry. And when a house slows, saying you do not know why beats inventing a reason.",
+            "expert": "Exit codes and completion telemetry are first-class harness outputs, on the same footing as tool results, and need regression tests of their own. On trajectory, unknown remains a valid causal result: a plausible warning sign is not promoted into an explanation of a project's death."
+          }
+        }
+      ]
+    }
+  ]
+}

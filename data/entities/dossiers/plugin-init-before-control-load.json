@@ -1,1 +1,217 @@
-{"schema":"argh/public-entity/v1","id":"dossier:plugin-init-before-control-load","type":"dossier","slug":"plugin-init-before-control-load","route":"/dossiers/plugin-init-before-control-load/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Claude Code"],"patterns":["runtime-visible-state","initialization-order"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Le contrôle était accroché au mur, mais le service avait déjà commencé","expert":"Le contrôle existait sur disque et a complètement manqué le runtime"},"en":{"kitchen":"The check was on the wall, but service had already started","expert":"The control existed on disk and missed the runtime entirely"}},"body":[{"fr":{"cuisine":"Le service de langage a ouvert avant que les fiches des plugins n’arrivent aux postes : les dossiers étaient corrects, mais aucun serveur n’était encore prêt à travailler.","expert":"Un service de langage fourni par plugin s’est initialisé avant la fin de la discovery des plugins, laissant le runtime avec zéro serveur configuré malgré des fichiers valides sur disque."},"en":{"kitchen":"The language service opened before the plugin cards reached the stations: the files were sound, but no server was yet ready to work.","expert":"A plugin-backed language service initialized before plugin discovery completed, leaving the runtime with zero configured servers despite valid files on disk."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Les fiches de configuration et les plugins sont bien rangés dans le classeur.","expert":"Les fichiers de configuration et plugins sont présents."},"en":{"kitchen":"Configuration cards and plugins are present in the binder.","expert":"Configuration and plugin files were present."}},{"fr":{"cuisine":"Le responsable du service démarre et prend son inventaire avant la livraison des plugins.","expert":"Le gestionnaire de service de langage s’initialise."},"en":{"kitchen":"The service manager starts and takes its inventory before plugins arrive.","expert":"The language-service manager initialized."}},{"fr":{"cuisine":"À cette minute, aucun serveur de plugin n’est présent au poste, malgré les fichiers disponibles.","expert":"À cet instant aucun serveur plugin n’est chargé."},"en":{"kitchen":"At that moment, no plugin server is at the station despite the available files.","expert":"At that moment no plugin servers had been loaded."}},{"fr":{"cuisine":"Les plugins arrivent quelques millisecondes après l’inventaire, trop tard pour être retenus.","expert":"Les plugins arrivent quelques millisecondes plus tard."},"en":{"kitchen":"Plugins arrive milliseconds after the inventory, too late to be included.","expert":"Plugins loaded milliseconds later."}},{"fr":{"cuisine":"Le premier inventaire ne se met pas à jour : le service ne gagne jamais les serveurs attendus.","expert":"Le runtime ne récupère pas rétroactivement la surface attendue."},"en":{"kitchen":"The first inventory never refreshes, so the service never gains the expected servers.","expert":"The runtime never retroactively gained the expected control surface."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Le contrôle des fichiers réussissait parce qu’ils étaient valides ; la panne venait de la photo prise une seule fois avant l’arrivée des plugins.","expert":"La validation statique passe car les fichiers sont corrects. La panne vit dans l’ordre d’initialisation, où un snapshot unique est pris trop tôt."},"en":{"kitchen":"File checks passed because the files were valid; the failure came from a one-time picture taken before plugins arrived.","expert":"Static configuration validation passed because the files were correct. The failure lived in initialization ordering, where a one-time snapshot was taken too early."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Après l’ouverture, la brigade vérifie que les serveurs répondent et, si possible, laisse les nouveaux plugins s’enregistrer au lieu de figer le premier inventaire.","expert":"Les contrôles runtime ont besoin de health checks après initialisation et, si possible, d’enregistrement dynamique plutôt que d’un snapshot unique de discovery."},"en":{"kitchen":"After opening, the crew checks that servers respond and, where possible, lets new plugins register instead of freezing the first inventory.","expert":"Runtime controls need post-initialization health checks and, where possible, dynamic registration rather than one-shot discovery snapshots."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"Ce même retard peut toucher les skills, serveurs MCP, plugins, hooks et tout contrôle chargé après le démarrage.","expert":"L’incident se généralise aux skills, serveurs MCP, plugins, hooks et tout contrôle chargé tardivement."},"en":{"kitchen":"The same delay can affect skills, MCP servers, plugins, hooks, and any control loaded after startup.","expert":"The incident generalizes to skills, MCP servers, plugins, hooks and any late-loaded control."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"Un contrôle posé dans le garde-manger ne protège rien si le plugin commence à cuisiner avant de l’avoir chargé.","expert":"La présence d’un fichier ne prouve pas l’activation runtime."},"en":{"kitchen":"A control sitting in the pantry protects nothing if the plugin starts cooking before loading it.","expert":"File presence is not proof of runtime activation."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:plugin-init-before-control-load",
+  "type": "dossier",
+  "slug": "plugin-init-before-control-load",
+  "route": "/dossiers/plugin-init-before-control-load/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Claude Code"
+    ],
+    "patterns": [
+      "runtime-visible-state",
+      "initialization-order"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "L’appel est passé une minute trop tôt, et le poste est resté vide tout le service",
+          "expert": "Le contrôle était valide sur disque et absent du runtime"
+        },
+        "en": {
+          "kitchen": "Roll call came a minute early, and the station stayed empty all service",
+          "expert": "The control was valid on disk and absent from the runtime"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Claude Code, les papiers étaient en règle, les renforts étaient attendus, tout était écrit au tableau. Mais l’appel a été fait avant leur arrivée, et personne ne l’a refait ensuite. Les renforts sont entrés une minute après, se sont mis au poste, et n’ont reçu aucune commande de la soirée. Le poste comptait pour vide alors que quelqu’un s’y tenait.",
+            "expert": "Un service de langage fourni par plugin s’est initialisé avant la fin de la découverte des plugins, laissant le runtime avec zéro serveur configuré malgré des fichiers valides sur disque. Les plugins ont été chargés quelques millisecondes plus tard, sans que la surface attendue soit reprise."
+          },
+          "en": {
+            "kitchen": "At Claude Code the paperwork was in order, the extra hands were booked, everything was up on the board. But roll call was taken before they walked in, and nobody took it again. They arrived a minute later, stood at their station, and got no order all night. The station counted as empty while someone was standing at it.",
+            "expert": "A plugin-backed language service initialised before plugin discovery had finished, leaving the runtime with zero configured servers while the on-disk files were valid. The plugins loaded milliseconds later, and the expected surface was never picked up."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Une minute d’écart, et le poste ne compte plus",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "One minute apart, and the station stops counting",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Les papiers sont en règle et les renforts sont retenus, tout est inscrit au tableau.",
+            "expert": "Les fichiers de configuration et les plugins sont présents et valides."
+          },
+          "en": {
+            "kitchen": "The paperwork is in order and the extra hands are booked, all of it listed on the board.",
+            "expert": "Configuration files and plugins were present and valid."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le responsable fait l’appel et note qui tient quel poste.",
+            "expert": "Le gestionnaire du service de langage s’initialise et fige sa liste."
+          },
+          "en": {
+            "kitchen": "The head of service takes roll call and writes down who holds which station.",
+            "expert": "The language-service manager initialised and fixed its list."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "À cette minute-là, personne ne s’est encore présenté pour ce poste.",
+            "expert": "À cet instant, aucun serveur fourni par plugin n’est chargé."
+          },
+          "en": {
+            "kitchen": "At that minute, nobody has yet shown up for that station.",
+            "expert": "At that instant, no plugin-provided server was loaded."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Les renforts arrivent juste après, à une minute près.",
+            "expert": "Les plugins sont chargés quelques millisecondes plus tard."
+          },
+          "en": {
+            "kitchen": "The extra hands walk in right after, a minute late at most.",
+            "expert": "The plugins loaded milliseconds later."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "L’appel n’est jamais refait, donc le poste reste vide sur la feuille jusqu’à la fermeture.",
+            "expert": "Le runtime ne reprend jamais rétroactivement la surface de contrôle attendue."
+          },
+          "en": {
+            "kitchen": "Roll call is never taken again, so the station stays empty on paper until closing.",
+            "expert": "The runtime never retroactively gained the expected control surface."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Les papiers étaient bons, c’est l’heure de l’appel qui était fausse",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "The paperwork was right, the hour of roll call was wrong",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "On a vérifié les papiers, tout était juste, alors on a cherché longtemps ailleurs. La faute n’était pas dans ce qui est écrit, mais dans l’heure où on l’a lu. Une seule photo prise trop tôt sert de vérité pour toute la soirée.",
+            "expert": "La validation statique de configuration passe, puisque les fichiers sont corrects. La défaillance réside dans l’ordre d’initialisation : un instantané unique est pris avant la fin de la découverte et n’est jamais réévalué."
+          },
+          "en": {
+            "kitchen": "The paperwork checked out, so the search went everywhere else for a long time. The fault was not in what was written but in the hour it was read. One picture, taken too early, stands as the truth for the whole night.",
+            "expert": "Static configuration validation passed because the files themselves were correct. The defect sits in initialisation ordering: a one-shot snapshot is taken before discovery completes and is never re-evaluated."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Refaire l’appel après l’ouverture",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Take roll call again once the doors are open",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Après l’ouverture, on refait l’appel : on envoie une commande d’essai et on regarde si le poste répond. Et quand c’est possible, on laisse les arrivants se présenter eux-mêmes plutôt que de figer la liste du début.",
+            "expert": "Les contrôles runtime ont besoin de health checks après initialisation, vérifiant que la surface attendue répond réellement. Quand c’est possible, préférer un enregistrement dynamique à un instantané unique de découverte."
+          },
+          "en": {
+            "kitchen": "Once the doors open, roll call is taken again: send a test order and see whether the station answers. And where it can be done, let latecomers announce themselves instead of freezing the opening list.",
+            "expert": "Runtime controls need post-initialisation health checks confirming that the expected surface actually answers. Where feasible, dynamic registration should replace one-shot discovery snapshots."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Tout ce qui arrive après l’appel court le même risque",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "Anything arriving after roll call runs the same risk",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Ce décalage ne concerne pas un seul poste. Tout ce qui arrive après l’appel — les bras, le matériel, les consignes — peut manquer à la feuille sans que personne s’en aperçoive.",
+            "expert": "Le mécanisme se généralise aux skills, serveurs MCP, plugins, hooks et à tout contrôle chargé après le démarrage. La classe de défaut est l’ordre d’initialisation, pas le type de composant."
+          },
+          "en": {
+            "kitchen": "The gap is not about one station. Anything that turns up after roll call — hands, equipment, standing orders — can be missing from the sheet with nobody the wiser.",
+            "expert": "The mechanism generalises to skills, MCP servers, plugins, hooks and any control loaded after startup. The defect class is initialisation ordering, not the component type."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Être inscrit au tableau n’est pas tenir le poste",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "Being on the board is not holding the station",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Être inscrit au tableau ne veut pas dire tenir le poste. Tant qu’on n’a pas envoyé une commande et vu quelqu’un répondre, le poste n’est pas tenu.",
+            "expert": "La présence d’un fichier valide ne prouve pas l’activation runtime. Seule une vérification effectuée après initialisation établit que le contrôle est réellement en place."
+          },
+          "en": {
+            "kitchen": "Being written on the board is not the same as holding the station. Until an order goes out and someone answers it, that station is not held.",
+            "expert": "A valid file on disk is not proof of runtime activation. Only a check performed after initialisation establishes that the control is actually in force."
+          }
+        }
+      ]
+    }
+  ]
+}

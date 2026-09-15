@@ -1,1 +1,217 @@
-{"schema":"argh/public-entity/v1","id":"dossier:encrypted-subagents-lost-audit-trail","type":"dossier","slug":"encrypted-subagents-lost-audit-trail","route":"/dossiers/encrypted-subagents-lost-audit-trail/","template":"dossier","updated_at":"2026-09-13T08:00:00+02:00","relationships":{"projects":["Codex"],"patterns":["subagents","privacy-auditability"],"dossiers":[]},"slots":[{"id":"hero","kind":"hero","heading":{"fr":{"cuisine":"Les sous-chefs ont parlé à huis clos et le carnet de service s’est vidé","expert":"Les messages privés entre subagents ont amélioré la confidentialité et affaibli l’auditabilité"},"en":{"kitchen":"The sous-chefs spoke behind closed doors and the service log went thin","expert":"Private subagent messages improved confidentiality and weakened auditability"}},"body":[{"fr":{"cuisine":"Les sous-chefs ont parlé à huis clos et le carnet de service s’est vidé. Dès que plusieurs sous-chefs se partagent le service, la distribution des postes, des messages et des responsabilités devient un mécanisme de sûreté à part entière.","expert":"Le chiffrement des communications agent-à-agent a protégé la confidentialité des destinataires mais a aussi supprimé les traces lisibles de tâches et messages de l’historique normal du parent."},"en":{"kitchen":"The sous-chefs spoke behind closed doors and the service log went thin. Once several sous-chefs share service, assigning stations, messages and responsibility becomes a safety mechanism of its own.","expert":"Encrypting agent-to-agent communication protected recipient privacy but also removed readable task and message traces from the parent’s normal history."}}]},{"id":"timeline","kind":"timeline","heading":{"fr":{"cuisine":"Le service, étape par étape","expert":"Chronologie"},"en":{"kitchen":"Service, step by step","expert":"Timeline"}},"body":[{"fr":{"cuisine":"Les sous-cuisines commencent à s’échanger leurs commandes sous enveloppe scellée.","expert":"La communication multi-agent devient chiffrée."},"en":{"kitchen":"The sub-kitchens begin exchanging orders in sealed envelopes.","expert":"Multi-agent communication became encrypted."}},{"fr":{"cuisine":"Les destinataires sont mieux protégés, ce qui est bien réel.","expert":"La confidentialité des destinataires s’améliore."},"en":{"kitchen":"Recipients are better protected, which is a real gain.","expert":"Recipient privacy improved."}},{"fr":{"cuisine":"En contrepartie, le chef ne peut plus lire simplement qui a reçu quelle mission ni ce qui lui a été dit.","expert":"Le contenu des tâches et messages devient moins inspectable depuis le parent."},"en":{"kitchen":"In return, the head chef can no longer simply read who got which task or what they were told.","expert":"Parent-visible task and message content became less inspectable."}},{"fr":{"cuisine":"Les opérateurs perdent alors la piste simple qui leur permettait de comprendre comment la mission avait été distribuée.","expert":"Les opérateurs perdent une trace simple pour comprendre la délégation."},"en":{"kitchen":"Operators then lose the simple trail that let them understand how the mission was distributed.","expert":"Operators lost a straightforward trail for understanding delegation behavior."}},{"fr":{"cuisine":"La cuisine découvre ainsi que garder un secret et pouvoir expliquer la délégation sont deux besoins différents.","expert":"L’architecture révèle que confidentialité et auditabilité sont deux exigences distinctes."},"en":{"kitchen":"The kitchen thus learns that keeping a secret and explaining delegation are different needs.","expert":"The architecture exposed privacy and auditability as separate requirements."}}]},{"id":"mechanism","kind":"paragraph","heading":{"fr":{"cuisine":"Pourquoi la cuisine s’est trompée","expert":"Mécanisme"},"en":{"kitchen":"Why the kitchen got it wrong","expert":"Mechanism"}},"body":[{"fr":{"cuisine":"Le même emballage servait à la fois au message secret du destinataire et au suivi du chef : le chiffrer pour l’un effaçait la trace utile à l’autre.","expert":"Le système utilisait la même représentation pour le transport confidentiel et l’observabilité opérateur. Chiffrer l’un efface donc l’autre."},"en":{"kitchen":"The same wrapper carried both the recipient’s secret message and the chef’s trace: encrypting it for one erased it for the other.","expert":"The system used the same representation both for confidential transport and for operator observability. Encrypting one therefore erased the other."}}]},{"id":"response","kind":"paragraph","heading":{"fr":{"cuisine":"Ce que la brigade change","expert":"Réponse"},"en":{"kitchen":"What the brigade changes","expert":"Response"}},"body":[{"fr":{"cuisine":"Séparer le pli privé du sous-chef et une fiche opérateur limitée : identité, moment, routage, résultat et état de politique restent lisibles sans révéler le contenu.","expert":"Séparer les payloads privés destinataire des métadonnées opérateur bornées : identités, timings, décisions de routage, résultat et état de politique peuvent rester auditables sans exposer le contenu."},"en":{"kitchen":"Separate the sous-chef’s private note from a bounded operator slip: identity, timing, routing, outcome, and policy state remain visible without exposing content.","expert":"Separate recipient-private payloads from bounded operator metadata: identities, timings, routing decisions, outcome and policy status can remain auditable without exposing message contents."}}]},{"id":"current","kind":"status","heading":{"fr":{"cuisine":"Où en est le service","expert":"État actuel"},"en":{"kitchen":"Where service stands","expert":"Current state"}},"body":[{"fr":{"cuisine":"Le bon compromis entre enveloppes fermées et piste d’audit reste à inventer.","expert":"Le compromis reste un espace de design actif dans les systèmes multi-agents."},"en":{"kitchen":"The right balance between sealed envelopes and an audit trail remains to be designed.","expert":"The trade-off remains an active design space across multi-agent systems."}}]},{"id":"lesson","kind":"lesson","heading":{"fr":{"cuisine":"La règle à garder","expert":"Leçon"},"en":{"kitchen":"Rule to keep","expert":"Lesson"}},"body":[{"fr":{"cuisine":"La confidentialité des messages et la possibilité d’auditer leur parcours ont besoin de deux canaux séparés.","expert":"Confidentialité et auditabilité ont besoin de canaux séparés."},"en":{"kitchen":"Message privacy and the ability to audit their path need two separate channels.","expert":"Privacy and auditability need separate channels."}}]}]}
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:encrypted-subagents-lost-audit-trail",
+  "type": "dossier",
+  "slug": "encrypted-subagents-lost-audit-trail",
+  "route": "/dossiers/encrypted-subagents-lost-audit-trail/",
+  "template": "dossier",
+  "updated_at": "2026-09-13T08:00:00+02:00",
+  "relationships": {
+    "projects": [
+      "Codex"
+    ],
+    "patterns": [
+      "subagents",
+      "privacy-auditability"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Les plis fermés ont protégé les sous-chefs et vidé le carnet de service",
+          "expert": "Le chiffrement entre subagents a gagné en confidentialité et perdu en auditabilité"
+        },
+        "en": {
+          "kitchen": "Sealed notes protected the sous-chefs and emptied the service book",
+          "expert": "Encryption between subagents gained confidentiality and lost auditability"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Chez Codex, pour que personne ne lise par-dessus l’épaule, les sous-chefs se sont mis à s’écrire sous pli fermé. La consigne reste lisible pour celui à qui elle est adressée, et pour personne d’autre. Le chef aussi est « personne d’autre ». Le carnet de service, lui, n’en garde plus rien.",
+            "expert": "Le chiffrement des communications agent-à-agent a protégé la confidentialité des destinataires. Il a aussi retiré de l’historique normal du parent les traces lisibles des tâches et des messages, supprimant le support sur lequel les opérateurs s’appuyaient."
+          },
+          "en": {
+            "kitchen": "At Codex, so that nobody could read over a shoulder, the sous-chefs began writing to each other in sealed notes. The order stays readable for its addressee and for nobody else. The head chef counts as nobody else. The service book keeps none of it.",
+            "expert": "Encrypting agent-to-agent communication protected recipient confidentiality. It also removed readable task and message traces from the parent’s normal history, eliminating the support operators relied on."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Comment le carnet s’est vidé",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "How the book went empty",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Les sous-chefs se mettent à s’échanger leurs consignes sous pli fermé.",
+            "expert": "La communication multi-agent devient chiffrée."
+          },
+          "en": {
+            "kitchen": "The sous-chefs begin passing their orders in sealed notes.",
+            "expert": "Multi-agent communication became encrypted."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le destinataire est mieux protégé, et ce gain est réel.",
+            "expert": "La confidentialité des destinataires s’améliore effectivement."
+          },
+          "en": {
+            "kitchen": "The addressee is better protected, and that gain is real.",
+            "expert": "Recipient confidentiality genuinely improved."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "En revanche, le chef ne peut plus lire qui a reçu quelle tâche, ni ce qu’on lui a demandé.",
+            "expert": "Le contenu des tâches et des messages devient moins inspectable depuis le parent."
+          },
+          "en": {
+            "kitchen": "In exchange, the head chef can no longer read who got which job, or what they were told.",
+            "expert": "Task and message content became less inspectable from the parent."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Ceux qui tiennent le service perdent la piste simple qui expliquait comment le travail avait été réparti.",
+            "expert": "Les opérateurs perdent une trace simple pour comprendre le comportement de délégation."
+          },
+          "en": {
+            "kitchen": "The people running service lose the simple trail that explained how the work had been split.",
+            "expert": "Operators lost a straightforward trail for understanding delegation behavior."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "La maison découvre alors que garder un secret et pouvoir expliquer qui a fait quoi sont deux besoins différents.",
+            "expert": "L’architecture expose confidentialité et auditabilité comme deux exigences distinctes."
+          },
+          "en": {
+            "kitchen": "The house then discovers that keeping a secret and explaining who did what are two different needs.",
+            "expert": "The architecture exposed confidentiality and auditability as two distinct requirements."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Un seul papier pour deux usages",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "One piece of paper doing two jobs",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le même papier servait à deux choses : porter la consigne au sous-chef, et laisser une trace au chef. Le fermer pour l’un l’a effacé pour l’autre. Ce n’était pas un arbitrage, c’était le même papier.",
+            "expert": "Le système utilisait la même représentation pour le transport confidentiel et pour l’observabilité opérateur. Chiffrer l’un efface donc mécaniquement l’autre : la perte n’est pas un arbitrage de politique, mais une conséquence structurelle du support partagé."
+          },
+          "en": {
+            "kitchen": "The same piece of paper did two jobs: carry the order to the sous-chef, and leave a record for the head chef. Sealing it for one erased it for the other. That was not a trade-off; it was the same paper.",
+            "expert": "The system used one representation both for confidential transport and for operator observability. Encrypting one therefore mechanically erases the other: the loss is not a policy trade-off but a structural consequence of the shared carrier."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Séparer le pli et le registre",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Separate the note from the register",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Garder le pli fermé, et tenir à côté un registre court : qui a reçu, à quelle heure, ce qui lui a été confié, ce qui en est ressorti. Ce registre raconte le partage du travail sans jamais ouvrir le pli. Rien n’établit qu’il soit déjà tenu quelque part.",
+            "expert": "Séparer les payloads privés destinataire de métadonnées opérateur bornées : identités, horodatages, décisions de routage, résultat et état de politique peuvent rester auditables sans exposer le contenu des messages. C’est la réponse proposée ; aucune mise en œuvre n’est établie ici."
+          },
+          "en": {
+            "kitchen": "Keep the note sealed, and hold a short register beside it: who received, at what hour, what they were given, what came back. That register tells the whole story of the split without ever opening the note. Nothing establishes that such a register is kept anywhere yet.",
+            "expert": "Separate recipient-private payloads from bounded operator metadata: identities, timestamps, routing decisions, outcome and policy status can stay auditable without exposing message contents. This is the proposed response; no implementation is established here."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Où en est l’arbitrage",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "Where the trade-off stands",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le bon dosage entre pli fermé et registre lisible n’est pas trouvé. Les maisons qui font travailler plusieurs sous-chefs ensemble cherchent encore.",
+            "expert": "L’arbitrage reste un espace de design actif dans les systèmes multi-agents. Aucune solution stabilisée n’est établie à ce stade."
+          },
+          "en": {
+            "kitchen": "The right balance between the sealed note and a readable register has not been found. Houses running several sous-chefs together are still looking.",
+            "expert": "The trade-off remains an active design space across multi-agent systems. No stabilized solution is established at this stage."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Ce qu’un seul papier ne peut pas porter",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "What one piece of paper cannot carry",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Un secret bien gardé et un service qu’on peut expliquer ne tiennent pas sur le même papier. Il en faut deux, et il faut décider dès le départ ce que chacun porte.",
+            "expert": "Confidentialité et auditabilité ont besoin de canaux séparés. Faire porter les deux par le même support garantit que renforcer l’une dégrade l’autre."
+          },
+          "en": {
+            "kitchen": "A well-kept secret and a service you can explain do not fit on the same piece of paper. It takes two, and what each one carries has to be decided up front.",
+            "expert": "Confidentiality and auditability need separate channels. Carrying both on one medium guarantees that strengthening either one degrades the other."
+          }
+        }
+      ]
+    }
+  ]
+}
