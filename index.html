@@ -1,32 +1,15 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr-FR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ARGH publie les incidents, motifs et trajectoires des harnais d’agents.">
-  <title>ARGH — Dossiers</title>
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/style.css">
-  <script src="assets/app.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ARGH — Pannes, correctifs et leçons des harnais d’agents</title>
+<meta name="description" content="Fiabilité des harnais d’agents : incidents vérifiés, mécanismes et invariants.">
+<link rel="icon" href="/assets/logo.png">
+<link rel="stylesheet" href="/assets/renderer.css?v=1.5.0">
+<script src="/assets/renderer.js?v=1.5.0" defer></script>
 </head>
-<body data-type="dossier" data-data-root="data">
-  <header class="topbar">
-    <a class="brand" href="./" aria-label="ARGH, accueil"><img src="assets/logo.svg" alt="" width="42" height="42"><span>ARGH</span></a>
-    <nav aria-label="Navigation principale">
-      <a id="nav-dossiers" href="dossiers/">Dossiers</a>
-      <a id="nav-patterns" href="patterns/">Motifs</a>
-      <a id="nav-projects" href="projects/">Projets</a>
-      <a id="nav-atlas" href="atlas/">Atlas</a>
-    </nav>
-    <div class="controls">
-      <div class="toggle" aria-label="Niveau de lecture"><button type="button" data-view="simple">Cuisine</button><button type="button" data-view="expert">Tech</button></div>
-      <div class="toggle" aria-label="Langue"><button type="button" data-lang="fr">FR</button><button type="button" data-lang="en">EN</button></div>
-    </div>
-  </header>
-  <main>
-    <section class="hero"><p class="eyebrow">ARGH · Agent Reliability &amp; Guard for Harnesses</p><h1 id="headline">Dossiers</h1><p id="deck" class="deck"></p><p class="edition">Mode : <strong id="mode-label">Cuisine</strong></p></section>
-    <section class="section"><div class="section-head"><p id="results" class="results" aria-live="polite"></p><label class="search"><span class="sr-only">Recherche</span><input id="search" type="search" placeholder="Rechercher…" autocomplete="off"></label></div><div id="entity-grid" class="dossier-grid"></div></section>
-  </main>
-  <footer><p><strong>ARGH</strong> · projection statique sans provenance privée.</p><p><a href="https://github.com/bacoco/argh-website">GitHub</a></p></footer>
+<body class="argh-fr argh-reader-simple argh-rendered-page">
+<div class="argh-site argh-index" data-argh-renderer="1.5.0"><header class="argh-top"><div class="argh-topin"><a class="argh-brand" href="/" aria-label="ARGH"><img src="/assets/logo.png" alt="ARGH — Agent Reliability &amp; Guard for Harnesses" loading="eager"></a><nav class="argh-nav"><a href="/dossiers/">Dossiers</a><a href="/patterns/"><span class="nav-en">Patterns</span><span class="nav-fr">Motifs</span></a><a href="/projects/"><span class="nav-en">Projects</span><span class="nav-fr">Projets</span></a><a href="/atlas/">Atlas</a></nav><div class="argh-controls"><div class="argh-toggle argh-reader"><button type="button" data-reader="simple"><span class="nav-en">Kitchen</span><span class="nav-fr">Cuisine</span></button><button type="button" data-reader="expert"><span class="nav-en">Technical</span><span class="nav-fr">Technique</span></button></div><div class="argh-toggle argh-lang"><button type="button" data-lang="en">EN</button><button type="button" data-lang="fr">FR</button></div></div></div></header><main class="argh-wrap"><section class="argh-index-hero"><div class="argh-kicker">ARGH</div><h1 class="argh-q"><span class="argh-mode argh-fr-cuisine">Pannes, correctifs et leçons des harnais d’agents.</span><span class="argh-mode argh-fr-specialist">Fiabilité des harnais d’agents : incidents, mécanismes, garanties.</span><span class="argh-mode argh-en-kitchen">Failures, fixes and lessons from agent harnesses.</span><span class="argh-mode argh-en-specialist">Agent harness reliability: incidents, mechanisms, guarantees.</span></h1><p class="argh-q argh-standfirst"><span class="argh-mode argh-fr-cuisine">Chaque dossier raconte une panne réelle, ce qu’elle a coûté et la règle qu’on en garde. Deux lectures : la cuisine, ou la technique.</span><span class="argh-mode argh-fr-specialist">Chaque dossier documente un incident vérifié, son mécanisme et l’invariant qu’il impose. Quatre modes de lecture, mêmes faits.</span><span class="argh-mode argh-en-kitchen">Each dossier tells a real failure, what it cost and the rule we keep. Two readings: the kitchen, or the technical one.</span><span class="argh-mode argh-en-specialist">Each dossier documents a verified incident, its mechanism and the invariant it imposes. Four reading modes, same facts.</span></p></section><section class="argh-index-grid"><a class="argh-index-card" href="/dossiers/"><h2><span class="nav-fr">Dossiers</span><span class="nav-en">Dossiers</span></h2><p class="argh-card-summary">59 <span class="nav-fr">entrées</span><span class="nav-en">entries</span></p></a><a class="argh-index-card" href="/patterns/"><h2><span class="nav-fr">Motifs</span><span class="nav-en">Patterns</span></h2><p class="argh-card-summary">83 <span class="nav-fr">entrées</span><span class="nav-en">entries</span></p></a><a class="argh-index-card" href="/projects/"><h2><span class="nav-fr">Projets</span><span class="nav-en">Projects</span></h2><p class="argh-card-summary">22 <span class="nav-fr">entrées</span><span class="nav-en">entries</span></p></a></section><footer class="argh-foot"><span>ARGH — Agent Reliability &amp; Guard for Harnesses</span><a href="https://github.com/bacoco/argh-website">GitHub</a></footer></main></div>
 </body>
 </html>
