@@ -42,6 +42,7 @@ def nav(href, section, body, current):
 
 def header(section=""):
     n = ("".join([
+        nav("/", "home", '<span class="nav-en">Home</span><span class="nav-fr">Accueil</span>', section),
         nav("/dossiers/", "dossiers", "Dossiers", section),
         nav("/patterns/", "patterns", '<span class="nav-en">Patterns</span><span class="nav-fr">Motifs</span>', section),
         nav("/projects/", "projects", '<span class="nav-en">Projects</span><span class="nav-fr">Projets</span>', section),
