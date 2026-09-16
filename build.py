@@ -10,7 +10,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 DATA = ROOT / "data" / "entities"
-VERSION = "1.5.0"
+TAXONOMY = ROOT / "data" / "taxonomy.json"
+ACTIVITY = ROOT / "data" / "activity.json"
+VERSION = "1.6.0"
 PLURAL = {"dossier": "dossiers", "project": "projects", "pattern": "patterns"}
 
 def esc(s): return html.escape(s or "", quote=True)
@@ -48,12 +50,12 @@ def header(section=""):
     ]))
     return ('<header class="argh-top"><div class="argh-topin">'
       '<a class="argh-brand" href="/" aria-label="ARGH">'
-      '<img src="/assets/logo.png" alt="ARGH — Agent Reliability &amp; Guard for Harnesses" loading="eager"></a>'
+      '<img src="/assets/logo-imagine.png" alt="ARGH — Agent Reliability &amp; Guard for Harnesses" loading="eager"></a>'
       '<nav class="argh-nav">' + n + '</nav>'
       '<div class="argh-controls">'
       '<div class="argh-toggle argh-reader">'
       '<button type="button" data-reader="simple"><span class="nav-en">Kitchen</span><span class="nav-fr">Cuisine</span></button>'
-      '<button type="button" data-reader="expert"><span class="nav-en">Technical</span><span class="nav-fr">Technique</span></button></div>'
+      '<button type="button" data-reader="expert"><span class="nav-en">Expert</span><span class="nav-fr">Expert</span></button></div>'
       '<div class="argh-toggle argh-lang">'
       '<button type="button" data-lang="en">EN</button>'
       '<button type="button" data-lang="fr">FR</button></div></div></div></header>')
@@ -185,19 +187,14 @@ def atlas(store):
     body += "</tbody></table></div></section>" + FOOT + "</main></div>"
     return page("Atlas — ARGH", body, "Carte des motifs récurrents entre projets.")
 
-LATEST_N = 12
-TOP_PATTERNS_N = 12
+LATEST_N = 6
 
 def entry_date(e):
-    """Date éditoriale d'une entrée : celle de la source qui l'a fait découvrir.
-
-    `published_at` est la seule autorité. `updated_at` est un tampon de migration
-    — il ne vaut que comme ordre de repli, et n'est jamais affiché comme une date.
-    """
-    return e.get("published_at")
+    """Return the documented incident date only when it is evidence-backed."""
+    return e.get("event_date") if e.get("date_basis") == "incident" else None
 
 def sort_key(e):
-    return (entry_date(e) or e.get("updated_at") or "", e.get("slug") or "")
+    return (e.get("event_date") or "", e.get("updated_at") or "", e.get("slug") or "")
 
 def card(e):
     h = slot_of(e, "hero")
@@ -212,76 +209,178 @@ def section_head(q):
     return '<div class="argh-section-head">%s</div>' % quad(q, "h2")
 
 HOME_TITLE = {
-    "fr": {"cuisine": "Ce qui casse quand la brigade n\u2019est plus humaine",
-           "expert": "D\u00e9faillances de harnais, \u00e9tablies et document\u00e9es"},
-    "en": {"kitchen": "What breaks when the brigade is no longer human",
-           "expert": "Harness failures, established and documented"}}
+    "fr": {"cuisine": "Comment les harnais d’agents travaillent, se trompent et s’améliorent.",
+           "expert": "État des lieux et post-mortems des harnais d’agents."},
+    "en": {"kitchen": "How agent harnesses work, make mistakes and improve.",
+           "expert": "Agent harness landscape and post-mortems."}}
 
 HOME_DECK = {
-    "fr": {"cuisine": "Un bon cuisinier ne suffit pas. Il faut encore que les commandes "
-                      "arrivent, que les postes soient tenus, et que quelqu\u2019un regarde "
-                      "l\u2019assiette avant qu\u2019elle parte. On raconte ici ce qui a rat\u00e9 dans "
-                      "ces cuisines-l\u00e0, et ce qu\u2019il fallait faire \u00e0 la place.",
-           "expert": "ARGH documente les d\u00e9faillances op\u00e9rationnelles des harnais "
-                     "d\u2019agents : ce qui a \u00e9t\u00e9 reproduit, ce qui a \u00e9t\u00e9 corrig\u00e9, ce qui reste "
-                     "ouvert. Chaque dossier nomme son \u00e9tat de preuve."},
-    "en": {"kitchen": "A good cook is not enough. The orders still have to arrive, the "
-                      "stations have to be held, and someone has to look at the plate "
-                      "before it leaves. This is what went wrong in those kitchens, and "
-                      "what should have been done instead.",
-           "expert": "ARGH documents operational failures in agent harnesses: what was "
-                     "reproduced, what was fixed, what remains open. Every dossier names "
-                     "its evidence state."}}
+    "fr": {"cuisine": "ARGH observe l’usine à harnais. Chaque fiche raconte un incident réel comme un service de cuisine : ce qui s’est passé, ce que le raté a provoqué et comment le voir venir.",
+           "expert": "ARGH cartographie les harnais d’agents. Chaque dossier documente un incident réel, ses preuves, son mécanisme, son impact et ses signaux précurseurs."},
+    "en": {"kitchen": "ARGH watches the harness factory. Each card tells a real incident as a kitchen service: what happened, what the mistake caused and how to see it coming.",
+           "expert": "ARGH maps agent harnesses. Each dossier documents a real incident, its evidence, mechanism, impact and leading signals."}}
+
+HOME_IDENTITY_TITLE = {
+    "fr": {"cuisine": "Ce que rassemble ARGH", "expert": "Ce que documente ARGH"},
+    "en": {"kitchen": "What ARGH brings together", "expert": "What ARGH documents"}}
+
+HOME_IDENTITY = [
+    {"fr": {"cuisine": "Les harnais qui existent aujourd’hui", "expert": "La cartographie des harnais existants"},
+     "en": {"kitchen": "The harnesses that exist today", "expert": "The current harness landscape"}},
+    {"fr": {"cuisine": "Les erreurs rencontrées pendant le service", "expert": "Les incidents et mécanismes de défaillance"},
+     "en": {"kitchen": "Mistakes encountered during service", "expert": "Incidents and failure mechanisms"}},
+    {"fr": {"cuisine": "Les post-mortems qui expliquent pourquoi", "expert": "Les post-mortems fondés sur les preuves"},
+     "en": {"kitchen": "Post-mortems that explain why", "expert": "Evidence-based post-mortems"}},
+    {"fr": {"cuisine": "Les signes à surveiller avant la prochaine panne", "expert": "Les axes de surveillance et signaux précurseurs"},
+     "en": {"kitchen": "Signs to watch before the next failure", "expert": "Monitoring axes and leading signals"}},
+]
 
 HOME_LATEST = {
-    "fr": {"cuisine": "Ce qui vient d\u2019arriver", "expert": "Derni\u00e8res entr\u00e9es"},
-    "en": {"kitchen": "What just came in", "expert": "Latest entries"}}
+    "fr": {"cuisine": "Ce qui vient d’arriver", "expert": "Incidents nouveaux ou mis à jour"},
+    "en": {"kitchen": "What just came in", "expert": "New or updated incidents"}}
 
-HOME_RECURRING = {
-    "fr": {"cuisine": "Les m\u00eames rat\u00e9s, d\u2019une cuisine \u00e0 l\u2019autre",
-           "expert": "Motifs r\u00e9currents"},
-    "en": {"kitchen": "The same mistakes, kitchen after kitchen",
-           "expert": "Recurring patterns"}}
+HOME_LATEST_DECK = {
+    "fr": {"cuisine": "Toute nouvelle histoire apparaît ici, même si la cuisine ne sait pas encore où la ranger.",
+           "expert": "Tout nouvel incident apparaît ici, y compris lorsqu’aucun concept existant ne permet encore de le classer."},
+    "en": {"kitchen": "Every new story appears here, even when the kitchen does not yet know where it belongs.",
+           "expert": "Every new incident appears here, including when no existing concept can classify it yet."}}
+
+HOME_MAP = {
+    "fr": {"cuisine": "Explorer toute la cuisine", "expert": "Explorer tout le cycle"},
+    "en": {"kitchen": "Explore the whole kitchen", "expert": "Explore the whole lifecycle"}}
+
+HOME_MAP_DECK = {
+    "fr": {"cuisine": "Toutes les fiches sont rangées du menu au cahier de la maison.",
+           "expert": "Tous les dossiers sont classés de la définition à la traçabilité."},
+    "en": {"kitchen": "Every card is arranged from the menu to the house notebook.",
+           "expert": "Every dossier is classified from definition to traceability."}}
+
+UNCLASSIFIED = {
+    "fr": {"cuisine": "Sujets à ranger", "expert": "Incidents non classés"},
+    "en": {"kitchen": "Stories to put away", "expert": "Unclassified incidents"}}
+
+STATUS = {
+    "new": {
+        "fr": {"cuisine": "Nouvelle fiche", "expert": "Nouvel incident"},
+        "en": {"kitchen": "New card", "expert": "New incident"}},
+    "updated": {
+        "fr": {"cuisine": "Fiche enrichie", "expert": "Dossier mis à jour"},
+        "en": {"kitchen": "Expanded card", "expert": "Updated dossier"}},
+    "recent": {
+        "fr": {"cuisine": "À découvrir", "expert": "Incident récent"},
+        "en": {"kitchen": "Discover", "expert": "Recent incident"}},
+    "unclassified": {
+        "fr": {"cuisine": "À ranger", "expert": "Incident non classé"},
+        "en": {"kitchen": "To put away", "expert": "Unclassified incident"}},
+}
+
+UNCLASSIFIED_PLACE = {
+    "fr": {"cuisine": "Visible dès son arrivée", "expert": "Taxonomie à réviser"},
+    "en": {"kitchen": "Visible as soon as it arrives", "expert": "Taxonomy review required"}}
+
+
+def latest_dossiers(store):
+    """Return real activity first, then fill the initial baseline with recent incidents."""
+    selected, seen = [], set()
+    for event in store["activity"]:
+        e = store["by_rel"].get(event["entity_path"])
+        if not e or e.get("type") != "dossier" or e["slug"] in seen:
+            continue
+        selected.append((e, event["kind"]))
+        seen.add(e["slug"])
+        if len(selected) == LATEST_N:
+            return selected
+    dossiers = sorted(
+        [e for e in store["items"] if e.get("type") == "dossier"],
+        key=sort_key,
+        reverse=True,
+    )
+    for e in dossiers:
+        if e["slug"] in seen:
+            continue
+        selected.append((e, "recent"))
+        seen.add(e["slug"])
+        if len(selected) == LATEST_N:
+            break
+    return selected
+
+
+def update_card(e, kind, store):
+    h = slot_of(e, "hero")
+    place_id = store["assignments"].get(e["slug"])
+    place = store["place_by_id"].get(place_id)
+    unclassified = place is None
+    status = STATUS["unclassified" if unclassified else kind]
+    location = place["label"] if place else UNCLASSIFIED_PLACE
+    classes = "argh-update-card" + (" argh-unclassified" if unclassified else "")
+    return ('<a class="%s" href="%s">%s%s%s%s</a>'
+            % (classes, esc(e["route"]), quad(status, "span", "argh-update-status"),
+               quad(location, "span", "argh-update-place"), quad(h["heading"], "h3"),
+               quad((h.get("body") or [{}])[0], "p")))
+
+
+def place_card(place, number, store):
+    dossiers = store["dossiers_by_place"].get(place["id"], [])
+    count = {
+        "fr": {"cuisine": "%d fiche%s" % (len(dossiers), "s" if len(dossiers) != 1 else ""),
+               "expert": "%d dossier%s" % (len(dossiers), "s" if len(dossiers) != 1 else "")},
+        "en": {"kitchen": "%d card%s" % (len(dossiers), "s" if len(dossiers) != 1 else ""),
+               "expert": "%d dossier%s" % (len(dossiers), "s" if len(dossiers) != 1 else "")},
+    }
+    return ('<a class="argh-place-card" data-number="%02d" href="/places/%s/">'
+            '<span class="argh-place-number">%02d</span>%s%s%s</a>'
+            % (number, esc(place["id"]), number, quad(place["label"], "h3"),
+               quad(place["description"], "p"), quad(count, "span", "argh-place-count")))
+
+
+def place_page(place, store):
+    items = store["dossiers_by_place"].get(place["id"], [])
+    body = ('<div class="argh-site argh-index" data-argh-renderer="%s">%s'
+            '<main class="argh-wrap"><section class="argh-index-hero">'
+            '<div class="argh-kicker"><a href="/">ARGH</a> · <span class="nav-fr">Carte</span><span class="nav-en">Map</span></div>'
+            '%s%s<div class="argh-index-count">%d <span class="nav-fr">dossiers</span><span class="nav-en">dossiers</span></div>'
+            '</section><section class="argh-index-grid">%s</section>%s</main></div>'
+            % (VERSION, header("home"), quad(place["label"], "h1"),
+               quad(place["description"], "p", "argh-standfirst"), len(items),
+               "".join(card(e) for e in items), FOOT))
+    return page("%s — ARGH" % place["label"]["fr"]["expert"], body,
+                place["description"]["fr"]["expert"])
+
 
 def home(store):
-    """L'accueil est fabriqu\u00e9 depuis le magasin d'entit\u00e9s, comme toute autre page.
-
-    Il n'utilise que des classes d\u00e9finies par renderer.css : une page servie avec
-    un vocabulaire que la feuille ignore ne masque rien et ne met rien en forme.
-    """
-    ds = sorted([e for e in store["items"] if e.get("type") == "dossier"],
-                key=sort_key, reverse=True)
-
-    counts = {}
-    for e in ds:
-        for m in (e.get("relationships") or {}).get("patterns", []):
-            counts[m] = counts.get(m, 0) + 1
-    top = sorted(counts.items(), key=lambda x: (-x[1], x[0]))[:TOP_PATTERNS_N]
-
     body = ('<div class="argh-site argh-index" data-argh-renderer="%s">%s'
             '<main class="argh-wrap">'
-            '<section class="argh-index-hero"><div class="argh-kicker">ARGH</div>%s%s</section>'
+            '<section class="argh-home-hero"><div><div class="argh-kicker">ARGH — Agent Reliability &amp; Guard for Harnesses</div>%s%s</div>'
+            '<aside class="argh-home-identity">%s<ul>%s</ul></aside></section>'
             % (VERSION, header("home"), quad(HOME_TITLE, "h1"),
-               quad(HOME_DECK, "p", "argh-standfirst")))
+               quad(HOME_DECK, "p", "argh-standfirst"), quad(HOME_IDENTITY_TITLE, "strong"),
+               "".join(quad(item, "li") for item in HOME_IDENTITY)))
 
-    body += '<section class="argh-section">%s<div class="argh-index-grid">%s</div></section>' % (
-        section_head(HOME_LATEST), "".join(card(e) for e in ds[:LATEST_N]))
+    body += ('<section class="argh-updates"><div class="argh-updates-head"><div>%s</div>%s</div>'
+             '<div class="argh-update-grid">%s</div></section>'
+             % (quad(HOME_LATEST, "h2"), quad(HOME_LATEST_DECK, "p"),
+                "".join(update_card(e, kind, store) for e, kind in latest_dossiers(store))))
 
-    cards = ""
-    for slug, n in top:
-        e = store["patterns"].get(slug)
-        if not e: continue
-        h = slot_of(e, "hero")
-        cards += ('<a class="argh-index-card" href="%s">'
-                  '<div class="argh-card-meta"><span class="argh-count">%d</span></div>%s</a>'
-                  % (esc(e["route"]), n, quad(h["heading"], "h2")))
-    body += '<section class="argh-section">%s<div class="argh-index-grid">%s</div></section>' % (
-        section_head(HOME_RECURRING), cards)
+    if store["unclassified"]:
+        body += ('<section class="argh-unclassified-section">%s<div class="argh-update-grid">%s</div></section>'
+                 % (section_head(UNCLASSIFIED),
+                    "".join(update_card(e, "recent", store) for e in store["unclassified"])))
+
+    body += ('<section class="argh-map"><div class="argh-map-intro">%s%s</div>'
+             % (quad(HOME_MAP, "h2"), quad(HOME_MAP_DECK, "p")))
+    number = 1
+    for phase in store["phases"]:
+        body += '<div class="argh-phase-head">%s%s</div><div class="argh-place-grid">' % (
+            quad(phase["label"], "h3"), quad(phase["description"], "p"))
+        for place in [p for p in store["places"] if p["phase"] == phase["id"]]:
+            body += place_card(place, number, store)
+            number += 1
+        body += "</div>"
+    body += "</section>"
 
     body += FOOT + "</main></div>"
-    return page("ARGH \u2014 Pannes, correctifs et le\u00e7ons des harnais IA", body,
-                "Intelligence ind\u00e9pendante sur les harnais d'agents : pannes v\u00e9rifi\u00e9es, "
-                "m\u00e9canismes et le\u00e7ons.")
+    return page("ARGH — État des lieux et post-mortems des harnais d’agents", body,
+                "État des lieux, incidents, post-mortems et signaux à surveiller pour les harnais d’agents.")
 
 def about(store):
     blk = (ROOT / "recovered" / "about.html").read_text(encoding="utf-8")
@@ -289,13 +388,59 @@ def about(store):
             '<main class="argh-wrap">%s</main>%s</div>' % (VERSION, header("about"), blk, FOOT))
     return page("À propos — ARGH", body, "Ce qu'est ARGH et comment ses dossiers sont établis.")
 
+
+def load_navigation(store):
+    taxonomy = json.loads(TAXONOMY.read_text(encoding="utf-8"))
+    if taxonomy.get("schema") != "argh/public-navigation/v1":
+        raise ValueError("wrong public navigation schema")
+    phases, places = taxonomy.get("phases"), taxonomy.get("places")
+    assignments = taxonomy.get("assignments")
+    if not isinstance(phases, list) or not isinstance(places, list) or not isinstance(assignments, dict):
+        raise ValueError("public navigation must contain phases, places and assignments")
+    phase_ids = [phase.get("id") for phase in phases]
+    place_ids = [place.get("id") for place in places]
+    if len(set(phase_ids)) != len(phase_ids) or len(set(place_ids)) != len(place_ids):
+        raise ValueError("duplicate public navigation id")
+    if any(place.get("phase") not in phase_ids for place in places):
+        raise ValueError("public navigation place references an unknown phase")
+    if any(place_id not in place_ids for place_id in assignments.values()):
+        raise ValueError("public navigation assignment references an unknown place")
+
+    dossiers = {e["slug"]: e for e in store["items"] if e.get("type") == "dossier"}
+    dossiers_by_place = {place_id: [] for place_id in place_ids}
+    for slug, place_id in assignments.items():
+        if slug in dossiers:
+            dossiers_by_place[place_id].append(dossiers[slug])
+    for items in dossiers_by_place.values():
+        items.sort(key=sort_key, reverse=True)
+
+    activity = json.loads(ACTIVITY.read_text(encoding="utf-8"))
+    if activity.get("schema") != "argh/public-activity/v1" or not isinstance(activity.get("events"), list):
+        raise ValueError("wrong public activity schema")
+
+    store.update({
+        "phases": phases,
+        "places": places,
+        "place_by_id": {place["id"]: place for place in places},
+        "assignments": assignments,
+        "dossiers_by_place": dossiers_by_place,
+        "unclassified": sorted(
+            [entity for slug, entity in dossiers.items() if slug not in assignments],
+            key=sort_key,
+            reverse=True,
+        ),
+        "activity": activity["events"],
+    })
+
+
 def main():
     idx = json.loads((DATA / "index.json").read_text(encoding="utf-8"))
-    store = {"items": [], "by_route": {}, "patterns": {}}
+    store = {"items": [], "by_route": {}, "by_rel": {}, "patterns": {}}
     for rel in sorted(idx["entries"]):
         e = json.loads((DATA / rel).read_text(encoding="utf-8"))
-        store["items"].append(e); store["by_route"][e["route"]] = e
+        store["items"].append(e); store["by_route"][e["route"]] = e; store["by_rel"][rel] = e
         if e["type"] == "pattern": store["patterns"][e["slug"]] = e
+    load_navigation(store)
     # Generated entity routes mirror the complete store. Remove stale routes before
     # rendering so a deleted entity cannot survive on GitHub Pages.
     for plural in PLURAL.values():
@@ -308,6 +453,12 @@ def main():
         out.write_text(detail(e, store), encoding="utf-8"); n += 1
     for t in ("dossier", "project", "pattern"):
         (ROOT / PLURAL[t] / "index.html").write_text(index(t, store), encoding="utf-8")
+    shutil.rmtree(ROOT / "places", ignore_errors=True)
+    (ROOT / "places").mkdir()
+    for place in store["places"]:
+        out = ROOT / "places" / place["id"] / "index.html"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(place_page(place, store), encoding="utf-8")
     (ROOT / "atlas").mkdir(exist_ok=True)
     (ROOT / "atlas" / "index.html").write_text(atlas(store), encoding="utf-8")
     (ROOT / "index.html").write_text(home(store), encoding="utf-8")
@@ -319,7 +470,8 @@ def main():
         '<div class="argh-chips"><a class="argh-chip" href="/dossiers/">Dossiers</a>'
         '<a class="argh-chip" href="/patterns/">Motifs</a><a class="argh-chip" href="/projects/">Projets</a></div>'
         '</article>%s</main></div>' % (header(), FOOT)), encoding="utf-8")
-    print("  %d pages d'entité + 3 index + atlas + accueil + 404" % n)
+    print("  %d pages d'entité + %d endroits + 3 index + atlas + accueil + 404" %
+          (n, len(store["places"])))
 
 if __name__ == "__main__":
     main()

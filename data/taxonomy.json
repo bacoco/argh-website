@@ -1,0 +1,281 @@
+{
+  "schema": "argh/public-navigation/v1",
+  "policy": "A dossier without an explicit assignment stays visible as unclassified until the editorial taxonomy is revised.",
+  "phases": [
+    {
+      "id": "prepare",
+      "label": {
+        "fr": {"cuisine": "Préparer le service", "expert": "Définir et préparer"},
+        "en": {"kitchen": "Prepare service", "expert": "Define and prepare"}
+      },
+      "description": {
+        "fr": {"cuisine": "Avant que le travail commence", "expert": "Avant l’exécution"},
+        "en": {"kitchen": "Before work begins", "expert": "Before execution"}
+      }
+    },
+    {
+      "id": "execute",
+      "label": {
+        "fr": {"cuisine": "Faire le travail", "expert": "Exécuter le travail"},
+        "en": {"kitchen": "Do the work", "expert": "Execute the work"}
+      },
+      "description": {
+        "fr": {"cuisine": "Pendant le service", "expert": "Pendant l’exécution"},
+        "en": {"kitchen": "During service", "expert": "During execution"}
+      }
+    },
+    {
+      "id": "deliver",
+      "label": {
+        "fr": {"cuisine": "Vérifier et servir", "expert": "Valider et livrer"},
+        "en": {"kitchen": "Check and serve", "expert": "Validate and deliver"}
+      },
+      "description": {
+        "fr": {"cuisine": "Avant et après l’envoi en salle", "expert": "Avant et après la livraison"},
+        "en": {"kitchen": "Before and after the dining room", "expert": "Before and after delivery"}
+      }
+    },
+    {
+      "id": "learn",
+      "label": {
+        "fr": {"cuisine": "Fermer et apprendre", "expert": "Récupérer et capitaliser"},
+        "en": {"kitchen": "Close and learn", "expert": "Recover and retain knowledge"}
+      },
+      "description": {
+        "fr": {"cuisine": "Après le service", "expert": "Après l’exécution"},
+        "en": {"kitchen": "After service", "expert": "After execution"}
+      }
+    }
+  ],
+  "places": [
+    {
+      "id": "objectifs-instructions",
+      "phase": "prepare",
+      "label": {
+        "fr": {"cuisine": "Le menu et les recettes", "expert": "Objectifs et instructions"},
+        "en": {"kitchen": "The menu and recipes", "expert": "Objectives and instructions"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce qui doit être préparé, les règles à suivre et ce qui peut rester écrit trop longtemps.", "expert": "Spécifications, consignes, politiques et dérives de portée ou de persistance."},
+        "en": {"kitchen": "What must be prepared, the rules to follow and what may stay written for too long.", "expert": "Specifications, instructions, policies and scope or persistence drift."}
+      }
+    },
+    {
+      "id": "dependances-externes",
+      "phase": "prepare",
+      "label": {
+        "fr": {"cuisine": "Les fournisseurs", "expert": "Dépendances externes"},
+        "en": {"kitchen": "The suppliers", "expert": "External dependencies"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce qui arrive d’une autre maison et peut changer sans prévenir la brigade.", "expert": "Services, bibliothèques et projets amont dont le comportement échappe au système."},
+        "en": {"kitchen": "What comes from another house and may change without warning the brigade.", "expert": "Services, libraries and upstream projects whose behavior is outside the system."}
+      }
+    },
+    {
+      "id": "entrees-declencheurs",
+      "phase": "prepare",
+      "label": {
+        "fr": {"cuisine": "La réception des commandes", "expert": "Entrées et déclencheurs"},
+        "en": {"kitchen": "Receiving orders", "expert": "Inputs and triggers"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce qui a été demandé, reçu, mal compris ou déclenché deux fois.", "expert": "Requêtes, événements, contrats d’entrée et déclenchements concurrents."},
+        "en": {"kitchen": "What was ordered, received, misunderstood or started twice.", "expert": "Requests, events, input contracts and concurrent triggers."}
+      }
+    },
+    {
+      "id": "donnees-memoire-etat",
+      "phase": "prepare",
+      "label": {
+        "fr": {"cuisine": "La réserve", "expert": "Données, mémoire et état"},
+        "en": {"kitchen": "The pantry", "expert": "Data, memory and state"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce qui est disponible, absent, inaccessible, périmé ou pris pour autre chose.", "expert": "Persistance, mémoire, cache, secrets et distinction entre absence, erreur et inconnue."},
+        "en": {"kitchen": "What is available, missing, unreachable, stale or mistaken for something else.", "expert": "Persistence, memory, cache, secrets and the distinction between absence, error and unknown."}
+      }
+    },
+    {
+      "id": "configuration-environnement",
+      "phase": "prepare",
+      "label": {
+        "fr": {"cuisine": "La mise en place", "expert": "Configuration et environnement"},
+        "en": {"kitchen": "The mise en place", "expert": "Configuration and environment"}
+      },
+      "description": {
+        "fr": {"cuisine": "Tout ce qui doit être prêt avant de commencer : produits, poste, règles et matériel.", "expert": "Configuration, initialisation, environnement et préconditions d’exécution."},
+        "en": {"kitchen": "Everything that must be ready before starting: ingredients, station, rules and equipment.", "expert": "Configuration, initialization, environment and execution preconditions."}
+      }
+    },
+    {
+      "id": "isolation-concurrence",
+      "phase": "execute",
+      "label": {
+        "fr": {"cuisine": "Les plans de travail", "expert": "Isolation et concurrence"},
+        "en": {"kitchen": "The worktops", "expert": "Isolation and concurrency"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce qui se mélange lorsque plusieurs commis travaillent au même endroit.", "expert": "Espaces isolés, écritures concurrentes, branches et contamination d’état."},
+        "en": {"kitchen": "What gets mixed up when several cooks work in the same place.", "expert": "Isolated spaces, concurrent writes, branches and state contamination."}
+      }
+    },
+    {
+      "id": "roles-orchestration",
+      "phase": "execute",
+      "label": {
+        "fr": {"cuisine": "La brigade", "expert": "Rôles et orchestration"},
+        "en": {"kitchen": "The brigade", "expert": "Roles and orchestration"}
+      },
+      "description": {
+        "fr": {"cuisine": "Qui fait quoi, qui peut arrêter le service et qui répond du résultat.", "expert": "Responsabilités, permissions, coordination, arbitrage et délégation."},
+        "en": {"kitchen": "Who does what, who may stop service and who owns the result.", "expert": "Responsibilities, permissions, coordination, arbitration and delegation."}
+      }
+    },
+    {
+      "id": "outils-infrastructure",
+      "phase": "execute",
+      "label": {
+        "fr": {"cuisine": "Les ustensiles et les machines", "expert": "Outils et infrastructure"},
+        "en": {"kitchen": "Utensils and machines", "expert": "Tools and infrastructure"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce que le matériel permet, refuse ou semble avoir fait sans réellement le faire.", "expert": "Outils, API, runners, infrastructure et capacités réellement disponibles."},
+        "en": {"kitchen": "What the equipment allows, refuses or appears to have done without really doing it.", "expert": "Tools, APIs, runners, infrastructure and capabilities actually available."}
+      }
+    },
+    {
+      "id": "execution-cycle-vie",
+      "phase": "execute",
+      "label": {
+        "fr": {"cuisine": "La cuisson", "expert": "Exécution et cycle de vie"},
+        "en": {"kitchen": "Cooking", "expert": "Execution and lifecycle"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce qui commence, dure trop longtemps, s’arrête mal ou recommence en double.", "expert": "Démarrage, timeout, annulation, retry, concurrence et terminaison."},
+        "en": {"kitchen": "What starts, runs too long, stops badly or starts again twice.", "expert": "Startup, timeout, cancellation, retry, concurrency and termination."}
+      }
+    },
+    {
+      "id": "validation-preuves",
+      "phase": "deliver",
+      "label": {
+        "fr": {"cuisine": "Le passe et la dégustation", "expert": "Validation et preuves"},
+        "en": {"kitchen": "The pass and tasting", "expert": "Validation and evidence"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce qui prouve qu’un plat a vraiment été préparé et correspond à la commande.", "expert": "Contrôles, reçus d’exécution, critères d’acceptation et faux succès."},
+        "en": {"kitchen": "What proves a dish was really prepared and matches the order.", "expert": "Checks, execution receipts, acceptance criteria and false success."}
+      }
+    },
+    {
+      "id": "publication-resultat",
+      "phase": "deliver",
+      "label": {
+        "fr": {"cuisine": "La salle et le client", "expert": "Publication et résultat utilisateur"},
+        "en": {"kitchen": "The dining room and guest", "expert": "Publication and user outcome"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce qui est réellement servi, reçu et compris au bout du parcours.", "expert": "Déploiement, exposition, comportement observable et résultat réellement obtenu."},
+        "en": {"kitchen": "What is actually served, received and understood at the end of the journey.", "expert": "Deployment, exposure, observable behavior and the outcome actually obtained."}
+      }
+    },
+    {
+      "id": "couts-quotas",
+      "phase": "deliver",
+      "label": {
+        "fr": {"cuisine": "La caisse", "expert": "Coûts, quotas et consommation"},
+        "en": {"kitchen": "The till", "expert": "Costs, quotas and consumption"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce que le service consomme, compte deux fois ou laisse filer sans le voir.", "expert": "Budget, jetons, ressources, quotas, facturation et consommation dupliquée."},
+        "en": {"kitchen": "What service consumes, counts twice or lets escape unnoticed.", "expert": "Budget, tokens, resources, quotas, billing and duplicated consumption."}
+      }
+    },
+    {
+      "id": "annulation-recuperation",
+      "phase": "learn",
+      "label": {
+        "fr": {"cuisine": "La fermeture et la reprise", "expert": "Annulation et récupération"},
+        "en": {"kitchen": "Closing and reopening", "expert": "Cancellation and recovery"}
+      },
+      "description": {
+        "fr": {"cuisine": "Comment arrêter proprement, nettoyer, revenir en arrière ou reprendre demain.", "expert": "Cleanup, rollback, restauration, reprise et gestion des travaux orphelins."},
+        "en": {"kitchen": "How to stop cleanly, tidy up, go back or resume tomorrow.", "expert": "Cleanup, rollback, restoration, resumption and orphaned work management."}
+      }
+    },
+    {
+      "id": "historique-tracabilite",
+      "phase": "learn",
+      "label": {
+        "fr": {"cuisine": "Le cahier de la maison", "expert": "Historique et traçabilité"},
+        "en": {"kitchen": "The house notebook", "expert": "History and traceability"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce que la maison sait vraiment, ce qu’elle suppose et ce qu’elle transmet.", "expert": "Provenance, journalisation, causalité, limites de preuve et mémoire institutionnelle."},
+        "en": {"kitchen": "What the house truly knows, assumes and passes on.", "expert": "Provenance, logging, causality, evidence limits and institutional memory."}
+      }
+    }
+  ],
+  "assignments": {
+    "agent-claims-need-evidence-labels": "validation-preuves",
+    "aider-false-success-family": "validation-preuves",
+    "apply-patch-add-overwrite": "outils-infrastructure",
+    "archon-installed-skill-drift": "configuration-environnement",
+    "archon-session-resume-checkpoint": "annulation-recuperation",
+    "autogen-superseded-not-dead": "dependances-externes",
+    "branch-name-roadmap-decay": "historique-tracabilite",
+    "cline-hooks-control-layer": "execution-cycle-vie",
+    "codegate-low-adoption-pivot-deprecation": "dependances-externes",
+    "codex-managed-worktrees": "isolation-concurrence",
+    "codex-skills-context-budget": "couts-quotas",
+    "continue-readonly-without-archive": "dependances-externes",
+    "control-files-interoperability": "objectifs-instructions",
+    "control-plane-convergence": "roles-orchestration",
+    "conversation-rewind-workspace-stayed-mutated": "annulation-recuperation",
+    "delivery-finished-user-got-nothing": "publication-resultat",
+    "encrypted-subagents-lost-audit-trail": "historique-tracabilite",
+    "gemini-trust-couples-hooks-mcp-instructions": "roles-orchestration",
+    "goose-hooks-observer-to-enforcer": "validation-preuves",
+    "goose-protocol-pivot-acp": "outils-infrastructure",
+    "green-test-wrong-seam": "validation-preuves",
+    "gstack-false-green-second-fix": "validation-preuves",
+    "heredoc-write-truncation": "outils-infrastructure",
+    "hook-canary-behavior-drift": "validation-preuves",
+    "hook-shared-state-crossed-workers": "isolation-concurrence",
+    "hooks-cross-harness-convergence": "validation-preuves",
+    "human-gate-timeout": "roles-orchestration",
+    "mcp-common-protocol-local-policy": "outils-infrastructure",
+    "memory-kept-history-lost-mission": "objectifs-instructions",
+    "multiuser-connection-ownership": "isolation-concurrence",
+    "nested-skills-discovery-drift": "configuration-environnement",
+    "observability-became-outage": "couts-quotas",
+    "openhands-hook-blocking-state": "execution-cycle-vie",
+    "permission-ui-approved-wrong-action": "entrees-declencheurs",
+    "plugin-init-before-control-load": "configuration-environnement",
+    "project-mortality-state-machine": "dependances-externes",
+    "recovery-state-convergence": "annulation-recuperation",
+    "redact-before-model-boundary": "donnees-memoire-etat",
+    "release-does-not-equal-observed-fix": "publication-resultat",
+    "remote-tools-injected-without-local-ownership": "configuration-environnement",
+    "retryable-auth-errors-must-not-delete-credentials": "donnees-memoire-etat",
+    "roo-code-sunset-with-full-backlog": "dependances-externes",
+    "runtime-skill-inventory-not-filesystem": "configuration-environnement",
+    "safety-control-failure-became-permission": "validation-preuves",
+    "second-fix-real-boundary": "validation-preuves",
+    "session-scope-lock-became-global-state": "isolation-concurrence",
+    "skills-cross-harness-convergence": "configuration-environnement",
+    "skills-default-on-docs-lag": "objectifs-instructions",
+    "stop-hook-authority-overreach": "roles-orchestration",
+    "subagent-routing-hidden-capability": "roles-orchestration",
+    "subagents-delegation-control-plane": "roles-orchestration",
+    "superpowers-skills-methodology-rise": "configuration-environnement",
+    "sweagent-cost-guard-retry-rebilling": "couts-quotas",
+    "sweagent-repository-identity-move": "dependances-externes",
+    "taskweaver-archive-cause-unknown": "dependances-externes",
+    "timeout-left-descendants-running": "execution-cycle-vie",
+    "tool-results-need-execution-receipts": "validation-preuves",
+    "unknown-flattened-to-empty": "donnees-memoire-etat",
+    "worktree-isolation-convergence": "isolation-concurrence"
+  }
+}

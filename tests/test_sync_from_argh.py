@@ -53,6 +53,28 @@ class SyncTests(unittest.TestCase):
             self.assertFalse((website / "data/entities/dossiers/stale.json").exists())
             meta = json.loads((website / "data/meta.json").read_text())
             self.assertEqual(meta["source_head"], "a" * 40)
+            activity = json.loads((website / "data/activity.json").read_text())
+            self.assertEqual(activity["events"], [])
+
+    def test_sync_records_new_and_enriched_dossiers_after_the_baseline(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            source = root / "source"
+            website = root / "website"
+            first = entity("dossier", "one")
+            source_store(source, [first])
+            sync(source, website, "a" * 40, "2026-09-16T12:00:00Z")
+
+            first["revision"] = "enriched"
+            source_store(source, [first, entity("dossier", "two")])
+            result = sync(source, website, "b" * 40, "2026-09-16T13:00:00Z")
+
+            self.assertEqual(result["new_dossiers"], 1)
+            self.assertEqual(result["updated_dossiers"], 1)
+            activity = json.loads((website / "data/activity.json").read_text())
+            by_path = {event["entity_path"]: event for event in activity["events"]}
+            self.assertEqual(by_path["dossiers/one.json"]["kind"], "updated")
+            self.assertEqual(by_path["dossiers/two.json"]["kind"], "new")
 
     def test_invalid_source_does_not_touch_destination(self):
         with tempfile.TemporaryDirectory() as temporary:

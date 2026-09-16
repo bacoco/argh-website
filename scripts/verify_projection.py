@@ -34,6 +34,21 @@ def main() -> int:
     for required in ("index.html", "dossiers/index.html", "projects/index.html",
                      "patterns/index.html", "atlas/index.html", "about/index.html", "404.html"):
         (ROOT / required).read_text(encoding="utf-8")
+    taxonomy = json.loads((ROOT / "data/taxonomy.json").read_text(encoding="utf-8"))
+    place_ids = {place["id"] for place in taxonomy["places"]}
+    if len(place_ids) != len(taxonomy["places"]):
+        raise SystemExit("duplicate place in public navigation")
+    for place_id in place_ids:
+        (ROOT / "places" / place_id / "index.html").read_text(encoding="utf-8")
+    activity = json.loads((ROOT / "data/activity.json").read_text(encoding="utf-8"))
+    if activity.get("schema") != "argh/public-activity/v1":
+        raise SystemExit("wrong public activity schema")
+    home = (ROOT / "index.html").read_text(encoding="utf-8")
+    for required in ("argh-home-hero", "argh-updates", "argh-map", "/assets/logo-imagine.png"):
+        if required not in home:
+            raise SystemExit(f"missing generated home feature: {required}")
+    if "Un nouvel endroit" in home:
+        raise SystemExit("an unclassified incident must not be rendered as a permanent place")
     for path in ROOT.rglob("*.html"):
         if re.search(r"loriq", path.read_text(encoding="utf-8"), re.I):
             raise SystemExit(f"forbidden product name in generated page: {path}")
