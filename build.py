@@ -296,6 +296,11 @@ def main():
         e = json.loads((DATA / rel).read_text(encoding="utf-8"))
         store["items"].append(e); store["by_route"][e["route"]] = e
         if e["type"] == "pattern": store["patterns"][e["slug"]] = e
+    # Generated entity routes mirror the complete store. Remove stale routes before
+    # rendering so a deleted entity cannot survive on GitHub Pages.
+    for plural in PLURAL.values():
+        shutil.rmtree(ROOT / plural, ignore_errors=True)
+        (ROOT / plural).mkdir()
     n = 0
     for e in store["items"]:
         out = ROOT / PLURAL[e["type"]] / e["slug"] / "index.html"

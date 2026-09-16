@@ -1,0 +1,70 @@
+name: Sync ARGH public projection
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/sync-argh-projection.yml'
+      - 'build.py'
+      - 'scripts/**'
+      - 'tests/**'
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-argh-public-projection
+  cancel-in-progress: false
+
+jobs:
+  sync-build-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out the static site
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check out the canonical public store
+        uses: actions/checkout@v4
+        with:
+          repository: bacoco/argh
+          ref: main
+          path: .source/argh
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test the synchronization boundary
+        run: python -m unittest discover -v -s tests
+      - name: Validate, synchronize and build
+        shell: bash
+        run: |
+          set -euo pipefail
+          source_head="$(git -C .source/argh rev-parse HEAD)"
+          generated_at="$(git -C .source/argh show -s --format=%cI HEAD)"
+          PYTHONPATH=.source/argh python -c "from pathlib import Path; from scheduler.v2.entity_store import validate_store; print(len(validate_store(Path('.source/argh/publication/argh/entities'))['entities']))"
+          python scripts/sync_from_argh.py \
+            --source .source/argh/publication/argh/entities \
+            --source-head "$source_head" \
+            --generated-at "$generated_at"
+          python build.py
+          python scripts/verify_projection.py
+      - name: Commit a changed projection
+        if: github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add -A -- 404.html index.html about atlas dossiers patterns projects data/entities data/meta.json
+          if git diff --cached --quiet; then
+            echo 'Projection already matches bacoco/argh/main.'
+            exit 0
+          fi
+          source_head="$(git -C .source/argh rev-parse --short=12 HEAD)"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "data: sync ARGH projection from ${source_head}"
+          git pull --rebase origin main
+          git push origin HEAD:main
