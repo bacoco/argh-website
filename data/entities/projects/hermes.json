@@ -6,6 +6,8 @@
   "route": "/projects/hermes/",
   "template": "project",
   "updated_at": "2026-09-12T17:50:00+02:00",
+  "event_date": "2025-01-01",
+  "date_basis": "backfilled",
   "relationships": {
     "projects": [],
     "patterns": [
@@ -37,11 +39,11 @@
         {
           "fr": {
             "cuisine": "Hermes a été pris à l’essai un soir, sur un seul plat et un seul fourneau. Il a très bien travaillé. Trois choses, ce soir-là, ne se règlent pas en changeant la consigne — et c’est pour ça qu’il n’a pas été embauché.",
-            "expert": "Hermes Agent est un agent CLI à outils — mémoire persistante, sous-agents, tâches programmées, skills auto-créés — dont la seule surface sans terminal interactif est le mode oneshot. Une sonde bornée l’a qualifié : une tâche, un modèle, une passerelle locale compatible OpenAI. Trois constats mesurés ne relèvent pas de la configuration, et Loriq refuse la liaison comme worker en code, pas en prose."
+            "expert": "Hermes Agent est un agent CLI à outils — mémoire persistante, sous-agents, tâches programmées, skills auto-créés — dont la seule surface sans terminal interactif est le mode oneshot. Une sonde bornée l’a qualifié : une tâche, un modèle, une passerelle locale compatible OpenAI. Trois constats mesurés ne relèvent pas de la configuration, et la liaison comme worker est refusée en code, pas en prose."
           },
           "en": {
             "kitchen": "Hermes was given a trial shift: one dish, one stove, one evening. He worked well. Three things that night cannot be fixed by changing the instructions — and that is why he was not hired.",
-            "expert": "Hermes Agent is a tool-using CLI agent — persistent memory, subagents, scheduled tasks, self-authored skills — whose only non-interactive surface is oneshot mode. A bounded probe qualified it: one task, one model, one local OpenAI-compatible gateway. Three measured findings are not configuration problems, and Loriq refuses the worker binding in code rather than in prose."
+            "expert": "Hermes Agent is a tool-using CLI agent — persistent memory, subagents, scheduled tasks, self-authored skills — whose only non-interactive surface is oneshot mode. A bounded probe qualified it: one task, one model, one local OpenAI-compatible gateway. Three measured findings are not configuration problems, and the worker binding is refused in code rather than in prose."
           }
         }
       ]
@@ -175,11 +177,11 @@
         {
           "fr": {
             "cuisine": "On a gardé ses bonnes habitudes sans le garder, lui. La note de fin de service dit si le travail a eu lieu. La liste des outils permis tient lieu de barrière quand plus personne ne surveille. Et la porte est fermée par écrit, pas par principe : on a noté pourquoi.",
-            "expert": "La réponse est une frontière, pas un correctif : Loriq consomme trois motifs d’Hermes et refuse la liaison comme worker, refus porté par le code et non par un paragraphe. Le rapport d’usage sert de seul signal de succès précisément parce que le code de sortie a été mesuré non fiable. L’allowlist de jeux d’outils devient l’unique surface de droits une fois les approbations tombées, et le cloisonnement d’état est une obligation, pas une option."
+            "expert": "La réponse est une frontière, pas un correctif : trois motifs d’Hermes sont consommés, la liaison comme worker est refusée, et ce refus est porté par le code et non par un paragraphe. Le rapport d’usage sert de seul signal de succès précisément parce que le code de sortie a été mesuré non fiable. L’allowlist de jeux d’outils devient l’unique surface de droits une fois les approbations tombées, et le cloisonnement d’état est une obligation, pas une option."
           },
           "en": {
             "kitchen": "His good habits were kept; he was not. The end-of-service bill says whether the work happened. The list of permitted tools stands as the barrier once nobody is watching. And the door is shut in writing, not on principle: the reason is written down.",
-            "expert": "The response is a boundary, not a fix: Loriq consumes three patterns from Hermes and refuses the worker binding, the refusal carried by code rather than a paragraph. The usage report serves as the only success signal precisely because exit status was measured unreliable. The toolset allowlist becomes the sole rights surface once approvals fall away, and state confinement is an obligation rather than an option."
+            "expert": "The response is a boundary, not a fix: three patterns from Hermes are consumed, the worker binding is refused, and that refusal is carried by code rather than a paragraph. The usage report serves as the only success signal precisely because exit status was measured unreliable. The toolset allowlist becomes the sole rights surface once approvals fall away, and state confinement is an obligation rather than an option."
           }
         }
       ]

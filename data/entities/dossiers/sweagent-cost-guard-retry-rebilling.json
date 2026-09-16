@@ -6,6 +6,8 @@
   "route": "/dossiers/sweagent-cost-guard-retry-rebilling/",
   "template": "dossier",
   "updated_at": "2026-09-13T08:00:00+02:00",
+  "event_date": "2026-08-15",
+  "date_basis": "incident",
   "relationships": {
     "projects": [
       "SWE-agent"

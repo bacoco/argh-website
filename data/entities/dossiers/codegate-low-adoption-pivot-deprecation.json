@@ -6,6 +6,8 @@
   "route": "/dossiers/codegate-low-adoption-pivot-deprecation/",
   "template": "dossier",
   "updated_at": "2026-09-13T08:00:00+02:00",
+  "event_date": "2025-05-01",
+  "date_basis": "incident",
   "relationships": {
     "projects": [
       "CodeGate"

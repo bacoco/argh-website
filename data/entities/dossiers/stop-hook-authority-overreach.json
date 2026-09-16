@@ -6,6 +6,8 @@
   "route": "/dossiers/stop-hook-authority-overreach/",
   "template": "dossier",
   "updated_at": "2026-09-13T08:00:00+02:00",
+  "event_date": "2026-06-19",
+  "date_basis": "incident",
   "relationships": {
     "projects": [
       "Claude Code"

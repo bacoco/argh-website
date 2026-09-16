@@ -6,6 +6,8 @@
   "route": "/dossiers/openhands-hook-blocking-state/",
   "template": "dossier",
   "updated_at": "2026-09-13T08:00:00+02:00",
+  "event_date": "2025-12-29",
+  "date_basis": "incident",
   "relationships": {
     "projects": [
       "OpenHands"
