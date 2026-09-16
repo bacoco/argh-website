@@ -185,18 +185,111 @@ def atlas(store):
     body += "</tbody></table></div></section>" + FOOT + "</main></div>"
     return page("Atlas — ARGH", body, "Carte des motifs récurrents entre projets.")
 
-def home(store):
-    """L'accueil et /about/ ne sont pas générés depuis le magasin d'entités.
+LATEST_N = 12
+TOP_PATTERNS_N = 12
 
-    C'étaient des pages WordPress rédigées à la main. Leur contenu a été récupéré
-    depuis l'origine Hostinger le 2026-09-16, après la bascule DNS, et vit
-    désormais dans recovered/. On ne le réécrit pas : on le sert.
+def entry_date(e):
+    """Date éditoriale d'une entrée : celle de la source qui l'a fait découvrir.
+
+    `published_at` est la seule autorité. `updated_at` est un tampon de migration
+    — il ne vaut que comme ordre de repli, et n'est jamais affiché comme une date.
     """
-    blk = (ROOT / "recovered" / "home.html").read_text(encoding="utf-8")
+    return e.get("published_at")
+
+def sort_key(e):
+    return (entry_date(e) or e.get("updated_at") or "", e.get("slug") or "")
+
+def card(e):
+    h = slot_of(e, "hero")
+    d = entry_date(e)
+    meta = ('<div class="argh-card-meta"><time datetime="%s">%s</time></div>'
+            % (esc(d), esc(d[:10]))) if d else ""
+    return ('<a class="argh-index-card" href="%s">%s%s%s</a>'
+            % (esc(e["route"]), meta, quad(h["heading"], "h2"),
+               quad((h.get("body") or [{}])[0], "p", "argh-card-summary")))
+
+def section_head(q):
+    return '<div class="argh-section-head">%s</div>' % quad(q, "h2")
+
+HOME_TITLE = {
+    "fr": {"cuisine": "Ce qui casse quand la brigade n\u2019est plus humaine",
+           "expert": "D\u00e9faillances de harnais, \u00e9tablies et document\u00e9es"},
+    "en": {"kitchen": "What breaks when the brigade is no longer human",
+           "expert": "Harness failures, established and documented"}}
+
+HOME_DECK = {
+    "fr": {"cuisine": "Un bon cuisinier ne suffit pas. Il faut encore que les commandes "
+                      "arrivent, que les postes soient tenus, et que quelqu\u2019un regarde "
+                      "l\u2019assiette avant qu\u2019elle parte. On raconte ici ce qui a rat\u00e9 dans "
+                      "ces cuisines-l\u00e0, et ce qu\u2019il fallait faire \u00e0 la place.",
+           "expert": "ARGH documente les d\u00e9faillances op\u00e9rationnelles des harnais "
+                     "d\u2019agents : ce qui a \u00e9t\u00e9 reproduit, ce qui a \u00e9t\u00e9 corrig\u00e9, ce qui reste "
+                     "ouvert. Chaque dossier nomme son \u00e9tat de preuve."},
+    "en": {"kitchen": "A good cook is not enough. The orders still have to arrive, the "
+                      "stations have to be held, and someone has to look at the plate "
+                      "before it leaves. This is what went wrong in those kitchens, and "
+                      "what should have been done instead.",
+           "expert": "ARGH documents operational failures in agent harnesses: what was "
+                     "reproduced, what was fixed, what remains open. Every dossier names "
+                     "its evidence state."}}
+
+HOME_LATEST = {
+    "fr": {"cuisine": "Ce qui vient d\u2019arriver", "expert": "Derni\u00e8res entr\u00e9es"},
+    "en": {"kitchen": "What just came in", "expert": "Latest entries"}}
+
+HOME_RECURRING = {
+    "fr": {"cuisine": "Les m\u00eames rat\u00e9s, d\u2019une cuisine \u00e0 l\u2019autre",
+           "expert": "Motifs r\u00e9currents"},
+    "en": {"kitchen": "The same mistakes, kitchen after kitchen",
+           "expert": "Recurring patterns"}}
+
+def home(store):
+    """L'accueil est fabriqu\u00e9 depuis le magasin d'entit\u00e9s, comme toute autre page.
+
+    Il n'utilise que des classes d\u00e9finies par renderer.css : une page servie avec
+    un vocabulaire que la feuille ignore ne masque rien et ne met rien en forme.
+    """
+    ds = sorted([e for e in store["items"] if e.get("type") == "dossier"],
+                key=sort_key, reverse=True)
+    ps = [e for e in store["items"] if e.get("type") == "pattern"]
+    pr = [e for e in store["items"] if e.get("type") == "project"]
+
+    counts = {}
+    for e in ds:
+        for m in (e.get("relationships") or {}).get("patterns", []):
+            counts[m] = counts.get(m, 0) + 1
+    top = sorted(counts.items(), key=lambda x: (-x[1], x[0]))[:TOP_PATTERNS_N]
+
     body = ('<div class="argh-site argh-index" data-argh-renderer="%s">%s'
-            '<main class="argh-wrap">%s</main>%s</div>' % (VERSION, header("home"), blk, FOOT))
-    return page("ARGH — Pannes, correctifs et leçons des harnais IA", body,
-                "Intelligence indépendante sur les harnais d'agents : pannes vérifiées, mécanismes et leçons.")
+            '<main class="argh-wrap">'
+            '<section class="argh-index-hero"><div class="argh-kicker">ARGH</div>%s%s</section>'
+            '<div class="argh-atlas-stats">'
+            '<div class="argh-stat"><b>%d</b><span>Dossiers</span></div>'
+            '<div class="argh-stat"><b>%d</b><span><span class="nav-fr">Motifs</span>'
+            '<span class="nav-en">Patterns</span></span></div>'
+            '<div class="argh-stat"><b>%d</b><span><span class="nav-fr">Projets</span>'
+            '<span class="nav-en">Projects</span></span></div></div>'
+            % (VERSION, header("home"), quad(HOME_TITLE, "h1"),
+               quad(HOME_DECK, "p", "argh-standfirst"), len(ds), len(ps), len(pr)))
+
+    body += '<section class="argh-section">%s<div class="argh-index-grid">%s</div></section>' % (
+        section_head(HOME_LATEST), "".join(card(e) for e in ds[:LATEST_N]))
+
+    cards = ""
+    for slug, n in top:
+        e = store["patterns"].get(slug)
+        if not e: continue
+        h = slot_of(e, "hero")
+        cards += ('<a class="argh-index-card" href="%s">'
+                  '<div class="argh-card-meta"><span class="argh-count">%d</span></div>%s</a>'
+                  % (esc(e["route"]), n, quad(h["heading"], "h2")))
+    body += '<section class="argh-section">%s<div class="argh-index-grid">%s</div></section>' % (
+        section_head(HOME_RECURRING), cards)
+
+    body += FOOT + "</main></div>"
+    return page("ARGH \u2014 Pannes, correctifs et le\u00e7ons des harnais IA", body,
+                "Intelligence ind\u00e9pendante sur les harnais d'agents : pannes v\u00e9rifi\u00e9es, "
+                "m\u00e9canismes et le\u00e7ons.")
 
 def about(store):
     blk = (ROOT / "recovered" / "about.html").read_text(encoding="utf-8")
