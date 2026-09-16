@@ -15,3 +15,8 @@ simplifies or rewrites editorial text.
 
 Private evidence, source acquisition, scheduler state and operational provenance
 remain in `bacoco/argh` and are never copied here.
+
+`Sync ARGH public projection` polls `bacoco/argh/main` hourly. It validates and
+copies the complete `publication/argh/entities/` tree, rebuilds every generated
+route, verifies the four authored modes and the absence of the private product
+name, then commits the projection to this repository. GitHub Pages serves `main`.
