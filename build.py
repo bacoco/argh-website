@@ -12,7 +12,7 @@ ROOT = Path(__file__).parent
 DATA = ROOT / "data" / "entities"
 TAXONOMY = ROOT / "data" / "taxonomy.json"
 ACTIVITY = ROOT / "data" / "activity.json"
-VERSION = "1.6.0"
+VERSION = "1.6.1"
 PLURAL = {"dossier": "dossiers", "project": "projects", "pattern": "patterns"}
 PLACE_ILLUSTRATIONS = {
     "objectifs-instructions": "/assets/illustrations/category-objectives-instructions-320.jpg",
