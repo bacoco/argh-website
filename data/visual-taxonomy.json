@@ -1,0 +1,296 @@
+{
+  "schema": "argh/visual-taxonomy/v1",
+  "families": [
+    {
+      "id": "instructions-authority",
+      "image": "/assets/illustrations/family-instructions-authority-640.jpg",
+      "label": {
+        "fr": {"cuisine": "Les consignes et les décisions", "expert": "Instructions et autorité"},
+        "en": {"kitchen": "Instructions and decisions", "expert": "Instructions and authority"}
+      },
+      "description": {
+        "fr": {"cuisine": "Qui donne la consigne, qui peut trancher et jusqu’où va son pouvoir.", "expert": "Portée des instructions, approbations, responsabilités et autorité de contrôle."},
+        "en": {"kitchen": "Who gives the instruction, who may decide and where that power ends.", "expert": "Scope of instructions, approvals, responsibilities and control authority."}
+      }
+    },
+    {
+      "id": "state-memory-recovery",
+      "image": "/assets/illustrations/family-state-memory-recovery-640.jpg",
+      "label": {
+        "fr": {"cuisine": "La réserve et les carnets", "expert": "État, mémoire et reprise"},
+        "en": {"kitchen": "The pantry and notebooks", "expert": "State, memory and recovery"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce qui est gardé, oublié ou mal repris d’un service à l’autre.", "expert": "Persistance, checkpoints, contexte, restauration et cohérence de l’état."},
+        "en": {"kitchen": "What is kept, forgotten or poorly resumed from one service to the next.", "expert": "Persistence, checkpoints, context, restoration and state consistency."}
+      }
+    },
+    {
+      "id": "concurrency-isolation",
+      "image": "/assets/illustrations/family-concurrency-isolation-640.jpg",
+      "label": {
+        "fr": {"cuisine": "Les plans de travail", "expert": "Concurrence et isolation"},
+        "en": {"kitchen": "The worktops", "expert": "Concurrency and isolation"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce qui se mélange quand plusieurs commis travaillent en même temps.", "expert": "Exécutions parallèles, espaces isolés, routage et contamination d’état."},
+        "en": {"kitchen": "What gets mixed up when several cooks work at the same time.", "expert": "Parallel executions, isolated workspaces, routing and state contamination."}
+      }
+    },
+    {
+      "id": "validation-evidence",
+      "image": "/assets/illustrations/family-validation-evidence-640.jpg",
+      "label": {
+        "fr": {"cuisine": "Les contrôles et les preuves", "expert": "Validation et preuves"},
+        "en": {"kitchen": "Checks and proof", "expert": "Validation and evidence"}
+      },
+      "description": {
+        "fr": {"cuisine": "Comment savoir que le plat a vraiment été préparé et vérifié.", "expert": "Critères d’acceptation, reçus d’exécution, observabilité et faux succès."},
+        "en": {"kitchen": "How to know that the dish was truly prepared and checked.", "expert": "Acceptance criteria, execution receipts, observability and false success."}
+      }
+    },
+    {
+      "id": "tools-runtime",
+      "image": "/assets/illustrations/family-tools-runtime-640.jpg",
+      "label": {
+        "fr": {"cuisine": "Les ustensiles et les machines", "expert": "Outils, configuration et runtime"},
+        "en": {"kitchen": "Utensils and machines", "expert": "Tools, configuration and runtime"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce qui est réellement disponible et fonctionne au poste de travail.", "expert": "Découverte, configuration effective, capacités chargées et environnement d’exécution."},
+        "en": {"kitchen": "What is really available and working at the station.", "expert": "Discovery, effective configuration, loaded capabilities and execution environment."}
+      }
+    },
+    {
+      "id": "execution-recovery",
+      "image": "/assets/illustrations/family-execution-recovery-640.jpg",
+      "label": {
+        "fr": {"cuisine": "La cuisson et les reprises", "expert": "Exécution, arrêt et récupération"},
+        "en": {"kitchen": "Cooking and restarting", "expert": "Execution, cancellation and recovery"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce qui démarre, s’arrête mal, recommence ou laisse le feu allumé.", "expert": "Timeouts, annulation, retry, repli, écritures atomiques et nettoyage."},
+        "en": {"kitchen": "What starts, stops badly, restarts or leaves the heat on.", "expert": "Timeouts, cancellation, retries, fallback, atomic writes and cleanup."}
+      }
+    },
+    {
+      "id": "delivery-outcome",
+      "image": "/assets/illustrations/family-delivery-outcome-640.jpg",
+      "label": {
+        "fr": {"cuisine": "De la cuisine jusqu’à la table", "expert": "Livraison et résultat utilisateur"},
+        "en": {"kitchen": "From the kitchen to the table", "expert": "Delivery and user outcome"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce qui quitte vraiment la cuisine et ce que le client reçoit.", "expert": "Étapes de livraison, publication et résultat observable par le destinataire."},
+        "en": {"kitchen": "What truly leaves the kitchen and what the guest receives.", "expert": "Delivery stages, publication and the outcome observed by the recipient."}
+      }
+    },
+    {
+      "id": "security-trust",
+      "image": "/assets/illustrations/family-security-trust-640.jpg",
+      "label": {
+        "fr": {"cuisine": "Les clés et les portes", "expert": "Sécurité, confiance et confidentialité"},
+        "en": {"kitchen": "Keys and doors", "expert": "Security, trust and privacy"}
+      },
+      "description": {
+        "fr": {"cuisine": "Qui peut entrer, voir les carnets ou utiliser les outils dangereux.", "expert": "Permissions, secrets, frontières de confiance, caviardage et auditabilité."},
+        "en": {"kitchen": "Who may enter, read the notebooks or use dangerous tools.", "expert": "Permissions, secrets, trust boundaries, redaction and auditability."}
+      }
+    },
+    {
+      "id": "costs-quotas",
+      "image": "/assets/illustrations/family-costs-quotas-640.jpg",
+      "label": {
+        "fr": {"cuisine": "La caisse et les réserves", "expert": "Coûts, quotas et consommation"},
+        "en": {"kitchen": "The till and supplies", "expert": "Costs, quotas and consumption"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce que chaque service consomme et ce qui peut être compté deux fois.", "expert": "Budgets, jetons, ressources, quotas et consommation des reprises."},
+        "en": {"kitchen": "What each service consumes and what may be counted twice.", "expert": "Budgets, tokens, resources, quotas and retry consumption."}
+      }
+    },
+    {
+      "id": "evolution-lifecycle",
+      "image": "/assets/illustrations/family-evolution-lifecycle-640.jpg",
+      "label": {
+        "fr": {"cuisine": "La carte qui change", "expert": "Évolution et cycle de vie"},
+        "en": {"kitchen": "The changing menu", "expert": "Evolution and lifecycle"}
+      },
+      "description": {
+        "fr": {"cuisine": "Ce qui apparaît, change de direction, ralentit ou quitte la carte.", "expert": "Dérive, convergence, maintenance, pivot, remplacement et fin de projet."},
+        "en": {"kitchen": "What appears, changes direction, slows down or leaves the menu.", "expert": "Drift, convergence, maintenance, pivots, supersession and project endings."}
+      }
+    }
+  ],
+  "pattern_assignments": {
+    "acquisition": "validation-evidence",
+    "atomic-write": "execution-recovery",
+    "authority-scope": "instructions-authority",
+    "backlog-fossil": "evolution-lifecycle",
+    "behavior-drift": "evolution-lifecycle",
+    "branches": "evolution-lifecycle",
+    "budget": "costs-quotas",
+    "checkpoint": "state-memory-recovery",
+    "compaction": "state-memory-recovery",
+    "concurrency": "concurrency-isolation",
+    "configuration-drift": "tools-runtime",
+    "context-budget": "costs-quotas",
+    "control-files": "instructions-authority",
+    "control-plane": "tools-runtime",
+    "convergence": "evolution-lifecycle",
+    "cost-guards": "costs-quotas",
+    "credential-lifecycle": "security-trust",
+    "cross-harness": "tools-runtime",
+    "cross-session-state": "state-memory-recovery",
+    "defaults": "tools-runtime",
+    "delivery-stages": "delivery-outcome",
+    "deprecation": "evolution-lifecycle",
+    "destructive-write": "execution-recovery",
+    "discovery": "tools-runtime",
+    "documentation-drift": "evolution-lifecycle",
+    "evidence-boundary": "validation-evidence",
+    "execution-receipts": "validation-evidence",
+    "fail-open": "execution-recovery",
+    "failed-fix": "validation-evidence",
+    "fallback-integrity": "execution-recovery",
+    "false-green": "validation-evidence",
+    "forward-signals": "evolution-lifecycle",
+    "headless-contract": "delivery-outcome",
+    "hooks-as-sensors": "validation-evidence",
+    "hooks-enforcement": "instructions-authority",
+    "human-gates": "instructions-authority",
+    "initialization-order": "tools-runtime",
+    "installed-vs-source": "tools-runtime",
+    "logging": "security-trust",
+    "maintenance-slowdown": "evolution-lifecycle",
+    "mcp": "tools-runtime",
+    "mission-state": "state-memory-recovery",
+    "multiuser-isolation": "concurrency-isolation",
+    "observability": "validation-evidence",
+    "observability-budget": "costs-quotas",
+    "ownership": "instructions-authority",
+    "permissions": "security-trust",
+    "pivot": "evolution-lifecycle",
+    "pre-model-redaction": "security-trust",
+    "privacy-auditability": "security-trust",
+    "privacy-boundary": "security-trust",
+    "project-mortality": "evolution-lifecycle",
+    "protocols": "tools-runtime",
+    "read-only": "evolution-lifecycle",
+    "regression": "evolution-lifecycle",
+    "release-state": "delivery-outcome",
+    "repository-identity": "evolution-lifecycle",
+    "retry": "execution-recovery",
+    "retry-semantics": "execution-recovery",
+    "rising-project": "evolution-lifecycle",
+    "routing": "concurrency-isolation",
+    "runtime-boundary": "tools-runtime",
+    "runtime-identity": "tools-runtime",
+    "runtime-visible-state": "state-memory-recovery",
+    "schema-capability": "tools-runtime",
+    "scope-boundary": "instructions-authority",
+    "second-fix": "execution-recovery",
+    "semantic-approval": "instructions-authority",
+    "skills-runtime": "tools-runtime",
+    "stale-control": "instructions-authority",
+    "state-isolation": "concurrency-isolation",
+    "state-split": "state-memory-recovery",
+    "subagents": "concurrency-isolation",
+    "sunset": "evolution-lifecycle",
+    "supersession": "evolution-lifecycle",
+    "testing": "validation-evidence",
+    "timeout": "execution-recovery",
+    "tool-truth": "validation-evidence",
+    "trust-boundary": "security-trust",
+    "uncertainty": "validation-evidence",
+    "verification": "validation-evidence",
+    "workaround-drift": "evolution-lifecycle",
+    "worktrees": "concurrency-isolation"
+  },
+  "project_states": [
+    {
+      "id": "emerging",
+      "image": "/assets/illustrations/state-emerging-640.jpg",
+      "label": {
+        "fr": {"cuisine": "Une nouvelle maison ouvre", "expert": "Émergent"},
+        "en": {"kitchen": "A new house opens", "expert": "Emerging"}
+      },
+      "description": {
+        "fr": {"cuisine": "La cuisine se met en place et commence à attirer l’attention.", "expert": "Projet récent dont l’adoption ou l’influence est en croissance."},
+        "en": {"kitchen": "The kitchen is taking shape and beginning to draw attention.", "expert": "A recent project with growing adoption or influence."}
+      }
+    },
+    {
+      "id": "active",
+      "image": "/assets/illustrations/state-active-640.jpg",
+      "label": {
+        "fr": {"cuisine": "Le service bat son plein", "expert": "Actif"},
+        "en": {"kitchen": "Service is in full swing", "expert": "Active"}
+      },
+      "description": {
+        "fr": {"cuisine": "La carte et la cuisine continuent d’évoluer régulièrement.", "expert": "Développement et changements fonctionnels toujours soutenus."},
+        "en": {"kitchen": "The menu and kitchen continue to evolve regularly.", "expert": "Development and functional changes remain sustained."}
+      }
+    },
+    {
+      "id": "maintenance",
+      "image": "/assets/illustrations/state-maintenance-640.jpg",
+      "label": {
+        "fr": {"cuisine": "La maison reste ouverte", "expert": "Maintenance"},
+        "en": {"kitchen": "The house stays open", "expert": "Maintenance"}
+      },
+      "description": {
+        "fr": {"cuisine": "On continue de servir, mais la carte change peu.", "expert": "Corrections et entretien continuent, avec peu de développement nouveau."},
+        "en": {"kitchen": "Service continues, but the menu changes little.", "expert": "Fixes and upkeep continue with little new development."}
+      }
+    },
+    {
+      "id": "redirected",
+      "image": "/assets/illustrations/state-redirected-640.jpg",
+      "label": {
+        "fr": {"cuisine": "La nouvelle carte se prépare ailleurs", "expert": "Réorienté ou remplacé"},
+        "en": {"kitchen": "The new menu is prepared elsewhere", "expert": "Redirected or superseded"}
+      },
+      "description": {
+        "fr": {"cuisine": "La maison existe encore, mais les nouveautés suivent une autre direction.", "expert": "Développement stratégique déplacé vers un successeur, un pivot ou une autre identité."},
+        "en": {"kitchen": "The house still exists, but new work follows another direction.", "expert": "Strategic development moved to a successor, pivot or different identity."}
+      }
+    },
+    {
+      "id": "archived",
+      "image": "/assets/illustrations/state-archived-640.jpg",
+      "label": {
+        "fr": {"cuisine": "Le rideau est baissé", "expert": "Arrêté ou archivé"},
+        "en": {"kitchen": "The shutters are down", "expert": "Stopped or archived"}
+      },
+      "description": {
+        "fr": {"cuisine": "Le service est terminé et la cuisine ne change plus.", "expert": "Fin de vie déclarée, version finale ou dépôt archivé."},
+        "en": {"kitchen": "Service has ended and the kitchen no longer changes.", "expert": "Declared end of life, final release or archived repository."}
+      }
+    }
+  ],
+  "project_state_assignments": {
+    "agent-scripts": "active",
+    "aider": "maintenance",
+    "archon": "active",
+    "autogen": "redirected",
+    "claude-code": "active",
+    "cline": "active",
+    "codegate": "archived",
+    "codex": "active",
+    "continue": "redirected",
+    "gemini-cli": "active",
+    "goose": "redirected",
+    "gstack": "active",
+    "hermes": "active",
+    "langgraph": "active",
+    "mcp-ecosystem": "active",
+    "openclaw": "active",
+    "openhands": "active",
+    "pstack": "active",
+    "roo-code": "archived",
+    "superpowers": "emerging",
+    "swe-agent": "active",
+    "taskweaver": "archived"
+  }
+}

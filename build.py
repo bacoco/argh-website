@@ -11,9 +11,17 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 DATA = ROOT / "data" / "entities"
 TAXONOMY = ROOT / "data" / "taxonomy.json"
+VISUAL_TAXONOMY = ROOT / "data" / "visual-taxonomy.json"
 ACTIVITY = ROOT / "data" / "activity.json"
-VERSION = "1.6.1"
+VERSION = "1.7.0"
 PLURAL = {"dossier": "dossiers", "project": "projects", "pattern": "patterns"}
+PAGE_ILLUSTRATIONS = {
+    "dossier": "/assets/illustrations/page-dossiers-640.jpg",
+    "pattern": "/assets/illustrations/page-patterns-640.jpg",
+    "project": "/assets/illustrations/page-projects-640.jpg",
+    "atlas": "/assets/illustrations/page-atlas-640.jpg",
+    "about": "/assets/illustrations/page-about-640.jpg",
+}
 PLACE_ILLUSTRATIONS = {
     "objectifs-instructions": "/assets/illustrations/category-objectives-instructions-320.jpg",
     "dependances-externes": "/assets/illustrations/category-external-dependencies-320.jpg",
@@ -51,6 +59,15 @@ def quad(q, tag="span", cls=""):
     for mode, text in modes:
         out += '<span class="argh-mode argh-%s">%s</span>' % (mode, esc(text))
     return out + "</%s>" % tag
+
+
+def visual(image, cls, loading="lazy"):
+    if not image:
+        return ""
+    priority = ' fetchpriority="high"' if loading == "eager" else ""
+    return ('<picture class="%s"><img src="%s" width="640" height="427" alt="" '
+            'aria-hidden="true" loading="%s" decoding="async"%s></picture>'
+            % (esc(cls), esc(image), loading, priority))
 
 def nav(href, section, body, current):
     cur = ' aria-current="page"' if current == section else ""
@@ -140,12 +157,35 @@ def related(e, store):
         out += '<a class="argh-related-card" href="%s">%s</a>' % (esc(x["route"]), quad(h["heading"], "h3", "argh-related-title"))
     return out + "</div></section>"
 
+
+def entity_visual(e, store):
+    if e.get("type") == "dossier":
+        place = store["place_by_id"].get(store["assignments"].get(e["slug"]))
+        return (PLACE_ILLUSTRATIONS.get(place["id"]), place["label"], "/places/%s/" % place["id"]) if place else (None, None, None)
+    if e.get("type") == "pattern":
+        family = store["family_by_id"].get(store["pattern_assignments"].get(e["slug"]))
+        return (family["image"], family["label"], "/patterns/#%s" % family["id"]) if family else (None, None, None)
+    if e.get("type") == "project":
+        state = store["project_state_by_id"].get(store["project_state_assignments"].get(e["slug"]))
+        return (state["image"], state["label"], "/projects/#%s" % state["id"]) if state else (None, None, None)
+    return None, None, None
+
+
+def classification_badge(label, href):
+    if not label:
+        return ""
+    return '<a class="argh-classification" href="%s">%s</a>' % (esc(href), quad(label))
+
+
 def detail(e, store):
     h = slot_of(e, "hero")
+    image, label, href = entity_visual(e, store)
     body = ('<div class="argh-site" data-argh-renderer="%s" data-argh-route="%s">%s'
-            '<main class="argh-wrap"><article class="argh-article">%s%s%s%s'
+            '<main class="argh-wrap"><article class="argh-article">'
+            '<div class="argh-detail-hero"><div class="argh-detail-hero-copy">%s%s%s%s</div>%s</div>%s'
             % (VERSION, esc(e["route"]), header(PLURAL[e["type"]]), context(e["type"]),
                quad(h["heading"], "h1"), quad((h.get("body") or [{}])[0], "p", "argh-standfirst"),
+               classification_badge(label, href), visual(image, "argh-detail-visual", "eager"),
                relationships(e, store)))
     for s in e.get("slots", []):
         if s.get("id") != "hero": body += render_slot(s)
@@ -155,22 +195,66 @@ def detail(e, store):
     desc = ((h.get("body") or [{}])[0].get("fr", {}) or {}).get("expert", "")
     return page(title, body, desc[:180])
 
+
+INDEX_DECK = {
+    "dossier": {
+        "fr": {"cuisine": "Toutes les histoires sont rangées selon l’endroit de la cuisine où le problème apparaît.",
+               "expert": "Tous les incidents sont classés selon l’étape du parcours où le mécanisme devient observable."},
+        "en": {"kitchen": "Every story is arranged by the place in the kitchen where the problem appears.",
+               "expert": "Every incident is classified by the stage where its mechanism becomes observable."}},
+    "pattern": {
+        "fr": {"cuisine": "Les problèmes qui reviennent sont réunis en dix familles faciles à parcourir.",
+               "expert": "Les mécanismes récurrents sont répartis dans dix familles transversales explicites."},
+        "en": {"kitchen": "Recurring problems are gathered into ten families that are easy to browse.",
+               "expert": "Recurring mechanisms are assigned to ten explicit cross-cutting families."}},
+    "project": {
+        "fr": {"cuisine": "Chaque maison est rangée selon ce que l’on sait aujourd’hui de son activité.",
+               "expert": "Chaque système est regroupé selon son état de cycle de vie documenté."},
+        "en": {"kitchen": "Each house is arranged by what is currently known about its activity.",
+               "expert": "Each system is grouped by its documented lifecycle state."}},
+}
+
+
+def grouped_index_section(group, items):
+    count = {
+        "fr": {"cuisine": "%d fiche%s" % (len(items), "s" if len(items) != 1 else ""),
+               "expert": "%d entrée%s" % (len(items), "s" if len(items) != 1 else "")},
+        "en": {"kitchen": "%d card%s" % (len(items), "s" if len(items) != 1 else ""),
+               "expert": "%d entr%s" % (len(items), "ies" if len(items) != 1 else "y")},
+    }
+    return ('<section class="argh-taxonomy-group" id="%s">'
+            '<div class="argh-taxonomy-head">%s<div class="argh-taxonomy-copy">%s%s%s</div></div>'
+            '<div class="argh-index-grid">%s</div></section>'
+            % (esc(group["id"]), visual(group.get("image"), "argh-taxonomy-picture"),
+               quad(group["label"], "h2"), quad(group["description"], "p"),
+               quad(count, "span", "argh-taxonomy-count"), "".join(card(e) for e in items)))
+
+
 def index(t, store):
     items = sorted([e for e in store["items"] if e.get("type") == t], key=lambda e: e["slug"])
     label = {"dossier": ("Dossiers", "Dossiers"), "project": ("Projets", "Projects"),
              "pattern": ("Motifs", "Patterns")}[t]
     body = ('<div class="argh-site argh-index" data-argh-renderer="%s">%s'
-            '<main class="argh-wrap"><section class="argh-index-hero"><div class="argh-kicker">ARGH</div>'
-            '<h1><span class="nav-fr">%s</span><span class="nav-en">%s</span></h1>'
+            '<main class="argh-wrap"><section class="argh-index-hero argh-index-hero-illustrated">'
+            '<div class="argh-index-hero-copy"><div class="argh-kicker">ARGH</div>'
+            '<h1><span class="nav-fr">%s</span><span class="nav-en">%s</span></h1>%s'
             '<div class="argh-index-count">%d <span class="nav-fr">entrées</span><span class="nav-en">entries</span></div>'
-            '</section><section class="argh-index-grid">'
-            % (VERSION, header(PLURAL[t]), label[0], label[1], len(items)))
-    for e in items:
-        h = slot_of(e, "hero")
-        body += ('<a class="argh-index-card" href="%s">%s%s</a>'
-                 % (esc(e["route"]), quad(h["heading"], "h2"),
-                    quad((h.get("body") or [{}])[0], "p", "argh-card-summary")))
-    body += "</section>" + FOOT + "</main></div>"
+            '</div>%s</section>'
+            % (VERSION, header(PLURAL[t]), label[0], label[1], quad(INDEX_DECK[t], "p", "argh-standfirst"),
+               len(items), visual(PAGE_ILLUSTRATIONS[t], "argh-page-visual", "eager")))
+    if t == "dossier":
+        for place in store["places"]:
+            grouped_items = store["dossiers_by_place"].get(place["id"], [])
+            if grouped_items:
+                group = {**place, "image": PLACE_ILLUSTRATIONS.get(place["id"])}
+                body += grouped_index_section(group, grouped_items)
+    elif t == "pattern":
+        for family in store["families"]:
+            body += grouped_index_section(family, store["patterns_by_family"][family["id"]])
+    else:
+        for state in store["project_states"]:
+            body += grouped_index_section(state, store["projects_by_state"][state["id"]])
+    body += FOOT + "</main></div>"
     return page("%s — ARGH" % label[0], body, "%d %s publiés par ARGH." % (len(items), label[0].lower()))
 
 def atlas(store):
@@ -187,14 +271,33 @@ def atlas(store):
                    "expert": "L’Atlas est dérivé du graphe public complet des entités ARGH."},
             "en": {"kitchen": "This map shows where the same problems recur across different kitchens.",
                    "expert": "The Atlas is derived from the complete public ARGH entity graph."}}
+    families_title = {
+        "fr": {"cuisine": "Dix familles de problèmes", "expert": "Dix familles transversales"},
+        "en": {"kitchen": "Ten families of problems", "expert": "Ten cross-cutting families"}}
+    families_deck = {
+        "fr": {"cuisine": "Elles permettent de retrouver le même type de problème, quel que soit l’endroit où il s’est produit.",
+               "expert": "Elles complètent les étapes du parcours en regroupant les mécanismes de défaillance comparables."},
+        "en": {"kitchen": "They reveal the same kind of problem wherever it happened.",
+               "expert": "They complement lifecycle stages by grouping comparable failure mechanisms."}}
     body = ('<div class="argh-site argh-atlas" data-argh-renderer="%s">%s'
-            '<main class="argh-wrap"><section class="argh-index-hero"><div class="argh-kicker">Atlas</div>%s%s</section>'
+            '<main class="argh-wrap"><section class="argh-index-hero argh-index-hero-illustrated">'
+            '<div class="argh-index-hero-copy"><div class="argh-kicker">Atlas</div>%s%s</div>%s</section>'
             '<div class="argh-atlas-stats"><div class="argh-stat"><b>%d</b><span>Dossiers</span></div>'
             '<div class="argh-stat"><b>%d</b><span><span class="nav-fr">Projets</span><span class="nav-en">Projects</span></span></div>'
-            '<div class="argh-stat"><b>%d</b><span><span class="nav-fr">Motifs</span><span class="nav-en">Patterns</span></span></div></div>'
+            '<div class="argh-stat"><b>%d</b><span><span class="nav-fr">Motifs</span><span class="nav-en">Patterns</span></span></div>'
+            '<div class="argh-stat"><b>%d</b><span><span class="nav-fr">Familles</span><span class="nav-en">Families</span></span></div></div>'
+            '<section class="argh-atlas-families">%s%s<div class="argh-family-grid">%s</div></section>'
             '<section class="argh-section"><div class="argh-atlas-wrap"><table class="argh-atlas-table"><thead><tr>'
             '<th><span class="nav-fr">Motif</span><span class="nav-en">Pattern</span></th>'
-            % (VERSION, header("atlas"), quad(title, "h1"), quad(deck, "p", "argh-standfirst"), len(ds), len(pc), len(mc)))
+            % (VERSION, header("atlas"), quad(title, "h1"), quad(deck, "p", "argh-standfirst"),
+               visual(PAGE_ILLUSTRATIONS["atlas"], "argh-page-visual", "eager"), len(ds),
+               len([e for e in store["items"] if e.get("type") == "project"]), len(mc),
+               len(store["families"]), quad(families_title, "h2"), quad(families_deck, "p"),
+               "".join(
+                   '<a class="argh-family-card" href="/patterns/#%s">%s<div>%s%s</div></a>'
+                   % (esc(family["id"]), visual(family["image"], "argh-family-picture"),
+                      quad(family["label"], "h3"), quad(family["description"], "p"))
+                   for family in store["families"])))
     for p in ps: body += "<th>%s</th>" % esc(p)
     body += "</tr></thead><tbody>"
     for m in ms:
@@ -495,13 +598,51 @@ def load_navigation(store):
     if any(place_id not in place_ids for place_id in assignments.values()):
         raise ValueError("public navigation assignment references an unknown place")
 
+    visual_taxonomy = json.loads(VISUAL_TAXONOMY.read_text(encoding="utf-8"))
+    if visual_taxonomy.get("schema") != "argh/visual-taxonomy/v1":
+        raise ValueError("wrong visual taxonomy schema")
+    families = visual_taxonomy.get("families")
+    pattern_assignments = visual_taxonomy.get("pattern_assignments")
+    project_states = visual_taxonomy.get("project_states")
+    project_state_assignments = visual_taxonomy.get("project_state_assignments")
+    if not isinstance(families, list) or not isinstance(pattern_assignments, dict):
+        raise ValueError("visual taxonomy must contain families and pattern assignments")
+    if not isinstance(project_states, list) or not isinstance(project_state_assignments, dict):
+        raise ValueError("visual taxonomy must contain project states and assignments")
+    family_ids = [family.get("id") for family in families]
+    project_state_ids = [state.get("id") for state in project_states]
+    if len(set(family_ids)) != len(family_ids) or len(set(project_state_ids)) != len(project_state_ids):
+        raise ValueError("duplicate visual taxonomy id")
+    if any(family_id not in family_ids for family_id in pattern_assignments.values()):
+        raise ValueError("pattern assignment references an unknown family")
+    if any(state_id not in project_state_ids for state_id in project_state_assignments.values()):
+        raise ValueError("project assignment references an unknown state")
+
     dossiers = {e["slug"]: e for e in store["items"] if e.get("type") == "dossier"}
+    patterns = {e["slug"]: e for e in store["items"] if e.get("type") == "pattern"}
+    projects = {e["slug"]: e for e in store["items"] if e.get("type") == "project"}
+    if set(pattern_assignments) != set(patterns):
+        raise ValueError("every pattern must have exactly one family")
+    if set(project_state_assignments) != set(projects):
+        raise ValueError("every project must have exactly one documented state")
     dossiers_by_place = {place_id: [] for place_id in place_ids}
     for slug, place_id in assignments.items():
         if slug in dossiers:
             dossiers_by_place[place_id].append(dossiers[slug])
     for items in dossiers_by_place.values():
         items.sort(key=sort_key, reverse=True)
+
+    patterns_by_family = {family_id: [] for family_id in family_ids}
+    for slug, family_id in pattern_assignments.items():
+        patterns_by_family[family_id].append(patterns[slug])
+    for items in patterns_by_family.values():
+        items.sort(key=lambda entity: entity["slug"])
+
+    projects_by_state = {state_id: [] for state_id in project_state_ids}
+    for slug, state_id in project_state_assignments.items():
+        projects_by_state[state_id].append(projects[slug])
+    for items in projects_by_state.values():
+        items.sort(key=lambda entity: entity["slug"])
 
     activity = json.loads(ACTIVITY.read_text(encoding="utf-8"))
     if activity.get("schema") != "argh/public-activity/v1" or not isinstance(activity.get("events"), list):
@@ -513,6 +654,14 @@ def load_navigation(store):
         "place_by_id": {place["id"]: place for place in places},
         "assignments": assignments,
         "dossiers_by_place": dossiers_by_place,
+        "families": families,
+        "family_by_id": {family["id"]: family for family in families},
+        "pattern_assignments": pattern_assignments,
+        "patterns_by_family": patterns_by_family,
+        "project_states": project_states,
+        "project_state_by_id": {state["id"]: state for state in project_states},
+        "project_state_assignments": project_state_assignments,
+        "projects_by_state": projects_by_state,
         "unclassified": sorted(
             [entity for slug, entity in dossiers.items() if slug not in assignments],
             key=sort_key,
