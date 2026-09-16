@@ -44,6 +44,7 @@ def header(section=""):
         nav("/patterns/", "patterns", '<span class="nav-en">Patterns</span><span class="nav-fr">Motifs</span>', section),
         nav("/projects/", "projects", '<span class="nav-en">Projects</span><span class="nav-fr">Projets</span>', section),
         nav("/atlas/", "atlas", "Atlas", section),
+        nav("/about/", "about", '<span class="nav-en">About</span><span class="nav-fr">À propos</span>', section),
     ]))
     return ('<header class="argh-top"><div class="argh-topin">'
       '<a class="argh-brand" href="/" aria-label="ARGH">'
@@ -185,26 +186,23 @@ def atlas(store):
     return page("Atlas — ARGH", body, "Carte des motifs récurrents entre projets.")
 
 def home(store):
-    counts = {t: sum(1 for e in store["items"] if e["type"] == t) for t in PLURAL}
-    title = {"fr": {"cuisine": "Pannes, correctifs et leçons des harnais d’agents.",
-                    "expert": "Fiabilité des harnais d’agents : incidents, mécanismes, garanties."},
-             "en": {"kitchen": "Failures, fixes and lessons from agent harnesses.",
-                    "expert": "Agent harness reliability: incidents, mechanisms, guarantees."}}
-    deck = {"fr": {"cuisine": "Chaque dossier raconte une panne réelle, ce qu’elle a coûté et la règle qu’on en garde. Deux lectures : la cuisine, ou la technique.",
-                   "expert": "Chaque dossier documente un incident vérifié, son mécanisme et l’invariant qu’il impose. Quatre modes de lecture, mêmes faits."},
-            "en": {"kitchen": "Each dossier tells a real failure, what it cost and the rule we keep. Two readings: the kitchen, or the technical one.",
-                   "expert": "Each dossier documents a verified incident, its mechanism and the invariant it imposes. Four reading modes, same facts."}}
-    cards = ""
-    for t, (fr, en) in (("dossier", ("Dossiers", "Dossiers")), ("pattern", ("Motifs", "Patterns")), ("project", ("Projets", "Projects"))):
-        cards += ('<a class="argh-index-card" href="/%s/"><h2><span class="nav-fr">%s</span><span class="nav-en">%s</span></h2>'
-                  '<p class="argh-card-summary">%d <span class="nav-fr">entrées</span><span class="nav-en">entries</span></p></a>'
-                  % (PLURAL[t], fr, en, counts[t]))
+    """L'accueil et /about/ ne sont pas générés depuis le magasin d'entités.
+
+    C'étaient des pages WordPress rédigées à la main. Leur contenu a été récupéré
+    depuis l'origine Hostinger le 2026-09-16, après la bascule DNS, et vit
+    désormais dans recovered/. On ne le réécrit pas : on le sert.
+    """
+    blk = (ROOT / "recovered" / "home.html").read_text(encoding="utf-8")
     body = ('<div class="argh-site argh-index" data-argh-renderer="%s">%s'
-            '<main class="argh-wrap"><section class="argh-index-hero"><div class="argh-kicker">ARGH</div>%s%s</section>'
-            '<section class="argh-index-grid">%s</section>%s</main></div>'
-            % (VERSION, header("home"), quad(title, "h1"), quad(deck, "p", "argh-standfirst"), cards, FOOT))
-    return page("ARGH — Pannes, correctifs et leçons des harnais d’agents", body,
-                "Fiabilité des harnais d’agents : incidents vérifiés, mécanismes et invariants.")
+            '<main class="argh-wrap">%s</main>%s</div>' % (VERSION, header("home"), blk, FOOT))
+    return page("ARGH — Pannes, correctifs et leçons des harnais IA", body,
+                "Intelligence indépendante sur les harnais d'agents : pannes vérifiées, mécanismes et leçons.")
+
+def about(store):
+    blk = (ROOT / "recovered" / "about.html").read_text(encoding="utf-8")
+    body = ('<div class="argh-site" data-argh-renderer="%s">%s'
+            '<main class="argh-wrap">%s</main>%s</div>' % (VERSION, header("about"), blk, FOOT))
+    return page("À propos — ARGH", body, "Ce qu'est ARGH et comment ses dossiers sont établis.")
 
 def main():
     idx = json.loads((DATA / "index.json").read_text(encoding="utf-8"))
@@ -223,6 +221,8 @@ def main():
     (ROOT / "atlas").mkdir(exist_ok=True)
     (ROOT / "atlas" / "index.html").write_text(atlas(store), encoding="utf-8")
     (ROOT / "index.html").write_text(home(store), encoding="utf-8")
+    (ROOT / "about").mkdir(exist_ok=True)
+    (ROOT / "about" / "index.html").write_text(about(store), encoding="utf-8")
     (ROOT / "404.html").write_text(page("404 — ARGH",
         '<div class="argh-site">%s<main class="argh-wrap"><article class="argh-article">'
         '<h1>404</h1><p class="argh-standfirst">Cette page n’existe pas.</p>'
