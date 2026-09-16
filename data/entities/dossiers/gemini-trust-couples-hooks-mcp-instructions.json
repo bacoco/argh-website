@@ -62,51 +62,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Une fiche punaisée dans la cuisine peut déjà changer les gestes du commis qui arrive.",
+            "cuisine": "Une fiche punaisée dans la cuisine peut changer les gestes du commis qui arrive. Elle suffit à orienter son travail.",
             "expert": "Les instructions locales du projet peuvent influencer le comportement du modèle."
           },
           "en": {
-            "kitchen": "A card pinned in the kitchen can already change what the arriving cook does.",
+            "kitchen": "A card pinned in the kitchen can change what the arriving cook does. That note alone can direct his work.",
             "expert": "Project-local instructions could influence model behavior."
           }
         },
         {
           "fr": {
-            "cuisine": "Les appareils branchés et le garde au passe peuvent aussi lancer une action ou arrêter une assiette.",
+            "cuisine": "Les appareils branchés peuvent lancer un geste. Le garde au passe peut aussi arrêter une assiette.",
             "expert": "Les outils et hooks locaux peuvent aussi exécuter ou contraindre des actions."
           },
           "en": {
-            "kitchen": "Plugged-in machines and the guard at the pass can also start a task or stop a plate.",
+            "kitchen": "Plugged-in machines can start work. The guard at the pass can also stop a plate.",
             "expert": "Project-local tools and hooks could also execute or constrain actions."
           }
         },
         {
           "fr": {
-            "cuisine": "La maison choisit donc dès le seuil si elle ouvre cette cuisine avec tout ce qu’elle contient.",
+            "cuisine": "La décision se prend donc dès le seuil. Elle couvre la cuisine avec tout ce qu’elle contient.",
             "expert": "La décision de confiance est appliquée à la frontière du dossier."
           },
           "en": {
-            "kitchen": "The house therefore decides at the threshold whether to open this kitchen and everything inside it.",
+            "kitchen": "The house therefore decides at the threshold. That choice covers the kitchen and everything inside it.",
             "expert": "The trust decision was applied at the folder boundary."
           }
         },
         {
           "fr": {
-            "cuisine": "Si la pièce n’inspire pas confiance, les fiches restent sans effet, les appareils éteints et la porte de service fermée.",
+            "cuisine": "Si la pièce n’inspire pas confiance, les fiches restent sans effet. Les appareils restent éteints et la porte de service fermée.",
             "expert": "Les dossiers non fiables désactivent plusieurs surfaces de contrôle ensemble."
           },
           "en": {
-            "kitchen": "If the room is not trusted, its cards have no effect, its machines stay off, and its service door stays shut.",
+            "kitchen": "If the room is not trusted, its cards have no effect. Its machines stay off and its service door stays shut.",
             "expert": "Untrusted folders disabled multiple control surfaces together."
           }
         },
         {
           "fr": {
-            "cuisine": "Le chef ne juge plus chaque objet séparément : il décide si toute la cuisine peut participer au service.",
+            "cuisine": "Le chef ne juge plus chaque objet séparément. Il décide si toute la cuisine peut participer au service.",
             "expert": "Le design converge vers une notion unifiée d’influence exécutable du projet."
           },
           "en": {
-            "kitchen": "The chef no longer judges each item alone; the decision is whether the whole kitchen may join service.",
+            "kitchen": "The chef no longer judges each item alone. The decision is whether the whole kitchen may join service.",
             "expert": "The design converged on a unified notion of executable project influence."
           }
         }

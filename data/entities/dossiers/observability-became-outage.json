@@ -61,51 +61,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "La brigade note chaque geste dans un registre conservé jour après jour.",
+            "cuisine": "La brigade note chaque geste dans un registre. Ce cahier est conservé jour après jour.",
             "expert": "Une télémétrie détaillée s’accumule dans un stockage local persistant."
           },
           "en": {
-            "kitchen": "The brigade records every move in a register kept day after day.",
+            "kitchen": "The brigade records every move in a register. That book is kept day after day.",
             "expert": "Detailed telemetry accumulated in persistent local storage."
           }
         },
         {
           "fr": {
-            "cuisine": "À force d’écrire, le registre réclame des commis, des étagères et du temps qui manquent ensuite aux fourneaux.",
+            "cuisine": "À force d’écrire, le registre réclame des commis et des étagères. Il prend aussi du temps qui manque ensuite aux fourneaux.",
             "expert": "Le volume d’écriture devient opérationnellement significatif."
           },
           "en": {
-            "kitchen": "As writing grows, the register consumes cooks, shelf space, and time that the stoves then lack.",
+            "kitchen": "As writing grows, the register consumes cooks and shelf space. It also takes time that the stoves then lack.",
             "expert": "Write volume became operationally significant."
           }
         },
         {
           "fr": {
-            "cuisine": "Un premier nettoyage retire les lignes répétées et les détails qui n’aident pas le service.",
+            "cuisine": "Un premier nettoyage retire les lignes répétées. Il enlève aussi les détails qui n’aident pas le service.",
             "expert": "Les premiers correctifs retirent les classes évidentes de doublons et de bruit."
           },
           "en": {
-            "kitchen": "A first cleanup removes repeated lines and details that do not help service.",
+            "kitchen": "A first cleanup removes repeated lines. It also drops details that do not help service.",
             "expert": "Initial fixes removed the obvious duplicate and noisy classes."
           }
         },
         {
           "fr": {
-            "cuisine": "Malgré cela, certaines informations déjà recopiées continuent d’atteindre le registre.",
+            "cuisine": "Malgré cela, certaines informations avaient déjà été recopiées ailleurs. Elles continuent d’atteindre le registre.",
             "expert": "Des événements transformés résiduels atteignent encore le sink."
           },
           "en": {
-            "kitchen": "Even so, some information already copied elsewhere still reaches the register.",
+            "kitchen": "Even so, some information was already copied elsewhere. It still reaches the register.",
             "expert": "Residual transformed events still reached the sink."
           }
         },
         {
           "fr": {
-            "cuisine": "La deuxième réparation place la limite juste devant le cahier, au moment précis où une nouvelle ligne serait écrite.",
+            "cuisine": "La deuxième réparation place la limite juste devant le cahier. Elle agit au moment précis où une nouvelle ligne serait écrite.",
             "expert": "Un correctif plus profond impose le budget au plus près de la persistance."
           },
           "en": {
-            "kitchen": "The second repair places the limit beside the book, at the exact moment a new line would be written.",
+            "kitchen": "The second repair places the limit beside the book. It acts at the exact moment a new line would be written.",
             "expert": "A deeper follow-up fix enforced the budget closer to persistence."
           }
         }

@@ -74,11 +74,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "La maison commence comme une caisse à outils : des fiches de travail et des gestes tout prêts, rangés pour être repris tels quels.",
+            "cuisine": "La maison commence comme une caisse à outils : des fiches de travail et des gestes tout prêts, rangés pour être repris tels quels. Le constat reste au passe.",
             "expert": "gstack démarre comme un harnais de skills et de workflows, façonné par rôle et livré avec son câblage d’hôte. L’ensemble est utilisable dès l’installation."
           },
           "en": {
-            "kitchen": "The house starts as a toolbox: work cards and ready-made moves, filed so they can be picked up exactly as they are.",
+            "kitchen": "The house starts as a toolbox: work cards and ready-made moves, filed so they can be picked up exactly as they are. The finding remains at the pass.",
             "expert": "gstack starts as a skills and workflow harness, role-shaped and shipped with its host wiring. The whole set is usable on install day."
           }
         },

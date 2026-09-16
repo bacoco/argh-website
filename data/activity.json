@@ -2,6 +2,270 @@
   "schema": "argh/public-activity/v1",
   "events": [
     {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/encrypted-subagents-lost-audit-trail.json",
+      "kind": "updated",
+      "entity_path": "dossiers/encrypted-subagents-lost-audit-trail.json",
+      "entity_hash": "adc596eba86113cfbd1a4648bd0242fcf0d7ace4",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/gemini-trust-couples-hooks-mcp-instructions.json",
+      "kind": "updated",
+      "entity_path": "dossiers/gemini-trust-couples-hooks-mcp-instructions.json",
+      "entity_hash": "f5a264dcf756543a19797ad1817ceca9497d20af",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/goose-hooks-observer-to-enforcer.json",
+      "kind": "updated",
+      "entity_path": "dossiers/goose-hooks-observer-to-enforcer.json",
+      "entity_hash": "e79c6d2976299c2c3868971c757faabf9940eeff",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/goose-protocol-pivot-acp.json",
+      "kind": "updated",
+      "entity_path": "dossiers/goose-protocol-pivot-acp.json",
+      "entity_hash": "316315913713ba208e21caf0e47fbf5da90b308c",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/green-test-wrong-seam.json",
+      "kind": "updated",
+      "entity_path": "dossiers/green-test-wrong-seam.json",
+      "entity_hash": "9e617ae612ec0e0e46c669c55e58d6d81383c559",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/gstack-false-green-second-fix.json",
+      "kind": "updated",
+      "entity_path": "dossiers/gstack-false-green-second-fix.json",
+      "entity_hash": "4c0c559cb8274b951d06d7a58fc3c08a7426bce5",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/heredoc-write-truncation.json",
+      "kind": "updated",
+      "entity_path": "dossiers/heredoc-write-truncation.json",
+      "entity_hash": "7ebcf44717414a3262c9e595c93ff0e39c18ccb1",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/hook-canary-behavior-drift.json",
+      "kind": "updated",
+      "entity_path": "dossiers/hook-canary-behavior-drift.json",
+      "entity_hash": "5413d5e81972a257657c126963bb7a80a884f1b7",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/hook-shared-state-crossed-workers.json",
+      "kind": "updated",
+      "entity_path": "dossiers/hook-shared-state-crossed-workers.json",
+      "entity_hash": "b37cee6091360a2fbaf2f67647de1d044ec4aad3",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/hooks-cross-harness-convergence.json",
+      "kind": "updated",
+      "entity_path": "dossiers/hooks-cross-harness-convergence.json",
+      "entity_hash": "404d2172d2dad8c3413fdb1cda8cb4dd473bc21f",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/human-gate-timeout.json",
+      "kind": "updated",
+      "entity_path": "dossiers/human-gate-timeout.json",
+      "entity_hash": "8ce6c0cab1c9af4b9a8b55a6064a183c5ab56e95",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/mcp-common-protocol-local-policy.json",
+      "kind": "updated",
+      "entity_path": "dossiers/mcp-common-protocol-local-policy.json",
+      "entity_hash": "cd067e1d73e73b3b9c036ed5922643eca9504582",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/memory-kept-history-lost-mission.json",
+      "kind": "updated",
+      "entity_path": "dossiers/memory-kept-history-lost-mission.json",
+      "entity_hash": "5b455018cf1482dfeb8d14676b8da26e0f9a16e4",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/multiuser-connection-ownership.json",
+      "kind": "updated",
+      "entity_path": "dossiers/multiuser-connection-ownership.json",
+      "entity_hash": "e71e68412f4bb6f2467f26a6c81d836c31bac759",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/nested-skills-discovery-drift.json",
+      "kind": "updated",
+      "entity_path": "dossiers/nested-skills-discovery-drift.json",
+      "entity_hash": "12505117e9e46b85cd14b6e291d7183d6337be90",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/observability-became-outage.json",
+      "kind": "updated",
+      "entity_path": "dossiers/observability-became-outage.json",
+      "entity_hash": "677715c198c73106153765cab7f998a504f8f2b1",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/openhands-hook-blocking-state.json",
+      "kind": "updated",
+      "entity_path": "dossiers/openhands-hook-blocking-state.json",
+      "entity_hash": "badf028c0e5b6628cd1b7bb630b6153854009e69",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/permission-ui-approved-wrong-action.json",
+      "kind": "updated",
+      "entity_path": "dossiers/permission-ui-approved-wrong-action.json",
+      "entity_hash": "bd3edf27d73fc306521cad3f0c7adf0dec38a9f8",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/plugin-init-before-control-load.json",
+      "kind": "updated",
+      "entity_path": "dossiers/plugin-init-before-control-load.json",
+      "entity_hash": "227fe3e2ba42b515e49627e950433995d73b4b08",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/project-mortality-state-machine.json",
+      "kind": "updated",
+      "entity_path": "dossiers/project-mortality-state-machine.json",
+      "entity_hash": "9d76de1b1a9db8f8bb7e75bb9220bf44ff54f899",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/recovery-state-convergence.json",
+      "kind": "updated",
+      "entity_path": "dossiers/recovery-state-convergence.json",
+      "entity_hash": "cd17879305b8fba9fc4787e6a2cbdc268e30651e",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/redact-before-model-boundary.json",
+      "kind": "updated",
+      "entity_path": "dossiers/redact-before-model-boundary.json",
+      "entity_hash": "108913ae43187d1025b0402665845e85f575fc47",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/release-does-not-equal-observed-fix.json",
+      "kind": "updated",
+      "entity_path": "dossiers/release-does-not-equal-observed-fix.json",
+      "entity_hash": "d4b23b6797d6cb0a22b3f49a087732cbadfa9c61",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/remote-tools-injected-without-local-ownership.json",
+      "kind": "updated",
+      "entity_path": "dossiers/remote-tools-injected-without-local-ownership.json",
+      "entity_hash": "7fdef67602db84c5551b844726ccc43c38c8955c",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/retryable-auth-errors-must-not-delete-credentials.json",
+      "kind": "updated",
+      "entity_path": "dossiers/retryable-auth-errors-must-not-delete-credentials.json",
+      "entity_hash": "a703d135df6ae55d8787b2f52c6d9ba4352fd17b",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/roo-code-sunset-with-full-backlog.json",
+      "kind": "updated",
+      "entity_path": "dossiers/roo-code-sunset-with-full-backlog.json",
+      "entity_hash": "3746666e7e1e0037f81f9a2db23bb08f9ce2ab28",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/runtime-skill-inventory-not-filesystem.json",
+      "kind": "updated",
+      "entity_path": "dossiers/runtime-skill-inventory-not-filesystem.json",
+      "entity_hash": "53c944576acd10c4af2e7e16808f753127c4e703",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/safety-control-failure-became-permission.json",
+      "kind": "updated",
+      "entity_path": "dossiers/safety-control-failure-became-permission.json",
+      "entity_hash": "171086a3dca2ff62e5fdf8f8920b38ba8ecead53",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/second-fix-real-boundary.json",
+      "kind": "updated",
+      "entity_path": "dossiers/second-fix-real-boundary.json",
+      "entity_hash": "d7f2dc60b8ad15434e1de3109469e5fc33fb77c6",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/session-scope-lock-became-global-state.json",
+      "kind": "updated",
+      "entity_path": "dossiers/session-scope-lock-became-global-state.json",
+      "entity_hash": "a8d9ca94ef9f9701d8464e2314e2b120fe46af6a",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/skills-cross-harness-convergence.json",
+      "kind": "updated",
+      "entity_path": "dossiers/skills-cross-harness-convergence.json",
+      "entity_hash": "ac51ae03cd27813e32092bb23a9d90473059effd",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/skills-default-on-docs-lag.json",
+      "kind": "updated",
+      "entity_path": "dossiers/skills-default-on-docs-lag.json",
+      "entity_hash": "58cacb660e0c42b421188daaa4cae69488b6b9f5",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
+      "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/stop-hook-authority-overreach.json",
+      "kind": "updated",
+      "entity_path": "dossiers/stop-hook-authority-overreach.json",
+      "entity_hash": "80c1d3894c090f55ae7fc859c893d7fbcf16dc89",
+      "detected_at": "2026-09-16T15:51:31+02:00",
+      "source_head": "94597ef000779ac65c93814258410513fc2a6fcb"
+    },
+    {
       "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/agent-claims-need-evidence-labels.json",
       "kind": "updated",
       "entity_path": "dossiers/agent-claims-need-evidence-labels.json",

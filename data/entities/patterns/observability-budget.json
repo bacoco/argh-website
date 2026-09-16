@@ -87,7 +87,7 @@
       "body": [
         {
           "fr": {
-            "cuisine": "On imagine souvent que le cahier coûte toujours la même chose. Pourtant plus la maison sert, plus elle écrit, et l’écriture prend du temps au feu. Poser le garde sur une colonne visible ne suffit pas si d’autres mains atteignent le même cahier ; seul le fond où tout s’inscrit les rassemble.",
+            "cuisine": "On imagine souvent que le cahier coûte toujours la même chose. Pourtant plus la maison sert, plus elle écrit, et l’écriture prend du temps au feu. Poser le garde sur une colonne visible ne suffit pas. D’autres mains atteignent le même cahier et se retrouvent au fond.",
             "expert": "L’instrumentation est raisonnée comme un coût fixe alors qu’elle est une charge de travail proportionnelle à l’activité observée : plus le système travaille, plus il écrit, et l’écriture concurrence le travail. La seconde tromperie est de placer le garde sur la représentation visible — un chemin de journalisation identifié — alors que d’autres chemins atteignent la même persistance ; chez Codex, des événements transformés continuaient de contourner le garde jusqu’à ce que l’enforcement soit déplacé vers la frontière finale de persistance."
           },
           "en": {

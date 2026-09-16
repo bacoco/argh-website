@@ -62,51 +62,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Pour faire signer le client, la brigade sépare une longue commande en plusieurs gestes.",
+            "cuisine": "Pour faire signer le client, la brigade sépare une longue commande en plusieurs gestes. La demande reste pourtant une seule préparation.",
             "expert": "Les commandes composées sont parsées pour prendre les décisions de permission."
           },
           "en": {
-            "kitchen": "To ask for approval, the brigade splits one long order into several actions.",
+            "kitchen": "To ask for approval, the brigade splits one long order into several actions. It remains one preparation.",
             "expert": "Compound commands were parsed to drive permission decisions."
           }
         },
         {
           "fr": {
-            "cuisine": "Une première réparation améliore cette séparation et donne la priorité aux interdictions.",
+            "cuisine": "Une première réparation améliore cette séparation. Elle donne la priorité aux interdictions.",
             "expert": "Un correctif structurel améliore la segmentation et la priorité des règles de refus."
           },
           "en": {
-            "kitchen": "A first repair improves the separation and gives refusals priority.",
+            "kitchen": "A first repair improves the separation. It gives refusals priority.",
             "expert": "A structural fix improved segmentation and gave deny rules precedence."
           }
         },
         {
           "fr": {
-            "cuisine": "Malgré cela, la feuille présentée ensuite affiche encore un geste différent de celui qui compte vraiment.",
+            "cuisine": "Malgré cela, la feuille suivante affiche encore un geste différent. Celui qui compte vraiment reste caché.",
             "expert": "Un comportement ultérieur affiche encore l’approbation du mauvais sous-ordre."
           },
           "en": {
-            "kitchen": "Even so, a later slip still shows a different action from the one that truly matters.",
+            "kitchen": "Even so, a later slip still shows a different action. The one that truly matters stays hidden.",
             "expert": "Later behaviour still surfaced approval for the wrong sub-command."
           }
         },
         {
           "fr": {
-            "cuisine": "Le client doit donc signer encore et encore, sans pouvoir autoriser utilement la vraie préparation.",
+            "cuisine": "Le client doit donc signer encore et encore. Il ne peut toujours autoriser utilement la vraie préparation.",
             "expert": "Les utilisateurs subissent des prompts répétés, impossibles à mettre en liste blanche utilement."
           },
           "en": {
-            "kitchen": "The guest must therefore sign again and again, with no useful way to approve the real preparation.",
+            "kitchen": "The guest must therefore sign again and again. There is still no useful way to approve the real preparation.",
             "expert": "Users faced repeated prompts that could not be usefully whitelisted."
           }
         },
         {
           "fr": {
-            "cuisine": "Le retour du problème prouve qu’une bonne découpe ne suffit pas à choisir la ligne que le client doit approuver.",
+            "cuisine": "Le retour du problème apporte la preuve. Une bonne découpe ne suffit pas à choisir la ligne que le client doit approuver.",
             "expert": "La récidive établit que correction du parsing et sémantique d’approbation sont deux problèmes distincts."
           },
           "en": {
-            "kitchen": "The problem returning proves that correct cutting does not choose the line the guest should approve.",
+            "kitchen": "The problem returning provides the proof. Correct cutting does not choose the line the guest should approve.",
             "expert": "The recurrence established that parsing correctness and approval semantics are separate problems."
           }
         }
@@ -128,7 +128,7 @@
       "body": [
         {
           "fr": {
-            "cuisine": "La brigade peut séparer correctement tous les gestes et choisir pourtant le mauvais pour la signature. Si le bon montre seulement une petite découpe alors que la commande engage toute la réserve, le client n’autorise pas ce qui sera réellement fait.",
+            "cuisine": "La brigade peut séparer correctement tous les gestes et choisir pourtant le mauvais pour la signature. Le bon peut ne montrer qu’une petite découpe. La commande engage pourtant toute la réserve. Le client n’autorise donc pas ce qui sera réellement fait.",
             "expert": "Le parser peut être syntaxiquement correct alors que l’interface retient un segment à faible risque comme action représentative. L’utilisateur approuve un libellé qui ne correspond pas à l’autorité accordée, et la répétition du prompt empêche toute mise en liste blanche utile."
           },
           "en": {

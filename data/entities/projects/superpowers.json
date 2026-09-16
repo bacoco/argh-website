@@ -36,7 +36,7 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Ce n’est pas un plat, mais une manière de tenir le service, écrite pour que d’autres la reprennent. Des cuisines qui ne se connaissaient pas travaillent maintenant de la même façon. Le cahier est donc suivi de près, et non plus regardé par curiosité. Deux mauvaises surprises voyagent avec lui. Des consignes semblent en place sans jamais atteindre les commis. Des goûteurs coûteux ne rattrapent pas davantage d’erreurs.",
+            "cuisine": "Ce n’est pas un plat, mais une manière de tenir le service que d’autres reprennent. Des cuisines inconnues travaillent désormais de même. Le cahier est donc suivi de près. Des consignes n’atteignent pas les commis, et des goûteurs coûteux ne rattrapent pas davantage d’erreurs.",
             "expert": "Superpowers a émergé comme méthodologie de workflow et de skills dont l’influence traverse plusieurs environnements d’agents de code, ce qui a justifié sa promotion de candidat à projet suivi. Deux constats l’accompagnent : des skills installés et un hook enregistré peuvent paraître sains alors que le chemin d’enforcement reste inerte, et des sous-agents relecteurs peuvent coûter davantage sans détecter davantage de défauts."
           },
           "en": {
@@ -72,11 +72,11 @@
         },
         {
           "fr": {
-            "cuisine": "Autour du cahier, des étagères et des comptoirs se montent afin de le faire circuler.",
+            "cuisine": "Autour du cahier, des étagères et des comptoirs se montent afin de le faire circuler. Le constat reste au passe.",
             "expert": "Des repositories liés et des surfaces de distribution apparaissent autour de la méthodologie."
           },
           "en": {
-            "kitchen": "Shelves and counters go up around the notebook so it can travel.",
+            "kitchen": "Shelves and counters go up around the notebook so it can travel. The finding remains at the pass.",
             "expert": "Related repositories and distribution surfaces appear around the methodology."
           }
         },
@@ -92,7 +92,7 @@
         },
         {
           "fr": {
-            "cuisine": "Premier accroc. Les fiches sont bien au mur et le garde est bien en poste. Pourtant, à cause d’un mauvais ordre de passage, d’une différence entre cuisines ou d’une annonce mal comprise, la consigne du matin n’arrive jamais aux commis.",
+            "cuisine": "Premier accroc. Les fiches sont bien au mur et le garde est bien en poste. Pourtant, un mauvais ordre, une différence entre cuisines ou une annonce mal comprise empêche la consigne du matin d’atteindre les commis.",
             "expert": "Premier constat : un harnais peut rapporter que des skills existent et qu’un hook est enregistré alors qu’un décalage d’ordonnancement, de plateforme ou de contrat d’évènement rend le chemin d’enforcement inerte. Les instructions d’amorçage n’atteignent alors jamais le modèle."
           },
           "en": {
@@ -138,11 +138,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Ce qui voyage n’est pas une fiche isolée. C’est un ordre de travail — préparer, envoyer, vérifier — que n’importe quelle maison peut reprendre. C’est aussi ce qui le fragilise : chaque cuisine appelle le passe à sa façon. Une consigne écrite pareil n’y est pas entendue pareil. Une fiche présente au mur et un garde inscrit sur le planning racontent seulement la mise en place, jamais le geste réellement accompli.",
+            "cuisine": "Ce qui voyage n’est pas une fiche isolée, mais un ordre de travail que toute maison peut reprendre. Cela le fragilise : chaque cuisine appelle le passe à sa façon. Une consigne identique n’y est pas entendue pareil. Une fiche et un garde au planning ne prouvent jamais le geste accompli.",
             "expert": "La valeur n’est pas un skill isolé mais une manière répétable de structurer planification, exécution et vérification à travers des harnais hôtes différents. C’est cette portabilité même qui expose le premier constat : chaque hôte possède son propre contrat d’évènement, donc un contrôle déclaré à l’identique n’y est pas exécuté à l’identique. Présence, enregistrement et ordonnancement décrivent l’installation, jamais l’exécution."
           },
           "en": {
-            "kitchen": "What travels is not a single card. It is an order of work — prep, send, check — that any house can adopt. That is also where it becomes fragile: every kitchen calls the pass its own way. The same words on the wall are not heard the same way. A card on the wall and a guard on the rota tell you only that service was set up. They never show that the gesture was carried out.",
+            "kitchen": "What travels is not a single card, but an order of work any house can adopt. That makes it fragile: every kitchen calls the pass its own way. Identical words are not heard the same way. A card and guard on the rota never prove the gesture was carried out.",
             "expert": "The value is not one skill but a repeatable way to structure planning, execution and verification across different host harnesses. That portability is what exposes the first finding: each host carries its own event contract, so a control declared identically is not executed identically. Presence, registration and ordering describe installation, never execution."
           }
         }

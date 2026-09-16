@@ -72,41 +72,41 @@
         },
         {
           "fr": {
-            "cuisine": "Le tableau déborde et de nombreuses mains veulent encore mettre la main à la pâte.",
+            "cuisine": "Le tableau déborde et de nombreuses mains veulent encore mettre la main à la pâte. Le relevé s’arrête là.",
             "expert": "Le backlog et la surface de contribution restent très importants."
           },
           "en": {
-            "kitchen": "The board overflows, and many hands still want a turn at the bench.",
+            "kitchen": "The board overflows, and many hands still want a turn at the bench. The record stops there.",
             "expert": "The backlog and contribution surface remained very large."
           }
         },
         {
           "fr": {
-            "cuisine": "La direction change : la vente à emporter, les contrats de groupe, le comptage des couverts et l’étal quittent la carte.",
+            "cuisine": "La direction change : la vente à emporter, les contrats de groupe, le comptage des couverts et l’étal quittent la carte. Le relevé s’arrête là.",
             "expert": "La stratégie change : le produit commence à retirer les surfaces cloud, enterprise, télémétrie et marketplace."
           },
           "en": {
-            "kitchen": "Direction changes: takeaway, group contracts, the covers count, and the stall leave the menu.",
+            "kitchen": "Direction changes: takeaway, group contracts, the covers count, and the stall leave the menu. The record stops there.",
             "expert": "Strategy changed: the product began removing its cloud, enterprise, telemetry and marketplace surfaces."
           }
         },
         {
           "fr": {
-            "cuisine": "Une ultime fournée sort en annonçant clairement qu’elle sera la dernière.",
+            "cuisine": "Une ultime fournée sort en annonçant clairement qu’elle sera la dernière. Le relevé s’arrête là.",
             "expert": "Une version finale formalise l’arrêt."
           },
           "en": {
-            "kitchen": "A final batch goes out, plainly announced as the last.",
+            "kitchen": "A final batch goes out, plainly announced as the last. The record stops there.",
             "expert": "A final release formalized the wind-down."
           }
         },
         {
           "fr": {
-            "cuisine": "Le rideau tombe pour de bon alors que le tableau reste plein, et la suite s’écrit ailleurs.",
+            "cuisine": "Le rideau tombe pour de bon alors que le tableau reste plein, et la suite s’écrit ailleurs. Le relevé s’arrête là.",
             "expert": "Le repository est archivé tandis que la continuité se déplace ailleurs."
           },
           "en": {
-            "kitchen": "The shutter comes down for good while the board remains full, and what comes next is written elsewhere.",
+            "kitchen": "The shutter comes down for good while the board remains full, and what comes next is written elsewhere. The record stops there.",
             "expert": "The repository was archived while continuity shifted elsewhere."
           }
         }
@@ -206,11 +206,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Un tableau couvert de commandes peut être le dernier signe d’une maison qui a déjà retiré ses plats et clos sa salle.",
+            "cuisine": "Un tableau couvert de commandes peut être le dernier signe d’une maison qui a déjà retiré ses plats et clos sa salle. Le relevé s’arrête là.",
             "expert": "Un backlog plein peut être une preuve de mort, non de vie, lorsque la stratégie est déjà partie ailleurs."
           },
           "en": {
-            "kitchen": "A board covered in orders can be the last sign of a house that has already pulled its dishes and closed its room.",
+            "kitchen": "A board covered in orders can be the last sign of a house that has already pulled its dishes and closed its room. The record stops there.",
             "expert": "A full backlog can be evidence of death, not life, when strategy has already moved on."
           }
         }

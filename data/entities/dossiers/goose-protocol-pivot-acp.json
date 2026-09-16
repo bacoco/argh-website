@@ -62,51 +62,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Au début, la maison sert avec ses propres commis, ses ustensiles et de nouveaux postes ajoutés au besoin.",
+            "cuisine": "Au début, la maison sert avec ses propres commis et ustensiles. Elle ajoute des postes lorsque le service l’exige.",
             "expert": "Goose s’établit d’abord comme produit d’agents, avec extensions et outils."
           },
           "en": {
-            "kitchen": "At first, the house serves with its own cooks, utensils, and extra stations added when needed.",
+            "kitchen": "At first, the house serves with its own cooks and utensils. It adds stations when service requires them.",
             "expert": "Goose first established itself as an agent product carrying extensions and tools."
           }
         },
         {
           "fr": {
-            "cuisine": "Puis la brigade se met à bâtir des passe-plats destinés aussi aux cuisines voisines.",
+            "cuisine": "Puis la brigade bâtit des passe-plats pour les cuisines voisines. Ces installations ne servent plus uniquement à la maison.",
             "expert": "Le travail de protocoles s’étend ensuite autour de surfaces d’agents interopérables."
           },
           "en": {
-            "kitchen": "Then the brigade starts building serving hatches that neighbouring kitchens can use too.",
+            "kitchen": "Then the brigade builds serving hatches for neighbouring kitchens. Those fittings no longer serve only the original house.",
             "expert": "Protocol work widened next, organised around agent surfaces meant to interoperate."
           }
         },
         {
           "fr": {
-            "cuisine": "En parallèle, les commis du passe obtiennent le pouvoir d’empêcher une assiette de sortir.",
+            "cuisine": "En parallèle, les commis du passe reçoivent un nouveau pouvoir. Ils peuvent empêcher une assiette de sortir.",
             "expert": "En parallèle, les hooks évoluent vers un enforcement plus fort."
           },
           "en": {
-            "kitchen": "At the same time, the pass cooks gain the power to keep a plate from leaving.",
+            "kitchen": "At the same time, the pass cooks receive a new power. They can keep a plate from leaving.",
             "expert": "In parallel, hooks shifted toward stronger enforcement."
           }
         },
         {
           "fr": {
-            "cuisine": "Dans l’arrière-cuisine, les nouveaux chantiers concernent surtout le partage entre commis, le souvenir des services et la circulation des commandes.",
+            "cuisine": "Dans l’arrière-cuisine, les nouveaux chantiers organisent le partage entre commis. Ils concernent aussi le souvenir des services et la circulation des commandes.",
             "expert": "Les branches reflètent de plus en plus agents, subagents, mémoire et travail de protocoles."
           },
           "en": {
-            "kitchen": "New work in the back now concerns how cooks share tasks, what the house remembers, and how orders travel.",
+            "kitchen": "New work in the back now organises how cooks share tasks. It also covers what the house remembers and how orders travel.",
             "expert": "Branch work increasingly carried agents, subagents, memory and protocol concerns."
           }
         },
         {
           "fr": {
-            "cuisine": "La carte change peu, mais l’arrière-cuisine travaille ailleurs : la maison n’a pas ralenti, elle a déplacé son effort.",
+            "cuisine": "La carte change peu, mais l’arrière-cuisine travaille ailleurs. La maison n’a pas ralenti ; elle a déplacé son effort.",
             "expert": "La trajectoire se lit comme un pivot architectural, non comme un ralentissement de maintenance."
           },
           "en": {
-            "kitchen": "The menu changes little, but work has moved in back: the house has shifted its effort rather than slowed down.",
+            "kitchen": "The menu changes little, but work has moved in back. The house has shifted its effort rather than slowed down.",
             "expert": "Read together, the trajectory is an architectural pivot, not a maintenance slowdown."
           }
         }

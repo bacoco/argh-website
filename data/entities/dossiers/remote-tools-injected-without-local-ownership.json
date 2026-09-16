@@ -62,51 +62,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Le chef choisit ses ustensiles et les range à son poste.",
+            "cuisine": "Le chef choisit ses ustensiles. Il les range à son poste.",
             "expert": "Les utilisateurs configurent leurs propres serveurs d’outils locaux."
           },
           "en": {
-            "kitchen": "The chef picks his utensils and arranges them at his station.",
+            "kitchen": "The chef picks his utensils. He arranges them at his station.",
             "expert": "Users configure their own local tool servers."
           }
         },
         {
           "fr": {
-            "cuisine": "Le siège en expédie d’autres, qui arrivent sur le même plan de travail.",
+            "cuisine": "Le siège en expédie d’autres. Ils arrivent sur le même plan de travail.",
             "expert": "Des connecteurs distants de niveau compte sont synchronisés dans le CLI."
           },
           "en": {
-            "kitchen": "Head office sends others down, and they arrive on the same bench.",
+            "kitchen": "Head office sends others down. They arrive on the same bench.",
             "expert": "Remote account-level connectors are synchronized into the CLI."
           }
         },
         {
           "fr": {
-            "cuisine": "Le plan de travail se retrouve alors avec le même ustensile deux fois.",
+            "cuisine": "Le plan de travail reçoit alors le même ustensile deux fois. Les deux restent côte à côte.",
             "expert": "Des services équivalents peuvent dès lors apparaître deux fois."
           },
           "en": {
-            "kitchen": "The workbench then holds the same utensil twice.",
+            "kitchen": "The workbench then holds the same utensil twice. Both remain side by side.",
             "expert": "Equivalent services can then appear twice."
           }
         },
         {
           "fr": {
-            "cuisine": "Le retirer du poste ne le fait pas disparaître du siège ; il peut donc revenir.",
+            "cuisine": "Le retirer du poste ne le fait pas disparaître du siège. Il peut donc revenir.",
             "expert": "La suppression locale ne révoque pas nécessairement la source distante."
           },
           "en": {
-            "kitchen": "Removing it from the station does not make it disappear at head office, so it can return.",
+            "kitchen": "Removing it from the station does not make it disappear at head office. It can therefore return.",
             "expert": "Local removal does not necessarily revoke the remote source."
           }
         },
         {
           "fr": {
-            "cuisine": "On ne sait plus qui a posé quoi, ni à qui demander de l’enlever.",
+            "cuisine": "On ne sait plus qui a posé quoi. On ne sait plus non plus à qui demander de l’enlever.",
             "expert": "L’usage des ressources et la propriété deviennent difficiles à raisonner."
           },
           "en": {
-            "kitchen": "No one can tell who put what there any longer, or whom to ask to have it removed.",
+            "kitchen": "No one can tell who put what there any longer. Nor can anyone tell whom to ask for its removal.",
             "expert": "Resource use and ownership become difficult to reason about."
           }
         }
@@ -180,11 +180,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Le problème prend de l’ampleur quand les maisons mêlent leurs propres ustensiles à ceux envoyés par le siège.",
+            "cuisine": "Le problème grandit quand les maisons mêlent leurs ustensiles à ceux du siège. Les deux arrivages se confondent.",
             "expert": "Le pattern gagne en importance à mesure que les produits d’agents mêlent écosystèmes d’outils gérés à distance et locaux."
           },
           "en": {
-            "kitchen": "The problem grows as houses mix their own utensils with those sent by head office.",
+            "kitchen": "The problem grows when houses mix their own utensils with those from head office. The two deliveries blur together.",
             "expert": "The pattern matters more as agent products blend remotely managed and local tool ecosystems."
           }
         }
@@ -206,11 +206,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Tout ustensile apparu pendant le service doit nommer celui qui l’a posé et la manière de le reprendre.",
+            "cuisine": "Tout ustensile apparu pendant le service doit nommer celui qui l’a posé. Il doit aussi dire comment le reprendre.",
             "expert": "Chaque outil runtime a besoin d’un propriétaire visible et d’un chemin de révocation."
           },
           "en": {
-            "kitchen": "Any utensil appearing during service must name who set it down and how to take it back.",
+            "kitchen": "Any utensil appearing during service must name who set it down. It must also say how to take it back.",
             "expert": "Every runtime tool needs a visible owner and a revocation path."
           }
         }

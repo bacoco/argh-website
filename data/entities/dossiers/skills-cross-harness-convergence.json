@@ -66,51 +66,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Au départ, c’est un papier que l’on réutilise d’un service au suivant.",
+            "cuisine": "Au départ, c’est un papier que l’on réutilise d’un service au suivant. Le relevé s’arrête là.",
             "expert": "Les skills commencent comme des fichiers de prompt ou d’instructions réutilisables."
           },
           "en": {
-            "kitchen": "At the start, it is a scrap of paper reused from one service to the next.",
+            "kitchen": "At the start, it is a scrap of paper reused from one service to the next. The record stops there.",
             "expert": "Skills began as reusable prompt or instruction files."
           }
         },
         {
           "fr": {
-            "cuisine": "Le classeur grossit ; il faut alors dire où se trouve chaque fiche.",
+            "cuisine": "Le classeur grossit ; il faut alors dire où se trouve chaque fiche. Le relevé s’arrête là.",
             "expert": "La croissance des catalogues rend nécessaires des règles de discovery."
           },
           "en": {
-            "kitchen": "The binder swells, and the house must then say where each card is kept.",
+            "kitchen": "The binder swells, and the house must then say where each card is kept. The record stops there.",
             "expert": "Growing catalogs made discovery rules necessary."
           }
         },
         {
           "fr": {
-            "cuisine": "On affiche ensuite laquelle prime entre la fiche du client, celle de la maison et celle apportée du dehors.",
+            "cuisine": "On affiche ensuite laquelle prime entre la fiche du client, celle de la maison et celle apportée du dehors. Le relevé s’arrête là.",
             "expert": "Precedence et scopes user, projet et plugin apparaissent."
           },
           "en": {
-            "kitchen": "Then the house posts which card takes priority: the guest’s, its own, or one brought in from outside.",
+            "kitchen": "Then the house posts which card takes priority: the guest’s, its own, or one brought in from outside. The record stops there.",
             "expert": "Precedence and user, project and plugin scopes appeared."
           }
         },
         {
           "fr": {
-            "cuisine": "Chaque fiche dit maintenant si elle sert, si elle est mise de côté et si la maison d’où elle vient est fiable.",
+            "cuisine": "Chaque fiche dit maintenant si elle sert, si elle est mise de côté et si la maison d’où elle vient est fiable. Le relevé s’arrête là.",
             "expert": "Les états enable/disable et la confiance deviennent explicites."
           },
           "en": {
-            "kitchen": "Each card now says whether it serves, is set aside, and whether the house it came from can be trusted.",
+            "kitchen": "Each card now says whether it serves, is set aside, and whether the house it came from can be trusted. The record stops there.",
             "expert": "Enable/disable states and trust became explicit."
           }
         },
         {
           "fr": {
-            "cuisine": "Quelques maisons vont plus loin : elles comptent les fiches réellement posées, surveillent les changements et limitent la place sur la table.",
+            "cuisine": "Quelques maisons vont plus loin : elles comptent les fiches réellement posées, surveillent les changements et limitent la place sur la table. Le relevé s’arrête là.",
             "expert": "Certains systèmes ajoutent inventaire runtime, watchers et budgets de contexte."
           },
           "en": {
-            "kitchen": "A few houses go further: they count the cards truly laid out, watch for changes, and limit the room on the table.",
+            "kitchen": "A few houses go further: they count the cards truly laid out, watch for changes, and limit the room on the table. The record stops there.",
             "expert": "Some systems added runtime inventory, watchers and context budgets."
           }
         }
@@ -184,11 +184,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "C’est l’un des signaux les plus nets : des maisons qui ne se parlent pas arrivent au même besoin, tenir l’inventaire des fiches et le diriger.",
+            "cuisine": "C’est un signal très net : des maisons qui ne se parlent pas gardent les fiches et les dirigent de la même façon. Le relevé s’arrête là.",
             "expert": "C’est l’un des signaux les plus forts de convergence architecturale entre harnais."
           },
           "en": {
-            "kitchen": "It is one of the clearest signals: houses that never speak to each other reach the same need, keeping and directing the card inventory.",
+            "kitchen": "It is one of the clearest signals: houses that never speak to each other reach the same need, keeping and directing the card inventory. The record stops there.",
             "expert": "It is one of the strongest cross-harness architectural convergence signals."
           }
         }
@@ -210,11 +210,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Réparer une fiche, c’est réparer tout le trajet qui l’amène devant le commis, non seulement l’encre du papier.",
+            "cuisine": "Réparer une fiche, c’est réparer tout le trajet qui l’amène devant le commis, non seulement l’encre du papier. Le relevé s’arrête là.",
             "expert": "La correction d’un skill est une propriété du chemin de livraison, pas du fichier."
           },
           "en": {
-            "kitchen": "Repairing a card means repairing the whole route that brings it before the cook, not only the ink.",
+            "kitchen": "Repairing a card means repairing the whole route that brings it before the cook, not only the ink. The record stops there.",
             "expert": "Skill correctness is a property of the delivery path, not of the file."
           }
         }

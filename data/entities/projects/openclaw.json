@@ -169,11 +169,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Une garde ne protège la cuisine que si elle nomme les sorties qu’elle tient et celles qu’elle laisse libres.",
+            "cuisine": "Une garde ne protège la cuisine que si elle nomme les sorties qu’elle tient et celles qu’elle laisse libres. Le constat reste au passe.",
             "expert": "Un contrôle n’est une frontière que lorsque son domaine couvert et ses contournements sont écrits."
           },
           "en": {
-            "kitchen": "A guard protects the kitchen only when it names the exits it holds and the ones it leaves free.",
+            "kitchen": "A guard protects the kitchen only when it names the exits it holds and the ones it leaves free. The finding remains at the pass.",
             "expert": "A control becomes a boundary only once its covered domain and its bypass paths are written down."
           }
         }

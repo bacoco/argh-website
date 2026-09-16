@@ -95,7 +95,7 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Un bon identique peut faire croire que la réserve obéit partout aux mêmes règles. Pourtant, l’autorité, l’isolement et la confiance relèvent de chaque maison. Beaucoup de travail s’est porté sur l’arrière-cuisine. Il concernait les entrées, les décisions et la reprise du service. La carte restait moins touchée.",
+            "cuisine": "Un bon identique peut faire croire que la réserve obéit partout aux mêmes règles. Pourtant, l’autorité, l’isolement et la confiance relèvent de chaque maison. Beaucoup de travail s’est porté sur l’arrière-cuisine. Il concernait les entrées, les décisions et la reprise du service, bien plus que la carte.",
             "expert": "L’illusion vient de ce qu’un format de transport commun se lit comme une frontière de confiance commune. Autorité, isolation et politique restent des propriétés de l’hôte : un dossier capable d’influencer l’exécution équivaut à un control plane complet, et un outil injecté à distance peut échapper à la suppression locale. L’essentiel se joue là où l’utilisateur ne regarde pas — Goose a investi ses branches actives dans des agents protocolisés, l’interopérabilité et des hooks enforceables plutôt que dans des fonctionnalités visibles, pendant que les principaux produits convergeaient vers le même control plane périphérique : hooks, skills, délégation, confiance, reprise, workspaces et protocoles."
           },
           "en": {
@@ -121,11 +121,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Lisez les règles de la maison, pas seulement le bon commun. Tout dossier capable de changer la façon de travailler mérite la confiance réservée à l’arrière-cuisine entière. Chaque livreur qui agit en service doit avoir un responsable visible. Il faut aussi pouvoir le faire repartir. Cela vaut même s’il vient de loin ou double une livraison locale.",
+            "cuisine": "Lisez les règles de la maison, pas seulement le bon commun. Tout dossier capable de changer la façon de travailler mérite la confiance réservée à l’arrière-cuisine entière. Chaque livreur qui agit en service doit avoir un responsable visible. Il faut pouvoir le faire repartir, même s’il vient de loin ou double une livraison locale.",
             "expert": "Lire la politique de l’hôte plutôt que la présence du protocole : ce qui vaut sur un harnais ne se transporte pas sur le suivant. Traiter tout dossier capable d’influencer l’exécution comme un control plane complet, au même niveau de confiance que hooks et fichiers d’instructions. Exiger pour chaque outil runtime un propriétaire visible et un chemin de révocation, y compris lorsqu’il arrive d’une source distante et double une configuration locale."
           },
           "en": {
-            "kitchen": "Read each house’s rules, not only the shared docket. Any papers able to change the work deserve the trust given to the whole back kitchen. Every delivery acting during service needs a visible owner. It also needs a way out. That holds even when it comes from afar or duplicates a local delivery.",
+            "kitchen": "Read each house’s rules, not only the shared docket. Any papers able to change the work deserve the trust given to the whole back kitchen. Every delivery acting during service needs a visible owner. It needs a way out, even when it comes from afar or duplicates a local delivery.",
             "expert": "Read the host’s policy rather than the presence of the protocol: what holds on one harness does not travel to the next. Treat any folder that can influence execution as a full control plane, at the same trust level as hooks and instruction files. Require a visible owner and a revocation path for every runtime tool, including one that arrives from a remote source and shadows a local configuration."
           }
         }

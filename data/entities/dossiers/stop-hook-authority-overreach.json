@@ -127,7 +127,7 @@
       "body": [
         {
           "fr": {
-            "cuisine": "La question qu’on lui avait confiée était « peut-on fermer ? ». Il a répondu à « peut-on continuer ? », faute d’une fiche qui distingue les deux. Un garde sans limite écrite prend celles qu’il croit utiles. La scène reste au passe.",
+            "cuisine": "On lui demandait s’il fallait fermer. Il a plutôt jugé s’il fallait continuer, faute d’une fiche qui sépare les deux choix. Sans limite écrite, le garde prend celles qu’il croit utiles. La scène reste au passe.",
             "expert": "Un hook agit sur plusieurs dimensions du comportement à la fois. Un contrôle censé répondre à « le tour peut-il se terminer ? » peut répondre à « l’agent peut-il agir ? » dès lors que scope et autorité ne sont pas déclarés séparément."
           },
           "en": {
@@ -153,7 +153,7 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Sur la fiche du veilleur, chaque pouvoir s’écrit à part : retenir la fermeture, lancer un plat, valider une commande, ajouter une consigne, refaire un envoi. Cocher une ligne ne donne jamais les autres. La scène reste au passe.",
+            "cuisine": "Sur la fiche du veilleur, chaque pouvoir s’écrit à part. Retenir la fermeture, lancer un plat, valider une commande, ajouter une consigne ou refaire un envoi. Cocher une ligne ne donne jamais les autres. La scène reste au passe.",
             "expert": "Un hook d’enforcement a besoin d’un domaine d’autorité déclaré. Terminaison, exécution d’outil, approbation, injection de contexte et retry sont des pouvoirs distincts, accordés séparément."
           },
           "en": {

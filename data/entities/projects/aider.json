@@ -65,21 +65,21 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Longtemps, la maison a changé sa carte presque chaque semaine.",
+            "cuisine": "Longtemps, la maison a changé sa carte presque chaque semaine. Le constat reste au passe.",
             "expert": "Aider tient une cadence de publication rapide comme outil de codage en ligne de commande."
           },
           "en": {
-            "kitchen": "For a long time, the house changed its menu almost every week.",
+            "kitchen": "For a long time, the house changed its menu almost every week. The finding remains at the pass.",
             "expert": "Aider sustained a rapid release cadence as a command-line coding agent."
           }
         },
         {
           "fr": {
-            "cuisine": "Puis les commandes ont souvent été laissées seules : on les déposait et l’on revenait chercher le résultat.",
+            "cuisine": "Puis les commandes ont souvent été laissées seules : on les déposait et l’on revenait chercher le résultat. Le constat reste au passe.",
             "expert": "L’usage non interactif et automatisé augmente."
           },
           "en": {
-            "kitchen": "Then orders were often left alone: people placed them and came back later for the result.",
+            "kitchen": "Then orders were often left alone: people placed them and came back later for the result. The finding remains at the pass.",
             "expert": "Headless and automated usage grew."
           }
         },
@@ -95,31 +95,31 @@
         },
         {
           "fr": {
-            "cuisine": "Ensuite, les changements de carte se sont espacés jusqu’à devenir rares.",
+            "cuisine": "Ensuite, les changements de carte se sont espacés jusqu’à devenir rares. Le constat reste au passe.",
             "expert": "La cadence de publication et l’activité sur la branche principale s’effondrent."
           },
           "en": {
-            "kitchen": "Then menu changes spread out until they became rare.",
+            "kitchen": "Then menu changes spread out until they became rare. The finding remains at the pass.",
             "expert": "Release cadence and default-branch activity collapsed."
           }
         },
         {
           "fr": {
-            "cuisine": "Des clients ont montré comment refaire les ratés et ont proposé des réparations prêtes à poser.",
+            "cuisine": "Des clients ont montré comment refaire les ratés et ont proposé des réparations prêtes à poser. Le constat reste au passe.",
             "expert": "La communauté continue de déposer des signalements reproductibles et des correctifs intégrables."
           },
           "en": {
-            "kitchen": "Customers showed how to reproduce the failures and offered repairs ready to fit.",
+            "kitchen": "Customers showed how to reproduce the failures and offered repairs ready to fit. The finding remains at the pass.",
             "expert": "The community kept filing reproducible reports and mergeable fixes."
           }
         },
         {
           "fr": {
-            "cuisine": "La question de savoir qui tient encore la cuisine a fini par être posée publiquement.",
+            "cuisine": "La question de savoir qui tient encore la cuisine a fini par être posée publiquement. Le constat reste au passe.",
             "expert": "L’état de la maintenance est publiquement mis en question."
           },
           "en": {
-            "kitchen": "People eventually asked openly who, if anyone, was still running the kitchen.",
+            "kitchen": "People eventually asked openly who, if anyone, was still running the kitchen. The finding remains at the pass.",
             "expert": "Maintainer status was publicly questioned."
           }
         }

@@ -86,11 +86,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Le même pli portait le contenu privé du destinataire et l’observation du chef. Fermer l’un effaçait mécaniquement l’autre. Cette perte ressemble à un choix entre deux règles. Elle vient pourtant de la forme partagée. Tant qu’un seul pli porte les deux, renforcer l’un diminue l’autre.",
+            "cuisine": "Le même pli portait le contenu privé du destinataire et l’observation du chef. Fermer l’un effaçait mécaniquement l’autre. Cette perte ressemble à un choix, mais vient de la forme partagée. Tant qu’un seul pli porte les deux, renforcer l’un diminue l’autre.",
             "expert": "Le système utilisait la même représentation pour le transport confidentiel et pour l’observabilité opérateur, si bien que chiffrer l’une efface mécaniquement l’autre. La tromperie tient à ce que la perte se présente comme un arbitrage de politique alors qu’elle est une conséquence structurelle du support partagé. Tant qu’un seul support porte les deux exigences, tout renforcement de l’une se paie sur l’autre."
           },
           "en": {
-            "kitchen": "The same note carried the recipient’s private contents and the chef’s view of service. Closing one mechanically erased the other. The loss looks like a choice between two rules. Yet it comes from the shared form. While one note bears both, strengthening one weakens the other.",
+            "kitchen": "The same note carried the recipient’s private contents and the chef’s view of service. Closing one mechanically erased the other. The loss looks like a choice, yet it comes from the shared form. While one note bears both, strengthening one weakens the other.",
             "expert": "The system used one representation for confidential transport and for operator observability, so encrypting the first mechanically erased the second. What deceives is that the loss presents itself as a policy tradeoff when it is a structural consequence of the shared medium. While a single medium carries both requirements, strengthening either one is paid for by the other."
           }
         }
@@ -112,7 +112,7 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Séparez le pli privé d’une ardoise d’observation limitée. L’ardoise peut montrer le nom, l’heure et la répartition. Son résultat et l’état des règles restent lisibles sans révéler les messages. Cette réponse est proposée, non établie. Aucune ardoise ainsi tenue n’a été démontrée et l’équilibre reste ouvert.",
+            "cuisine": "Séparez le pli privé d’une ardoise d’observation limitée. L’ardoise peut montrer le nom, l’heure, la répartition et le résultat. L’état des règles reste lisible sans révéler les messages. Cette réponse reste proposée : aucune ardoise ainsi tenue n’a été démontrée, et l’équilibre reste ouvert.",
             "expert": "Séparer les payloads privés destinataire de métadonnées opérateur bornées. Identités, horodatages, décisions de routage, résultat et état de politique peuvent rester auditables sans exposer le contenu des messages. C’est la réponse proposée : aucune mise en œuvre n’est établie, et l’arbitrage reste un espace de design actif sans solution stabilisée."
           },
           "en": {

@@ -127,11 +127,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Le chef publie la pile exacte remise au service, son ordre et la place maximale disponible. Il annonce aussi tout changement dans la tournée des classeurs. Dans un cas, une consigne exige désormais de distinguer ce qui a été vu, déduit ou supposé. Le texte est vérifiable. Son effet réel n’a pas été mesuré.",
+            "cuisine": "Le chef publie la pile exacte remise au service, son ordre et la place maximale disponible. Il annonce aussi tout changement dans la tournée des classeurs. Dans un cas, une consigne exige désormais de distinguer ce qui a été vu, déduit ou supposé. Le texte est vérifiable, mais son effet réel n’a pas été mesuré.",
             "expert": "Auditer d’abord la représentation runtime effective — inventaire injecté, ordre, aliases — et traiter le catalogue comme une ressource budgétée plutôt que comme un répertoire. Versionner la sémantique de discovery, publier l’inventaire chargé au démarrage et traiter les points d’extension utilisés par les contournements comme une surface de compatibilité ; un changement de défaut exige la même conscience des versions côté documentation. Chez pstack, une révision de consigne impose que chaque affirmation porte sa preuve ou sa qualification : mesuré, déduit, supposé. La modification est vérifiable dans les sources ; son effet sur le comportement réel n’a pas été mesuré."
           },
           "en": {
-            "kitchen": "The chef publishes the exact stack handed out at service, its order, and its maximum size. Every change to the binder round is announced. In one case, an instruction now separates what was seen, inferred, or assumed. The wording is verifiable. Its effect on real work was not measured.",
+            "kitchen": "The chef publishes the exact stack handed out at service, its order, and its maximum size. Every change to the binder round is announced. In one case, an instruction now separates what was seen, inferred, or assumed. The wording is verifiable, but its effect on real work was not measured.",
             "expert": "Audit the effective runtime representation first — injected inventory, ordering, aliases — and treat the catalog as a budgeted resource rather than a directory. Version discovery semantics, publish the inventory loaded at startup, and treat the extension points used by workarounds as a compatibility surface; a default change calls for the same version awareness on the documentation side. At pstack a workflow-instruction revision requires every claim to carry its evidence or its qualification: measured, inferred, assumed. The change is verifiable in the sources; its effect on real behavior was not measured."
           }
         }

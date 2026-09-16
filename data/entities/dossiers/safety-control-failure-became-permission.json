@@ -63,31 +63,31 @@
       "body": [
         {
           "fr": {
-            "cuisine": "On donne au poste de garde le droit d’arrêter une commande ou de la laisser sortir.",
+            "cuisine": "On donne au poste de garde le droit d’arrêter une commande ou de la laisser sortir. Le relevé s’arrête là.",
             "expert": "Un hook ou un composant de politique acquiert de l’autorité sur les actions."
           },
           "en": {
-            "kitchen": "The guard post is given the right to stop an order or let it leave.",
+            "kitchen": "The guard post is given the right to stop an order or let it leave. The record stops there.",
             "expert": "A hook or policy component gains authority over actions."
           }
         },
         {
           "fr": {
-            "cuisine": "Mais ce poste peut, lui aussi, cesser de répondre ou tomber.",
+            "cuisine": "Mais ce poste peut, lui aussi, cesser de répondre ou tomber. Le relevé s’arrête là.",
             "expert": "Ce composant peut lui-même expirer ou échouer."
           },
           "en": {
-            "kitchen": "But that post can itself go silent or fall over.",
+            "kitchen": "But that post can itself go silent or fall over. The record stops there.",
             "expert": "That component can itself time out or fail."
           }
         },
         {
           "fr": {
-            "cuisine": "Dans ce cas, la vieille habitude laisse partir les assiettes sans un mot.",
+            "cuisine": "Dans ce cas, la vieille habitude laisse partir les assiettes sans un mot. Le relevé s’arrête là.",
             "expert": "Le comportement historique poursuivait souvent l’exécution de façon implicite."
           },
           "en": {
-            "kitchen": "In that case, old habit lets the plates go without a word.",
+            "kitchen": "In that case, old habit lets the plates go without a word. The record stops there.",
             "expert": "Legacy behavior often continued execution implicitly."
           }
         },
@@ -103,11 +103,11 @@
         },
         {
           "fr": {
-            "cuisine": "Les maisons commencent donc à écrire clairement ce qui arrive quand le poste ne répond pas.",
+            "cuisine": "Les maisons commencent donc à écrire clairement ce qui arrive quand le poste ne répond pas. Le relevé s’arrête là.",
             "expert": "Les produits ont commencé à exposer une politique d’échec explicite."
           },
           "en": {
-            "kitchen": "So the houses begin writing plainly what happens when the post does not answer.",
+            "kitchen": "So the houses begin writing plainly what happens when the post does not answer. The record stops there.",
             "expert": "Products began exposing an explicit failure policy."
           }
         }
@@ -181,11 +181,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Le même point revient partout : ces postes ont acquis assez d’autorité pour décider, non plus seulement regarder.",
+            "cuisine": "Le même point revient partout : ces postes ont acquis assez d’autorité pour décider, non plus seulement regarder. Le relevé s’arrête là.",
             "expert": "C’est un point de convergence majeur entre harnais, à mesure que les hooks deviennent des primitives d’enforcement."
           },
           "en": {
-            "kitchen": "The same point returns everywhere: these posts now hold enough authority to decide rather than merely watch.",
+            "kitchen": "The same point returns everywhere: these posts now hold enough authority to decide rather than merely watch. The record stops there.",
             "expert": "This is a major cross-harness convergence point, as hooks become enforcement primitives."
           }
         }
@@ -207,11 +207,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Un poste de garde qui tombe n’a donné aucun accord.",
+            "cuisine": "Un poste de garde qui tombe n’a donné aucun accord. Le relevé s’arrête là.",
             "expert": "La panne d’un contrôle de sécurité n’est pas une décision d’approbation."
           },
           "en": {
-            "kitchen": "A guard post that falls over has given no permission.",
+            "kitchen": "A guard post that falls over has given no permission. The record stops there.",
             "expert": "Failure of a safety control is not an approval decision."
           }
         }

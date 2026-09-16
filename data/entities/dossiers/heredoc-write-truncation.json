@@ -62,51 +62,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "La même dictée s’était déjà bloquée dans plusieurs cuisines.",
+            "cuisine": "La même dictée s’était déjà bloquée dans plusieurs cuisines. Le problème n’appartenait donc pas à un seul poste.",
             "expert": "Le même deadlock de heredoc était déjà apparu sur plusieurs surfaces d’exécution."
           },
           "en": {
-            "kitchen": "The same dictation had already jammed in several kitchens.",
+            "kitchen": "The same dictation had already jammed in several kitchens. The problem did not belong to one station alone.",
             "expert": "The same heredoc deadlock had already shown up on more than one execution surface."
           }
         },
         {
           "fr": {
-            "cuisine": "Ces premiers blocages arrêtaient le travail, mais aucune protection durable n’avait été installée.",
+            "cuisine": "Ces premiers blocages arrêtaient le travail. Aucune protection durable n’avait pourtant été installée.",
             "expert": "Ces occurrences bloquaient le travail sans établir de mitigation durable au niveau produit."
           },
           "en": {
-            "kitchen": "Those earlier jams stopped the work, but no lasting safeguard was installed.",
+            "kitchen": "Those earlier jams stopped the work. Yet no lasting safeguard was installed.",
             "expert": "Those occurrences hung work without establishing any durable product-level mitigation."
           }
         },
         {
           "fr": {
-            "cuisine": "La panne a ensuite été reproduite dans une cuisine récente, avec une autre voix pour dicter.",
+            "cuisine": "La panne a ensuite été reproduite dans une cuisine récente. Une autre voix assurait cette fois la dictée.",
             "expert": "Une reproduction sur version courante a remontré la panne sous macOS avec un Bash alternatif."
           },
           "en": {
-            "kitchen": "The failure was later reproduced in a current kitchen with a different voice doing the dictation.",
+            "kitchen": "The failure was later reproduced in a current kitchen. A different voice handled the dictation this time.",
             "expert": "A current-version reproduction showed the failure again under macOS with an alternate Bash."
           }
         },
         {
           "fr": {
-            "cuisine": "Lors de cet essai, l’ancienne ardoise était déjà nettoyée quand la dictée s’est figée.",
+            "cuisine": "Lors de cet essai, l’ancienne ardoise avait déjà été nettoyée. La dictée s’est figée avant d’écrire le remplacement.",
             "expert": "Avec redirection vers fichier, la destination était déjà tronquée avant que le payload atteigne le consommateur."
           },
           "en": {
-            "kitchen": "In that trial, the old board had already been wiped when the dictation froze.",
+            "kitchen": "In that trial, the old board had already been wiped. The dictation froze before writing its replacement.",
             "expert": "Under file redirection the destination was already truncated before the payload reached its consumer."
           }
         },
         {
           "fr": {
-            "cuisine": "Au dernier relevé, aucune barrière installée dans la maison n’empêchait encore cette perte.",
+            "cuisine": "Au dernier relevé, cette perte restait possible. Aucune protection installée dans la maison ne l’empêchait encore.",
             "expert": "Au cutoff observé, aucune mitigation produit livrée n’est établie."
           },
           "en": {
-            "kitchen": "At the last check, no safeguard installed in the house prevented this loss.",
+            "kitchen": "At the last check, this loss remained possible. No safeguard installed in the house prevented it.",
             "expert": "No shipped product-level mitigation was established as of the observed cutoff."
           }
         }

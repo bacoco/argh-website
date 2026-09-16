@@ -62,37 +62,37 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Tout ce qui se passe au poste est versé au cahier, qui dévore la réserve à une allure anormale.",
+            "cuisine": "Tout ce qui se passe au poste est versé au cahier, qui dévore la réserve à une allure anormale. Le relevé s’arrête là.",
             "expert": "La journalisation persistante a créé une amplification extrême des écritures locales."
           },
           "en": {
-            "kitchen": "Everything happening at the station is poured into the ledger, which eats the stores at an abnormal rate.",
+            "kitchen": "Everything happening at the station is poured into the ledger, which eats the stores at an abnormal rate. The record stops there.",
             "expert": "Persistent logging produced extreme local write amplification."
           }
         },
         {
           "fr": {
-            "cuisine": "Une première réparation enlève les lignes écrites deux fois et le bavardage le plus voyant.",
+            "cuisine": "Une première réparation enlève les lignes écrites deux fois et le bavardage le plus voyant. Le relevé s’arrête là.",
             "expert": "Un premier ensemble de correctifs a réduit les événements dupliqués et bruyants."
           },
           "en": {
-            "kitchen": "A first repair takes away lines written twice and the loudest chatter.",
+            "kitchen": "A first repair takes away lines written twice and the loudest chatter. The record stops there.",
             "expert": "A first set of fixes cut duplicated and noisy events."
           }
         },
         {
           "fr": {
-            "cuisine": "Elle est servie, mais une note recopiée plus loin traverse encore le tri.",
+            "cuisine": "Elle est servie, mais une note recopiée plus loin traverse encore le tri. Le relevé s’arrête là.",
             "expert": "Le correctif a été livré, mais un chemin d’événements relayés échappait encore au filtrage."
           },
           "en": {
-            "kitchen": "It is served, yet a note recopied further along still slips past the sort.",
+            "kitchen": "It is served, yet a note recopied further along still slips past the sort. The record stops there.",
             "expert": "The fix shipped, but a bridged event path still escaped filtering."
           }
         },
         {
           "fr": {
-            "cuisine": "En remontant le parcours, on trouve la recopie tardive : au premier tri, la note ne portait pas encore l’étiquette qui finirait au cahier.",
+            "cuisine": "En remontant le parcours, on trouve la recopie tardive : au premier tri, la note ne portait pas encore l’étiquette qui finirait au cahier. Le relevé s’arrête là.",
             "expert": "Un second correctif a déplacé le rejet jusqu’au sink SQLite."
           },
           "en": {
@@ -102,11 +102,11 @@
         },
         {
           "fr": {
-            "cuisine": "Le second tri s’installe donc au fond du cahier, là où la ligne est inscrite pour de bon.",
+            "cuisine": "Le second tri s’installe donc au fond du cahier, là où la ligne est inscrite pour de bon. Le relevé s’arrête là.",
             "expert": "La leçon profonde est passée du filtrage des entrées à l’enforcement à la frontière de l’effet final."
           },
           "en": {
-            "kitchen": "So the second sort sets up at the bottom of the ledger, where the line is written for good.",
+            "kitchen": "So the second sort sets up at the bottom of the ledger, where the line is written for good. The record stops there.",
             "expert": "The deeper lesson moved from filtering inputs to enforcing at the final side-effect boundary."
           }
         }

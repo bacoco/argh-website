@@ -62,31 +62,31 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Pendant un dépannage, quelqu’un note au mur la seule zone qu’il peut toucher, désignée par sa place dans la pièce.",
+            "cuisine": "Pendant un dépannage, quelqu’un note au mur la seule zone qu’il peut toucher, désignée par sa place dans la pièce. Le relevé s’arrête là.",
             "expert": "Un mode de débogage écrit sa frontière d’édition autorisée en chemin relatif, dans un état persistant partagé par la machine."
           },
           "en": {
-            "kitchen": "During a repair, someone marks the one area they may touch, named by where it sits in the room.",
+            "kitchen": "During a repair, someone marks the one area they may touch, named by where it sits in the room. The record stops there.",
             "expert": "A debugging mode writes its allowed edit boundary as a relative path into state persisted and shared machine-wide."
           }
         },
         {
           "fr": {
-            "cuisine": "Le garde relit cette consigne depuis la pièce où il se trouve au moment du contrôle, et non celle où elle a été écrite.",
+            "cuisine": "Le garde relit cette consigne depuis la pièce où il se trouve au moment du contrôle, et non celle où elle a été écrite. Le relevé s’arrête là.",
             "expert": "Le hook chargé de l’appliquer résout ensuite cette valeur contre le répertoire de travail courant de chaque invocation."
           },
           "en": {
-            "kitchen": "The guard reads that note from whichever room they stand in at the time, not from the room where it was written.",
+            "kitchen": "The guard reads that note from whichever room they stand in at the time, not from the room where it was written. The record stops there.",
             "expert": "The hook that enforces it then resolves that value against the current working directory of each invocation."
           }
         },
         {
           "fr": {
-            "cuisine": "Une autre maison hérite donc de la vieille consigne, qui ferme désormais une tout autre réserve.",
+            "cuisine": "Une autre maison hérite donc de la vieille consigne, qui ferme désormais une tout autre réserve. Le relevé s’arrête là.",
             "expert": "Un dépôt ou un worktree ultérieur hérite ainsi d’une frontière effective différente à partir du même état périmé."
           },
           "en": {
-            "kitchen": "Another house therefore inherits the old note, which now closes off an entirely different pantry.",
+            "kitchen": "Another house therefore inherits the old note, which now closes off an entirely different pantry. The record stops there.",
             "expert": "A later repository or worktree therefore inherits a different effective boundary from the same stale state."
           }
         },
@@ -196,11 +196,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Une consigne provisoire doit dire précisément où elle s’applique et quand elle cesse de valoir.",
+            "cuisine": "Une consigne provisoire doit dire précisément où elle s’applique et quand elle cesse de valoir. Le relevé s’arrête là.",
             "expert": "Un état porteur d’autorité exige à la fois une identité stable et une durée de vie explicite."
           },
           "en": {
-            "kitchen": "A temporary note must say precisely where it applies and when it stops counting.",
+            "kitchen": "A temporary note must say precisely where it applies and when it stops counting. The record stops there.",
             "expert": "Authority-bearing state requires both a stable identity and an explicitly bounded lifetime."
           }
         }

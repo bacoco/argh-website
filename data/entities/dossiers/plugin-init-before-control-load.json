@@ -61,51 +61,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Le planning est valide, les renforts sont bien prévus et leurs noms figurent au tableau.",
+            "cuisine": "Le planning est valide et les renforts sont prévus. Leurs noms figurent au tableau.",
             "expert": "Les fichiers de configuration et les plugins sont présents et valides."
           },
           "en": {
-            "kitchen": "The schedule is valid, extra hands are booked, and their names appear on the board.",
+            "kitchen": "The schedule is valid and extra hands are booked. Their names appear on the board.",
             "expert": "Configuration files and plugins were present and valid."
           }
         },
         {
           "fr": {
-            "cuisine": "À l’ouverture, le chef appelle la brigade et fige la liste des postes occupés.",
+            "cuisine": "À l’ouverture, le chef appelle la brigade. Il fige alors la liste des postes occupés.",
             "expert": "Le gestionnaire du service de langage s’initialise et fige sa liste."
           },
           "en": {
-            "kitchen": "At opening, the chef calls the brigade and fixes the list of occupied stations.",
+            "kitchen": "At opening, the chef calls the brigade. He then fixes the list of occupied stations.",
             "expert": "The language-service manager initialised and fixed its list."
           }
         },
         {
           "fr": {
-            "cuisine": "À cet instant précis, les renforts attendus ne sont pas encore entrés en cuisine.",
+            "cuisine": "À cet instant, les renforts attendus ne sont pas encore entrés. Ils restent hors de la cuisine.",
             "expert": "À cet instant, aucun serveur fourni par plugin n’est chargé."
           },
           "en": {
-            "kitchen": "At that exact moment, the expected extra hands have not entered the kitchen yet.",
+            "kitchen": "At that exact moment, the expected extra hands have not entered. They remain outside the kitchen.",
             "expert": "At that instant, no plugin-provided server was loaded."
           }
         },
         {
           "fr": {
-            "cuisine": "Ils franchissent pourtant la porte quelques instants après la fin de l’appel.",
+            "cuisine": "Ils franchissent pourtant la porte quelques instants après. L’appel vient alors de finir.",
             "expert": "Les plugins sont chargés quelques millisecondes plus tard."
           },
           "en": {
-            "kitchen": "They walk through the door only moments after roll call ends.",
+            "kitchen": "They walk through the door only moments later. Roll call has just ended.",
             "expert": "The plugins loaded milliseconds later."
           }
         },
         {
           "fr": {
-            "cuisine": "Comme le chef ne reprend jamais la liste, le tableau laisse leur poste vide pendant tout le service.",
+            "cuisine": "Le chef ne reprend jamais la liste. Le tableau laisse donc leur poste vide pendant tout le service.",
             "expert": "Le runtime ne reprend jamais rétroactivement la surface de contrôle attendue."
           },
           "en": {
-            "kitchen": "Because the chef never checks the list again, their station remains empty on the board throughout service.",
+            "kitchen": "The chef never checks the list again. Their station therefore remains empty on the board throughout service.",
             "expert": "The runtime never retroactively gained the expected control surface."
           }
         }

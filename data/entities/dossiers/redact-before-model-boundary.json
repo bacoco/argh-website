@@ -62,41 +62,41 @@
       "body": [
         {
           "fr": {
-            "cuisine": "En arrière-cuisine, la mémoire de la maison se nourrit de ce qui a été noté au comptoir.",
+            "cuisine": "En arrière-cuisine, la mémoire de la maison se nourrit des notes du comptoir. Ces notes servent à la suite du service.",
             "expert": "La fonction de mémoire consommait du matériel issu de transcriptions locales pour composer des requêtes d’extraction en arrière-plan."
           },
           "en": {
-            "kitchen": "In the back kitchen, the house memory feeds on what was written down at the counter.",
+            "kitchen": "In the back kitchen, the house memory feeds on notes from the counter. Those notes serve the rest of service.",
             "expert": "The memory feature consumed local transcript-derived material to compose background extraction requests."
           }
         },
         {
           "fr": {
-            "cuisine": "La consigne de taire le privé est écrite sur la page ; elle franchit donc la porte avec elle.",
+            "cuisine": "La consigne de taire le privé est écrite sur la page. Elle franchit donc la porte avec elle.",
             "expert": "Le caviardage était décrit dans le prompt d’extraction, donc après l’entrée du contenu sélectionné dans le contexte du modèle."
           },
           "en": {
-            "kitchen": "The instruction to keep private matters quiet is written on the page, so it crosses the door with it.",
+            "kitchen": "The instruction to keep private matters quiet is written on the page. It therefore crosses the door with it.",
             "expert": "Redaction was specified inside the extraction prompt, that is, after the selected content had entered model context."
           }
         },
         {
           "fr": {
-            "cuisine": "La correction demandée raye la page à la porte, toujours du même geste, et allège séparément les copies conservées au bureau.",
+            "cuisine": "La correction demandée raye la page à la porte, toujours du même geste. Elle allège séparément les copies gardées au bureau.",
             "expert": "Les critères de correction déplacent un nettoyage déterministe avant l’envoi au modèle et réduisent séparément la journalisation diagnostique du contenu complet."
           },
           "en": {
-            "kitchen": "The requested repair strikes the page at the door with the same gesture every time, and separately thins the copies kept in the back office.",
+            "kitchen": "The requested repair strikes the page at the door with the same gesture every time. It separately thins the copies kept in the back office.",
             "expert": "The remediation criteria move deterministic scrubbing ahead of model submission and separately reduce full-content diagnostic logging."
           }
         },
         {
           "fr": {
-            "cuisine": "Rien de cela n’est posé : le travail reste ouvert et cette nouvelle façon de faire n’est encore qu’une intention, pas une garde à la porte.",
+            "cuisine": "Rien de cela n’est posé et le travail reste ouvert. Cette nouvelle façon de faire est encore une intention, pas une garde à la porte.",
             "expert": "Le travail de sécurité reste ouvert dans les éléments examinés ; la correction de placement constitue donc un état cible, non un contrôle déployé et vérifié."
           },
           "en": {
-            "kitchen": "None of this is in place: the work stays open, and the new way remains an intention rather than a guard at the door.",
+            "kitchen": "None of this is in place and the work stays open. The new way remains an intention rather than a guard at the door.",
             "expert": "The security work remains open in the evidence examined, so the placement correction is a target state, not a deployed and verified control."
           }
         }
@@ -170,7 +170,7 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Ce qui est établi : le mauvais placement est nommé et la réparation demandée est écrite. Ce qui ne l’est pas : aucun secret sorti n’a été montré, personne n’a mesuré la fréquence et rien n’a été réparé.",
+            "cuisine": "Ce qui est établi : le mauvais placement est nommé et la réparation demandée est écrite. Ce qui ne l’est pas est tout aussi clair. Aucun secret sorti n’a été montré. Personne n’a mesuré la fréquence et rien n’a été réparé.",
             "expert": "La correction est suivie comme une tâche de sécurité ouverte. Les éléments examinés établissent le problème de placement et les critères d’acceptation demandés, mais ni incident de secret démontré, ni fréquence mesurée, ni correction livrée."
           },
           "en": {
@@ -196,11 +196,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Ce qui doit rester dans la maison se caviarde avant le seuil, non chez celui qui a déjà lu la page.",
+            "cuisine": "Ce qui doit rester dans la maison se caviarde avant le seuil. Jamais chez celui qui a déjà lu la page.",
             "expert": "Placer les contrôles déterministes de confidentialité avant le composant qu’ils sont censés protéger."
           },
           "en": {
-            "kitchen": "What must stay in the house is redacted before the threshold, not beside the person who already read the page.",
+            "kitchen": "What must stay in the house is redacted before the threshold. Never beside the person who already read the page.",
             "expert": "Place deterministic privacy controls ahead of the component they are meant to protect."
           }
         }

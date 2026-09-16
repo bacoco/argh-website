@@ -63,41 +63,41 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Au début, la cuisine préparait des plats à partir de longues additions.",
+            "cuisine": "Au début, la cuisine préparait des plats à partir de longues additions. Le constat reste au passe.",
             "expert": "Le projet existe comme framework d’agents code-first orienté analyse de données."
           },
           "en": {
-            "kitchen": "At the start, the kitchen prepared dishes from long sums.",
+            "kitchen": "At the start, the kitchen prepared dishes from long sums. The finding remains at the pass.",
             "expert": "The project exists as a code-first agent framework oriented toward data analysis."
           }
         },
         {
           "fr": {
-            "cuisine": "Elle a ajouté des postes, des ustensiles et un carnet pour suivre le service.",
+            "cuisine": "Elle a ajouté des postes, des ustensiles et un carnet pour suivre le service. Le constat reste au passe.",
             "expert": "S’y ajoutent une exécution à état, des plugins et des rôles."
           },
           "en": {
-            "kitchen": "It added stations, utensils, and a notebook for following service.",
+            "kitchen": "It added stations, utensils, and a notebook for following service. The finding remains at the pass.",
             "expert": "Stateful execution, plugins and roles are added."
           }
         },
         {
           "fr": {
-            "cuisine": "Elle a ensuite ajouté de quoi regarder, réfléchir et surveiller le passe.",
+            "cuisine": "Elle a ensuite ajouté de quoi regarder, réfléchir et surveiller le passe. Le constat reste au passe.",
             "expert": "Viennent ensuite des apports de vision, de raisonnement et d’observabilité."
           },
           "en": {
-            "kitchen": "It then added ways to look, think, and watch the pass.",
+            "kitchen": "It then added ways to look, think, and watch the pass. The finding remains at the pass.",
             "expert": "Vision, reasoning and observability additions follow."
           }
         },
         {
           "fr": {
-            "cuisine": "Un jour, elle a écrit sur sa porte qu’elle cherchait du renfort.",
+            "cuisine": "Un jour, elle a écrit sur sa porte qu’elle cherchait du renfort. Le constat reste au passe.",
             "expert": "Les matériaux du projet signalent des ressources limitées et appellent des contributeurs."
           },
           "en": {
-            "kitchen": "One day it wrote on its door that it was seeking help.",
+            "kitchen": "One day it wrote on its door that it was seeking help. The finding remains at the pass.",
             "expert": "The project’s materials report limited resources and call for contributors."
           }
         },
@@ -113,11 +113,11 @@
         },
         {
           "fr": {
-            "cuisine": "Nulle part, le lien entre le manque de bras et la fermeture n’a été écrit.",
+            "cuisine": "Nulle part, le lien entre le manque de bras et la fermeture n’a été écrit. Le constat reste au passe.",
             "expert": "Aucune déclaration de première main n’établit de chaîne causale définitive entre ressources limitées et archivage."
           },
           "en": {
-            "kitchen": "Nowhere was the link between missing hands and closure written down.",
+            "kitchen": "Nowhere was the link between missing hands and closure written down. The finding remains at the pass.",
             "expert": "No first-party statement establishes a definitive causal chain from limited resources to archive."
           }
         }

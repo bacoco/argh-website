@@ -91,7 +91,7 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Au service, Quand tu passes un plat, il ne se cuisine pas dans ta tête : un autre s’y met, avec ses mains et son poste. Ses gestes n’apparaissent pas au passe, sauf si on les y fait remonter. Croire qu’annoncer suffit, c’est oublier qu’un second service a commencé ailleurs.",
+            "cuisine": "Quand tu passes un plat, un autre le cuisine avec ses mains et son poste. Ses gestes n’apparaissent pas au passe, sauf si on les y fait remonter. Croire qu’annoncer suffit, c’est oublier qu’un second service a commencé ailleurs.",
             "expert": "La délégation crée un second graphe d’exécution. Identité, permissions et résultats doivent y être corrélés au parent sans écraser l’autonomie ni l’auditabilité. La tromperie tient à ce que la délégation se présente comme une continuation du prompt parent, alors que l’exécutant possède sa propre identité et ses propres droits."
           },
           "en": {

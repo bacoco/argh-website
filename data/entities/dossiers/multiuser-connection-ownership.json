@@ -61,51 +61,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Au comptoir, une seule fiche indique quelle table la maison sert maintenant.",
+            "cuisine": "Au comptoir, une seule fiche reste visible. Elle indique quelle table la maison sert maintenant.",
             "expert": "Un serveur conservait un état de connexion global et mutable."
           },
           "en": {
-            "kitchen": "At the counter, one card names the table the house is serving now.",
+            "kitchen": "At the counter, only one card remains visible. It names the table the house is serving now.",
             "expert": "A server held mutable, global connection state."
           }
         },
         {
           "fr": {
-            "cuisine": "Quand un second groupe s’assoit, son nom remplace celui de la première table sur cette fiche.",
+            "cuisine": "Un second groupe vient ensuite s’asseoir. Son nom remplace celui de la première table sur la fiche.",
             "expert": "Une seconde session s’est connectée et a remplacé cet état."
           },
           "en": {
-            "kitchen": "When a second party sits, its name replaces the first table’s name on that card.",
+            "kitchen": "A second party then sits down. Its name replaces the first table’s name on the card.",
             "expert": "A second session connected and replaced it."
           }
         },
         {
           "fr": {
-            "cuisine": "Un peu plus tard, la brigade termine enfin le plat commandé par la première table.",
+            "cuisine": "Un peu plus tard, la brigade termine un plat. Il avait été commandé par la première table.",
             "expert": "Une notification a ensuite été émise à destination de la première session."
           },
           "en": {
-            "kitchen": "A little later, the brigade finally finishes the dish ordered by the first table.",
+            "kitchen": "A little later, the brigade finishes a dish. The first table had ordered it.",
             "expert": "A notification was afterwards raised for the first session."
           }
         },
         {
           "fr": {
-            "cuisine": "Au moment de servir, le commis consulte le nom actuellement posé au comptoir au lieu de lire le bon du plat.",
+            "cuisine": "Le commis s’apprête à servir. Il consulte le nom au comptoir au lieu de lire le bon du plat.",
             "expert": "La livraison consultait la connexion globalement courante à l’instant de l’envoi."
           },
           "en": {
-            "kitchen": "At serving time, the runner checks the name currently on the counter instead of reading the plate’s ticket.",
+            "kitchen": "The runner gets ready to serve. He checks the name on the counter instead of reading the plate’s ticket.",
             "expert": "Delivery read whichever connection was globally current at send time."
           }
         },
         {
           "fr": {
-            "cuisine": "L’assiette de la première commande risque ainsi d’être portée aux nouveaux clients.",
+            "cuisine": "L’assiette appartient à la première commande. Elle risque pourtant d’être portée aux nouveaux clients.",
             "expert": "La propriété pouvait donc franchir les limites de session."
           },
           "en": {
-            "kitchen": "The first order’s plate may therefore be carried to the newly arrived guests.",
+            "kitchen": "The plate belongs to the first order. Yet it may be carried to the newly arrived guests.",
             "expert": "Ownership could therefore cross session boundaries."
           }
         }

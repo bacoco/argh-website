@@ -80,11 +80,11 @@
         },
         {
           "fr": {
-            "cuisine": "Pendant la pause, la brigade a gardé le bon donné par le fournisseur pour reprendre plus tard.",
+            "cuisine": "Pendant la pause, la brigade a gardé le bon donné par le fournisseur pour reprendre plus tard. Le constat reste au passe.",
             "expert": "Un point de reprise durable conserve l’identifiant de session du fournisseur pendant l’attente humaine."
           },
           "en": {
-            "kitchen": "During the pause, the brigade kept the supplier’s slip so it could restart later.",
+            "kitchen": "During the pause, the brigade kept the supplier’s slip so it could restart later. The finding remains at the pass.",
             "expert": "A durable workflow checkpoint carried a provider session identifier across the human wait."
           }
         },

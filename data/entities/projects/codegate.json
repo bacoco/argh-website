@@ -64,51 +64,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Le poste a été créé pour vérifier ce qui entrait dans la cuisine.",
+            "cuisine": "Le poste a été créé pour vérifier ce qui entrait dans la cuisine. Le constat reste au passe.",
             "expert": "CodeGate se positionne comme passerelle de sécurité pour les assistants de codage."
           },
           "en": {
-            "kitchen": "The post was created to check what entered the kitchen.",
+            "kitchen": "The post was created to check what entered the kitchen. The finding remains at the pass.",
             "expert": "CodeGate positioned itself as a security gateway for coding assistants."
           }
         },
         {
           "fr": {
-            "cuisine": "Il a été installé dans plusieurs cuisines, avec un raccord différent à chaque fois.",
+            "cuisine": "Il a été installé dans plusieurs cuisines, avec un raccord différent à chaque fois. Le constat reste au passe.",
             "expert": "Plusieurs intégrations sont livrées côté IDE et clients."
           },
           "en": {
-            "kitchen": "It was fitted in several kitchens, with a different connection each time.",
+            "kitchen": "It was fitted in several kitchens, with a different connection each time. The finding remains at the pass.",
             "expert": "Several IDE and client integrations shipped."
           }
         },
         {
           "fr": {
-            "cuisine": "La personne au poste a ensuite dit que trop peu de cuisines s’en servaient.",
+            "cuisine": "La personne au poste a ensuite dit que trop peu de cuisines s’en servaient. Le constat reste au passe.",
             "expert": "Le mainteneur rapporte une adoption et une traction insuffisantes."
           },
           "en": {
-            "kitchen": "The person at the post then said too few kitchens used it.",
+            "kitchen": "The person at the post then said too few kitchens used it. The finding remains at the pass.",
             "expert": "The maintainer reported insufficient adoption and traction."
           }
         },
         {
           "fr": {
-            "cuisine": "Les raccords propres à chaque cuisine ont alors été annoncés comme bientôt retirés.",
+            "cuisine": "Les raccords propres à chaque cuisine ont alors été annoncés comme bientôt retirés. Le constat reste au passe.",
             "expert": "Les clients sont annoncés en dépréciation."
           },
           "en": {
-            "kitchen": "The connections made for each kitchen were then announced as soon to be removed.",
+            "kitchen": "The connections made for each kitchen were then announced as soon to be removed. The finding remains at the pass.",
             "expert": "The clients were slated for deprecation."
           }
         },
         {
           "fr": {
-            "cuisine": "On a essayé de placer le poste au milieu du service plutôt qu’à la porte.",
+            "cuisine": "On a essayé de placer le poste au milieu du service plutôt qu’à la porte. Le constat reste au passe.",
             "expert": "Une tentative de recentrage vise les flux de travail agentiques plutôt que la couche assistant."
           },
           "en": {
-            "kitchen": "The post was tried in the middle of service instead of at the door.",
+            "kitchen": "The post was tried in the middle of service instead of at the door. The finding remains at the pass.",
             "expert": "An attempted refocus targeted agent workflows rather than the assistant layer."
           }
         },

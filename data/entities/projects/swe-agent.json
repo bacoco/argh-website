@@ -71,11 +71,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Au départ, la maison n’a qu’une adresse, et tous ceux qui la suivent la connaissent.",
+            "cuisine": "Au départ, la maison n’a qu’une adresse, et tous ceux qui la suivent la connaissent. Le constat reste au passe.",
             "expert": "Le projet est publié sous le chemin de repository de l’organisation Princeton-NLP."
           },
           "en": {
-            "kitchen": "At the start, the house has one address, and everyone following it knows where to find it.",
+            "kitchen": "At the start, the house has one address, and everyone following it knows where to find it. The finding remains at the pass.",
             "expert": "The project is published under the Princeton-NLP organization repository path."
           }
         },
@@ -91,11 +91,11 @@
         },
         {
           "fr": {
-            "cuisine": "La nouvelle adresse est désormais la bonne, et le service y continue chaque jour.",
+            "cuisine": "La nouvelle adresse est désormais la bonne, et le service y continue chaque jour. Le constat reste au passe.",
             "expert": "Le repository canonique actif se résout désormais sous l’organisation SWE-agent, et le développement actif y continue."
           },
           "en": {
-            "kitchen": "The new address is now the right one, and service continues there every day.",
+            "kitchen": "The new address is now the right one, and service continues there every day. The finding remains at the pass.",
             "expert": "The active canonical repository now resolves under the SWE-agent organization, and active development continues there."
           }
         },

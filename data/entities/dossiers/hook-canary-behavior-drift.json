@@ -61,51 +61,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Une consigne précise reste affichée au passe et contrôlée pendant chaque service.",
+            "cuisine": "Une consigne précise reste affichée au passe. Elle est contrôlée pendant chaque service.",
             "expert": "Une règle comportementale locale est imposée par un hook construit côté utilisateur."
           },
           "en": {
-            "kitchen": "One precise rule stays posted at the pass and is checked during every service.",
+            "kitchen": "One precise rule stays posted at the pass. It is checked during every service.",
             "expert": "A hook enforced one local behavioral rule."
           }
         },
         {
           "fr": {
-            "cuisine": "Service après service, le registre reste presque entièrement sans faute.",
+            "cuisine": "Service après service, le registre reste presque sans faute. Les pages demeurent pratiquement vierges.",
             "expert": "Sur l’historique, les violations sont pratiquement absentes."
           },
           "en": {
-            "kitchen": "Service after service, the register remains almost entirely free of marks.",
+            "kitchen": "Service after service, the register remains almost free of faults. Its pages stay practically blank.",
             "expert": "Across the prior history, violations were essentially absent."
           }
         },
         {
           "fr": {
-            "cuisine": "Après une modification de la maison, la même faute réapparaît plusieurs fois.",
+            "cuisine": "Puis la maison change quelque chose dans son fonctionnement. La même faute réapparaît plusieurs fois.",
             "expert": "Un changement produit est suivi de violations répétées, et non d’un incident isolé."
           },
           "en": {
-            "kitchen": "After a change to the house, the same fault returns several times.",
+            "kitchen": "Then something changes in the house. The same fault returns several times.",
             "expert": "Following a product change, violations recurred rather than appearing once."
           }
         },
         {
           "fr": {
-            "cuisine": "Le registre montre alors combien de fautes surviennent, quand elles commencent et combien elles s’écartent de l’ancien service.",
+            "cuisine": "Le registre montre alors combien de fautes surviennent. Il indique leur début et l’écart avec l’ancien service.",
             "expert": "Les journaux du hook rendent la dérive mesurable."
           },
           "en": {
-            "kitchen": "The register now shows how many faults occur, when they begin, and how far service has changed.",
+            "kitchen": "The register now shows how many faults occur. It records when they begin and how far service has changed.",
             "expert": "The guard’s logs made the drift measurable."
           }
         },
         {
           "fr": {
-            "cuisine": "Le cahier prouve que les gestes ont changé à cette date, mais il n’explique pas pourquoi.",
+            "cuisine": "Le cahier prouve que les gestes ont changé à cette date. Il n’explique cependant pas pourquoi.",
             "expert": "Le mécanisme causal exact reste moins établi que la rupture comportementale elle-même."
           },
           "en": {
-            "kitchen": "The book proves that the work changed at that time, but it does not explain why.",
+            "kitchen": "The book proves that the work changed at that time. It does not explain why.",
             "expert": "The exact causal mechanism is less established than the behavioral discontinuity it followed."
           }
         }
