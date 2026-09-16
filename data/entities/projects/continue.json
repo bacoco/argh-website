@@ -64,41 +64,41 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Au début, la cuisine tenait un seul poste avec des recettes ouvertes à tous.",
+            "cuisine": "Au début, la cuisine tenait un seul poste avec des recettes ouvertes à tous. Le constat reste au passe.",
             "expert": "Continue démarre comme assistant de code open source intégré à l’éditeur. C’est l’état initial de la trajectoire reconstruite : active_growth."
           },
           "en": {
-            "kitchen": "At first, the kitchen ran one station with recipes open to everyone.",
+            "kitchen": "At first, the kitchen ran one station with recipes open to everyone. The finding remains at the pass.",
             "expert": "Continue starts as an open-source in-editor coding assistant. That is the initial state of the reconstructed trajectory: active_growth."
           }
         },
         {
           "fr": {
-            "cuisine": "Puis le même service s’est étendu à trois endroits de la maison.",
+            "cuisine": "Puis le même service s’est étendu à trois endroits de la maison. Le constat reste au passe.",
             "expert": "Le produit devient un agent de code présent sur trois surfaces : l’éditeur VS Code, la ligne de commande et les IDE JetBrains. La portée s’élargit sans changer de nature."
           },
           "en": {
-            "kitchen": "Then the same service spread to three places in the house.",
+            "kitchen": "Then the same service spread to three places in the house. The finding remains at the pass.",
             "expert": "The product becomes a coding agent across three surfaces: VS Code, the command line and JetBrains IDEs. Reach widens without the nature of the product changing."
           }
         },
         {
           "fr": {
-            "cuisine": "Un dernier grand rangement a préparé la fin du service.",
+            "cuisine": "Un dernier grand rangement a préparé la fin du service. Le constat reste au passe.",
             "expert": "Une version 2.0.0 de clôture est publiée, accompagnée du nettoyage correspondant. C’est la dernière étape enregistrée avant le changement de propriétaire."
           },
           "en": {
-            "kitchen": "One final clear-out prepared the end of service.",
+            "kitchen": "One final clear-out prepared the end of service. The finding remains at the pass.",
             "expert": "A closing 2.0.0 release ships with the associated cleanup. It is the last step recorded before ownership changes."
           }
         },
         {
           "fr": {
-            "cuisine": "Ensuite, la maison a été achetée et a changé de patron.",
+            "cuisine": "Ensuite, la maison a été achetée et a changé de patron. Le constat reste au passe.",
             "expert": "L’entreprise et le projet sont acquis par Cursor. L’acquisition précède immédiatement la fin de la maintenance autonome."
           },
           "en": {
-            "kitchen": "Then the house was bought and changed owners.",
+            "kitchen": "Then the house was bought and changed owners. The finding remains at the pass.",
             "expert": "The company and the project are acquired by Cursor. The acquisition immediately precedes the end of standalone maintenance."
           }
         },

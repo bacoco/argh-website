@@ -146,11 +146,11 @@
         },
         {
           "fr": {
-            "cuisine": "Il reste un geste à faire : ouvrir les cartons déjà partis chez les clients pour voir ce qu’ils ont réellement reçu.",
+            "cuisine": "Il reste un geste à faire : ouvrir les cartons déjà partis chez les clients pour voir ce qu’ils ont réellement reçu. Le constat reste au passe.",
             "expert": "La corrélation entre release et paquet reste à compléter. Tant qu’elle ne l’est pas, le déploiement terrain de l’activation par défaut n’est pas pleinement prouvé."
           },
           "en": {
-            "kitchen": "One task remains: open the crates already sent to customers and see what they truly received.",
+            "kitchen": "One task remains: open the crates already sent to customers and see what they truly received. The finding remains at the pass.",
             "expert": "Release and package correlation remains to be completed. Until it is, the field rollout of the default-on change is not fully proven."
           }
         }

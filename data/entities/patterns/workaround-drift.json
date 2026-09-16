@@ -138,7 +138,7 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Au service, Une fiche ne vaut que si quelqu’un va la chercher, et la tournée qui décide des tiroirs fait donc partie de la fiche. Un geste de dépannage que personne ne retire finit par tenir le service, jusqu’au jour où son appui disparaît.",
+            "cuisine": "Une fiche ne vaut que si quelqu’un va la chercher. La tournée qui choisit les tiroirs fait donc partie de la fiche. Un geste de dépannage que personne ne retire finit par tenir le service, jusqu’au jour où son appui disparaît.",
             "expert": "Les règles de découverte appartiennent à l’API des skills : les modifier revient à modifier un contrat public, même lorsqu’aucun format de fichier ne bouge. Un contournement durable déplace la dépendance vers ce contrat implicite et hérite de sa volatilité."
           },
           "en": {

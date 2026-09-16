@@ -66,51 +66,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Au départ, le commis du passe se contente d’annoncer le début du service et le départ des plats.",
+            "cuisine": "Au départ, le commis du passe annonce seulement le début du service. Il signale aussi chaque départ d’assiette.",
             "expert": "Les hooks sont d’abord apparus comme de simples rappels déclenchés autour des événements d’outil ou de session."
           },
           "en": {
-            "kitchen": "At first, the pass cook merely announces the start of service and each departing plate.",
+            "kitchen": "At first, the pass cook merely announces the start of service. He also calls out each departing plate.",
             "expert": "Hooks first showed up as callbacks fired around tool and session events."
           }
         },
         {
           "fr": {
-            "cuisine": "Peu à peu, il intervient à davantage de moments et reçoit des bons de commande plus détaillés.",
+            "cuisine": "Peu à peu, il intervient à davantage de moments. Il reçoit aussi des bons de commande plus détaillés.",
             "expert": "Les produits ont multiplié les types d’événements et enrichi les charges utiles transmises."
           },
           "en": {
-            "kitchen": "Little by little, he speaks at more moments and receives fuller order slips.",
+            "kitchen": "Little by little, he speaks at more moments. He also receives fuller order slips.",
             "expert": "Products multiplied event types and filled out the payloads handed to them."
           }
         },
         {
           "fr": {
-            "cuisine": "Ensuite, le poste peut empêcher une assiette de partir : son annonce devient une décision.",
+            "cuisine": "Ensuite, le poste peut empêcher une assiette de partir. Son annonce devient alors une décision.",
             "expert": "L’ajout d’une sémantique de blocage a transformé certains hooks en garde-fous capables de refuser l’action."
           },
           "en": {
-            "kitchen": "Then the station may keep a plate from leaving, turning an announcement into a decision.",
+            "kitchen": "Then the station may keep a plate from leaving. An announcement has become a decision.",
             "expert": "Blocking semantics turned some hooks into guardrails able to refuse the action outright."
           }
         },
         {
           "fr": {
-            "cuisine": "Il faut alors prévoir la panne du poste : les assiettes partent-elles toutes, ou le service s’arrête-t-il ?",
+            "cuisine": "Il faut alors prévoir la panne du poste. Les assiettes partent-elles toutes, ou le service s’arrête-t-il ?",
             "expert": "Le comportement du hook lorsqu’il échoue lui-même est devenu une question de politique à part entière."
           },
           "en": {
-            "kitchen": "The house must then plan for that station failing: do all plates leave, or does service stop?",
+            "kitchen": "The house must then plan for that station failing. Do all plates leave, or does service stop?",
             "expert": "What a hook does when it fails became a policy question in its own right."
           }
         },
         {
           "fr": {
-            "cuisine": "Les maisons finissent donc par afficher le nom du garde, ses pouvoirs et la façon de changer de poste sans perdre le service.",
+            "cuisine": "Les maisons finissent par afficher le nom et les pouvoirs du garde. Elles expliquent aussi comment le remplacer sans perdre le service.",
             "expert": "Ont suivi la visibilité des hooks, leur modèle de confiance, leur exposition dans l’interface et l’outillage de migration."
           },
           "en": {
-            "kitchen": "Houses therefore begin posting who guards the pass, what powers that role holds, and how to replace it without losing service.",
+            "kitchen": "Houses begin posting who guards the pass and which powers that role holds. They also explain how to replace the guard without losing service.",
             "expert": "Hook visibility, trust models, user-facing surfaces and migration tooling followed."
           }
         }

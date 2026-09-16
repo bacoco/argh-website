@@ -166,11 +166,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Au changement d’équipe, seul ce qui est écrit permet de reprendre le plat.",
+            "cuisine": "Au changement d’équipe, seul ce qui est écrit permet de reprendre le plat. Le constat reste au passe.",
             "expert": "Un travail reprenable doit persister un état d’exécution structuré plutôt que dépendre d’une reconstruction depuis le texte du prompt."
           },
           "en": {
-            "kitchen": "At shift change, only what is written lets the next cook resume the dish.",
+            "kitchen": "At shift change, only what is written lets the next cook resume the dish. The finding remains at the pass.",
             "expert": "Resumable work must persist structured execution state rather than depend on reconstructing that state from prompt text."
           }
         }

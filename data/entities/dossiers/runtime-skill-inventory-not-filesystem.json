@@ -62,51 +62,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Le premier tri parcourt les étagères où les fiches sont censées se trouver.",
+            "cuisine": "Le premier tri parcourt les étagères où les fiches sont censées se trouver. Le relevé s’arrête là.",
             "expert": "Le premier nettoyeur parcourt les racines de skills configurées."
           },
           "en": {
-            "kitchen": "The first sweep goes along the shelves where the cards are supposed to be.",
+            "kitchen": "The first sweep goes along the shelves where the cards are supposed to be. The record stops there.",
             "expert": "The initial cleaner walked the configured skill roots."
           }
         },
         {
           "fr": {
-            "cuisine": "Il y trouve des doubles, des fiches que personne n’ouvre et la place qu’elles prennent au passe.",
+            "cuisine": "Il y trouve des doubles, des fiches que personne n’ouvre et la place qu’elles prennent au passe. Le relevé s’arrête là.",
             "expert": "Il y détecte des doublons, des fichiers inutilisés et une pression sur le budget de prompt."
           },
           "en": {
-            "kitchen": "It finds duplicates, cards nobody opens, and the room they take up at the pass.",
+            "kitchen": "It finds duplicates, cards nobody opens, and the room they take up at the pass. The record stops there.",
             "expert": "It surfaced duplicates, unused files and pressure on the prompt budget."
           }
         },
         {
           "fr": {
-            "cuisine": "Le travail suivant change de repère : on regarde ce que le commis a réellement sous les yeux.",
+            "cuisine": "Le travail suivant change de repère : on regarde ce que le commis a réellement sous les yeux. Le relevé s’arrête là.",
             "expert": "Le travail suivant déplace la source de vérité vers l’inventaire visible dans le prompt du modèle."
           },
           "en": {
-            "kitchen": "The next round of work changes its reference: look at what the cook truly has before them.",
+            "kitchen": "The next round of work changes its reference: look at what the cook truly has before them. The record stops there.",
             "expert": "Later work moved the source of truth to the inventory visible in the model’s prompt."
           }
         },
         {
           "fr": {
-            "cuisine": "Le tour des étagères devient un moyen d’expliquer l’écart, non plus une preuve que la fiche a été prise.",
+            "cuisine": "Le tour des étagères devient un moyen d’expliquer l’écart, non plus une preuve que la fiche a été prise. Le relevé s’arrête là.",
             "expert": "Le scan du filesystem devient un repli diagnostique, non une preuve de chargement."
           },
           "en": {
-            "kitchen": "Walking the shelves becomes a way to explain the gap, rather than proof that a card was picked up.",
+            "kitchen": "Walking the shelves becomes a way to explain the gap, rather than proof that a card was picked up. The record stops there.",
             "expert": "Filesystem scanning became a diagnostic fallback rather than proof of load."
           }
         },
         {
           "fr": {
-            "cuisine": "Des vérifications s’ajoutent pour les petits noms des fiches, leur ordre et la trace de leur usage.",
+            "cuisine": "Des vérifications s’ajoutent pour les petits noms des fiches, leur ordre et la trace de leur usage. Le relevé s’arrête là.",
             "expert": "Des tests sont ajoutés sur les aliases, l’ordre et les preuves d’usage."
           },
           "en": {
-            "kitchen": "Checks are added for card nicknames, their order, and the trace of their use.",
+            "kitchen": "Checks are added for card nicknames, their order, and the trace of their use. The record stops there.",
             "expert": "Tests were added for aliases, ordering and evidence of use."
           }
         }
@@ -206,11 +206,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "La fiche qui compte est celle devant le commis, non celle qui dort au garde-manger.",
+            "cuisine": "La fiche qui compte est celle devant le commis, non celle qui dort au garde-manger. Le relevé s’arrête là.",
             "expert": "La configuration qui compte est celle que le modèle voit."
           },
           "en": {
-            "kitchen": "The card that counts is the one before the cook, not the one asleep in the pantry.",
+            "kitchen": "The card that counts is the one before the cook, not the one asleep in the pantry. The record stops there.",
             "expert": "The configuration that matters is the one the model sees."
           }
         }

@@ -86,7 +86,7 @@
       "body": [
         {
           "fr": {
-            "cuisine": "L’adresse courante du tableau n’est pas l’adresse d’une assiette donnée. Tant qu’il n’y a qu’une table, la dernière écriture est toujours la bonne. Quand plusieurs tables se croisent, l’ordre d’arrivée décide de la livraison. Son origine ne suffit plus. Un service solitaire cache le défaut.",
+            "cuisine": "L’adresse courante du tableau n’est pas l’adresse d’une assiette donnée. Tant qu’il n’y a qu’une table, la dernière écriture est toujours la bonne. Quand plusieurs tables se croisent, la livraison suit l’ordre d’arrivée plutôt que son origine. Un service solitaire cache le défaut.",
             "expert": "Deux notions sont confondues : la destination courante et la destination d’un événement donné. Tant que la destination vit dans un emplacement global partagé, elle est une variable du processus et non une propriété du message ; sa valeur au moment de la livraison dépend de l’ordre d’arrivée des sessions, pas de l’origine de la demande. Le défaut reste invisible en usage mono-utilisateur, où le dernier écrivain est toujours le bon."
           },
           "en": {

@@ -62,51 +62,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "La commande atteint un choix réservé au client ; la brigade doit attendre sa réponse.",
+            "cuisine": "La commande atteint un choix réservé au client. La brigade doit donc attendre sa réponse.",
             "expert": "Le déroulement atteint une décision explicitement déléguée à un humain."
           },
           "en": {
-            "kitchen": "The order reaches a choice reserved for the guest, so the brigade must wait for an answer.",
+            "kitchen": "The order reaches a choice reserved for the guest. The brigade must therefore wait for an answer.",
             "expert": "The workflow reaches a decision that was explicitly delegated to a human."
           }
         },
         {
           "fr": {
-            "cuisine": "Le serveur ne rapporte aucun choix avant la sonnerie du minuteur.",
+            "cuisine": "Le minuteur finit par sonner. Le serveur n’a rapporté aucun choix.",
             "expert": "Aucune réponse n’arrive avant l’expiration du délai."
           },
           "en": {
-            "kitchen": "The waiter brings back no choice before the timer rings.",
+            "kitchen": "The timer eventually rings. The waiter has brought back no choice.",
             "expert": "No answer arrives before the timeout expires."
           }
         },
         {
           "fr": {
-            "cuisine": "La brigade prend alors une option toute seule, ou laisse l’option habituelle s’imposer, puis poursuit la préparation.",
+            "cuisine": "La brigade choisit alors toute seule ou laisse l’option habituelle s’imposer. Elle poursuit ensuite la préparation.",
             "expert": "Le système sélectionne un défaut, ou en laisse un s’appliquer implicitement, puis poursuit."
           },
           "en": {
-            "kitchen": "The brigade then chooses on its own, or lets the usual option take over, and keeps cooking.",
+            "kitchen": "The brigade then chooses on its own or lets the usual option take over. Cooking continues.",
             "expert": "The system picks a default, or lets one apply implicitly, and continues."
           }
         },
         {
           "fr": {
-            "cuisine": "Pour le client, la cuisine a franchi une porte qui exigeait son accord sans l’avoir reçu.",
+            "cuisine": "Le client n’a donné aucun accord. La cuisine a pourtant franchi la porte qui l’exigeait.",
             "expert": "Les utilisateurs ont rapporté l’effet pratique : un contrôle humain qui échoue en mode ouvert."
           },
           "en": {
-            "kitchen": "To the guest, the kitchen crossed a door that required permission without receiving it.",
+            "kitchen": "The guest gave no permission. Yet the kitchen crossed a door that required it.",
             "expert": "Users reported the practical effect: human oversight that fails open."
           }
         },
         {
           "fr": {
-            "cuisine": "La même confusion est apparue séparément dans plusieurs maisons.",
+            "cuisine": "La même confusion est apparue séparément dans plusieurs maisons. Rien ne montre qu’elles se soient copié une recette.",
             "expert": "Le même motif est apparu indépendamment dans plus d’un harnais."
           },
           "en": {
-            "kitchen": "The same confusion appeared separately in more than one house.",
+            "kitchen": "The same confusion appeared separately in more than one house. Nothing shows that those houses copied one recipe.",
             "expert": "The same pattern appeared independently in more than one harness."
           }
         }

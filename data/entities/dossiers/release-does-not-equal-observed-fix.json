@@ -65,51 +65,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Un défaut est repéré, puis la recette reçoit une correction à la main.",
+            "cuisine": "Un défaut est repéré. La recette reçoit ensuite une correction à la main.",
             "expert": "Un bug reçoit un correctif d’implémentation."
           },
           "en": {
-            "kitchen": "A fault is spotted, and the recipe receives a hand-written correction.",
+            "kitchen": "A fault is spotted. The recipe then receives a hand-written correction.",
             "expert": "A bug receives an implementation fix."
           }
         },
         {
           "fr": {
-            "cuisine": "La correction entre dans le livre de la maison ; à ce stade, beaucoup pensent l’affaire terminée.",
+            "cuisine": "La correction entre dans le livre de la maison. À ce stade, beaucoup pensent l’affaire terminée.",
             "expert": "Le changement est mergé et peut être marqué terminé à ce stade."
           },
           "en": {
-            "kitchen": "The correction enters the house book, and at that point many call the matter finished.",
+            "kitchen": "The correction enters the house book. At that point, many call the matter finished.",
             "expert": "The change merges and may be marked complete at that point."
           }
         },
         {
           "fr": {
-            "cuisine": "La carte suivante n’emporte pas forcément cette correction précise.",
+            "cuisine": "La carte suivante n’emporte pas forcément cette correction précise. Elle peut garder l’ancienne recette.",
             "expert": "Une release peut contenir ou non exactement ce correctif."
           },
           "en": {
-            "kitchen": "The next menu does not necessarily carry that exact correction.",
+            "kitchen": "The next menu does not necessarily carry that exact correction. It may keep the old recipe.",
             "expert": "A release may or may not contain that exact fix."
           }
         },
         {
           "fr": {
-            "cuisine": "Certains commis travaillent toujours d’après un ancien carnet, qui ne correspond plus au livre.",
+            "cuisine": "Certains commis travaillent toujours d’après un ancien carnet. Il ne correspond plus au livre.",
             "expert": "Les utilisateurs peuvent encore exécuter un artefact ancien, ou une copie installée différente de la source."
           },
           "en": {
-            "kitchen": "Some cooks still work from an old booklet that no longer matches the book.",
+            "kitchen": "Some cooks still work from an old booklet. It no longer matches the book.",
             "expert": "Users may still run an older artifact, or an installed copy that differs from source."
           }
         },
         {
           "fr": {
-            "cuisine": "Seule l’assiette arrivée à table prouve la reprise ; un mauvais service peut ensuite rouvrir l’affaire.",
+            "cuisine": "Seule l’assiette arrivée à table prouve la reprise. Un mauvais service peut ensuite rouvrir l’affaire.",
             "expert": "Seul le comportement runtime établit la récupération observée, et une régression peut rouvrir la lineage."
           },
           "en": {
-            "kitchen": "Only the plate that reaches the table proves recovery; one bad service can then reopen the matter.",
+            "kitchen": "Only the plate that reaches the table proves recovery. One bad service can then reopen the matter.",
             "expert": "Only runtime behavior establishes observed recovery, and a regression can reopen the lineage."
           }
         }
@@ -157,11 +157,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Distinguer chaque étape, du livre jusqu’à la table, et garder la possibilité de rouvrir l’affaire après l’impression de la carte.",
+            "cuisine": "Distinguez chaque étape, du livre jusqu’à la table. Gardez la possibilité de rouvrir l’affaire après l’impression de la carte.",
             "expert": "Représenter explicitement chaque état de livraison et autoriser la réouverture d’une lineage après release."
           },
           "en": {
-            "kitchen": "Separate every step, from the book to the table, and keep the ability to reopen the matter after the menu is printed.",
+            "kitchen": "Separate every step, from the book to the table. Keep the ability to reopen the matter after the menu is printed.",
             "expert": "Represent every delivery state explicitly and allow a lineage to reopen after release."
           }
         }
@@ -183,11 +183,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "La distinction n’est plus une exception : elle est devenue une règle pour toutes les maisons.",
+            "cuisine": "La distinction n’est plus une exception. Elle est devenue une règle pour toutes les maisons.",
             "expert": "C’est désormais un invariant central d’ARGH, et non une observation spécifique à un produit."
           },
           "en": {
-            "kitchen": "The distinction is no longer an exception: it has become a rule for every house.",
+            "kitchen": "The distinction is no longer an exception. It has become a rule for every house.",
             "expert": "This is now a core ARGH invariant rather than a product-specific observation."
           }
         }
@@ -209,11 +209,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Tant que le plat n’a pas été mangé, la correction reste une rature dans le livre.",
+            "cuisine": "Tant que le plat n’a pas été mangé, la correction reste une rature. Elle demeure dans le livre.",
             "expert": "« Fixed » n’est pas un état unique."
           },
           "en": {
-            "kitchen": "Until the plate has been eaten, the correction remains a scratch in the book.",
+            "kitchen": "Until the plate has been eaten, the correction remains a scratch. It stays in the book.",
             "expert": "Fixed is not a single state."
           }
         }

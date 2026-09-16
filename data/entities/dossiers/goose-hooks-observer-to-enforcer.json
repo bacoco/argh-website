@@ -61,31 +61,31 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Au début, le commis du passe note les départs sans jamais retenir une assiette.",
+            "cuisine": "Au début, le commis du passe note seulement les départs. Il ne retient jamais une assiette.",
             "expert": "Première étape : observation seule des événements du cycle de vie, sans interruption de l’exécution."
           },
           "en": {
-            "kitchen": "At first, the pass clerk records departures and never holds a plate.",
+            "kitchen": "At first, the pass clerk only records departures. He never holds a plate.",
             "expert": "Stage one is pure observation: lifecycle events are read, execution is never interrupted."
           }
         },
         {
           "fr": {
-            "cuisine": "Ensuite, la maison l’autorise à dire non avant qu’une assiette quitte le passe.",
+            "cuisine": "Ensuite, la maison lui confie un vrai pouvoir. Il peut dire non avant qu’une assiette quitte le passe.",
             "expert": "PreToolUse acquiert ensuite une sémantique de blocage explicite, applicable avant l’appel d’outil."
           },
           "en": {
-            "kitchen": "Then the house allows him to say no before a plate leaves the pass.",
+            "kitchen": "Then the house gives him real authority. He may say no before a plate leaves the pass.",
             "expert": "PreToolUse then gained explicit blocking semantics, applied ahead of the tool call."
           }
         },
         {
           "fr": {
-            "cuisine": "Ce droit de retenir les plats est réellement utilisé pendant le service ; il ne reste pas dans un cahier de projets.",
+            "cuisine": "Ce droit de retenir les plats est réellement utilisé pendant le service. Il ne reste pas dans un cahier de projets.",
             "expert": "Ce comportement est livré dans le produit actif, et non resté à l’état de proposition."
           },
           "en": {
-            "kitchen": "The right to hold plates is used during real service; it did not remain in a planning book.",
+            "kitchen": "The right to hold plates is used during real service. It did not remain in a planning book.",
             "expert": "That behavior is shipped in the active product rather than left as a proposal."
           }
         },
@@ -101,11 +101,11 @@
         },
         {
           "fr": {
-            "cuisine": "La maison écrit alors deux lignes différentes : « plat refusé » et « garde muet ».",
+            "cuisine": "La maison écrit alors deux lignes différentes. L’une dit « plat refusé », l’autre « garde muet ».",
             "expert": "La politique d’échec devient configurable et distingue explicitement un refus de politique d’une panne du hook."
           },
           "en": {
-            "kitchen": "The house then writes two different lines: “plate refused” and “guard silent.”",
+            "kitchen": "The house then writes two different lines. One says “plate refused,” the other “guard silent.”",
             "expert": "Failure policy became configurable, and it now separates a denial issued by policy from an outright hook failure."
           }
         }

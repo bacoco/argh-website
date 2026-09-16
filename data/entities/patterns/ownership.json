@@ -38,11 +38,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Dans trois incidents, personne ne détenait vraiment le plat ou la ressource au moment décisif. Arrêter l’attente ne coupait pas toujours le feu déjà lancé. Un livreur distant pouvait modifier le passe sans que la maison le retire. Une adresse commune pouvait envoyer l’assiette vers la dernière table. Il manquait chaque fois un responsable nommé.",
+            "cuisine": "Dans trois incidents, personne ne détenait vraiment le plat ou la ressource au moment décisif. Arrêter l’attente ne coupait pas toujours le feu déjà lancé. Un livreur distant pouvait modifier le passe sans que la maison le retire. Une adresse commune pouvait envoyer l’assiette vers la dernière table, sans responsable nommé.",
             "expert": "Trois incidents distincts exposent la même absence : aucune identité nommée ne détenait la ressource ou le travail au moment décisif. Dans LangGraph, un timeout à la frontière de l’appelant ne terminait pas nécessairement le travail sous-jacent, laissant une tentative de remplacement recouvrir l’exécution d’origine. Dans l’écosystème MCP, un état de connexion global et mutable permettait à une session ultérieure de remplacer la connexion courante, rendant possible une livraison croisée. Dans Claude Code, des connecteurs distants pouvaient apparaître dans le CLI local, dupliquer des serveurs configurés localement et contourner la sémantique de suppression locale."
           },
           "en": {
-            "kitchen": "Across three incidents, nobody truly held the plate or resource at the deciding moment. Stopping the wait did not always put out the fire already started. A distant delivery could alter the pass without the house removing it. One shared address could send a plate to the latest table. Each time, a named owner was missing.",
+            "kitchen": "Across three incidents, nobody truly held the plate or resource at the deciding moment. Stopping the wait did not always put out the fire already started. A distant delivery could alter the pass without the house removing it. One shared address could send a plate to the latest table, with no named owner.",
             "expert": "Three separate incidents expose one missing element: no named identity held the resource or the work at the moment that mattered. In LangGraph a caller-side timeout did not necessarily terminate the underlying work, so a replacement attempt could overlap the original run. In the MCP ecosystem, shared mutable connection state let a later session displace the currently global connection, making cross-session delivery possible. In Claude Code, remote connectors could surface in the local CLI, duplicate locally configured servers and bypass the local deletion semantics users expected."
           }
         }
@@ -116,7 +116,7 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Une heure limite doit éteindre ou isoler le feu qu’elle détient et montrer clairement sa fin avant qu’un autre plat parte. Le nom de la table et de la commande voyage avec l’assiette jusqu’à la livraison. Chaque plat du passe affiche sa source, son responsable et sa manière de repartir. Les doublons sont rapprochés. Les livraisons lointaines sont visibles.",
+            "cuisine": "Une heure limite doit éteindre ou isoler le feu qu’elle détient et montrer clairement sa fin avant qu’un autre plat parte. Le nom de la table et de la commande voyage avec l’assiette jusqu’à la livraison. Chaque plat du passe affiche sa source, son responsable et sa manière de repartir. Les doublons sont rapprochés et les livraisons lointaines deviennent visibles.",
             "expert": "Une deadline doit terminer ou fencer le travail qu’elle possède, puis exposer un état terminal observable ; un retry ne part qu’après lecture de cet état, jamais sur la seule expiration de l’attente. Une identité de corrélation session et utilisateur immuable voyage avec l’événement sur l’intégralité du chemin de livraison, aucune étape ne redemandant qui est courant. Chaque outil runtime expose sa source, son propriétaire et son état de révocation ; les services équivalents sont dédupliqués et l’injection distante est rendue explicite."
           },
           "en": {

@@ -63,51 +63,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Pendant un long service, les bons et les échanges s’empilent au passe.",
+            "cuisine": "Pendant un long service, les bons s’empilent au passe. Les échanges entre commis s’ajoutent encore à la pile.",
             "expert": "Une tâche de longue durée accumule un historique conversationnel important."
           },
           "en": {
-            "kitchen": "During a long service, tickets and exchanges pile up at the pass.",
+            "kitchen": "During a long service, tickets pile up at the pass. Exchanges between cooks add even more paper.",
             "expert": "A long-running task builds up substantial conversation history."
           }
         },
         {
           "fr": {
-            "cuisine": "Pour dégager le comptoir, la brigade raconte la soirée sur une seule feuille puis range les anciens bons.",
+            "cuisine": "Pour dégager le comptoir, la brigade résume la soirée sur une feuille. Elle range ensuite les anciens bons.",
             "expert": "La compaction remplace cet historique par un résumé."
           },
           "en": {
-            "kitchen": "To clear the counter, the brigade writes the evening on one sheet and stores the old tickets.",
+            "kitchen": "To clear the counter, the brigade writes the evening on one sheet. The old tickets are then stored away.",
             "expert": "Compaction replaces that history with a summary."
           }
         },
         {
           "fr": {
-            "cuisine": "Le commis qui reprend peut expliquer exactement tout ce qui s’est déjà passé.",
+            "cuisine": "Un nouveau commis reprend le poste. Il peut expliquer exactement tout ce qui s’est déjà passé.",
             "expert": "Le modèle repris conserve le contexte narratif et reste juste sur ce qui s’est passé."
           },
           "en": {
-            "kitchen": "The cook taking over can explain exactly everything that has already happened.",
+            "kitchen": "A new cook takes over the station. He can explain exactly everything that has already happened.",
             "expert": "The resumed model keeps the narrative context and stays accurate about what happened."
           }
         },
         {
           "fr": {
-            "cuisine": "Pourtant, la feuille peut oublier les tables encore en attente et la règle qui dira qu’elles sont enfin servies.",
+            "cuisine": "Pourtant, la feuille peut oublier les tables encore en attente. Elle peut aussi perdre la règle indiquant qu’elles sont enfin servies.",
             "expert": "Les obligations ouvertes et les critères de fin peuvent ne pas survivre au résumé."
           },
           "en": {
-            "kitchen": "Yet the sheet may omit the tables still waiting and the rule for deciding when they are finally served.",
+            "kitchen": "Yet the sheet may omit the tables still waiting. It may also lose the rule for deciding when they are finally served.",
             "expert": "Open obligations and completion criteria may not survive the summary."
           }
         },
         {
           "fr": {
-            "cuisine": "Le commis poursuit alors avec confiance, fidèle au récit passé mais éloigné des commandes qu’il devait terminer.",
+            "cuisine": "Le commis poursuit alors avec confiance. Il reste fidèle au récit passé, mais s’éloigne des commandes qu’il devait terminer.",
             "expert": "L’agent devient cohérent sur le passé tout en dérivant de la mission en cours."
           },
           "en": {
-            "kitchen": "The cook continues confidently, faithful to the past story but drifting away from the orders still owed.",
+            "kitchen": "The cook continues confidently. He remains faithful to the past story while drifting away from the orders still owed.",
             "expert": "The agent ends up coherent about the past while drifting from the mission it is on."
           }
         }
@@ -181,11 +181,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Dans toute cuisine, connaître parfaitement la soirée passée ne garantit pas que les bons encore ouverts soient restés au mur.",
+            "cuisine": "Une brigade peut connaître parfaitement la soirée passée. Cela ne garantit pas que les bons encore ouverts soient restés au mur.",
             "expert": "Le cas constitue une leçon de conception mémoire valable au-delà d’un seul système."
           },
           "en": {
-            "kitchen": "In any kitchen, knowing the past evening perfectly does not guarantee that open tickets remain on the wall.",
+            "kitchen": "A brigade may remember the past evening perfectly. That does not guarantee that open tickets remain on the wall.",
             "expert": "The case stands as a memory design lesson that carries beyond any single system."
           }
         }
@@ -207,11 +207,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Le cahier peut raccourcir l’histoire, mais le bon d’une table en attente doit rester intact jusqu’à l’assiette.",
+            "cuisine": "Le cahier peut raccourcir l’histoire du service. Le bon d’une table en attente doit pourtant rester intact jusqu’à l’assiette.",
             "expert": "La mémoire n’est pas la mission."
           },
           "en": {
-            "kitchen": "The book may shorten the story, but a waiting table’s ticket must remain intact until its plate arrives.",
+            "kitchen": "The book may shorten the story of service. A waiting table’s ticket must still remain intact until its plate arrives.",
             "expert": "Memory is not mission."
           }
         }

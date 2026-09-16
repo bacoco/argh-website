@@ -67,51 +67,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "La première maison annonce clairement son dernier service, sa date et son choix d’arrêter.",
+            "cuisine": "La première maison annonce clairement son dernier service. Elle donne sa date et son choix d’arrêter.",
             "expert": "Roo illustre un sunset stratégique explicite et annoncé."
           },
           "en": {
-            "kitchen": "The first house clearly announces its final service, its date, and its choice to stop.",
+            "kitchen": "The first house clearly announces its final service. It gives the date and its choice to stop.",
             "expert": "Roo demonstrates an explicit, announced strategic sunset."
           }
         },
         {
           "fr": {
-            "cuisine": "La deuxième ouvre une nouvelle salle tout en gardant l’ancienne propre et utilisable.",
+            "cuisine": "La deuxième ouvre une nouvelle salle. Elle garde l’ancienne propre et utilisable.",
             "expert": "AutoGen illustre une supersession assortie d’une maintenance continue."
           },
           "en": {
-            "kitchen": "The second opens a new dining room while keeping the old one clean and usable.",
+            "kitchen": "The second opens a new dining room. It keeps the old one clean and usable.",
             "expert": "AutoGen demonstrates supersession alongside continued maintenance."
           }
         },
         {
           "fr": {
-            "cuisine": "Dans la troisième, le menu reste consultable derrière la vitre, mais la brigade ne prend plus de commande.",
+            "cuisine": "Dans la troisième, le menu reste consultable derrière la vitre. La brigade ne prend plus de commande.",
             "expert": "Continue illustre un état read-only, sans recourir au flag d’archive."
           },
           "en": {
-            "kitchen": "At the third, the menu stays readable behind glass, but the brigade takes no new order.",
+            "kitchen": "At the third, the menu stays readable behind glass. The brigade takes no new order.",
             "expert": "Continue demonstrates a read-only state without relying on archive metadata."
           }
         },
         {
           "fr": {
-            "cuisine": "La quatrième a fermé définitivement sans laisser de raison établie dans son cahier.",
+            "cuisine": "La quatrième a fermé définitivement. Son cahier ne laisse aucune raison établie.",
             "expert": "TaskWeaver illustre une archive dont la cause reste inconnue."
           },
           "en": {
-            "kitchen": "The fourth closed for good without leaving an established reason in its book.",
+            "kitchen": "The fourth closed for good. Its book leaves no established reason.",
             "expert": "TaskWeaver demonstrates an archive whose cause remains unknown."
           }
         },
         {
           "fr": {
-            "cuisine": "La cinquième change d’enseigne et d’adresse sans cesser de servir ; la sixième sert beaucoup moins sans annoncer de fermeture.",
+            "cuisine": "La cinquième change d’enseigne et d’adresse sans cesser de servir. La sixième sert beaucoup moins sans annoncer de fermeture.",
             "expert": "SWE-agent illustre un changement d’identité sans mort, et Aider un fort ralentissement sans déclaration de fin."
           },
           "en": {
-            "kitchen": "A fifth changes sign and address without stopping service; a sixth serves far less without announcing closure.",
+            "kitchen": "A fifth changes sign and address without stopping service. A sixth serves far less without announcing closure.",
             "expert": "SWE-agent demonstrates an identity move without death; Aider demonstrates severe slowdown with no declared end."
           }
         }
@@ -159,7 +159,7 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Au lieu de compter les bruits, le carnet note les changements : croissance, nouvelle carte, simple entretien, relève, ralentissement, fin annoncée, fermeture ou déménagement. Chaque étape garde sa raison lorsqu’elle est connue.",
+            "cuisine": "Au lieu de compter les bruits, le carnet note les changements. Il note croissance, nouvelle carte, entretien, relève, ralentissement, fin annoncée, fermeture ou déménagement. Chaque étape garde sa raison lorsqu’elle est connue.",
             "expert": "Suivre la trajectoire comme une suite de transitions nommées : croissance, pivot, maintenance, successeur, ralentissement, sunset, archive, transfert, continuation. Chaque transition porte une cause, ce que ne conserve aucune métrique d’activité agrégée."
           },
           "en": {

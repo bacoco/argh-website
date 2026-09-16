@@ -46,11 +46,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "La fin d’une maison peut être un arrêt choisi ou une cuisine sans avenir. Elle peut aussi passer à une maison voisine ou laisser une vitrine en lecture seule. L’archivage, le pivot retiré et le changement d’adresse sont d’autres fins possibles. Ces états se sont révélés incompatibles, non les degrés d’une même échelle. Chaque forme entraîne une continuité différente pour le client.",
+            "cuisine": "Une maison peut cesser par choix, sans avenir, en passant ailleurs ou en laissant une vitrine en lecture seule. L’archivage, le pivot retiré et le changement d’adresse sont d’autres fins possibles. Ces états se sont révélés incompatibles, non les degrés d’une même échelle. Chaque forme entraîne une continuité différente pour le client.",
             "expert": "La mortalité d’un projet recouvre des états distincts : arrêt volontaire, maintenance sans avenir stratégique, supersession par un successeur, read-only, archivage à cause inconnue, pivot déprécié, déplacement d’identité de dépôt et ralentissement marqué. La reconstruction historique a produit ces formes comme incompatibles entre elles, et non comme les degrés d’une même échelle. Roo Code, AutoGen, Continue, CodeGate, TaskWeaver et SWE-agent occupent chacun une case différente."
           },
           "en": {
-            "kitchen": "A house may end through a chosen stop or a kitchen without a future. It may move to a neighbouring house or leave a read-only window. An archive, a withdrawn turn, and a new address are other possible endings. These states proved incompatible, not degrees on one scale. Each form leaves a different continuity for diners.",
+            "kitchen": "A house may end by choice, without a future, by moving elsewhere, or by leaving a read-only window. An archive, a withdrawn turn, and a new address are other possible endings. These states proved incompatible, not degrees on one scale. Each form leaves a different continuity for diners.",
             "expert": "Project mortality covers distinct states: deliberate sunset, maintenance with no strategic future, supersession by a successor, read-only, archival with unknown cause, a deprecated pivot, a repository identity move, and marked slowdown. Historical reconstruction produced these as mutually incompatible forms rather than as degrees on one scale. Roo Code, AutoGen, Continue, CodeGate, TaskWeaver and SWE-agent each sit in a different one."
           }
         }

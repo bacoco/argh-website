@@ -165,11 +165,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Le plateau doit porter sa table, même quand toutes les cuisines partagent le même comptoir.",
+            "cuisine": "Le plateau doit porter sa table, même quand toutes les cuisines partagent le même comptoir. Le constat reste au passe.",
             "expert": "La propriété doit voyager avec l’événement. Un format commun se partage ; une politique d’accès reste locale."
           },
           "en": {
-            "kitchen": "A tray must carry its table, even when every kitchen shares the same counter.",
+            "kitchen": "A tray must carry its table, even when every kitchen shares the same counter. The finding remains at the pass.",
             "expert": "Ownership must travel with the event. A common interchange format can be shared; an access policy stays local."
           }
         }

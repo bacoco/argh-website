@@ -62,51 +62,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "La brigade classe ses fiches de recettes dans des tiroirs, parfois à l’intérieur d’autres tiroirs.",
+            "cuisine": "La brigade classe ses fiches de recettes dans des tiroirs. Certains se trouvent à l’intérieur d’autres tiroirs.",
             "expert": "Les utilisateurs organisent leurs skills en arborescences imbriquées."
           },
           "en": {
-            "kitchen": "The brigade sorts recipe cards into drawers, sometimes inside other drawers.",
+            "kitchen": "The brigade sorts recipe cards into drawers. Some drawers sit inside other drawers.",
             "expert": "Users arranged their skills in nested directory structures."
           }
         },
         {
           "fr": {
-            "cuisine": "À l’ouverture, le commis vérifie seulement le premier rang et ignore les compartiments plus profonds.",
+            "cuisine": "À l’ouverture, le commis vérifie seulement le premier rang. Il ignore les compartiments plus profonds.",
             "expert": "La découverte au démarrage ne descend pas dans ces niveaux et les ignore."
           },
           "en": {
-            "kitchen": "At opening time, the cook checks only the first row and misses the deeper compartments.",
+            "kitchen": "At opening time, the cook checks only the first row. He misses the deeper compartments.",
             "expert": "Runtime discovery did not descend into those levels and skipped them."
           }
         },
         {
           "fr": {
-            "cuisine": "La maison ajoute alors une tournée matinale qui sort ces fiches oubliées et les pose près des fourneaux.",
+            "cuisine": "La maison ajoute alors une tournée matinale. Elle sort les fiches oubliées et les pose près des fourneaux.",
             "expert": "Des hooks de démarrage sont utilisés pour injecter ou exposer les skills manquants."
           },
           "en": {
-            "kitchen": "The house adds a morning round that fetches the forgotten cards and lays them by the stoves.",
+            "kitchen": "The house adds a morning round. It fetches the forgotten cards and lays them by the stoves.",
             "expert": "Startup hooks were used to inject or expose the missing skills."
           }
         },
         {
           "fr": {
-            "cuisine": "Plus tard, la procédure d’ouverture change et cette tournée ajoutée ne trouve plus son ancien passage.",
+            "cuisine": "Plus tard, la procédure d’ouverture change. La tournée ajoutée ne trouve plus son ancien passage.",
             "expert": "Une évolution ultérieure modifie le comportement de démarrage."
           },
           "en": {
-            "kitchen": "Later, the opening routine changes, and the added round can no longer use its old path.",
+            "kitchen": "Later, the opening routine changes. The added round can no longer use its old path.",
             "expert": "A later upgrade changed startup behaviour."
           }
         },
         {
           "fr": {
-            "cuisine": "Aucune recette n’a été déplacée ; seule la façon improvisée de les sortir a cessé de marcher.",
+            "cuisine": "Aucune recette n’a été déplacée. Seule la façon improvisée de les sortir a cessé de marcher.",
             "expert": "Le contournement casse alors que les fichiers de skills sont restés inchangés."
           },
           "en": {
-            "kitchen": "No recipe moved; only the improvised way of fetching the cards stopped working.",
+            "kitchen": "No recipe moved. Only the improvised way of fetching the cards stopped working.",
             "expert": "The workaround failed even though no skill file had changed."
           }
         }

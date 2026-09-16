@@ -67,51 +67,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Plusieurs cuisines choisissent le même format de caisse pour recevoir leurs ustensiles.",
+            "cuisine": "Plusieurs cuisines choisissent le même format de caisse. Elles l’utilisent pour recevoir leurs ustensiles.",
             "expert": "Plusieurs harnais ont adopté un protocole d’outils commun."
           },
           "en": {
-            "kitchen": "Several kitchens choose the same crate format for receiving utensils.",
+            "kitchen": "Several kitchens choose the same crate format. They use it to receive utensils.",
             "expert": "Several harnesses adopted one common tool protocol."
           }
         },
         {
           "fr": {
-            "cuisine": "Le fournisseur peut alors préparer un seul emballage et le livrer dans toutes ces maisons.",
+            "cuisine": "Le fournisseur prépare alors un seul emballage. Il peut le livrer dans toutes ces maisons.",
             "expert": "L’intégration est devenue plus simple et plus portable d’un produit à l’autre."
           },
           "en": {
-            "kitchen": "A supplier can then prepare one package and deliver it to all those houses.",
+            "kitchen": "A supplier can then prepare one package. That same box can be delivered to every house.",
             "expert": "Integration became simpler and more portable across products."
           }
         },
         {
           "fr": {
-            "cuisine": "Chaque chef conserve pourtant sa propre liste de livreurs admis à la porte.",
+            "cuisine": "Chaque chef conserve pourtant sa propre liste. Elle nomme les livreurs admis à la porte.",
             "expert": "Chaque harnais a continué de décider comment les serveurs sont découverts et à quelles conditions ils sont approuvés."
           },
           "en": {
-            "kitchen": "Each chef still keeps a separate list of delivery people allowed through the door.",
+            "kitchen": "Each chef still keeps a separate list. It names the delivery people allowed through the door.",
             "expert": "Each harness still decided how servers get discovered and on what terms they are trusted."
           }
         },
         {
           "fr": {
-            "cuisine": "Selon la maison, le chef donne son accord différemment et à un autre moment du service.",
+            "cuisine": "Chaque maison demande l’accord autrement. Le chef ne le donne pas toujours au même moment du service.",
             "expert": "Les invites de permission et l’intégration avec les hooks ont divergé d’un produit à l’autre."
           },
           "en": {
-            "kitchen": "Each house asks its chef for approval differently and at a different moment in service.",
+            "kitchen": "Each house asks its chef for approval differently. The decision also comes at a different moment in service.",
             "expert": "Permission prompts and hook integration diverged product by product."
           }
         },
         {
           "fr": {
-            "cuisine": "Les cartons se ressemblent partout ; les règles pour franchir le seuil restent propres à chaque cuisine.",
+            "cuisine": "Les cartons se ressemblent partout. Les règles pour franchir le seuil restent propres à chaque cuisine.",
             "expert": "L’écosystème a convergé sur le transport tout en divergeant sur les sémantiques de politique."
           },
           "en": {
-            "kitchen": "The boxes look alike everywhere, while the rules at the threshold remain different in every kitchen.",
+            "kitchen": "The boxes look alike everywhere. The rules at the threshold remain different in every kitchen.",
             "expert": "The ecosystem converged on transport while diverging on policy semantics."
           }
         }
@@ -211,11 +211,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Savoir qu’un carton passe par la porte ne dit jamais quel livreur est autorisé à la franchir.",
+            "cuisine": "Un carton peut passer parfaitement par la porte. Cela ne dit jamais quel livreur est autorisé à la franchir.",
             "expert": "Un format de transport commun ne crée pas une frontière de confiance commune."
           },
           "en": {
-            "kitchen": "Knowing that a box fits through the door never tells the chef which delivery person may enter.",
+            "kitchen": "A box may fit perfectly through the door. That never tells the chef which delivery person may enter.",
             "expert": "A common wire format does not create a common trust boundary."
           }
         }

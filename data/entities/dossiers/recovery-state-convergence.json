@@ -66,51 +66,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Au départ, le commis revenait seulement avec le cahier racontant les échanges précédents.",
+            "cuisine": "Au départ, le commis revenait seulement avec le cahier. Il y lisait les échanges précédents.",
             "expert": "Les premières implémentations de reprise se limitent à l’historique conversationnel."
           },
           "en": {
-            "kitchen": "At first, the returning cook received only the pad containing earlier exchanges.",
+            "kitchen": "At first, the returning cook received only the pad. It held the earlier exchanges.",
             "expert": "Early resume implementations covered conversation history only."
           }
         },
         {
           "fr": {
-            "cuisine": "La brigade constate ensuite que le fournisseur, les outils et le billot peuvent être différents à la reprise.",
+            "cuisine": "La brigade constate ensuite que le fournisseur peut avoir changé. Les outils et le billot peuvent aussi être différents.",
             "expert": "Les utilisateurs remontent ensuite des incompatibilités de provider, d’outils et de workspace après reprise."
           },
           "en": {
-            "kitchen": "The brigade then finds that the supplier, utensils, and bench may differ after resuming.",
+            "kitchen": "The brigade then finds that the supplier may have changed. The utensils and bench may differ as well.",
             "expert": "Users then reported provider, tool and workspace mismatches after a resume."
           }
         },
         {
           "fr": {
-            "cuisine": "Remettre le cahier à une ancienne page ne replace pas les produits et les casseroles dans leur ancien état.",
+            "cuisine": "Revenir à une ancienne page ne replace pas les produits. Les casseroles ne retrouvent pas non plus leur ancien état.",
             "expert": "Le rewind met au jour des désynchronisations entre historique de conversation et système de fichiers."
           },
           "en": {
-            "kitchen": "Turning the pad back to an earlier page does not return produce and pans to their earlier state.",
+            "kitchen": "Turning the pad back to an earlier page does not return the produce. The pans do not regain their earlier state either.",
             "expert": "Rewind exposed splits between conversation history and the filesystem."
           }
         },
         {
           "fr": {
-            "cuisine": "Peu à peu, les maisons préparent des billots séparés et des fiches permettant de reprendre exactement au bon poste.",
+            "cuisine": "Peu à peu, les maisons préparent des billots séparés. Elles ajoutent des fiches pour reprendre exactement au bon poste.",
             "expert": "Worktrees et checkpoints entrent progressivement dans le runtime lui-même."
           },
           "en": {
-            "kitchen": "Little by little, houses prepare separate benches and cards that resume work at the exact station.",
+            "kitchen": "Little by little, houses prepare separate benches. They add cards to resume work at the exact station.",
             "expert": "Worktrees and checkpoints began moving into the runtime itself."
           }
         },
         {
           "fr": {
-            "cuisine": "La nouvelle fiche conserve la commande restante et l’identité du poste même après une interruption.",
+            "cuisine": "La nouvelle fiche conserve la commande restante. Elle garde aussi l’identité du poste après une interruption.",
             "expert": "Le modèle émergent traite la mission et l’identité d’exécution comme un état structuré durable."
           },
           "en": {
-            "kitchen": "The new card keeps the remaining order and the station’s identity even after an interruption.",
+            "kitchen": "The new card keeps the remaining order. It also keeps the station’s identity after an interruption.",
             "expert": "The emerging model treats mission and execution identity as durable structured state."
           }
         }
@@ -158,11 +158,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "À côté du récit, la brigade garde une fiche séparée : commande à terminer, billot, fournisseur, produits choisis, outils permis et travail encore dû.",
+            "cuisine": "À côté du récit, la brigade garde une fiche séparée. Elle indique la commande, le billot, le fournisseur, les produits, les outils permis et le travail dû.",
             "expert": "Persister mission, workspace, provider et modèle, outils, permissions et obligations ouvertes aux côtés de l’état conversationnel."
           },
           "en": {
-            "kitchen": "Beside the story, the brigade keeps a separate card: order to finish, bench, supplier, chosen goods, allowed utensils, and work still owed.",
+            "kitchen": "Beside the story, the brigade keeps a separate card. It lists the unfinished order, bench, supplier, chosen goods, allowed utensils, and work still owed.",
             "expert": "Persist mission, workspace, provider and model, tool surface, permissions and open obligations alongside conversation state."
           }
         }

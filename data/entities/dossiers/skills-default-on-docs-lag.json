@@ -62,51 +62,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Au début, la fiche est proposée comme un essai : qui la veut la prend.",
+            "cuisine": "Au début, la fiche est proposée comme un essai : qui la veut la prend. Le relevé s’arrête là.",
             "expert": "Les skills commencent comme une capacité expérimentale."
           },
           "en": {
-            "kitchen": "At first, the card is offered as a trial: take it if you want it.",
+            "kitchen": "At first, the card is offered as a trial: take it if you want it. The record stops there.",
             "expert": "Skills began as an experimental capability."
           }
         },
         {
           "fr": {
-            "cuisine": "Une carte interne annonce qu’on va les servir plus largement avant que le nom change pour le client.",
+            "cuisine": "Une carte interne annonce qu’on va les servir plus largement avant que le nom change pour le client. Le relevé s’arrête là.",
             "expert": "Une roadmap interne suit leur adoption plus large."
           },
           "en": {
-            "kitchen": "An internal plan says they will be served more widely before the wording changes for the guest.",
+            "kitchen": "An internal plan says they will be served more widely before the wording changes for the guest. The record stops there.",
             "expert": "An internal roadmap tracked broader adoption."
           }
         },
         {
           "fr": {
-            "cuisine": "La recette devient le réglage habituel du service, tandis que son ancien nom continue de circuler.",
+            "cuisine": "La recette devient le réglage habituel du service, tandis que son ancien nom continue de circuler. Le relevé s’arrête là.",
             "expert": "La fonctionnalité est promue et activée par défaut."
           },
           "en": {
-            "kitchen": "The recipe becomes the usual setting for service, while its old name keeps doing the rounds.",
+            "kitchen": "The recipe becomes the usual setting for service, while its old name keeps doing the rounds. The record stops there.",
             "expert": "The feature was promoted and enabled by default."
           }
         },
         {
           "fr": {
-            "cuisine": "Les noms des réglages quittent peu à peu le vocabulaire de l’essai pour désigner ce qui tient.",
+            "cuisine": "Les noms des réglages quittent peu à peu le vocabulaire de l’essai pour désigner ce qui tient. Le relevé s’arrête là.",
             "expert": "Les noms de configuration passent d’une sémantique expérimentale à une sémantique stable."
           },
           "en": {
-            "kitchen": "The names on the dials slowly leave the language of trial and start naming what holds.",
+            "kitchen": "The names on the dials slowly leave the language of trial and start naming what holds. The record stops there.",
             "expert": "Configuration names moved from experimental to stable semantics."
           }
         },
         {
           "fr": {
-            "cuisine": "Le classeur garde volontairement du retard pour ne pas gêner le travail de ceux qui n’ont pas suivi.",
+            "cuisine": "Le classeur garde volontairement du retard pour ne pas gêner le travail de ceux qui n’ont pas suivi. Le relevé s’arrête là.",
             "expert": "La documentation reste volontairement en retard pour ne pas casser les utilisateurs d’anciennes versions."
           },
           "en": {
-            "kitchen": "The binder deliberately lags so as not to disrupt the work of those who have not moved over.",
+            "kitchen": "The binder deliberately lags so as not to disrupt the work of those who have not moved over. The record stops there.",
             "expert": "Documentation intentionally lagged so as not to break users on older versions."
           }
         }
@@ -206,11 +206,11 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Quand le réglage habituel change, le classeur doit dire à partir de quelle génération il est servi.",
+            "cuisine": "Quand le réglage habituel change, le classeur doit dire à partir de quelle génération il est servi. Le relevé s’arrête là.",
             "expert": "Un changement de défaut exige une documentation consciente des versions."
           },
           "en": {
-            "kitchen": "When the house changes its usual setting, the binder must say from which generation that holds.",
+            "kitchen": "When the house changes its usual setting, the binder must say from which generation that holds. The record stops there.",
             "expert": "A default change demands version-aware documentation."
           }
         }

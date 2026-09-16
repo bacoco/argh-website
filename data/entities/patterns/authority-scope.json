@@ -60,7 +60,7 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Le portier répondait bien à « peut-on fermer ? ». Sa consigne pouvait aussi répondre à « peut-on cuisiner ? ». Ces deux décisions n’avaient jamais été distinguées sur son billet.",
+            "cuisine": "Le portier répondait bien à la demande de fermer. Sa consigne pouvait aussi décider si l’on cuisinait. Ces deux décisions n’avaient jamais été séparées sur son billet.",
             "expert": "Le signal est un contrôle qui répond à une question qu’on ne lui a pas posée : une demande de plan seulement revient exécutée. L’objectif du contrôle est déclaré, son domaine ne l’est pas, et la même instruction façonne plus d’une dimension du comportement. Persistance et autorité n’y sont pas séparées."
           },
           "en": {

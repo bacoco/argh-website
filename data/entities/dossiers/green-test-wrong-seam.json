@@ -62,51 +62,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Au premier poste, le commis prépare fidèlement tous les ingrédients demandés.",
+            "cuisine": "Au premier poste, le commis rassemble tous les ingrédients demandés. Sa préparation respecte fidèlement la commande.",
             "expert": "Au niveau helper, les arguments attendus sont assemblés."
           },
           "en": {
-            "kitchen": "At the first station, the prep cook gathers every ingredient the order requested.",
+            "kitchen": "At the first station, the prep cook gathers every requested ingredient. His preparation matches the order exactly.",
             "expert": "A helper assembled the expected arguments."
           }
         },
         {
           "fr": {
-            "cuisine": "Le goûteur vérifie ce bol seul, le trouve bon et coche sa case verte.",
+            "cuisine": "Le goûteur vérifie seulement ce bol. Il le trouve bon et coche sa case verte.",
             "expert": "Des tests unitaires valident ce helper et rien d’autre."
           },
           "en": {
-            "kitchen": "The taster checks that bowl alone, likes it, and marks the box green.",
+            "kitchen": "The taster checks only that bowl. He likes it and marks the box green.",
             "expert": "Unit tests covered that helper and nothing beyond it."
           }
         },
         {
           "fr": {
-            "cuisine": "Ensuite, pendant le dressage, un autre poste change ou perd la demande du client.",
+            "cuisine": "La préparation passe ensuite au dressage. À ce poste, la demande du client est changée ou perdue.",
             "expert": "Le chemin de lancement réel transforme ou omet ensuite l’option."
           },
           "en": {
-            "kitchen": "Later, during plating, another station changes or loses the guest’s request.",
+            "kitchen": "The preparation later reaches plating. At that station, the guest’s request is changed or lost.",
             "expert": "The real launch path later transformed or omitted the option."
           }
         },
         {
           "fr": {
-            "cuisine": "Le passe envoie tout de même l’assiette, qui arrive à table avec la mauvaise préparation.",
+            "cuisine": "Le passe envoie tout de même l’assiette. La mauvaise préparation arrive alors à table.",
             "expert": "Les utilisateurs subissent le comportement erroné à l’exécution."
           },
           "en": {
-            "kitchen": "The pass sends the plate anyway, and the wrong preparation reaches the table.",
+            "kitchen": "The pass sends the plate anyway. The wrong preparation then reaches the table.",
             "expert": "Users hit the wrong behavior at runtime."
           }
         },
         {
           "fr": {
-            "cuisine": "La case reste verte, car le goûteur avait contrôlé le bol du début, pas l’assiette servie.",
+            "cuisine": "La case reste verte. Le goûteur avait contrôlé le premier bol, pas l’assiette réellement servie.",
             "expert": "Le test vert couvrait une autre couture que celle où la panne se produit."
           },
           "en": {
-            "kitchen": "The box stays green because the taster checked the first bowl, not the plate that was served.",
+            "kitchen": "The box stays green. The taster checked the first bowl, not the plate that was actually served.",
             "expert": "The passing test had covered a different seam from the one that broke."
           }
         }

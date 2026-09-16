@@ -62,51 +62,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Avec un seul commis au passe, l’ardoise ne porte qu’une commande et reste toujours juste.",
+            "cuisine": "Avec un seul commis au passe, l’ardoise ne porte qu’une commande. Elle reste donc toujours juste.",
             "expert": "En exécution sérielle, le contrôle fonctionnait correctement : une seule exécution vivait à la fois."
           },
           "en": {
-            "kitchen": "With one cook at the pass, the slate carries one order and always stays correct.",
+            "kitchen": "With one cook at the pass, the slate carries one order. It therefore always stays correct.",
             "expert": "Run one at a time and the check behaved correctly; only one run was ever live."
           }
         },
         {
           "fr": {
-            "cuisine": "Quand les commandes partent ensemble, plusieurs commis travaillent à la fois, mais ils gardent une seule ardoise commune.",
+            "cuisine": "Quand les commandes partent ensemble, plusieurs commis travaillent à la fois. Ils gardent pourtant une seule ardoise commune.",
             "expert": "Le mode par lots a introduit plusieurs exécutions concurrentes partageant la même instance de contrôle."
           },
           "en": {
-            "kitchen": "When orders run together, several cooks work at once but still share one slate.",
+            "kitchen": "When orders run together, several cooks work at once. They still share a single slate.",
             "expert": "Batch mode introduced several concurrent runs sharing one control instance."
           }
         },
         {
           "fr": {
-            "cuisine": "Le deuxième commis remplace la commande inscrite alors que le premier prépare encore la sienne.",
+            "cuisine": "Le deuxième commis remplace la commande inscrite. Le premier prépare pourtant encore la sienne.",
             "expert": "Une exécution pouvait réécrire les champs partagés pendant qu’une autre était encore en cours."
           },
           "en": {
-            "kitchen": "The second cook replaces the written order while the first is still preparing his own.",
+            "kitchen": "The second cook replaces the written order. The first is still preparing his own.",
             "expert": "One run could rewrite the shared fields while another was still in flight."
           }
         },
         {
           "fr": {
-            "cuisine": "À la sortie du premier plat, le passe relit la dernière ligne et l’envoie à la mauvaise table.",
+            "cuisine": "Le premier plat arrive au passe. La dernière ligne est relue, puis l’assiette part à la mauvaise table.",
             "expert": "Au moment d’enregistrer un résultat, le contrôle relisait ces champs et pouvait l’attribuer au mauvais dossier de problème."
           },
           "en": {
-            "kitchen": "When the first plate is ready, the pass reads the newest line and sends it to the wrong table.",
+            "kitchen": "The first plate reaches the pass. The newest line is read, and the dish goes to the wrong table.",
             "expert": "At write time the control re-read those fields and could file a result under the wrong problem directory."
           }
         },
         {
           "fr": {
-            "cuisine": "La réparation donne une ardoise séparée à chaque commis, puis rejoue volontairement deux commandes en même temps.",
+            "cuisine": "La réparation donne une ardoise séparée à chaque commis. La brigade rejoue ensuite volontairement deux commandes en même temps.",
             "expert": "Le correctif a déplacé l’état par exécution vers un stockage propre au thread, avec un test de régression déterministe à deux exécutions."
           },
           "en": {
-            "kitchen": "The repair gives each cook a separate slate, then deliberately stages two orders at once.",
+            "kitchen": "The repair gives each cook a separate slate. The brigade then deliberately stages two orders at once.",
             "expert": "The fix moved per-run state into thread-local storage and added a deterministic two-worker regression test."
           }
         }

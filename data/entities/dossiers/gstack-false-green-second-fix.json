@@ -62,51 +62,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Une fiche verte affirme que ce poste peut recevoir les commandes.",
+            "cuisine": "Une fiche verte affirme que ce poste peut recevoir les commandes. La brigade le croit prêt.",
             "expert": "Un signal de santé déclare l’environnement utilisable."
           },
           "en": {
-            "kitchen": "A green card says this station is ready to take orders.",
+            "kitchen": "A green card says this station is ready to take orders. The brigade trusts that promise.",
             "expert": "A health signal reported the environment as usable."
           }
         },
         {
           "fr": {
-            "cuisine": "Mais dès la première commande réelle, le poste ne produit aucune assiette.",
+            "cuisine": "Mais la première commande réelle échoue. Aucune assiette ne sort du poste.",
             "expert": "Le chemin de commande réel échoue."
           },
           "en": {
-            "kitchen": "But the first real order produces no plate at all.",
+            "kitchen": "But the first real order fails. No plate leaves the station.",
             "expert": "The real command path failed."
           }
         },
         {
           "fr": {
-            "cuisine": "La brigade répare le défaut précis qui avait rendu la fiche trompeuse.",
+            "cuisine": "La brigade trouve le défaut qui avait trompé la fiche. Elle répare précisément ce premier problème.",
             "expert": "Un premier correctif ferme l’incompatibilité telle qu’elle avait été observée."
           },
           "en": {
-            "kitchen": "The brigade repairs the exact fault that made the card misleading.",
+            "kitchen": "The brigade finds the fault that misled the card. It repairs that first problem precisely.",
             "expert": "A first fix addressed the mismatch that had been observed."
           }
         },
         {
           "fr": {
-            "cuisine": "Plus tard, une autre différence entre deux postes rend la même fiche verte fausse une seconde fois.",
+            "cuisine": "Plus tard, une autre différence entre deux postes apparaît. Elle rend la même fiche verte fausse une seconde fois.",
             "expert": "Un faux vert similaire réapparaît via une autre dimension d’identité."
           },
           "en": {
-            "kitchen": "Later, another difference between two stations makes the same green card wrong again.",
+            "kitchen": "Later, another difference between two stations appears. It makes the same green card wrong again.",
             "expert": "A similar false green later surfaced through a different identity dimension."
           }
         },
         {
           "fr": {
-            "cuisine": "La deuxième réparation exige une fiche plus précise : elle nomme le vrai four et la vraie clé de réserve.",
+            "cuisine": "La deuxième réparation exige une fiche plus précise. Elle nomme le vrai four et la vraie clé de réserve.",
             "expert": "Le correctif suivant élargit l’identité runtime retenue pour l’état de santé en cache."
           },
           "en": {
-            "kitchen": "The second repair demands a more precise card naming the actual oven and pantry key.",
+            "kitchen": "The second repair demands a more precise card. It names the actual oven and pantry key.",
             "expert": "The follow-up repair moved cached health state onto a richer runtime identity."
           }
         }

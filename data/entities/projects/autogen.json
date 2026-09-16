@@ -63,51 +63,51 @@
       "body": [
         {
           "fr": {
-            "cuisine": "La maison a d’abord ouvert pour essayer de faire travailler plusieurs commis sur une même commande.",
+            "cuisine": "La maison a d’abord ouvert pour essayer de faire travailler plusieurs commis sur une même commande. Le constat reste au passe.",
             "expert": "AutoGen naît comme framework multi-agents chez Microsoft Research."
           },
           "en": {
-            "kitchen": "The house first opened to try having several cooks handle one order together.",
+            "kitchen": "The house first opened to try having several cooks handle one order together. The finding remains at the pass.",
             "expert": "AutoGen started as a multi-agent framework inside Microsoft Research."
           }
         },
         {
           "fr": {
-            "cuisine": "Elle a ensuite refait son organisation pour tenir plus de commandes et casser moins souvent.",
+            "cuisine": "Elle a ensuite refait son organisation pour tenir plus de commandes et casser moins souvent. Le constat reste au passe.",
             "expert": "Une refonte en version 0.4 vise l’extensibilité et la robustesse."
           },
           "en": {
-            "kitchen": "It then rebuilt its organisation to handle more orders and break less often.",
+            "kitchen": "It then rebuilt its organisation to handle more orders and break less often. The finding remains at the pass.",
             "expert": "A 0.4 redesign targeted extensibility and robustness."
           }
         },
         {
           "fr": {
-            "cuisine": "Ses idées se sont peu à peu retrouvées dans une autre cuisine du même groupe.",
+            "cuisine": "Ses idées se sont peu à peu retrouvées dans une autre cuisine du même groupe. Le constat reste au passe.",
             "expert": "Les idées centrales convergent avec Semantic Kernel."
           },
           "en": {
-            "kitchen": "Its ideas gradually reappeared in another kitchen run by the same people.",
+            "kitchen": "Its ideas gradually reappeared in another kitchen run by the same people. The finding remains at the pass.",
             "expert": "Its core ideas converged with Semantic Kernel."
           }
         },
         {
           "fr": {
-            "cuisine": "Les patrons ont ensuite choisi cette autre cuisine pour les nouveaux plats.",
+            "cuisine": "Les patrons ont ensuite choisi cette autre cuisine pour les nouveaux plats. Le constat reste au passe.",
             "expert": "Microsoft Agent Framework devient la fondation unifiée et supportée."
           },
           "en": {
-            "kitchen": "The owners then chose that other kitchen for new dishes.",
+            "kitchen": "The owners then chose that other kitchen for new dishes. The finding remains at the pass.",
             "expert": "Microsoft Agent Framework became the unified, supported foundation."
           }
         },
         {
           "fr": {
-            "cuisine": "La première cuisine reste entretenue par ses habitués.",
+            "cuisine": "La première cuisine reste entretenue par ses habitués. Le constat reste au passe.",
             "expert": "AutoGen entre en maintenance tenue par la communauté."
           },
           "en": {
-            "kitchen": "The first kitchen remains maintained by its regulars.",
+            "kitchen": "The first kitchen remains maintained by its regulars. The finding remains at the pass.",
             "expert": "AutoGen entered community-managed maintenance."
           }
         }

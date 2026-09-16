@@ -82,61 +82,61 @@
       "body": [
         {
           "fr": {
-            "cuisine": "Au début, le chef donnait une consigne et espérait qu’elle soit suivie.",
+            "cuisine": "Au début, le chef donnait une consigne et espérait qu’elle soit suivie. Le constat reste au passe.",
             "expert": "Les instructions au niveau prompt ou règle ne sont pas appliquées de façon déterministe."
           },
           "en": {
-            "kitchen": "At first, the chef gave an instruction and hoped it would be followed.",
+            "kitchen": "At first, the chef gave an instruction and hoped it would be followed. The finding remains at the pass.",
             "expert": "Prompt- and rule-level instructions are not deterministically enforced."
           }
         },
         {
           "fr": {
-            "cuisine": "La première porte est venue ensuite, aux instants où une commande ou un geste peut changer le service.",
+            "cuisine": "La première porte est venue ensuite, aux instants où une commande ou un geste peut changer le service. Le constat reste au passe.",
             "expert": "Un premier ensemble de hooks est intégré : interception runtime aux frontières de prompt, d’outil, de tâche et de contexte."
           },
           "en": {
-            "kitchen": "A first door came next, at the moments when an order or a move can change service.",
+            "kitchen": "A first door came next, at the moments when an order or a move can change service. The finding remains at the pass.",
             "expert": "A first hook set is merged: runtime interception at prompt, tool, task and context boundaries."
           }
         },
         {
           "fr": {
-            "cuisine": "La porte est ensuite devenue un vrai poste, avec son registre, ses fournisseurs et son horloge.",
+            "cuisine": "La porte est ensuite devenue un vrai poste, avec son registre, ses fournisseurs et son horloge. Le constat reste au passe.",
             "expert": "Les hooks deviennent un sous-système de premier rang : événements cartographiés, journaux, connecteurs, délais d’exécution."
           },
           "en": {
-            "kitchen": "The door then became a real post, with its own book, suppliers, and clock.",
+            "kitchen": "The door then became a real post, with its own book, suppliers, and clock. The finding remains at the pass.",
             "expert": "Hooks become a first-class subsystem: mapped events, logs, connectors, execution timeouts."
           }
         },
         {
           "fr": {
-            "cuisine": "Elle a fini par garder aussi le moment délicat où le carnet de service est raccourci.",
+            "cuisine": "Elle a fini par garder aussi le moment délicat où le carnet de service est raccourci. Le constat reste au passe.",
             "expert": "Une extension intégrée porte les hooks jusqu’à la frontière de compaction du contexte."
           },
           "en": {
-            "kitchen": "It eventually guarded the delicate moment when the service book is shortened.",
+            "kitchen": "It eventually guarded the delicate moment when the service book is shortened. The finding remains at the pass.",
             "expert": "A merged extension carries hooks out to the context compaction boundary."
           }
         },
         {
           "fr": {
-            "cuisine": "La brigade a alors séparé les fiches du jour, le carnet intact et les résumés qu’elle peut refaire.",
+            "cuisine": "La brigade a alors séparé les fiches du jour, le carnet intact et les résumés qu’elle peut refaire. Le constat reste au passe.",
             "expert": "Des changements d’architecture intégrés séparent les instructions découvrables, l’historique canonique et le contexte de travail dérivé."
           },
           "en": {
-            "kitchen": "The brigade then separated today’s cards, the untouched book, and summaries it could remake.",
+            "kitchen": "The brigade then separated today’s cards, the untouched book, and summaries it could remake. The finding remains at the pass.",
             "expert": "Merged architecture changes separate discoverable instructions, canonical history and derived working context."
           }
         },
         {
           "fr": {
-            "cuisine": "Les changements de cette organisation sont désormais annoncés quand la maison montre ses nouveautés.",
+            "cuisine": "Les changements de cette organisation sont désormais annoncés quand la maison montre ses nouveautés. Le constat reste au passe.",
             "expert": "Les notes de version encodent explicitement ces changements de plan de contrôle : visibilité des skills, discovery de plugins, orchestration, comportements runtime."
           },
           "en": {
-            "kitchen": "Changes to that organisation are now announced when the house presents what is new.",
+            "kitchen": "Changes to that organisation are now announced when the house presents what is new. The finding remains at the pass.",
             "expert": "Release notes now explicitly encode these control-plane changes: skill visibility, plugin discovery, orchestration, runtime behavior."
           }
         }
