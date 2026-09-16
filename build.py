@@ -14,6 +14,9 @@ TAXONOMY = ROOT / "data" / "taxonomy.json"
 ACTIVITY = ROOT / "data" / "activity.json"
 VERSION = "1.6.0"
 PLURAL = {"dossier": "dossiers", "project": "projects", "pattern": "patterns"}
+PLACE_ILLUSTRATIONS = {
+    "validation-preuves": "/assets/illustrations/category-validation-evidence-320.jpg",
+}
 
 def esc(s): return html.escape(s or "", quote=True)
 
@@ -47,6 +50,7 @@ def header(section=""):
         nav("/patterns/", "patterns", '<span class="nav-en">Patterns</span><span class="nav-fr">Motifs</span>', section),
         nav("/projects/", "projects", '<span class="nav-en">Projects</span><span class="nav-fr">Projets</span>', section),
         nav("/atlas/", "atlas", "Atlas", section),
+        nav("/glossary/", "glossary", '<span class="nav-en">Glossary</span><span class="nav-fr">Glossaire</span>', section),
         nav("/about/", "about", '<span class="nav-en">About</span><span class="nav-fr">À propos</span>', section),
     ]))
     return ('<header class="argh-top"><div class="argh-topin">'
@@ -327,27 +331,42 @@ def update_card(e, kind, store):
 
 def place_card(place, number, store):
     dossiers = store["dossiers_by_place"].get(place["id"], [])
+    illustration = PLACE_ILLUSTRATIONS.get(place["id"])
+    classes = "argh-place-card" + (" argh-place-card-illustrated" if illustration else "")
+    picture = (
+        '<picture class="argh-place-card-picture"><img src="%s" width="320" height="213" '
+        'alt="" aria-hidden="true" loading="lazy" decoding="async"></picture>' % esc(illustration)
+        if illustration else ""
+    )
     count = {
         "fr": {"cuisine": "%d fiche%s" % (len(dossiers), "s" if len(dossiers) != 1 else ""),
                "expert": "%d dossier%s" % (len(dossiers), "s" if len(dossiers) != 1 else "")},
         "en": {"kitchen": "%d card%s" % (len(dossiers), "s" if len(dossiers) != 1 else ""),
                "expert": "%d dossier%s" % (len(dossiers), "s" if len(dossiers) != 1 else "")},
     }
-    return ('<a class="argh-place-card" data-number="%02d" href="/places/%s/">'
-            '<span class="argh-place-number">%02d</span>%s%s%s</a>'
-            % (number, esc(place["id"]), number, quad(place["label"], "h3"),
+    return ('<a class="%s" data-number="%02d" href="/places/%s/">'
+            '<span class="argh-place-number">%02d</span>%s%s%s%s</a>'
+            % (classes, number, esc(place["id"]), number, picture, quad(place["label"], "h3"),
                quad(place["description"], "p"), quad(count, "span", "argh-place-count")))
 
 
 def place_page(place, store):
     items = store["dossiers_by_place"].get(place["id"], [])
+    illustration = PLACE_ILLUSTRATIONS.get(place["id"])
+    hero_class = " argh-place-hero-illustrated" if illustration else ""
+    picture = (
+        '<picture class="argh-place-hero-illustration"><img src="%s" width="320" height="213" '
+        'alt="" aria-hidden="true" decoding="async"></picture>' % esc(illustration)
+        if illustration else ""
+    )
     body = ('<div class="argh-site argh-index" data-argh-renderer="%s">%s'
-            '<main class="argh-wrap"><section class="argh-index-hero">'
+            '<main class="argh-wrap"><section class="argh-index-hero%s"><div class="argh-place-hero-copy">'
             '<div class="argh-kicker"><a href="/">ARGH</a> · <span class="nav-fr">Carte</span><span class="nav-en">Map</span></div>'
-            '%s%s<div class="argh-index-count">%d <span class="nav-fr">dossiers</span><span class="nav-en">dossiers</span></div>'
-            '</section><section class="argh-index-grid">%s</section>%s</main></div>'
-            % (VERSION, header("home"), quad(place["label"], "h1"),
-               quad(place["description"], "p", "argh-standfirst"), len(items),
+            '%s%s%s<div class="argh-index-count">%d <span class="nav-fr">dossiers</span><span class="nav-en">dossiers</span></div>'
+            '</div>%s</section><section class="argh-index-grid">%s</section>%s</main></div>'
+            % (VERSION, header("home"), hero_class, quad(place["label"], "h1"),
+               quad(place["description"], "p", "argh-standfirst"),
+               quad(place["meaning"], "p", "argh-place-meaning"), len(items), picture,
                "".join(card(e) for e in items), FOOT))
     return page("%s — ARGH" % place["label"]["fr"]["expert"], body,
                 place["description"]["fr"]["expert"])
@@ -356,14 +375,14 @@ def place_page(place, store):
 def home(store):
     body = ('<div class="argh-site argh-index" data-argh-renderer="%s">%s'
             '<main class="argh-wrap">'
-            '<section class="argh-home-hero"><div><div class="argh-kicker">ARGH — Agent Reliability &amp; Guard for Harnesses</div>%s%s</div>'
-            '<div class="argh-home-side"><picture class="argh-home-illustration">'
+            '<section class="argh-home-hero"><div class="argh-home-intro"><div class="argh-kicker">ARGH — Agent Reliability &amp; Guard for Harnesses</div>%s%s</div>'
+            '<picture class="argh-home-illustration">'
             '<source srcset="/assets/illustrations/kitchen-system-home-480.jpg 480w, '
             '/assets/illustrations/kitchen-system-home-960.jpg 960w" '
-            'sizes="(max-width:920px) calc(100vw - 34px), 340px">'
+            'sizes="(max-width:700px) calc(100vw - 34px), (max-width:920px) 42vw, 260px">'
             '<img src="/assets/illustrations/kitchen-system-home-480.jpg" width="480" height="320" '
             'alt="" aria-hidden="true" decoding="async" fetchpriority="high"></picture>'
-            '<aside class="argh-home-identity">%s<ul>%s</ul></aside></div></section>'
+            '<aside class="argh-home-identity">%s<ul>%s</ul></aside></section>'
             % (VERSION, header("home"), quad(HOME_TITLE, "h1"),
                quad(HOME_DECK, "p", "argh-standfirst"), quad(HOME_IDENTITY_TITLE, "strong"),
                "".join(quad(item, "li") for item in HOME_IDENTITY)))
@@ -399,6 +418,47 @@ def about(store):
     body = ('<div class="argh-site" data-argh-renderer="%s">%s'
             '<main class="argh-wrap">%s</main>%s</div>' % (VERSION, header("about"), blk, FOOT))
     return page("À propos — ARGH", body, "Ce qu'est ARGH et comment ses dossiers sont établis.")
+
+
+def glossary_column(place, reader):
+    fr_key, en_key = ("cuisine", "kitchen") if reader == "kitchen" else ("expert", "expert")
+    label = place["label"]
+    description = place["description"]
+    meaning = place["meaning"]
+    heading = "Cuisine" if reader == "kitchen" else "Expert"
+    return ('<article class="argh-glossary-column argh-glossary-%s">'
+            '<div class="argh-glossary-reader">%s</div>'
+            '<h3><span class="nav-fr">%s</span><span class="nav-en">%s</span></h3>'
+            '<p class="argh-glossary-summary"><span class="nav-fr">%s</span><span class="nav-en">%s</span></p>'
+            '<p><span class="nav-fr">%s</span><span class="nav-en">%s</span></p></article>'
+            % (reader, heading, esc(label["fr"][fr_key]), esc(label["en"][en_key]),
+               esc(description["fr"][fr_key]), esc(description["en"][en_key]),
+               esc(meaning["fr"][fr_key]), esc(meaning["en"][en_key])))
+
+
+def glossary(store):
+    entries = []
+    for number, place in enumerate(store["places"], 1):
+        entries.append(
+            '<section class="argh-glossary-entry" id="%s">'
+            '<div class="argh-glossary-entry-head"><span>%02d</span>'
+            '<a href="/places/%s/"><span class="nav-fr">Voir les dossiers</span>'
+            '<span class="nav-en">View dossiers</span></a></div>'
+            '<div class="argh-glossary-pair">%s%s</div></section>'
+            % (esc(place["id"]), number, esc(place["id"]),
+               glossary_column(place, "kitchen"), glossary_column(place, "expert"))
+        )
+    body = ('<div class="argh-site argh-index" data-argh-renderer="%s">%s'
+            '<main class="argh-wrap"><section class="argh-index-hero argh-glossary-hero">'
+            '<div class="argh-kicker">ARGH</div>'
+            '<h1><span class="nav-fr">Glossaire Cuisine ↔ Expert</span>'
+            '<span class="nav-en">Kitchen ↔ Expert glossary</span></h1>'
+            '<p class="argh-standfirst"><span class="nav-fr">Chaque catégorie est expliquée côte à côte : '
+            'l’image de cuisine à gauche, sa signification technique exacte à droite.</span>'
+            '<span class="nav-en">Every category is explained side by side: the kitchen image on the left, '
+            'its exact technical meaning on the right.</span></p></section>%s%s</main></div>'
+            % (VERSION, header("glossary"), "".join(entries), FOOT))
+    return page("Glossaire — ARGH", body, "Correspondance entre les catégories Cuisine et Expert d’ARGH.")
 
 
 def load_navigation(store):
@@ -476,13 +536,15 @@ def main():
     (ROOT / "index.html").write_text(home(store), encoding="utf-8")
     (ROOT / "about").mkdir(exist_ok=True)
     (ROOT / "about" / "index.html").write_text(about(store), encoding="utf-8")
+    (ROOT / "glossary").mkdir(exist_ok=True)
+    (ROOT / "glossary" / "index.html").write_text(glossary(store), encoding="utf-8")
     (ROOT / "404.html").write_text(page("404 — ARGH",
         '<div class="argh-site">%s<main class="argh-wrap"><article class="argh-article">'
         '<h1>404</h1><p class="argh-standfirst">Cette page n’existe pas.</p>'
         '<div class="argh-chips"><a class="argh-chip" href="/dossiers/">Dossiers</a>'
         '<a class="argh-chip" href="/patterns/">Motifs</a><a class="argh-chip" href="/projects/">Projets</a></div>'
         '</article>%s</main></div>' % (header(), FOOT)), encoding="utf-8")
-    print("  %d pages d'entité + %d endroits + 3 index + atlas + accueil + 404" %
+    print("  %d pages d'entité + %d endroits + 3 index + atlas + glossaire + accueil + 404" %
           (n, len(store["places"])))
 
 if __name__ == "__main__":
