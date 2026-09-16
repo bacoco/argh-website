@@ -30,22 +30,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Deux cuisiniers sur un plan prévu pour un",
+          "cuisine": "Deux cuisiniers écrivaient sur la même ardoise",
           "expert": "Des contrôles écrits pour une exécution unique cèdent dès que deux exécutions se recouvrent"
         },
         "en": {
-          "kitchen": "A kitchen built for one, worked by two",
+          "kitchen": "Two cooks were writing on the same slate",
           "expert": "Controls written for one run at a time break once two runs overlap"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une cuisine montée pour une seule paire de mains tient très bien, tant qu’il n’y en a qu’une. Mettez-en deux sur le même plan de travail, la même ardoise, le même tiroir à clés. Chez SWE-agent, rien n’a cassé bruyamment : un plat correct est simplement parti à la mauvaise table, et plus personne ne savait à qui appartenait la ligne.",
+            "cuisine": "La cuisine avait été organisée pour une seule paire de mains. Deux cuisiniers y ont partagé le même plan, la même ardoise et le même tiroir de clés. Un plat correct a alors pu arriver à la mauvaise table sans qu’aucun cri n’alerte la salle.",
             "expert": "Un contrôle rangeait les conditions d’environnement et les données de problème de chaque exécution dans des champs ordinaires d’une instance unique ; une fois les exécutions parallèles, deux d’entre elles pouvaient s’écraser et un résultat être enregistré sous le mauvais dossier de problème. Le même motif se retrouve sur un stockage d’identifiants partagé et sur un checkout unique utilisé par plusieurs exécutions. La concurrence ne crée pas ces défauts : elle rend visible une propriété d’état qui n’avait jamais été déclarée."
           },
           "en": {
-            "kitchen": "A kitchen built for one pair of hands holds up fine, as long as there is only one. Put two on the same worktop, the same board, the same key drawer. At SWE-agent nothing broke loudly: a correct dish simply went to the wrong table, and nobody could say whose line it had been.",
+            "kitchen": "The kitchen had been arranged for one pair of hands. Two cooks shared the same bench, slate, and key drawer. A correct dish could then reach the wrong table without a single shout in the room.",
             "expert": "One control kept per-run environment conditions and problem data in ordinary fields of a single shared instance; once runs overlapped, two of them could overwrite each other and a result could be filed under the wrong problem directory. The same shape turns up in a shared credential store and in one checkout used by several runs at once. Parallelism does not introduce these defects; it exposes ownership of state that was never declared."
           }
         }
@@ -56,22 +56,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une seule ardoise pour toute la brigade",
+          "cuisine": "Le bon plat est parti à la mauvaise table",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Look for what the whole brigade shares",
+          "kitchen": "The right dish reached the wrong table",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Cherche ce qui n’existe qu’en un seul exemplaire et que tout le monde touche. L’ardoise du passe, le plan de travail, le tiroir des clés de la réserve. Ajoute ce plat impeccable arrivé à une table qui n’avait rien demandé, sans que personne ait crié. Et cette panne qui ne sort qu’au coup de feu : au calme, avec un seul cuisinier, tout est parfait.",
+            "cuisine": "Cherchez ce que toute la brigade touche en un seul exemplaire : l’ardoise, le plan ou les clés. Méfiez-vous aussi d’une assiette impeccable qui arrive à une table qui ne l’a jamais demandée. Le défaut peut disparaître pendant un service calme avec un seul cuisinier.",
             "expert": "Un état propre à chaque exécution rangé dans des champs communs à toutes ; un stockage d’identifiants unique écrit par plusieurs processus ; un checkout unique utilisé par des exécutions simultanées. Second signal : un résultat correct attribué au mauvais objet, sans erreur levée. Troisième : un défaut absent en exécution sérielle, dont l’entrelacement ne se reproduit pas sans barrières explicites."
           },
           "en": {
-            "kitchen": "Look for whatever the kitchen owns only one of and everyone reaches for. The slate at the pass, the bench, the drawer holding the cellar keys. Add the clean plate that reached a table which never ordered it, with nobody shouting. Add the failure that only shows at the rush: run the same service with one cook, calmly, and everything is perfect.",
+            "kitchen": "Look for anything the whole brigade touches in a single copy: the slate, bench, or keys. Watch also for a perfect plate reaching a table that never ordered it. The fault may disappear during a quiet service with one cook.",
             "expert": "Per-run state held in fields common to every run; one credential store written by several processes; one checkout used by simultaneous runs. Second signal: a correct result attributed to the wrong object, with no error raised. Third: a defect absent from serial execution, whose interleaving will not reproduce without explicit barriers."
           }
         }
@@ -82,22 +82,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi le service casse sans faute de personne",
+          "cuisine": "Chaque main faisait son travail, l’ardoise mélangeait les lignes",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Every hand is right and the service still breaks",
+          "kitchen": "Every hand did its job, and the slate mixed the lines",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chacun écrit sa ligne comme il l’a toujours fait, et c’est précisément pour ça que rien ne se voit venir. La faute n’est pas dans le geste, elle est dans le fait qu’il n’y a qu’une ardoise pour deux mains. Tant qu’un seul cuisinier tenait le passe, la question de savoir à qui appartenait la ligne ne s’est jamais posée. Le jour où elle se pose, la réponse n’a été écrite nulle part.",
+            "cuisine": "Chaque cuisinier faisait le geste habituel. Le problème était l’ardoise unique, incapable de dire à qui appartenait chaque ligne. Tant qu’un seul cuisinier travaillait, personne ne remarquait le manque.",
             "expert": "Tant qu’une seule exécution vit à la fois, la propriété de l’état est implicite et n’est jamais contredite. Le passage au parallèle change le modèle de propriété sans changer le modèle de stockage : les champs restent communs alors que leur contenu est devenu propre à chaque exécution. Le défaut étant temporel, une lecture du code ne montre qu’une écriture de champ banale et les tests sériels restent verts."
           },
           "en": {
-            "kitchen": "Every cook writes his line exactly as he always has, which is why this one is never seen coming. The fault sits in the single slate, not in the hands. While one cook held the pass, nobody ever had to ask who a line belonged to. The night the question finally arises, the answer was never written down anywhere.",
+            "kitchen": "Each cook made the usual move. The problem was the single slate, which could not say whose line was whose. While one cook worked, nobody noticed the missing answer.",
             "expert": "While only one run is ever live, ownership of state is implicit and never contradicted. Parallelism changes the ownership model and leaves the storage model untouched: the fields stay common once their contents have become private to each run. Because the defect is timing-dependent, the code reads as an ordinary field assignment and serial tests stay green."
           }
         }
@@ -108,22 +108,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une place nommée pour chaque cuisinier",
+          "cuisine": "Donner une ardoise et un plan à chaque cuisinier",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Hand out a named bench to every cook",
+          "kitchen": "Give every cook a slate and a bench",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Donne à chacun son ardoise et son plan de travail, avec son nom dessus, et ne laisse rien de commun traîner au passe. C’est la maison qui distribue les places, pas chacun qui prend ce qu’il trouve. Avant de jeter une clé qui ne marche plus, vérifie qu’elle est bien à toi et qu’elle n’a pas été refaite entre-temps. Et remonte le double service exprès, un soir calme, au lieu d’attendre qu’il se montre tout seul.",
+            "cuisine": "Donnez à chacun son ardoise, son plan et ses clés, distribués par la maison. Avant de jeter une clé, vérifiez qu’elle est bien la vôtre et qu’elle n’a pas été changée. Rejouez aussi le double service un soir calme au lieu d’attendre le coup de feu.",
             "expert": "L’état propre à une exécution appartient à une tâche, un thread, un contexte asynchrone ou une identité d’exécution explicite, jamais à un champ partagé. Le travail parallèle reçoit un workspace par exécution, dont l’allocation passe de la discipline du développeur à une infrastructure gérée par le runtime. Une transition destructive sur un état partagé se lie à la génération qu’elle croit remplacer, et une erreur récupérable ne doit pas la déclencher. Ces défauts se vérifient par des tests déterministes à barrières, pas par un entrelacement espéré."
           },
           "en": {
-            "kitchen": "Give every cook his own slate and his own bench, with his name on both, and leave nothing shared lying at the pass. The house hands out the places; cooks do not take whatever is free. Before throwing away a key that stopped working, check that it is yours and that nobody had it recut while you were busy. Then stage the two-handed service on a quiet night, instead of waiting for the rush to teach you.",
+            "kitchen": "Give every cook a slate, bench, and keys supplied by the house. Before throwing away a key, check that it is yours and that no one changed it. Rehearse the two-cook service on a quiet evening instead of waiting for the rush.",
             "expert": "Per-run state belongs to a task, a thread, an async context or an explicit run identity, never to a shared field. Parallel work gets one workspace per run, and that allocation is moving from developer discipline into runtime-managed infrastructure. A destructive transition over shared state must be bound to the generation it believes it is replacing, and a retryable error must not trigger it. These defects are checked with barrier-based deterministic tests rather than hoped-for interleavings."
           }
         }
@@ -134,22 +134,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "C’est le partage qui casse, pas les mains",
+          "cuisine": "Une chose partagée peut gâcher deux services",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "One slate is where two services crash",
+          "kitchen": "One shared thing can spoil two services",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ce qu’une cuisine possède en un seul exemplaire devient l’endroit exact où deux services se percutent. Et ce qui reste commun malgré tout, on ne le jette jamais sans regarder d’abord à qui il appartient.",
+            "cuisine": "Dès que deux services travaillent ensemble, ce qu’ils partagent peut mêler leurs commandes. Donnez à chacun sa place et son matériel. Ce qui doit rester commun demande une vigilance avant tout geste irréversible.",
             "expert": "Un état partagé devient un risque de corruption partagé dès la première exécution concurrente. Le raisonnement parallèle exige une isolation parallèle du workspace, et une erreur récupérable ne doit jamais ouvrir une transition irréversible."
           },
           "en": {
-            "kitchen": "Whatever the kitchen owns a single one of is exactly where two services will hit each other. And anything that stays shared is never thrown out before somebody checks whose it is.",
+            "kitchen": "Once two services work together, anything they share can mix their orders. Give each one its own place and tools. Whatever must remain shared needs care before any irreversible move.",
             "expert": "Shared state becomes shared corruption risk at the first concurrent run. Parallel reasoning needs parallel workspace isolation, and a recoverable error must never open an irreversible transition."
           }
         }

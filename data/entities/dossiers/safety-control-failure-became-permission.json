@@ -26,22 +26,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Un contrôle muet au passe laissait sortir l’assiette",
+          "cuisine": "Le silence au passe faisait partir l’assiette",
           "expert": "La panne du contrôle de sécurité risquait de valoir permission"
         },
         "en": {
-          "kitchen": "A checker that went silent let the plate out",
+          "kitchen": "Silence at the pass sent the plate out",
           "expert": "A safety control’s failure risked counting as permission"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Goose, Claude Code ou Codex, quelqu’un est posté au passe et doit acquiescer avant qu’une assiette sorte. Le jour où ce poste tombe, il faut avoir tranché d’avance : arrêter, refuser, réessayer, ou dire tout haut qu’on ne sait pas.",
+            "cuisine": "Dans trois maisons, quelqu’un doit acquiescer au passe avant chaque départ. Si ce poste tombe, la conduite doit être décidée d’avance : arrêter, refuser, réessayer ou reconnaître qu’on ne sait pas.",
             "expert": "À mesure que les hooks autorisent ou bloquent effectivement des actions, la panne du hook lui-même devient une décision critique : continuer, bloquer, réessayer, ou exposer l’incertitude."
           },
           "en": {
-            "kitchen": "At Goose, Claude Code and Codex, someone stands at the pass and has to nod before a plate leaves. When that post goes down, the call must already be made: hold, refuse, try again, or say out loud that nobody knows.",
+            "kitchen": "In three houses, someone at the pass must nod before each plate leaves. If that station fails, the choice must already be written: stop, refuse, try again, or admit that nobody knows.",
             "expert": "As hooks come to genuinely authorize or block actions, the hook’s own failure becomes a decision in itself: continue, block, retry, or surface the uncertainty."
           }
         }
@@ -52,62 +52,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Le poste au passe a gagné du pouvoir",
+          "cuisine": "Le poste du passe a fini par décider",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The post at the pass gained power",
+          "kitchen": "The pass post came to make decisions",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On confie au poste de contrôle le droit d’arrêter une commande ou de la laisser sortir.",
+            "cuisine": "On donne au poste de garde le droit d’arrêter une commande ou de la laisser sortir.",
             "expert": "Un hook ou un composant de politique acquiert de l’autorité sur les actions."
           },
           "en": {
-            "kitchen": "The checking post is handed the right to stop an order or let it leave.",
+            "kitchen": "The guard post is given the right to stop an order or let it leave.",
             "expert": "A hook or policy component gains authority over actions."
           }
         },
         {
           "fr": {
-            "cuisine": "Mais ce poste peut lui-même ne plus répondre, ou tomber.",
+            "cuisine": "Mais ce poste peut, lui aussi, cesser de répondre ou tomber.",
             "expert": "Ce composant peut lui-même expirer ou échouer."
           },
           "en": {
-            "kitchen": "But that post can go silent, or fall over.",
+            "kitchen": "But that post can itself go silent or fall over.",
             "expert": "That component can itself time out or fail."
           }
         },
         {
           "fr": {
-            "cuisine": "La vieille habitude, dans ce cas, laisse les assiettes partir sans un mot.",
+            "cuisine": "Dans ce cas, la vieille habitude laisse partir les assiettes sans un mot.",
             "expert": "Le comportement historique poursuivait souvent l’exécution de façon implicite."
           },
           "en": {
-            "kitchen": "Old habit, in that case, lets the plates go without a word.",
+            "kitchen": "In that case, old habit lets the plates go without a word.",
             "expert": "Legacy behavior often continued execution implicitly."
           }
         },
         {
           "fr": {
-            "cuisine": "Tant que ce poste ne gardait rien de grave, cela passait. Du jour où il garde une porte, son silence ne peut plus valoir accord.",
+            "cuisine": "Tant que ce poste ne gardait rien de grave, cela pouvait passer. Dès qu’il garde une porte, son silence ne peut plus compter comme accord.",
             "expert": "Les cas d’usage d’autorisation ont rendu ce fail-open dangereux."
           },
           "en": {
-            "kitchen": "While the post guarded nothing serious, that held. Once it guards a door, its silence can no longer stand for consent.",
+            "kitchen": "While the post guarded nothing serious, that could pass. Once it guards a door, its silence can no longer count as consent.",
             "expert": "Authorization use cases made that fail-open behavior unsafe."
           }
         },
         {
           "fr": {
-            "cuisine": "Les maisons se mettent donc à écrire noir sur blanc ce qui arrive quand le poste ne répond pas.",
+            "cuisine": "Les maisons commencent donc à écrire clairement ce qui arrive quand le poste ne répond pas.",
             "expert": "Les produits ont commencé à exposer une politique d’échec explicite."
           },
           "en": {
-            "kitchen": "So the houses start writing down, in plain words, what happens when the post does not answer.",
+            "kitchen": "So the houses begin writing plainly what happens when the post does not answer.",
             "expert": "Products began exposing an explicit failure policy."
           }
         }
@@ -118,22 +118,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Poste injoignable et poste d’accord, rangés ensemble",
+          "cuisine": "Le poste muet était rangé avec le poste d’accord",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "No answer was read as an approval",
+          "kitchen": "No answer was filed as approval",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La cuisine mettait dans le même panier deux choses qui n’ont rien à voir : le poste injoignable et le poste qui avait dit oui. Faute de réponse, l’assiette partait comme si l’accord avait été donné.",
+            "cuisine": "La cuisine mettait dans le même panier deux choses sans rapport : le poste injoignable et le poste qui avait dit oui. Sans réponse, l’assiette partait comme si l’accord avait été donné.",
             "expert": "La disponibilité du contrôle était confondue avec le résultat de politique. « Le contrôle n’a pas pu répondre » valait « le contrôle a autorisé »."
           },
           "en": {
-            "kitchen": "The kitchen ran two unrelated answers together: the post that was unreachable, and the post that had approved. With no reply, the plate went out as though consent had been given.",
+            "kitchen": "The kitchen put two unrelated answers in one basket: the unreachable post and the post that had approved. With no reply, the plate went out as though consent had been given.",
             "expert": "Control availability was conflated with policy outcome. ‘The control could not answer’ was read as ‘the control allowed it.’"
           }
         }
@@ -144,22 +144,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Séparer le refus, la panne et l’inconnu",
+          "cuisine": "Distinguer le refus, la panne et l’inconnu",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Decide in advance whether the door shuts",
+          "kitchen": "Distinguish refusal, failure, and the unknown",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le tableau doit montrer trois choses distinctes : on a refusé, le poste est tombé, on ne sait pas. Ensuite seulement on choisit, délibérément, si la porte reste ouverte ou se ferme. Ce qui est en jeu décide de ce choix.",
+            "cuisine": "Le tableau doit montrer trois choses séparées : le refus, la chute du poste et ce que l’on ignore. Alors seulement on décide si la porte reste ouverte ou se ferme. Ce qui est en jeu détermine ce choix.",
             "expert": "Représenter séparément le refus de politique, la panne du contrôle et l’inconnu. Choisir délibérément fail-open ou fail-closed selon le niveau d’autorité en jeu."
           },
           "en": {
-            "kitchen": "The board has to show three separate things: refused, post down, and nobody knows. Only then does the house decide, on purpose, whether the door stays open or shuts. What is at stake settles that choice.",
+            "kitchen": "The board must show three separate things: refusal, a fallen post, and what nobody knows. Only then does the house decide whether the door stays open or shuts. What is at stake determines that choice.",
             "expert": "Represent policy denial, control failure and unknown as separate outcomes. Choose fail-open or fail-closed deliberately, by the level of authority at stake."
           }
         }
@@ -170,22 +170,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Un poste qui regardait décide maintenant, partout",
+          "cuisine": "Les postes de garde décident désormais, partout",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "In three kitchens the checker now decides",
+          "kitchen": "Across the houses, guard posts now decide",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le point revient partout : ces postes ont pris assez d’autorité pour ne plus seulement regarder, mais décider.",
+            "cuisine": "Le même point revient partout : ces postes ont acquis assez d’autorité pour décider, non plus seulement regarder.",
             "expert": "C’est un point de convergence majeur entre harnais, à mesure que les hooks deviennent des primitives d’enforcement."
           },
           "en": {
-            "kitchen": "The same point keeps coming back everywhere: these posts now hold enough authority to decide, not merely to watch.",
+            "kitchen": "The same point returns everywhere: these posts now hold enough authority to decide rather than merely watch.",
             "expert": "This is a major cross-harness convergence point, as hooks become enforcement primitives."
           }
         }
@@ -196,22 +196,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le silence d’un garde n’est pas un oui",
+          "cuisine": "Le silence du garde n’a jamais été un accord",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A fallen post never gave permission",
+          "kitchen": "A guard’s silence was never agreement",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un poste de contrôle qui tombe n’a rien signé.",
+            "cuisine": "Un poste de garde qui tombe n’a donné aucun accord.",
             "expert": "La panne d’un contrôle de sécurité n’est pas une décision d’approbation."
           },
           "en": {
-            "kitchen": "A checking post that falls over has signed nothing.",
+            "kitchen": "A guard post that falls over has given no permission.",
             "expert": "Failure of a safety control is not an approval decision."
           }
         }

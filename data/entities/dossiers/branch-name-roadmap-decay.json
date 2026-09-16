@@ -26,22 +26,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Une ardoise de Codex promet un plat abandonné",
+          "cuisine": "L’ardoise promet encore un plat abandonné",
           "expert": "Un nom de branche flatteur a survécu à sa propre divergence et n’indiquait plus aucune livraison proche"
         },
         "en": {
-          "kitchen": "Roo Code’s board still promises a dropped dish",
+          "kitchen": "The board still promises a dish nobody cooks",
           "expert": "A promising branch name outlived its own divergence and no longer indicated near-term shipping"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez agent-scripts, Roo Code ou Codex, une ardoise au mur annonçait un plat nouveau. Deux ou trois préparations avaient été lancées dessus, puis plus rien. Pendant ce temps, la carte du jour a changé des centaines de fois. Une annonce qui ne bouge plus n’est pas une commande en route.",
+            "cuisine": "Dans trois maisons, une ardoise annonçait un nouveau plat. Deux ou trois préparations ont commencé, puis plus rien. La carte du jour a changé des centaines de fois depuis. Une vieille annonce ne prouve pas qu’une commande avance.",
             "expert": "Un nom de branche annonçait une fonctionnalité future crédible. La branche est restée en avance de quelques commits pendant que main avançait de plusieurs centaines. Ce n’est pas le nom qui qualifie le signal mais la divergence : lu seul, le nom aurait été pris pour une livraison proche."
           },
           "en": {
-            "kitchen": "At agent-scripts, Roo Code or Codex, tomorrow’s special stayed written up on the board for months. Two or three preparations had been started for it, then nothing. The day’s menu behind it was rewritten hundreds of times over. Writing something up is not the same as sending it out.",
+            "kitchen": "In three houses, a board promised a new dish. Two or three preparations began, then nothing followed. The daily menu changed hundreds of times around it. An old promise is not an order moving toward the pass.",
             "expert": "A branch name advertised a plausible future capability. It stayed a handful of commits ahead while main gained several hundred. Name and existence are cheap; divergence is what carries information, and without reading it the branch passes for a roadmap claim it no longer supports."
           }
         }
@@ -52,62 +52,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Deux préparations lancées, puis l’ardoise n’a plus bougé",
+          "cuisine": "Quelques gestes commencent, puis l’ardoise reste seule",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Two preparations started, then the board never changed",
+          "kitchen": "A few preparations begin, then only the board remains",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le chef écrit sur l’ardoise le nom d’un plat qui doit arriver.",
+            "cuisine": "Le chef inscrit un nouveau plat sur l’ardoise. Les clients peuvent alors croire qu’il arrivera bientôt.",
             "expert": "Un nom de branche annonce une fonctionnalité ou un contrôle à venir."
           },
           "en": {
-            "kitchen": "The chef writes up the name of a dish that is meant to arrive.",
+            "kitchen": "The chef writes a new dish on the board. Diners may then believe it will arrive soon.",
             "expert": "A branch name announces a feature or control still to come."
           }
         },
         {
           "fr": {
-            "cuisine": "Quelques préparations sont lancées pour ce plat, et elles s’arrêtent là.",
+            "cuisine": "La brigade commence deux ou trois préparations pour ce plat. Elle ne va jamais plus loin.",
             "expert": "La branche accumule un petit nombre de commits, puis cesse d’avancer."
           },
           "en": {
-            "kitchen": "A few preparations are started for that dish, and stop there.",
+            "kitchen": "The brigade starts two or three preparations for the dish. It never goes any farther.",
             "expert": "The branch accumulates a small number of commits, then stops moving."
           }
         },
         {
           "fr": {
-            "cuisine": "La carte du jour, elle, est réécrite des centaines de fois. L’ardoise reste au mur, inchangée.",
+            "cuisine": "Pendant ce temps, la carte quotidienne change des centaines de fois. L’ancienne promesse reste seule au mur, sans une nouvelle marque.",
             "expert": "Main avance de plusieurs centaines de commits sur la même période."
           },
           "en": {
-            "kitchen": "The day’s menu is rewritten hundreds of times. The board itself never changes.",
+            "kitchen": "Meanwhile, the daily menu changes hundreds of times. The old promise remains on the wall without another mark.",
             "expert": "Main advances by several hundred commits over the same period."
           }
         },
         {
           "fr": {
-            "cuisine": "Le plat reste écrit et les clients continuent de le lire. Plus personne en cuisine ne le prépare pour ce soir.",
+            "cuisine": "Les clients voient toujours le nom du plat au mur. Dans la cuisine, personne ne travaille encore à le servir ce soir.",
             "expert": "La branche reste visible et lisible, mais représente de moins en moins une livraison imminente."
           },
           "en": {
-            "kitchen": "The dish stays written up and diners keep reading it. Nobody at the stoves is cooking it for tonight.",
+            "kitchen": "Diners still see the dish written on the wall. At the stoves, nobody is preparing to serve it tonight.",
             "expert": "The branch stays visible and readable, yet increasingly fails to represent imminent shipping."
           }
         },
         {
           "fr": {
-            "cuisine": "Quand un restaurant ferme, ces ardoises restent au mur. Elles disent ce qu’on avait prévu de servir, pas ce qui est sorti.",
+            "cuisine": "Après la fermeture d’une maison, ses vieilles ardoises peuvent rester visibles. Elles racontent les plats envisagés. Elles ne prouvent pas qu’une assiette a quitté le passe.",
             "expert": "Les projets archivés conservent des ensembles entiers de ces branches fossiles, qui documentent une intention et non une livraison."
           },
           "en": {
-            "kitchen": "When a place shuts for good, those boards stay on the wall. They record what was planned, never what left the pass.",
+            "kitchen": "After a house closes, its old boards may remain visible. They record dishes once considered. They do not prove that a plate ever left the pass.",
             "expert": "Archived projects retain whole sets of such fossil branches, documenting intent rather than delivery."
           }
         }
@@ -118,22 +118,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "L’ardoise est au mur, mais sans date",
+          "cuisine": "Sans date, l’ardoise ne dit pas si quelqu’un cuisine encore",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A board on the wall carries no date",
+          "kitchen": "Without a date, the board cannot show whether anyone still cooks",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une ardoise est au mur ou elle n’y est pas : c’est tout ou rien. Ce qu’elle promet, non. Il faut savoir depuis quand personne ne l’a retouchée. Et si quelqu’un travaille encore à faire sortir ce plat.",
+            "cuisine": "La présence de l’ardoise est facile à constater. Sa promesse dépend de la dernière marque et de l’activité aux fourneaux. Sans ces deux indices, elle montre seulement une ancienne intention.",
             "expert": "L’existence d’une branche est binaire ; la confiance qu’on peut lui accorder ne l’est pas. Trois variables déterminent la force du signal : la fraîcheur du dernier commit, la distance ahead/behind par rapport à main, et le rattachement à un travail d’intégration actif. Un inventaire qui ne retient que la présence du nom perd exactement l’information qui sépare une intention d’une livraison."
           },
           "en": {
-            "kitchen": "A board is either on the wall or it is not. What it is worth as a promise does not work that way. Ask when it was last touched. Ask whether anyone is still cooking toward it tonight.",
+            "kitchen": "Seeing the board on the wall is easy. Its promise depends on the last mark and current work at the stoves. Without both, it shows only an old intention.",
             "expert": "Branch existence is binary; the confidence it licenses is not. Signal strength depends on last-commit freshness, ahead/behind distance against main, and whether any active integration work references the branch. An inventory that records only the name discards the very variables that separate intent from delivery."
           }
         }
@@ -144,22 +144,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Une ardoise vieillie ne pèse presque plus rien",
+          "cuisine": "Dater l’ardoise et regarder si les fourneaux suivent",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "An old board weighs less than tonight’s menu",
+          "kitchen": "Date the board and see whether the stoves follow",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une ardoise se lit maintenant avec sa date à côté. Plus elle est vieille, plus la carte du jour s’en est éloignée, moins elle pèse. Elle reste une intention tant qu’une assiette n’est pas sortie au passe.",
+            "cuisine": "La maison lit chaque ardoise avec sa date et l’écart depuis la carte actuelle. Une promesse ancienne perd du poids. Elle reste une intention tant qu’aucune assiette ne sort.",
             "expert": "Les branches sont pondérées par fraîcheur et par divergence plutôt qu’énumérées à plat. Tant qu’aucune preuve d’intégration ou de release n’apparaît, elles restent classées en signal avancé et ne sont pas promues en travail livré."
           },
           "en": {
-            "kitchen": "Every board now gets read with its date beside it. The older it is, and the further the day’s menu has travelled from it, the less it weighs. It stays an intention until a plate actually leaves the pass.",
+            "kitchen": "The house reads every board beside its date and the distance from today’s menu. An old promise carries less weight. It remains an intention until a plate leaves.",
             "expert": "Branches are weighted by freshness and divergence instead of being enumerated flat. They stay at a forward-signal state until integration or release evidence arrives, and are never promoted to shipped work without it."
           }
         }
@@ -170,22 +170,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "L’ardoise dit l’intention, jamais le service du soir",
+          "cuisine": "La vieille ardoise reste utile comme souvenir d’intention",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The board still records what the house wanted",
+          "kitchen": "The old board remains useful as a record of intent",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "L’ardoise garde de la valeur. Elle dit ce que la maison voulait servir, et c’est déjà une information. Elle ne dit pas ce qui sortira ce soir, et on ne lui demande plus de le dire.",
+            "cuisine": "L’ardoise révèle encore ce que la maison souhaitait préparer. Cette information garde sa valeur. Elle ne doit simplement plus être lue comme la commande de ce soir.",
             "expert": "L’intelligence de branches reste utile précisément parce qu’elle est présentée comme probabiliste. Elle documente une direction envisagée et non un travail livré, et cette qualification explicite est ce qui la rend exploitable."
           },
           "en": {
-            "kitchen": "The board still earns its place on the wall. It tells you what the house wanted to serve, which is worth knowing. It is simply no longer read as tonight’s order.",
+            "kitchen": "The board still reveals what the house once hoped to serve. That remains worth knowing. It simply cannot be read as tonight’s order.",
             "expert": "Branch intelligence remains useful precisely because it is labelled probabilistic. It documents a considered direction rather than shipped work, and stating that qualification is what keeps it usable."
           }
         }
@@ -196,22 +196,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Une ardoise annonce une envie, pas une assiette",
+          "cuisine": "Le nom au mur ne prouve jamais que le plat est parti",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Writing a dish up is not cooking it",
+          "kitchen": "A name on the wall never proves the dish left",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une ardoise annonce une envie. Une assiette qui passe la porte, c’est autre chose. Ne confonds jamais les deux, même quand l’écriture est belle.",
+            "cuisine": "Le plat inscrit au mur exprime seulement une intention. La preuve arrive quand une assiette quitte réellement le passe. Une belle écriture ne rapproche pas ces deux moments.",
             "expert": "Une branche est un signal, pas une promesse. Son nom ne porte aucune information de livraison ; seules sa fraîcheur et sa divergence en portent."
           },
           "en": {
-            "kitchen": "A board announces an appetite. A plate leaving the pass is a different thing entirely. Never let good handwriting turn one into the other.",
+            "kitchen": "A dish written on the wall expresses only an intention. Proof arrives when a plate truly leaves the pass. Fine handwriting cannot join those moments.",
             "expert": "A branch is a signal, not a promise. The name carries no delivery information at all; only freshness and divergence do."
           }
         }

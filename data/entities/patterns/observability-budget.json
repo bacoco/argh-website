@@ -24,22 +24,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le cahier a fini par encombrer la cuisine",
+          "cuisine": "Le cahier de compte prenait la place du service",
           "expert": "Quand l’instrumentation devient elle-même la panne"
         },
         "en": {
-          "kitchen": "Writing everything down slowed the whole service",
+          "kitchen": "The tally book was taking room from service",
           "expert": "When the instrumentation becomes the outage itself"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Codex, on notait tout ce qui se passait, à la minute, sans jamais s’arrêter. Le cahier a fini par prendre la place et le temps du service. Il a fallu s’y reprendre à plusieurs fois pour réduire ce qu’on écrivait. Tenir les comptes est un vrai poste de travail, pas un geste gratuit.",
+            "cuisine": "Le cahier gardait tant de traces qu’il prenait de la place et ralentissait le service. Plusieurs réductions ont été nécessaires avant de le contenir. Tenir les comptes est un travail à part entière : son coût, son temps et son volume doivent être décidés avant qu’ils concurrencent la cuisine.",
             "expert": "Chez Codex, une télémétrie persistante a produit assez de churn local pour que l’observabilité devienne elle-même un problème de performance et de stockage. Plusieurs vagues de réduction ont été nécessaires. Le budget d’observabilité est la contrainte qui manquait : borner le coût, la latence et le volume induits par l’instrumentation avant qu’ils ne concurrencent le travail observé."
           },
           "en": {
-            "kitchen": "At Codex, everything that happened was written down, minute by minute, without a pause. In the end the book took the room and the time the service needed. It took several passes to cut down what was being written. Keeping the tally is a job of its own, not a free gesture.",
+            "kitchen": "The book kept so many traces that it took space and slowed the service. Several reductions were needed before it was contained. Keeping the tally is work in its own right: its cost, time, and volume must be decided before they compete with cooking.",
             "expert": "In Codex, persistent telemetry generated enough local churn that observability itself turned into a performance and storage problem. Several waves of reduction were needed. The observability budget is the missing constraint: bound the cost, latency and volume that instrumentation introduces, before they compete with the work being observed."
           }
         }
@@ -50,22 +50,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Codex a rogné deux fois, le cahier déborde",
+          "cuisine": "Deux réductions n’avaient pas suffi à vider le cahier",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Two cuts at Codex, the book still overflows",
+          "kitchen": "Two reductions had not been enough to empty the book",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le premier signe : la tenue du cahier pèse autant que le service lui-même. Le deuxième : on a réduit ce qu’on écrivait, la consigne est passée en salle, et ça déborde encore. Chez Codex, une autre façon de noter continuait de passer à côté de la consigne. Quand deux réductions ne suffisent pas, ce n’est plus une question de quantité.",
+            "cuisine": "Le signe apparaît quand la tenue du cahier pèse autant que le service. Un premier garde a été réduit, mais une autre façon de noter continuait de remplir le même cahier. Deux réductions successives qui échouent montrent que le regard ne porte pas au bon endroit.",
             "expert": "Le motif apparaît quand la charge d’instrumentation se mesure du même ordre que la charge utile : chez Codex, churn local, coût de stockage et dégradation de performance attribuables à la seule télémétrie. Le second signal est un correctif qui ne tient pas : un chemin de journalisation massif avait été réduit et livré, mais un chemin d’événements transformés continuait de contourner le garde. Deux réductions successives insuffisantes indiquent que la mesure ne portait pas au bon endroit."
           },
           "en": {
-            "kitchen": "First sign: keeping the book weighs as much as the service itself. Second: the writing was cut down, the new rule went into use, and it still overflows. At Codex, another way of noting things kept slipping past that rule. When two cuts are not enough, the trouble is no longer quantity.",
+            "kitchen": "The sign appears when keeping the book weighs as much as service. One guard was reduced, but another way of noting still filled the same book. Two failed reductions in succession show that attention is fixed on the wrong place.",
             "expert": "The pattern appears when instrumentation load reaches the same order as useful load: in Codex, local churn, storage cost and performance degradation attributable to telemetry alone. The second signal is a fix that does not hold: a massive logging path had been reduced and shipped, yet a transformed-events path kept bypassing the guard. Two successive reductions falling short indicate the measure was not applied where it mattered."
           }
         }
@@ -76,22 +76,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "On surveille la main, pas le cahier",
+          "cuisine": "Le garde surveillait une main, pas le fond du cahier",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Other hands reach the book without passing anyone",
+          "kitchen": "The guard watched one hand, not the bottom of the book",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On croit que tenir le cahier coûte toujours pareil. En réalité, plus le service est chargé, plus il y a à écrire, et l’écriture mange le temps qu’il fallait pour cuisiner. Ensuite on surveille la main qu’on voit écrire, pas le cahier lui-même. Chez Codex, d’autres façons de noter arrivaient au même cahier sans passer devant personne.",
+            "cuisine": "On imagine souvent que le cahier coûte toujours la même chose. Pourtant plus la maison sert, plus elle écrit, et l’écriture prend du temps au feu. Poser le garde sur une colonne visible ne suffit pas si d’autres mains atteignent le même cahier ; seul le fond où tout s’inscrit les rassemble.",
             "expert": "L’instrumentation est raisonnée comme un coût fixe alors qu’elle est une charge de travail proportionnelle à l’activité observée : plus le système travaille, plus il écrit, et l’écriture concurrence le travail. La seconde tromperie est de placer le garde sur la représentation visible — un chemin de journalisation identifié — alors que d’autres chemins atteignent la même persistance ; chez Codex, des événements transformés continuaient de contourner le garde jusqu’à ce que l’enforcement soit déplacé vers la frontière finale de persistance."
           },
           "en": {
-            "kitchen": "People assume the tally always costs the same. In truth, the busier the service, the more there is to write, and the writing eats the time meant for cooking. Then the watch gets put on the hand you can see writing, not on the book. At Codex, other ways of noting reached the same book without passing anyone.",
+            "kitchen": "People often imagine that the book always costs the same. Yet the more the house serves, the more it writes, and writing takes time from the fire. Guarding one visible column is not enough if other hands reach the same book; only the bottom where all marks land gathers them.",
             "expert": "Instrumentation gets reasoned about as a fixed cost while it is a workload proportional to the activity observed: the harder the system works, the more it writes, and the writing competes with the work. The second deception is to put the guard on the visible representation — one identified logging path — when other paths reach the same store; in Codex, transformed events kept bypassing the guard until enforcement moved to the final persistence boundary."
           }
         }
@@ -102,22 +102,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Déplacer le contrôle à l’entrée du cahier",
+          "cuisine": "Donner un budget au cahier, puis garder sa dernière page",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Decide beforehand what the book may cost",
+          "kitchen": "Give the book a budget, then guard its last page",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Décide d’avance ce que la tenue des comptes a le droit de coûter, en place et en temps. Mets le contrôle à l’entrée du cahier, là où tout finit par s’écrire, pas sur une main en particulier. Si deux réductions n’ont pas suffi, arrête de rogner la même colonne. Change l’endroit où tu contrôles.",
+            "cuisine": "Donnez au cahier un budget clair de place, de temps et de coût. Placez le garde à la dernière page, là où toutes les notes finissent par rester, plutôt que sur une seule colonne. Après deux corrections insuffisantes, ne réduisez plus la même ligne : déplacez le garde.",
             "expert": "Donner à l’instrumentation un budget explicite — coût, latence, volume — et le traiter comme une contrainte de conception, pas comme un réglage a posteriori. Placer le garde à la frontière finale de persistance plutôt que sur une représentation visible, puisque c’est là que tous les chemins convergent et que l’effet devient irréversible. Après un correctif qui échoue deux fois, ne pas réduire davantage la même source : déplacer le point d’application."
           },
           "en": {
-            "kitchen": "Decide in advance what the tally is allowed to cost, in room and in time. Put the check at the mouth of the book, where everything ends up written, not on one particular hand. If two cuts have not been enough, stop shaving the same column. Move where the check stands.",
+            "kitchen": "Give the book a clear budget for space, time, and cost. Put the guard on its last page, where every note finally remains, rather than on one column. After two insufficient corrections, stop trimming the same line: move the guard.",
             "expert": "Give instrumentation an explicit budget — cost, latency, volume — and treat it as a design constraint rather than a later tuning pass. Put the guard at the final persistence boundary instead of on a visible representation, since that is where every path converges and where the effect becomes irreversible. After a fix fails twice, stop shrinking the same source and move the point where the rule applies."
           }
         }
@@ -128,22 +128,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Deux corrections ratées désignent le mauvais endroit",
+          "cuisine": "Le cahier a besoin d’une part décidée du service",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The tally takes its cut of the service",
+          "kitchen": "The book needs an agreed share of service",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Tenir les comptes coûte du temps et de la place : donne-lui sa part, décidée à l’avance. Et si deux corrections n’ont rien changé, c’est l’endroit du contrôle qu’il faut déplacer.",
+            "cuisine": "Le cahier est lui-même une charge de travail et mérite une part décidée du service. Si deux corrections échouent, cessez de retoucher la colonne visible. Gardez la dernière page, là où le coût devient réel et sans retour.",
             "expert": "L’observabilité est une charge de travail et a besoin d’un budget. Quand un correctif échoue deux fois, cesser de patcher la représentation visible et déplacer le garde là où l’effet irréversible se produit réellement."
           },
           "en": {
-            "kitchen": "Keeping the tally costs time and room: give it a share, decided in advance. And if two fixes changed nothing, it is the place of the check that has to move.",
+            "kitchen": "The book is work itself and deserves an agreed share of service. If two corrections fail, stop touching the visible column. Guard the last page, where the cost becomes real and cannot be taken back.",
             "expert": "Observability is a workload and needs a budget. When a fix fails twice, stop patching the visible representation and move the guard to where the irreversible effect actually happens."
           }
         }

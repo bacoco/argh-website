@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Ouvrir le poste avant d'avoir rangé les caisses",
+          "cuisine": "Le poste avait ouvert avant que les caisses soient rangées",
           "expert": "Un consommateur s’initialise avant la fin de la découverte"
         },
         "en": {
-          "kitchen": "The station opens with its trays still empty",
+          "kitchen": "The station opened before the crates were put away",
           "expert": "A consumer initializes before discovery completes"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le poste ouvre à l’heure. Le cuisinier regarde ses bacs : vides. Les caisses sont là, dans le couloir, pleines et bien étiquetées, mais personne ne les a rangées avant l’ouverture. Chez Claude Code, un poste a ouvert ainsi et a tenu tout le service avec rien.",
+            "cuisine": "Le poste a ouvert à l’heure et le cuisinier a trouvé ses bacs vides. Les caisses, pleines et bien étiquetées, étaient encore dans le couloir. Le poste a donc tenu le service sans rien dans ses bacs.",
             "expert": "Un service de langage fourni par plugin s’est initialisé avant la fin de la discovery des plugins, laissant le runtime avec zéro serveur configuré malgré des fichiers valides sur disque. Les plugins ont été chargés quelques millisecondes plus tard, sans que la surface attendue soit reprise. L’ordre d’initialisation, et non le contenu de la configuration, a déterminé ce qui était actif au moment des premières opérations."
           },
           "en": {
-            "kitchen": "The station opens on time. The cook looks in his trays: empty. The crates are right there in the corridor, full and correctly labelled, but nobody put them away before opening. At Claude Code, a station opened just like that and worked the whole service with nothing.",
+            "kitchen": "The station opened on time and the cook found empty trays. The full, correctly labelled crates were still in the corridor. The station therefore worked service with nothing in its trays.",
             "expert": "A plugin-provided language service initialized before plugin discovery had finished, leaving the runtime with zero configured servers despite valid files on disk. The plugins loaded a few milliseconds later, and the expected surface was never picked up. Initialization order, not configuration content, decided what was active for the first operations."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Claude Code a ouvert avec des bacs vides",
+          "cuisine": "Les caisses étaient bonnes, les bacs restaient vides",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Everyone is right and the trays are empty",
+          "kitchen": "The crates were right while the trays stayed empty",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On reconnaît le motif quand tout le monde a raison en même temps. Le livreur montre ses caisses : correctes. Le cuisinier montre ses bacs : vides. Rien ne s’est cassé, personne n’a crié : le poste a simplement travaillé avec zéro.",
+            "cuisine": "Le livreur montrait des caisses correctes et le cuisinier des bacs vides. Les deux disaient vrai. Rien ne cassait ni ne criait ; le poste travaillait simplement avec rien.",
             "expert": "Le motif se reconnaît à une contradiction entre l’artefact et l’état observé : configuration valide sur disque, zéro entrée active dans le processus. La validation statique passe, puisque les fichiers sont corrects, et l’échec est silencieux : le résultat est un ensemble vide, pas une erreur. Le comportement dépend de l’ordre de démarrage et non du contenu, donc il ne se reproduit pas par relecture du fichier."
           },
           "en": {
-            "kitchen": "You know the shape when everyone is right at once. The delivery man shows his crates: correct. The cook shows his trays: empty. Nothing broke and nobody shouted: the station simply worked with none.",
+            "kitchen": "The delivery person showed correct crates and the cook showed empty trays. Both told the truth. Nothing broke or shouted; the station simply worked with nothing.",
             "expert": "The pattern shows as a contradiction between artifact and observed state: valid configuration on disk, zero active entries in the process. Static validation passes, since the files are correct, and the failure is silent: the outcome is an empty set, not an error. Behavior depends on start order rather than content, so re-reading the file reproduces nothing."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un poste vide ressemble à un poste tranquille",
+          "cuisine": "Un bac vide ne criait pas qu’il manquait une caisse",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Nobody complains when a tray holds nothing",
+          "kitchen": "An empty tray did not shout that a crate was missing",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ce qui trompe, c’est qu’on contrôle la marchandise et jamais le bac. Les caisses sont bonnes, donc on croit le poste servi. Et un bac vide ne se plaint pas. Ce n’est pas une panne, c’est un poste qui n’a rien à faire ce soir. On a compté une fois, à l’ouverture, et on n’a jamais recompté.",
+            "cuisine": "On avait vérifié les caisses, jamais les bacs. Comme la marchandise était bonne, on croyait le poste prêt. Un bac vide ressemblait à un poste tranquille et le compte n’était jamais refait.",
             "expert": "La vérification porte sur l’artefact — le fichier existe, il est valide — alors que la propriété utile est l’état du processus au moment de l’usage. Un instantané unique est pris avant la fin de la discovery et n’est jamais réévalué, de sorte qu’un chargement postérieur de quelques millisecondes ne corrige rien. L’absence se matérialise en ensemble vide, indistinguable d’une configuration délibérément vide, ce qui supprime le signal d’erreur qui aurait déclenché l’investigation."
           },
           "en": {
-            "kitchen": "What fools you is that the goods get checked and the tray never does. The crates are good, so the station is taken for stocked. And an empty tray does not complain: it looks less like a breakdown than like a station with nothing on tonight. The count was taken once, at opening, and never taken again.",
+            "kitchen": "The crates had been checked, never the trays. Since the goods were good, the station seemed ready. An empty tray looked like a quiet station and the count was never taken again.",
             "expert": "Verification targets the artifact — the file exists, it parses — while the useful property is process state at the moment of use. A single snapshot is taken before discovery completes and is never re-evaluated, so a load arriving milliseconds later corrects nothing. The absence materializes as an empty set, indistinguishable from a deliberately empty configuration, which removes the error signal that would have prompted investigation."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ne pas croire le livreur sur parole",
+          "cuisine": "Ouvrir les bacs avant le premier plat",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Look in the trays before the first order",
+          "kitchen": "Open the trays before the first order",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "N’ouvrez pas le poste tant que les caisses ne sont pas rangées, ou repassez les ranger avant le premier plat. Pour savoir si la maison est prête, allez ouvrir les bacs vous-même. La parole du livreur ne remplace pas ce qu’on trouve dedans.",
+            "cuisine": "Rangez les caisses avant l’ouverture, ou revenez le faire avant le premier plat. Ouvrez les bacs pour savoir si le poste est prêt. La parole du livreur ne remplace pas ce qui est sous la main.",
             "expert": "Les contrôles chargés après le démarrage ont besoin de health checks post-initialisation vérifiant que la surface attendue répond réellement. Quand c’est possible, préférer un enregistrement dynamique à un instantané unique de découverte, afin qu’un composant arrivé tard soit repris. Un ensemble vide au démarrage se traite comme un état distinct d’une configuration vide déclarée, afin qu’il produise un signal."
           },
           "en": {
-            "kitchen": "Do not open the station until the crates are put away, or come back and stock it before the first dish. To know whether the house is ready, open the trays yourself. What the delivery man says is not what is in there.",
+            "kitchen": "Put away the crates before opening, or come back before the first dish. Open the trays to know whether the station is ready. The delivery person’s word does not replace what is within reach.",
             "expert": "Controls loaded after startup need post-initialization health checks confirming that the expected surface actually answers. Where possible, prefer dynamic registration to a single discovery snapshot, so a component arriving late is still picked up. An empty set at startup is treated as a state distinct from a declared empty configuration, so that it raises a signal."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un poste prêt se vérifie au poste",
+          "cuisine": "La marchandise dans le couloir ne prépare aucun plat",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Stock in the corridor cooks nothing",
+          "kitchen": "Goods in the corridor cook nothing",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Avoir la marchandise ne veut pas dire l’avoir à son poste. Tant que personne n’a ouvert le bac au moment du service, la maison ne sait pas si elle est prête. Ce qui compte, c’est ce qui est sous la main quand la première commande tombe.",
+            "cuisine": "Avoir des caisses ne veut pas dire que le poste a ce qu’il lui faut. La préparation se vérifie dans les bacs au moment du service. Ce qui compte est sous la main quand tombe la première commande.",
             "expert": "La présence d’un fichier valide ne prouve pas l’activation runtime : seule une vérification effectuée après initialisation établit que le contrôle est réellement en place. Le mécanisme se généralise aux skills, serveurs MCP, plugins, hooks et à tout contrôle chargé après le démarrage ; la classe de défaut est l’ordre d’initialisation, pas le type de composant."
           },
           "en": {
-            "kitchen": "Having the goods is not the same as having them on your station. Until someone opens the tray at service time, the house does not know whether it is ready. What counts is what is within reach when the first order lands.",
+            "kitchen": "Having crates is not the same as giving a station what it needs. Readiness is checked in the trays at service time. What matters is within reach when the first order lands.",
             "expert": "A valid file's presence does not prove runtime activation: only a check performed after initialization establishes that the control is really in place. The mechanism generalizes to skills, MCP servers, plugins, hooks and anything loaded after startup; the fault class is initialization order, not component type."
           }
         }

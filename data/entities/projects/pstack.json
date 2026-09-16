@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "pstack",
+          "cuisine": "Dire si l’on a goûté ou seulement deviné",
           "expert": "pstack"
         },
         "en": {
-          "kitchen": "pstack",
+          "kitchen": "Say whether you tasted or only guessed",
           "expert": "pstack"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez pstack, on a demandé que personne n’annonce un plat sans dire comment il le sait : goûté, jugé à l’œil, ou seulement supposé. Et si le contrôle est à portée de main, on le fait soi-même au lieu de l’envoyer au chef. Un dossier public y est rattaché.",
+            "cuisine": "La brigade a reçu une consigne simple : ne pas annoncer un plat sans dire comment elle le sait. Elle doit aussi faire elle-même les vérifications à portée de main. Un dossier public porte sur cette consigne.",
             "expert": "Une révision de skill chez pstack impose d’accompagner chaque affirmation d’une preuve ou d’une qualification explicite : mesuré, déduit ou supposé. La même révision demande d’exécuter les contrôles à portée plutôt que de les renvoyer à l’opérateur. Un dossier public est rattaché à ce changement."
           },
           "en": {
-            "kitchen": "pstack asked its people to stop calling a dish ready without saying how they know: tasted, judged by eye, or merely assumed. And where the check is within arm’s reach, do it yourself instead of passing it up to the chef. One public dossier hangs on this.",
+            "kitchen": "The brigade received a simple instruction: never call a dish ready without saying how it knows. It must also make checks within reach itself. One public dossier concerns that instruction.",
             "expert": "A skill revision at pstack requires every claim to arrive with evidence or an explicit qualifier: measured, inferred or assumed. The same revision asks that reachable checks be run rather than handed back to the operator. One public dossier is attached to that change."
           }
         }
@@ -51,22 +51,22 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Rien à raconter chez pstack, sauf une consigne",
+          "cuisine": "Une consigne sans service observé",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Nothing to tell at pstack, beyond one note",
+          "kitchen": "An instruction with no service observed",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Il n’y a pas d’histoire à dérouler ici, pas de service raté à raconter. Ce qu’on a, c’est une consigne écrite et affichée. Personne n’a encore regardé si elle change quelque chose au passe.",
+            "cuisine": "Aucun service précis ne raconte cette page. On voit seulement la consigne au mur. Personne n’a encore observé ce qu’elle change au passe.",
             "expert": "Aucune chronologie n’est établie. Le seul élément fixé est le changement lui-même : la règle de compte rendu existe dans le skill révisé, et son effet sur le comportement réel n’a pas été mesuré ici."
           },
           "en": {
-            "kitchen": "No run of events belongs here, and no service went wrong. What exists is a written note, pinned up. Nobody has yet stood at the pass to see whether it changes anything.",
+            "kitchen": "No particular service tells this page. Only the instruction on the wall is visible. Nobody has yet watched what it changes at the pass.",
             "expert": "No sequence is established. The one fixed element is the change itself: the reporting rule exists in the revised skill, and its effect on actual behaviour was not measured here."
           }
         }
@@ -77,22 +77,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux commis, même annonce, un seul a goûté",
+          "cuisine": "Deux annonces pareilles, deux savoirs différents",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Same call from two cooks, one tasted",
+          "kitchen": "Two identical calls, two different kinds of knowledge",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Deux commis annoncent la même chose au passe. L’un a goûté, l’autre a regardé la couleur et parié. À l’oreille, les deux phrases sont identiques, et c’est tout le problème.",
+            "cuisine": "Deux commis peuvent dire que le plat est prêt. L’un l’a goûté, l’autre le suppose. Sans le dire, leurs annonces semblent identiques alors qu’elles ne valent pas la même chose.",
             "expert": "L’affirmation et sa preuve sont deux objets distincts. Sans étiquette, un résultat mesuré et une supposition se présentent au lecteur sous la même forme. Étiqueter mesuré, déduit ou supposé rend cette distinction lisible au moment de la lecture, et non après coup."
           },
           "en": {
-            "kitchen": "Two cooks call the same words down the pass. One of them tasted it; the other looked at the colour and bet. The words sound exactly alike, and that is the whole trouble.",
+            "kitchen": "Two cooks can say a dish is ready. One tasted it; the other assumes it. Without saying so, their calls sound identical although they do not mean the same thing.",
             "expert": "A claim and its evidence are separate objects. Without a label, a measured result and a guess reach the reader in the same shape. Labelling measured, inferred or assumed makes the difference readable at reading time rather than afterwards."
           }
         }
@@ -103,22 +103,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Dire comment on sait, avant d’envoyer",
+          "cuisine": "Mettre le goût à côté de l’annonce",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Say how you know before the plate goes",
+          "kitchen": "Put the tasting beside the call",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On annonce en disant comment on sait : goûté, jugé, ou supposé. Et ce qu’on peut vérifier en deux gestes, on le vérifie soi-même. Reste à voir si la consigne est suivie : l’afficher ne prouve pas qu’elle tient.",
+            "cuisine": "Chaque annonce doit dire si le plat a été goûté, jugé à l’œil ou seulement supposé. La brigade fait les vérifications simples elle-même. Il reste à voir si cette consigne est suivie : l’afficher ne suffit pas.",
             "expert": "La règle demande deux choses : garder la preuve à côté de l’affirmation, et exécuter soi-même les contrôles à portée plutôt que de les déléguer à l’opérateur. Elle demande aussi de tester la règle de compte rendu, plutôt que de prendre l’existence de la règle pour une preuve."
           },
           "en": {
-            "kitchen": "Call the dish, and say how you know it: tasted, judged, or assumed. Whatever can be checked in two moves, check it yourself. Then watch whether the note is obeyed — pinning it up proves nothing.",
+            "kitchen": "Each call must say whether the dish was tasted, judged by sight, or only assumed. The brigade makes simple checks itself. It remains to be seen whether the instruction is followed; posting it proves nothing.",
             "expert": "The rule asks for two things: keep the evidence beside the claim, and run the reachable checks instead of delegating them to the operator. It also asks that the reporting rule itself be tested, rather than treated as evidence because it exists."
           }
         }
@@ -129,22 +129,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Personne n’est allé voir au feu",
+          "cuisine": "La pancarte est là, le service n’a pas été vu",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Nobody has gone to look at the stoves",
+          "kitchen": "The sign is there; service has not been watched",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La consigne est bien au mur, personne n’en doute. Ce qui se passe ensuite, au feu, n’a pas été regardé. On en est là : une règle écrite, un service pas encore observé.",
+            "cuisine": "La consigne est visible et personne ne conteste son texte. Son effet pendant un vrai service n’a pas été mesuré. La preuve porte sur la pancarte, pas sur la brigade.",
             "expert": "Le changement est visible dans le skill révisé. Son effet sur le comportement réel n’a pas été mesuré ici : l’état de preuve porte sur le texte de la règle, pas sur son application. Aucune mesure de terrain n’est associée."
           },
           "en": {
-            "kitchen": "The note is on the wall; nobody disputes that. What happens afterwards, at the stoves, has not been watched. That is where it stands: a rule written, a service not yet observed.",
+            "kitchen": "The instruction is visible and nobody disputes its wording. Its effect during real service has not been measured. The proof covers the sign, not the brigade.",
             "expert": "The change is visible in the revised skill. Its effect on real behaviour was not measured here: the evidence covers the text of the rule, not its application. No field measurement is attached."
           }
         }
@@ -155,22 +155,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Annoncer sans savoir, c’est parier",
+          "cuisine": "Une annonce doit montrer son goût",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Calling a plate you never tasted is betting",
+          "kitchen": "A call must show its tasting",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une annonce sans façon de savoir n’est qu’un espoir dit à voix haute.",
+            "cuisine": "Une annonce vaut ce que vaut la façon de savoir qui l’accompagne.",
             "expert": "Garder la preuve à côté de l’affirmation, et tester la règle de compte rendu au lieu de prendre la règle pour une preuve."
           },
           "en": {
-            "kitchen": "A dish called ready, with no word on how you know, is only hope said out loud.",
+            "kitchen": "A call is worth the way of knowing that comes with it.",
             "expert": "Keep the evidence beside the claim, and test the reporting rule instead of taking the rule for evidence."
           }
         }

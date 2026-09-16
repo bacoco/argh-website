@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Chez Cline, « ajoute » a jeté l’assiette déjà posée",
+          "cuisine": "En ajoutant une assiette, le commis jette celle qui était là",
           "expert": "Une opération d’ajout pouvait remplacer un fichier existant sans avertissement"
         },
         "en": {
-          "kitchen": "At Cline, “add” binned the plate already down",
+          "kitchen": "Adding one plate sends the existing plate to the bin",
           "expert": "An add operation could replace an existing file with no warning"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Cline, la commande disait « ajoute ». Le commis chargé de vérifier que la place était libre regardait sa feuille, pas la table. Il y avait déjà une assiette posée ; elle est partie à la plonge.",
+            "cuisine": "La commande demande d’ajouter une assiette. Le commis vérifie sa feuille au lieu de regarder la table. Une assiette occupait déjà la place ; la nouvelle la fait disparaître sans avertissement.",
             "expert": "Une primitive d’édition décrite comme un ajout pouvait remplacer silencieusement un fichier existant : son contrôle de sécurité interrogeait un état incomplet au lieu de la destination réelle, au point même où le remplacement se produit."
           },
           "en": {
-            "kitchen": "At Cline the order said “add.” The cook meant to check the place was free looked at his own sheet instead of the table. A plate was already down, and it went into the bin.",
+            "kitchen": "The order asks for another plate. The cook checks a handwritten list instead of the table. A plate already sits there, and the new one silently sends it away.",
             "expert": "A file-editing primitive presented as an add could silently overwrite an existing file. Its safety check read incomplete state rather than the destination itself, at the very point where replacement happens."
           }
         }
@@ -51,62 +51,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Chez Cline, on a vérifié sur une liste incomplète",
+          "cuisine": "La liste incomplète cache l’assiette déjà posée",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "At Cline the check trusted a list from memory",
+          "kitchen": "An incomplete list hides the plate already there",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le geste avait bien une sécurité : refuser la place si elle est déjà occupée.",
+            "cuisine": "Une consigne devait empêcher de poser une assiette sur une place occupée. Sur le papier, la table semblait donc protégée.",
             "expert": "L’opération disposait d’un garde explicite censé refuser une destination déjà existante."
           },
           "en": {
-            "kitchen": "The move did have a safeguard: refuse the place when it is already taken.",
+            "kitchen": "A house rule was meant to stop any plate going onto an occupied place. On paper, the table looked protected.",
             "expert": "The operation carried an explicit guard meant to reject an already-existing destination."
           }
         },
         {
           "fr": {
-            "cuisine": "Mais cette sécurité consultait une feuille tenue de tête, où certaines places n’avaient jamais été inscrites.",
+            "cuisine": "Le commis ne regardait pourtant qu’une liste recopiée de mémoire. Certaines places occupées n’y figuraient jamais.",
             "expert": "Ce garde interrogeait une représentation mémoire partielle, qui ne contenait pas les cibles atteintes par le seul chemin d’ajout."
           },
           "en": {
-            "kitchen": "But that safeguard read a sheet kept from memory, and some places had never been written on it.",
+            "kitchen": "The cook only read a list copied from memory. Some occupied places had never been written on it.",
             "expert": "That guard queried a partial in-memory representation which never held targets reached only through the add path."
           }
         },
         {
           "fr": {
-            "cuisine": "Sur la feuille, la place semblait libre. L’assiette neuve descend, l’ancienne dégage, personne n’est prévenu.",
+            "cuisine": "La liste annonce une place libre. Le commis y pose la nouvelle assiette et fait disparaître l’ancienne. Personne n’est prévenu.",
             "expert": "Un fichier existant pouvait donc atteindre l’écriture finale et être remplacé sans avertissement."
           },
           "en": {
-            "kitchen": "On the sheet the place looked free. The new plate comes down, the old one goes, nobody is told.",
+            "kitchen": "The list says the place is free. The cook sets down the new plate and removes the old one. Nobody is warned.",
             "expert": "An existing file could therefore reach the final write and be replaced with no warning at all."
           }
         },
         {
           "fr": {
-            "cuisine": "La réparation fait regarder la table, pas la feuille. Un essai vérifie qu’une assiette déjà posée reste intacte.",
+            "cuisine": "La réparation oblige le commis à regarder la table juste avant de poser. Un essai confirme qu’une assiette présente reste intacte.",
             "expert": "Le correctif réintroduit l’état réel de la destination dans le chemin de décision et ajoute un test de régression qui vérifie la préservation du fichier d’origine."
           },
           "en": {
-            "kitchen": "The repair makes the cook look at the table, not the sheet. A trial checks that a plate already down stays untouched.",
+            "kitchen": "The repair makes the cook inspect the table just before setting anything down. A trial confirms that an existing plate remains untouched.",
             "expert": "The repair pulled real destination state into the decision path and added a regression test asserting the original file survives."
           }
         },
         {
           "fr": {
-            "cuisine": "La réparation est adoptée et l’essai la surveille. Reste inconnu : si elle est déjà arrivée dans les cuisines, et si on a cessé de perdre des assiettes en salle.",
+            "cuisine": "La maison a accepté cette réparation et son essai. On ignore encore si toutes les cuisines l’ont reçue. Rien ne montre non plus que les pertes ont cessé en service.",
             "expert": "Le correctif est mergé et couvert par un test de régression. Son inclusion dans une release publiée et la récupération observée sur le terrain ne sont pas établies au cutoff observé."
           },
           "en": {
-            "kitchen": "The repair is taken up and the trial watches it. Still unknown: whether it reached the kitchens, and whether plates stopped disappearing out front.",
+            "kitchen": "The house accepted the repair and its trial. Whether every kitchen received it remains unknown. Nothing yet shows that plates stopped disappearing during service.",
             "expert": "The fix is merged and regression-covered. Whether a shipped release carries it, and whether the field recovered, was not established at the observed cutoff."
           }
         }
@@ -117,22 +117,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "La place semblait libre sur le papier seulement",
+          "cuisine": "La feuille disait libre, la table disait occupé",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The place looked free on paper only",
+          "kitchen": "The list said free while the table said occupied",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La feuille et la table ne disaient pas la même chose. On a tranché sur la feuille, alors que c’est la table qui perd une assiette. Le geste final faisait plus de dégâts que ce que la sécurité croyait couvrir.",
+            "cuisine": "La feuille disait que la place était libre, mais la table portait déjà une assiette. Le commis a cru le papier. Son geste pouvait donc détruire précisément ce que la consigne devait protéger.",
             "expert": "La décision de sécurité s’appuyait sur un cache dont la sémantique d’appartenance ne correspondait pas à l’opération de fichier qu’il protégeait. L’écriture finale avait des effets de bord plus forts que ceux que la précondition supposait."
           },
           "en": {
-            "kitchen": "Sheet and table did not agree. The decision was taken on the sheet, but the table is what loses a plate. The final move did more damage than the safeguard believed it covered.",
+            "kitchen": "The list called the place free, while the table already held a plate. The cook trusted the paper. His final move could destroy exactly what the house rule was meant to protect.",
             "expert": "The safety decision ran against a cache whose membership semantics did not match the filesystem operation it guarded. The final write carried stronger side effects than the precondition ever modelled."
           }
         }
@@ -143,22 +143,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Regarder la table juste avant de poser l’assiette",
+          "cuisine": "Vérifier la place au moment de poser l’assiette",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Check the place before the plate goes down",
+          "kitchen": "Inspect the place as the plate goes down",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Regarder la vraie place, juste avant de poser, et pas cinq minutes plus tôt sur un papier. Et pour chaque geste qui peut écraser quelque chose, essayer d’abord le cas où la place est déjà prise.",
+            "cuisine": "Le commis doit regarder la place réelle juste avant de poser l’assiette. La brigade doit aussi essayer le geste sur une table déjà occupée. C’est là que le danger apparaît.",
             "expert": "Vérifier les préconditions destructives contre l’état réel de la destination, au point exact où le remplacement peut se produire. Inclure systématiquement des destinations préexistantes dans les tests de régression de chaque primitive d’écriture."
           },
           "en": {
-            "kitchen": "Look at the actual place, right before setting down, not five minutes earlier on paper. And for every move that can crush something, trial the case where the place is already taken.",
+            "kitchen": "The cook must inspect the actual place just before setting down the plate. The brigade should also try the move on an occupied table. That is where the danger appears.",
             "expert": "Evaluate destructive preconditions against real destination state at the exact point replacement becomes possible. Every write primitive should carry regression coverage for a destination that already exists."
           }
         }
@@ -169,22 +169,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "La réparation est adoptée, sa portée reste inconnue",
+          "cuisine": "La réparation est acceptée, mais sa présence reste inconnue",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Cline took the repair; its reach is unknown",
+          "kitchen": "The repair is accepted, but its reach is unknown",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La réparation existe, elle est adoptée, un essai la tient. Rien ne dit encore qu’elle est descendue jusqu’aux cuisines, ni qu’on a cessé de perdre des assiettes.",
+            "cuisine": "La réparation a été acceptée et un essai protège le geste. On ne sait pas encore si elle est arrivée dans les cuisines. Les pertes d’assiettes n’ont pas été observées après ce changement.",
             "expert": "Un correctif est mergé et testé en régression. Les états livré, installé et corrigé-observé restent non prouvés au cutoff observé."
           },
           "en": {
-            "kitchen": "The repair exists, it is taken up, a trial holds it. Nothing yet says it came down to the kitchens, or that plates stopped disappearing.",
+            "kitchen": "The repair was accepted, and a trial guards the move. Whether it reached working kitchens is still unknown. No later service was observed to confirm that plates stopped disappearing.",
             "expert": "A fix is merged and regression-tested. Shipped, installed and observed-fixed all remain unproven states at the observed cutoff."
           }
         }
@@ -195,22 +195,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Ajouter ne doit jamais effacer ce qui existe",
+          "cuisine": "Avant d’ajouter, regarder ce qui occupe déjà la place",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Adding must never take away what is there",
+          "kitchen": "Before adding, look at what already fills the place",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Qui promet d’ajouter une assiette regarde la place, pas sa feuille.",
+            "cuisine": "Ajouter une assiette ne doit jamais faire disparaître celle qui était là. Le commis regarde donc la table au dernier moment, pas une vieille liste.",
             "expert": "Une opération qui promet d’ajouter doit prouver l’absence de la destination au point où un remplacement pourrait se produire."
           },
           "en": {
-            "kitchen": "Promise to add a plate, and the place is what you look at — not your sheet.",
+            "kitchen": "Adding a plate must never remove the one already there. The cook therefore checks the table at the last moment, not an old list.",
             "expert": "An add must establish that the destination is absent, and establish it where overwriting could actually take place."
           }
         }

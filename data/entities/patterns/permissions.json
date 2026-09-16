@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Signer un geste anodin, en accorder un autre",
+          "cuisine": "Le billet montrait un petit geste et en accordait un grand",
           "expert": "Le prompt mettait en avant le segment anodin d’une commande composée"
         },
         "en": {
-          "kitchen": "The slip names the harmless half only",
+          "kitchen": "The slip showed a small move and granted a large one",
           "expert": "The prompt foregrounded the harmless segment of a composed command"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Claude Code, on tend un papier à signer avant d’agir. Il annonce un geste sans conséquence : passer d’une pièce à l’autre. Dans le même mouvement, un second geste engage vraiment la maison, et le papier ne le nomme pas. On signe la première ligne, on accorde la seconde.",
+            "cuisine": "Un billet à signer mettait en avant le geste le plus anodin d’une demande composée. Le geste qui engageait vraiment la maison restait caché derrière. Une première correction avait mieux séparé les gestes et renforcé les refus, puis le même défaut d’affichage est revenu.",
             "expert": "Sur des commandes shell composées, le prompt de permission de Claude Code pouvait mettre en avant un changement de répertoire anodin tandis que l’opération Git significative restait masquée derrière. L’utilisateur validait un libellé sans rapport avec l’autorité réellement accordée. Un correctif structurel a amélioré la segmentation et la priorité des règles de refus ; une récidive côté affichage a suivi. Cette récidive établit que la correction du parsing et la sémantique d’approbation sont deux problèmes distincts."
           },
           "en": {
-            "kitchen": "At Claude Code a slip comes up for signing before anything is done. It names a harmless move: step from one room into the next. Riding with it is a second act that truly binds the house, and the slip never says so. The signature covers the line you read, not the one you gave away.",
+            "kitchen": "A signing slip highlighted the most harmless move in a combined request. The move that truly bound the house stayed hidden behind it. One correction separated the moves better and strengthened refusals, then the same display fault returned.",
             "expert": "On composed shell commands, Claude Code’s permission prompt could foreground an innocuous directory change while the meaningful Git operation stayed hidden behind it. The user approved a label unrelated to the authority actually granted. A structural fix improved segmentation and deny-rule precedence, and a later display-side recurrence followed. That recurrence is the evidence that parser correctness and approval semantics are two separate problems."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le geste qui engage la maison n’apparaît pas",
+          "cuisine": "Le billet nommait le geste léger et taisait celui qui engageait",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The binding move never reaches the slip",
+          "kitchen": "The slip named the light move and hid the binding one",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le papier nomme toujours le plus petit des gestes demandés. Le geste qui engage la maison n’y figure nulle part. Et il revient à chaque service, identique, sans qu’on puisse jamais l’inscrire une fois pour toutes sur la liste des accords.",
+            "cuisine": "Trois signes suffisent. Le billet nomme un geste sans danger. Le geste le plus lourd n’apparaît pas. La même demande revient sans qu’un accord durable puisse la couvrir. Cette répétition n’est pas seulement pénible. Elle montre que la décision porte sur le mauvais plat.",
             "expert": "Trois signes suffisent. Le libellé soumis nomme un segment à faible risque d’une opération composée ; l’action de plus haute autorité contenue dans la même opération n’apparaît pas ; le prompt se répète sans qu’aucune règle d’autorisation durable puisse le couvrir utilement. La répétition n’est pas une gêne d’ergonomie, c’est le symptôme que la décision porte sur le mauvais objet."
           },
           "en": {
-            "kitchen": "The slip always names the smallest of the moves being asked for. The move that binds the house appears nowhere on it. And it comes back every service, word for word, so it can never be put on the standing list of things already agreed.",
+            "kitchen": "Three signs are enough. The slip names a harmless move. The weightiest one is absent. The same request returns without any lasting agreement covering it. That repetition is not merely tiresome. It shows the decision rests on the wrong plate.",
             "expert": "Three signs are enough. The submitted label names a low-risk segment of a composed operation; the highest-authority action inside that same operation is absent from the label; and the prompt repeats without any durable allow rule being able to cover it usefully. The repetition is not an ergonomic annoyance, it is the symptom that the decision is bound to the wrong object."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La maison découpe bien, puis annonce le mauvais geste",
+          "cuisine": "La maison séparait bien les gestes, puis choisissait le mauvais à montrer",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The mistake is which move goes on the slip",
+          "kitchen": "The house separated moves well, then displayed the wrong one",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La maison a raison de découper la demande en gestes séparés : c’est ce qu’il faut faire. L’erreur vient d’après, quand elle choisit lequel écrire sur le papier. Elle retient le plus inoffensif, et c’est celui-là qu’on lit. Le client accorde ce qu’il lit, pas ce qui suit.",
+            "cuisine": "La demande peut être bien découpée tout en étant mal présentée. La décision est réelle et appliquée, mais le billet choisit le geste léger comme récit de l’ensemble. À force de revoir ce billet, on finit par signer vite et large au lieu de savoir vraiment ce que l’on accorde.",
             "expert": "Le parser peut être syntaxiquement correct alors que l’interface retient un segment à faible risque comme action représentative. La tromperie tient à ce que la décision est réelle et appliquée : seule sa description est fausse. La répétition du prompt empêche par ailleurs toute mise en liste blanche utile, ce qui pousse à approuver plus vite et plus large."
           },
           "en": {
-            "kitchen": "Splitting the request into separate moves is right, and the house does it properly. The mistake comes one step later, in picking which move goes on the slip. It picks the most harmless one, and that is the one anybody reads. What is granted is what was read, never what came after.",
+            "kitchen": "A request can be separated well and still presented badly. The decision is real and applied, yet the slip picks the light move as the story of the whole. Seeing that slip again and again leads people to sign quickly and broadly instead of knowing what they grant.",
             "expert": "A parser can be syntactically correct while the interface still picks a low-risk segment as the representative action. What makes it deceptive is that the decision is real and enforced: only its description is wrong. The repeated prompt also blocks any useful allow-listing, which pushes users to approve faster and broader."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Écrire sur le papier le geste le plus lourd",
+          "cuisine": "Faire porter au billet l’effet complet et le geste le plus lourd",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Prettier wording repairs nothing while the slip lies",
+          "kitchen": "Let the slip carry the full effect and the weightiest move",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Sur le papier, on écrit ce que la demande fait en entier, et d’abord le geste le plus lourd qu’elle contient. Le premier geste venu ne représente rien. Tant que le papier ment, soigner sa présentation ne répare rien : c’est la demande elle-même qu’il faut décrire.",
+            "cuisine": "Le billet doit résumer ce que fait la demande entière et placer en tête le geste de plus grande autorité. Le premier geste que l’on peut nommer ne représente pas la décision. Après la rechute, le travail restant se trouve dans la façon dont la maison fait respecter le billet, pas dans sa décoration.",
             "expert": "Un prompt de permission doit résumer l’effet sémantique de la commande complète et afficher l’action de plus haute autorité qu’elle contient. Le premier segment parsable n’est pas un candidat acceptable pour représenter la décision. La récidive après le correctif structurel situe le travail restant dans la correction de l’enforcement, non dans sa présentation."
           },
           "en": {
-            "kitchen": "The slip must say what the whole request does, and lead with the heaviest act inside it. Whichever move comes first stands for nothing. While the slip lies, tidying how it looks fixes nothing; what has to be described is the request itself.",
+            "kitchen": "The slip must summarize what the whole request does and lead with the highest-authority move. The first move that can be named does not represent the decision. After the recurrence, the remaining work lies in how the house enforces the slip, not in decoration.",
             "expert": "A permission prompt must summarise the semantic effect of the whole command and display the highest-authority action it contains. The first parsable segment is not an acceptable candidate to represent the decision. The recurrence after the structural fix places the remaining work inside enforcement correctness, not inside its presentation."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le plus gros geste passe sans être demandé",
+          "cuisine": "Accorder une mauvaise description n’est pas un accord éclairé",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The biggest act goes through unasked",
+          "kitchen": "Granting a wrong description is not informed consent",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On n’accorde jamais que ce qui est écrit sur le papier qu’on signe. Si le papier nomme le plus petit geste, le plus grand passe sans avoir été demandé à personne.",
+            "cuisine": "Un accord ne couvre que ce que le billet énonce. Si le billet décrit le petit geste, l’accord ne devient pas éclairé parce qu’un grand geste suivait derrière. La maison doit montrer l’autorité qu’elle demande réellement.",
             "expert": "Approuver la mauvaise description n’est pas une approbation éclairée. L’accord ne couvre que ce que le libellé énonce, indépendamment de ce que le système exécute ensuite."
           },
           "en": {
-            "kitchen": "A signature covers the words on the slip and nothing else. Name the smallest move there and the biggest one goes through without ever having been asked for.",
+            "kitchen": "Agreement covers only what the slip states. If it describes the small move, consent does not become informed because a larger one followed behind. The house must show the authority it truly asks for.",
             "expert": "Approving the wrong description is not informed approval. Consent extends only as far as the label states, regardless of what the system then executes."
           }
         }

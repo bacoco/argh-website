@@ -23,6 +23,6 @@ Rules:
 - exact source/provenance stays private and is forbidden in this tree;
 - `index.json` uses `argh/public-entity-index/v2` and binds each entity to its exact Git blob identity; it contains no editorial prose;
 - Git history is the editorial history; do not duplicate the site into a monolithic editorial JSON;
-- WordPress mirrors this tree under `wp-content/uploads/argh/entities/` and renders it through the shared renderer.
+- `bacoco/argh-website` mirrors this tree into `data/entities/`, rebuilds every static route and publishes through GitHub Pages.
 
-The repository corpus is complete and canonical. Live activation is a separate deployment gate: the WordPress mirror, renderer 1.4+ and all four reader/language modes must be read back successfully before `entity_store_target.status` is changed to `active`.
+The repository corpus is complete and canonical. Candidate application remains an explicit owner action. Once a validated store change reaches `main`, the downstream static projection synchronizes and publishes automatically.

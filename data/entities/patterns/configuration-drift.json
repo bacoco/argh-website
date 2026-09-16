@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Des fournisseurs livrent sans figurer sur ta liste",
+          "cuisine": "Des livraisons arrivaient après avoir été rayées de la liste",
           "expert": "L’inventaire réel des outils s’éloigne de la configuration que l’utilisateur croit tenir"
         },
         "en": {
-          "kitchen": "Crossed off the list and still delivering",
+          "kitchen": "Deliveries kept coming after the line was crossed out",
           "expert": "The live tool inventory drifts away from the configuration the user believes they hold"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La liste des fournisseurs est punaisée près de la porte de livraison, écrite de ta main. Un matin, des caisses arrivent d’une maison que tu n’as jamais inscrite dessus, et les mêmes marchandises entrent deux fois. Tu rayes la ligne : le camion revient la semaine suivante. Chez Claude Code, ces fournisseurs-là venaient du siège, pas de la cuisine.",
+            "cuisine": "La liste des fournisseurs était punaisée près de la porte de livraison. Des caisses sont pourtant arrivées d’une maison absente de cette liste, parfois avec les mêmes marchandises deux fois. Une ligne rayée est restée rayée, mais le camion est revenu.",
             "expert": "Des connecteurs distants de niveau compte pouvaient apparaître dans le CLI local de Claude Code, dupliquer des serveurs configurés localement et contourner la sémantique locale de suppression attendue par les utilisateurs. Deux autorités — la configuration locale et l’état distant du compte — modifiaient la même surface d’outils runtime sans modèle de propriété unifié. La configuration affichée cessait alors de décrire ce qui était réellement chargé."
           },
           "en": {
-            "kitchen": "The supplier list is pinned by the delivery door, in your own handwriting. One morning crates arrive from a house you never wrote on it, and the same goods come in twice. You strike the line through, and the van is back the following week. At Claude Code those suppliers came from head office, not from the kitchen.",
+            "kitchen": "The supplier list was pinned beside the delivery door. Yet crates arrived from a house missing from that list, sometimes bringing the same goods twice. A line stayed crossed out, but the van returned.",
             "expert": "Account-level remote connectors could surface in the local Claude Code CLI, duplicate locally configured servers and bypass the local deletion semantics users expected. Two authorities — local configuration and remote account state — changed the same runtime tool surface with no unified ownership model. What the configuration displayed stopped describing what was actually loaded."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Des livraisons que personne en cuisine n’a commandées",
+          "cuisine": "La cuisine ne savait pas qui avait laissé entrer le fournisseur",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Deliveries the kitchen never ordered, arriving twice",
+          "kitchen": "The kitchen did not know who had admitted the supplier",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Trois choses le trahissent. La même marchandise entre deux fois, sous deux noms différents. Une ligne rayée à la main ne change rien à ce qui se présente à la porte. Et quand tu demandes qui a fait entrer ce fournisseur, personne dans la cuisine ne sait répondre.",
+            "cuisine": "La même marchandise entrait sous deux noms. Rayer un nom ne changeait pas toujours ce qui franchissait la porte. Quand on demandait qui avait laissé ce fournisseur entrer, la cuisine n’avait pas de réponse.",
             "expert": "Des services équivalents apparaissent deux fois sous des origines différentes. Une suppression locale ne révoque pas nécessairement la source distante. L’usage des ressources et la propriété deviennent difficiles à raisonner, faute d’un propriétaire lisible pour chaque outil disponible à l’exécution."
           },
           "en": {
-            "kitchen": "Three things give it away. The same goods walk in twice under two different names. A line crossed out by hand changes nothing about what shows up at the door. And when you ask who let that supplier in, nobody in the kitchen can tell you.",
+            "kitchen": "The same goods came in under two names. Crossing one out did not always change what crossed the door. When asked who had admitted that supplier, the kitchen had no answer.",
             "expert": "Equivalent services appear twice under different origins. A local delete does not necessarily revoke the remote source. Resource usage and ownership become hard to reason about, because no tool available at run time carries a legible owner."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux mains écrivent, une seule peut effacer",
+          "cuisine": "Deux mains tenaient la même liste sans se parler",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Your eraser lifts only your own handwriting",
+          "kitchen": "Two hands kept the same list without speaking",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ta gomme n’efface que ton écriture. Le siège écrit sur la même liste que toi, et sa ligne à lui, tu ne peux pas la retirer. Tant que les deux mains écrivaient la même chose, personne n’a remarqué qu’il y en avait deux. C’est le jour où elles se contredisent qu’on découvre laquelle commande vraiment.",
+            "cuisine": "Une seconde main ajoutait des fournisseurs sur la même liste. La cuisine pouvait effacer les siens, pas ceux de l’autre main. Tant qu’elles écrivaient la même chose, personne ne voyait le problème.",
             "expert": "La dérive ne vient pas d’une écriture fautive mais d’un second auteur légitime sur la même surface. Chacune des deux autorités reste cohérente avec elle-même, tandis que leur composition ne l’est pour personne. Le geste de suppression paraît réussir parce qu’il agit sur l’une des deux sources, sans que l’autre soit atteinte."
           },
           "en": {
-            "kitchen": "Your eraser only lifts your own handwriting. Head office writes on the very same list, and their line is not yours to pull. While both hands wrote the same thing, nobody noticed there were two of them. The day they disagree is the day you learn which one actually gives the orders.",
+            "kitchen": "A second hand added suppliers to the same list. The kitchen could remove its own names, not the other hand’s. While both wrote the same things, nobody saw the trouble.",
             "expert": "The drift comes from a second legitimate author on one surface, not from a faulty write. Each authority stays consistent with itself while their composition is consistent for nobody. Deletion appears to succeed because it acts on one of the two sources and leaves the other untouched."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une marchandise, une seule ligne sur la liste",
+          "cuisine": "Mettre un nom et une sortie à côté de chaque fournisseur",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Goods from two houses belong on one line",
+          "kitchen": "Give every supplier a name and a way out",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "À côté de chaque fournisseur, écris qui l’a fait entrer et qui a le pouvoir de le renvoyer. Une marchandise qui arrive de deux maisons ne doit figurer qu’une fois sur la liste. Et quand le siège ajoute un nom, il l’annonce : rien ne franchit la porte de livraison sans que la cuisine le sache.",
+            "cuisine": "À côté de chaque fournisseur, écrivez qui l’a choisi et qui peut le renvoyer. Ne gardez qu’une ligne pour la même marchandise. Toute arrivée ajoutée sans la cuisine doit être annoncée avant de passer la porte.",
             "expert": "Exposer, pour chaque outil disponible à l’exécution, sa source, son propriétaire et son état de révocation. Dédupliquer les services équivalents et rendre explicite toute injection distante. La propriété à vérifier est l’inventaire effectif au moment de l’exécution, pas la configuration déclarée."
           },
           "en": {
-            "kitchen": "Next to every supplier, write who brought them in and who has the power to send them away. Goods arriving from two houses belong on the list once, not twice. And when head office adds a name it says so out loud: nothing comes through the delivery door without the kitchen knowing.",
+            "kitchen": "Beside every supplier, write who chose it and who can send it away. Keep one line for the same goods. Any arrival added without the kitchen must be announced before it crosses the door.",
             "expert": "For every tool available at run time, expose its source, its owner and its revocation state. Deduplicate equivalent services and make remote injection explicit. The property to verify is the effective inventory at execution time, not the declared configuration."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La liste au mur ne commande pas les livraisons",
+          "cuisine": "Ce qui entre compte plus que la liste punaisée",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What comes through the door beats the list",
+          "kitchen": "What enters matters more than the pinned list",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un fournisseur qu’on ne peut ni nommer ni renvoyer finira par livrer une cuisine qui ne lui a jamais rien demandé. Ce qui compte n’est pas la liste au mur, c’est ce qui franchit la porte.",
+            "cuisine": "Une liste au mur ne suffit pas si elle ne décrit pas les caisses qui arrivent vraiment. Chaque fournisseur doit avoir un nom lisible et une porte de sortie. Sinon, la cuisine découvre ses propres livraisons trop tard.",
             "expert": "Chaque outil disponible à l’exécution a besoin d’un propriétaire visible et d’un chemin de révocation. À défaut, la configuration déclarée devient un document, pas une description de l’état effectif."
           },
           "en": {
-            "kitchen": "A supplier you can neither name nor turn away will keep delivering to a kitchen that never asked for anything. What counts is not the list on the wall; it is what comes through the door.",
+            "kitchen": "A wall list is not enough if it does not describe the crates that really arrive. Every supplier needs a visible name and a way out. Otherwise the kitchen discovers its own deliveries too late.",
             "expert": "Every tool available at run time needs a visible owner and a revocation path. Without them the declared configuration is a document rather than a description of effective state."
           }
         }

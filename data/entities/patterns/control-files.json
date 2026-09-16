@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Deux consignes se contredisent, aucune ne prime clairement",
+          "cuisine": "Deux consignes se contredisaient devant le même commis",
           "expert": "Des fichiers d’instructions au même nom ne portent pas la même précédence"
         },
         "en": {
-          "kitchen": "Two notes disagree, and neither one clearly wins",
+          "kitchen": "Two notes disagreed in front of the same cook",
           "expert": "Instruction files that share a name do not share a precedence rule"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une consigne est affichée au mur pour toute la maison ; une autre est posée sur la table du chef de partie. Elles ne disent pas la même chose. Ce qui compte n’est pas qu’elles soient écrites de la même façon : c’est celle que le commis suit quand les deux le regardent. Claude Code, Codex et Gemini CLI acceptent aujourd’hui des feuilles très proches, et ne tranchent pas forcément pareil.",
+            "cuisine": "Une consigne était affichée au mur et une autre posée sur la table du chef de partie. Elles se contredisaient. Leur papier se ressemblait, mais le commis ne suivait pas toujours la même quand il changeait de maison.",
             "expert": "Les fichiers d’instructions projet passent de conventions propres à chaque produit vers une interopérabilité croissante, et cette compatibilité porte sur les noms et le format. Les règles de précédence et le modèle de confiance restent, eux, les différences critiques. Claude Code, Codex et Gemini CLI lisent des fichiers de but identique sans garantir la même décision quand deux sources se contredisent."
           },
           "en": {
-            "kitchen": "One note is pinned on the wall for the whole house; another sits on the section chief’s table. They do not say the same thing. What matters is not that both are written the same way — it is which one the cook obeys when both are in front of him. Claude Code, Codex and Gemini CLI now take very similar sheets, and do not necessarily settle the argument the same way.",
+            "kitchen": "One note was pinned on the wall and another sat on the section chief’s table. They contradicted each other. Their paper looked alike, but the cook did not always follow the same one in another house.",
             "expert": "Project instruction files are moving from per-product conventions toward growing interoperability, and that compatibility covers names and format. Precedence rules and the trust model remain the critical differences. Claude Code, Codex and Gemini CLI read files of identical purpose without guaranteeing the same decision when two sources contradict each other."
           }
         }
@@ -51,22 +51,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La même feuille passe de Codex à Gemini",
+          "cuisine": "La même feuille voyageait sans emporter l’ordre des chefs",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "One sheet, read at Codex and at Gemini",
+          "kitchen": "The same sheet travelled without the order of the chefs",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le signe le plus net, c’est qu’une même feuille circule d’une maison à l’autre sans qu’on la réécrive. On vérifie qu’elle est bien lue, jamais laquelle l’emporte. Et quand deux feuilles se contredisent, chacun donne sa réponse de mémoire, avec une belle assurance, sans l’avoir jamais essayée.",
+            "cuisine": "La même feuille passait d’une maison à l’autre sans être réécrite. On vérifiait qu’elle était lue, pas laquelle l’emportait en cas de dispute. La réponse restait souvent une assurance non essayée.",
             "expert": "Un support de migration et de compatibilité apparaît entre produits, et les mêmes fichiers d’instructions circulent d’un harnais à l’autre. Second signal : la vérification porte sur la reconnaissance du format, jamais sur la décision produite. Troisième : les règles de confiance et de précédence exposent des différences sémantiques fines qu’aucune correspondance de nom ne révèle."
           },
           "en": {
-            "kitchen": "The clearest sign is one sheet travelling from house to house without anyone rewriting it. People check that it gets read; nobody checks which sheet wins. And when two sheets disagree, everyone answers from memory, calmly and confidently, having never once tried it.",
+            "kitchen": "The same sheet moved from house to house without being rewritten. People checked that it was read, not which note won a dispute. The answer was often confidence without a trial.",
             "expert": "Migration and compatibility support appears across products, and the same instruction files travel from one harness to another. Second signal: verification covers format recognition and never the decision produced. Third: trust and precedence rules expose fine semantic differences that no filename match reveals."
           }
         }
@@ -77,22 +77,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La feuille ne tranche pas, la maison tranche",
+          "cuisine": "Le papier voyageait, pas la hiérarchie du service",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The sheet decides nothing; the house decides",
+          "kitchen": "The paper travelled, but the service order did not",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La feuille rassure parce qu’on la reconnaît, et c’est exactement le piège. Ce n’est pas elle qui décide, c’est l’ordre dans lequel la maison écoute ses chefs. Deux maisons peuvent afficher la même consigne sans accorder le même poids à celui qui l’a écrite. Le papier voyage ; la hiérarchie du service, non.",
+            "cuisine": "Une feuille connue rassurait, mais elle ne décidait rien seule. Chaque maison écoute ses chefs dans un ordre qui lui appartient. Le même papier pouvait donc conduire à deux plats différents.",
             "expert": "Des fichiers de but identique peuvent porter des sémantiques différentes de portée, de fusion, de confiance et de précédence. La compatibilité syntaxique ne garantit donc pas la compatibilité comportementale : lire le format ne permet pas de prédire la décision appliquée. Ce qui voyage entre produits est le fichier, pas l’ordre dans lequel ses sources sont arbitrées."
           },
           "en": {
-            "kitchen": "A familiar sheet is reassuring, which is precisely the trap. The sheet does not decide; the order in which a house listens to its chefs decides. Two houses can pin up the same note and give unequal weight to whoever wrote it. Paper travels well; the pecking order of a service does not.",
+            "kitchen": "A familiar sheet felt reassuring, but it made no decision on its own. Every house listened to its chefs in its own order. The same paper could therefore lead to two different dishes.",
             "expert": "Files of identical purpose can carry different semantics of scope, merging, trust and precedence. Syntactic compatibility therefore does not guarantee behavioural compatibility: reading the format does not predict the decision applied. What travels between products is the file, not the arbitration order of its sources."
           }
         }
@@ -103,22 +103,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Mettre deux consignes en désaccord dans chaque maison",
+          "cuisine": "Faire s’opposer deux consignes avant d’ouvrir le service",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Put two notes at odds in every house",
+          "kitchen": "Set two notes against each other before service",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Écris deux consignes qui se contredisent, exprès, et regarde laquelle le commis applique. C’est la seule réponse qui vaille : elle se lit dans l’assiette, pas sur le papier. Refais-le dans chaque maison où ta feuille est censée servir, parce que la réponse peut changer d’une maison à l’autre.",
+            "cuisine": "Écrivez exprès deux consignes contraires et regardez laquelle le commis suit. La réponse se voit dans l’assiette, pas dans la ressemblance des papiers. Recommencez dans chaque maison, car l’ordre peut changer.",
             "expert": "Définir et tester la précédence effective des instructions, en observant la décision produite quand deux sources se contredisent. La correspondance des noms de fichiers n’est pas un test de comportement. Cette vérification se refait produit par produit, puisque la précédence n’est pas une propriété du fichier."
           },
           "en": {
-            "kitchen": "Write two notes that contradict each other on purpose, then watch which one the cook applies. That is the only answer worth having, and it shows up on the plate rather than on the paper. Do it in every house where your sheet is meant to work, because the answer can change from one to the next.",
+            "kitchen": "Write two opposing notes on purpose and watch which one the cook follows. The answer appears on the plate, not in the resemblance of the paper. Repeat it in every house because the order may change.",
             "expert": "Define and test effective instruction precedence by observing the decision produced when two sources contradict. Filename matching is not a behavioural test. The check is repeated product by product, because precedence is not a property of the file."
           }
         }
@@ -129,22 +129,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Même feuille, aucune garantie sur la règle",
+          "cuisine": "Deux papiers pareils peuvent donner deux ordres différents",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Same sheet, no promise of the same rule",
+          "kitchen": "Matching papers can give different orders",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Deux maisons peuvent afficher la même consigne et n’en faire pas la même règle. Ce qu’il faut vérifier, c’est qui l’emporte quand deux papiers se contredisent.",
+            "cuisine": "Deux cuisines peuvent reconnaître la même feuille et obéir à des chefs différents. Ce qu’il faut connaître est la consigne qui gagne lorsqu’elles se contredisent.",
             "expert": "Des noms de fichiers compatibles ne garantissent pas des sémantiques de contrôle compatibles. La propriété à vérifier est la précédence réellement appliquée, pas la reconnaissance du format."
           },
           "en": {
-            "kitchen": "Two houses can pin up the same note and turn it into two different rules. The thing to check is who wins when two pieces of paper disagree.",
+            "kitchen": "Two kitchens can recognise the same sheet and obey different chiefs. What matters is which note wins when they disagree.",
             "expert": "Compatible filenames do not guarantee compatible control semantics. The property to verify is the precedence actually applied, not recognition of the format."
           }
         }

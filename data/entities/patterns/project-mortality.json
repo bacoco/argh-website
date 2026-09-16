@@ -35,22 +35,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Une maison peut s’éteindre de plusieurs façons",
+          "cuisine": "La fin d’une maison prenait plusieurs formes, jamais une seule",
           "expert": "La fin d’un projet est un ensemble d’états distincts, pas un événement unique"
         },
         "en": {
-          "kitchen": "Closing down is not one single ending",
+          "kitchen": "A house’s ending took several forms, never just one",
           "expert": "A project’s end is a set of distinct states, not a single event"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Roo Code a servi un dernier plat, puis fermé volontairement. AutoGen garde sa salle ouverte, mais les patrons cuisinent déjà dans la maison voisine. Continue laisse sa carte affichée au-dessus de fourneaux froids. Aucune de ces trois maisons ne s’est éteinte de la même façon.",
+            "cuisine": "La fin d’une maison peut être un arrêt choisi ou une cuisine sans avenir. Elle peut aussi passer à une maison voisine ou laisser une vitrine en lecture seule. L’archivage, le pivot retiré et le changement d’adresse sont d’autres fins possibles. Ces états se sont révélés incompatibles, non les degrés d’une même échelle. Chaque forme entraîne une continuité différente pour le client.",
             "expert": "La mortalité d’un projet recouvre des états distincts : arrêt volontaire, maintenance sans avenir stratégique, supersession par un successeur, read-only, archivage à cause inconnue, pivot déprécié, déplacement d’identité de dépôt et ralentissement marqué. La reconstruction historique a produit ces formes comme incompatibles entre elles, et non comme les degrés d’une même échelle. Roo Code, AutoGen, Continue, CodeGate, TaskWeaver et SWE-agent occupent chacun une case différente."
           },
           "en": {
-            "kitchen": "Roo Code sent out a last plate, then closed on purpose. AutoGen still opens its room while the owners cook in a newer house. Continue keeps its menu posted above cold stoves. Three endings, and no two of them alike.",
+            "kitchen": "A house may end through a chosen stop or a kitchen without a future. It may move to a neighbouring house or leave a read-only window. An archive, a withdrawn turn, and a new address are other possible endings. These states proved incompatible, not degrees on one scale. Each form leaves a different continuity for diners.",
             "expert": "Project mortality covers distinct states: deliberate sunset, maintenance with no strategic future, supersession by a successor, read-only, archival with unknown cause, a deprecated pivot, a repository identity move, and marked slowdown. Historical reconstruction produced these as mutually incompatible forms rather than as degrees on one scale. Roo Code, AutoGen, Continue, CodeGate, TaskWeaver and SWE-agent each sit in a different one."
           }
         }
@@ -61,22 +61,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "SWE-agent a changé d’adresse sans éteindre ses fourneaux",
+          "cuisine": "Un changement d’adresse pouvait ressembler à une disparition",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "SWE-agent moved address without letting the stoves cool",
+          "kitchen": "A change of address could look like disappearance",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le silence ne prouve rien. SWE-agent a changé d’adresse et paraissait éteint alors qu’on y cuisinait toujours. Roo Code, lui, avait encore un tableau de commandes couvert le soir du dernier service. Demande ce que l’équipe a annoncé, et où elle cuisine aujourd’hui.",
+            "cuisine": "Aucun signe d’activité isolé ne suffit. Une maison peut annoncer son arrêt tout en gardant de nombreuses commandes, et un changement d’adresse peut donner une fausse impression de silence. Les signes qui portent sont la déclaration des responsables, un successeur nommé, les plats retirés et l’endroit où la suite se poursuit.",
             "expert": "Aucun indicateur d’activité isolé ne qualifie l’état : Continue est explicitement déclaré non maintenu activement sans que son dépôt soit archivé, tandis que Roo Code conserve un backlog fourni après un arrêt volontaire assorti d’une version finale. Un changement d’identité de dépôt, comme celui de SWE-agent, produit une apparence d’inactivité chez tout consommateur indexé sur l’ancien chemin. Les signaux qui portent sont la déclaration des mainteneurs, l’existence d’un successeur, les suppressions de surface et la destination de la continuité."
           },
           "en": {
-            "kitchen": "Silence proves nothing. SWE-agent moved to a new address and looked shut while the cooking carried on. Roo Code had a board three tickets deep on the night of its last service. Ask what the crew announced, and where they cook now.",
+            "kitchen": "No isolated activity sign is enough. A house may announce its stop while keeping many orders, and a new address may create a false appearance of silence. The signs that count are the keepers’ statement, a named successor, dishes removed, and where the continuation goes.",
             "expert": "No single activity metric settles the state: Continue is explicitly declared no longer actively maintained while its repository stays unarchived, whereas Roo Code keeps a large backlog after a deliberate shutdown with a final release. A repository identity change, as in SWE-agent, reads as inactivity to any consumer indexed on the old path. The load-bearing signals are maintainer statements, the presence of a successor, removed surfaces, and where continuity moved."
           }
         }
@@ -87,22 +87,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Personne n’a posé d’écriteau chez Continue",
+          "cuisine": "Un écriteau sur la porte réduisait des états différents à oui ou non",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Continue never put a notice on its door",
+          "kitchen": "A door notice reduced different states to yes or no",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On cherche un écriteau, parce qu’un écriteau se lit vite. Mais il dépend de qui pense à le visser, jamais de qui tient encore les fourneaux. Chez Continue, personne ne l’a posé. Chez TaskWeaver il est posé, et l’équipe a parlé de moyens trop courts ; cela ne dit pas pourquoi.",
+            "cuisine": "Les raccourcis disponibles disent seulement ouvert ou fermé, alors que les passages forment un réseau de changements. Un écriteau, le nombre de services ou l’ancienne adresse ne sont que des preuves partielles. L’absence de moyens annoncée avant un archivage ne suffit pas non plus à établir une cause unique.",
             "expert": "Les heuristiques disponibles sont binaires — archivé ou non, actif ou non — alors que les états observés forment un graphe de transitions. Un flag de plateforme, un compteur d’activité ou un chemin de dépôt sont des preuves partielles, qu’aucune obligation ne contraint à suivre la décision produit. La tentation inverse est aussi fautive : TaskWeaver reconnaît des ressources limitées avant son archivage, ce qui ne suffit pas à établir une cause unique."
           },
           "en": {
-            "kitchen": "A notice on the door reads fast, so a notice is what people read. It depends on who remembers to nail it up, never on who still works the stoves. Continue never put one up. TaskWeaver did, and spoke of thin means; that still does not say why.",
+            "kitchen": "Available shortcuts say only open or closed, while the passages form a network of changes. A door notice, service count, or old address is only partial evidence. Limited means stated before an archive do not establish a single cause either.",
             "expert": "The available heuristics are binary — archived or not, active or not — while the observed states form a transition graph. A platform flag, an activity counter or a repository path are partial evidence, bound by no obligation to track the product decision. The opposite temptation fails too: TaskWeaver acknowledged limited resources before archival, which is not enough to establish a single cause."
           }
         }
@@ -113,22 +113,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Demander qui a repris la suite, et où",
+          "cuisine": "Nommer la forme de la fin et la destination de la suite",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Ask who picked the work up, and where",
+          "kitchen": "Name the ending’s form and where continuation goes",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Demande ce que l’équipe a annoncé, et si quelqu’un a repris la suite. Demande si un dernier plat est sorti, et ce qu’on a retiré de la carte. Note ensuite la façon dont la maison s’est éteinte, pas seulement le fait qu’elle se soit éteinte.",
+            "cuisine": "Décrivez l’état d’après la décision annoncée et le successeur nommé. Notez aussi la dernière assiette et la destination de la continuité. Distinguez arrêt choisi, entretien limité, passage à un successeur, lecture seule, archivage, pivot retiré et changement d’adresse. Si la cause manque, notez-la inconnue au lieu de lui en prêter une.",
             "expert": "Qualifier l’état par la décision déclarée, le successeur nommé, la version finale et la destination de la continuité, plutôt que par un indicateur unique. Le suivi doit distinguer arrêt volontaire, maintenance, supersession, read-only, archivage, pivot déprécié et déplacement d’identité, parce que ces états n’ont pas les mêmes conséquences pour un consommateur qui route du travail. Quand la cause n’est pas établie, elle se consigne comme inconnue plutôt que déduite."
           },
           "en": {
-            "kitchen": "Ask what the crew announced, and whether anyone picked the work up. Ask whether a last plate went out, and what was pulled from the menu. Then record how the house went dark, not merely that it did.",
+            "kitchen": "Describe the state from the stated decision, named successor, last plate, and destination of continuation. Distinguish chosen stop, limited upkeep, a move to a successor, read-only, archive, withdrawn turn, and new address. If the cause is absent, record it as unknown rather than inventing one.",
             "expert": "Qualify state by the declared decision, the named successor, the final release and where continuity went, rather than by one indicator. Tracking has to separate deliberate sunset, maintenance, supersession, read-only, archival, deprecated pivot and identity move, because these states carry different consequences for a consumer routing work. Where the cause is not established, record it as unknown instead of inferring one."
           }
         }
@@ -139,22 +139,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le silence ne dit pas comment on a fermé",
+          "cuisine": "La fin d’une maison est un réseau de passages, pas du silence",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Silence never says how the house closed",
+          "kitchen": "A house’s ending is a network of passages, not silence",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une maison ne s’éteint ni d’un coup, ni d’une seule façon. Demande comment elle s’est éteinte avant de la dire morte. Le silence, lui, ne répond jamais à cette question.",
+            "cuisine": "La fin d’une maison est un réseau de passages, pas un silence. Chaque état mérite son nom. Sinon, un changement d’adresse devient une disparition et une vitrine ouverte devient une cuisine encore active.",
             "expert": "La mort d’un projet est un graphe de transitions, pas du silence. Chaque état — arrêt volontaire, maintenance, supersession, read-only, archivage à cause inconnue, pivot déprécié, déplacement d’identité — se nomme séparément ; sans cela, une redirection se lit comme une disparition, et un dépôt non archivé comme un projet actif."
           },
           "en": {
-            "kitchen": "A house never goes dark all at once, and never in one way only. Ask how it went dark before you call it dead. Silence answers no part of that question.",
+            "kitchen": "A house’s ending is a network of passages, not silence. Each state deserves its name. Otherwise, a new address becomes disappearance and an open window becomes a kitchen still at work.",
             "expert": "A project’s death is a graph of transitions, not silence. Each state — deliberate sunset, maintenance, supersession, read-only, archival with unknown cause, deprecated pivot, identity move — is named on its own; without that, a redirect reads as a disappearance and an unarchived repository as an active project."
           }
         }

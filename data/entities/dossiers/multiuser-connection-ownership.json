@@ -24,22 +24,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Avec MCP, le plat changeait de table",
+          "cuisine": "Le plat de la première table part vers la suivante",
           "expert": "Un état de connexion global et mutable pouvait faire livrer un message à la mauvaise session"
         },
         "en": {
-          "kitchen": "An MCP plate could reach the wrong table",
+          "kitchen": "The first table’s plate can reach the next party",
           "expert": "Shared mutable connection state could deliver a message to the wrong session"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez les maisons qui travaillent avec MCP, une seule fiche sur le comptoir indique la table qu’on sert. Chaque nouvelle arrivée remplace la fiche par la sienne. Le commis, lui, ne lit la fiche qu’au moment de partir. Un plat commandé par la table d’avant pouvait donc s’en aller vers celle d’après.",
+            "cuisine": "Une seule fiche sur le comptoir indique la table servie. Chaque nouvelle arrivée remplace cette fiche par la sienne. Le commis ne la lit qu’au départ de l’assiette. Le plat de la première table peut donc partir vers la suivante.",
             "expert": "Un état de connexion partagé et mutable permettait à une session ultérieure de remplacer la connexion globalement courante. Une notification émise ensuite pour la première session pouvait donc emprunter la connexion d’une autre."
           },
           "en": {
-            "kitchen": "In the houses that work with MCP, one card on the counter says which table is being served. Every new party that sits down replaces it. The runner only reads the card at the moment he leaves the pass. So a plate ordered by the earlier table could walk out to the later one.",
+            "kitchen": "One card on the counter names the table being served. Every new party replaces it with another card. The runner reads it only when leaving the pass. A plate ordered by the first table can therefore reach the next one.",
             "expert": "Shared mutable connection state let a later session replace the globally current connection. A notification raised afterwards for the first session could then ride another session’s connection."
           }
         }
@@ -50,62 +50,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Une seule fiche, remplacée à chaque arrivée",
+          "cuisine": "La nouvelle table efface le nom de la précédente",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "One card, replaced each time someone sits",
+          "kitchen": "Each new table erases the previous table’s name",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La maison ne tient qu’une fiche à la fois pour dire qui on sert.",
+            "cuisine": "Au comptoir, une seule fiche indique quelle table la maison sert maintenant.",
             "expert": "Un serveur conservait un état de connexion global et mutable."
           },
           "en": {
-            "kitchen": "The house keeps one card at a time to say who is being served.",
+            "kitchen": "At the counter, one card names the table the house is serving now.",
             "expert": "A server held mutable, global connection state."
           }
         },
         {
           "fr": {
-            "cuisine": "Une nouvelle table s’installe et sa fiche prend la place de la précédente.",
+            "cuisine": "Quand un second groupe s’assoit, son nom remplace celui de la première table sur cette fiche.",
             "expert": "Une seconde session s’est connectée et a remplacé cet état."
           },
           "en": {
-            "kitchen": "A new party sits down and its card takes the place of the last one.",
+            "kitchen": "When a second party sits, its name replaces the first table’s name on that card.",
             "expert": "A second session connected and replaced it."
           }
         },
         {
           "fr": {
-            "cuisine": "Plus tard, une assiette est prête pour la table d’avant.",
+            "cuisine": "Un peu plus tard, la brigade termine enfin le plat commandé par la première table.",
             "expert": "Une notification a ensuite été émise à destination de la première session."
           },
           "en": {
-            "kitchen": "Later, a plate comes up for the earlier table.",
+            "kitchen": "A little later, the brigade finally finishes the dish ordered by the first table.",
             "expert": "A notification was afterwards raised for the first session."
           }
         },
         {
           "fr": {
-            "cuisine": "Au départ du plat, le commis lit la fiche du comptoir, celle qui s’y trouve à cet instant.",
+            "cuisine": "Au moment de servir, le commis consulte le nom actuellement posé au comptoir au lieu de lire le bon du plat.",
             "expert": "La livraison consultait la connexion globalement courante à l’instant de l’envoi."
           },
           "en": {
-            "kitchen": "On the way out, the runner reads the card on the counter — whichever card is there at that second.",
+            "kitchen": "At serving time, the runner checks the name currently on the counter instead of reading the plate’s ticket.",
             "expert": "Delivery read whichever connection was globally current at send time."
           }
         },
         {
           "fr": {
-            "cuisine": "Le plat pouvait donc sortir au nom de la table qui venait de s’asseoir.",
+            "cuisine": "L’assiette de la première commande risque ainsi d’être portée aux nouveaux clients.",
             "expert": "La propriété pouvait donc franchir les limites de session."
           },
           "en": {
-            "kitchen": "So the plate could leave under the name of the party that had just sat down.",
+            "kitchen": "The first order’s plate may therefore be carried to the newly arrived guests.",
             "expert": "Ownership could therefore cross session boundaries."
           }
         }
@@ -116,22 +116,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le nom était lu au départ du plat",
+          "cuisine": "L’assiette cherchait son client au dernier moment",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The name was read as the plate left",
+          "kitchen": "The plate looked for its guest at the last moment",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le nom du destinataire n’était écrit nulle part sur le plat. On allait le chercher au dernier moment, sur une fiche que n’importe quelle arrivée pouvait changer. Deviner le propriétaire à la sortie n’est pas la même chose que l’avoir noté à la commande.",
+            "cuisine": "Le bon ne portait pas le numéro de table. Le commis le cherchait juste avant de partir sur une fiche modifiée à chaque arrivée. Entre la commande et le service, le destinataire pouvait donc changer.",
             "expert": "La propriété était reconstruite au moment de la livraison, depuis un état global mutable, au lieu d’être transportée avec l’événement dès sa création. Toute reconstruction tardive dépend d’un état qu’un tiers peut avoir modifié entre-temps."
           },
           "en": {
-            "kitchen": "Nothing on the plate said who it was for. The name was fetched at the last second, off a card any new arrival could change. Working out the owner on the way out is not the same as having written it down when the order came in.",
+            "kitchen": "The ticket carried no table number. The runner looked it up just before leaving on a card changed by each arrival. The recipient could therefore change between order and service.",
             "expert": "Ownership was reconstructed at delivery time from global mutable state instead of being carried with the event from creation. Any late reconstruction depends on state a third party may have changed in between."
           }
         }
@@ -142,22 +142,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La table est notée dès la commande",
+          "cuisine": "Écrire la table sur le bon dès le départ",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Fix the owner when the order is taken",
+          "kitchen": "Write the table on the ticket when taking the order",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le nom de la table part avec la commande, écrit dessus, et ne change plus jusqu’à l’assiette posée. Plus rien à lire sur le comptoir au moment de sortir.",
+            "cuisine": "Le serveur inscrit le numéro de table sur le bon dès la commande. Ce numéro accompagne le plat jusqu’au client et aucun commis ne le redemande au comptoir.",
             "expert": "Transporter avec chaque événement une identité de corrélation session et utilisateur immuable, sur l’intégralité du chemin de livraison. Aucune étape de ce chemin ne doit redemander qui est courant."
           },
           "en": {
-            "kitchen": "The table’s name travels with the order, written on it, unchanged until the plate is down. Nothing left to read off the counter on the way out.",
+            "kitchen": "The waiter writes the table number on the ticket when taking the order. It stays with the dish until delivery, so no runner asks the counter again.",
             "expert": "Carry an immutable session and user correlation identity with every event, along the whole delivery path. No step on that path should ask again who is current."
           }
         }
@@ -168,22 +168,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Toute salle qui sert plusieurs tables est exposée",
+          "cuisine": "Une fiche au comptoir ne suffit pas pour plusieurs tables",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "One card cannot cover two parties at once",
+          "kitchen": "One counter card cannot serve several tables",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La leçon se transporte : dès qu’une salle sert plusieurs tables à la fois, une fiche unique au comptoir ne suffit plus.",
+            "cuisine": "Dès que plusieurs tables commandent ensemble, le nom du dernier arrivé ne peut plus guider toutes les assiettes. Chaque bon doit garder son propre destinataire.",
             "expert": "Le cas constitue une leçon d’isolation réutilisable pour toute infrastructure d’agents multi-utilisateurs."
           },
           "en": {
-            "kitchen": "The lesson travels: the moment a room serves several parties at once, one card on the counter stops being enough.",
+            "kitchen": "Once several tables order together, the newest name cannot guide every plate. Each ticket must keep its own recipient.",
             "expert": "The case is a reusable isolation lesson for any multi-user agent infrastructure."
           }
         }
@@ -194,22 +194,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ne lis pas le comptoir, lis la commande",
+          "cuisine": "Le bon du plat doit porter sa table",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Read the order, never the counter",
+          "kitchen": "The plate’s ticket must carry its table",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Écris le nom de la table sur la commande : ce qu’on lit au comptoir en partant appartient déjà à quelqu’un d’autre.",
+            "cuisine": "Le serveur écrit la destination au moment de prendre la commande. Le plat n’a alors jamais besoin d’emprunter le nom affiché pour un autre client.",
             "expert": "La propriété doit voyager avec l’événement."
           },
           "en": {
-            "kitchen": "Write the table on the order: what you read off the counter on your way out already belongs to somebody else.",
+            "kitchen": "The waiter writes the destination when taking the order. The plate never needs to borrow the name displayed for another guest.",
             "expert": "Ownership must travel with the event."
           }
         }

@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Un carnet partagé ne transporte pas les règles",
+          "cuisine": "Un bon commun faisait circuler la commande, pas les règles de chaque maison",
           "expert": "Un contrat d’échange commun ne transporte pas la politique locale"
         },
         "en": {
-          "kitchen": "The order pad travels, the house rules stay",
+          "kitchen": "A shared docket carried the order, not each house’s rules",
           "expert": "A shared exchange contract does not carry local policy"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Goose met son effort sur un carnet de commandes que plusieurs maisons pourraient partager, plutôt que sur de nouveaux plats. Le but : qu’une commande écrite ici se lise ailleurs. Le carnet peut devenir commun ; les règles de service de chaque maison, non.",
+            "cuisine": "Une maison investissait dans des commis capables de se comprendre. Elle préparait aussi des passages partagés et des gardes que l’on peut faire respecter. Elle cherchait moins de nouveaux plats. Ce travail de changement reste en cours et sa fin n’est pas établie. Un bon commun permet l’échange, sans transporter les règles locales du service.",
             "expert": "Un protocole définit un contrat d’échange entre composants ; il ne remplace ni les politiques ni les sémantiques locales du harnais. Les branches actives et l’évolution des contrôles de Goose montrent un investissement lourd dans des agents protocolisés, l’interopérabilité et des hooks enforceables, plutôt que dans l’ajout de fonctionnalités utilisateur. Le pivot est en cours ; son achèvement n’est pas établi par les éléments observés."
           },
           "en": {
-            "kitchen": "Goose is putting its work into an order pad several houses could share, rather than into new dishes. The aim is that a ticket written here can be read next door. The pad can become common ground; each house keeps its own rules of service.",
+            "kitchen": "One house invested chiefly in cooks able to understand one another, shared passages, and guards that can be enforced rather than in new dishes. This work of change remains under way and its end is not established. A shared docket enables exchange without carrying local service rules.",
             "expert": "A protocol defines an exchange contract between components; it replaces neither the harness’s local policy nor its local semantics. Goose’s active branches and control evolution show heavy investment in protocolized agents, interoperability and enforceable hooks rather than in added user features. The pivot is under way; the observed evidence does not establish that it is complete."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Chez Goose, rien de neuf sur la carte",
+          "cuisine": "L’effort allait vers les passages et les gardes, sans changement visible en salle",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Goose is building where guests never look",
+          "kitchen": "Effort went to passages and guards with no visible room change",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le client ne voit rien : mêmes plats, même service. L’effort est ailleurs, dans la façon dont les maisons se passent les commandes et dans ce qu’un commis a le droit de faire. Chez Goose, on le repère à ce qui est en chantier, pas à la carte.",
+            "cuisine": "Le signe est un centre de gravité qui glisse vers les passages entre maisons. Il gagne les gardes et les règles d’échange, pendant que la salle paraît stable. On le lit dans les travaux en cours, non dans une annonce de carte. Le but est de relier plusieurs maisons, non d’approfondir une seule cuisine.",
             "expert": "Le signal est un déplacement du centre de gravité de l’ingénierie : interopérabilité, contrôles enforceables et sémantiques d’échange concentrent l’effort tandis que la surface utilisateur reste stable. Chez Goose, ce déplacement est lisible dans les branches actives et l’évolution des contrôles, pas dans une annonce produit. La cible est de connecter plusieurs environnements d’agents plutôt que d’en approfondir un seul."
           },
           "en": {
-            "kitchen": "A guest sees nothing: same dishes, same service. The work sits elsewhere — in how houses hand tickets to one another, and in what a cook is allowed to do. With Goose you spot it in what is under construction, never on the menu.",
+            "kitchen": "The sign is a centre of gravity shifting toward passages between houses, guards, and exchange rules while the room seems stable. It is read in work under way, not in a menu announcement. The aim is to connect several houses rather than deepen one kitchen.",
             "expert": "The signal is a shift in engineering centre of gravity: interoperability, enforceable controls and exchange semantics absorb the effort while the user surface stays stable. In Goose that shift is legible in active branches and control evolution, not in a product announcement. The target is connecting several agent environments rather than deepening one."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le métier change, la carte suit longtemps après",
+          "cuisine": "La carte arrivait après le changement de cuisine, et le bon commun faisait croire à une même règle",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The menu is the last thing to move",
+          "kitchen": "The menu followed the kitchen change, and the shared docket suggested one rule",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On juge une maison sur ce qu’elle sert. Quand elle change de métier, la carte est la dernière chose à bouger. Un carnet commun donne aussi l’illusion que deux maisons fonctionnent pareil, alors que chacune garde ses propres règles.",
+            "cuisine": "La carte est un signe tardif du changement de cuisine : une maison peut changer de métier avant que les clients le voient. Un bon commun produit une seconde illusion, celle de règles équivalentes. Pourtant les autorisations, les garanties et la marche du service restent propres à la maison qui les applique.",
             "expert": "La surface utilisateur est un indicateur retardé du déplacement architectural : un projet peut changer de couche de compétition avant qu’un changement produit soit visible. Le second effet trompeur est l’assimilation entre interopérabilité et équivalence — un contrat d’échange partagé ne transporte ni les autorisations, ni les garanties, ni les sémantiques du harnais qui l’implémente."
           },
           "en": {
-            "kitchen": "People judge a house by what it serves. When it changes trade, the menu is the last thing to move. A shared pad also makes two houses look alike, while each one keeps its own rules about who may do what.",
+            "kitchen": "The menu is a late sign of kitchen change: a house may change trade before diners see it. A shared docket creates a second illusion, that rules are equivalent. Yet permissions, guarantees, and the course of service belong to the house applying them.",
             "expert": "The user surface is a lagging indicator of architectural movement: a project can change the layer it competes on before any product change is visible. The second trap is treating interoperability as equivalence — a shared exchange contract carries neither the permissions, the guarantees, nor the semantics of the harness implementing it."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Regarder les travaux, pas seulement le passe",
+          "cuisine": "Lire les travaux en cours et les règles de chaque maison séparément",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Ask each house who may touch what",
+          "kitchen": "Read work under way and each house’s rules separately",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Regarde ce qui est en chantier, pas seulement ce qui sort du passe. Si deux maisons partagent le carnet, demande à chacune qui a le droit de toucher à quoi. Le carnet ne répond pas à cette question.",
+            "cuisine": "Lisez l’orientation d’une maison dans ses travaux, ses gardes et ses passages, pas dans la seule carte. Pour chaque maison reliée, vérifiez à part les personnes admises, les gardes et la marche du service. Le bon commun ne répond à aucune de ces questions.",
             "expert": "Lire l’orientation d’un projet dans son ingénierie en cours — branches actives, contrôles, surfaces d’interopérabilité — et non dans sa seule surface utilisateur. Pour chaque environnement connecté, vérifier séparément la politique locale : autorisations, contrôles enforceables et sémantiques d’exécution restent propres à l’implémentation, même sous contrat d’échange commun."
           },
           "en": {
-            "kitchen": "Watch what is being built, not only what leaves the pass. If two houses share the pad, ask each of them who is allowed to touch what. The pad itself answers none of that.",
+            "kitchen": "Read a house’s direction in its work, guards, and passages rather than the menu alone. For each linked house, check separately who is admitted, the guards, and how service proceeds. The shared docket answers none of those questions.",
             "expert": "Read a project’s direction from its live engineering — active branches, controls, interoperability surfaces — rather than from the user surface alone. For each connected environment, verify local policy separately: permissions, enforceable controls and execution semantics stay implementation-specific even under a shared exchange contract."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le carnet se prête, pas les règles",
+          "cuisine": "Un bon commun autorise l’échange sans unir les règles",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Lending the pad lends none of the rules",
+          "kitchen": "A shared docket enables exchange without uniting rules",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une maison peut changer de métier avant que le client s’en aperçoive. Partager un carnet n’est pas partager les règles : demande-les à chaque maison, une par une.",
+            "cuisine": "Une maison peut changer de catégorie avant que le client ne voie une nouvelle carte. Un bon commun autorise l’échange, il n’unit pas les règles. Chaque maison garde ses admissions et sa façon de servir.",
             "expert": "Un projet peut changer de catégorie avant que les utilisateurs ne voient un changement produit. Un contrat d’échange commun autorise la communication sans unifier la politique : chaque implémentation conserve ses autorisations et ses sémantiques."
           },
           "en": {
-            "kitchen": "A house can change trade long before a guest notices. Sharing a pad is not sharing the rules; ask each house for its own, one at a time.",
+            "kitchen": "A house may change category long before a diner sees a new menu. A shared docket enables exchange; it does not unite rules. Each house keeps its admissions and its way of serving.",
             "expert": "A project can change category before users see any product change. A shared exchange contract permits communication without unifying policy: each implementation keeps its own permissions and semantics."
           }
         }

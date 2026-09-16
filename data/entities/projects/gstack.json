@@ -37,22 +37,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "gstack",
+          "cuisine": "Le tour des postes laisse passer le même défaut",
           "expert": "gstack"
         },
         "en": {
-          "kitchen": "gstack",
+          "kitchen": "The station round misses the same fault again",
           "expert": "gstack"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "gstack fait le tour des postes avant le service et annonce que tout est prêt. Une fois, tout n’était pas prêt : un poste ne pouvait pas cuisiner et le tour n’a rien vu. On a corrigé. La même panne est revenue par une autre porte.",
+            "cuisine": "La brigade fait le tour des postes avant le service et annonce que tout est prêt. Une fois, un poste ne pouvait pas cuisiner et le tour n’a rien vu. La correction est arrivée, puis le même défaut est revenu par une autre porte.",
             "expert": "gstack est une flotte d’outils et de skills façonnés par rôle pour Claude Code, livrée avec le câblage d’hôte qui les rend utilisables. Sa lignée publique la plus instructive est un false-green : une sonde de préflight rapportait prêt alors que la couverture Codex était silencieusement perdue, d’abord par classification d’erreur fail-open, puis, après le premier correctif, par une identité de cache périmée. Le second correctif, élargi à l’exécutable et au contexte d’authentification réel, est écrit et testé mais non livré."
           },
           "en": {
-            "kitchen": "gstack walks the stations before service and calls everything ready. Once, everything was not ready: a station could not cook and the walk saw nothing. It was fixed. The same failure came back through another door.",
+            "kitchen": "The brigade walks the stations before service and calls everything ready. Once, a station could not cook and the round saw nothing. A repair arrived, then the same failure came back through another door.",
             "expert": "gstack is a role-shaped fleet of Claude Code tools and skills, shipped with the host wiring that makes them usable. Its most instructive public lineage is a false green: a preflight probe reported ready while Codex coverage was silently lost, first through fail-open error classification and then, after the first fix, through stale cache identity. The second fix, widened to the executable and the real authentication context, is written and tested but not shipped."
           }
         }
@@ -63,62 +63,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "gstack ajoute le tour des postes, puis rechute",
+          "cuisine": "Le tour des postes revient, puis rate encore",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "gstack starts walking the stations, then slips again",
+          "kitchen": "The station round starts, then misses again",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "gstack commence comme une caisse à outils : des fiches de travail et des gestes tout prêts, rangés pour être repris tels quels.",
+            "cuisine": "La maison commence comme une caisse à outils : des fiches de travail et des gestes tout prêts, rangés pour être repris tels quels.",
             "expert": "gstack démarre comme un harnais de skills et de workflows, façonné par rôle et livré avec son câblage d’hôte. L’ensemble est utilisable dès l’installation."
           },
           "en": {
-            "kitchen": "gstack starts as a toolbox: work cards and ready-made moves, filed so they can be picked up exactly as they are.",
+            "kitchen": "The house starts as a toolbox: work cards and ready-made moves, filed so they can be picked up exactly as they are.",
             "expert": "gstack starts as a skills and workflow harness, role-shaped and shipped with its host wiring. The whole set is usable on install day."
           }
         },
         {
           "fr": {
-            "cuisine": "On ajoute une habitude : avant de lancer le service, on fait le tour et on demande à chaque poste s’il est prêt. Plusieurs mains différentes doivent relire le même plat.",
+            "cuisine": "On ajoute une habitude : avant le service, on parcourt la ligne et l’on demande à chaque poste s’il peut tenir son rôle. Plusieurs paires de mains doivent revoir le même plat.",
             "expert": "Des préflights de revue multi-modèles sont ajoutés : avant que la revue ne parte, une sonde vérifie que chaque moteur est disponible. La revue croisée suppose que chaque moteur annoncé participe réellement."
           },
           "en": {
-            "kitchen": "A habit gets added: before service, walk the line and ask each station whether it is ready. Several different hands must look over the same dish.",
+            "kitchen": "A habit is added: before service, walk the line and ask each station whether it can hold its role. Several pairs of hands must review the same dish.",
             "expert": "Cross-model review preflights are added: before the review runs, a probe checks that each engine is available. Cross-model review assumes every announced engine really takes part."
           }
         },
         {
           "fr": {
-            "cuisine": "Un soir, le tour annonce prêt alors qu’un poste ne peut pas cuisiner. L’échec avait été pris pour un détail, et le tour l’avait laissé passer. C’est trouvé, c’est corrigé, l’affaire est classée.",
+            "cuisine": "Un soir, le tour annonce que tout est prêt alors qu’un poste ne peut pas cuisiner. Son empêchement avait été pris pour un détail et le tour l’avait laissé passer. La cause est trouvée, une réparation arrive, et le dossier est classé.",
             "expert": "Un false-green d’installation est découvert : la sonde renvoyait un succès alors que Codex ne pouvait pas s’exécuter. L’explication retenue est une classification d’erreur fail-open. L’issue est fermée comme complétée."
           },
           "en": {
-            "kitchen": "One evening the walk calls ready while a station cannot cook at all. The failure had been read as a detail and let through. It is found, it is fixed, the matter is closed.",
+            "kitchen": "One evening, the round calls everything ready while a station cannot cook at all. Its trouble had been read as a detail and the round let it through. The cause is found, a repair arrives, and the case is closed.",
             "expert": "A false-green install failure is found: the probe returned success while Codex could not execute. The explanation retained is fail-open error classification. The issue is closed as completed."
           }
         },
         {
           "fr": {
-            "cuisine": "Quelque temps plus tard, même annonce, même erreur, autre cause. Le tour se fiait à une réponse donnée la veille, pour un poste qui n’était plus le même.",
+            "cuisine": "Quelque temps après, la même annonce couvre la même erreur, mais la cause a changé. Le tour se fie à l’avis de la veille pour un poste qui n’est plus le même.",
             "expert": "La même classe structurelle récidive : l’état de santé mis en cache restait valide alors que l’identité réelle avait changé. Le symptôme est identique, la cause ne l’est pas."
           },
           "en": {
-            "kitchen": "Some time later, same call, same mistake, different cause. The walk was trusting an answer given the day before, about a station that was no longer the same.",
+            "kitchen": "Some time later, the same call hides the same mistake, but the cause has changed. The round trusts yesterday’s verdict for a station that is no longer the same.",
             "expert": "The same structural class recurs: cached health stayed valid while the real identity had changed. The symptom is identical, the cause is not."
           }
         },
         {
           "fr": {
-            "cuisine": "Le deuxième correctif ne se contente plus de retenir le nom du poste. Il retient qui travaille vraiment, et sous quel accès. Il est écrit, éprouvé, et il attend son tour pour entrer.",
+            "cuisine": "La deuxième réparation ne s’arrête plus au nom du poste. Elle regarde qui tient réellement la casserole et avec quel trousseau. Elle est écrite, éprouvée, ouverte à l’entrée, mais elle n’est pas encore servie.",
             "expert": "Le second correctif élargit la clé d’identité du cache vers l’exécutable et le contexte d’authentification réel, avec des tests. Il entre dans le flux de merge queue ; à la coupure, la PR est ouverte et mergeable, non livrée."
           },
           "en": {
-            "kitchen": "The second fix no longer settles for the station’s name. It keeps track of who is really working, and under whose access. It is written, tested, and waiting its turn to go in.",
+            "kitchen": "The second repair no longer settles for the station’s name. It looks at who truly holds the pan and with which key ring. It is written, tested, and open at the door, but it has not yet been served.",
             "expert": "The second fix widens the cache identity key to the executable and the real authentication context, with tests. It enters the merge-queue workflow; at cutoff the pull request is open and mergeable, not shipped."
           }
         }
@@ -129,22 +129,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux fois, le tour a posé la mauvaise question",
+          "cuisine": "Deux tours, deux questions trop courtes",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Twice the walk asked the wrong question",
+          "kitchen": "Two rounds, two questions too short",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un tour de postes ne vaut que par la question posée. La première fois, on demandait si ça répondait, pas si ça pouvait cuisiner. La deuxième, une réponse d’hier valait pour un poste qui avait changé. Dans les deux cas, l’annonce était verte et le feu était éteint.",
+            "cuisine": "Un tour de postes ne vaut que par sa question. La première fois, on vérifiait qu’un poste répondait, non qu’il pouvait cuisiner. La seconde, un avis d’hier suffisait pour un poste qui avait changé. Dans les deux cas, l’annonce était rassurante et le feu restait éteint.",
             "expert": "Une sonde de disponibilité ne prouve que ce qu’elle interroge. La première défaillance venait de la classification : une erreur traitée en fail-open se lit comme un succès. La seconde venait de l’identité : une santé mise en cache survit à tout ce qui change la capacité réelle — exécutable, identifiants, configuration, environnement d’exécution pertinent. En élargissant la clé, le second correctif a révélé la frontière d’abstraction que le premier avait manquée."
           },
           "en": {
-            "kitchen": "A walk of the line is only worth the question asked. The first time, the question was whether a station answered, not whether it could cook. The second time, yesterday’s answer stood for a station that had changed. Both times the call was green and the stove was cold.",
+            "kitchen": "A round of the line is only worth its question. The first time, it checked that a station answered, not that it could cook. The second time, yesterday’s verdict was enough for a station that had changed. Both times the call was reassuring and the stove stayed cold.",
             "expert": "A readiness probe proves only what it asks. The first failure was classification: an error handled fail-open reads as success. The second was identity: cached health outlives everything that can change real capability — executable, credentials, configuration, relevant runtime environment. Widening the key, the second fix exposed the abstraction boundary the first one had missed."
           }
         }
@@ -155,22 +155,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Demander s’il peut cuisiner, pas s’il répond",
+          "cuisine": "Demander si le poste peut vraiment cuisiner",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Ask whether it cooks, not whether it answers",
+          "kitchen": "Ask whether the station can truly cook",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La réponse tient en une question : est-ce que ce poste-là, avec cette main-là et cet accès-là, peut cuisiner maintenant ? Le correctif est écrit et éprouvé, mais il n’est pas encore entré. Et pour un plat annoncé parti, la maison garde à côté la preuve du départ, au lieu de la déduire du ton de l’annonce.",
+            "cuisine": "La bonne question est simple : ce poste, tenu par cette main et avec ce trousseau, peut-il cuisiner maintenant ? La réparation est écrite et éprouvée, mais elle n’est pas encore entrée. Pour un plat annoncé parti, la maison garde aussi la preuve de son départ, au lieu de la déduire du ton de l’annonce.",
             "expert": "Une santé mise en cache doit être invalidée par toute dépendance capable de changer la capacité réelle : identité de l’exécutable, identifiants, configuration et environnement d’exécution pertinent. C’est ce que fait le second correctif, écrit et testé, mais non livré à la coupure. La même famille de défaillance impose une seconde discipline : conserver l’état d’exécution à côté du résultat, plutôt que de déduire l’exécution d’une présentation assurée."
           },
           "en": {
-            "kitchen": "The answer is one question: can this station, with this hand and this access, cook right now? The fix is written and tested, but it has not gone in yet. And for a plate called away, the proof that it left is kept beside it, never read off the tone of the call.",
+            "kitchen": "The right question is simple: can this station, held by this hand and using this key ring, cook right now? The repair is written and tested, but it has not entered yet. For a plate announced as gone, the house also keeps proof of its departure, never reading it from the tone of the call.",
             "expert": "Cached health must be invalidated by every dependency able to change actual capability: executable identity, credentials, configuration and the relevant runtime environment. That is what the second fix does — written and tested, but not shipped at cutoff. The same failure family imposes a second discipline: keep execution state alongside the result instead of inferring execution from a confident presentation."
           }
         }
@@ -181,22 +181,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "La correction de gstack attend toujours son tour",
+          "cuisine": "La deuxième correction attend toujours son tour",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "gstack’s correction is still waiting its turn",
+          "kitchen": "The second repair is still waiting its turn",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "gstack tourne, la maison est pleine. Pourtant elle ne fait jamais de grandes annonces de nouveauté : les compter ne dirait rien de sa santé. Le deuxième correctif, lui, attend toujours d’entrer. Personne n’a mesuré ce qu’il donne une fois en place.",
+            "cuisine": "La maison tourne et reste pleine. Elle ne fait pas de grandes annonces de nouveauté : les compter ne dirait rien de sa santé. Le deuxième correctif attend toujours d’entrer. Personne n’a mesuré ce qu’il donne une fois en place.",
             "expert": "gstack est en croissance active alors qu’il ne publie pas de releases — un exemple direct de pourquoi la cadence de release seule classe mal un projet. Le second correctif d’identité de cache est ouvert et mergeable, non livré ; aucune mesure terrain n’est disponible après lui. La lecture causale en deux temps, fail-open puis identité périmée, est retenue à faible confiance ; la perte silencieuse de couverture Codex derrière un préflight vert l’est à confiance moyenne."
           },
           "en": {
-            "kitchen": "gstack is busy; the house is full. It never makes grand announcements of what is new, so counting them would say nothing about its health. The second fix is still waiting to go in. Nobody has measured what it does once it is there.",
+            "kitchen": "The house is busy and full. It makes no grand announcements of what is new, so counting them would say nothing about its health. The second repair is still waiting to go in. Nobody has measured what it does once it is there.",
             "expert": "gstack is in active growth while publishing no releases — a direct example of why release cadence alone misclassifies a project. The second cache-identity fix is open and mergeable, not shipped; no field measurement exists after it. The two-stage causal reading, fail-open then stale identity, is held at low confidence; the silent loss of Codex coverage behind a green preflight is held at medium."
           }
         }
@@ -207,22 +207,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "« Tout est prêt » au-dessus d’un feu éteint",
+          "cuisine": "Une annonce rassurante ne réchauffe pas le feu",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "“All ready” said over a cold stove",
+          "kitchen": "A reassuring call does not warm the stove",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un « tout est prêt » ne vaut que s’il a été demandé à ce qui cuisine vraiment, ce soir-là. Sinon, c’est une phrase agréable posée au-dessus d’un feu éteint.",
+            "cuisine": "Un « tout est prêt » ne vaut que s’il vient de ce qui cuisine réellement ce soir-là. Sinon, ce n’est qu’une phrase agréable au-dessus d’un feu éteint.",
             "expert": "Un health check doit être lié à ce qui s’exécute réellement, pas au nom de ce qui devrait s’exécuter. Et quand un correctif échoue deux fois sur la même forme, c’est la frontière d’abstraction qu’il faut déplacer, pas la représentation visible."
           },
           "en": {
-            "kitchen": "An “all ready” is worth something only when it was asked of what actually cooks that night. Otherwise it is a pleasant sentence laid over a cold stove.",
+            "kitchen": "An “all ready” is worth something only when it comes from what actually cooks that night. Otherwise it is merely a pleasant sentence above a cold stove.",
             "expert": "A health check must be bound to what actually executes, not to the name of what ought to. And when a fix fails twice on the same shape, move the abstraction boundary rather than the visible representation."
           }
         }

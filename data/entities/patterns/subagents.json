@@ -31,22 +31,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Un commis travaille au fond, hors de vue",
+          "cuisine": "Au passe — Un commis travaille au fond, hors de vue",
           "expert": "La délégation est devenue un sous-système à part entière, avec sa propre identité d’exécution"
         },
         "en": {
-          "kitchen": "Work handed to a cook nobody watches",
+          "kitchen": "At the pass — Work handed to a cook nobody watches",
           "expert": "Delegation has become a subsystem of its own, with its own execution identity"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le chef ne fait plus le plat : il envoie un commis au fond et attend l’assiette. Chez Claude Code, Codex, Gemini, Goose, Cline et OpenHands, ce geste a cessé d’être une consigne criée. Qui part, avec quoi, sous quel nom, et ce qu’il ramène : tout cela est devenu un métier à part.",
+            "cuisine": "Le chef ne prépare plus toujours le plat lui-même : il confie la commande à un commis et attend son retour. Dans six grandes maisons, cette délégation est devenue un poste complet. Il faut savoir qui part, avec quels outils, sous quelle responsabilité et ce qu’il rapporte.",
             "expert": "Les subagents ne sont plus des prompts imbriqués : routage, handoff, choix du modèle, visibilité, audit, messagerie et sémantique de retour forment un sous-système distinct du harnais. La convergence est rapide chez Claude Code, Codex, Gemini CLI, Goose, Cline et OpenHands, avec de grandes différences dans les sémantiques de routage et d’audit. La délégation crée un second graphe d’exécution dont l’identité, les permissions et les résultats doivent être corrélés au parent."
           },
           "en": {
-            "kitchen": "The chef stops cooking the dish and sends a cook to the back with it. At Claude Code, Codex, Gemini, Goose, Cline and OpenHands that handover stopped being a shouted instruction. Who goes, carrying what, under whose name, and what he brings back: that is a trade of its own now.",
+            "kitchen": "The chef no longer prepares every dish alone; an order is handed to another cook and the result comes back. Across six large houses, that handover has become a full station. The brigade must know who leaves, with which tools, under whose responsibility, and what returns.",
             "expert": "Subagents are no longer nested prompts: routing, handoff, model choice, visibility, audit, messaging and return semantics form a distinct subsystem of the harness. Convergence is fast across Claude Code, Codex, Gemini CLI, Goose, Cline and OpenHands, with wide differences in routing and audit semantics. Delegation creates a second execution graph whose identity, permissions and results must be correlated back to the parent."
           }
         }
@@ -57,22 +57,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le plat revient sans nom de commis",
+          "cuisine": "Au passe — Le plat revient sans nom de commis",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "At Codex, the sheet stopped naming the cook",
+          "kitchen": "At the pass — The sheet stopped naming the chosen cook",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le chef demande un commis précis pour un travail précis, et ce n’est pas celui-là qui part. Chez Codex, des indications ont été retirées de la feuille que le chef a sous les yeux, et le choix du commis est parti avec. Ailleurs, l’assiette revient sans qu’on sache qui l’a faite, ni comment.",
+            "cuisine": "Le chef demande un commis précis pour une préparation précise, mais un autre reçoit le bon. Dans un cas, deux lignes retirées de la feuille ont emporté le choix du commis et de son matériel. Ailleurs, l’assiette revient sans trace lisible de celui qui l’a faite ni des consignes reçues.",
             "expert": "Deux signaux distincts. Le premier est un parent devenu incapable de sélectionner certaines capacités déléguées : chez Codex, un changement bascule les métadonnées de subagent en masquées par défaut dans le schéma visible par le modèle, et les champs retirés portaient le type d’agent et le choix de modèle. Le second est une perte d’auditabilité : le chiffrement des communications agent-à-agent a retiré de l’historique normal du parent les traces lisibles des tâches et des messages."
           },
           "en": {
-            "kitchen": "Ask for one particular cook and someone else walks off with the order. At Codex, details came off the sheet the chef reads, and the choice of cook went with them. Elsewhere the plate comes back and nobody in the house can say whose hands made it.",
+            "kitchen": "The chef asks for one cook to handle one preparation, but another receives the ticket. In one case, removing two lines from the sheet also removed the choice of cook and equipment. Elsewhere, the plate returns with no readable trail of who made it or which orders were received.",
             "expert": "Two distinct signals. The first is a parent that can no longer select certain delegated capabilities: a Codex change flipped subagent metadata to hidden by default in the model-visible schema, and the removed fields carried agent type and model choice. The second is lost auditability: encrypting agent-to-agent communication stripped readable task and message traces out of the parent’s normal history."
           }
         }
@@ -83,22 +83,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Brouiller la parole efface aussi la trace",
+          "cuisine": "Au passe — Brouiller la parole efface aussi la trace",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Nobody chose to lose the only record",
+          "kitchen": "At the pass — Nobody chose to lose the only record",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ce qu’on montre au chef n’est pas une décoration : c’est ce à partir de quoi il choisit. Retirer une ligne pour faire propre, c’est retirer la décision qui tenait à cette ligne. Et ce que les commis se disent entre eux servait aussi de trace pour la maison. Brouiller la parole protège l’échange et efface la trace du même coup, sans que personne ait arbitré.",
+            "cuisine": "Au service, Ce qu’on montre au chef n’est pas une décoration : c’est ce à partir de quoi il choisit. Retirer une ligne pour faire propre, c’est retirer la décision qui tenait à cette ligne. Et ce que les commis se disent entre eux servait aussi de trace pour la maison. Brouiller la parole protège l’échange et efface la trace du même coup, sans que personne ait arbitré.",
             "expert": "Dans un système d’agents, le schéma est une surface exécutable et non un format d’affichage : retirer un champ retire avec lui la décision que le modèle prenait à partir de ce champ. Le second mécanisme est de même forme : une représentation unique servait à la fois au transport confidentiel et à l’observabilité opérateur, de sorte que chiffrer l’un efface mécaniquement l’autre. La perte n’est pas un arbitrage de politique, mais une conséquence structurelle du support partagé."
           },
           "en": {
-            "kitchen": "What the chef is shown is not decoration; it is what he picks from. Take a line off to tidy the sheet and the choice that hung on it goes too. And what the cooks say to each other was also the only record the house had of the work. Muffle the talk and the record goes with it, with nobody having chosen that.",
+            "kitchen": "During service, What the chef is shown is not decoration; it is what he picks from. Take a line off to tidy the sheet and the choice that hung on it goes too. And what the cooks say to each other was also the only record the house had of the work. Muffle the talk and the record goes with it, with nobody having chosen that.",
             "expert": "In an agent system the schema is an executable surface, not a display format: removing a field removes with it the decision the model made from that field. The second mechanism has the same shape: one representation carried both confidential transport and operator observability, so encrypting the first mechanically erases the second. The loss is not a policy trade-off but a structural consequence of the shared medium."
           }
         }
@@ -109,22 +109,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Envoyer un commis avant de couper une ligne",
+          "cuisine": "Au passe — Envoyer un commis avant de couper une ligne",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Keep a short register of who went where",
+          "kitchen": "At the pass — Keep a short register of who went where",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Traite le commis comme quelqu’un qui a un nom : mission, outil, et ce qu’il doit ramener. Tiens à part un petit registre — qui est parti, quand, pour quoi, avec quel résultat — même si la parole reste entre eux. Avant de retirer une ligne de la feuille du chef, envoie un commis pour de vrai et regarde ce qui change. C’est ce qu’on propose ; rien n’établit qu’une maison l’ait posé.",
+            "cuisine": "Au service, Traite le commis comme quelqu’un qui a un nom : mission, outil, et ce qu’il doit ramener. Tiens à part un petit registre — qui est parti, quand, pour quoi, avec quel résultat — même si la parole reste entre eux. Avant de retirer une ligne de la feuille du chef, envoie un commis pour de vrai et regarde ce qui change. C’est ce qu’on propose ; rien n’établit qu’une maison l’ait posé.",
             "expert": "Traiter la délégation comme un lifecycle typé, avec une identité parent-enfant explicite et une observabilité bornée. Séparer les payloads privés destinataire de métadonnées opérateur bornées : identités, horodatages, décisions de routage, résultat et état de politique restent auditables sans exposer le contenu des messages. Traiter aussi les schémas visibles par le modèle comme des API, dont tout diff de capacité exige des tests d’intégration et non des tests de snapshot ou de format. Aucune mise en œuvre de cette séparation n’est établie ici."
           },
           "en": {
-            "kitchen": "Treat the cook you send as a man with his own name: the mission, the tools, and the account he owes. Keep a short register apart — who left, when, for what, with what result — even when their talk stays between them. Before you cut a line from the chef’s sheet, send a cook for real and watch what changes. That is what is being asked for; nothing establishes a house has put it in place.",
+            "kitchen": "During service, Treat the cook you send as a man with his own name: the mission, the tools, and the account he owes. Keep a short register apart — who left, when, for what, with what result — even when their talk stays between them. Before you cut a line from the chef’s sheet, send a cook for real and watch what changes. That is what is being asked for; nothing establishes a house has put it in place.",
             "expert": "Treat delegation as a typed lifecycle with explicit parent-child identity and bounded observability. Separate recipient-private payloads from bounded operator metadata: identities, timestamps, routing decisions, outcome and policy state can stay auditable without exposing message content. Treat model-visible schemas as APIs as well, where any capability diff demands integration tests rather than snapshot or format tests. No implementation of that separation is established here."
           }
         }
@@ -135,22 +135,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on montre au départ décide du retour",
+          "cuisine": "Au passe — Ce qu’on montre au départ décide du retour",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Secrecy must not cost the house its record",
+          "kitchen": "At the pass — Secrecy must not cost the house its record",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un commis qu’on envoie n’est pas ta main qui s’allonge : c’est quelqu’un d’autre, avec son nom. Ce que tu lui montres avant qu’il parte décide de ce qui revient. Et la discrétion ne se paie pas en effaçant la seule trace de la maison.",
+            "cuisine": "Au service, Un commis qu’on envoie n’est pas ta main qui s’allonge : c’est quelqu’un d’autre, avec son nom. Ce que tu lui montres avant qu’il parte décide de ce qui revient. Et la discrétion ne se paie pas en effaçant la seule trace de la maison.",
             "expert": "Un subagent constitue une identité d’exécution distincte, non la continuation du prompt parent. Un champ à partir duquel le modèle peut agir appartient à la surface de capacité, quelle que soit son apparence d’affichage. Confidentialité et auditabilité demandent des canaux séparés : faire porter les deux par le même support garantit que renforcer l’une dégrade l’autre."
           },
           "en": {
-            "kitchen": "The cook you send is not your hand reaching further; he is another man, under his own name. What you show him before he leaves decides what comes back. And discretion must not be paid for with the only record the house keeps.",
+            "kitchen": "During service, The cook you send is not your hand reaching further; he is another man, under his own name. What you show him before he leaves decides what comes back. And discretion must not be paid for with the only record the house keeps.",
             "expert": "A subagent is a distinct execution identity, not a continuation of the parent prompt. A field the model can act from belongs to the capability surface, whatever it looks like on screen. Confidentiality and auditability need separate channels: carrying both on one medium guarantees that strengthening either degrades the other."
           }
         }

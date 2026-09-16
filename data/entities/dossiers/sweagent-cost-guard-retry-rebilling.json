@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Chez SWE-agent, le plat refait est refacturé",
+          "cuisine": "Le plat refait est facturé une seconde fois",
           "expert": "SWE-agent : les retries transforment un appel modèle en multiplicateur de coût caché"
         },
         "en": {
-          "kitchen": "SWE-agent rang up every plate it sent back",
+          "kitchen": "Every remade plate is rung up again",
           "expert": "SWE-agent: retries turn one model call into a hidden cost multiplier"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez SWE-agent, un plat qui repart une deuxième fois est compté deux fois à la caisse, comme si deux clients l’avaient demandé. Le plafond de dépense, lui, croit n’en avoir vu qu’un. Entre ce que la maison annonce dépenser et ce qu’elle paie vraiment, l’écart se creuse sans témoin.",
+            "cuisine": "Un plat renvoyé aux fourneaux est compté deux fois à la caisse, comme si deux clients l’avaient commandé. Le plafond de dépense ne voit que la première addition. L’écart grandit donc entre la somme annoncée et celle réellement payée.",
             "expert": "Une famille de problèmes de contrôle des coûts montre comment retries, sélection de modèle et exceptions de budget avalées font diverger limites nominales et dépense réelle chez SWE-agent."
           },
           "en": {
-            "kitchen": "At SWE-agent, a plate that goes back on is rung up twice, as though two guests had ordered it. The spending ceiling still believes it saw one. What the house says it spends and what it truly pays drift apart with nobody watching.",
+            "kitchen": "A plate sent back to the stoves is rung up twice, as though two diners ordered it. The spending ceiling sees only the first bill. The stated cost therefore drifts away from what the house truly pays.",
             "expert": "A cluster of cost-control problems in SWE-agent showed how retries, model selection and swallowed budget exceptions can make nominal limits diverge from real spend."
           }
         }
@@ -51,62 +51,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "L'addition double, le plafond ne bouge pas",
+          "cuisine": "L'addition double, le plafond ne bouge pas — au passe",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The bill doubles while the ceiling stands still",
+          "kitchen": "The bill doubles while the ceiling stands still — at the pass",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chaque plat envoyé coûte cher, et la maison travaille sous un plafond de dépense.",
+            "cuisine": "Chaque plat envoyé coûte cher, et la maison travaille sous un plafond de dépense. La scène reste au passe.",
             "expert": "L’agent exécute du travail modèle coûteux sous une limite de budget."
           },
           "en": {
-            "kitchen": "Every plate sent out costs real money, and the house works under a spending ceiling.",
+            "kitchen": "Every plate sent out costs real money, and the house works under a spending ceiling. The scene remains at the pass.",
             "expert": "The agent ran costly model work under a budget limit."
           }
         },
         {
           "fr": {
-            "cuisine": "Quand le plat repart, la caisse peut le facturer à neuf au lieu d’y reconnaître la même commande.",
+            "cuisine": "Quand le plat repart, la caisse peut le facturer à neuf au lieu d’y reconnaître la même commande. La scène reste au passe.",
             "expert": "Les chemins de retry peuvent refacturer un travail déjà payé, la tentative n’étant pas comptée comme une opération logique unique."
           },
           "en": {
-            "kitchen": "On a second attempt the till can charge afresh, instead of recognising the order it already took.",
+            "kitchen": "On a second attempt the till can charge afresh, instead of recognising the order it already took. The scene remains at the pass.",
             "expert": "Retry paths could rebill work rather than treating the attempt as one logical operation."
           }
         },
         {
           "fr": {
-            "cuisine": "Pire : l’alarme qui doit tout arrêter au plafond peut rester étouffée au fond de la maison.",
+            "cuisine": "Pire : l’alarme qui doit tout arrêter au plafond peut rester étouffée au fond de la maison. La scène reste au passe.",
             "expert": "Des conditions fatales de budget peuvent être avalées par le flot de contrôle interne et ne pas remonter."
           },
           "en": {
-            "kitchen": "Worse: the alarm meant to halt everything at the ceiling can stay muffled in the back.",
+            "kitchen": "Worse: the alarm meant to halt everything at the ceiling can stay muffled in the back. The scene remains at the pass.",
             "expert": "Fatal budget conditions could be swallowed by internal control flow and never surface."
           }
         },
         {
           "fr": {
-            "cuisine": "Le choix du four ajoute encore des lignes à la note, alors que le plat semble tenir dans la même enveloppe.",
+            "cuisine": "Le choix du four ajoute encore des lignes à la note, alors que le plat semble tenir dans la même enveloppe. La scène reste au passe.",
             "expert": "Le comportement du sélecteur de modèle peut cacher des dimensions de coût supplémentaires."
           },
           "en": {
-            "kitchen": "Picking one range over another adds further lines to the bill, while the dish looks like it fits the same envelope.",
+            "kitchen": "Picking one range over another adds further lines to the bill, while the dish looks like it fits the same envelope. The scene remains at the pass.",
             "expert": "Model chooser behavior could keep additional cost dimensions out of view."
           }
         },
         {
           "fr": {
-            "cuisine": "Des réparations sont proposées ; au moment où l’on a regardé, toutes n’étaient pas en service.",
+            "cuisine": "Des réparations sont proposées ; au moment où l’on a regardé, toutes n’étaient pas en service. La scène reste au passe.",
             "expert": "Des travaux de correction sont proposés ; au cutoff observé, ils n’étaient pas tous livrés."
           },
           "en": {
-            "kitchen": "Repairs are proposed; when the house was last looked at, not all of them were in service.",
+            "kitchen": "Repairs are proposed; when the house was last looked at, not all of them were in service. The scene remains at the pass.",
             "expert": "Repair work was proposed; at the observed cutoff it had not all shipped."
           }
         }
@@ -117,22 +117,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La caisse ignorait les renvois en cuisine",
+          "cuisine": "La caisse ignorait les renvois en cuisine — au passe",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The till never saw the plates come back",
+          "kitchen": "The till never saw the plates come back — at the pass",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le plafond était surveillé depuis un endroit qui ne voyait ni les plats refaits ni les fours plus chers. Une commande unique, du point de vue du client, se cassait en plusieurs additions séparées.",
+            "cuisine": "Le plafond était surveillé depuis un endroit qui ne voyait ni les plats refaits ni les fours plus chers. Une commande unique, du point de vue du client, se cassait en plusieurs additions séparées. La scène reste au passe.",
             "expert": "L’enforcement du budget vit à une couche qui ne possède pas le graphe complet des retries et des choix de modèle. Opération logique et opérations facturables divergent."
           },
           "en": {
-            "kitchen": "The ceiling was watched from a spot blind to the remade plates and to the dearer ranges. One order, as the guest understood it, broke into several separate bills.",
+            "kitchen": "The ceiling was watched from a spot blind to the remade plates and to the dearer ranges. One order, as the guest understood it, broke into several separate bills. The scene remains at the pass.",
             "expert": "Budget enforcement lived at a layer that did not own the complete retry and model-selection graph. The logical operation and the billable operations diverged."
           }
         }
@@ -143,22 +143,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Compter la commande entière, et laisser sonner l'alarme",
+          "cuisine": "Compter la commande entière, et laisser sonner l'alarme — au passe",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Count the whole order, let the alarm carry",
+          "kitchen": "Count the whole order, let the alarm carry — at the pass",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La caisse doit suivre une commande jusqu’à son dernier renvoi, essais compris, au lieu de facturer chaque aller-retour à part. Quand le plafond est atteint, l’alarme doit traverser toute la maison, pas s’éteindre en chemin.",
+            "cuisine": "La caisse doit suivre une commande jusqu’à son dernier renvoi, essais compris, au lieu de facturer chaque aller-retour à part. Quand le plafond est atteint, l’alarme doit traverser toute la maison, pas s’éteindre en chemin. La scène reste au passe.",
             "expert": "La comptabilité du budget doit suivre tout l’arbre des descendants d’une tâche logique. Les échecs terminaux de budget doivent se propager sans être avalés."
           },
           "en": {
-            "kitchen": "The till has to follow one order down to its last resend, tries included, rather than billing each trip on its own. When the ceiling is reached, the alarm must carry through the whole house instead of dying on the way.",
+            "kitchen": "The till has to follow one order down to its last resend, tries included, rather than billing each trip on its own. When the ceiling is reached, the alarm must carry through the whole house instead of dying on the way. The scene remains at the pass.",
             "expert": "Budget accounting must follow the complete descendant tree of one logical task. Terminal budget failures must propagate without being swallowed."
           }
         }
@@ -169,22 +169,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Des réparations bien visées, pas toutes en service",
+          "cuisine": "Des réparations bien visées, pas toutes en service — au passe",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Repairs well aimed, not all in service",
+          "kitchen": "Repairs well aimed, not all in service — at the pass",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La famille de réparations est sérieuse et bien visée. Au moment où l’on a regardé, rien ne prouvait pourtant qu’elles étaient toutes en service.",
+            "cuisine": "La famille de réparations est sérieuse et bien visée. Au moment où l’on a regardé, rien ne prouvait pourtant qu’elles étaient toutes en service. La scène reste au passe.",
             "expert": "Famille de correctifs à fort signal, dont certains n’étaient pas prouvés livrés au cutoff observé."
           },
           "en": {
-            "kitchen": "The set of repairs is serious and well aimed. At the moment the house was last looked at, there was no proof that all of them were in service.",
+            "kitchen": "The set of repairs is serious and well aimed. At the moment the house was last looked at, there was no proof that all of them were in service. The scene remains at the pass.",
             "expert": "High-signal repair cluster, with some fixes not proven shipped at the observed cutoff."
           }
         }
@@ -195,22 +195,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu'on commande une fois coûte une fois",
+          "cuisine": "Ce qu'on commande une fois coûte une fois — au passe",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "One order should cost once, whatever the tries",
+          "kitchen": "One order should cost once, whatever the tries — at the pass",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ce que le client a commandé une fois ne doit lui coûter qu’une fois, quel que soit le nombre de tentatives derrière la porte.",
+            "cuisine": "Ce que le client a commandé une fois ne doit lui coûter qu’une fois, quel que soit le nombre de tentatives derrière la porte. La scène reste au passe.",
             "expert": "Un budget de retry se compte sur le travail logique, pas sur le nombre d’appels API."
           },
           "en": {
-            "kitchen": "What a guest ordered once should cost once, however many tries it took behind the doors.",
+            "kitchen": "What a guest ordered once should cost once, however many tries it took behind the doors. The scene remains at the pass.",
             "expert": "A retry budget is counted against logical work, not against the number of API calls."
           }
         }

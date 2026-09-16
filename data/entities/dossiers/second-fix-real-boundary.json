@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le cahier de Codex dévorait toute la réserve",
+          "cuisine": "Le cahier de service dévorait toute la réserve",
           "expert": "Le second correctif a placé le contrôle à la frontière que le premier avait manquée"
         },
         "en": {
-          "kitchen": "Codex’s service ledger was eating the stores",
+          "kitchen": "The service ledger was consuming the stores",
           "expert": "The second fix put the control at the boundary the first one missed"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Codex, le cahier de service se remplissait à une vitesse folle. Un premier tri a été fait à l’entrée des notes, puis livré. Mais certaines notes changeaient d’étiquette en chemin et repartaient vers le cahier. Le tri suivant est descendu jusqu’à la main qui écrit la dernière ligne.",
+            "cuisine": "Le cahier de service se remplit à une vitesse folle. Un premier tri bloque certaines notes à l’entrée. D’autres changent pourtant d’étiquette en route et atteignent encore le cahier. Le second tri descend donc jusqu’à la main qui écrit la dernière ligne.",
             "expert": "Un chemin de journalisation à très fort volume a été réduit puis livré, tandis qu’un chemin d’événements transformés continuait d’écrire à travers le garde. Le correctif suivant a rapproché l’enforcement de la frontière finale de persistance."
           },
           "en": {
-            "kitchen": "At Codex the service ledger was filling at a mad pace. A first sort was set up at the door where the notes come in, and it shipped. But some notes were recopied onto a fresh slip along the way, and still reached the ledger. The next sort went all the way down to the hand writing the final line.",
+            "kitchen": "The service ledger fills at a furious pace. A first sorting step blocks some notes at the door. Others receive a fresh label along the way and still reach the book. The second sort therefore reaches the hand writing the final line.",
             "expert": "A very high-volume logging path was reduced and shipped, while a transformed-event path kept writing straight through the guard. The follow-up fix moved enforcement closer to the final persistence boundary."
           }
         }
@@ -51,62 +51,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Deux tris chez Codex pour calmer le cahier",
+          "cuisine": "Deux tris sont nécessaires pour calmer le cahier",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Codex sorted twice before the ledger calmed",
+          "kitchen": "Two sorting attempts are needed to calm the ledger",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Tout ce qui se passe au poste part au cahier, et le cahier dévore la réserve à une allure anormale.",
+            "cuisine": "Tout ce qui se passe au poste est versé au cahier, qui dévore la réserve à une allure anormale.",
             "expert": "La journalisation persistante a créé une amplification extrême des écritures locales."
           },
           "en": {
-            "kitchen": "Everything happening at the station goes into the ledger, and the ledger eats the stores at an abnormal rate.",
+            "kitchen": "Everything happening at the station is poured into the ledger, which eats the stores at an abnormal rate.",
             "expert": "Persistent logging produced extreme local write amplification."
           }
         },
         {
           "fr": {
-            "cuisine": "Une première réparation supprime les lignes écrites deux fois et le bavardage le plus voyant.",
+            "cuisine": "Une première réparation enlève les lignes écrites deux fois et le bavardage le plus voyant.",
             "expert": "Un premier ensemble de correctifs a réduit les événements dupliqués et bruyants."
           },
           "en": {
-            "kitchen": "A first repair removes the lines written twice and the loudest chatter.",
+            "kitchen": "A first repair takes away lines written twice and the loudest chatter.",
             "expert": "A first set of fixes cut duplicated and noisy events."
           }
         },
         {
           "fr": {
-            "cuisine": "Elle est livrée, mais une note recopiée plus loin passe encore à travers le tri.",
+            "cuisine": "Elle est servie, mais une note recopiée plus loin traverse encore le tri.",
             "expert": "Le correctif a été livré, mais un chemin d’événements relayés échappait encore au filtrage."
           },
           "en": {
-            "kitchen": "It ships, yet a note recopied further along still slips past the sort.",
+            "kitchen": "It is served, yet a note recopied further along still slips past the sort.",
             "expert": "The fix shipped, but a bridged event path still escaped filtering."
           }
         },
         {
           "fr": {
-            "cuisine": "En remontant le parcours, on trouve la recopie tardive : au premier tri, la note ne portait pas encore l’étiquette qui la mènera au cahier.",
+            "cuisine": "En remontant le parcours, on trouve la recopie tardive : au premier tri, la note ne portait pas encore l’étiquette qui finirait au cahier.",
             "expert": "Un second correctif a déplacé le rejet jusqu’au sink SQLite."
           },
           "en": {
-            "kitchen": "Walking the route backwards turns up the late recopy: at the first sort, the note did not yet carry the label that would take it into the ledger.",
+            "kitchen": "Walking the route backwards reveals a late recopy. At the first sort, the note did not yet carry the label later written in the ledger.",
             "expert": "A second fix moved rejection down to the SQLite sink."
           }
         },
         {
           "fr": {
-            "cuisine": "Le second tri s’installe donc au fond du cahier, celui qu’on appelle SQLite, là où la ligne s’inscrit pour de bon.",
+            "cuisine": "Le second tri s’installe donc au fond du cahier, là où la ligne est inscrite pour de bon.",
             "expert": "La leçon profonde est passée du filtrage des entrées à l’enforcement à la frontière de l’effet final."
           },
           "en": {
-            "kitchen": "So the second sort sets up at the bottom of the ledger they call SQLite, where the line is written for good.",
+            "kitchen": "So the second sort sets up at the bottom of the ledger, where the line is written for good.",
             "expert": "The deeper lesson moved from filtering inputs to enforcing at the final side-effect boundary."
           }
         }
@@ -117,22 +117,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La note changeait d’étiquette après le tri",
+          "cuisine": "La note recevait une autre étiquette après le tri",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The note was relabelled after the first sort",
+          "kitchen": "The note received another label after the first sort",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le premier tri jugeait la note sur l’étiquette qu’elle portait en arrivant. Plus loin, on la recopiait sous une autre étiquette. Le tri pouvait donc être juste et rater quand même la ligne qui finissait au cahier.",
+            "cuisine": "Le premier tri jugeait la note sur son étiquette d’arrivée. Plus loin, on la recopiait sous une autre étiquette. Le tri pouvait donc être juste tout en ratant la ligne qui finissait au cahier.",
             "expert": "Le premier modèle mental supposait que l’identité visible près de l’ingestion était celle qui atteindrait le stockage persistant. L’hypothèse était fausse : une transformation ultérieure modifiait la classification, si bien qu’un filtre amont correct manquait quand même l’écriture finale."
           },
           "en": {
-            "kitchen": "The first sort judged a note by the label it wore on arrival. Further down the line, it was recopied under another label. So the sort could be right and still miss the line that ended up in the ledger.",
+            "kitchen": "The first sort judged a note by its arrival label. Further down the line, it was recopied under another label. The sort could therefore be right while still missing the line that ended in the ledger.",
             "expert": "The first mental model assumed the identity visible near ingestion was the identity that would reach persistent storage. That assumption was false: a later transformation changed the classification, so a correct upstream filter could still miss the final write."
           }
         }
@@ -143,22 +143,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Refuser à l’écriture, pas à l’entrée",
+          "cuisine": "Écarter à l’écriture plutôt qu’à l’entrée",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Codex moved the refusal to the ledger itself",
+          "kitchen": "The refusal moves to the ledger itself",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La première réponse a coupé le bruit le plus évident. La seconde a changé l’endroit du refus : au lieu de croire l’étiquette d’arrivée, c’est le cahier lui-même qui écarte ce qui ne doit jamais y figurer.",
+            "cuisine": "La première réponse a coupé le bruit le plus évident. La seconde a déplacé l’écart : au lieu de croire l’étiquette d’arrivée, le cahier lui-même écarte ce qui ne doit jamais y figurer.",
             "expert": "La première réponse a réduit les sources de bruit évidentes. La seconde a déplacé la frontière de contrôle elle-même : au lieu de faire confiance à l’identité amont, le sink persistant rejette la classe qui ne doit jamais être stockée."
           },
           "en": {
-            "kitchen": "The first answer cut the obvious noise. The second moved where the refusal sits: instead of trusting the label on arrival, the ledger itself turns away what must never be written there.",
+            "kitchen": "The first answer cut the obvious noise. The second moved the turning-away: instead of trusting the label on arrival, the ledger itself turns away what must never be written there.",
             "expert": "The first response reduced the obvious noise sources. The second moved the control boundary itself: rather than trusting upstream identity, the persistent sink rejects the class that should never be stored."
           }
         }
@@ -169,22 +169,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Le second tri de Codex est livré",
+          "cuisine": "Le second tri atteint enfin la dernière ligne",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Codex shipped the second sort, and it held",
+          "kitchen": "The second sort reaches the final line and holds",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ce second tri est livré, et le retour à la normale se voit nettement. Cela ne prouve pas que toutes les cuisines soient guéries.",
+            "cuisine": "Ce second tri est servi et le retour à la normale se voit nettement. Cela ne prouve pas que toutes les cuisines soient guéries.",
             "expert": "Le second correctif a été livré. La récupération observée s’est nettement améliorée, mais un correctif livré reste distinct d’une récupération universellement observée."
           },
           "en": {
-            "kitchen": "That second sort has shipped, and the return to normal shows clearly. It does not prove every kitchen is cured.",
+            "kitchen": "That second sort is served, and the return to normal shows clearly. It does not prove every kitchen is cured.",
             "expert": "The second fix shipped. Observed recovery improved materially, though a shipped fix remains distinct from universally observed recovery."
           }
         }
@@ -195,22 +195,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Quand le tri rate deux fois, change d’endroit",
+          "cuisine": "Quand le tri rate encore, déplace-le",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Two failed fixes mean the wrong place",
+          "kitchen": "When sorting fails again, move it",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Si la même note repasse malgré le premier tri, cesse de corriger l’étiquette. Pose le refus sur la main qui écrit la ligne qu’on ne pourra plus effacer.",
+            "cuisine": "Si la même note repasse malgré le premier tri, cesse de corriger l’étiquette. Place l’écart sur la main qui écrit la ligne qu’on ne pourra plus effacer.",
             "expert": "Quand un correctif échoue deux fois, cesser de patcher la représentation vue en premier. Déplacer le garde là où l’effet irréversible se produit réellement."
           },
           "en": {
-            "kitchen": "If the same note gets through despite the first sort, stop correcting the label. Put the refusal on the hand that writes the line nobody can rub out.",
+            "kitchen": "If the same note gets through despite the first sort, stop correcting the label. Put the turning-away at the hand that writes the line nobody can rub out.",
             "expert": "When a fix fails twice, stop patching the representation you saw first. Move the guard to where the irreversible side effect actually occurs."
           }
         }

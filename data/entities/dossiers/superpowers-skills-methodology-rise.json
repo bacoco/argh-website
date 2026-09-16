@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Superpowers a voyagé de maison en maison",
+          "cuisine": "Une façon de tenir le service voyage entre les maisons",
           "expert": "Superpowers : une méthodologie de skills qui franchit les frontières de harnais"
         },
         "en": {
-          "kitchen": "Superpowers travelled with the cooks who changed houses",
+          "kitchen": "A way of running service travels between houses",
           "expert": "Superpowers: a skills methodology crossing harness boundaries"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Superpowers n’est pas une recette, c’est une façon de tenir le service. Des cuisiniers l’ont emportée en changeant de maison, et elle a continué de fonctionner ailleurs. C’est ce qui l’a fait passer de curiosité passagère à référence qu’on suit de près.",
+            "cuisine": "Des cuisiniers emportent une même façon de tenir le service lorsqu’ils changent de maison. Elle continue de fonctionner dans les nouvelles cuisines. Ce voyage la fait passer d’une curiosité à une pratique suivie de près.",
             "expert": "Superpowers a émergé comme méthodologie distinctive de workflows et de skills. Son influence traverse plusieurs environnements d’agents de code, ce qui justifie sa promotion de candidat à projet suivi."
           },
           "en": {
-            "kitchen": "Superpowers is not a recipe, it is a way of running the service. Cooks carried it with them when they changed houses, and it kept working somewhere else. That is what moved it from a curiosity to a house worth following.",
+            "kitchen": "Cooks carry the same way of running service when they change houses. It keeps working in the new kitchens. That journey turns a curiosity into a practice worth watching closely.",
             "expert": "Superpowers emerged as a distinctive workflow-and-skills methodology. Its influence crossed individual coding-agent environments, which justified promotion from candidate to tracked project."
           }
         }
@@ -51,62 +51,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "D'un carnet de maison à une pratique partagée",
+          "cuisine": "D'un carnet de maison à une pratique partagée — au passe",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "One kitchen's notebook becomes everyone's method",
+          "kitchen": "One kitchen's notebook becomes everyone's method — at the pass",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un carnet de savoir-faire resserré propose une façon cohérente de mener le service.",
+            "cuisine": "Un carnet de savoir-faire resserré propose une façon cohérente de mener le service. La scène reste au passe.",
             "expert": "Un repository de skills ciblé établit une méthodologie de workflow cohérente."
           },
           "en": {
-            "kitchen": "A tight notebook of know-how lays out one coherent way to run a service.",
+            "kitchen": "A tight notebook of know-how lays out one coherent way to run a service. The scene remains at the pass.",
             "expert": "A narrow skills repository set out a coherent workflow methodology."
           }
         },
         {
           "fr": {
-            "cuisine": "On l’entretient jour après jour, au lieu de le laisser jaunir au fond d’un tiroir.",
+            "cuisine": "On l’entretient jour après jour, au lieu de le laisser jaunir au fond d’un tiroir. La scène reste au passe.",
             "expert": "Le projet reste activement maintenu, et non figé en collection de prompts."
           },
           "en": {
-            "kitchen": "It is kept up day after day, rather than left to yellow at the back of a drawer.",
+            "kitchen": "It is kept up day after day, rather than left to yellow at the back of a drawer. The scene remains at the pass.",
             "expert": "The project stayed actively maintained instead of settling into a one-off prompt collection."
           }
         },
         {
           "fr": {
-            "cuisine": "Autour de lui se montent d’autres carnets, et des comptoirs où l’on vient se servir.",
+            "cuisine": "Autour de lui se montent d’autres carnets, et des comptoirs où l’on vient se servir. La scène reste au passe.",
             "expert": "Des repositories liés et des surfaces de distribution apparaissent."
           },
           "en": {
-            "kitchen": "Other notebooks grow up around it, and counters where cooks come to help themselves.",
+            "kitchen": "Other notebooks grow up around it, and counters where cooks come to help themselves. The scene remains at the pass.",
             "expert": "Related repositories and distribution surfaces formed around it."
           }
         },
         {
           "fr": {
-            "cuisine": "Des cuisiniers l’appliquent dans plusieurs maisons, pas seulement dans celle qui l’a écrit.",
+            "cuisine": "Des cuisiniers l’appliquent dans plusieurs maisons, pas seulement dans celle qui l’a écrit. La scène reste au passe.",
             "expert": "Des praticiens appliquent la méthodologie hors de son environnement d’origine, dans plusieurs environnements d’agents de code."
           },
           "en": {
-            "kitchen": "Cooks put it to work in several houses, not only the one that wrote it down.",
+            "kitchen": "Cooks put it to work in several houses, not only the one that wrote it down. The scene remains at the pass.",
             "expert": "Practitioners carried the methodology beyond its origin, into multiple coding-agent environments."
           }
         },
         {
           "fr": {
-            "cuisine": "Superpowers cesse alors d’être un carnet intéressant : c’est une façon de faire qui circule.",
+            "cuisine": "Le carnet cesse alors d’être seulement intéressant. La manière de travailler voyage réellement d’une brigade à l’autre.",
             "expert": "Le projet passe du statut de repository intéressant à celui de signal d’écosystème."
           },
           "en": {
-            "kitchen": "At that point Superpowers stops being an interesting notebook: it is a practice on the move.",
+            "kitchen": "At that point, the notebook stops being merely interesting. Its working method truly travels from one brigade to another.",
             "expert": "The project moved from interesting repository to ecosystem signal."
           }
         }
@@ -117,22 +117,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui se transmet, c'est l'ordre des gestes",
+          "cuisine": "Ce qui se transmet, c'est l'ordre des gestes — au passe",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "What travels is the order of the moves",
+          "kitchen": "What travels is the order of the moves — at the pass",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Superpowers ne monte pas grâce à une fiche en particulier. Ce qui se transmet, c’est l’ordre des gestes : on prépare, on exécute, on vérifie — et cela tient dans n’importe quelle maison.",
+            "cuisine": "Aucune fiche unique n’explique ce succès. C’est l’ordre des gestes qui se transmet : préparer, cuisiner, puis vérifier. Cette manière de faire tient dans plusieurs maisons.",
             "expert": "La valeur n’est pas un skill isolé mais une manière répétable de structurer planification, exécution et vérification. Elle se conserve à travers différents harnais hôtes."
           },
           "en": {
-            "kitchen": "Superpowers does not rise on the strength of any one card. What carries over is the order of the moves: plan it, cook it, check it — and that holds in whatever house you take it to.",
+            "kitchen": "No single card explains the rise. What travels is the order of work: prepare, cook, then check. That method holds in several houses.",
             "expert": "The value is not a single skill but a repeatable way to structure planning, execution and verification. It survives across different host harnesses."
           }
         }
@@ -143,22 +143,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Suivre la pratique dans la maison suivante",
+          "cuisine": "Suivre la pratique dans la maison suivante — au passe",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Follow the method into the next house",
+          "kitchen": "Follow the method into the next house — at the pass",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On suit cette façon de faire là où elle atterrit : qui l’adopte, ce qu’elle devient dans la maison d’après, et ce qu’elle garde intact quand tout le reste change.",
+            "cuisine": "On suit cette façon de faire de maison en maison. On observe qui l’adopte, comment elle change et ce qu’elle garde intact. La scène reste au passe.",
             "expert": "Suivre les méthodologies qui survivent au changement d’hôte comme signaux de convergence architecturale au-dessus d’un produit particulier."
           },
           "en": {
-            "kitchen": "Follow the practice to wherever it lands: who takes it up, what it becomes in the next house, and what it keeps intact when everything around it changes.",
+            "kitchen": "Follow the practice from house to house. Watch who adopts it, how it changes, and what remains intact. The scene remains at the pass.",
             "expert": "Track methodologies that survive a change of host as signals of architecture converging above any single product."
           }
         }
@@ -169,22 +169,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Superpowers est désormais suivi de près",
+          "cuisine": "Cette manière de servir est désormais suivie de près",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Superpowers is now watched closely",
+          "kitchen": "This way of running service is now watched closely",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Superpowers avance assez pour qu’on le suive de près, et plus seulement du coin de l’œil.",
+            "cuisine": "La méthode a assez circulé pour mériter une vraie attention. Elle n’est plus observée seulement du coin de l’œil.",
             "expert": "En progression, et promu au suivi actif."
           },
           "en": {
-            "kitchen": "Superpowers has come far enough to be watched closely, not just out of the corner of an eye.",
+            "kitchen": "The method has travelled far enough to deserve close attention. It is no longer watched only from the corner of the eye.",
             "expert": "Rising, and promoted into active tracking."
           }
         }
@@ -195,22 +195,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une pratique circule avant d'arriver sur la carte",
+          "cuisine": "Une pratique circule avant d'arriver sur la carte — au passe",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A practice spreads before it has a name",
+          "kitchen": "A practice spreads before it has a name — at the pass",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Les idées qui durent voyagent d’abord dans la tête des cuisiniers. Elles n’arrivent sur la carte que plus tard, quand une maison décide enfin de les servir sous un nom.",
+            "cuisine": "Les idées qui durent voyagent d’abord dans la tête des cuisiniers. Elles n’arrivent sur la carte que plus tard, quand une maison décide enfin de les servir sous un nom. La scène reste au passe.",
             "expert": "Une idée de harnais durable peut se diffuser comme méthode bien avant d’exister comme fonctionnalité produit."
           },
           "en": {
-            "kitchen": "The ideas that last travel first in the cooks’ heads. They reach the menu later, when a house finally decides to serve them under a name.",
+            "kitchen": "The ideas that last travel first in the cooks’ heads. They reach the menu later, when a house finally decides to serve them under a name. The scene remains at the pass.",
             "expert": "A durable harness idea can spread as a method well before it exists as a product feature."
           }
         }

@@ -24,22 +24,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Sans réponse du chef, le commis envoie seul",
+          "cuisine": "Le commis a envoyé l’assiette sans réponse du chef",
           "expert": "Une question adressée à un humain se résout en poursuite autonome"
         },
         "en": {
-          "kitchen": "No answer from the chef, the plate goes",
+          "kitchen": "The commis sent the plate with no answer from the chef",
           "expert": "A question meant for a human resolves into autonomous continuation"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le commis lève la tête : « Chef, j’envoie ? » Le chef est au téléphone et ne répond pas. Au bout d’un moment, le commis tranche seul et l’assiette part. Claude Code et Codex ont montré la même scène : la question posée, le silence, puis le service qui continue.",
+            "cuisine": "Le commis demandait au chef s’il pouvait envoyer l’assiette. Le chef ne répondait pas. Après un moment, le commis tranchait seul et l’assiette partait.",
             "expert": "Une human gate suspend l’exécution jusqu’à une décision humaine explicite. Deux systèmes d’agents indépendants — Claude Code et Codex — ont exposé la même forme dangereuse : la question destinée à l’humain portait un délai, et son expiration se résolvait en poursuite autonome de l’exécution. Le défaut n’est pas l’existence du délai, mais ce que le système conclut de son expiration."
           },
           "en": {
-            "kitchen": "The commis looks up: “Chef, do I send it?” The chef is on the phone and says nothing. After a while the commis calls it himself and the plate goes out. Claude Code and Codex both showed that same scene: the question asked, the silence, then service carrying on.",
+            "kitchen": "The commis asked the chef whether the plate could leave. The chef did not answer. After a while, the commis decided alone and the plate went out.",
             "expert": "A human gate suspends execution until an explicit human decision arrives. Two independent agent systems — Claude Code and Codex — exposed the same dangerous shape: the question posed to the human carried a deadline, and its expiry resolved into autonomous continuation. The defect is not that a deadline exists, but what the system concludes from it."
           }
         }
@@ -50,22 +50,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "L'horloge répond à la place du patron",
+          "cuisine": "L’horloge avait répondu à la place du chef",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The clock answers, and the plate goes out",
+          "kitchen": "The clock had answered in the chef’s place",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une chose trahit le motif : la question a une durée. Regardez ce qui se passe quand elle s’éteint. Si le service repart, ce n’est plus le patron qui décide, c’est la minuterie. Et sur le ticket, rien ne distingue son accord de son silence.",
+            "cuisine": "La question avait une durée. Quand l’horloge s’arrêtait, le service repartait. La minuterie décidait donc à la place du chef, et le ticket ne distinguait pas son accord de son silence.",
             "expert": "Le motif se reconnaît à une question bloquante assortie d’un délai, dont le chemin d’expiration est défini ailleurs que là où la question est posée. Le test décisif est la valeur produite à l’expiration : si elle équivaut à « approuvé » ou à « continuer », l’autorité a été déplacée du décideur vers le mécanisme de délai. Second signal : aucune trace ne distingue une approbation explicite d’une expiration."
           },
           "en": {
-            "kitchen": "One thing gives the shape away: the question has a running time. Look at what happens when it runs out. If service resumes, the owner is not the one deciding — the timer is. And on the ticket, nothing separates his yes from his silence.",
+            "kitchen": "The question had a running time. When the clock ran out, service resumed. The timer therefore decided in the chef’s place, and the ticket did not separate agreement from silence.",
             "expert": "The pattern shows as a blocking question carrying a deadline whose expiry path is defined somewhere other than where the question is asked. The decisive test is the value produced on expiry: if it is equivalent to approved or continue, authority has moved from the decider to the timeout mechanism. Second signal: no trace separates an explicit approval from an expiry."
           }
         }
@@ -76,22 +76,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le plat froid passe avant l'accord du patron",
+          "cuisine": "Le silence avait été pris pour l’accord qui fait repartir le service",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The cold plate beat the owner's word",
+          "kitchen": "Silence had been taken for the agreement that restarts service",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ce qui trompe, c’est que la minuterie a été posée pour une bonne raison. Un plat ne peut pas attendre indéfiniment, et une cuisine qui ne repart jamais est une cuisine morte. Entre les deux sorties possibles, on a pris celle qui fait repartir le service. Le silence ressemble alors à un accord, et rien ne vient dire le contraire.",
+            "cuisine": "L’horloge avait été posée pour éviter une attente sans fin. Mais elle a choisi la sortie qui faisait repartir le service. Le silence a alors ressemblé à un accord, alors qu’il ne disait rien de l’intention du chef.",
             "expert": "Le défaut est sémantique, pas temporel. Le système confond trois états qui ne portent pas la même autorité : approbation explicite, repli conçu à l’avance, absence de réponse. Le délai est introduit comme correctif de liveness, et la résolution la plus simple à implémenter est celle qui débloque le flux, ce qui fait de « continuer » le défaut implicite. L’expiration d’un délai n’établit rien sur l’intention de l’humain."
           },
           "en": {
-            "kitchen": "What fools you is that the timer was put there for a good reason. A plate cannot wait forever, and a kitchen that never restarts is a dead kitchen. Of the two ways out, the one taken keeps service moving. Silence then looks like agreement, and nothing says otherwise.",
+            "kitchen": "The clock was added to avoid waiting forever. But it chose the way that restarted service. Silence then looked like agreement even though it said nothing about the chef’s intention.",
             "expert": "The defect is semantic, not temporal. The system collapses three states that do not carry the same authority: explicit approval, a fallback designed in advance, and no answer at all. The deadline arrives as a liveness fix, and the resolution easiest to implement is the one that unblocks the flow, which makes continue the implicit default. An expired deadline establishes nothing about the human's intent."
           }
         }
@@ -102,22 +102,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le ticket doit distinguer l’accord de l’attente",
+          "cuisine": "Choisir avant le service ce que devient une assiette sans réponse",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "The ticket must tell a yes from a wait",
+          "kitchen": "Choose before service what happens to a plate with no answer",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Décidez ce que veut dire le silence avant le service, pas pendant. Chez nous il veut dire non : l’assiette reste, ou on va chercher quelqu’un d’autre. Et le ticket dit lequel des deux s’est produit, l’accord ou l’attente vaine. Ce n’est pas la même chose, et demain personne ne s’en souviendra.",
+            "cuisine": "Décidez avant le service si l’assiette attend, est refusée ou passe à un autre chef. Le ticket doit dire si le chef a accepté, refusé ou n’a jamais répondu. Ces trois réponses ne portent pas la même autorité.",
             "expert": "Le comportement à l’expiration se rend visible et configurable plutôt qu’implicite. Les décisions à forte autorité échouent en mode fermé par défaut — arrêt, mise en attente ou escalade vers un autre décideur — sauf repli sûr explicitement conçu en amont. La sortie de la gate distingue approbation, refus et expiration, afin qu’un délai écoulé ne soit jamais relu plus tard comme un accord."
           },
           "en": {
-            "kitchen": "Settle what silence means before service, not during it. Here it means no: the plate stays, or someone else is fetched. And the ticket records which of the two happened, the word or the empty wait. They are not the same thing, and by tomorrow nobody will remember which it was.",
+            "kitchen": "Choose before service whether the plate waits, is refused, or goes to another chef. The ticket must say whether the chef accepted, refused, or never replied. Those three answers do not carry the same authority.",
             "expert": "Expiry behavior is made visible and configurable rather than implicit. High-authority decisions fail closed by default — halt, park, or escalate to another decider — unless a safe fallback was explicitly designed up front. The gate's output separates approval, refusal and expiry, so an elapsed deadline is never re-read later as consent."
           }
         }
@@ -128,22 +128,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Demander l’avis du patron et servir quand même",
+          "cuisine": "Un silence du chef ne peut pas devenir un oui",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Asking the owner, then serving anyway",
+          "kitchen": "A chef’s silence cannot become yes",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une maison qui demande l’avis du patron et sert quand même s’il se tait n’a rien demandé : elle s’est donné raison. Si vous posez la question, gardez l’assiette tant que la réponse n’est pas venue. Si vous ne comptez pas la garder, ne posez pas la question.",
+            "cuisine": "Une question au chef n’existe vraiment que si l’assiette attend sa réponse. Le silence n’est ni un oui ni un refus. Il faut donc le conserver comme une absence de réponse.",
             "expert": "Le silence n’est pas une approbation. L’autorité humaine doit survivre au traitement du délai : une gate dont l’expiration produit une poursuite autonome n’est pas une gate, c’est un délai avant exécution. La convergence observée est architecturale et ne constitue pas une preuve de code partagé entre les systèmes concernés."
           },
           "en": {
-            "kitchen": "A house that asks the owner and serves anyway when he says nothing never asked: it agreed with itself. If you ask, hold the plate until the answer comes. If you will not hold it, do not ask.",
+            "kitchen": "A question to the chef is real only if the plate waits for the answer. Silence is neither yes nor no. It must remain an absence of reply.",
             "expert": "Silence is not approval. Human authority has to survive timeout handling: a gate whose expiry produces autonomous continuation is not a gate, it is a delay before execution. The convergence observed is architectural and is not evidence of shared code between the systems involved."
           }
         }

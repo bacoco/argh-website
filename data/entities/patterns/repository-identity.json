@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Un déménagement pris pour une fermeture",
+          "cuisine": "Le changement d’adresse avait été lu comme une disparition",
           "expert": "Une migration d’identité lue comme une disparition"
         },
         "en": {
-          "kitchen": "Reported closed because the address changed",
+          "kitchen": "A change of address had been read as disappearance",
           "expert": "An identity migration read as a disappearance"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "SWE-agent a changé d’adresse et d’enseigne. Le client fidèle continue d’aller à l’ancien numéro, trouve le rideau baissé, et raconte partout que la maison a fermé. Elle sert pourtant toujours, ailleurs.",
+            "cuisine": "Une maison a changé d’adresse et d’enseigne. Un veilleur qui ne regardait que l’ancien numéro pouvait en déduire du silence, voire une fermeture, alors que la maison canonique servait toujours. L’identité avait continué à travers le déménagement.",
             "expert": "L’identité de dépôt préserve la continuité d’un projet à travers renommages, transferts et alias. SWE-agent a migré son identité de dépôt vers une autre organisation ; un watcher indexé sur l’ancienne pouvait en inférer de l’inactivité, voire une disparition, alors que le projet canonique restait actif. Il est actif après le changement d’identité."
           },
           "en": {
-            "kitchen": "SWE-agent changed address and sign. The old regular keeps walking to the former number, finds the shutter down, and tells everyone the place has closed. It is still serving, under another roof.",
+            "kitchen": "A house changed address and sign. A watcher looking only at the former number could infer silence or even closure while the canonical house still served. Its identity continued through the move.",
             "expert": "Repository identity preserves project continuity across renames, transfers and aliases. SWE-agent migrated its repository identity to another organization; a watcher indexed on the old one could infer inactivity, or even disappearance, while the canonical project stayed active. It is active after the identity change."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "SWE-agent a laissé l’adresse sur la porte",
+          "cuisine": "L’ancien numéro était silencieux, mais le mot sur la porte gardait la continuité",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Nothing at the old number, and a note",
+          "kitchen": "The old number was silent, yet the note on the door kept continuity",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "À l’ancienne adresse, plus rien ne bouge, et c’est ce silence qu’on prend pour une fermeture. Mais quelqu’un a laissé un mot indiquant la nouvelle adresse. Celui qui ne le lit pas raconte une fin ; celui qui le suit trouve la maison en plein service.",
+            "cuisine": "Le signe est une absence d’activité à l’ancien numéro sans arrêt de la maison elle-même. Le mot qui renvoie vers la nouvelle adresse est la preuve qui distingue un déménagement d’une fin. Tout veilleur attaché à l’ancienne rue voit le même silence, quelle que soit la vie de la nouvelle maison.",
             "expert": "Le signal observé est un arrêt d’activité sur l’ancien chemin, sans arrêt du projet lui-même. La redirection est la preuve discriminante : elle indique une continuité d’identité, pas une fin. Tout consommateur indexé sur l’ancienne organisation voit la même absence, quelle que soit la vitalité réelle du projet canonique."
           },
           "en": {
-            "kitchen": "Nothing moves at the old address, and that silence is what gets read as closing time. Someone did leave a note with the new address. Whoever misses it reports an ending; whoever follows it finds the house mid-service.",
+            "kitchen": "The sign is no activity at the former number without the house itself stopping. The note leading to the new address is the proof that distinguishes a move from an ending. Every watcher tied to the old street sees the same silence, whatever the new house’s life.",
             "expert": "The observed signal is activity stopping on the old path while the project itself does not stop. The redirect is the discriminating evidence: it marks identity continuity rather than an ending. Every consumer indexed on the old organization sees the same absence, whatever the canonical project’s real vitality."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "On suit le numéro, pas les gens",
+          "cuisine": "Le veilleur regardait une rue changeante au lieu de la maison",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Watching SWE-agent’s old number, not its crew",
+          "kitchen": "The watcher followed a changing street instead of the house",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On note l’adresse d’une maison parce que c’est ce qu’on a sous la main. Mais l’adresse appartient à la rue, jamais à l’équipe. Le jour où elle change, ce qu’on surveille n’est plus la maison : c’est un numéro que plus personne n’habite.",
+            "cuisine": "Un veilleur qui s’attache à une adresse modifiable confond déménagement et absence. L’adresse n’est qu’une coordonnée : changement de nom, de rue ou d’enseigne peut la déplacer sans changer la maison. Il mesure alors le numéro, non l’entité qu’il croit suivre.",
             "expert": "Un monitoring indexé sur un chemin de dépôt mutable confond migration d’identité et absence. Le chemin est une coordonnée révocable, pas un identifiant stable : renommage, transfert d’organisation et alias le modifient sans que le projet change. L’observateur mesure alors la coordonnée, et non l’entité qu’il croit suivre."
           },
           "en": {
-            "kitchen": "People write down an address because that is the thing easy to hold on to. The address belongs to the street, though, never to the crew. The day it changes, what you are watching is no longer the house; it is a number nobody lives at.",
+            "kitchen": "A watcher tied to a mutable address confuses a move with absence. The address is only a coordinate: a new name, street, or sign can move it without changing the house. The watcher then measures the number, not the entity it believes it follows.",
             "expert": "Monitoring indexed on a mutable repository path conflates identity migration with absence. The path is a revocable coordinate, not a stable identifier: renames, organization transfers and aliases change it without the project changing. The observer then measures the coordinate rather than the entity it believes it is tracking."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Prévenir ceux qui écrivent encore au vieux numéro",
+          "cuisine": "Suivre le mot de redirection et garder l’ancien numéro comme repère",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Follow the note before you call it closed",
+          "kitchen": "Follow the redirecting note and keep the old number as a marker",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Avant d’annoncer une fermeture, cherche le mot laissé sur la porte. Suis la nouvelle adresse, et garde l’ancienne à côté pour que les habitués s’y retrouvent. Préviens aussi ceux qui envoient du travail à cette maison : ils écrivent encore au vieux numéro.",
+            "cuisine": "Suivez le mot de redirection avant de conclure au silence. Gardez l’ancien numéro comme repère, pas comme identité, et rendez le déménagement visible à ceux qui envoient des commandes à la maison. Une rue sans activité doit être qualifiée avant d’être lue comme l’état de la maison.",
             "expert": "Suivre la redirection avant de conclure à l’inactivité, et conserver l’ancienne coordonnée comme alias plutôt que comme identité. Le déplacement doit rester visible des consommateurs qui routent du travail vers ce projet, faute de quoi ils continuent d’adresser un chemin obsolète. Une absence d’activité sur un chemin se qualifie avant d’être interprétée comme un état de projet."
           },
           "en": {
-            "kitchen": "Before announcing a closure, look for the note left on the door. Follow the new address, and keep the old one beside it so regulars can find their way. Warn anyone sending work to that house too: they are still writing to the old number.",
+            "kitchen": "Follow the redirecting note before concluding silence. Keep the old number as a marker, not the identity, and make the move visible to people sending orders to the house. A street without activity must be classified before it is read as the house’s state.",
             "expert": "Follow the redirect before concluding inactivity, and keep the old coordinate as an alias rather than as identity. The move has to stay visible to consumers routing work to the project; otherwise they keep addressing a stale path. Absence of activity on a path is qualified before it is read as a project state."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La maison survit au numéro peint dessus",
+          "cuisine": "Une redirection pouvait montrer la continuité, pas la mort",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A shutter closes an address, not a house",
+          "kitchen": "A redirect could show continuity, not death",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un rideau baissé à l’ancienne adresse ne dit rien de la maison. Suis l’équipe, pas le numéro peint sur la façade.",
+            "cuisine": "Une redirection peut signaler la continuité, non la fin. Suivez l’identité d’une maison à travers ses noms, ses transferts et ses anciens numéros. Prendre une rue pour l’identité transforme un déménagement en disparition.",
             "expert": "Une redirection peut signifier la continuité, pas la mort. L’identité d’un projet se suit à travers renommages, transferts et alias ; un chemin n’est qu’une coordonnée, et le confondre avec l’identité transforme un déménagement en disparition."
           },
           "en": {
-            "kitchen": "A shutter down at the old address says nothing about the house. Follow the crew, never the number painted on the front.",
+            "kitchen": "A redirect may signal continuity, not an ending. Follow a house’s identity through names, transfers, and former numbers. Taking a street for identity turns a move into disappearance.",
             "expert": "A redirect can mean continuity, not death. Project identity is tracked across renames, transfers and aliases; a path is only a coordinate, and confusing it with identity turns a move into a disappearance."
           }
         }

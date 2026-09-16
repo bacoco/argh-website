@@ -24,22 +24,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Chez Goose, le passe peut arrêter un plat",
+          "cuisine": "Le veilleur du passe peut maintenant arrêter un plat",
           "expert": "De callbacks non bloquants au veto, puis à une politique d’échec configurable"
         },
         "en": {
-          "kitchen": "At Goose the pass can now refuse plates",
+          "kitchen": "The watcher at the pass can now refuse a plate",
           "expert": "Hooks went from non-blocking observation to explicit veto, then to a configurable failure policy"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Goose, l’homme posté au passe notait d’abord seulement ce qui sortait. On lui a ensuite donné le droit d’arrêter une assiette. Restait à décider ce que devient le service quand c’est lui qui flanche : la maison le dit maintenant.",
+            "cuisine": "L’homme posté au passe notait d’abord seulement les assiettes sorties. On lui a ensuite permis d’en retenir une. La maison a maintenant écrit ce que devient le service lorsque ce veilleur lui-même flanche.",
             "expert": "Les hooks de Goose ont d’abord observé les événements du cycle de vie sans bloquer l’exécution. PreToolUse a ensuite reçu une sémantique de blocage explicite, livrée dans le produit actif. Le comportement en cas d’échec du hook lui-même est devenu configurable, séparant refus de politique et indisponibilité du garde."
           },
           "en": {
-            "kitchen": "At Goose he only wrote down what left the pass, for a while. Then he was allowed to hold a plate back. The night he himself falters was the question left open, and the house now answers it.",
+            "kitchen": "The watcher at the pass once only recorded plates leaving. Later, he was allowed to hold one back. The house has now written what happens to service when that watcher himself fails.",
             "expert": "Goose hooks began as non-blocking callbacks over lifecycle events. PreToolUse later acquired explicit blocking semantics, and that behavior ships in the active product. Behavior when the hook itself fails is now configurable, separating a policy denial from an unavailable guard."
           }
         }
@@ -50,62 +50,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Du carnet au droit d’arrêter un plat",
+          "cuisine": "Le greffier du passe devient garde",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From keeping notes to stopping plates",
+          "kitchen": "The pass clerk becomes a guard",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Au départ, il regarde les commandes partir et n’y touche pas.",
+            "cuisine": "Au début, le commis du passe note les départs sans jamais retenir une assiette.",
             "expert": "Première étape : observation seule des événements du cycle de vie, sans interruption de l’exécution."
           },
           "en": {
-            "kitchen": "At the start he watches orders leave and touches nothing.",
+            "kitchen": "At first, the pass clerk records departures and never holds a plate.",
             "expert": "Stage one is pure observation: lifecycle events are read, execution is never interrupted."
           }
         },
         {
           "fr": {
-            "cuisine": "Puis la maison lui donne un vrai pouvoir : avant qu’un plat parte, il peut dire non.",
+            "cuisine": "Ensuite, la maison l’autorise à dire non avant qu’une assiette quitte le passe.",
             "expert": "PreToolUse acquiert ensuite une sémantique de blocage explicite, applicable avant l’appel d’outil."
           },
           "en": {
-            "kitchen": "Then the house hands him real power: before a plate leaves, he may say no.",
+            "kitchen": "Then the house allows him to say no before a plate leaves the pass.",
             "expert": "PreToolUse then gained explicit blocking semantics, applied ahead of the tool call."
           }
         },
         {
           "fr": {
-            "cuisine": "Ce pouvoir n’est pas resté une idée d’arrière-cuisine : il est en salle, tous les soirs.",
+            "cuisine": "Ce droit de retenir les plats est réellement utilisé pendant le service ; il ne reste pas dans un cahier de projets.",
             "expert": "Ce comportement est livré dans le produit actif, et non resté à l’état de proposition."
           },
           "en": {
-            "kitchen": "That power did not stay a back-office idea: it is on the floor every night.",
+            "kitchen": "The right to hold plates is used during real service; it did not remain in a planning book.",
             "expert": "That behavior is shipped in the active product rather than left as a proposal."
           }
         },
         {
           "fr": {
-            "cuisine": "Une question suit aussitôt : si celui qui doit dire non ne répond plus, faut-il tout laisser sortir ? Laisser passer par défaut devient alors le danger.",
+            "cuisine": "Une nouvelle panne apparaît : si le garde se tait, la brigade doit-elle servir toutes les assiettes ? Les laisser partir sans décision peut être dangereux.",
             "expert": "Un mode de panne apparaît alors : le hook d’autorisation peut lui-même échouer, et laisser passer par défaut n’est pas sûr."
           },
           "en": {
-            "kitchen": "A question follows at once: if the man who must say no goes quiet, does everything leave? Letting plates through by default becomes the danger.",
+            "kitchen": "A new failure appears: if the guard goes silent, should the brigade serve every plate? Sending them out without a decision may be dangerous.",
             "expert": "A failure mode surfaced: the authorization hook can itself fail, and defaulting to allow is unsafe."
           }
         },
         {
           "fr": {
-            "cuisine": "La maison tranche : refuser un plat et ne plus répondre du tout, ce n’est plus la même chose.",
+            "cuisine": "La maison écrit alors deux lignes différentes : « plat refusé » et « garde muet ».",
             "expert": "La politique d’échec devient configurable et distingue explicitement un refus de politique d’une panne du hook."
           },
           "en": {
-            "kitchen": "The house decides, and writes down the difference between refusing a plate and a station that gives no answer.",
+            "kitchen": "The house then writes two different lines: “plate refused” and “guard silent.”",
             "expert": "Failure policy became configurable, and it now separates a denial issued by policy from an outright hook failure."
           }
         }
@@ -116,22 +116,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le garde absent devient une deuxième panne",
+          "cuisine": "Quand le garde tombe, le service a deux problèmes",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A silent check becomes a second breakdown",
+          "kitchen": "When the guard fails, service has two problems",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Tant qu’il ne faisait que noter, son absence ne coûtait qu’un carnet vide. Du jour où il peut retenir un plat, son absence devient une deuxième panne à traiter en plein service. La maison doit répondre à celle-là avant de lui donner le pouvoir.",
+            "cuisine": "Quand le commis ne faisait qu’écrire, son absence laissait seulement une page blanche. Dès qu’il peut bloquer une assiette, son silence menace aussi le service. La règle pour ce soir-là doit exister avant de lui donner ce pouvoir.",
             "expert": "Dès qu’un hook peut opposer un veto, le harnais doit définir le comportement lorsque le mécanisme de veto est indisponible. L’enforcement ajoute une panne de second ordre : celle du garde lui-même, distincte de l’action qu’il devait contrôler."
           },
           "en": {
-            "kitchen": "While he only kept notes, his absence cost a blank page. The moment he can hold a plate, his absence is a second breakdown, right in the middle of service. A house that hands out that power owes an answer to it.",
+            "kitchen": "While the clerk only wrote notes, his absence left a blank page. Once he can block a plate, his silence also threatens service. The rule for that night must exist before he receives that power.",
             "expert": "Once a hook can veto an action, the harness owes a defined behavior for the case where the veto mechanism is unavailable. Enforcement adds a second-order failure mode — the guard’s own failure, which is not the same event as the action it was meant to gate."
           }
         }
@@ -142,22 +142,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Fermer, laisser passer ou ralentir, décidé d’avance",
+          "cuisine": "Le sort des assiettes se décide avant la panne",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Shut, let through or slow down, decided early",
+          "kitchen": "Decide what happens to plates before the guard fails",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Quand le poste ne répond plus, cela doit s’afficher au tableau comme une commande en souffrance. La maison choisit alors en conscience : on ferme, on laisse passer, ou on sert au ralenti. Ce choix se prend au calme, pas à vingt et une heures.",
+            "cuisine": "Si le garde ne répond plus, l’ardoise doit montrer « garde en panne », jamais « plat refusé ». La maison choisit d’avance si elle ferme le passe, continue ou ralentit. Elle ne tranche pas au milieu du coup de feu.",
             "expert": "Exposer la panne du hook comme un état de première classe, lisible et distinct d’un refus. La politique choisit alors délibérément fail-open, fail-closed ou mode dégradé, au lieu d’hériter d’un défaut implicite."
           },
           "en": {
-            "kitchen": "When the station stops answering, that must show on the board like any order in trouble. Then the house picks, knowingly: shut the pass, let plates through, or serve at half speed. The choice is made in the quiet hours, not at nine at night.",
+            "kitchen": "If the guard stops answering, the board must say “guard failed,” never “plate refused.” The house chooses in advance whether to close the pass, continue, or slow down. It does not decide in the dinner rush.",
             "expert": "Expose hook failure as first-class state, legible and distinct from a denial. Policy then picks fail-open, fail-closed or degraded operation deliberately, instead of inheriting whatever the implicit default happened to be."
           }
         }
@@ -168,22 +168,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Goose a écrit la règle du poste muet",
+          "cuisine": "La maison a écrit la règle du poste muet",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Goose wrote the rule for a silent pass",
+          "kitchen": "The house wrote a rule for a silent pass",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le poste n’a plus rien d’une clochette qu’on agite pour la forme. Il décide ce qui sort et ce qui reste, et la maison a mis par écrit le cas où il flanche. Peu de cuisines montrent ce basculement aussi nettement.",
+            "cuisine": "Ce poste ne sert plus seulement à observer. Il retient vraiment des assiettes, et la maison a prévu ce qui arrive s’il tombe en panne. Ce passage du carnet au pouvoir est clairement établi.",
             "expert": "Goose est l’un des exemples les plus nets de hooks devenus un véritable control plane plutôt que des callbacks de confort. Le pouvoir de blocage est livré, et la politique d’échec est énoncée au lieu d’être subie."
           },
           "en": {
-            "kitchen": "The post is no longer a bell rung for form’s sake. It decides what leaves the pass and what stays, and the house has written down what happens when it falters. Few kitchens show that shift so plainly.",
+            "kitchen": "This station no longer merely watches. It truly holds plates, and the house has planned what happens if it fails. The move from record keeper to authority is clearly established.",
             "expert": "Goose is among the clearest cases of hooks maturing into a genuine control plane rather than convenience callbacks. Blocking authority ships, and the failure policy is stated rather than assumed."
           }
         }
@@ -194,22 +194,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Donner le droit de refuser se paie d’avance",
+          "cuisine": "Un garde doit avoir une règle pour sa propre panne",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The right to refuse is paid for",
+          "kitchen": "A guard needs a rule for his own failure",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Donner à quelqu’un le droit d’arrêter un plat, ça se paie. Le jour où il ne répond plus, la maison doit déjà savoir si on ferme le passe ou si on laisse sortir. Sans cette phrase-là, écrite avant, ce n’est pas un garde : c’est un pari.",
+            "cuisine": "Le chef qui place un garde au passe doit aussi écrire quoi faire lorsque ce garde se tait. Sans cette consigne, le service dépend d’un choix que la brigade n’a jamais fait.",
             "expert": "Un hook ne devient un garde-fou qu’une fois sa propre sémantique d’échec définie. Tant que le comportement en cas d’indisponibilité du garde reste implicite, l’autorité de blocage repose sur un défaut que personne n’a choisi."
           },
           "en": {
-            "kitchen": "Handing someone the right to stop a plate comes at a price. On the night he goes quiet, the house must already know whether the pass shuts or the plates go out. Without that line written in advance, he is not a guard but a wager.",
+            "kitchen": "A chef who places a guard at the pass must also write what to do when that guard goes silent. Without that order, service depends on a choice the brigade never made.",
             "expert": "A hook only counts as a guardrail once its own failure semantics are defined. Until the unavailable-guard case is specified, blocking authority rests on a default nobody chose."
           }
         }

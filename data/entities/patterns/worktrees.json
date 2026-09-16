@@ -27,22 +27,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Un billot par commis, fourni par la maison",
+          "cuisine": "Au passe — Un billot par commis, fourni par la maison",
           "expert": "L’isolation du workspace passe de convention externe à propriété du runtime"
         },
         "en": {
-          "kitchen": "Separate benches, handed out by the kitchen itself",
+          "kitchen": "At the pass — Separate benches, handed out by the kitchen itself",
           "expert": "Workspace isolation moves from external convention to runtime property"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Avec un seul commis, le billot commun ne gêne personne. Dès qu’ils travaillent à plusieurs en même temps, les préparations se mélangent sur la même planche. Codex, gstack, Claude Code et Cline en viennent tous à donner un plan de travail par commis. Chez Codex, la maison l’attribue elle-même, mais c’est un essai en cours, pas encore la règle du soir.",
+            "cuisine": "Avec un seul commis, le billot commun suffit. Dès que plusieurs travaillent en même temps, leurs préparations se mélangent. Quatre maisons convergent donc vers un plan de travail séparé par commis, avec des maturités différentes. Dans l’une d’elles, la maison attribue elle-même la place ; cette pratique reste expérimentale et n’est pas établie comme règle habituelle.",
             "expert": "Un worktree est une copie de travail distincte qui partage l’historique du dépôt tout en isolant les modifications en cours. Codex, gstack, Claude Code et Cline convergent vers une isolation gérée par le runtime plutôt qu’appliquée à la main, à des niveaux de maturité différents. Chez Codex, l’allocation gérée est entrée dans le chemin d’exécution des sessions CLI sous un statut explicitement expérimental ; rien n’établit qu’elle soit devenue le comportement par défaut."
           },
           "en": {
-            "kitchen": "With one cook at the block, sharing it costs nobody anything. Put several of them on the same board at once and the preparations run into each other. Codex, gstack, Claude Code and Cline all end up handing each cook a bench of their own. At Codex the house hands it out itself, though that is a trial in progress, not yet the rule of the night.",
+            "kitchen": "With one cook, a shared block is enough. Once several work at the same time, their preparations collide. Four houses therefore converge on a separate bench for each cook, at different levels of maturity. In one house, the kitchen assigns the place itself; that practice remains experimental and is not established as the usual rule.",
             "expert": "A worktree is a distinct working copy that shares repository history while isolating in-flight modifications. Codex, gstack, Claude Code and Cline converge on runtime-managed isolation rather than hand-applied discipline, at differing maturity levels. At Codex, managed allocation entered the CLI session execution path under an explicitly experimental status; nothing establishes that it became the default behavior."
           }
         }
@@ -53,22 +53,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Chacun dans son coin, les gestes se croisent",
+          "cuisine": "Au passe — Chacun dans son coin, les gestes se croisent",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Separate tickets do not separate the boards",
+          "kitchen": "At the pass — Separate tickets do not separate the boards",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le signe, c’est une préparation qui change alors que celui qui la tient n’y a pas touché. Chacun a bien son bon de commande, chacun travaille dans son coin, et pourtant les gestes se croisent. Donner des ordres séparés ne sépare pas les planches.",
+            "cuisine": "Au service, Le signe, c’est une préparation qui change alors que celui qui la tient n’y a pas touché. Chacun a bien son bon de commande, chacun travaille dans son coin, et pourtant les gestes se croisent. Donner des ordres séparés ne sépare pas les planches.",
             "expert": "Le signal est une collision d’état — fichiers et index Git — entre exécutions concurrentes sur un même checkout. L’isolation au niveau de la conversation ne l’empêche pas : isoler le contexte n’isole ni l’état du système de fichiers ni l’index. La pression apparaît quand les workflows parallèles et reprenables deviennent normaux, pas sur une exécution unique."
           },
           "en": {
-            "kitchen": "The tell is a preparation that shifts while the cook holding it never touched it. Each one has their own ticket, each works in their own corner, and still the hands cross. Separate orders do not separate boards.",
+            "kitchen": "During service, The tell is a preparation that shifts while the cook holding it never touched it. Each one has their own ticket, each works in their own corner, and still the hands cross. Separate orders do not separate boards.",
             "expert": "The signal is state collision — files and the Git index — between concurrent executions over a single checkout. Conversation-level isolation does not prevent it: isolating context isolates neither filesystem state nor the index. The pressure shows up once parallel, resumable workflows become normal, not on a single execution."
           }
         }
@@ -79,22 +79,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Des commis apparaissent sans que personne les place",
+          "cuisine": "Au passe — Des commis apparaissent sans que personne les place",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Cooks appear mid-service and nobody seats them",
+          "kitchen": "At the pass — Cooks appear mid-service and nobody seats them",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Tant que c’est le chef qui appelle un commis, il peut lui désigner une place libre. Ici, la maison en fait apparaître d’elle-même en plein service, sans que personne assiste à l’arrivée. Une consigne affichée ne vaut rien s’il n’y a personne pour la faire appliquer. La place doit donc arriver avec le commis.",
+            "cuisine": "Au service, Tant que c’est le chef qui appelle un commis, il peut lui désigner une place libre. Ici, la maison en fait apparaître d’elle-même en plein service, sans que personne assiste à l’arrivée. Une consigne affichée ne vaut rien s’il n’y a personne pour la faire appliquer. La place doit donc arriver avec le commis.",
             "expert": "La concurrence produit des effets de bord dans une ressource mutable partagée, le repository, que l’isolation conversationnelle ne couvre pas. L’isolation ne peut pas rester une convention manuelle dès lors que le harnais crée lui-même des exécutions parallèles et fork l’état d’exécution : une convention suppose un opérateur présent au moment de la création. Ici la création est interne et sans opérateur."
           },
           "en": {
-            "kitchen": "While it is the chef calling a cook over, he can point him at a free spot. Here the house raises cooks by itself, mid-service, with nobody watching them arrive. A rule pinned to the wall is worth nothing when no one is standing there to apply it. So the spot has to arrive with the cook.",
+            "kitchen": "During service, While it is the chef calling a cook over, he can point him at a free spot. Here the house raises cooks by itself, mid-service, with nobody watching them arrive. A rule pinned to the wall is worth nothing when no one is standing there to apply it. So the spot has to arrive with the cook.",
             "expert": "Concurrency produces side effects in a shared mutable resource, the repository, that conversation-level isolation does not cover. Isolation cannot remain a manual convention once the harness itself creates parallel executions and forks execution state: a convention assumes an operator present at creation time. Here creation is internal and operator-less."
           }
         }
@@ -105,22 +105,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une place attribuée, gardée, puis rendue à voix haute",
+          "cuisine": "Au passe — Une place attribuée, gardée, puis rendue à voix haute",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "A spot given, held, and returned out loud",
+          "kitchen": "At the pass — A spot given, held, and returned out loud",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un commis ne reçoit plus seulement un ordre : il reçoit une place. La maison la lui attribue, la garde pendant son absence, et la nettoie quand il a fini. Quand sa préparation est prête, il l’annonce et la remet dans le plat commun devant tout le monde. Ce retour se fait à voix haute, jamais en douce.",
+            "cuisine": "Au service, Un commis ne reçoit plus seulement un ordre : il reçoit une place. La maison la lui attribue, la garde pendant son absence, et la nettoie quand il a fini. Quand sa préparation est prête, il l’annonce et la remet dans le plat commun devant tout le monde. Ce retour se fait à voix haute, jamais en douce.",
             "expert": "L’identité et le lifecycle du workspace deviennent propriété du harnais : allocation, binding à une exécution, cleanup et sémantique de reprise. Le retour dans l’état partagé doit être une opération nommée — merge ou réconciliation explicite — et non un effet de bord de l’exécution. Ces quatre points définissent la capacité visée ; ils ne sont pas décrits comme achevés."
           },
           "en": {
-            "kitchen": "A cook no longer gets only an order: he gets a spot. The house assigns it, holds it while he is away, and clears it when he is done. When his preparation is ready he calls it and puts it back into the shared dish in front of everyone. That handback happens out loud, never on the quiet.",
+            "kitchen": "During service, A cook no longer gets only an order: he gets a spot. The house assigns it, holds it while he is away, and clears it when he is done. When his preparation is ready he calls it and puts it back into the shared dish in front of everyone. That handback happens out loud, never on the quiet.",
             "expert": "Workspace identity and lifecycle become harness property: allocation, binding to an execution, cleanup, and resume semantics. The return into shared state must be a named operation — an explicit merge or reconciliation — not a side effect of execution. These four points define the targeted capability; they are not described as complete."
           }
         }
@@ -131,22 +131,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Quatre maisons donnent désormais une planche par commis",
+          "cuisine": "Au passe — Quatre maisons donnent désormais une planche par commis",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Four houses now give every cook a board",
+          "kitchen": "At the pass — Four houses now give every cook a board",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Si tu fais travailler plusieurs commis en même temps, donne à chacun sa planche, sinon tu passeras la soirée à démêler leurs préparations. Et ne compte pas sur une consigne affichée : elle ne tient que là où quelqu’un se trouve pour la faire respecter.",
+            "cuisine": "Au service, Si tu fais travailler plusieurs commis en même temps, donne à chacun sa planche, sinon tu passeras la soirée à démêler leurs préparations. Et ne compte pas sur une consigne affichée : elle ne tient que là où quelqu’un se trouve pour la faire respecter.",
             "expert": "Le raisonnement parallèle exige une isolation parallèle du workspace, et cette propriété doit être de première classe. Tant qu’elle reste une convention externe, elle n’est appliquée que là où un humain est présent pour l’appliquer. La convergence observée porte sur la direction prise, pas sur un mécanisme commun ni sur une isolation garantie."
           },
           "en": {
-            "kitchen": "If you put several cooks on at once, give each one a board, or you will spend the night untangling their preparations. And do not lean on a rule pinned to the wall: it holds only where somebody is standing there to see it through.",
+            "kitchen": "During service, If you put several cooks on at once, give each one a board, or you will spend the night untangling their preparations. And do not lean on a rule pinned to the wall: it holds only where somebody is standing there to see it through.",
             "expert": "Parallel reasoning requires parallel workspace isolation, and that ownership has to be first-class. While it remains an external convention, it is applied only where a human is present to apply it. The observed convergence is on direction, not on a shared mechanism nor on guaranteed isolation."
           }
         }

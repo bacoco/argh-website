@@ -29,22 +29,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "De Claude Code à Goose, la fiche grossit",
+          "cuisine": "La fiche de recette grossit dans six maisons",
           "expert": "Les skills sont passés du fichier de prompt au package runtime"
         },
         "en": {
-          "kitchen": "From Claude Code to OpenHands, the card grew",
+          "kitchen": "The recipe card grows across six houses",
           "expert": "Skills moved from prompt file to runtime package"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Claude Code, Codex, Gemini, Cline, Goose, OpenHands : partout la fiche de recette a grossi. Il faut désormais savoir où on la trouve, laquelle l’emporte, et si elle est ouverte. Puis d’où elle vient, comment on l’appelle, et la place qu’elle prend sur la table.",
+            "cuisine": "Dans six maisons, la fiche de recette a beaucoup grossi. La brigade doit savoir où la trouver, laquelle suivre et si elle est ouverte. Elle doit aussi connaître son origine, son nom d’usage et la place qu’elle prend sur la table.",
             "expert": "Dans les principaux harnais, les skills accumulent des sémantiques de discovery, de precedence, d’activation, de confiance, de packaging, d’invocation et de budget de contexte."
           },
           "en": {
-            "kitchen": "Claude Code, Codex, Gemini, Cline, Goose, OpenHands: the recipe card has grown in every house. You now have to know where it is found, which one wins, and whether it is open. Then where it came from, what it answers to, and how much room it takes on the table.",
+            "kitchen": "Across six houses, the recipe card has grown greatly. The brigade must know where to find it, which card wins, and whether it is open. Its origin, working name, and space on the table also matter.",
             "expert": "Across the major harnesses, skills are accumulating discovery, precedence, enablement, trust, packaging, invocation and context-budget semantics."
           }
         }
@@ -55,62 +55,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "La fiche de recette a pris du poids",
+          "cuisine": "La fiche de recette est devenue plus lourde",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The recipe card kept growing, house by house",
+          "kitchen": "The recipe card grew heavier, house by house",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Au départ, c’est un bout de papier qu’on réutilise d’un service à l’autre.",
+            "cuisine": "Au départ, c’est un papier que l’on réutilise d’un service au suivant.",
             "expert": "Les skills commencent comme des fichiers de prompt ou d’instructions réutilisables."
           },
           "en": {
-            "kitchen": "At the start it is a scrap of paper reused from one service to the next.",
+            "kitchen": "At the start, it is a scrap of paper reused from one service to the next.",
             "expert": "Skills began as reusable prompt or instruction files."
           }
         },
         {
           "fr": {
-            "cuisine": "Le classeur grossit, et il faut dire où chaque fiche se trouve.",
+            "cuisine": "Le classeur grossit ; il faut alors dire où se trouve chaque fiche.",
             "expert": "La croissance des catalogues rend nécessaires des règles de discovery."
           },
           "en": {
-            "kitchen": "The binder swells, and the house must say where each card lives.",
+            "kitchen": "The binder swells, and the house must then say where each card is kept.",
             "expert": "Growing catalogs made discovery rules necessary."
           }
         },
         {
           "fr": {
-            "cuisine": "On affiche ensuite laquelle l’emporte entre celle du client, celle de la maison et celle apportée du dehors.",
+            "cuisine": "On affiche ensuite laquelle prime entre la fiche du client, celle de la maison et celle apportée du dehors.",
             "expert": "Precedence et scopes user, projet et plugin apparaissent."
           },
           "en": {
-            "kitchen": "Then the house posts which card wins: the guest’s, the house’s own, or one brought in from outside.",
+            "kitchen": "Then the house posts which card takes priority: the guest’s, its own, or one brought in from outside.",
             "expert": "Precedence and user, project and plugin scopes appeared."
           }
         },
         {
           "fr": {
-            "cuisine": "Chaque fiche dit maintenant si elle est en service, mise de côté, et si la maison d’où elle vient est fiable.",
+            "cuisine": "Chaque fiche dit maintenant si elle sert, si elle est mise de côté et si la maison d’où elle vient est fiable.",
             "expert": "Les états enable/disable et la confiance deviennent explicites."
           },
           "en": {
-            "kitchen": "Each card now says whether it is in play, set aside, and whether the house it came from can be trusted.",
+            "kitchen": "Each card now says whether it serves, is set aside, and whether the house it came from can be trusted.",
             "expert": "Enable/disable states and trust became explicit."
           }
         },
         {
           "fr": {
-            "cuisine": "Quelques maisons vont plus loin : elles comptent les fiches vraiment posées, surveillent les changements, et limitent la place sur la table.",
+            "cuisine": "Quelques maisons vont plus loin : elles comptent les fiches réellement posées, surveillent les changements et limitent la place sur la table.",
             "expert": "Certains systèmes ajoutent inventaire runtime, watchers et budgets de contexte."
           },
           "en": {
-            "kitchen": "A few houses go further: they count the cards actually laid out, watch for changes, and cap the room on the table.",
+            "kitchen": "A few houses go further: they count the cards truly laid out, watch for changes, and limit the room on the table.",
             "expert": "Some systems added runtime inventory, watchers and context budgets."
           }
         }
@@ -121,22 +121,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le trajet de la fiche compte autant",
+          "cuisine": "Le trajet de la fiche compte autant que son texte",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "How the card arrives matters as much",
+          "kitchen": "A card’s route matters as much as its writing",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une fiche n’est plus seulement ce qui est écrit dessus. Ce qui la rend juste, c’est la façon dont on la trouve, dont on la choisit et dont on la charge. Puis l’ordre où on la classe, et le moment où elle passe sous les yeux du commis.",
+            "cuisine": "Une fiche n’est plus seulement son texte. Ce qui la rend juste, c’est la façon dont on la trouve, la choisit et l’apporte. Puis l’ordre où on la classe et le moment où elle passe sous les yeux du commis.",
             "expert": "Le skill n’est plus seulement du contenu. Sa correction dépend de la manière dont il est découvert, sélectionné, chargé, ordonné et exposé au modèle."
           },
           "en": {
-            "kitchen": "A card is no longer only what is written on it. What makes it right is how it gets found, picked and carried in. Then where it lands in the stack, and whether the cook’s eye ever falls on it.",
+            "kitchen": "A card is no longer only its writing. What makes it right is how it is found, chosen, and brought in. Then where it lands in the stack and whether the cook’s eye ever falls on it.",
             "expert": "The skill is no longer content alone. Its correctness depends on how it is discovered, selected, loaded, ordered and exposed to the model."
           }
         }
@@ -147,22 +147,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Suivre les fiches comme on suit la marchandise",
+          "cuisine": "Suivre les fiches comme une marchandise de la maison",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Book cards in and out like stock",
+          "kitchen": "Track cards like house stock",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une fiche se traite comme une denrée de la maison, avec son numéro de version. On sait quand elle entre, quand elle sort, et l’on peut vérifier à tout moment celle qui sert vraiment.",
+            "cuisine": "Une fiche se traite comme une denrée de la maison, avec son numéro de série. On sait quand elle entre et sort, et l’on peut vérifier à tout moment celle qui sert réellement.",
             "expert": "Traiter les skills comme des composants runtime versionnés, avec un lifecycle explicite et une inspection de l’état effectif."
           },
           "en": {
-            "kitchen": "A card should be handled like house stock, with a version number on it. The house knows when it comes in and when it goes out, and can check at any moment which one is really in use.",
+            "kitchen": "A card should be handled like house stock, with a number on it. The house knows when it comes in and goes out, and can check at any moment which one truly serves.",
             "expert": "Treat skills as versioned runtime components, with an explicit lifecycle and inspection of effective state."
           }
         }
@@ -173,22 +173,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Six maisons comptent leurs fiches sans s'être parlé",
+          "cuisine": "Six maisons comptent leurs fiches sans se connaître",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Cline, Goose and the rest now count cards",
+          "kitchen": "All six houses now count their cards",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "C’est l’un des signaux les plus nets : des maisons qui ne se parlent pas arrivent au même besoin, tenir l’inventaire des fiches et le gouverner.",
+            "cuisine": "C’est l’un des signaux les plus nets : des maisons qui ne se parlent pas arrivent au même besoin, tenir l’inventaire des fiches et le diriger.",
             "expert": "C’est l’un des signaux les plus forts de convergence architecturale entre harnais."
           },
           "en": {
-            "kitchen": "It is one of the clearest signals: houses that never speak to each other reach the same need, keeping and governing the card inventory.",
+            "kitchen": "It is one of the clearest signals: houses that never speak to each other reach the same need, keeping and directing the card inventory.",
             "expert": "It is one of the strongest cross-harness architectural convergence signals."
           }
         }
@@ -199,22 +199,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Réparer la fiche ne répare pas le trajet",
+          "cuisine": "Réparer la fiche ne suffit pas à réparer son trajet",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Fixing the writing does not fix the route",
+          "kitchen": "Fixing the card does not fix its route",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Réparer une fiche, c’est réparer tout le trajet qui la dépose devant le commis, pas seulement l’encre du papier.",
+            "cuisine": "Réparer une fiche, c’est réparer tout le trajet qui l’amène devant le commis, non seulement l’encre du papier.",
             "expert": "La correction d’un skill est une propriété du chemin de livraison, pas du fichier."
           },
           "en": {
-            "kitchen": "Repairing a card means repairing the whole route that lands it in front of the cook, not just the ink.",
+            "kitchen": "Repairing a card means repairing the whole route that brings it before the cook, not only the ink.",
             "expert": "Skill correctness is a property of the delivery path, not of the file."
           }
         }

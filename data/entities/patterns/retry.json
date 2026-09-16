@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Relancer le plat sans couper le premier feu",
+          "cuisine": "Au passe — Relancer le plat sans couper le premier feu",
           "expert": "Une nouvelle tentative démarre sans lire l’état laissé par la précédente"
         },
         "en": {
-          "kitchen": "Sending it again while the first still cooks",
+          "kitchen": "At the pass — Sending it again while the first still cooks",
           "expert": "A fresh attempt starts without reading the state the previous one left"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Au passe, on annonce que le plat ne viendra pas et on relance la commande. Chez LangGraph, la première casserole continuait pourtant de chauffer, personne ne l’avait retirée du feu. Deux plats avancent alors pour un seul client. Chez SWE-agent, chacun s’ajoutait à l’addition.",
+            "cuisine": "Au service, au passe, on annonce que le plat ne viendra pas et on relance la commande. Dans une première cuisine, la casserole initiale continuait pourtant de chauffer, faute d’avoir été retirée du feu. Deux plats avançaient alors pour un seul client. Dans une autre, chacun s’ajoutait à l’addition.",
             "expert": "Une reprise n’est sûre que si elle connaît l’état laissé par la tentative précédente. Chez LangGraph, un timeout à la frontière de l’appelant ne terminait pas nécessairement le travail sous-jacent, et une tentative de remplacement pouvait recouvrir l’exécution d’origine. Chez SWE-agent, une famille de problèmes de contrôle des coûts a montré la même reprise refacturant un travail déjà payé."
           },
           "en": {
-            "kitchen": "The pass calls the dish lost and sends the order again. At LangGraph the first pan was never pulled off the heat and kept going. Two plates now run for one guest, and at SWE-agent each one landed on the bill.",
+            "kitchen": "During service, the pass calls the dish lost and sends the order again. In one kitchen, the first pan was never pulled off the heat and kept going. Two plates then run for one guest; in another, each one lands on the bill.",
             "expert": "A retry is safe only when it knows the state the previous attempt left behind. At LangGraph a caller-boundary timeout did not necessarily terminate the underlying work, so a replacement attempt could overlap the original execution. At SWE-agent a family of cost-control issues showed the same restart rebilling work already paid for."
           }
         }
@@ -51,22 +51,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux assiettes pour une seule commande",
+          "cuisine": "Au passe — Deux assiettes pour une seule commande",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Two plates go out for one order",
+          "kitchen": "At the pass — Two plates go out for one order",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le passe a déclaré le plat perdu, et pourtant quelque chose finit par sortir. Un client reçoit deux assiettes, ou la même garniture part deux fois. Et l’addition grimpe sans qu’aucune commande de plus soit entrée.",
+            "cuisine": "Au service, Le passe a déclaré le plat perdu, et pourtant quelque chose finit par sortir. Un client reçoit deux assiettes, ou la même garniture part deux fois. Et l’addition grimpe sans qu’aucune commande de plus soit entrée.",
             "expert": "Le premier signal est un résultat de timeout côté appelant suivi d’effets de bord qui continuent d’apparaître. Le second est le recouvrement : deux exécutions de la même unité logique progressent en parallèle. Le troisième est une dépense qui croît sans que le nombre d’opérations logiques augmente."
           },
           "en": {
-            "kitchen": "Nobody is waiting for that dish any more, and out it comes. One guest ends up with two plates. And the bill keeps climbing on a night when no extra orders were taken.",
+            "kitchen": "During service, Nobody is waiting for that dish any more, and out it comes. One guest ends up with two plates. And the bill keeps climbing on a night when no extra orders were taken.",
             "expert": "The first signal is a caller-side timeout result followed by side effects that keep appearing. The second is overlap: two executions of the same logical unit progressing in parallel. The third is spend rising while the count of logical operations does not."
           }
         }
@@ -77,22 +77,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Renoncer à attendre n’éteint pas le feu",
+          "cuisine": "Au passe — Renoncer à attendre n’éteint pas le feu",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The pass stops waiting, the pan keeps cooking",
+          "kitchen": "At the pass — The pass stops waiting, the pan keeps cooking",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le passe n’a arrêté que son attente. Il a cessé de guetter l’assiette ; personne n’est allé couper le feu sous la casserole. Croire qu’annoncer la perte éteint le fourneau, c’est confondre celui qui attend et celui qui cuit.",
+            "cuisine": "Au service, Le passe n’a arrêté que son attente. Il a cessé de guetter l’assiette ; personne n’est allé couper le feu sous la casserole. Croire qu’annoncer la perte éteint le fourneau, c’est confondre celui qui attend et celui qui cuit.",
             "expert": "Le timeout possédait l’attente de l’appel, pas le processus descendant ni le job distant porteur de l’effet réel. Annuler une attente n’annule que l’attente : la propriété de l’effet n’a jamais été transférée à celui qui pose la deadline. La tromperie tient à ce que le retour de timeout ressemble à un état terminal sans en être un."
           },
           "en": {
-            "kitchen": "Giving up on a dish is something the pass does to itself. The flame under the pan was nobody’s business in that moment. So the word going round is that the plate is lost, while the cooking carries on untouched behind it.",
+            "kitchen": "During service, Giving up on a dish is something the pass does to itself. The flame under the pan was nobody’s business in that moment. So the word going round is that the plate is lost, while the cooking carries on untouched behind it.",
             "expert": "The timeout owned the wait on the call, not the descendant process or the remote job carrying the real effect. Cancelling a wait cancels the wait alone: ownership of the effect was never handed to whoever set the deadline. The deception is that a timeout return reads like a terminal state without being one."
           }
         }
@@ -103,22 +103,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ne relancer qu’après avoir vu la casserole",
+          "cuisine": "Au passe — Ne relancer qu’après avoir vu la casserole",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Look in the pan before the order repeats",
+          "kitchen": "At the pass — Look in the pan before the order repeats",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Avant de relancer, va voir la casserole et éteins-la toi-même. Ne repars que sur ce que tu as constaté au fourneau, pas sur l’heure passée à attendre. Et fais tenir les reprises dans l’enveloppe de la commande d’origine. Chez SWE-agent, des corrections ont été proposées ; toutes n’étaient pas en place au moment observé.",
+            "cuisine": "Au service, avant de relancer, va voir la casserole et éteins-la toi-même. Ne repars que sur ce qui a été constaté au fourneau, pas sur l’heure d’attente. Fais aussi tenir les reprises dans l’enveloppe de la commande d’origine. Des corrections ont été proposées dans une cuisine ; toutes n’étaient pas en place au moment observé.",
             "expert": "Une deadline doit terminer ou fencer le travail qu’elle possède, puis exposer un état terminal observable. Une reprise ne devrait être autorisée qu’après lecture de cet état, jamais sur la seule expiration de l’attente. La comptabilité doit suivre tout l’arbre des descendants d’une tâche logique. Chez SWE-agent, des correctifs ont été proposés ; tous n’étaient pas prouvés livrés au cutoff observé."
           },
           "en": {
-            "kitchen": "Nothing goes again until someone has walked to the range and put the burner out. Send on what was seen there, never on how long the pass stood waiting. Hold the restarts inside the envelope of the order that started them. At SWE-agent fixes were proposed; not all were in place at the point observed.",
+            "kitchen": "During service, nothing goes again until someone has walked to the range and put the burner out. Send on what was seen there, never on how long the pass stood waiting. Hold restarts inside the envelope of the order that started them. In one kitchen, fixes were proposed; not all were in place at the point observed.",
             "expert": "A deadline must terminate or fence the work it owns, then expose an observable terminal state. A retry should be authorised only after reading that state, never on expiry of the wait alone. Accounting must follow the whole descendant tree of one logical task. At SWE-agent fixes were proposed; not all were proven shipped at the observed cutoff."
           }
         }
@@ -129,22 +129,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Relancer sans regarder coûte deux fois",
+          "cuisine": "Au passe — Relancer sans regarder coûte deux fois",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Blind restarts double the bill",
+          "kitchen": "At the pass — Blind restarts double the bill",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Annoncer qu’un plat est perdu ne l’enlève pas du feu. Tant que tu n’es pas allé voir, relancer, c’est cuisiner deux fois et payer deux fois.",
+            "cuisine": "Au service, Annoncer qu’un plat est perdu ne l’enlève pas du feu. Tant que tu n’es pas allé voir, relancer, c’est cuisiner deux fois et payer deux fois.",
             "expert": "Un timeout qui n’arrête pas le travail n’est qu’un timeout de l’observateur. Une reprise déclenchée sur cette base duplique les effets de bord et le coût, et un budget de retry se compte sur le travail logique, pas sur le nombre d’appels API."
           },
           "en": {
-            "kitchen": "Words at the pass take nothing off the heat. Send the order again without looking, and the house cooks it twice and pays for it twice.",
+            "kitchen": "During service, Words at the pass take nothing off the heat. Send the order again without looking, and the house cooks it twice and pays for it twice.",
             "expert": "A timeout that does not stop the work is only the observer's timeout. A retry fired on that basis duplicates side effects and cost, and a retry budget counts logical work rather than API calls."
           }
         }

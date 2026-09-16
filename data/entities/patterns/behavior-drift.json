@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Même consigne au mur, comportement différent en cuisine",
+          "cuisine": "La même consigne a soudain rempli le carnet",
           "expert": "Le comportement observé change alors que la règle écrite est restée identique"
         },
         "en": {
-          "kitchen": "The rule never moved, the kitchen did",
+          "kitchen": "The same rule suddenly filled the ledger",
           "expert": "Observed behavior changes while the written rule stays identical"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Claude Code, une consigne punaisée au mur n’avait presque jamais été enfreinte. Puis les croix se sont mises à tomber, coup sur coup, après que la maison eut changé quelque chose à son service. La consigne, elle, n’avait pas été retouchée d’un mot.",
+            "cuisine": "Une phrase interdite était notée dans un carnet chaque fois qu’elle passait au passe. Pendant des mois, presque aucune croix. Puis plusieurs sont arrivées d’un coup, alors que la consigne n’avait pas changé.",
             "expert": "La dérive de comportement est un changement observable des sorties sous une règle écrite inchangée. Chez Claude Code, un stop-phrase guard construit côté utilisateur, presque sans violation sur tout son historique, a accumulé brusquement un groupe de violations après un changement produit. La règle n’avait pas bougé ; la distribution des sorties, si."
           },
           "en": {
-            "kitchen": "Months of clean tallies, then a run of marks inside a single stretch. At Claude Code the note on the wall was the same note, word for word, before and after. What had moved was something the house did to its own service.",
+            "kitchen": "A forbidden phrase was marked in a ledger whenever it reached the pass. For months, almost no marks appeared. Then several arrived together, although the rule had not changed.",
             "expert": "Behavior drift is an observable change of output under an unchanged written rule. At Claude Code a user-built stop-phrase guard, historically almost violation-free, suddenly accumulated a cluster of violations after a product change. The rule had not moved; the output distribution had."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Chez Claude Code, les écarts reviennent groupés",
+          "cuisine": "Une série de croix ne ressemble pas à un accident",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Clean for months at Claude Code, then slips",
+          "kitchen": "A cluster of marks is not one accident",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ce n’est pas une entorse isolée qui alerte, c’est la série. Une longue période propre derrière soi, puis plusieurs croix rapprochées, et rien de réécrit sur le mur entre les deux. Ce sont vos propres croix qui le montrent : personne d’autre ne tenait le compte.",
+            "cuisine": "Une seule croix aurait pu être un oubli. La longue période calme, suivie de plusieurs croix rapprochées, rendait le changement visible. Le carnet du passe était la seule mesure disponible.",
             "expert": "Le signal est un groupe de violations rapproché, et non un incident isolé, sur un contrôle dont la règle n’a pas changé. La longue période sans violation fournit la ligne de base qui rend la rupture lisible. La rupture est mesurée par les journaux du contrôle lui-même, pas par une instrumentation du produit observé."
           },
           "en": {
-            "kitchen": "One slip proves nothing; a run of them does. A long clean stretch behind you, several marks close together, and nothing rewritten on the wall in between. Your own tally is what shows it, because nobody else was keeping count.",
+            "kitchen": "One mark could have been a mistake. A quiet stretch followed by several close together made the change visible. The ledger at the pass was the only measure available.",
             "expert": "The signal is a clustered run of violations rather than an isolated incident, on a check whose rule did not change. The long violation-free stretch supplies the baseline that makes the break legible. The break is measured by the check’s own logs, not by instrumentation inside the observed product."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "On soupçonne la consigne, jamais ce qui sort",
+          "cuisine": "Le carnet vide servait déjà de repère",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The note gets blamed, the plates never do",
+          "kitchen": "The empty ledger had been a measure all along",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Quand les croix tombent, on relit la consigne, parce que c’est la seule chose écrite. Elle est intacte, donc on se dit qu’il n’y a rien à voir. Mais ce qui sort de la cuisine a bougé, et rien dans la maison n’était prévu pour s’en apercevoir.",
+            "cuisine": "La consigne avait été tenue de la même façon avant et après les croix. Elle ne peut donc pas expliquer seule cette nouvelle série. Elle montre une rupture dans ce qui arrivait au passe, sans dire ce qui l’a causée.",
             "expert": "Un contrôle déterministe appliqué de façon stable transforme un déplacement de distribution en série mesurable, même s’il n’a été construit que pour bloquer des sorties. La tromperie tient à ce qu’on cherche la cause du côté de la règle, inchangée et vérifiable, alors que l’écart est dans le comportement observé. La rupture est établie ; le mécanisme causal exact ne l’est pas."
           },
           "en": {
-            "kitchen": "When marks start landing, everyone rereads the note, since the note is the only thing written down. It is untouched, so the house decides nothing happened. What comes off the stoves has shifted, and nothing here was built to notice that.",
+            "kitchen": "The rule was enforced in the same way before and after the marks. It cannot therefore explain the new run on its own. It shows a break in what reached the pass, without saying what caused it.",
             "expert": "A deterministic check applied without variation turns a distribution shift into a measurable series, even when it was built only to block outputs. The deception is that attention goes to the rule, which is unchanged and verifiable, while the divergence sits in the observed behavior. The break is established; the exact causal mechanism is not."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Noter la date et le nombre, sans conclure",
+          "cuisine": "Garder les croix, les dates et les soirées",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Record the date and the count, conclude nothing",
+          "kitchen": "Keep the marks, dates, and evenings",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ne jette pas le carnet quand la semaine est propre : c’est lui qui donnera la mesure quand elle ne le sera plus. Note la date, le nombre, et comment la maison tournait ce jour-là. Garde la prudence : le carnet prouve la rupture, jamais sa cause.",
+            "cuisine": "Gardez chaque croix, sa date et ce qui avait changé autour du service. Comparez-les sans désigner un coupable trop vite. Le carnet peut alerter sur une cuisine que personne ne mesure autrement.",
             "expert": "Traiter ce type de contrôle comme une source de télémétrie : conserver compteurs, versions et horodatages, puis les corréler aux changements produit. Les activations deviennent alors des signaux de régression exploitables sur un système qu’on n’instrumente pas soi-même. L’interprétation causale reste conservatrice : on documente une corrélation, pas une attribution."
           },
           "en": {
-            "kitchen": "Do not bin the tally on a clean week; a clean week is the measure you will need when a bad one lands. Write the date, the count, and how the house was running that evening. Stay careful: the tally proves the break, never its cause.",
+            "kitchen": "Keep every mark, its date, and what had changed around service. Compare them without naming a culprit too quickly. The ledger can warn about a kitchen that no one measures any other way.",
             "expert": "Treat this class of check as a telemetry source: keep counters, versions and timestamps, and correlate them with product changes. Activations then become usable regression signals over a system you do not instrument yourself. The causal reading stays conservative: record a correlation, not an attribution."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le carnet de Claude Code a servi de mesure",
+          "cuisine": "Une consigne qui bloque peut aussi donner l’alerte",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A rule that blocks also keeps score",
+          "kitchen": "A blocking rule can also raise an alarm",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une consigne qui arrête un geste peut aussi, sans rien changer, tenir le compte de ceux qu’elle arrête. Garde ce compte : c’est souvent la seule mesure disponible quand la maison change sans le dire.",
+            "cuisine": "Dans ce cas, le changement au passe est établi, mais sa cause exacte reste inconnue. Une consigne tenue sans bouger peut donc alerter tôt. Elle ne doit pas raconter plus qu’elle ne sait.",
             "expert": "Un contrôle d’enforcement est aussi un capteur : appliqué de façon stable, il produit une série temporelle que le système observé n’instrumente pas nécessairement lui-même. Cette série établit la rupture, pas son origine."
           },
           "en": {
-            "kitchen": "A note that stops a gesture can also, unchanged, count every gesture it stops. Keep that count: it is often the only measure you hold when the house changes quietly.",
+            "kitchen": "Here, the change at the pass is established, but its exact cause remains unknown. A rule held steady can therefore warn early. It must not claim more than it knows.",
             "expert": "An enforcement check is also a sensor: applied consistently, it yields a time series the observed system does not necessarily instrument itself. That series establishes the break, not its origin."
           }
         }

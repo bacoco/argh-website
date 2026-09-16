@@ -24,22 +24,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Chez Cline, celui qui regarde peut retenir une assiette",
+          "cuisine": "Celui qui regardait peut maintenant retenir l’assiette",
           "expert": "Les hooks de Cline sont devenus une couche de contrôle runtime à part entière"
         },
         "en": {
-          "kitchen": "Cline’s checker can now hold a plate back",
+          "kitchen": "The watcher can now hold a plate back",
           "expert": "Cline’s hooks became a control layer in the runtime, not scripting bolted on"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Cline, au début, un cuisinier jetait un œil aux assiettes qui partaient. Aujourd’hui il peut en retenir une, la renvoyer, ou décider seul qu’elle passe. Le même geste, mais plus du tout le même pouvoir. Le danger n’est pas qu’il contrôle : c’est que personne n’ait écrit jusqu’où il peut aller.",
+            "cuisine": "Au début, un cuisinier regardait seulement les assiettes partir. Aujourd’hui, il peut les retenir, les renvoyer ou les laisser passer. Son pouvoir a grandi. Personne n’avait écrit jusqu’où il pouvait décider.",
             "expert": "Chez Cline, les hooks sont passés d’un point d’extension scripté à une couche de contrôle runtime dédiée. L’architecture expose un mapping d’événements, des logs, des connecteurs, des timeouts d’exécution bornés et une intégration à la compaction. Observer, bloquer et décider sont trois niveaux d’autorité distincts, et rien ne les rend lisibles tant que la conception ne dit pas lequel un hook donné détient."
           },
           "en": {
-            "kitchen": "At Cline someone used to simply glance at the plates going out. Now that same person can hold a plate back, send it again, or wave it through on his own. The gesture did not change; the authority did. What hurts is not the checking — it is that nobody wrote down how far it reaches.",
+            "kitchen": "At first, a cook merely watched plates leave. Now that cook can hold them, send them back, or wave them through. The authority grew. Nobody had written where it must end.",
             "expert": "Hooks in Cline moved out of scripting and into a dedicated runtime control layer. The architecture now carries mapped events, logs, connectors, bounded execution timeouts and compaction integration. Observing, blocking and deciding are three different authority levels, and nothing makes them legible unless the design states which one a given hook holds."
           }
         }
@@ -50,62 +50,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Le coup d’œil est devenu un vrai poste",
+          "cuisine": "Le simple regard devient un poste qui décide",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "A glance grew into a station with hours",
+          "kitchen": "A simple glance becomes a station that decides",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Au départ, c’est un geste en plus : quelqu’un regarde, sans plus.",
+            "cuisine": "Au début, un commis jette seulement un regard aux assiettes. Son avis ne retient encore aucun plat.",
             "expert": "Les hooks apparaissent d’abord comme un simple mécanisme d’extension."
           },
           "en": {
-            "kitchen": "At the start it is just an extra gesture: someone looks, nothing more.",
+            "kitchen": "At first, a cook merely glances at the plates. That opinion cannot yet hold any dish.",
             "expert": "Hooks first appear as a plain extension mechanism."
           }
         },
         {
           "fr": {
-            "cuisine": "Il faut ensuite écrire qui regarde quoi, et à quel moment du service.",
+            "cuisine": "La maison précise ensuite les assiettes qu’il regarde. Elle écrit aussi à quel moment du service il intervient.",
             "expert": "L’architecture gagne un mapping dédié des événements et ses propres chemins d’exécution."
           },
           "en": {
-            "kitchen": "Then it has to be written down: who watches what, and at which moment of service.",
+            "kitchen": "The house later names the plates he checks. It also writes when during service he steps in.",
             "expert": "The architecture gains dedicated event mapping and its own execution paths."
           }
         },
         {
           "fr": {
-            "cuisine": "Chaque décision du contrôleur laisse une trace écrite, et on peut la relier au reste de la maison.",
+            "cuisine": "Chaque décision du veilleur entre dans son cahier. Les autres postes peuvent relire cette trace et savoir ce qu’il a fait.",
             "expert": "Logs et connecteurs rendent le comportement des hooks observable depuis l’extérieur."
           },
           "en": {
-            "kitchen": "Every call the checker makes leaves a written trace, and that trace can be wired to the rest of the house.",
+            "kitchen": "Every decision enters the watcher’s book. Other stations can read that trace and learn what happened.",
             "expert": "Logs and connectors make hook behavior observable from outside."
           }
         },
         {
           "fr": {
-            "cuisine": "On lui donne un temps limité pour se décider, sinon tout le service attend derrière lui.",
+            "cuisine": "Le veilleur reçoit ensuite un temps précis pour répondre. Sans cette limite, toute la file d’assiettes attend derrière lui.",
             "expert": "L’exécution des hooks reçoit des timeouts bornés."
           },
           "en": {
-            "kitchen": "He gets a fixed count to decide, or the whole service queues up behind him.",
+            "kitchen": "The watcher later receives a fixed time to answer. Without it, every waiting plate queues behind him.",
             "expert": "Hook execution gains bounded timeouts."
           }
         },
         {
           "fr": {
-            "cuisine": "On finit par lui confier les changements de quart, et jusqu’au tri du carnet quand il déborde.",
+            "cuisine": "Son poste finit par intervenir lors des changements d’équipe. Il aide même à trier le carnet quand trop de commandes s’y entassent.",
             "expert": "Les mêmes hooks sont réutilisés pour des contrôles de lifecycle, jusqu’à la compaction personnalisée."
           },
           "en": {
-            "kitchen": "In the end he is trusted with shift changes, and with thinning the order book when it overflows.",
+            "kitchen": "His station eventually joins shift changes. It even helps thin the order book when too many tickets pile up.",
             "expert": "The same hooks are reused for lifecycle controls, including custom compaction."
           }
         }
@@ -116,22 +116,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Celui qui vérifie se fige, tout s’arrête",
+          "cuisine": "Quand le veilleur devient indispensable, sa panne bloque la salle",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "An essential checker who freezes halts the service",
+          "kitchen": "Once the watcher is essential, his failure stops the room",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un coup d’œil qui rate n’arrête rien. Un contrôleur qui se fige arrête tout le service. Dès qu’il est indispensable, il lui faut un horaire, un cahier, et une consigne pour le soir où il ne vient pas.",
+            "cuisine": "Un regard manqué ne bloquait autrefois aucune assiette. Maintenant, le silence du veilleur peut arrêter tout le passe. Son poste exige donc des horaires et une consigne pour son absence.",
             "expert": "Dès qu’un hook est sur le chemin critique, il hérite des exigences des autres composants runtime : lifecycle défini, observabilité, sémantique d’échec explicite. Là où la sémantique d’échec n’est pas déclarée, le comportement en cas de défaillance devient une propriété découverte à l’exécution plutôt qu’une propriété de conception."
           },
           "en": {
-            "kitchen": "A glance that misses costs nothing. A checker who freezes costs the whole service. Once he is load-bearing he needs a shift, a written book, and a standing instruction for the night he does not show up.",
+            "kitchen": "A missed glance once held no plate. Now a silent watcher can stop the whole pass. His station therefore needs hours and a written rule for his absence.",
             "expert": "Once a hook sits on the critical path it inherits the requirements of any other runtime component: a defined lifecycle, observability, explicit failure semantics. Where failure semantics go unstated, what happens when a hook fails becomes something the system discovers at run time instead of something it declares."
           }
         }
@@ -142,22 +142,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le contrôle a son poste, son cahier, ses règles",
+          "cuisine": "Donner au veilleur une place et des limites écrites",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Checking became a station with its own book",
+          "kitchen": "Give the watcher a station and written limits",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le contrôle a cessé d’être une habitude de quelques anciens. C’est devenu un poste, avec sa place au passe, son cahier et ses règles écrites. On sait qui le tient et ce qu’il a le droit de refuser.",
+            "cuisine": "Le regard de quelques anciens devient un vrai poste au passe. Il reçoit son cahier et ses règles. La brigade sait désormais qui décide et quelles assiettes peuvent être retenues.",
             "expert": "Les hooks sont promus de scripts hétérogènes à primitives runtime typées et observables. Le typage et l’observabilité sont ce qui rend l’autorité de chaque hook lisible avant son exécution, au lieu d’être déduite après coup de ses effets."
           },
           "en": {
-            "kitchen": "Checking stopped being a habit a few old hands kept up. It became a station: a fixed spot at the pass, its own book, its own written rules. Everyone knows who holds it and what he is allowed to turn back.",
+            "kitchen": "A habit kept by old hands becomes a real station at the pass. It receives its own book and rules. The brigade now knows who decides and which plates may be held.",
             "expert": "Hooks are promoted from assorted scripts into typed, observable runtime primitives. Typing and observability are what make each hook’s authority readable before it runs, rather than inferable afterwards from its effects."
           }
         }
@@ -168,22 +168,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Le poste existe, aucune assiette n’est garantie",
+          "cuisine": "Le veilleur a son poste, mais aucune garantie absolue",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Cline has the station, not a guarantee",
+          "kitchen": "The checking station exists, but guarantees nothing",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ici, le contrôle du passe tient debout tout seul. Ce n’est plus une note punaisée près des fourneaux mais un poste, avec ses horaires et ses comptes à rendre. On dit que le poste existe, pas qu’aucune assiette n’est jamais passée au travers.",
+            "cuisine": "Le veilleur possède maintenant un poste stable, des horaires et un cahier. Cette organisation est bien observée. Elle ne prouve pas que chaque mauvaise assiette a été arrêtée en service.",
             "expert": "Cline constitue l’un des exemples les plus aboutis de hooks traités comme sous-système de première classe du harnais. Ce qui est établi est la trajectoire architecturale ; il ne s’agit pas d’une mesure de fiabilité en production."
           },
           "en": {
-            "kitchen": "In this house the check at the pass stands on its own. It is no longer a note pinned by the stoves but a station on the rota, with hours and a book to answer for. That the station exists is the claim; that no plate ever slipped past it is not.",
+            "kitchen": "The watcher now has a stable station, set hours, and a book. That arrangement is clearly observed. It does not prove that every bad plate was stopped during service.",
             "expert": "Cline is among the strongest examples of hooks treated as a first-class harness subsystem. What the record shows is the architectural trajectory; it is not a production reliability measurement."
           }
         }
@@ -194,22 +194,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un pouvoir de refuser doit être écrit d’avance",
+          "cuisine": "Écrire ce que le veilleur peut arrêter avant le service",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Write down what the checker may turn back",
+          "kitchen": "Write what the watcher may stop before service",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le jour où quelqu’un peut arrêter une assiette, il ne travaille plus à l’oreille. Écris ce qu’il a le droit de refuser, combien de temps on l’attend, et ce qu’on fait le soir où il n’est pas là.",
+            "cuisine": "Dès qu’un veilleur peut retenir une assiette, son instinct ne suffit plus. La maison écrit ses refus permis, son temps de réponse et la conduite prévue s’il manque.",
             "expert": "Dès qu’un hook contrôle le lifecycle, il exige des sémantiques runtime de niveau produit. Autorité, timeout et comportement en échec se déclarent au même endroit que le hook, pas après coup."
           },
           "en": {
-            "kitchen": "The day a man can hold back a plate, he stops working on instinct. Write down what he may refuse, how long service waits on him, and what happens on the night he is absent.",
+            "kitchen": "Once a watcher can hold a plate, instinct is no longer enough. The house writes his allowed refusals, answer time, and the rule for his absence.",
             "expert": "Once hooks control lifecycle, they require product-grade runtime semantics. Authority, timeout and failure behavior have to be declared alongside the hook, not discovered from whatever it happens to do."
           }
         }

@@ -24,22 +24,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Chez Codex, un billot pour plusieurs commis",
+          "cuisine": "Plusieurs commis se disputent le même billot",
           "expert": "L’allocation de worktrees est entrée dans le chemin d’exécution, à titre expérimental"
         },
         "en": {
-          "kitchen": "Codex cooks kept colliding on one shared bench",
+          "kitchen": "Several cooks collide on one shared bench",
           "expert": "Worktree allocation entered the execution path, as an experimental feature"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Codex, avec un seul commis, partager le billot ne gênait personne. Dès qu’ils ont travaillé à plusieurs en même temps, les préparations se sont mélangées. La maison a commencé à attribuer un billot par commis. Ce n’est pas encore la règle partout : c’est un essai en cours.",
+            "cuisine": "Avec un seul commis, le billot commun ne gêne personne. À plusieurs, les préparations commencent à se mélanger. La maison essaie donc un billot par commis. Cette organisation n’est pas encore utilisée partout.",
             "expert": "L’allocation gérée de worktrees est entrée dans le chemin d’exécution des sessions CLI. L’isolation du workspace devient ainsi une capacité de première classe du harnais plutôt qu’une convention appliquée par l’utilisateur. La fonctionnalité est explicitement expérimentale ; rien n’établit qu’elle soit devenue le comportement par défaut."
           },
           "en": {
-            "kitchen": "One cook on a shared bench bothered nobody at Codex. Put several on it at once and the preparations run into each other. So the house started handing out a bench per cook. It is not yet how every service runs — it is a trial.",
+            "kitchen": "One cook has no trouble with a shared bench. With several cooks, preparations begin to collide. The house is therefore trying one bench per cook. Not every service uses it yet.",
             "expert": "Managed worktree allocation moved into the execution path of CLI sessions. Workspace isolation thereby becomes a harness capability rather than a convention users are expected to apply themselves. The feature is explicitly experimental, and nothing establishes it as the default."
           }
         }
@@ -50,62 +50,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Codex commence à donner un billot par commis",
+          "cuisine": "La maison essaie un billot pour chaque commis",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Codex began handing out a bench per cook",
+          "kitchen": "The house starts giving each cook a bench",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un commis seul travaille très bien sur le billot commun.",
+            "cuisine": "Quand un seul commis cuisine, le grand billot commun lui suffit. Aucune préparation voisine ne vient gêner ses gestes.",
             "expert": "Les workflows parallèles et reprenables augmentent la pression sur les working directories partagés."
           },
           "en": {
-            "kitchen": "A single cook works perfectly well on the shared bench.",
+            "kitchen": "With one cook, the large shared bench is enough. No neighbouring preparation gets in the way.",
             "expert": "Parallel and resumable workflows raise pressure on shared working directories."
           }
         },
         {
           "fr": {
-            "cuisine": "Dès qu’ils sont plusieurs sur la même planche, les préparations se heurtent.",
+            "cuisine": "Plusieurs commis arrivent ensuite sur cette même planche. Leurs découpes et leurs assaisonnements commencent alors à se mélanger.",
             "expert": "Les worktrees existent alors comme technique Git externe, appliquée à la main."
           },
           "en": {
-            "kitchen": "Put several on the same board and the preparations start colliding.",
+            "kitchen": "Several cooks later crowd onto that same board. Their chopping and seasoning begin to mix.",
             "expert": "Worktrees exist at this point as an external Git technique, applied by hand."
           }
         },
         {
           "fr": {
-            "cuisine": "La maison propose d’attribuer un billot, sans promettre que ce sera la règle.",
+            "cuisine": "La maison essaie donc d’attribuer une planche séparée. Elle précise que cette organisation reste un essai.",
             "expert": "L’allocation gérée devient une fonctionnalité explicitement expérimentale."
           },
           "en": {
-            "kitchen": "The house offers to hand out a bench, without promising it becomes the rule.",
+            "kitchen": "The house therefore tries assigning a separate bench. It makes clear that this arrangement remains a trial.",
             "expert": "Managed allocation becomes an explicitly experimental feature."
           }
         },
         {
           "fr": {
-            "cuisine": "Un commis qui arrive, ou qui reprend le travail d’un autre, peut recevoir le sien.",
+            "cuisine": "Un nouveau commis peut recevoir son propre billot dès son arrivée. Celui qui reprend une préparation interrompue peut aussi en obtenir un.",
             "expert": "Les sessions nouvelles et forkées peuvent recevoir des worktrees dédiés."
           },
           "en": {
-            "kitchen": "A cook starting fresh, or picking up another’s work, can be given one of his own.",
+            "kitchen": "A new cook may receive a personal bench on arrival. A cook resuming interrupted preparation may receive one too.",
             "expert": "New and forked sessions can each receive a dedicated worktree."
           }
         },
         {
           "fr": {
-            "cuisine": "Il faut alors savoir en permanence quel billot appartient à qui.",
+            "cuisine": "Dès lors, la maison doit suivre chaque billot. Elle doit toujours savoir quel commis en est responsable.",
             "expert": "La propriété entre thread et checkout entre dans le modèle runtime."
           },
           "en": {
-            "kitchen": "From then on the house must always know which bench belongs to whom.",
+            "kitchen": "From then on, the house must track every bench. It must always know which cook owns it.",
             "expert": "Ownership between thread and checkout enters the runtime model."
           }
         }
@@ -116,22 +116,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Personne n’est là pour désigner une place libre",
+          "cuisine": "Les commis apparaissent sans chef pour leur donner une place",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "No one is there to assign a bench",
+          "kitchen": "Cooks appear with no chef there to assign a bench",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Tant que c’est le chef qui appelle un commis, il peut lui dire où s’installer. Ici, c’est la maison elle-même qui fait apparaître des commis en pleine soirée. Personne n’est là pour leur désigner une place libre. Il faut donc que la place arrive avec le commis.",
+            "cuisine": "Un chef présent peut montrer un billot libre au commis qu’il appelle. Ici, de nouveaux commis arrivent seuls en plein service. Leur place doit donc être préparée et attribuée par la maison elle-même.",
             "expert": "L’isolation du workspace ne peut rester une convention manuelle dès lors que le harnais crée lui-même des sessions parallèles et fork l’état d’exécution. Une convention suppose un opérateur présent au moment de la création ; ici la création est interne et sans opérateur."
           },
           "en": {
-            "kitchen": "As long as a chef calls a cook in, he can tell him where to stand. Here the house conjures cooks up mid-service on its own. Nobody is standing by to point them at a free bench. So the bench has to arrive with the cook.",
+            "kitchen": "A present chef can show a free bench to each cook he calls. Here, new cooks arrive alone during service. The house itself must therefore prepare and assign their place.",
             "expert": "Workspace isolation cannot stay a manual convention once the harness creates parallel sessions and forks execution state on its own. A convention assumes a human present at creation time, and creation here happens inside the system with no one present."
           }
         }
@@ -142,22 +142,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Le billot est attribué, gardé, puis nettoyé",
+          "cuisine": "La maison donne le billot et le reprend à la fin",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "The bench now comes with the cook’s post",
+          "kitchen": "The house assigns the bench and clears it afterwards",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un commis ne reçoit plus seulement un ordre : il reçoit une place. La maison la lui attribue, la garde pendant son absence, et la nettoie quand il a fini. La place fait partie de son poste, au même titre que ses couteaux.",
+            "cuisine": "Chaque commis reçoit une place avec sa commande. La maison la conserve s’il s’absente et la nettoie après son départ. Le billot devient ainsi une partie de son poste.",
             "expert": "L’identité et le lifecycle du workspace deviennent propriété du harnais : allocation, binding à une exécution, cleanup et sémantique de reprise. Ces quatre points définissent la capacité visée ; ils ne sont pas décrits comme achevés."
           },
           "en": {
-            "kitchen": "A cook is no longer handed only an order; he is handed a place. The house assigns it, keeps it while he steps away, and clears it when he is done. The place belongs to the post the way his knives do.",
+            "kitchen": "Each cook receives a place with the order. The house keeps it during an absence and clears it after departure. The bench thus becomes part of the cook’s station.",
             "expert": "Workspace identity and lifecycle become harness-owned: allocation, binding to an execution, cleanup, and resume semantics. Those four points define the intended capability; the record describes them as a direction under way, not as a finished one."
           }
         }
@@ -168,22 +168,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Chez Codex, le billot personnel reste un essai",
+          "cuisine": "Le billot personnel reste un essai limité",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "At Codex the personal bench stays a trial",
+          "kitchen": "The personal bench remains a limited trial",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La maison va vers un billot par commis, et elle y va pour de bon. Mais on parle d’une direction prise, pas d’un service qui tourne déjà comme ça tous les soirs.",
+            "cuisine": "La maison avance réellement vers un billot pour chacun. Une partie de ce changement existe déjà sous forme d’essai. Rien ne garantit encore cette séparation pour tous les services.",
             "expert": "Direction active vers une isolation plus forte entre exécutions parallèles. L’état de preuve est celui d’une trajectoire annoncée et partiellement livrée sous statut expérimental, non d’une isolation garantie."
           },
           "en": {
-            "kitchen": "The house is moving toward one bench per cook, and moving in earnest. Still, this is a direction taken, not a service that already runs this way every night.",
+            "kitchen": "The house is genuinely moving toward one bench per cook. Part of the change already exists as a trial. Nothing yet guarantees that separation for every service.",
             "expert": "An active direction toward stronger isolation between parallel executions. The evidence supports a declared trajectory shipped under experimental status, not a guarantee of isolation."
           }
         }
@@ -194,22 +194,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Plusieurs commis en même temps, un billot chacun",
+          "cuisine": "Un billot partagé ne convient plus à une brigade parallèle",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Several cooks at once need separate boards",
+          "kitchen": "A shared bench no longer suits cooks working in parallel",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Si tu fais travailler plusieurs commis en même temps, donne à chacun sa planche. Sinon c’est toi qui passeras la soirée à démêler leurs préparations.",
+            "cuisine": "Quand plusieurs commis travaillent ensemble, chacun doit retrouver sa propre préparation sur un billot distinct. Sans cela, le chef passe la soirée à démêler leurs gestes.",
             "expert": "Des exécutions parallèles exigent une propriété de workspace de première classe. Tant qu’elle reste une convention externe, elle n’est appliquée que là où un humain est présent pour l’appliquer."
           },
           "en": {
-            "kitchen": "If several cooks work at once, give each one his own board. Otherwise you spend the night working out whose preparation is whose.",
+            "kitchen": "When several cooks work together, each needs a separate bench for his own preparation. Otherwise, the chef spends the night untangling their work.",
             "expert": "Parallel executions require first-class workspace ownership. While it stays an external convention it holds only where a human happens to be present to enforce it."
           }
         }

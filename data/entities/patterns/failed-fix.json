@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Une correction faite là où personne ne cuisine",
+          "cuisine": "La recette corrigée n’était pas celle lue au piano",
           "expert": "Un correctif appliqué qui laisse la panne en place"
         },
         "en": {
-          "kitchen": "The fix lands on the copy nobody reads",
+          "kitchen": "The corrected recipe was not the one read at the stove",
           "expert": "An applied correction that leaves the failure in place"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Archon, la recette a été corrigée dans le classeur du bureau. La fiche punaisée au-dessus du piano, celle que le commis lit vraiment, est restée l’ancienne. Tout le monde s’est cru tranquille, et le même plat est reparti faux.",
+            "cuisine": "Une recette a été corrigée dans le classeur du bureau. La fiche au-dessus du piano, celle que le commis lisait vraiment, est restée ancienne. Tout le monde s’est cru tranquille et le même plat est reparti faux.",
             "expert": "Un failed fix est un correctif appliqué qui ne ferme pas le mécanisme causal, ou qui laisse subsister une variante de la panne. Un seul dossier de ce corpus l’atteste : sur Archon, un artefact de contrôle pouvait être corrigé dans le repository source alors que la copie installée, celle réellement utilisée par l’agent, restait obsolète."
           },
           "en": {
-            "kitchen": "At Archon the recipe was corrected in the office binder. The card pinned above the stove, the one the cook actually reads, stayed the old one. Everybody felt the matter was closed, and the same wrong plate went out again.",
+            "kitchen": "A recipe was corrected in the office binder. The card above the stove, the one the cook actually read, remained old. Everyone felt settled, and the same wrong plate went out again.",
             "expert": "A failed fix is an applied correction that does not close the causal mechanism, or that leaves a variant of the failure intact. A single dossier in this corpus documents it: in Archon a control artifact could be corrected in the source repository while the installed copy actually used by the agent stayed stale."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Archon a corrigé, et le défaut est revenu",
+          "cuisine": "Le même plat raté revenait après une correction réelle",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Two copies of one card, and they differ",
+          "kitchen": "The same failed plate returned after a real correction",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le signe le plus net, c’est le retour du même défaut alors que quelqu’un a bien corrigé quelque chose. Personne n’a menti : la correction existe, elle est simplement ailleurs. Demande où était écrite la version que le commis avait sous les yeux au moment du plat.",
+            "cuisine": "Le même plat raté est revenu alors qu’une correction existait bien. Personne n’avait menti : elle vivait simplement dans un autre classeur. Il fallait regarder la fiche sous les yeux du commis au moment du service.",
             "expert": "Le signal est la récurrence du symptôme après une correction réputée appliquée, sans changement des conditions d’exécution. Le second signal est la divergence entre deux copies d’un même artefact de contrôle, la source et l’installée. Sur Archon, c’est la copie installée qui gouverne le comportement observé, et c’est elle qui restait obsolète."
           },
           "en": {
-            "kitchen": "The clearest sign is the same fault coming back although someone really did correct something. Nobody lied: the correction exists, it simply sits elsewhere. Ask where the version the cook had in front of him was written when that plate went out.",
+            "kitchen": "The same failed plate returned although a correction truly existed. Nobody lied: it simply lived in another binder. The card before the cook during service was the one that mattered.",
             "expert": "The signal is recurrence of the symptom after a correction believed to be applied, with no change in execution conditions. The second signal is divergence between two copies of the same control artifact, the source one and the installed one. In Archon the installed copy governs observed behavior, and that copy was the stale one."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Corrigé au bureau, jamais arrivé au piano",
+          "cuisine": "On avait vérifié le bureau au lieu du piano",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Corrected in the office, never reaching the stove",
+          "kitchen": "The office was checked instead of the stove",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On vérifie la correction là où on l’a écrite, pas là où elle doit servir. Le classeur montre le bon texte, donc l’affaire est classée. Le piano, lui, n’a rien reçu : il travaille encore sur la vieille fiche, et rien en salle ne le signale.",
+            "cuisine": "On avait vérifié la correction là où elle avait été écrite, pas là où elle devait servir. Le classeur montrait la bonne recette, mais le piano n’avait rien reçu. La vieille fiche continuait de guider le plat sans le montrer en salle.",
             "expert": "La vérification porte sur l’artefact modifié, pas sur l’artefact exécuté. Les deux copies portant le même nom et la même intention, la lecture de la source est prise pour une preuve du comportement installé. Le faux sentiment de résolution vient de là : la correction est réelle, mais elle n’atteint pas le chemin qui décide."
           },
           "en": {
-            "kitchen": "You check the correction where you wrote it, not where it has to work. The binder shows the right text, so the matter counts as closed. The stove got nothing: it is still working off the old card, and nothing out front says so.",
+            "kitchen": "The correction was checked where it was written, not where it had to work. The binder showed the right recipe, but the stove received nothing. The old card kept guiding the plate without showing that fact in the room.",
             "expert": "Verification targets the modified artifact, not the executed one. Since both copies carry the same name and the same intent, reading the source is taken as evidence about installed behavior. That is where the false sense of resolution comes from: the correction is real, but it never reaches the path that decides."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Voir le plat ressortir juste, sinon rien",
+          "cuisine": "Relire la fiche du piano et refaire sortir le plat raté",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Proof comes from the stove, not the binder",
+          "kitchen": "Read the stove card and send out the failed plate again",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Va lire la fiche au-dessus du piano, pas le classeur. Refais partir le plat qui ratait, et regarde-le sortir juste. Tant que tu n’as pas revu ce plat-là sortir correct, tu as corrigé une page, pas un service.",
+            "cuisine": "Lisez la fiche au-dessus du piano, pas seulement le classeur. Refaites sortir le plat qui avait raté et regardez le résultat. Sans cela, la correction concerne une page, pas le service.",
             "expert": "La preuve de correction doit être prise sur la copie installée, celle que l’exécution consomme, et non sur la source modifiée. Rejouer le cas d’échec initial jusqu’au comportement observable est le seul contrôle qui ferme le mécanisme causal. À défaut, le statut honnête reste « correctif appliqué, résolution non établie »."
           },
           "en": {
-            "kitchen": "Go and read the card above the stove, not the binder. Fire the plate that failed again, and watch it come out right. Until you have seen that plate come out right, you have corrected a page, not a service.",
+            "kitchen": "Read the card above the stove, not only the binder. Send out the plate that failed and watch the result. Without that, the correction concerns a page, not service.",
             "expert": "Proof of correction must be taken on the installed copy that execution consumes, not on the modified source. Replaying the original failure case through to observable behavior is the only check that closes the causal mechanism. Failing that, the honest status stays applied correction, resolution not established."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le calme après la correction trompe encore",
+          "cuisine": "Une page corrigée n’est pas un service réparé",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The old card is still the one read",
+          "kitchen": "A corrected page does not repair the service",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une recette corrigée dans le classeur n’est pas une consigne corrigée au piano. Tant que la fiche lue par le commis n’a pas changé, la panne est toujours là. Et le calme que tu ressens est alors le plus mauvais des signaux.",
+            "cuisine": "Une recette corrigée au bureau ne répare pas le plat. Tant que la fiche du piano n’a pas changé, la panne reste ouverte. Dire « corrigé » avant de revoir le service est une erreur de plus.",
             "expert": "Un fichier source corrigé n’est pas un contrôle installé corrigé. Tant que la copie effectivement chargée n’a pas changé, le mécanisme causal reste ouvert, et le sentiment de résolution constitue lui-même un risque."
           },
           "en": {
-            "kitchen": "A recipe corrected in the binder is not an instruction corrected at the stove. As long as the card the cook reads has not changed, the failure is still there. And the calm you feel is then the worst signal of all.",
+            "kitchen": "A recipe corrected in the office does not repair the plate. Until the stove card changes, the failure stays open. Saying “fixed” before seeing service again adds another mistake.",
             "expert": "A corrected source file is not a corrected installed control. Until the copy actually loaded has changed, the causal mechanism stays open, and the sense of resolution is itself a hazard."
           }
         }

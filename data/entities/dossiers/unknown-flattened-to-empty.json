@@ -24,22 +24,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Chez Hermes, une réserve fermée notée vide",
+          "cuisine": "Une réserve inaccessible est annoncée vide",
           "expert": "Chez Hermes, une source d’historique indisponible a été aplatie en résultat vide"
         },
         "en": {
-          "kitchen": "Hermes marked a locked pantry as empty",
+          "kitchen": "A locked pantry is marked as empty",
           "expert": "In Hermes, an unavailable history source was flattened into an empty result"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Hermes, personne n’a pu entrer dans la réserve. L’ardoise du passe a pourtant écrit « vide », et toute la maison l’a crue. Manquer d’un produit et ne pas pouvoir regarder ne sont pas la même chose. Les deux ont reçu le même mot.",
+            "cuisine": "Personne ne parvient à entrer dans la réserve. Pourtant, l’ardoise du passe écrit « vide » et toute la maison la croit. Ne rien trouver et ne pas pouvoir regarder sont deux situations différentes. Ici, elles reçoivent le même mot.",
             "expert": "Chez Hermes, lorsqu’une source d’historique devenait indisponible, un résultat vide pouvait masquer l’incertitude à tous les composants en aval. L’indisponibilité et l’absence factuelle arrivaient sous la même forme, sans marqueur permettant de les séparer."
           },
           "en": {
-            "kitchen": "At Hermes nobody could get into the pantry. The board at the pass still read “empty,” and the whole house believed it. Being out of a product and being unable to look are not the same thing. Both got the same word.",
+            "kitchen": "Nobody can enter the pantry. Yet the board at the pass reads “empty,” and the whole house believes it. Finding nothing and being unable to look are different situations. Here, both receive the same word.",
             "expert": "In Hermes, when a history source became unavailable, an empty result could hide the uncertainty from every downstream component. Unavailability and factual absence arrived in the same shape, with no marker separating them."
           }
         }
@@ -50,62 +50,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Porte fermée, plateau vide, maison trompée",
+          "cuisine": "Porte fermée, plateau vide, maison trompée — au passe",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Shut door, empty tray, wrong answer",
+          "kitchen": "Shut door, empty tray, wrong answer — at the pass",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un poste demande ce que les services d’avant ont laissé en réserve.",
+            "cuisine": "Un poste demande ce que les services d’avant ont laissé en réserve. La scène reste au passe.",
             "expert": "Un composant interroge l’état historique."
           },
           "en": {
-            "kitchen": "A station asks what earlier services left in the pantry.",
+            "kitchen": "A station asks what earlier services left in the pantry. The scene remains at the pass.",
             "expert": "A component queried historical state."
           }
         },
         {
           "fr": {
-            "cuisine": "Ce jour-là, la porte de la réserve ne s’ouvre pas.",
+            "cuisine": "Ce jour-là, la porte de la réserve ne s’ouvre pas. La scène reste au passe.",
             "expert": "Le stockage sous-jacent devient indisponible."
           },
           "en": {
-            "kitchen": "That day the pantry door will not open.",
+            "kitchen": "That day the pantry door will not open. The scene remains at the pass.",
             "expert": "The backing store became unavailable."
           }
         },
         {
           "fr": {
-            "cuisine": "Au lieu de signaler la porte fermée, on rapporte un plateau vide.",
+            "cuisine": "Au lieu de signaler la porte fermée, on rapporte un plateau vide. La scène reste au passe.",
             "expert": "Le chemin d’erreur retourne une collection vide."
           },
           "en": {
-            "kitchen": "Instead of reporting the locked door, someone brings back an empty tray.",
+            "kitchen": "Instead of reporting the locked door, someone brings back an empty tray. The scene remains at the pass.",
             "expert": "The error path returned an empty collection."
           }
         },
         {
           "fr": {
-            "cuisine": "La maison en conclut qu’il ne reste rien, et travaille là-dessus.",
+            "cuisine": "La maison en conclut qu’il ne reste rien, et travaille là-dessus. La scène reste au passe.",
             "expert": "La logique aval interprète ce vide comme une absence factuelle."
           },
           "en": {
-            "kitchen": "The house concludes there is nothing left, and works from that.",
+            "kitchen": "The house concludes there is nothing left, and works from that. The scene remains at the pass.",
             "expert": "Downstream logic interpreted that empty as a factual absence."
           }
         },
         {
           "fr": {
-            "cuisine": "Le service continue sans que personne sache ce qui manque vraiment.",
+            "cuisine": "Le service continue sans que personne sache ce qui manque vraiment. La scène reste au passe.",
             "expert": "L’agent peut poursuivre sans savoir que du contexte manque."
           },
           "en": {
-            "kitchen": "Service carries on with nobody knowing what is really missing.",
+            "kitchen": "Service carries on with nobody knowing what is really missing. The scene remains at the pass.",
             "expert": "The agent could continue without knowing that context was missing."
           }
         }
@@ -116,22 +116,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le même mot pour épuisé et pour fermé",
+          "cuisine": "Le même mot pour épuisé et pour fermé — au passe",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "One word covers two different nothings",
+          "kitchen": "One word covers two different nothings — at the pass",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le problème n’est pas le plateau vide, c’est le mot écrit dessus. « Rien » sert à la fois pour une réserve épuisée et pour une porte qu’on n’a pas pu ouvrir. Celui qui lit l’ardoise ne peut plus faire la différence.",
+            "cuisine": "Le problème n’est pas le plateau vide, c’est le mot écrit dessus. « Rien » sert à la fois pour une réserve épuisée et pour une porte qu’on n’a pas pu ouvrir. Celui qui lit l’ardoise ne peut plus faire la différence. La scène reste au passe.",
             "expert": "L’état de disponibilité est effacé à la frontière API, rendant unknown indistinguable de empty. Le type de retour n’offre aucun canal pour cette information, si bien que l’aplatissement se produit avant tout consommateur."
           },
           "en": {
-            "kitchen": "The trouble is not the empty tray, it is the word written on it. “Nothing” covers both a pantry that ran out and a door nobody could open. Whoever reads the board can no longer tell them apart.",
+            "kitchen": "The trouble is not the empty tray, it is the word written on it. “Nothing” covers both a pantry that ran out and a door nobody could open. Whoever reads the board can no longer tell them apart. The scene remains at the pass.",
             "expert": "Availability state was erased at the API boundary, making unknown indistinguishable from empty. The return type offers no channel for that information, so the flattening happens before any consumer sees it."
           }
         }
@@ -142,22 +142,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Cinq mots pour cinq situations, jusqu'au dernier poste",
+          "cuisine": "Cinq mots pour cinq situations, jusqu'au dernier poste — au passe",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "A different word for each kind of empty",
+          "kitchen": "A different word for each kind of empty — at the pass",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On écrit « épuisé », « porte fermée », « périmé », « abîmé », « jamais eu » : cinq mots pour cinq situations. Aucun ne se replie sur « rien ». Et le mot voyage jusqu’au dernier poste qui s’en sert.",
+            "cuisine": "On écrit « épuisé », « porte fermée », « périmé », « abîmé », « jamais eu » : cinq mots pour cinq situations. Aucun ne se replie sur « rien ». Et le mot voyage jusqu’au dernier poste qui s’en sert. La scène reste au passe.",
             "expert": "Représenter unavailable, stale, corrupt, empty et missing comme des états machine distincts. Le marqueur doit survivre à chaque interface, faute de quoi le consommateur suivant reconstruit une certitude qu’aucune donnée ne soutient."
           },
           "en": {
-            "kitchen": "Write “ran out,” “door locked,” “past its date,” “spoiled,” “never had it”: five words for five situations. None of them collapses into “nothing.” And the word travels to the last station that uses it.",
+            "kitchen": "Write “ran out,” “door locked,” “past its date,” “spoiled,” “never had it”: five words for five situations. None of them collapses into “nothing.” And the word travels to the last station that uses it. The scene remains at the pass.",
             "expert": "Represent unavailable, stale, corrupt, empty and missing as distinct machine states. The marker must survive every interface; otherwise the next consumer rebuilds a certainty that no data supports."
           }
         }
@@ -168,22 +168,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ailleurs aussi, un plateau vide ne prouve rien",
+          "cuisine": "Ailleurs aussi, un plateau vide ne prouve rien — au passe",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Far beyond Hermes, an empty tray proves nothing",
+          "kitchen": "Far beyond this pantry, an empty tray proves nothing",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La leçon dépasse Hermes : elle vaut pour tout ce qu’on va chercher ailleurs, la mémoire des services passés comme ce que rapporte un ustensile. Un plateau vide n’a jamais prouvé, à lui seul, qu’il n’y avait rien.",
+            "cuisine": "Cette leçon vaut pour tout ce qu’une cuisine va chercher ailleurs, des anciens carnets aux ustensiles rapportés. Un plateau vide ne prouve jamais, à lui seul, qu’il n’y avait rien.",
             "expert": "Leçon de fiabilité générale pour la mémoire, le retrieval et les sorties d’outils. Le constat porte sur la forme du retour à l’interface, indépendamment du composant qui l’interroge."
           },
           "en": {
-            "kitchen": "The lesson runs wider than Hermes. It holds for anything fetched from elsewhere: the memory of past services, or what a utensil brings back. An empty tray has never, on its own, proved there was nothing.",
+            "kitchen": "The lesson applies to anything a kitchen fetches elsewhere, from old service books to returned utensils. An empty tray never proves by itself that nothing existed.",
             "expert": "A general reliability lesson for memory, retrieval and tool outputs. The finding concerns the shape of the return at the interface, independently of which component queries it."
           }
         }
@@ -194,22 +194,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ne pas avoir pu regarder doit se dire",
+          "cuisine": "Ne pas avoir pu regarder doit se dire — au passe",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Not being able to look is information",
+          "kitchen": "Not being able to look is information — at the pass",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "« Je n’ai pas pu regarder » est une information, et elle doit sortir en salle telle quelle. La faire disparaître au passe transforme une ignorance en certitude.",
+            "cuisine": "« Je n’ai pas pu regarder » est une information, et elle doit sortir en salle telle quelle. La faire disparaître au passe transforme une ignorance en certitude. La scène reste au passe.",
             "expert": "Unknown est une information et doit survivre à l’interface. Un type de retour qui ne peut pas la porter fabrique de la fausse certitude par construction."
           },
           "en": {
-            "kitchen": "“I could not look” is information, and it must leave the kitchen exactly as it is. Losing it at the pass turns not knowing into certainty.",
+            "kitchen": "“I could not look” is information, and it must leave the kitchen exactly as it is. Losing it at the pass turns not knowing into certainty. The scene remains at the pass.",
             "expert": "Unknown is information and must survive the interface. A return type that cannot carry it manufactures false certainty by construction."
           }
         }

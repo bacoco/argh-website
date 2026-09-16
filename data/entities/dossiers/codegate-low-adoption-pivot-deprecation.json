@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "CodeGate a équipé une salle jamais remplie",
+          "cuisine": "Une salle bien équipée n’a jamais trouvé ses clients",
           "expert": "Une adoption insuffisante a déclenché un pivot ; le pivot n’a pas empêché la dépréciation"
         },
         "en": {
-          "kitchen": "CodeGate never filled its room, on either menu",
+          "kitchen": "Neither menu ever filled the dining room",
           "expert": "Weak adoption triggered a pivot; the pivot did not prevent deprecation"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "CodeGate avait ouvert une grande salle pour une seule spécialité. Les clients ne sont pas venus assez souvent pour justifier tout ce qu’on y avait installé. Le patron a changé de carte et visé une autre clientèle. Cette carte-là n’a pas pris non plus, et le rideau est descendu.",
+            "cuisine": "Une grande salle ouvre autour d’une seule spécialité. Trop peu de clients viennent pour justifier son équipement. Le patron change ensuite de carte et de clientèle. Cette seconde tentative échoue aussi, puis le rideau descend.",
             "expert": "CodeGate a reconnu explicitement une adoption faible pour sa thèse initiale de protection des assistants de code. L’équipe a pivoté vers les workflows d’agents, puis le projet a été déclaré déprécié en tant qu’expérimentation. Le constat d’adoption est explicite, et c’est lui, non une défaillance technique, qui ouvre la séquence."
           },
           "en": {
-            "kitchen": "CodeGate had built a whole room around one speciality. Diners never came often enough to justify the equipment standing in it. The owner rewrote the menu and aimed at a different crowd. That menu did not take either, and the shutter came down.",
+            "kitchen": "A large dining room opens around one speciality. Too few diners arrive to justify its equipment. The owner changes the menu and seeks another crowd. That second attempt also fails, and the shutter comes down.",
             "expert": "CodeGate stated outright that its original coding-assistant protection thesis had failed to gain adoption. The team pivoted toward agent workflows, and the project was subsequently marked deprecated as an experiment. The adoption verdict is on the record, and it — not any technical failure — is what starts the sequence."
           }
         }
@@ -51,62 +51,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "CodeGate a rangé des postes, refait sa carte",
+          "cuisine": "La maison range des postes puis refait sa carte",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Two menus at CodeGate, neither one caught on",
+          "kitchen": "Two menus fail to fill the same room",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La maison ouvre une grande salle autour d’une spécialité : surveiller ce que l’aide de cuisine passe aux cuisiniers.",
+            "cuisine": "La maison aménage d’abord une grande salle pour une seule spécialité. Elle surveille ce que les aides transmettent aux cuisiniers.",
             "expert": "Le produit initial se concentre sur la protection de l’usage des assistants de code."
           },
           "en": {
-            "kitchen": "The house opens a large room around one speciality: watching what each cook’s helper hands him.",
+            "kitchen": "The house first builds a large room around one speciality. It watches what helpers hand to the cooks.",
             "expert": "The original product centres on protecting coding-assistant usage."
           }
         },
         {
           "fr": {
-            "cuisine": "Les couverts ne se remplissent pas. La salle coûte plus cher à tenir ouverte qu’elle ne rapporte.",
+            "cuisine": "Trop peu de clients réservent pour cette spécialité. Garder toute la salle ouverte ne se justifie donc plus.",
             "expert": "L’adoption ne justifie pas la surface initiale du produit."
           },
           "en": {
-            "kitchen": "Covers do not fill. The room costs more to hold open than it brings back.",
+            "kitchen": "Too few diners book for that speciality. Keeping the whole room open can no longer be justified.",
             "expert": "Adoption does not justify the product’s original surface."
           }
         },
         {
           "fr": {
-            "cuisine": "Le patron range une partie des postes et réécrit la carte. Il vise cette fois les brigades dont les commis sont des machines.",
+            "cuisine": "Le patron range certains postes et change entièrement de carte. Il cherche cette fois des cuisines où les commis sont des machines.",
             "expert": "L’équipe retire ou réduit les clients orientés IDE et pivote vers les workflows d’agents."
           },
           "en": {
-            "kitchen": "The owner puts away part of the stations and rewrites the menu. This time he aims at the brigades whose commis are machines.",
+            "kitchen": "The owner closes some stations and completely changes the menu. This time he seeks kitchens whose cooks are machines.",
             "expert": "The team drops or narrows its IDE-oriented clients and pivots toward agent workflows."
           }
         },
         {
           "fr": {
-            "cuisine": "La nouvelle carte ne trouve pas son service. Rien ne s’installe.",
+            "cuisine": "La seconde carte ne trouve pas davantage sa clientèle. Aucun service durable ne s’installe autour d’elle.",
             "expert": "La nouvelle direction ne devient pas un produit durablement maintenu."
           },
           "en": {
-            "kitchen": "The new menu never finds its service. Nothing settles.",
+            "kitchen": "The second menu also fails to find its diners. No lasting service settles around it.",
             "expert": "The new direction does not become a durably maintained product."
           }
         },
         {
           "fr": {
-            "cuisine": "La maison finit par annoncer qu’elle n’assure plus. Ce n’était pas un restaurant qui s’installe, c’était un essai.",
+            "cuisine": "La maison annonce finalement qu’elle ne servira plus. Elle se présente elle-même comme un essai arrêté, pas comme une salle au ralenti.",
             "expert": "Le projet est déclaré déprécié et non maintenu, avec le statut d’expérimentation."
           },
           "en": {
-            "kitchen": "The house finally announces it is no longer serving. This was never a settled restaurant; it was a trial.",
+            "kitchen": "The house finally announces that service has ended. It calls itself a stopped experiment, not a quiet dining room.",
             "expert": "The project is declared deprecated and unmaintained, carrying experimental status."
           }
         }
@@ -117,22 +117,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La cuisine allait bien, la salle restait vide",
+          "cuisine": "Les fourneaux fonctionnent, mais les clients ne viennent pas",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The CodeGate kitchen worked; the diners never came",
+          "kitchen": "The stoves work while the diners stay away",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Aucun four n’a lâché. La cuisine faisait exactement ce qu’on lui demandait. Ce qui manquait, c’étaient les clients pour la première carte, puis l’élan pour la seconde.",
+            "cuisine": "Aucun four cassé n’explique la fermeture. La première carte manquait de clients. Après le changement, la seconde n’a pas créé un élan durable non plus.",
             "expert": "L’échec porte sur la thèse produit et non sur le code : traction insuffisante pour la proposition de valeur initiale, puis pari stratégique qui n’établit pas davantage de dynamique durable. Aucune cause technique n’est établie dans cette séquence."
           },
           "en": {
-            "kitchen": "No oven broke down. The kitchen did exactly what it was built to do. What never arrived were diners for the first menu, and momentum for the one that replaced it.",
+            "kitchen": "No broken oven explains the closure. The first menu lacked diners. After the change, the second also failed to create lasting momentum.",
             "expert": "The failure sits at the level of the product thesis rather than the implementation: too little pull for the initial value proposition, then a strategic bet that also failed to build durable momentum. No technical cause is established anywhere in the sequence."
           }
         }
@@ -143,22 +143,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Noter pourquoi la carte a changé, pas quand",
+          "cuisine": "Suivre la raison du changement de carte avant le silence",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "A menu change warns long before the shutter",
+          "kitchen": "The reason for a menu change warns before silence",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La date où les livraisons s’arrêtent ne dit presque rien. Ce qui compte, c’est pourquoi le patron a changé de carte. Un changement de carte se voit longtemps avant que le rideau descende.",
+            "cuisine": "Le dernier jour de livraison raconte seulement la fin. La raison du changement de carte révèle le problème beaucoup plus tôt. Ici, le patron l’avait annoncée avant la fermeture.",
             "expert": "Le suivi de projet doit capturer pourquoi une direction change, pas seulement quand les commits s’arrêtent. Ici le motif est énoncé publiquement avant l’arrêt d’activité ; un suivi qui n’observe que la cadence des commits ne retient que le silence final."
           },
           "en": {
-            "kitchen": "The date deliveries stop tells you almost nothing. What matters is why the owner rewrote the menu. A menu change shows long before the shutter comes down.",
+            "kitchen": "The last delivery date only records the end. The reason for a menu change reveals trouble much earlier. Here, the owner stated it before closing.",
             "expert": "Project tracking has to capture why a direction changed, not only when commits stopped. Here the reason was stated openly before activity ended, and a tracker watching commit cadence alone would have recorded only the silence."
           }
         }
@@ -169,22 +169,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "CodeGate a baissé le rideau et l’a annoncé",
+          "cuisine": "La maison a annoncé elle-même la fermeture",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "CodeGate says itself that it stopped serving",
+          "kitchen": "The house itself says that service stopped",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le rideau est baissé, et la maison le dit elle-même. Ce n’est pas une cuisine au ralenti qui rouvrirait demain : c’est un essai qu’on a arrêté.",
+            "cuisine": "La maison annonce elle-même que son rideau reste baissé. Il ne s’agit donc pas d’une salle simplement calme. L’essai est officiellement terminé et n’est plus entretenu.",
             "expert": "Projet expérimental déprécié et non maintenu. La dépréciation est déclarée par l’équipe, ce qui en fait un état annoncé et non une inactivité inférée."
           },
           "en": {
-            "kitchen": "The shutter is down and the house says so itself. This is not a kitchen running slow that might reopen tomorrow; it is a trial that was called off.",
+            "kitchen": "The house itself announces that its shutter remains down. This is not merely a quiet room. The experiment is officially over and no longer maintained.",
             "expert": "Deprecated, unmaintained experimental project. The deprecation was declared by the team, so this is a stated status rather than inactivity inferred from silence."
           }
         }
@@ -195,22 +195,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Changer de carte ne remplit pas la salle",
+          "cuisine": "Comprendre la salle vide ne garantit pas son retour",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Understanding an empty room will not fill it",
+          "kitchen": "Understanding an empty room does not fill it",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Changer de carte prouve que le patron a compris pourquoi la salle était vide. Ça ne prouve pas qu’elle se remplira. Les deux se jugent séparément, et jamais le même soir.",
+            "cuisine": "Le patron peut apprendre de l’échec et proposer une nouvelle carte. Cette compréhension ne fait pas revenir les clients à elle seule. L’apprentissage et la survie demandent deux constats séparés.",
             "expert": "Un pivot est une preuve d’apprentissage, pas une garantie de survie. Ici le second pari est documenté aussi clairement que le premier échec, et il n’a pas davantage produit de maintenance durable."
           },
           "en": {
-            "kitchen": "Rewriting the menu proves the owner understood why the room was empty. It does not prove the room will fill. Those are two separate verdicts, and they never arrive on the same night.",
+            "kitchen": "The owner may learn from failure and offer another menu. That understanding alone does not bring diners back. Learning and survival require separate verdicts.",
             "expert": "A pivot is evidence of learning, not proof of survival. The second bet is as well documented as the first failure, and it produced no more durable maintenance than the thesis it replaced."
           }
         }

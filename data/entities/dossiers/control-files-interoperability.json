@@ -27,22 +27,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Même classeur, obéissance différente chez Codex et Gemini",
+          "cuisine": "Deux brigades obéissent différemment au même classeur",
           "expert": "Les fichiers d’instructions projet convergent, leur précédence et leur confiance non"
         },
         "en": {
-          "kitchen": "Codex and Gemini read one binder, differently",
+          "kitchen": "Two brigades obey the same binder differently",
           "expert": "Project instruction files converge; their precedence and trust rules do not"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On a laissé le même classeur de consignes accroché au mur, et Claude Code, Codex et Gemini sont venus cuisiner avec. Deux brigades lisent les mêmes feuilles. Rien ne dit qu’elles accordent la même autorité à la même feuille, ni qu’elles croient la même écriture.",
+            "cuisine": "Le même classeur de consignes passe entre trois cuisines. Deux brigades lisent exactement les mêmes feuilles. Rien ne prouve qu’elles obéissent à la même page ni qu’elles comprennent chaque phrase de la même façon.",
             "expert": "Les fichiers d’instructions projet passent de conventions propres à chaque produit vers une interopérabilité croissante. La compatibilité porte sur les noms et le format. Les règles de précédence et le modèle de confiance restent, eux, les différences critiques."
           },
           "en": {
-            "kitchen": "The same binder of standing orders was left hanging on the wall, and Claude Code, Codex and Gemini came in to cook from it. Two brigades read the same sheets. Nothing says they grant the same authority to the same sheet, or trust the same handwriting.",
+            "kitchen": "The same instruction binder travels through three kitchens. Two brigades read exactly the same pages. Nothing proves that they obey the same page or understand each line in the same way.",
             "expert": "Project instruction files are moving from product-specific conventions toward interoperability. Compatibility covers names and format. Precedence rules and the trust model remain the critical differences."
           }
         }
@@ -53,62 +53,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Un classeur de consignes fait travailler plusieurs brigades",
+          "cuisine": "Le même classeur passe d’une brigade à l’autre",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "One binder started running several kitchens",
+          "kitchen": "The same binder travels from brigade to brigade",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Au départ, chaque maison écrivait ses consignes à sa façon, dans son propre classeur.",
+            "cuisine": "Au début, chaque maison tient son propre classeur. Elle y écrit ses consignes avec ses habitudes.",
             "expert": "Chaque produit a développé ses propres conventions de fichiers d’instructions projet."
           },
           "en": {
-            "kitchen": "At first each house wrote its standing orders its own way, in its own binder.",
+            "kitchen": "At first, each house keeps a separate binder. It writes standing orders according to local habits.",
             "expert": "Each product developed its own conventions for project instruction files."
           }
         },
         {
           "fr": {
-            "cuisine": "Puis les équipes ont voulu qu’un même garde-manger serve à plusieurs brigades, sans réécrire les consignes pour chacune.",
+            "cuisine": "Les équipes veulent ensuite partager un garde-manger entre plusieurs brigades. Elles refusent de recopier toutes les consignes pour chacune.",
             "expert": "Les utilisateurs ont voulu qu’un même repository fonctionne avec plusieurs agents."
           },
           "en": {
-            "kitchen": "Then teams wanted one pantry to serve several brigades without rewriting the orders for each.",
+            "kitchen": "The teams later want one pantry to serve several brigades. They do not want to rewrite every order for each one.",
             "expert": "Users increasingly wanted one repository to work across multiple agents."
           }
         },
         {
           "fr": {
-            "cuisine": "Des renvois et des équivalences sont apparus, pour qu’une feuille écrite ici se lise là-bas.",
+            "cuisine": "Des renvois permettent alors de lire ailleurs une feuille écrite dans la première maison. Les mots semblent ainsi voyager sans nouvelle copie.",
             "expert": "Un support de migration et de compatibilité a commencé à apparaître."
           },
           "en": {
-            "kitchen": "Cross-references and equivalences appeared so a sheet written here could be read there.",
+            "kitchen": "Cross-references then let another house read a sheet written in the first. The words appear to travel without another copy.",
             "expert": "Migration and compatibility support began to appear."
           }
         },
         {
           "fr": {
-            "cuisine": "Mais deux brigades devant la même feuille ne tranchent pas pareil quand deux consignes se contredisent.",
+            "cuisine": "Deux brigades reçoivent pourtant la même feuille. Quand deux consignes s’opposent, elles ne choisissent pas forcément la même.",
             "expert": "Les règles de confiance et de précédence ont exposé des différences sémantiques fines."
           },
           "en": {
-            "kitchen": "But two brigades facing the same sheet do not decide alike when two orders contradict each other.",
+            "kitchen": "Two brigades nevertheless receive the same sheet. When orders clash, they may not choose the same one.",
             "expert": "Trust and precedence rules exposed subtle semantic differences."
           }
         },
         {
           "fr": {
-            "cuisine": "Le classeur n’est plus un pense-bête. C’est lui qui commande le service, d’une cuisine à l’autre.",
+            "cuisine": "Le classeur cesse ainsi d’être une simple aide. Ses feuilles commencent à commander le travail dans plusieurs cuisines.",
             "expert": "Les fichiers d’instructions sont devenus une partie de l’interface partagée entre harnais."
           },
           "en": {
-            "kitchen": "The binder is no longer a memo. It now runs service, from one kitchen to the next.",
+            "kitchen": "The binder stops being a simple reminder. Its pages begin directing work across several kitchens.",
             "expert": "Instruction files became part of the shared interface across harnesses."
           }
         }
@@ -119,22 +119,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une feuille ne dit jamais qui la lit",
+          "cuisine": "La feuille part sans expliquer comment lui obéir",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A sheet never says how far it reaches",
+          "kitchen": "The sheet travels without explaining how to obey it",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une feuille de consignes ne porte jamais ses propres règles d’usage. Qui la lit, jusqu’où elle s’applique, laquelle on croit quand deux feuilles s’opposent : tout cela reste dans la tête de la brigade. Deux classeurs identiques peuvent donc donner deux services différents.",
+            "cuisine": "La feuille contient la consigne, mais pas la manière de la départager d’une autre. Cette habitude reste dans la tête de chaque brigade. Deux copies identiques peuvent donc conduire à des services différents.",
             "expert": "Des fichiers de but identique peuvent porter des sémantiques différentes de portée, de fusion, de confiance et de précédence. La compatibilité syntaxique ne garantit donc pas la compatibilité comportementale : lire le format ne permet pas de prédire la décision appliquée."
           },
           "en": {
-            "kitchen": "An order sheet never carries its own rules of use. Who reads it, how far it reaches, which one is believed when two sheets clash: all of that stays in the brigade’s head. Identical binders can still produce different service.",
+            "kitchen": "A sheet carries the order, but not the way to settle it against another. That habit stays in each brigade’s head. Identical copies can therefore produce different services.",
             "expert": "Files with an identical purpose can carry different scope, merge, trust and precedence semantics. Syntactic compatibility therefore does not guarantee behavioral compatibility: reading the format does not predict the decision applied."
           }
         }
@@ -145,22 +145,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Faire trancher deux consignes qui se contredisent",
+          "cuisine": "Essayer le classeur avec deux ordres opposés",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Make the brigade settle two clashing orders",
+          "kitchen": "Try the binder with two opposing orders",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Avant de confier le classeur à une autre brigade, faites-lui trancher deux consignes qui se contredisent. Sa réponse vous dit laquelle passe devant chez elle. Faire correspondre les intitulés ne vous apprend rien de cet ordre.",
+            "cuisine": "Donnez à la nouvelle brigade deux feuilles qui ordonnent le contraire. Son choix révèle la consigne qu’elle place devant l’autre. Des titres semblables ne permettent pas de le savoir.",
             "expert": "Définir et tester la précédence effective des instructions, en observant la décision produite quand deux sources se contredisent. La correspondance des noms de fichiers n’est pas un test de comportement."
           },
           "en": {
-            "kitchen": "Before handing the binder to another brigade, make it settle two orders that contradict each other. The answer tells you which one wins in that kitchen. Matching the labels teaches you nothing of that kind.",
+            "kitchen": "Give the new brigade two sheets that order opposite actions. Its choice reveals which instruction outranks the other. Matching labels cannot tell you that.",
             "expert": "Define and test effective instruction precedence by observing the decision produced when two sources conflict. File-name matching is not a behavioral test."
           }
         }
@@ -171,22 +171,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Les classeurs circulent, l’accord sur l’autorité non",
+          "cuisine": "Les feuilles voyagent plus vite que les règles de lecture",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Binders travel; agreement on authority does not",
+          "kitchen": "Pages travel faster than the rules for reading them",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le partage des classeurs s’étend d’une maison à l’autre. Ce qui n’a pas suivi au même rythme, c’est l’accord sur la feuille qui commande.",
+            "cuisine": "De plus en plus de maisons partagent leurs classeurs. Elles ne se sont pas accordées aussi vite sur la feuille qui doit l’emporter lors d’un désaccord.",
             "expert": "Une surface d’interopérabilité croissante entre harnais de code. L’accord sur la précédence et la confiance ne progresse pas au même rythme."
           },
           "en": {
-            "kitchen": "Binder sharing keeps spreading from house to house. What has not kept pace is any agreement on which sheet commands.",
+            "kitchen": "More houses keep sharing their binders. Agreement on which sheet wins a disagreement has not travelled as quickly.",
             "expert": "A growing interoperability surface across coding harnesses. Agreement on precedence and trust is not advancing at the same pace."
           }
         }
@@ -197,22 +197,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le même classeur commande deux services différents",
+          "cuisine": "Deux couvertures identiques ne donnent pas le même service",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The label matches, the service does not",
+          "kitchen": "Matching covers do not produce matching service",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Deux classeurs peuvent porter le même intitulé et commander deux services différents. Ce qui compte n’est pas le titre sur la couverture. C’est la feuille que la brigade suit quand deux consignes s’opposent.",
+            "cuisine": "Le même titre peut couvrir deux manières de travailler. Pour comparer les maisons, il faut observer leur choix quand deux feuilles s’opposent. La couverture seule ne commande rien.",
             "expert": "Des noms de fichiers compatibles ne garantissent pas des sémantiques de contrôle compatibles. La propriété à vérifier est la précédence réellement appliquée, pas la reconnaissance du format."
           },
           "en": {
-            "kitchen": "Two binders can carry the same label and command two different services. What counts is not the title on the cover. It is the sheet the brigade follows when two orders clash.",
+            "kitchen": "The same title may cover two ways of working. Compare the choice each brigade makes when pages clash. The cover alone commands nothing.",
             "expert": "Compatible file names do not guarantee compatible control semantics. The property to verify is the precedence actually applied, not format recognition."
           }
         }

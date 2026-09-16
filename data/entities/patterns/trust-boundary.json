@@ -30,22 +30,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Entrer dans une cuisine inconnue, c’est tout accepter",
+          "cuisine": "Au passe — Entrer dans une cuisine inconnue, c’est tout accepter",
           "expert": "Une décision de confiance porte sur tout ce que l’origine peut faire exécuter"
         },
         "en": {
-          "kitchen": "Trusting a kitchen means trusting everything in it",
+          "kitchen": "At the pass — Trusting a kitchen means trusting everything in it",
           "expert": "A trust decision covers everything the origin can cause to run"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Gemini, entrer dans une cuisine inconnue engage tout. Ses consignes punaisées, ses appareils, ses fournisseurs de l’arrière-cour : on accepte l’ensemble d’un seul coup. La maison a choisi de tout fermer ensemble plutôt qu’au cas par cas. Claude Code, Codex, Cline, Goose et OpenHands tranchent cette même entrée chacun à sa façon.",
+            "cuisine": "Dans une cuisine inconnue, les consignes au mur, les appareils branchés et les fournisseurs de l’arrière-cour peuvent tous influer sur le service. Une maison les accepte ou les ferme ensemble dès l’entrée. Cinq autres maisons affrontent la même porte, mais chacune conserve sa propre règle.",
             "expert": "Le modèle de confiance de Gemini CLI désactive ensemble hooks projet, serveurs MCP et fichiers d’instructions dans les dossiers non fiables, les traitant comme une même classe d’influence exécutable. La décision porte sur l’origine, pas sur la nature de chaque sous-système. Claude Code, Codex, Cline, Goose et OpenHands partagent le transport et conservent chacun leur propre politique."
           },
           "en": {
-            "kitchen": "At Gemini, stepping into a kitchen you do not know means taking its pinned orders, its equipment and its back-door suppliers in one go. That house chose to shut them all together rather than one at a time. Claude Code, Codex, Cline, Goose and OpenHands each settle the same entrance their own way.",
+            "kitchen": "In an unknown kitchen, pinned orders, plugged-in equipment, and back-door suppliers can all influence service. One house accepts or closes them together at the entrance. Five other houses face the same door but keep their own rules.",
             "expert": "Gemini CLI’s trust model disables project hooks, MCP servers and instruction files together in untrusted folders, treating them as one class of executable influence. The decision attaches to the origin rather than to the nature of each subsystem. Claude Code, Codex, Cline, Goose and OpenHands share the transport and each keep their own policy."
           }
         }
@@ -56,22 +56,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui entre ne dit pas qui décide",
+          "cuisine": "Au passe — Ce qui entre ne dit pas qui décide",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What comes in never says who decides",
+          "kitchen": "At the pass — What comes in never says who decides",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Les mêmes caisses passent l’entrée de toutes les maisons, et chacune ouvre à qui elle veut. Les classeurs de consignes portent les mêmes titres, et deux brigades ne les suivent pas dans le même ordre. Comparer deux maisons sur ce qui entre n’apprend rien sur qui décide.",
+            "cuisine": "Au service, Les mêmes caisses passent l’entrée de toutes les maisons, et chacune ouvre à qui elle veut. Les classeurs de consignes portent les mêmes titres, et deux brigades ne les suivent pas dans le même ordre. Comparer deux maisons sur ce qui entre n’apprend rien sur qui décide.",
             "expert": "Le signal est un écart entre convergence de forme et divergence de politique. Les fichiers d’instructions projet convergent en noms et en format tandis que précédence et confiance restent les différences critiques ; l’adoption de MCP a réduit les intégrations spécifiques entre harnais sans unifier confiance, permissions, injection, discovery ni enforcement. Une compatibilité de nom ou de transport ne dit rien des droits accordés."
           },
           "en": {
-            "kitchen": "The same crates come through every entrance, and each house still opens to whoever it likes. Order sheets carry the same headings, and two brigades work through them in a different order. Comparing houses on what comes in teaches you nothing about who decides.",
+            "kitchen": "During service, The same crates come through every entrance, and each house still opens to whoever it likes. Order sheets carry the same headings, and two brigades work through them in a different order. Comparing houses on what comes in teaches you nothing about who decides.",
             "expert": "The signal is convergence of form set against divergence of policy. Project instruction files converge on names and format while precedence and trust remain the critical differences; MCP adoption reduced harness-specific integration work without unifying trust, permissions, injection, discovery or enforcement. Compatible naming or transport says nothing about the rights granted."
           }
         }
@@ -82,22 +82,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le papier commande autant que l’inconnu",
+          "cuisine": "Au passe — Le papier commande autant que l’inconnu",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A pinned sheet gives orders like any stranger",
+          "kitchen": "At the pass — A pinned sheet gives orders like any stranger",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Personne ne se méfie d’une feuille de papier ; on se méfie d’un inconnu aux fourneaux. Pourtant la feuille dit quoi faire, l’appareil le fait, et le fournisseur choisit avec quoi. Trier ces trois-là par apparence revient à ne fermer qu’une partie de la pièce.",
+            "cuisine": "Au service, Personne ne se méfie d’une feuille de papier ; on se méfie d’un inconnu aux fourneaux. Pourtant la feuille dit quoi faire, l’appareil le fait, et le fournisseur choisit avec quoi. Trier ces trois-là par apparence revient à ne fermer qu’une partie de la pièce.",
             "expert": "Trois surfaces techniquement distinctes partagent une même propriété de sécurité : l’origine peut à elle seule influencer ou déclencher du comportement. Les classer par sous-système sépare des surfaces porteuses du même risque et laisse ouverte toute surface non énumérée. La tromperie tient à ce que la convergence est visible — noms de fichiers, format d’échange — tandis que précédence, confiance et enforcement ne le sont pas."
           },
           "en": {
-            "kitchen": "Nobody is wary of a sheet of paper; they are wary of a stranger at the stoves. Yet the sheet says what to do, the equipment does it, and the supplier picks what it is done with. Sorting those three by looks shuts half the room and calls the room shut.",
+            "kitchen": "During service, Nobody is wary of a sheet of paper; they are wary of a stranger at the stoves. Yet the sheet says what to do, the equipment does it, and the supplier picks what it is done with. Sorting those three by looks shuts half the room and calls the room shut.",
             "expert": "Three technically distinct surfaces share one security property: the origin alone can influence or trigger behaviour. Classifying them by subsystem separates surfaces that carry identical risk and leaves every unenumerated surface open. What deceives is that convergence is visible — file names, exchange format — while precedence, trust and enforcement are not."
           }
         }
@@ -108,22 +108,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Gemini décide tout à l’entrée, d’un seul coup",
+          "cuisine": "Au passe — Une seule décision couvre toute la cuisine",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Gemini settles the whole room at the door",
+          "kitchen": "At the pass — One door decision covers the whole kitchen",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Décide à l’entrée, une seule fois, et fais valoir ce choix sur tout ce que la pièce contient. Quand tu compares deux maisons, regarde à part qui entre, ce qu’on accepte, et ce qu’on fait d’une livraison douteuse. Chez Gemini, c’est déjà la pratique ; ailleurs, chacun a gardé sa règle.",
+            "cuisine": "Décide une seule fois au seuil, puis applique ce choix à toute la cuisine. Pour comparer deux maisons, regarde séparément les entrées autorisées, les produits acceptés et le traitement des livraisons douteuses. Ce couplage fonctionne déjà dans le cas observé ; ailleurs, chaque cuisine garde sa propre règle.",
             "expert": "Appliquer la décision de confiance à toutes les surfaces d’exécution et de contexte contrôlées par l’origine, et non sous-système par sous-système. Évaluer séparément le support d’un protocole commun et les sémantiques de politique locale : une équivalence de transport ne vaut pas équivalence de sécurité, et des noms de fichiers compatibles ne garantissent pas des sémantiques de contrôle compatibles. Le couplage de Gemini CLI est décrit comme un comportement en place ; la divergence de politique entre produits persiste."
           },
           "en": {
-            "kitchen": "Make the call at the door, once, and let it hold for everything the room contains. When you compare two houses, look separately at who gets in, what is accepted, and what happens to a doubtful delivery. At Gemini that is already the practice; elsewhere each house kept its own rule.",
+            "kitchen": "Make one decision at the threshold, then apply it across the whole kitchen. To compare two houses, inspect allowed entrants, accepted goods, and doubtful deliveries separately. This coupling already works in the observed case; elsewhere each kitchen keeps its own rule.",
             "expert": "Apply the trust decision to every execution and context surface the origin controls, not subsystem by subsystem. Assess support for a shared protocol separately from local policy semantics: transport equivalence is not security equivalence, and compatible file names do not guarantee compatible control semantics. Gemini CLI’s coupling is described as behaviour already in place, while policy divergence across products persists."
           }
         }
@@ -134,22 +134,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Deux maisons se ressemblent au quai, pas aux fourneaux",
+          "cuisine": "Au passe — Deux maisons se ressemblent au quai, pas aux fourneaux",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Two houses match at the dock and nowhere else",
+          "kitchen": "At the pass — Two houses match at the dock and nowhere else",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un endroit qui peut changer ta façon de cuisiner tient déjà ton service, même si tu ne fais qu’y passer. Et deux maisons qui reçoivent les mêmes caisses ne se ressemblent que sur le quai.",
+            "cuisine": "Au service, Un endroit qui peut changer ta façon de cuisiner tient déjà ton service, même si tu ne fais qu’y passer. Et deux maisons qui reçoivent les mêmes caisses ne se ressemblent que sur le quai.",
             "expert": "Si une origine peut influencer l’exécution, sa confiance doit être traitée comme celle d’un control plane complet ; le critère est la capacité d’influence, pas la nature du fichier. Un format de transport commun ne crée pas une frontière de confiance commune, et des noms compatibles ne garantissent pas des sémantiques de contrôle compatibles."
           },
           "en": {
-            "kitchen": "A place that can change how you cook already runs your service, even if you are only passing through. And two houses taking the same crates resemble each other on the loading dock alone.",
+            "kitchen": "During service, A place that can change how you cook already runs your service, even if you are only passing through. And two houses taking the same crates resemble each other on the loading dock alone.",
             "expert": "If an origin can influence execution, its trust must be treated as that of a full control plane; the criterion is the capacity to influence, not the nature of the file. A common transport format does not create a common trust boundary, and compatible names do not guarantee compatible control semantics."
           }
         }

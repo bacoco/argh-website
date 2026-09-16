@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La clochette sonne pareil, plat réussi ou brûlé",
+          "cuisine": "La même clochette sonnait pour un plat servi et un plat perdu",
           "expert": "Le résultat doit être lisible sans personne pour regarder"
         },
         "en": {
-          "kitchen": "The same bell whether it worked or burned",
+          "kitchen": "The same bell rang for a served plate and a lost one",
           "expert": "The outcome has to be readable with nobody watching"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La nuit, personne en salle et personne au passe. Toute la maison ne reçoit qu’une chose : un coup de clochette qui dit que c’est fait. Chez Aider, pendant plus d’un an, la clochette sonnait pareil que le plat soit sorti ou brûlé.",
+            "cuisine": "La nuit, personne ne regardait la salle ni le passe. La maison ne recevait qu’un coup de clochette disant que c’était fini. Pendant plus d’un an, la même sonnerie a annoncé un plat servi et un plat perdu.",
             "expert": "Le contrat headless exige des signaux machine fiables pour distinguer succès, échec, blocage et résultat incomplet sans inspection interactive. Un dossier de ce corpus en établit la rupture sur Aider : pendant plus d’un an, des mécanismes de panne différents pouvaient tous se terminer avec un code de succès. Le canal unique dont dispose l’appelant devenait alors non informatif."
           },
           "en": {
-            "kitchen": "At night there is nobody in the room and nobody at the pass. The whole house gets one thing only: a ring of the bell saying it is done. At Aider, for more than a year, the bell rang the same whether the plate went out or burned.",
+            "kitchen": "At night, nobody watched the room or pass. The house received only a bell saying it was done. For more than a year, that same sound announced a served plate and a lost one.",
             "expert": "A headless contract requires reliable machine-readable signals separating success, failure, blockage and incomplete outcome without interactive inspection. One dossier in this corpus records the break in Aider: for over a year, different failure mechanisms could all terminate with a success code. The single channel available to the caller carried no information at all."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Chez Aider, la même sonnerie pour chaque panne",
+          "cuisine": "Le matin, les plats manquaient malgré la bonne sonnerie",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "At Aider, plates missing and the bell fine",
+          "kitchen": "By morning, plates were missing despite the fine bell",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Tu le découvres au matin, jamais la nuit : la clochette a sonné et il manque des plats. Des pannes très différentes finissent toutes sur le même son. Et rien, dans ce son, ne dit si la cuisine s’est arrêtée à mi-course ou si elle n’a jamais commencé.",
+            "cuisine": "Le matin, la clochette avait sonné mais des plats manquaient. Des pannes très différentes finissaient toutes par le même son. Rien ne disait si la cuisine s’était arrêtée à mi-course ou n’avait jamais commencé.",
             "expert": "Le signal est un code de sortie de succès obtenu sur des chemins de panne hétérogènes, constaté sur une durée supérieure à un an chez Aider. Le second signal est l’absence de valeur distincte pour les états intermédiaires : blocage et résultat incomplet se replient sur le même code que le succès. La détection est nécessairement décalée, puisque aucune inspection interactive n’a lieu."
           },
           "en": {
-            "kitchen": "You find it in the morning, never at night: the bell rang and plates are missing. Failures of completely different kinds all end on the same sound. And nothing in that sound tells you whether the kitchen stopped halfway or never started at all.",
+            "kitchen": "By morning, the bell had rung but plates were missing. Very different failures all ended with one sound. Nothing said whether the kitchen stopped halfway or never started.",
             "expert": "The signal is a success exit code reached through heterogeneous failure paths, observed over more than a year in Aider. The second signal is the absence of distinct values for intermediate states: blockage and incomplete outcome collapse onto the same code as success. Detection is necessarily delayed, since no interactive inspection takes place."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "De nuit, la sonnerie remplace l’assiette",
+          "cuisine": "Une sonnerie unique ne distinguait plus aucune fin",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "In daylight nobody needs the bell",
+          "kitchen": "One bell no longer distinguished any ending",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le jour, quelqu’un regarde l’assiette et la clochette n’est qu’un détail. La nuit, la clochette est tout ce qui reste, et ce détail négligé devient la seule parole de la maison. Un son qui ne change jamais ne peut pas se tromper, mais il ne peut rien apprendre à personne.",
+            "cuisine": "Le jour, quelqu’un pouvait regarder l’assiette et la clochette comptait peu. La nuit, elle devenait la seule parole de la maison. Un son qui ne changeait jamais pouvait rester exact sans rien apprendre à personne.",
             "expert": "En mode interactif, le code de sortie est redondant avec l’observation humaine, ce qui le fait traiter comme cosmétique. Sans interface, il devient le canal unique, et sa dégradation supprime toute capacité de décision chez l’appelant. Un code constant est trivialement cohérent et porte zéro information : il ne discrimine plus succès, échec, blocage ni résultat incomplet."
           },
           "en": {
-            "kitchen": "In daylight someone looks at the plate and the bell is a detail. At night the bell is all that is left, and that neglected detail becomes the only speech the house has. A sound that never changes cannot be wrong, and it cannot teach anyone anything.",
+            "kitchen": "In daylight, someone could inspect the plate and the bell mattered little. At night, it became the house’s only voice. A sound that never changed could remain exact while teaching nobody anything.",
             "expert": "Under interactive use the exit code duplicates human observation, which is why it gets treated as cosmetic. With no interface it becomes the only channel, and its degradation removes the caller’s ability to decide anything. A constant code is trivially consistent and carries zero information: it no longer separates success, failure, blockage or incomplete outcome."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La clochette compte autant que l’assiette",
+          "cuisine": "Donner un son différent à chaque fin de service",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Test the bell when nobody is listening",
+          "kitchen": "Give every ending of service a different sound",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Donne un son distinct à chaque fin possible : plat parti, plat raté, cuisine bloquée, moitié de commande seulement. Traite ce son aussi sérieusement que le plat, pas comme une finition. Et éprouve-le à l’heure où personne ne regarde, puisque c’est la seule heure où il sert.",
+            "cuisine": "Donnez un son distinct au plat servi, au plat raté, à la cuisine arrêtée et à la commande incomplète. Traitez cette sonnerie aussi sérieusement que l’assiette. Essayez-la la nuit, lorsque personne ne peut regarder le service.",
             "expert": "Les états terminaux doivent être distincts et stables : succès, échec, blocage, résultat incomplet, chacun avec sa valeur propre. Le code de sortie relève du contrat produit et doit être testé sur les chemins de panne, pas seulement sur le chemin nominal. La preuve doit être prise en exécution non interactive, seule condition où le contrat s’applique."
           },
           "en": {
-            "kitchen": "Give a distinct sound to every possible ending: plate away, plate ruined, kitchen stuck, half the order only. Treat that sound as seriously as the plate, not as a trimming. And try it out at the hour when nobody is watching, since that is the only hour it serves.",
+            "kitchen": "Give separate sounds to a served plate, a failed one, a stopped kitchen, and an incomplete order. Treat the bell as seriously as the plate. Try it at night, when no one can watch service.",
             "expert": "Terminal states must be distinct and stable: success, failure, blockage, incomplete outcome, each with its own value. The exit code belongs to the product contract and must be tested along failure paths, not only along the nominal path. Evidence has to be taken in non-interactive execution, the only condition under which the contract applies."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une clochette toujours pareille ne dit plus rien",
+          "cuisine": "Quand personne ne regarde, la sonnerie devient la parole du service",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "One sound for every failure is silence",
+          "kitchen": "When nobody watches, the bell becomes service’s voice",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Quand personne ne regarde, la seule chose que tu livres vraiment, c’est ce que tu annonces. Une clochette qui sonne pareil dans tous les cas n’est pas un détail de finition : c’est la maison qui a cessé de parler.",
+            "cuisine": "Quand personne ne regarde, la sonnerie est le seul message livré par la cuisine. Si elle dit toujours la même chose, elle ne permet plus aucune décision. Ce n’est pas un détail, c’est le service qui se tait.",
             "expert": "Un exit code vert fait partie du contrat produit, ce n’est pas un détail cosmétique. En exécution non interactive, la fiabilité du signal terminal est la seule garantie disponible, et un succès uniforme la supprime entièrement."
           },
           "en": {
-            "kitchen": "When nobody is watching, the only thing you truly deliver is what you announce. A bell that rings the same in every case is not a finishing detail; it is the house going silent.",
+            "kitchen": "When nobody watches, the bell is the kitchen’s only message. If it always says the same thing, it allows no decision. That is not a detail; service has gone silent.",
             "expert": "A green exit code is part of the product contract, not a cosmetic detail. In non-interactive execution the reliability of the terminal signal is the only guarantee available, and a uniform success removes it entirely."
           }
         }

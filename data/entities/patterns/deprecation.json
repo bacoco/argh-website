@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Un plat encore servi que la maison arrête",
+          "cuisine": "Un plat encore servi avait déjà été retiré de l’avenir",
           "expert": "Un élément encore disponible dont l’usage futur est déconseillé"
         },
         "en": {
-          "kitchen": "Still on the stove, already announced as finished",
+          "kitchen": "Still served, already removed from the future",
           "expert": "An element still available whose future use is discouraged"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une maison peut prévenir qu’elle arrête un plat bien avant de retirer la casserole. Chez CodeGate, la salle ne se remplissait pas ; le patron a changé de carte, puis annoncé lui-même qu’il n’entretenait plus rien. L’annonce est venue de la maison, pas d’une porte trouvée close.",
+            "cuisine": "Un plat pouvait encore sortir alors que le patron annonçait qu’il ne le referait plus. La salle ne se remplissait pas, la carte a changé, puis l’arrêt a été dit clairement. La nouvelle est venue de la cuisine elle-même, pas d’une salle silencieuse.",
             "expert": "La dépréciation marque un élément encore disponible dont l’usage futur est déconseillé ou voué au remplacement. Chez CodeGate, la faible adoption de la thèse initiale de protection des assistants de code est reconnue explicitement, l’équipe pivote vers les workflows d’agents, puis déclare le projet déprécié et non maintenu au titre d’expérimentation. L’état est annoncé par l’équipe, non déduit d’une inactivité."
           },
           "en": {
-            "kitchen": "A house can announce it is dropping a dish long before the pan leaves the stove. At CodeGate the room never filled; the owner rewrote the menu, then said plainly that nothing was being kept up any more. The word came from the house, not from a door found locked.",
+            "kitchen": "A dish could still leave the pass while the owner announced it would not be made again. The room was not filling, the menu changed, and the ending was plainly stated. The word came from the kitchen itself, not from a silent room.",
             "expert": "Deprecation marks an element that remains available while future use is discouraged or scheduled for replacement. CodeGate explicitly acknowledged weak adoption of its original thesis of protecting code assistants, pivoted to agent workflows, then declared the project deprecated and unmaintained as an experiment. The status was announced by the team rather than inferred from inactivity."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le patron de CodeGate a prévenu avant l’arrêt",
+          "cuisine": "La raison de l’arrêt a été dite avant le silence",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "CodeGate announced the change before deliveries stopped",
+          "kitchen": "The reason for stopping was spoken before silence",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On le repère à une phrase dite tout haut, pas à une cuisine éteinte. Le patron explique pourquoi il change de carte, souvent bien avant que les livraisons s’arrêtent. Qui ne surveille que la porte de derrière voit le dernier jour, jamais la raison.",
+            "cuisine": "Le signe était une phrase annoncée, pas des fourneaux éteints. Le patron expliquait pourquoi la carte changeait avant que les livraisons cessent. Regarder seulement le dernier jour faisait perdre toute la raison.",
             "expert": "Le signal est déclaratif : statut annoncé, motif énoncé, le plus souvent avant toute baisse d’activité. Chez CodeGate, le constat d’adoption précède le pivot, qui précède la déclaration de dépréciation. Un suivi fondé sur la cadence des contributions ne retient que le silence final et manque la séquence entière."
           },
           "en": {
-            "kitchen": "You catch it in a sentence said out loud, not in a dark kitchen. The owner explains why the menu is changing, often long before deliveries stop. Watch only the back door and you get the last day, never the reason.",
+            "kitchen": "The sign was a sentence spoken aloud, not cold stoves. The owner explained why the menu changed before deliveries stopped. Watching only the final day lost the reason entirely.",
             "expert": "The signal is declarative: a stated status and a stated motive, usually ahead of any drop in activity. At CodeGate the adoption finding precedes the pivot, which precedes the deprecation notice. Tracking built on contribution cadence records only the final silence and misses the whole sequence."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un four qui chauffe ne promet pas demain",
+          "cuisine": "Un four chaud ne disait pas que le plat avait un avenir",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A hot oven is no promise of tomorrow",
+          "kitchen": "A hot oven did not say the dish had a future",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Rien ne casse. Le plat est bon, la casserole chauffe, la carte le mentionne encore. On lit « ça marche » et on entend « on continue », alors que ce sont deux choses différentes. Chez CodeGate aucun four n’a lâché : ce sont les clients qui ne sont pas venus.",
+            "cuisine": "Rien ne cassait : le plat restait bon et le four chauffait encore. Mais « cela marche » ne voulait pas dire « cela continue ». L’arrêt portait sur la carte et la salle, non sur une casserole défectueuse.",
             "expert": "La dépréciation sépare deux propriétés que le lecteur confond couramment : la disponibilité et le soutien. Un élément qui fonctionne encore se lit comme un élément encore maintenu, alors que la déclaration dit l’inverse. Chez CodeGate, l’échec porte sur la thèse produit et aucune cause technique n’est établie dans la séquence."
           },
           "en": {
-            "kitchen": "Nothing breaks. The dish is good, the pan is hot, the menu still lists it. You read “it works” and you hear “it stays,” and those are two different things. At CodeGate no oven failed; the diners simply did not come.",
+            "kitchen": "Nothing broke: the dish remained good and the oven still heated. But “it works” did not mean “it continues.” The ending concerned the menu and room, not a faulty pan.",
             "expert": "Deprecation splits two properties readers routinely merge: availability and support. Something that still runs reads as something still maintained, while the declaration says the opposite. At CodeGate the failure is one of product thesis, and no technical cause is established in the sequence."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Garder la raison donnée par le patron",
+          "cuisine": "Préparer le remplaçant pendant que le plat peut encore sortir",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Line up the replacement while the dish still sells",
+          "kitchen": "Prepare the replacement while the dish can still leave",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Noter la phrase et sa date, pas seulement le jour où la cuisine s’éteint. Garder la raison donnée par le patron, parce que c’est elle qui prévient les autres maisons. Et préparer le remplaçant tant que le plat sort encore, plutôt que le soir où il ne sort plus.",
+            "cuisine": "Notez la phrase, sa date et la raison donnée par le patron. Distinguez un plat encore disponible d’un plat encore recommandé. Préparez le remplaçant tant que l’ancien peut encore sortir.",
             "expert": "Enregistrer le statut déclaré et le motif énoncé au moment de l’annonce, séparément de toute mesure d’activité. Traiter « disponible » et « recommandé » comme deux faits distincts dans le suivi. Planifier le remplacement pendant la fenêtre où l’élément fonctionne encore, seule fenêtre que la déclaration garantisse."
           },
           "en": {
-            "kitchen": "Write down the sentence and its date, not only the day the kitchen goes dark. Keep the reason the owner gave, because that is what warns the other houses. And line up the replacement while the dish still leaves the pass, not on the night it stops.",
+            "kitchen": "Write down the sentence, its date, and the reason the owner gave. Separate a dish still available from one still recommended. Prepare the replacement while the old dish can still leave.",
             "expert": "Record the declared status and the stated motive at announcement time, separately from any activity measure. Track “available” and “recommended” as two distinct facts. Plan the replacement during the window in which the element still works, the only window the declaration guarantees."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Changer de carte n’est pas remplir la salle",
+          "cuisine": "Un arrêt annoncé n’est pas une panne cachée",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A new menu does not fill the room",
+          "kitchen": "An announced ending is not a hidden failure",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un plat qui sort encore n’est pas un plat qu’on refera. Et changer de carte prouve que le patron a compris pourquoi la salle était vide, pas qu’elle se remplira.",
+            "cuisine": "Un plat peut rester disponible après que son avenir a été retiré. L’annonce d’arrêt dit une décision de maison. Elle ne prouve ni une panne de cuisson ni le succès de la nouvelle carte.",
             "expert": "La dépréciation est un état annoncé, pas une inactivité déduite : disponibilité et maintenance se constatent séparément. Un pivot atteste un apprentissage, pas une survie."
           },
           "en": {
-            "kitchen": "A dish that still leaves the pass is not a dish anyone will make again. And rewriting the menu proves the owner understood the empty room, not that the room will fill.",
+            "kitchen": "A dish can remain available after its future is withdrawn. An ending announcement states a house decision. It proves neither a cooking failure nor the success of the new menu.",
             "expert": "Deprecation is an announced status, not inferred inactivity: availability and maintenance are established separately. A pivot evidences learning, not survival."
           }
         }

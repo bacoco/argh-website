@@ -44,22 +44,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Des cuisines qui s'ignorent adoptent les mêmes gestes",
+          "cuisine": "Des cuisines séparées ont adopté les mêmes gestes",
           "expert": "Des harnais indépendants font apparaître les mêmes primitives de contrôle"
         },
         "en": {
-          "kitchen": "Separate kitchens land on the same few habits",
+          "kitchen": "Separate kitchens adopted the same moves",
           "expert": "Independent harnesses grow the same control primitives"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ces maisons ne se copient pas ; elles tombent sur les mêmes soirs difficiles. Alors elles posent les mêmes gestes : une main au passe, une fiche par tour de main. Puis un plan de travail par cuisinier, et un carnet pour reprendre le service après la coupure. Claude Code, Codex, Cline, Goose, Gemini CLI, OpenHands : c’est la même contrainte rencontrée chacun de son côté, pas une mode.",
+            "cuisine": "Des cuisines qui ne se copiaient pas ont rencontré les mêmes soirs difficiles. Elles ont ajouté une main au passe, une fiche de travail, un plan par cuisinier et un carnet de reprise. Cette ressemblance vient d’un même besoin, pas d’une mode.",
             "expert": "Plusieurs harnais majeurs ajoutent indépendamment les mêmes mécanismes périphériques : hooks, skills, délégation, confiance, reprise, isolation du workspace et protocoles d’outils. Les hooks y passent de la notification de lifecycle vers l’application de politique, le blocage, l’injection de contexte et le contrôle de reprise ; les skills accumulent discovery, precedence, activation, packaging et budget de contexte ; les worktrees passent de discipline développeur à infrastructure gérée par le runtime. Le signal inter-produits le plus fort n’est pas une fonctionnalité isolée mais ce plan de contrôle périphérique commun."
           },
           "en": {
-            "kitchen": "Nobody here is copying anybody. The same hard nights keep arriving, and the same answers get invented: a hand at the pass, a card per dish. Then a bench of your own, and a notebook so service can be picked up after the break. Claude Code, Codex, Cline, Goose, Gemini CLI, OpenHands — each met the constraint alone, and each moved the same way.",
+            "kitchen": "Kitchens that did not copy one another met the same hard nights. They added a hand at the pass, a work card, a bench for each cook, and a book for resuming. The resemblance comes from one need, not a fashion.",
             "expert": "Several major harnesses independently add the same peripheral mechanisms: hooks, skills, delegation, trust, recovery, workspace isolation and tool protocols. Hooks move from lifecycle notification toward policy enforcement, blocking, context injection and resume control; skills accumulate discovery, precedence, activation, packaging and context budget; worktrees move from developer discipline into runtime-managed infrastructure. The strongest cross-product signal is not an individual feature but this shared peripheral control plane."
           }
         }
@@ -70,22 +70,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une langue commune pour commander, MCP",
+          "cuisine": "Les mêmes gestes portaient presque les mêmes noms",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Everyone orders in the same language now, MCP",
+          "kitchen": "The same moves carried nearly the same names",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On le repère quand plusieurs maisons ajoutent la même chose la même année, sans s’être vues, et lui donnent presque le même nom. On le repère aussi quand elles se mettent à commander dans une langue commune, MCP, chez les mêmes fournisseurs. Le geste se ressemble d’une maison à l’autre ; ce qu’on a le droit d’en faire, non.",
+            "cuisine": "Le signe le plus net est le même geste inventé par plusieurs maisons au même moment. Elles peuvent même employer une même langue pour parler aux fournisseurs. Pourtant, les droits accordés à ce geste restent différents dans chaque cuisine.",
             "expert": "Le même mécanisme apparaît dans plusieurs produits sans filiation, sous une dénomination proche : c’est le signal de convergence. L’adoption de MCP en est la forme la plus nette, puisqu’elle a réduit le travail d’intégration spécifique entre les principaux harnais. Second signal, immédiat : la convergence est forte sur l’architecture, tandis que confiance, permissions, injection, discovery et application des règles restent des décisions propres à chaque produit."
           },
           "en": {
-            "kitchen": "You spot it when several houses add the same thing in the same year, never having met, and give it nearly the same name. You spot it again when they start ordering in one shared language, MCP, from the same suppliers. The move looks alike from house to house; what you are allowed to do with it does not.",
+            "kitchen": "The clearest sign is the same move invented by several houses at once. They may even use one shared language with suppliers. Yet the rights given to that move remain different in every kitchen.",
             "expert": "The same mechanism appears across unrelated products under close naming: that is the convergence signal. MCP adoption is its clearest form, having cut bespoke integration work between the major harnesses. The immediate second signal: convergence is strong at the architectural level while trust, permissions, injection, discovery and enforcement stay per-product decisions."
           }
         }
@@ -96,22 +96,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Même nom, même moment, décision différente",
+          "cuisine": "Un geste commun ne donnait pas le même droit",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Same name, same moment, a different call",
+          "kitchen": "A common move did not grant the same right",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La ressemblance est vraie, et c’est précisément ce qui trompe. Deux maisons posent la même main au passe : chez l’une elle regarde, chez l’autre elle retient le plat. Le geste a le même nom, le même moment, la même allure. Ce qu’il décide, et ce qui arrive quand il manque, n’a jamais été le même.",
+            "cuisine": "La ressemblance est vraie, et c’est pourquoi elle trompe. La même main au passe peut regarder dans une cuisine et retenir une assiette dans une autre. Son nom et sa place ne disent ni ce qu’elle décide ni ce qui arrive quand elle manque.",
             "expert": "La convergence porte sur la forme et l’emplacement des mécanismes, pas sur leur sémantique. Un protocole commun normalise l’échange de messages, pas le droit de se connecter, pas ce qui peut s’exécuter, pas le traitement des pannes — précisément les points que la spécification laisse ouverts. Le raccourci consiste à lire une équivalence de comportement là où seule une équivalence d’architecture est établie."
           },
           "en": {
-            "kitchen": "The likeness is real, and that is exactly what fools people. Two houses put the same hand at the pass: in one it only watches, in the other it holds the plate back. Same name, same moment in service, same look to it. What it decides, and what happens when it is missing, was never the same thing.",
+            "kitchen": "The likeness is real, which is why it misleads. The same hand at the pass may watch in one kitchen and hold a plate in another. Its name and place say neither what it decides nor what happens when it is absent.",
             "expert": "Convergence covers the shape and placement of mechanisms, not their semantics. A shared protocol standardises message exchange, not the right to connect, not what may execute, not how failures are handled — exactly the points the specification leaves open. The shortcut is to read behavioural equivalence where only architectural equivalence has been established."
           }
         }
@@ -122,22 +122,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Demande ce que le geste décide, maison par maison",
+          "cuisine": "Demander le droit du geste dans chaque cuisine",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Ask what the move decides, house by house",
+          "kitchen": "Ask what each move may decide in every kitchen",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ne demande pas si la maison fait le geste. Demande ce qu’il décide chez elle, combien de temps il dure, et ce qui se passe quand personne ne répond. Pose les trois questions dans chaque maison, même quand le geste porte partout le même nom. Ce qui sépare deux maisons, ce n’est plus la main du cuisinier, c’est ce qu’on a monté autour de lui.",
+            "cuisine": "Ne demandez pas seulement si une cuisine fait ce geste. Demandez ce qu’il peut décider, combien de temps il agit et ce qui arrive sans réponse. Posez ces questions partout, même si le geste semble identique.",
             "expert": "Évaluer séparément le support d’un mécanisme et ses sémantiques : autorité, comportement en échec, contournement, précédence, permissions. Aucune ne se déduit du fait qu’un produit annonce supporter les hooks, les skills ou un protocole d’outils, et une équivalence de transport ne vaut pas preuve d’équivalence de sécurité. L’unité d’évaluation pertinente est le plan de contrôle et ses transitions d’état, pas la carte des fonctionnalités."
           },
           "en": {
-            "kitchen": "Do not ask whether a house makes the move. Ask what it decides there, how long it lasts, and what happens when nobody answers. Put those three questions to every house, even where the move carries the same name everywhere. What separates two houses is no longer the cook’s hand; it is what has been built around it.",
+            "kitchen": "Do not ask only whether a kitchen makes the move. Ask what it may decide, how long it lasts, and what happens without an answer. Put those questions everywhere, even when the move looks identical.",
             "expert": "Assess support for a mechanism separately from its semantics: authority, failure behaviour, bypass, precedence, permissions. None of them follows from a product announcing hooks, skills or a tool protocol, and transport equivalence is not evidence of security equivalence. The useful unit of evaluation is the control plane and its state transitions, not the feature matrix."
           }
         }
@@ -148,22 +148,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le geste est partout, la règle non",
+          "cuisine": "Le même geste ne fait pas la même cuisine",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The move is everywhere, the rule is not",
+          "kitchen": "The same move does not make the same kitchen",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Quand toutes les maisons posent le même geste, ce n’est plus lui qui les sépare : c’est ce qu’il a le droit de décider. Et ce qu’on a monté autour du cuisinier pèse désormais plus lourd que son talent.",
+            "cuisine": "Un geste commun montre que les cuisines répondent au même besoin. Il ne prouve pas qu’elles prennent les mêmes décisions. Ce qui entoure le cuisinier compte alors autant que son talent.",
             "expert": "Une convergence d’architecture n’est pas une convergence de décision : un format commun ne crée pas une frontière de confiance commune. Dans les systèmes d’agents en production, c’est le harnais, et non la capacité brute du modèle, qui détermine de plus en plus si l’intelligence devient utile."
           },
           "en": {
-            "kitchen": "When every house ends up making the same move, the move is no longer what separates them: what it is allowed to decide is. And what has been built around the cook now weighs more than his talent.",
+            "kitchen": "A common move shows that kitchens answer the same need. It does not prove they make the same decisions. What surrounds the cook then matters as much as the cook’s skill.",
             "expert": "Architectural convergence is not decision convergence: a common format does not create a common trust boundary. In production agent systems it is the harness, rather than raw model capability, that increasingly determines whether intelligence becomes useful."
           }
         }

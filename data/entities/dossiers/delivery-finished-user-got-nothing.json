@@ -24,22 +24,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "OpenClaw a coché un plat jamais servi",
+          "cuisine": "La cuisine coche un plat que le client ne reçoit jamais",
           "expert": "Travail terminé côté producteur, résultat jamais reçu côté utilisateur"
         },
         "en": {
-          "kitchen": "OpenClaw ticked off a plate nobody received",
+          "kitchen": "The kitchen ticks off a plate the diner never receives",
           "expert": "Work completed on the producer side, result never received by the user"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez OpenClaw, le plat était prêt, dressé, parfait. La cuisine a coché la commande comme terminée, et de son point de vue elle avait raison. Sauf que le client, en salle, n’a rien vu arriver. Entre le passe et sa table, quelque chose s’est arrêté sans prévenir.",
+            "cuisine": "Le plat est prêt et parfaitement dressé au passe. La cuisine coche donc la commande comme terminée. Pourtant, le client ne reçoit rien. Quelque chose s’est arrêté entre le passe et sa table.",
             "expert": "La complétion interne pouvait être vraie alors que le résultat final n’atteignait jamais l’utilisateur. Le cas expose generated, persisted, queued, sent et received comme cinq états distincts, qu’un seul drapeau de complétion confondait."
           },
           "en": {
-            "kitchen": "At OpenClaw the plate was ready, plated, perfect. The kitchen ticked the order off as finished, and from where it stood that was true. Except the customer, out in the room, never saw anything arrive. Between the pass and the table, something stopped without a word.",
+            "kitchen": "The plate is ready and perfectly dressed at the pass. The kitchen therefore ticks the order as finished. Yet the diner receives nothing. Something stopped between the pass and the table.",
             "expert": "Internal completion could be true while the final result never reached the user. The case exposes generated, persisted, queued, sent and received as five distinct states that a single completion flag conflated."
           }
         }
@@ -50,62 +50,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Coché au passe, perdu avant la table",
+          "cuisine": "La commande est cochée avant d’atteindre le client",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Ticked at the pass, lost before the table",
+          "kitchen": "The order is ticked before reaching the diner",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le plat sort correctement de la cuisine, rien à redire dessus.",
+            "cuisine": "La cuisine prépare correctement le plat. Rien dans l’assiette n’explique la suite de l’échec.",
             "expert": "L’agent produit un résultat final valide."
           },
           "en": {
-            "kitchen": "The plate leaves the kitchen properly; there is nothing wrong with it.",
+            "kitchen": "The kitchen prepares the dish correctly. Nothing on the plate explains the failure that follows.",
             "expert": "The agent produced a valid final result."
           }
         },
         {
           "fr": {
-            "cuisine": "Il est posé sur l’étagère du passe, et la commande est cochée.",
+            "cuisine": "Le commis pose l’assiette sur l’étagère du passe. À cet instant, la cuisine coche la commande.",
             "expert": "Le résultat est persisté en interne."
           },
           "en": {
-            "kitchen": "It is set on the pass shelf, and the order is ticked off.",
+            "kitchen": "The cook sets the plate on the pass shelf. At that moment, the kitchen ticks the order.",
             "expert": "The result was persisted internally."
           }
         },
         {
           "fr": {
-            "cuisine": "La cuisine considère le service fait : pour elle, la commande est sortie.",
+            "cuisine": "Pour la brigade, le plat a quitté son travail. Elle considère donc que la commande est entièrement servie.",
             "expert": "Le système considère la tâche comme terminée."
           },
           "en": {
-            "kitchen": "The kitchen counts the service as done: as far as it knows, the order left.",
+            "kitchen": "For the brigade, the plate has left its work. It therefore considers the order fully served.",
             "expert": "The system considered the task complete."
           }
         },
         {
           "fr": {
-            "cuisine": "Mais le trajet du passe jusqu’à la table échoue, ou ne se termine jamais.",
+            "cuisine": "Après le passe, le transport vers la table échoue ou reste inachevé. L’assiette n’arrive jamais au client.",
             "expert": "Le chemin de livraison finale échoue ou ne se termine pas."
           },
           "en": {
-            "kitchen": "But the trip from the pass to the table fails, or never finishes.",
+            "kitchen": "After the pass, the journey to the table fails or remains unfinished. The plate never reaches the diner.",
             "expert": "The final delivery path failed or never completed."
           }
         },
         {
           "fr": {
-            "cuisine": "Le client attend devant une table vide, pendant que la cuisine se félicite d’un service qu’elle croit terminé.",
+            "cuisine": "Le client attend toujours devant une place vide. En cuisine, le tableau présente pourtant sa commande comme une réussite.",
             "expert": "L’utilisateur n’observe aucun résultat malgré le succès interne enregistré."
           },
           "en": {
-            "kitchen": "The customer waits at an empty table while the kitchen congratulates itself on a service it believes is over.",
+            "kitchen": "The diner still waits before an empty place. In the kitchen, the board nevertheless records the order as successful.",
             "expert": "The user observed no result despite the internal success recorded."
           }
         }
@@ -116,22 +116,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "OpenClaw comptait le service fini au passe",
+          "cuisine": "La cuisine croyait le service fini dès le passe",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Finished meant out of the kitchen door",
+          "kitchen": "Finished wrongly meant out of the kitchen",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La cuisine a décidé que « terminé » voulait dire « sorti de chez moi ». Sa porte n’est pas la table du client. Tant qu’on compte au passe, ce qui arrive après reste invisible, et un échec en salle ne remonte jamais jusqu’au tableau.",
+            "cuisine": "La brigade appelle « terminé » tout plat arrivé au passe. Pourtant, le passe n’est pas la table. Tant que le compte s’arrête là, une perte en salle reste invisible sur le tableau.",
             "expert": "La complétion était définie à la frontière du producteur plutôt qu’au résultat observable de l’extérieur. Un échec survenu après cette frontière ne pouvait donc pas invalider le succès déjà enregistré."
           },
           "en": {
-            "kitchen": "The kitchen decided that finished meant out of my door. Its door is not the customer’s table. Count at the pass and everything after it stays invisible; a failure in the room never travels back to the board.",
+            "kitchen": "The brigade calls every plate at the pass finished. Yet the pass is not the table. While counting stops there, a loss in the room remains invisible on the board.",
             "expert": "Completion was defined at the producer boundary rather than at the externally observable outcome. A failure occurring past that boundary therefore could not invalidate the success already recorded."
           }
         }
@@ -142,22 +142,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Suivre le plat jusqu’à la table",
+          "cuisine": "Attendre la confirmation de la table avant de cocher",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Follow the plate until the table confirms",
+          "kitchen": "Wait for the table before ticking the order",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Suivre la commande jusqu’à ce que quelqu’un à table confirme l’avoir reçue. Chaque étape du trajet compte à part : dressé, posé au passe, emporté, arrivé. Tant que la dernière n’est pas confirmée, le service n’est pas fini.",
+            "cuisine": "Le tableau doit distinguer l’assiette dressée, posée au passe, emportée puis reçue. Seule la table confirme la dernière étape. Avant cette réponse, la commande reste en cours.",
             "expert": "Suivre la livraison comme une machine à états et ne déclarer le succès que lorsque l’observateur final a reçu ou acquitté le résultat. Les états intermédiaires doivent rester distincts plutôt que collapsés dans un unique drapeau de complétion."
           },
           "en": {
-            "kitchen": "Follow the order until somebody at the table confirms they got it. Each leg of the trip counts on its own: plated, at the pass, carried, arrived. Until the last one is confirmed, service is not over.",
+            "kitchen": "The board should separate plated, at the pass, carried, and received. Only the table confirms the last step. Until that answer, the order remains open.",
             "expert": "Track delivery as a state machine and claim success only once the final intended observer has received or acknowledged the result. Intermediate states must stay distinct rather than collapse into a single completion flag."
           }
         }
@@ -168,22 +168,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Tout passage de main peut perdre le plat",
+          "cuisine": "Chaque main entre le passe et la table peut échouer",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Every handover between kitchen and guest can fail",
+          "kitchen": "Every hand between pass and table may fail",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La règle dépasse ce soir-là. Dès que le plat et le client cessent d’être au même endroit au même moment, elle s’applique.",
+            "cuisine": "Cette règle ne concerne pas seulement cette soirée. Dès qu’une assiette change de main avant le client, son trajet doit rester visible jusqu’à la réception.",
             "expert": "Le cas établit un invariant de livraison durable pour les systèmes d’agents asynchrones, où production et réception sont séparées dans le temps."
           },
           "en": {
-            "kitchen": "The rule outlives that one evening. It applies as soon as the plate and the customer stop being in the same place at the same moment.",
+            "kitchen": "This rule reaches beyond one evening. Whenever a plate changes hands before the diner, its journey must remain visible until receipt.",
             "expert": "The case establishes a durable delivery invariant for asynchronous agent systems, where production and reception are separated in time."
           }
         }
@@ -194,22 +194,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La table décide qu’un service est fini",
+          "cuisine": "Le dernier mot appartient à la table servie",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Only the table can call a service over",
+          "kitchen": "The served table gets the final word",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un plat posé sur l’étagère du passe n’est pas un plat servi. Ce n’est pas la cuisine qui décide qu’un service est fini, c’est la table.",
+            "cuisine": "L’assiette au passe a seulement quitté les fourneaux. Elle devient servie lorsque le client la reçoit. La table, et non la cuisine, ferme la commande.",
             "expert": "Terminé en interne n’est pas terminé pour l’utilisateur. Le seul témoin valable de la complétion est celui qui devait recevoir le résultat, pas celui qui l’a produit."
           },
           "en": {
-            "kitchen": "A plate sitting on the pass shelf is not a plate served. The kitchen does not get to declare service over; the table does.",
+            "kitchen": "A plate at the pass has only left the stoves. It becomes served when the diner receives it. The table, not the kitchen, closes the order.",
             "expert": "Done internally is not done for the user. The only valid witness of completion is the party meant to receive the result, not the one that produced it."
           }
         }

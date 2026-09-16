@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Une adresse de livraison pour toutes les tables",
+          "cuisine": "Le dernier nom effaçait l’adresse de toutes les tables",
           "expert": "Une connexion partagée que le dernier arrivé remplace"
         },
         "en": {
-          "kitchen": "The last table to write owns the plates",
+          "kitchen": "The latest name overwrote every table’s address",
           "expert": "A shared connection the latest arrival replaces"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une seule adresse de livraison au tableau, et chaque nouvelle table l’efface pour y mettre la sienne. C’est ce qui se passait autour de MCP. Rien ne dit qu’une assiette soit réellement partie à la mauvaise table. Mais la maison n’avait rien pour l’empêcher.",
+            "cuisine": "Une seule adresse de livraison restait au tableau et chaque nouvelle table pouvait y écrire la sienne. Une assiette destinée à l’un pouvait donc suivre le dernier nom inscrit. Aucune mauvaise livraison n’a été constatée, mais le mécanisme la rendait possible.",
             "expert": "Dans l’écosystème MCP, un état de connexion mutable et partagé permettait à une session ultérieure de remplacer la connexion globalement courante. Un événement destiné à un utilisateur pouvait alors suivre celui qui avait écrit en dernier : la livraison croisée entre sessions est une possibilité ouverte par ce mécanisme, pas un incident constaté. L’isolation multi-utilisateur est précisément la séparation que ce partage supprime — identités, connexions, autorisations et états concurrents."
           },
           "en": {
-            "kitchen": "One delivery address on the board, and every new table rubs it out to write its own. That is what happened around MCP. Nothing says a plate truly went to the wrong table. But the house had nothing in place to stop it.",
+            "kitchen": "One delivery address stayed on the board, and each new table could write its own there. A plate meant for one guest could therefore follow the latest name written. No wrong delivery has been observed, but the arrangement made one possible.",
             "expert": "In the MCP ecosystem, mutable shared connection state let a later session replace the globally current connection. An event meant for one user could then follow whoever wrote last: cross-delivery between sessions is a possibility this mechanism opens, not a reported incident. Multi-user isolation is exactly the separation such sharing removes — identities, connections, authorizations and concurrent state."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le plat part sans nom de table",
+          "cuisine": "La seule adresse du tableau n’appartenait à personne",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The plate leaves with no table on it",
+          "kitchen": "The board’s only address belonged to nobody",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On ne le découvre pas par une réclamation. On le découvre en regardant le tableau : une seule ligne d’adresse pour toute la salle. Le dernier qui écrit efface le précédent, et le plat ne porte pas le nom de sa table. Rien n’empêche alors l’erreur, même si personne ne l’a encore vue passer.",
+            "cuisine": "Le signe se voit avant toute réclamation : une seule ligne, modifiable, sans nom de table. Le dernier qui écrit gagne et l’assiette ne transporte pas son destinataire. La possibilité d’une erreur suffit à montrer que les tables ne sont pas vraiment séparées.",
             "expert": "Le signal est structurel avant d’être observable : un enregistrement de connexion unique, mutable, sans propriétaire attaché. Le dernier écrivain gagne, et rien dans l’événement lui-même ne dit à qui il revient. Dans l’écosystème MCP, aucun incident de livraison croisée n’est rapporté ; c’est la possibilité d’une telle livraison qui est établie, ce qui suffit à qualifier le défaut d’isolation."
           },
           "en": {
-            "kitchen": "You do not find it through a complaint. You find it by looking at the board: one address line for the whole room. Whoever writes last rubs out the one before, and the plate carries no table name. Nothing there stops the mistake, even if nobody has seen it happen.",
+            "kitchen": "The sign appears before any complaint: one mutable line with no table name. Whoever writes last wins, and the plate carries no recipient. The possibility of an error is enough to show that tables are not truly separated.",
             "expert": "The signal is structural before it is observable: a single mutable connection record with no owner attached to it. Last writer wins, and nothing inside the event itself says whom it belongs to. In the MCP ecosystem no cross-delivery incident is reported; what is established is the possibility of one, which is enough to qualify the isolation defect."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le défaut n’apparaît qu’à la deuxième table",
+          "cuisine": "Le tableau confondait l’adresse du moment et celle de l’assiette",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The fault appears only with a second table",
+          "kitchen": "The board confused the current address with the plate’s address",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Tant qu’il n’y a qu’une table, le tableau a toujours raison : le dernier client est le seul. À deux tables, la ligne dit encore la vérité, mais plus pour tout le monde. Le plat, lui, ne sait rien de sa destination ; il suit ce qui est écrit à l’instant où il part. C’est pourquoi un service calme ne révèle jamais ce défaut.",
+            "cuisine": "L’adresse courante du tableau n’est pas l’adresse d’une assiette donnée. Tant qu’il n’y a qu’une table, la dernière écriture est toujours la bonne. Quand plusieurs tables se croisent, l’ordre d’arrivée décide de la livraison. Son origine ne suffit plus. Un service solitaire cache le défaut.",
             "expert": "Deux notions sont confondues : la destination courante et la destination d’un événement donné. Tant que la destination vit dans un emplacement global partagé, elle est une variable du processus et non une propriété du message ; sa valeur au moment de la livraison dépend de l’ordre d’arrivée des sessions, pas de l’origine de la demande. Le défaut reste invisible en usage mono-utilisateur, où le dernier écrivain est toujours le bon."
           },
           "en": {
-            "kitchen": "With one table in the room, the board is always right: the last guest is the only guest. With two, the line is still true, just not for everyone. The plate knows nothing of where it belongs; it follows whatever is written the moment it leaves. That is why a quiet service never shows the fault.",
+            "kitchen": "The board’s current address is not the address of a given plate. With one table, the latest writing is always right. When several tables overlap, delivery depends on arrival order rather than origin, and a solitary service hides the fault.",
             "expert": "Two notions are conflated: the current destination and the destination of a given event. While that destination lives in one shared global slot, it is a process variable rather than a property of the message; its value at delivery time depends on the arrival order of sessions, not on where the request came from. The defect stays invisible under single-user use, where the last writer is always the right one."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "L’essai doit se faire à salle pleine",
+          "cuisine": "Faire voyager le nom de la table avec chaque assiette",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "The test has to happen with a full room",
+          "kitchen": "Let each plate carry its table name",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Écris le nom de la table sur le bon, pas au tableau. L’assiette part avec son adresse, et rien de ce qui arrive après ne peut la détourner. Donne à chaque table son propre carnet et ses propres droits. Et fais l’essai à salle pleine : à une seule table, tout marche toujours.",
+            "cuisine": "Écrivez le nom de la table sur l’assiette, pas dans une ligne commune. Chaque table garde sa propre adresse et ses propres droits, sans tableau que le suivant puisse effacer. Faites l’essai avec des services qui se chevauchent : une seule table masque exactement ce risque.",
             "expert": "Attacher le destinataire à l’événement lui-même plutôt qu’à un emplacement courant : la propriété voyage avec le message. Donner à chaque session sa propre connexion et son propre état d’autorisation, sans emplacement mutable partagé qu’un arrivant plus tardif puisse écraser. Éprouver le comportement en concurrence, puisqu’un usage séquentiel masque exactement la classe de défaut visée."
           },
           "en": {
-            "kitchen": "Write the table on the docket, not on the board. The plate leaves carrying its own address, and nothing arriving later can divert it. Give every table its own pad and its own rights. Then test it with a full room: with one table, everything always works.",
+            "kitchen": "Write the table’s name on the plate, not on one shared line. Each table keeps its own address and rights, with no board for the next arrival to erase. Try overlapping services: one table hides this exact risk.",
             "expert": "Bind the recipient to the event itself rather than to a current slot: ownership travels with the message. Give each session its own connection and its own authorization state, with no shared mutable slot a later arrival can overwrite. Exercise the behavior under concurrency, since sequential use hides precisely this class of defect."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La faute existe même sans incident connu",
+          "cuisine": "Le destinataire doit voyager avec l’assiette",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "No incident known, and the fault already stands",
+          "kitchen": "The recipient must travel with the plate",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "L’adresse voyage avec l’assiette, jamais sur un tableau que tout le monde efface. Même sans incident connu, c’est déjà une faute d’organisation.",
+            "cuisine": "Le destinataire doit accompagner l’assiette du départ à l’arrivée. Lire un nom sur un tableau commun au dernier moment ne sépare pas les tables. Même sans mauvaise livraison observée, le risque demeure.",
             "expert": "La propriété doit voyager avec l’événement. Un destinataire lu dans un emplacement partagé au moment de la livraison n’est pas une garantie d’isolation, même quand aucune livraison croisée n’a été observée."
           },
           "en": {
-            "kitchen": "The address travels with the plate, never on a board anyone can rub out. Even with no known incident, it is already a fault in how the house is run.",
+            "kitchen": "The recipient must accompany the plate from start to arrival. Reading a name from a shared board at the last moment does not separate tables, even if no plate has yet reached the wrong guest.",
             "expert": "Ownership must travel with the event. A recipient read from a shared slot at delivery time is not an isolation guarantee, even when no cross-delivery has been observed."
           }
         }

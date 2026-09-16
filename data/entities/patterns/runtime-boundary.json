@@ -29,22 +29,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La consigne dit ajouter, la main écrase",
+          "cuisine": "Au passe — La consigne dit ajouter, la main écrase",
           "expert": "Le contrôle vivait en amont du point où l’effet irréversible se produit"
         },
         "en": {
-          "kitchen": "The wall said add, the hand wiped",
+          "kitchen": "At the pass — The wall said add, the hand wiped",
           "expert": "The control lived upstream of the point where the irreversible effect occurs"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Cline, une consigne disait d’ajouter un plat sans jamais toucher à ceux qui sont là. Le geste, lui, écrasait l’assiette déjà posée. Ce qui est écrit au mur ne dit pas ce que fait la main au moment où elle agit.",
+            "cuisine": "Au service, une consigne disait d’ajouter un plat sans jamais toucher à ceux qui sont là. Le geste, lui, écrasait l’assiette déjà posée. Ce qui est écrit au mur ne dit pas ce que fait la main au moment où elle agit.",
             "expert": "La frontière d’exécution sépare l’état déclaré dans la source ou la configuration du comportement effectivement observé au runtime. Chez Cline, une primitive décrite comme un ajout pouvait remplacer silencieusement un fichier existant : son garde interrogeait un état incomplet au lieu de la destination réelle, au point même où le remplacement se produit. Un correctif est mergé et couvert par un test de régression ; les états livré, installé et corrigé-observé ne sont pas établis au cutoff observé."
           },
           "en": {
-            "kitchen": "At Cline the wall said: add a dish, never touch the ones already down. The hand did something else — it wiped the plate that was there. Writing on a wall describes nothing about the instant a hand actually moves.",
+            "kitchen": "During service, the wall said: add a dish, never touch the ones already down. The hand did something else — it wiped the plate that was there. Writing on a wall describes nothing about the instant a hand actually moves.",
             "expert": "The runtime boundary separates state declared in source or configuration from behaviour actually observed at runtime. At Cline a primitive described as an add could silently replace an existing file: its guard queried an incomplete state rather than the real destination, at the very point where replacement happens. A fix is merged and covered by a regression test; shipped, installed and observed-fixed remain unestablished at the observed cutoff."
           }
         }
@@ -55,22 +55,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Hermes, Codex et Claude Code ont contrôlé trop tôt",
+          "cuisine": "Au passe — Trois cuisines ont contrôlé trop tôt",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Hermes, Codex and Claude Code all checked too early",
+          "kitchen": "At the pass — Three kitchens all checked too early",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Hermes, on goûte la sauce et c’est l’assiette dressée qui part de travers. Chez Codex, le tri se fait à l’entrée et ce qu’on voulait écarter ressort au dernier poste. Chez Claude Code, la place est débarrassée avant que le plat de remplacement existe.",
+            "cuisine": "Au service, dans une cuisine, on goûte la sauce alors que l’assiette dressée part de travers. Dans une autre, le tri se fait à l’entrée et ce qu’on voulait écarter ressort au dernier poste. Dans une troisième, la place est débarrassée avant que le plat de remplacement existe.",
             "expert": "Chez Hermes, un test au niveau helper validait la construction des arguments tandis que le chemin de lancement réel perdait ensuite l’option importante : le vert mesurait une confiance, pas une couverture end-to-end. Chez Codex, un premier correctif livré laissait passer un chemin d’événements transformés qui contournait encore le garde. Chez Claude Code, une redirection pouvait tronquer la destination avant que le payload de remplacement soit écrit en sécurité."
           },
           "en": {
-            "kitchen": "At Hermes the sauce tasted right; the plate that left the kitchen did not. At Codex the sorting stood at the door, and what it turned away showed up again at the last station. At Claude Code the space got cleared while the replacement dish did not yet exist.",
+            "kitchen": "During service, in one kitchen the sauce tasted right while the plate that left did not. In another, the sorting stood at the door and what it turned away showed up again at the last station. In a third, the space was cleared while the replacement dish did not yet exist.",
             "expert": "At Hermes a helper-level test validated argument construction while the real launch path then dropped the important option: the green measured confidence, not end-to-end coverage. At Codex a first shipped fix still let a transformed-event path bypass the guard. At Claude Code a redirection could truncate the destination before the replacement payload was safely written."
           }
         }
@@ -81,22 +81,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le contrôle a raison et n’a plus prise",
+          "cuisine": "Au passe — Le contrôle a raison et n’a plus prise",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The check is right, the plate leaves anyway",
+          "kitchen": "At the pass — The check is right, the plate leaves anyway",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le contrôle regarde ce qu’il a sous les yeux, et il a raison sur ce qu’il voit. Entre ce moment-là et le dernier geste, le plat change de main, d’étiquette ou de table. Le contrôle reste donc exact, et sans prise sur ce qui part réellement en salle.",
+            "cuisine": "Au service, Le contrôle regarde ce qu’il a sous les yeux, et il a raison sur ce qu’il voit. Entre ce moment-là et le dernier geste, le plat change de main, d’étiquette ou de table. Le contrôle reste donc exact, et sans prise sur ce qui part réellement en salle.",
             "expert": "Le modèle mental suppose que la représentation visible au point de contrôle est celle qui atteindra l’effet final. L’hypothèse tombe dès qu’une transformation, un cache ou un chemin d’intégration se glisse entre les deux : le garde reste correct pour ce qu’il inspecte, et sans prise sur l’écriture finale. La tromperie tient à ce que le contrôle amont produit un signal positif exact."
           },
           "en": {
-            "kitchen": "A check is honest about the thing in front of it, and that is the whole trouble. Between that look and the final move, the dish changes hands, changes label, changes table. Accuracy survives; any grip on what actually leaves does not.",
+            "kitchen": "During service, A check is honest about the thing in front of it, and that is the whole trouble. Between that look and the final move, the dish changes hands, changes label, changes table. Accuracy survives; any grip on what actually leaves does not.",
             "expert": "The mental model assumes the representation visible at the check point is the one that will reach the final effect. That assumption breaks as soon as a transformation, a cache or an integration path slips in between: the guard stays correct for what it inspects, and has no grip on the final write. The deception is that an upstream control produces an accurate positive signal."
           }
         }
@@ -107,22 +107,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le contrôle doit tenir le dernier geste",
+          "cuisine": "Au passe — Le contrôle doit tenir le dernier geste",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Check the last hand, not the easy one",
+          "kitchen": "At the pass — Check the last hand, not the easy one",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Vérifie à l’endroit exact où ça devient irrattrapable, pas là où c’est commode. Regarde la place réelle avant de poser, et ne débarrasse l’ancien qu’une fois le nouveau prêt. Et goûte ce qui part en salle, pas ce qui reste en casserole. Chez Codex, ce déplacement est en place ; chez Claude Code, rien de tel n’est acquis.",
+            "cuisine": "Au service, vérifie à l’endroit exact où cela devient irrattrapable, pas là où c’est commode. Regarde la place réelle avant de poser, et ne débarrasse l’ancien qu’une fois le nouveau prêt. Goûte ce qui part en salle, non ce qui reste en casserole. Dans une cuisine, ce déplacement est en place ; dans une autre, rien de tel n’est acquis.",
             "expert": "Vérifier les préconditions destructives contre l’état réel de la destination, au point exact où le remplacement peut se produire, et déplacer l’enforcement vers la frontière de l’effet irréversible. Exercer les tests à travers la couture finale et observer le résultat physique produit. Préférer des primitives d’écriture atomiques et conserver la destination existante intacte jusqu’à ce que le remplacement soit durable. Chez Codex, le second correctif est livré ; chez Claude Code, aucune mitigation produit livrée n’est établie au cutoff observé."
           },
           "en": {
-            "kitchen": "Check where it stops being recoverable, not where checking happens to be easy. Look at the real space before anything goes down, and clear the old only when the new is ready. Taste what reaches the room, not what sits in the pan. At Codex that move is in place; at Claude Code nothing of the kind is settled.",
+            "kitchen": "During service, check where it stops being recoverable, not where checking happens to be easy. Look at the real space before anything goes down, and clear the old only when the new is ready. Taste what reaches the room, not what sits in the pan. In one kitchen that move is in place; in another, nothing of the kind is settled.",
             "expert": "Verify destructive preconditions against the destination's real state, at the exact point where replacement can occur, and move enforcement to the irreversible-effect boundary. Exercise tests through the final seam and observe the physical result produced. Prefer atomic write primitives and keep the existing destination intact until the replacement is durable. At Codex the second fix shipped; at Claude Code no shipped product mitigation is established at the observed cutoff."
           }
         }
@@ -133,22 +133,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un contrôle mal placé reste juste et inutile",
+          "cuisine": "Au passe — Un contrôle mal placé reste juste et inutile",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Where the check stands decides what it proves",
+          "kitchen": "At the pass — Where the check stands decides what it proves",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ce qui est écrit n’est pas ce qui se fait ; seul compte le dernier geste. Pose le contrôle sur la main qui agit, et vérifie à l’endroit où plus rien ne se rattrape.",
+            "cuisine": "Au service, Ce qui est écrit n’est pas ce qui se fait ; seul compte le dernier geste. Pose le contrôle sur la main qui agit, et vérifie à l’endroit où plus rien ne se rattrape.",
             "expert": "Le comportement réel se vérifie là où l’action s’exécute, pas dans les fichiers qui la décrivent. Un garde, un test ou un correctif placé en amont de la frontière de l’effet reste exact et inopérant ; c’est la position du contrôle, et non son nombre d’assertions, qui détermine ce qu’il établit."
           },
           "en": {
-            "kitchen": "Writing is not doing; the last move is the only one that counts. Put the check on the hand that acts, at the place where nothing can be taken back.",
+            "kitchen": "During service, Writing is not doing; the last move is the only one that counts. Put the check on the hand that acts, at the place where nothing can be taken back.",
             "expert": "Real behaviour is verified where the action executes, not in the files describing it. A guard, a test or a fix placed upstream of the effect boundary stays accurate and inoperative; it is the control's position, not its assertion count, that determines what it establishes."
           }
         }
