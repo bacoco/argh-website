@@ -15,7 +15,20 @@ ACTIVITY = ROOT / "data" / "activity.json"
 VERSION = "1.6.0"
 PLURAL = {"dossier": "dossiers", "project": "projects", "pattern": "patterns"}
 PLACE_ILLUSTRATIONS = {
+    "objectifs-instructions": "/assets/illustrations/category-objectives-instructions-320.jpg",
+    "dependances-externes": "/assets/illustrations/category-external-dependencies-320.jpg",
+    "entrees-declencheurs": "/assets/illustrations/category-inputs-triggers-320.jpg",
+    "donnees-memoire-etat": "/assets/illustrations/category-data-memory-state-320.jpg",
+    "configuration-environnement": "/assets/illustrations/category-configuration-environment-320.jpg",
+    "isolation-concurrence": "/assets/illustrations/category-isolation-concurrency-320.jpg",
+    "roles-orchestration": "/assets/illustrations/category-roles-orchestration-320.jpg",
+    "outils-infrastructure": "/assets/illustrations/category-tools-infrastructure-320.jpg",
+    "execution-cycle-vie": "/assets/illustrations/category-execution-lifecycle-320.jpg",
     "validation-preuves": "/assets/illustrations/category-validation-evidence-320.jpg",
+    "publication-resultat": "/assets/illustrations/category-publication-outcome-320.jpg",
+    "couts-quotas": "/assets/illustrations/category-costs-quotas-320.jpg",
+    "annulation-recuperation": "/assets/illustrations/category-cancellation-recovery-320.jpg",
+    "historique-tracabilite": "/assets/illustrations/category-history-traceability-320.jpg",
 }
 
 def esc(s): return html.escape(s or "", quote=True)
@@ -439,13 +452,17 @@ def glossary_column(place, reader):
 def glossary(store):
     entries = []
     for number, place in enumerate(store["places"], 1):
+        illustration = PLACE_ILLUSTRATIONS[place["id"]]
+        picture = ('<picture class="argh-glossary-picture"><img src="%s" width="320" height="213" '
+                   'alt="" aria-hidden="true" loading="lazy" decoding="async"></picture>'
+                   % esc(illustration))
         entries.append(
             '<section class="argh-glossary-entry" id="%s">'
-            '<div class="argh-glossary-entry-head"><span>%02d</span>'
+            '<div class="argh-glossary-entry-head"><div class="argh-glossary-marker"><span>%02d</span>%s</div>'
             '<a href="/places/%s/"><span class="nav-fr">Voir les dossiers</span>'
             '<span class="nav-en">View dossiers</span></a></div>'
             '<div class="argh-glossary-pair">%s%s</div></section>'
-            % (esc(place["id"]), number, esc(place["id"]),
+            % (esc(place["id"]), number, picture, esc(place["id"]),
                glossary_column(place, "kitchen"), glossary_column(place, "expert"))
         )
     body = ('<div class="argh-site argh-index" data-argh-renderer="%s">%s'
