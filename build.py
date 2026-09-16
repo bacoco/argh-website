@@ -356,7 +356,13 @@ def home(store):
     body = ('<div class="argh-site argh-index" data-argh-renderer="%s">%s'
             '<main class="argh-wrap">'
             '<section class="argh-home-hero"><div><div class="argh-kicker">ARGH — Agent Reliability &amp; Guard for Harnesses</div>%s%s</div>'
-            '<aside class="argh-home-identity">%s<ul>%s</ul></aside></section>'
+            '<div class="argh-home-side"><picture class="argh-home-illustration">'
+            '<source srcset="/assets/illustrations/kitchen-system-home-480.jpg 480w, '
+            '/assets/illustrations/kitchen-system-home-960.jpg 960w" '
+            'sizes="(max-width:920px) calc(100vw - 34px), 340px">'
+            '<img src="/assets/illustrations/kitchen-system-home-480.jpg" width="480" height="320" '
+            'alt="" aria-hidden="true" decoding="async" fetchpriority="high"></picture>'
+            '<aside class="argh-home-identity">%s<ul>%s</ul></aside></div></section>'
             % (VERSION, header("home"), quad(HOME_TITLE, "h1"),
                quad(HOME_DECK, "p", "argh-standfirst"), quad(HOME_IDENTITY_TITLE, "strong"),
                "".join(quad(item, "li") for item in HOME_IDENTITY)))
