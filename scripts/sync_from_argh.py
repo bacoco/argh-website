@@ -18,6 +18,10 @@ ACTIVITY_LIMIT = 200
 RELATIVE_ENTITY = re.compile(r"(dossiers|projects|patterns)/[a-z0-9]+(?:-[a-z0-9]+)*\.json")
 SHA = re.compile(r"[a-f0-9]{40}")
 FORBIDDEN_NAME = re.compile(r"loriq", re.I)
+NAVIGATION_FILES = {
+    "taxonomy.json": "argh/public-navigation/v1",
+    "visual-taxonomy.json": "argh/visual-taxonomy/v1",
+}
 
 
 class SyncError(ValueError):
@@ -85,6 +89,45 @@ def _same_tree(left: Path, right: Path) -> bool:
         (left / relative).read_bytes() == (right / relative).read_bytes()
         for relative in left_files
     )
+
+
+def _sync_navigation(source: Path, website: Path) -> bool:
+    payloads: dict[str, bytes] = {}
+    for name, schema in NAVIGATION_FILES.items():
+        path = source / name
+        raw = path.read_bytes()
+        if not raw or len(raw) > 2 * 1024 * 1024:
+            raise SyncError(f"invalid public navigation size: {name}")
+        try:
+            value = json.loads(raw)
+        except json.JSONDecodeError as exc:
+            raise SyncError(f"public navigation is not valid JSON: {name}") from exc
+        if not isinstance(value, dict) or value.get("schema") != schema:
+            raise SyncError(f"wrong public navigation schema: {name}")
+        if FORBIDDEN_NAME.search(raw.decode("utf-8")):
+            raise SyncError(f"forbidden product name in public navigation: {name}")
+        payloads[name] = raw
+
+    changed = any(
+        not (website / "data" / name).exists()
+        or (website / "data" / name).read_bytes() != raw
+        for name, raw in payloads.items()
+    )
+    if not changed:
+        return False
+
+    staged = website / "data" / ".navigation-sync"
+    if staged.exists():
+        raise SyncError("stale navigation synchronization directory exists")
+    staged.mkdir(parents=True)
+    try:
+        for name, raw in payloads.items():
+            (staged / name).write_bytes(raw)
+        for name in payloads:
+            (staged / name).replace(website / "data" / name)
+    finally:
+        shutil.rmtree(staged, ignore_errors=True)
+    return True
 
 
 def _index_entries(root: Path) -> dict[str, str] | None:
@@ -172,7 +215,8 @@ def _update_activity(
     }
 
 
-def sync(source: Path, website: Path, source_head: str, generated_at: str) -> dict[str, object]:
+def sync(source: Path, website: Path, source_head: str, generated_at: str,
+         source_navigation: Path | None = None) -> dict[str, object]:
     if not SHA.fullmatch(source_head):
         raise SyncError("source_head must be a full Git SHA")
     if not generated_at.strip():
@@ -229,8 +273,12 @@ def sync(source: Path, website: Path, source_head: str, generated_at: str) -> di
         source_head=source_head,
         detected_at=generated_at,
     )
+    navigation_changed = (
+        _sync_navigation(source_navigation, website) if source_navigation is not None else False
+    )
     return {"source_head": source_head, "data_changed": changed,
-            "meta_changed": meta_changed, **activity, **counts}
+            "meta_changed": meta_changed, "navigation_changed": navigation_changed,
+            **activity, **counts}
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -239,9 +287,11 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--website", type=Path, default=Path("."))
     parser.add_argument("--source-head", required=True)
     parser.add_argument("--generated-at", required=True)
+    parser.add_argument("--source-navigation", type=Path)
     args = parser.parse_args(argv)
     try:
-        print(json.dumps(sync(args.source, args.website, args.source_head, args.generated_at),
+        print(json.dumps(sync(args.source, args.website, args.source_head, args.generated_at,
+                              args.source_navigation),
                          ensure_ascii=False, sort_keys=True))
         return 0
     except (OSError, ValueError, TypeError) as exc:
