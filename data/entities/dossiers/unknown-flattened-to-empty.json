@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Chez Hermes, la réserve était fermée et l’ardoise a écrit « vide »",
+          "cuisine": "Chez Hermes, une réserve fermée notée vide",
           "expert": "Chez Hermes, une source d’historique indisponible a été aplatie en résultat vide"
         },
         "en": {
-          "kitchen": "At Hermes the pantry was locked and the board read “empty”",
+          "kitchen": "Hermes marked a locked pantry as empty",
           "expert": "In Hermes, an unavailable history source was flattened into an empty result"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "De la porte fermée à l’ardoise « vide »",
+          "cuisine": "Porte fermée, plateau vide, maison trompée",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From a locked door to a board reading “empty”",
+          "kitchen": "Shut door, empty tray, wrong answer",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux situations, un seul mot",
+          "cuisine": "Le même mot pour épuisé et pour fermé",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Two situations, one single word",
+          "kitchen": "One word covers two different nothings",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un mot différent par situation",
+          "cuisine": "Cinq mots pour cinq situations, jusqu'au dernier poste",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "A different word for each situation",
+          "kitchen": "A different word for each kind of empty",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Une ardoise vide ne prouve pas une réserve vide",
+          "cuisine": "Ailleurs aussi, un plateau vide ne prouve rien",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "An empty board is no proof of an empty pantry",
+          "kitchen": "Far beyond Hermes, an empty tray proves nothing",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "« Je n’ai pas pu regarder » est une information",
+          "cuisine": "Ne pas avoir pu regarder doit se dire",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "“I could not look” is information",
+          "kitchen": "Not being able to look is information",
           "expert": "Lesson"
         }
       },

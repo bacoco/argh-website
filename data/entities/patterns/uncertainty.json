@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Deux ardoises où l’ignorance a été effacée",
+          "cuisine": "Ce qu’on ignore est écrit comme un fait",
           "expert": "L’inconnu disparaît soit à l’interface, soit dans le récit"
         },
         "en": {
-          "kitchen": "Two boards where the not-knowing got wiped off",
+          "kitchen": "An empty board reads as an answer",
           "expert": "The unknown disappears either at the interface or in the narrative"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui doit rendre méfiant devant une ardoise nette",
+          "cuisine": "Plus on s’éloigne du témoin, plus la réponse durcit",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What should make you doubt a tidy board",
+          "kitchen": "The further from the witness, the surer the answer",
           "expert": "Signals"
         }
       },
@@ -77,11 +77,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une case blanche ne le reste jamais",
+          "cuisine": "Une case blanche se remplit avec ce qui traîne",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a blank space never stays blank",
+          "kitchen": "A blank space gets filled by whatever is near",
           "expert": "Mechanism"
         }
       },
@@ -103,11 +103,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Écrire « je n’ai pas pu savoir » et le laisser là",
+          "cuisine": "Distinguer l’étagère vide de la porte fermée",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Write down that nobody could tell, and leave it there",
+          "kitchen": "Tell an empty shelf from a shut door",
           "expert": "Response"
         }
       },
@@ -129,11 +129,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que Hermes et TaskWeaver laissent sur l’ardoise",
+          "cuisine": "Une ignorance effacée revient en certitude",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule Hermes and TaskWeaver leave on the board",
+          "kitchen": "Not-knowing wiped away comes back as certainty",
           "expert": "Lesson"
         }
       },

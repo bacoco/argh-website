@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le plat était prêt, personne ne l’a jamais posé sur la table",
+          "cuisine": "OpenClaw a coché un plat jamais servi",
           "expert": "Travail terminé côté producteur, résultat jamais reçu côté utilisateur"
         },
         "en": {
-          "kitchen": "The plate was ready; nobody ever set it on the table",
+          "kitchen": "OpenClaw ticked off a plate nobody received",
           "expert": "Work completed on the producer side, result never received by the user"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Du passe à la table, étape par étape",
+          "cuisine": "Coché au passe, perdu avant la table",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From the pass to the table, step by step",
+          "kitchen": "Ticked at the pass, lost before the table",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La cuisine s’est arrêtée de compter au mauvais endroit",
+          "cuisine": "OpenClaw comptait le service fini au passe",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The kitchen stopped counting at the wrong place",
+          "kitchen": "Finished meant out of the kitchen door",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’il faut suivre jusqu’au bout",
+          "cuisine": "Suivre le plat jusqu’à la table",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What has to be followed all the way",
+          "kitchen": "Follow the plate until the table confirms",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce que ce service laisse comme règle",
+          "cuisine": "Tout passage de main peut perdre le plat",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What that service leaves behind as a rule",
+          "kitchen": "Every handover between kitchen and guest can fail",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un plat sur l’étagère n’est pas un plat servi",
+          "cuisine": "La table décide qu’un service est fini",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A plate on the shelf is not a plate served",
+          "kitchen": "Only the table can call a service over",
           "expert": "Lesson"
         }
       },

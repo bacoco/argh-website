@@ -27,11 +27,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le même cahier de consignes accroché dans plusieurs maisons",
+          "cuisine": "Un cahier de consignes suivi par plusieurs maisons",
           "expert": "Une méthode et des fichiers de contrôle qui traversent plusieurs harnais"
         },
         "en": {
-          "kitchen": "The same book of standing orders, hanging in several houses",
+          "kitchen": "One book of standing orders, several different houses",
           "expert": "A method and control files that travel across harnesses"
         }
       },
@@ -53,11 +53,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on voit quand deux brigades lisent la même page",
+          "cuisine": "Deux réponses pour une seule consigne",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What shows up when two brigades read one page",
+          "kitchen": "Same page, different plate at the pass",
           "expert": "Signals"
         }
       },
@@ -79,11 +79,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une page ne porte jamais ses propres règles d’usage",
+          "cuisine": "Accrocher la page ne transporte pas la règle",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A page never carries its own rules of use",
+          "kitchen": "A page never says how far it reaches",
           "expert": "Mechanism"
         }
       },
@@ -105,11 +105,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Faire trancher un désaccord avant de confier le cahier",
+          "cuisine": "Éprouver la maison avant de lui confier le cahier",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Make them settle a clash before you hand over the book",
+          "kitchen": "Test the house before handing over the book",
           "expert": "Response"
         }
       },
@@ -135,7 +135,7 @@
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Same title, not the same authority",
+          "kitchen": "Recognising the book is not obeying it",
           "expert": "Lesson"
         }
       },

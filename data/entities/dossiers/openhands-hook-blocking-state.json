@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "On sait enfin qui a arrêté le plat, et pourquoi il n’est pas parti",
+          "cuisine": "OpenHands dit enfin qui a retenu l’assiette",
           "expert": "L’exécution des hooks est devenue un état observable de l’agent"
         },
         "en": {
-          "kitchen": "Now we know who stopped the plate, and why it never left",
+          "kitchen": "OpenHands now says who held the plate back",
           "expert": "Hook execution became observable agent state"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Du refus muet au ticket qui le dit",
+          "cuisine": "Du refus sans explication au ticket signé",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From a silent refusal to a ticket that says so",
+          "kitchen": "From a silent refusal to a written ticket",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un refus muet est impossible à corriger",
+          "cuisine": "Un refus muet oblige la brigade à deviner",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A silent refusal cannot be fixed",
+          "kitchen": "A silent refusal leaves the brigade guessing",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le contrôle doit écrire ce qu’il a décidé",
+          "cuisine": "Écrire ce qui part et ce qui reste",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "The check must write down what it decided",
+          "kitchen": "Every check hands back a readable decision",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "La maison va dans ce sens, sans que rien soit arrêté",
+          "cuisine": "Le ticket s’installe chez OpenHands, rien n’est figé",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The house is heading that way, with nothing settled yet",
+          "kitchen": "OpenHands keeps the ticket; nothing else is settled",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Pas de décision sans ticket",
+          "cuisine": "Pas de décision au passe sans trace écrite",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "No decision without a ticket",
+          "kitchen": "No plate held without a name on it",
           "expert": "Lesson"
         }
       },

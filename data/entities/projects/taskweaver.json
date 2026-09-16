@@ -52,11 +52,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "D’une carte qui s’étoffe au rideau tiré",
+          "cuisine": "TaskWeaver grandit, puis s’arrête en mars 2026",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From a menu that kept growing to a shutter pulled down",
+          "kitchen": "TaskWeaver grew, then stopped in March 2026",
           "expert": "Timeline"
         }
       },
@@ -128,11 +128,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi on invente toujours une raison",
+          "cuisine": "Le manque de bras n’explique pas la fermeture",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why we always invent a reason",
+          "kitchen": "Short of hands does not explain the closing",
           "expert": "Mechanism"
         }
       },
@@ -154,11 +154,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Constater la fermeture, laisser la case du pourquoi vide",
+          "cuisine": "Rideau tiré n’est pas maison qui ralentit",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Record the closing, leave the why column empty",
+          "kitchen": "A shutter down is not a house slowing",
           "expert": "Response"
         }
       },
@@ -180,11 +180,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Rideau tiré, bons encore au passe",
+          "cuisine": "TaskWeaver a fermé, les bons sont restés accrochés",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Shutter down, orders still at the pass",
+          "kitchen": "TaskWeaver closed; the orders stayed on the rail",
           "expert": "Current state"
         }
       },
@@ -206,11 +206,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient : « on ne sait pas » est une réponse",
+          "cuisine": "Écrire « on ne sait pas » plutôt qu’inventer",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What to keep: “we do not know” is an answer",
+          "kitchen": "Write “we do not know” instead of inventing",
           "expert": "Lesson"
         }
       },

@@ -75,11 +75,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Du tableau des propositions à la carte du soir",
+          "cuisine": "Gemini CLI a bâti le plat autrement",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From the proposals board to tonight’s menu",
+          "kitchen": "Gemini CLI built the dish another way",
           "expert": "Timeline"
         }
       },
@@ -161,11 +161,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une fiche bien écrite ressemble à un plat servi",
+          "cuisine": "Le tableau des propositions n’est pas le passe",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a well-written card looks like a plate that went out",
+          "kitchen": "The proposals board is not the pass",
           "expert": "Mechanism"
         }
       },
@@ -187,11 +187,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Quatre preuves à réclamer, et un local qui s’éteint d’un bloc",
+          "cuisine": "Ouvrir le carton plutôt que relire la fiche",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Four proofs to ask for, and a room that goes dark all at once",
+          "kitchen": "Open the crate instead of rereading the card",
           "expert": "Response"
         }
       },
@@ -213,11 +213,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui est sorti du passe, ce qui n’est resté qu’écrit",
+          "cuisine": "Le plat est servi, le carton reste fermé",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What left the pass, and what stayed on paper",
+          "kitchen": "The dish went out; the crate stays shut",
           "expert": "Current state"
         }
       },
@@ -239,11 +239,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une fiche n’a jamais nourri personne",
+          "cuisine": "Va voir l’assiette avant de croire le tableau",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A card never fed anyone",
+          "kitchen": "Look at the plate before trusting the board",
           "expert": "Lesson"
         }
       },

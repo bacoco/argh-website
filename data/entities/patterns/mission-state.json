@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le carnet est plein, la commande a disparu",
+          "cuisine": "Le carnet reste, la commande en cours disparaît",
           "expert": "Ce qui reste dû ne survit pas dans l’historique"
         },
         "en": {
-          "kitchen": "The notebook is full, the order is gone",
+          "kitchen": "Past tables kept, the order in hand lost",
           "expert": "What is still owed does not survive inside the history"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un carnet complet et un passe qui hésite",
+          "cuisine": "Au moment d’envoyer, le passe hésite",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "A full notebook and a hesitant pass",
+          "kitchen": "Nothing looks lost until the plate must go",
           "expert": "Signals"
         }
       },
@@ -76,11 +76,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "À la relecture, tout se tient",
+          "cuisine": "Ce qui reste à envoyer n’était pas gardé",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Read back, it all hangs together",
+          "kitchen": "Everything kept except the line that mattered",
           "expert": "Mechanism"
         }
       },
@@ -102,11 +102,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Garder la commande hors du carnet",
+          "cuisine": "Une ligne par table, tenue hors du carnet",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Keep the order out of the notebook",
+          "kitchen": "One line per table: promised, pending, done",
           "expert": "Response"
         }
       },
@@ -128,11 +128,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que le carnet ne remplace pas",
+          "cuisine": "La mémoire ne remplace pas la commande en cours",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What the notebook does not replace",
+          "kitchen": "Memory is not the order still in hand",
           "expert": "Lesson"
         }
       },

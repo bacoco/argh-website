@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le dépannage du matin avait fini par tenir le service",
+          "cuisine": "Un dépannage devenu indispensable, puis cassé",
           "expert": "Un contournement toléré devient une dépendance sans contrat"
         },
         "en": {
-          "kitchen": "The morning fix had quietly become part of the service",
+          "kitchen": "A stopgap the house came to depend on",
           "expert": "A tolerated workaround becomes an uncontracted dependency"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Rien n’a bougé chez toi, et pourtant le plat ne sort plus",
+          "cuisine": "Tes fiches n’ont pas bougé, Claude Code si",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Nothing changed on your side, and the dish stops coming out",
+          "kitchen": "Your cards did not change, Claude Code did",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui commandait vraiment, c’était la tournée des tiroirs",
+          "cuisine": "L’ordre des tiroirs comptait plus que la fiche",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "What really gave the orders was the round of the drawers",
+          "kitchen": "The order of the drawers outranked the card",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Écrire la tournée, afficher ce qui est vraiment sorti",
+          "cuisine": "Afficher quelles fiches sont vraiment sorties ce matin",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Write the round down, post what actually came out",
+          "kitchen": "Post the round, and post every change to it",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que le tiroir du fond a appris à la maison",
+          "cuisine": "Une tournée non écrite change sans prévenir",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What the bottom drawer taught the house",
+          "kitchen": "The unwritten ledge is the one that vanishes",
           "expert": "Lesson"
         }
       },

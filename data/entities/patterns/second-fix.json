@@ -30,11 +30,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La porte rebouchée, et la marchandise entrait par la cour",
+          "cuisine": "Le premier contrôle laissait passer par la cour",
           "expert": "Le second correctif a déplacé le garde jusqu’à la frontière de l’effet irréversible"
         },
         "en": {
-          "kitchen": "The door was sealed, and the goods still came in through the yard",
+          "kitchen": "Screened at the front, still coming in behind",
           "expert": "The second fix moved the guard to the boundary of the irreversible effect"
         }
       },
@@ -56,11 +56,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le même désordre qui revient par une autre porte",
+          "cuisine": "Codex a dû s’y reprendre plusieurs fois",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The same mess coming back through another door",
+          "kitchen": "Codex needed several rounds before it stopped",
           "expert": "Signals"
         }
       },
@@ -82,11 +82,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi le premier arrangement paraît suffire",
+          "cuisine": "La caisse change d’étiquette entre les deux portes",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the first repair looks like enough",
+          "kitchen": "A crate changes label between the two doors",
           "expert": "Mechanism"
         }
       },
@@ -108,11 +108,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Mettre le contrôle à la dernière porte",
+          "cuisine": "Contrôler à la porte après laquelle rien ne ressort",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Put the check on the last door",
+          "kitchen": "Check at the door past which nothing returns",
           "expert": "Response"
         }
       },
@@ -134,11 +134,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que Codex et gstack ont payée deux fois",
+          "cuisine": "Réparé veut dire quatre choses différentes",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule Codex and gstack paid for twice",
+          "kitchen": "Four different things can be called repaired",
           "expert": "Lesson"
         }
       },

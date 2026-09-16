@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Trois commis sur un seul billot, et les préparations se mélangeaient",
+          "cuisine": "Chez Codex, un billot pour plusieurs commis",
           "expert": "L’allocation de worktrees est entrée dans le chemin d’exécution, à titre expérimental"
         },
         "en": {
-          "kitchen": "Three cooks on one bench, and the preparations kept running into each other",
+          "kitchen": "Codex cooks kept colliding on one shared bench",
           "expert": "Worktree allocation entered the execution path, as an experimental feature"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment le billot est devenu personnel",
+          "cuisine": "Codex commence à donner un billot par commis",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the bench became personal",
+          "kitchen": "Codex began handing out a bench per cook",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi la discipline ne suffisait plus",
+          "cuisine": "Personne n’est là pour désigner une place libre",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why discipline stopped being enough",
+          "kitchen": "No one is there to assign a bench",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Le billot fait désormais partie du poste",
+          "cuisine": "Le billot est attribué, gardé, puis nettoyé",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "The bench is now part of the post",
+          "kitchen": "The bench now comes with the cook’s post",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Un essai qui avance, pas encore une maison réglée",
+          "cuisine": "Chez Codex, le billot personnel reste un essai",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "A trial moving forward, not a settled house",
+          "kitchen": "At Codex the personal bench stays a trial",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient : la place vient avec le commis",
+          "cuisine": "Plusieurs commis en même temps, un billot chacun",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What to keep: the bench comes with the cook",
+          "kitchen": "Several cooks at once need separate boards",
           "expert": "Lesson"
         }
       },

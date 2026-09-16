@@ -53,11 +53,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment la maison s’est vidée sans jamais fermer sa porte",
+          "cuisine": "Continue est rachetée, la porte reste ouverte",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the house emptied without ever locking its door",
+          "kitchen": "Continue is bought, the door stays open",
           "expert": "Timeline"
         }
       },
@@ -129,11 +129,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une porte ouverte ne dit pas que la maison tourne",
+          "cuisine": "On peut s’arrêter sans jamais baisser le rideau",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why an unlocked door does not mean the house is running",
+          "kitchen": "A house can stop without lowering its shutter",
           "expert": "Mechanism"
         }
       },
@@ -155,11 +155,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La note sur la porte vaut mieux que le rideau",
+          "cuisine": "Lire la note, puis demander où est l’équipe",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "The notice on the door beats the shutter",
+          "kitchen": "Read the notice, then find the team",
           "expert": "Response"
         }
       },
@@ -181,11 +181,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Porte ouverte, fourneaux froids, cahiers repris",
+          "cuisine": "Fourneaux froids, entretien arrêté, rachat moins certain",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Door open, stoves cold, books taken on",
+          "kitchen": "Stoves cold, upkeep stopped, the buyout less certain",
           "expert": "Current state"
         }
       },
@@ -207,11 +207,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le rideau n’est pas le verdict",
+          "cuisine": "Une maison s’éteint par étapes, pas d’un coup",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The shutter is not the verdict",
+          "kitchen": "Houses go dark in stages, not overnight",
           "expert": "Lesson"
         }
       },

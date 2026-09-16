@@ -28,11 +28,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le passe ne se contente plus de crier la commande",
+          "cuisine": "Choisir qui prend le plat, et avec quoi",
           "expert": "L’envoi d’une tâche à un exécutant est devenu un sous-système à part entière"
         },
         "en": {
-          "kitchen": "The pass no longer just shouts the order",
+          "kitchen": "Picking the cook, the pans, and his limits",
           "expert": "Handing a task to an executor has become a subsystem of its own"
         }
       },
@@ -54,11 +54,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui apparaît quand l’envoi devient un métier",
+          "cuisine": "Chaque maison décide ce que le chef voit",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What shows up once sending becomes a craft",
+          "kitchen": "No two houses agree what the chef sees",
           "expert": "Signals"
         }
       },
@@ -80,11 +80,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le commis n’est pas le prolongement de ta voix",
+          "cuisine": "Le plat se cuisine ailleurs, hors du passe",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The cook is not an extension of your voice",
+          "kitchen": "A second service starts where you cannot see",
           "expert": "Mechanism"
         }
       },
@@ -106,11 +106,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Nommer qui prend le plat, et jusqu’où il va",
+          "cuisine": "Fixer d’avance ce que le passe voit",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Name who takes the plate, and how far it goes",
+          "kitchen": "The cook’s name travels with the order",
           "expert": "Response"
         }
       },
@@ -132,11 +132,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que ces maisons laissent au passe",
+          "cuisine": "Le commis rend son propre compte",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule these houses leave at the pass",
+          "kitchen": "The dish now belongs to another station",
           "expert": "Lesson"
         }
       },

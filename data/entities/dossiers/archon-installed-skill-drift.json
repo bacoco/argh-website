@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La fiche du classeur était corrigée, la photocopie au-dessus du piano ne l’était pas",
+          "cuisine": "Archon corrige la fiche, le poste lit l’ancienne",
           "expert": "La source était corrigée, la copie installée restait obsolète"
         },
         "en": {
-          "kitchen": "The binder page was corrected; the photocopy above the stove was not",
+          "kitchen": "Archon corrected the binder, not the station copy",
           "expert": "Source was corrected while the installed copy stayed stale"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Du classeur au poste, ce qui n’a pas suivi",
+          "cuisine": "Chez Archon, la correction n’arrive jamais au poste",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From binder to station, what never followed",
+          "kitchen": "Customers kept meeting the fault after the fix",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi corriger le classeur ne suffit pas",
+          "cuisine": "Deux versions de la même consigne, sans comparaison",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why fixing the binder is not enough",
+          "kitchen": "Two copies of one rule, nobody comparing them",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on vérifie désormais au poste",
+          "cuisine": "Dater la photocopie et la comparer à l’original",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What now gets checked at the station",
+          "kitchen": "Check the card the station actually reads",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la maison en retient",
+          "cuisine": "Chez Archon, la réparation n’a rien réparé",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What the house takes from it",
+          "kitchen": "The textbook Archon repair that repaired nothing",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "La vieille photocopie reste au mur",
+          "cuisine": "La bonne consigne doit arriver jusqu’au poste",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The old photocopy stays on the wall",
+          "kitchen": "A fix counts only where the work happens",
           "expert": "Lesson"
         }
       },

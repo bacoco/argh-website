@@ -54,11 +54,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Cinq postes de contrôle comptés, aucun service observé",
+          "cuisine": "Cinq postes comptés chez OpenClaw, jamais vus tenir",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Five control points counted, no service watched",
+          "kitchen": "Five checkers counted at OpenClaw, none seen holding",
           "expert": "Timeline"
         }
       },
@@ -80,11 +80,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le contrôleur ne surveille qu’une porte",
+          "cuisine": "Quelqu’un à une porte, personne aux autres",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "One door watched, the others open",
+          "kitchen": "One checker on the door, none elsewhere",
           "expert": "Mechanism"
         }
       },
@@ -106,11 +106,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Dire quelles portes sont tenues, et lesquelles ne le sont pas",
+          "cuisine": "Afficher ce qui n’est pas surveillé",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Name the watched doors, and the unwatched ones",
+          "kitchen": "Post what is not being watched",
           "expert": "Response"
         }
       },
@@ -132,11 +132,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on voit chez OpenClaw, et ce qu’on n’a pas vu",
+          "cuisine": "Les deux pannes d’OpenClaw restent ouvertes",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What OpenClaw shows, and what nobody watched",
+          "kitchen": "Both OpenClaw faults are still open",
           "expert": "Current state"
         }
       },
@@ -158,11 +158,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un contrôle vaut par ce qu’il laisse passer",
+          "cuisine": "Compter les sorties avant de se croire couvert",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A check is worth what it lets through",
+          "kitchen": "Count the ways out before feeling covered",
           "expert": "Lesson"
         }
       },

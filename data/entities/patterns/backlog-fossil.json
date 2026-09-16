@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le tableau des bons reste plein quand la maison a déjà fermé",
+          "cuisine": "Des commandes encore affichées après le dernier service",
           "expert": "Un inventaire de travail ouvert survit à la décision qui l’a vidé de son sens"
         },
         "en": {
-          "kitchen": "The order board stays full long after the room has closed",
+          "kitchen": "Orders still up after the last plate left",
           "expert": "An inventory of open work outlives the decision that drained it of meaning"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce que le tableau montre quand la maison est déjà partie",
+          "cuisine": "Roo Code avait supprimé des pans entiers de service",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What the board shows once the house has gone",
+          "kitchen": "Roo Code pulled whole sections off the menu",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi un tableau chargé rassure à tort",
+          "cuisine": "Les bons montent tout seuls et ne descendent jamais",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a crowded board is a comfort that lies",
+          "kitchen": "Tickets go up by themselves and never come down",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on regarde avant de croire une maison ouverte",
+          "cuisine": "Compter les plats sortis, pas les bons au mur",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to check before believing a house is open",
+          "kitchen": "Count the plates served, not the tickets pinned up",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que laisse le dernier service de Roo Code",
+          "cuisine": "Un mur couvert de bons peut annoncer une fermeture",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule Roo Code’s last service leaves behind",
+          "kitchen": "A wall of tickets can mean a closed house",
           "expert": "Lesson"
         }
       },

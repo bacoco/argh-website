@@ -26,11 +26,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le contrôleur absent du passe n’est pas un contrôleur qui a dit oui",
+          "cuisine": "Un contrôle muet au passe laissait sortir l’assiette",
           "expert": "La panne du contrôle de sécurité risquait de valoir permission"
         },
         "en": {
-          "kitchen": "A checker missing from the pass is not a checker who said yes",
+          "kitchen": "A checker that went silent let the plate out",
           "expert": "A safety control’s failure risked counting as permission"
         }
       },
@@ -52,11 +52,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment le poste de contrôle a pris du pouvoir",
+          "cuisine": "Le poste au passe a gagné du pouvoir",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the checking post gained power",
+          "kitchen": "The post at the pass gained power",
           "expert": "Timeline"
         }
       },
@@ -118,11 +118,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux réponses très différentes traitées pareil",
+          "cuisine": "Poste injoignable et poste d’accord, rangés ensemble",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Two very different answers treated the same",
+          "kitchen": "No answer was read as an approval",
           "expert": "Mechanism"
         }
       },
@@ -144,11 +144,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Trois réponses, pas une",
+          "cuisine": "Séparer le refus, la panne et l’inconnu",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Three answers, not one",
+          "kitchen": "Decide in advance whether the door shuts",
           "expert": "Response"
         }
       },
@@ -170,11 +170,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Toutes les maisons butent là-dessus",
+          "cuisine": "Un poste qui regardait décide maintenant, partout",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Every house is hitting this",
+          "kitchen": "In three kitchens the checker now decides",
           "expert": "Current state"
         }
       },
@@ -196,11 +196,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le silence n’est pas un accord",
+          "cuisine": "Le silence d’un garde n’est pas un oui",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Silence is not consent",
+          "kitchen": "A fallen post never gave permission",
           "expert": "Lesson"
         }
       },

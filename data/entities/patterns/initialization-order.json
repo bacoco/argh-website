@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le poste a ouvert avant que les caisses soient rangées",
+          "cuisine": "Ouvrir le poste avant d'avoir rangé les caisses",
           "expert": "Un consommateur s’initialise avant la fin de la découverte"
         },
         "en": {
-          "kitchen": "The station opened before the crates were put away",
+          "kitchen": "The station opens with its trays still empty",
           "expert": "A consumer initializes before discovery completes"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Les caisses sont pleines, les bacs sont vides",
+          "cuisine": "Claude Code a ouvert avec des bacs vides",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The crates are full, the trays are empty",
+          "kitchen": "Everyone is right and the trays are empty",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "On vérifie la livraison, jamais le bac",
+          "cuisine": "Un poste vide ressemble à un poste tranquille",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The delivery gets checked, the tray never does",
+          "kitchen": "Nobody complains when a tray holds nothing",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Demander au poste ce qu’il a, pas au couloir",
+          "cuisine": "Ne pas croire le livreur sur parole",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Ask the station what it holds, not the corridor",
+          "kitchen": "Look in the trays before the first order",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une caisse dans le couloir n’a nourri personne",
+          "cuisine": "Un poste prêt se vérifie au poste",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A crate in the corridor has fed nobody",
+          "kitchen": "Stock in the corridor cooks nothing",
           "expert": "Lesson"
         }
       },

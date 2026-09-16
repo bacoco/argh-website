@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La fiche était dans le tiroir, la tournée du matin n’y descendait pas",
+          "cuisine": "Une fiche présente dans la maison, jamais lue",
           "expert": "Ce qui est présent n’est pas ce qui est chargé"
         },
         "en": {
-          "kitchen": "The card was in the drawer, and morning prep never reached it",
+          "kitchen": "A card in the drawer service never opens",
           "expert": "What is present is not what gets loaded"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Les signes qu’une fiche n’est jamais sortie du tiroir",
+          "cuisine": "Chez Claude Code, la fiche reste au tiroir",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Signs a card never left the drawer",
+          "kitchen": "Claude Code's card never leaves the drawer",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une fiche rangée ressemble à une fiche suivie",
+          "cuisine": "On juge la fiche écrite, jamais la fiche sortie",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a filed card looks like a followed card",
+          "kitchen": "A filed card looks like a followed card",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Afficher ce qui est vraiment sorti, et prévenir quand la tournée change",
+          "cuisine": "Rendre visible ce que la tournée a vraiment sorti",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Post what actually came out, and give notice when the round changes",
+          "kitchen": "Make visible what the morning round actually brought out",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une fiche que personne ne sort n’existe pas",
+          "cuisine": "La consigne écrite n’a rien changé chez Claude Code",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A card nobody pulls does not exist",
+          "kitchen": "The written card changed nothing at Claude Code",
           "expert": "Lesson"
         }
       },

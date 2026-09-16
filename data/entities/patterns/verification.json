@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Chez pstack, on demande maintenant ce qui a été vu avant de croire une annonce",
+          "cuisine": "Chaque annonce doit dire ce qu’on a vu",
           "expert": "Une affirmation ne vaut que par l’observation qu’elle transporte"
         },
         "en": {
-          "kitchen": "At pstack a call is now worth what the caller actually watched",
+          "kitchen": "Say it was a guess, or show it",
           "expert": "A claim is worth only the observation it carries"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui sépare une annonce tenue d’une annonce bien tournée",
+          "cuisine": "On demande au chef ce qu’on pouvait vérifier",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What separates a call that holds from a call that sounds good",
+          "kitchen": "A firm call that names no witness",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi l’assurance passe pour une preuve",
+          "cuisine": "Une belle phrase pèse autant qu’une assiette vue",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why confidence passes for proof",
+          "kitchen": "Confidence and proof sound exactly alike",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Demander ce qui a été vu, puis mettre la règle elle-même à l’épreuve",
+          "cuisine": "Séparer nettement le vu du deviné",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Ask what was seen, then make sure the rule itself holds",
+          "kitchen": "Say what was seen, and what was guessed",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que pstack laisse au passe",
+          "cuisine": "Chez pstack, la règle est posée, l’effet inconnu",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule pstack leaves at the pass",
+          "kitchen": "pstack wrote the rule; nobody measured the change",
           "expert": "Lesson"
         }
       },

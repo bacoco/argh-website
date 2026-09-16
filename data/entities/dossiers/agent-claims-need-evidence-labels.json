@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le commis criait « parti ! » sans avoir vu l’assiette quitter le passe",
+          "cuisine": "Chez pstack, le commis annonce sans avoir regardé",
           "expert": "Une réponse assurée n’est pas un résultat de vérification"
         },
         "en": {
-          "kitchen": "The cook called “away!” without watching the plate leave the pass",
+          "kitchen": "At pstack a cook calls away without looking",
           "expert": "A confident reply is not a verification result"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on a entendu au passe, dans l’ordre",
+          "cuisine": "pstack récrit sa consigne le 9 septembre",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "What was called at the pass, in order",
+          "kitchen": "The pstack house rule is rewritten in September",
           "expert": "Timeline"
         }
       },
@@ -107,11 +107,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une phrase bien dite trompe le chef",
+          "cuisine": "Une annonce bien dite passe pour un fait",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a well-turned sentence fools the chef",
+          "kitchen": "A smooth call sounds like a fact",
           "expert": "Mechanism"
         }
       },
@@ -133,11 +133,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "La règle affichée au passe",
+          "cuisine": "Annoncer avec la preuve, ou dire qu’on devine",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "The rule now posted at the pass",
+          "kitchen": "Say what you saw, or say you guessed",
           "expert": "Response"
         }
       },
@@ -159,11 +159,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on sait ce soir",
+          "cuisine": "La consigne est affichée, l’effet reste inconnu",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What we know tonight",
+          "kitchen": "The pstack notice exists; its effect is unmeasured",
           "expert": "Current state"
         }
       },
@@ -185,11 +185,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Demander ce qu'il a vu, pas ce qu'il croit",
+          "cuisine": "Demander ce qui a été vu, pas cru",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Ask what he saw, not what he believes",
+          "kitchen": "Tone is not evidence at the pass",
           "expert": "Lesson"
         }
       },

@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La cuisine a changé de réglage, le classeur est resté sur l’ancien",
+          "cuisine": "Le classeur décrit un service qui a changé",
           "expert": "La documentation publiée ne décrit plus le comportement effectif"
         },
         "en": {
-          "kitchen": "The kitchen changed its setting, the binder stayed on the old one",
+          "kitchen": "The binder still teaches yesterday's way of working",
           "expert": "Published documentation no longer describes effective behavior"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Quand la page et le fourneau ne disent pas la même chose",
+          "cuisine": "Gemini sert d’office ce qu’il appelle encore essai",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "When the page and the stove disagree",
+          "kitchen": "Served by default at Gemini, still called trial",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi un classeur en retard ne paraît pas fautif",
+          "cuisine": "La page a raison pour une autre saison",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a binder running late does not look wrong",
+          "kitchen": "A clean page that is right about yesterday",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Dater les pages, et montrer le réglage sur le fourneau",
+          "cuisine": "Lire le réglage sur le fourneau lui-même",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Date the pages, and show the setting on the stove",
+          "kitchen": "Every page names the seasons it covers",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un classeur sans saison n’est vrai pour personne",
+          "cuisine": "Une page sans date ne vaut pour personne",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A binder with no season is true for nobody",
+          "kitchen": "A page without a date serves nobody",
           "expert": "Lesson"
         }
       },

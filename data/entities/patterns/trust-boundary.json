@@ -30,11 +30,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on accepte en entrant dans la cuisine d’un autre",
+          "cuisine": "Entrer dans une cuisine inconnue, c’est tout accepter",
           "expert": "Une décision de confiance porte sur tout ce que l’origine peut faire exécuter"
         },
         "en": {
-          "kitchen": "What you take on when you walk into someone else’s kitchen",
+          "kitchen": "Trusting a kitchen means trusting everything in it",
           "expert": "A trust decision covers everything the origin can cause to run"
         }
       },
@@ -56,11 +56,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui doit faire hésiter avant d’ouvrir",
+          "cuisine": "Ce qui entre ne dit pas qui décide",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What should make you pause before opening up",
+          "kitchen": "What comes in never says who decides",
           "expert": "Signals"
         }
       },
@@ -82,11 +82,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une feuille punaisée vaut une clé",
+          "cuisine": "Le papier commande autant que l’inconnu",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a pinned sheet is worth a key",
+          "kitchen": "A pinned sheet gives orders like any stranger",
           "expert": "Mechanism"
         }
       },
@@ -108,11 +108,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Décider une fois, à l’entrée, pour toute la pièce",
+          "cuisine": "Gemini décide tout à l’entrée, d’un seul coup",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Decide once, at the door, for the whole room",
+          "kitchen": "Gemini settles the whole room at the door",
           "expert": "Response"
         }
       },
@@ -134,11 +134,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que Gemini laisse sur le pas de la porte",
+          "cuisine": "Deux maisons se ressemblent au quai, pas aux fourneaux",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule Gemini leaves on the doorstep",
+          "kitchen": "Two houses match at the dock and nowhere else",
           "expert": "Lesson"
         }
       },

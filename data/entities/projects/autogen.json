@@ -52,11 +52,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment la maison est passée aux mains des habitués",
+          "cuisine": "AutoGen ouvre, puis le groupe déplace sa mise",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the house passed to its regulars",
+          "kitchen": "AutoGen opens, then the group moves its bets",
           "expert": "Timeline"
         }
       },
@@ -118,11 +118,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une maison ouverte ne dit pas où va l’argent",
+          "cuisine": "Les trois signes qu’une maison a déménagé",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "An open house does not say where the money goes",
+          "kitchen": "Three signs the owners opened another house",
           "expert": "Mechanism"
         }
       },
@@ -144,11 +144,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’il faut lire avant de classer une maison",
+          "cuisine": "La nouvelle adresse est écrite sur la porte",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to read before filing a house away",
+          "kitchen": "The new address is written on the door",
           "expert": "Response"
         }
       },
@@ -170,11 +170,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Où en est AutoGen",
+          "cuisine": "AutoGen reste ouvert, le neuf se bâtit ailleurs",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Where AutoGen stands",
+          "kitchen": "AutoGen stays open; new work is built elsewhere",
           "expert": "Current state"
         }
       },
@@ -196,11 +196,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la maison d’origine nous laisse",
+          "cuisine": "Les lumières allumées ne disent rien de demain",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What the first house leaves us",
+          "kitchen": "Lights still on say nothing about tomorrow",
           "expert": "Lesson"
         }
       },

@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Même consigne au mur, et soudain les croix s’accumulent",
+          "cuisine": "Même consigne au mur, comportement différent en cuisine",
           "expert": "Le comportement observé change alors que la règle écrite est restée identique"
         },
         "en": {
-          "kitchen": "Same note on the wall, and suddenly the marks pile up",
+          "kitchen": "The rule never moved, the kitchen did",
           "expert": "Observed behavior changes while the written rule stays identical"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "À quoi on voit que le service a glissé",
+          "cuisine": "Chez Claude Code, les écarts reviennent groupés",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "How you notice the service has slipped",
+          "kitchen": "Clean for months at Claude Code, then slips",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi on relit la consigne au lieu de regarder les assiettes",
+          "cuisine": "On soupçonne la consigne, jamais ce qui sort",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the note takes the blame instead of the plates",
+          "kitchen": "The note gets blamed, the plates never do",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Tenir le carnet des entorses comme on tient un inventaire",
+          "cuisine": "Noter la date et le nombre, sans conclure",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Keep the tally the way you keep stock",
+          "kitchen": "Record the date and the count, conclude nothing",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que le carnet de Claude Code a appris à la maison",
+          "cuisine": "Le carnet de Claude Code a servi de mesure",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What the tally at Claude Code taught the house",
+          "kitchen": "A rule that blocks also keeps score",
           "expert": "Lesson"
         }
       },

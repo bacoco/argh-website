@@ -70,11 +70,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "De la langue de la maison à l’homme qui peut refuser",
+          "cuisine": "Goose poste un homme qui peut dire non",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From the house’s own calls to the man who can refuse",
+          "kitchen": "Goose posts a man who can say no",
           "expert": "Timeline"
         }
       },
@@ -156,11 +156,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui arrive quand celui qui peut refuser n’est pas là",
+          "cuisine": "Le passe vide laisse tout passer",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "What happens when the man who can refuse is missing",
+          "kitchen": "An empty pass lets everything through",
           "expert": "Mechanism"
         }
       },
@@ -182,11 +182,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La règle écrite pour les soirs où il manque quelqu’un",
+          "cuisine": "Une règle pour le soir où il manque quelqu’un",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "The rule written for nights when somebody is missing",
+          "kitchen": "Goose wrote a rule for the missing man",
           "expert": "Response"
         }
       },
@@ -208,11 +208,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Une maison qui change de langue, deux soirs sans explication",
+          "cuisine": "Goose tourne, deux pannes sans réparation prouvée",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "A house changing language, two evenings still unexplained",
+          "kitchen": "Goose runs, and neither fault is proven fixed",
           "expert": "Current state"
         }
       },
@@ -234,11 +234,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Celui qui peut refuser doit dire ce qu’on fait sans lui",
+          "cuisine": "Qui peut refuser doit prévoir son remplaçant",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Whoever can refuse must say what happens without him",
+          "kitchen": "The right to refuse needs a stand-in",
           "expert": "Lesson"
         }
       },

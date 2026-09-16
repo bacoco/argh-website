@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le minuteur a sonné, le four du fond n’a rien entendu",
+          "cuisine": "Commande close au passe, cuisson toujours en cours",
           "expert": "Chez LangGraph, l’expiration portait sur l’attente, pas sur le travail"
         },
         "en": {
-          "kitchen": "The timer rang and the back oven heard nothing",
+          "kitchen": "Written off at the pass, still cooking behind",
           "expert": "In LangGraph, expiration applied to the wait, not to the work"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui sort en salle quand rien n’a été coupé",
+          "cuisine": "Chez LangGraph, deux fois le même plat",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What comes down the pass when nothing was actually stopped",
+          "kitchen": "Nobody walked back to look at the flame",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’un minuteur tient réellement dans la main",
+          "cuisine": "La sonnerie ne coupe aucun feu",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "What a timer actually holds in its hand",
+          "kitchen": "The bell reaches the waiter, never the flame",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Éteindre soi-même avant de relancer",
+          "cuisine": "Éteindre le feu soi-même avant de relancer",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Put the flame out yourself before starting over",
+          "kitchen": "Put the flame out before you fire again",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la sonnerie de LangGraph a vraiment mesuré",
+          "cuisine": "Une sonnerie mesure la patience, pas la cuisson",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What the bell at LangGraph really measured",
+          "kitchen": "The bell timed the wait, not the pot",
           "expert": "Lesson"
         }
       },

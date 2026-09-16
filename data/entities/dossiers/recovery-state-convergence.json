@@ -29,11 +29,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "On rend le carnet au commis, mais pas le poste qu’il avait",
+          "cuisine": "Codex rend le carnet, pas le poste",
           "expert": "La reprise de conversation se sépare de la reprise d’exécution"
         },
         "en": {
-          "kitchen": "Handing back the pad does not hand back the station",
+          "kitchen": "Cline hands back the pad, not the station",
           "expert": "Conversation recovery is separating from execution recovery"
         }
       },
@@ -55,11 +55,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment le carnet a cessé de suffire",
+          "cuisine": "Le carnet a cessé de suffire pour reprendre",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the pad turned out not to be enough",
+          "kitchen": "Coming back needed more than the pad",
           "expert": "Timeline"
         }
       },
@@ -121,11 +121,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le carnet dit ce qui a été commandé, pas ce qu’on avait sous la main",
+          "cuisine": "Le carnet garde les commandes, pas les casseroles",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The pad holds the orders, not the station that filled them",
+          "kitchen": "The pad holds the orders, never the pans",
           "expert": "Mechanism"
         }
       },
@@ -147,11 +147,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’il faut ranger à côté du carnet",
+          "cuisine": "Le poste doit revenir avec le carnet",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What gets stored next to the pad",
+          "kitchen": "Keep the station beside the pad, not apart",
           "expert": "Response"
         }
       },
@@ -173,11 +173,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Cinq maisons, la même correction en cours",
+          "cuisine": "Cinq maisons réparent, aucune n’a terminé",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Five houses, the same repair under way",
+          "kitchen": "Five houses are repairing, none has finished",
           "expert": "Current state"
         }
       },
@@ -199,11 +199,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Reprendre, c’est retrouver le poste autant que le carnet",
+          "cuisine": "On ne reprend pas avec le carnet seul",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Coming back means finding the station, not just the pad",
+          "kitchen": "A cook is back only when he can send",
           "expert": "Lesson"
         }
       },

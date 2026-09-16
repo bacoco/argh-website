@@ -30,11 +30,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La liste au mur est juste, celle qu’on a en main ne l’est pas",
+          "cuisine": "La feuille a été copiée avant la livraison",
           "expert": "L’état chargé à l’exécution diffère de l’état valide sur disque"
         },
         "en": {
-          "kitchen": "The list on the wall is right; the one in your hand is not",
+          "kitchen": "Reading the larder too early, then never again",
           "expert": "State loaded at execution differs from state valid on disk"
         }
       },
@@ -56,11 +56,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui ne colle pas entre la réserve et le passe",
+          "cuisine": "L’écart entre la réserve et la feuille en main",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What does not add up between larder and pass",
+          "kitchen": "Where the larder and the cook’s sheet disagree",
           "expert": "Signals"
         }
       },
@@ -82,11 +82,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une réserve bien tenue ne prouve rien",
+          "cuisine": "La réserve se vérifie, la feuille jamais",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a well-kept larder proves nothing",
+          "kitchen": "The larder gets counted; the sheet never does",
           "expert": "Mechanism"
         }
       },
@@ -108,11 +108,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Demander au commis ce qu’il a sur sa feuille",
+          "cuisine": "Dater chaque fiche affichée en cuisine",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Ask the cook what is on his sheet",
+          "kitchen": "Date every card pinned up in the kitchen",
           "expert": "Response"
         }
       },
@@ -134,11 +134,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que laissent la réserve pleine et la feuille vide",
+          "cuisine": "Une réserve bien tenue ne garantit aucun plat",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule left by a full larder and a blank sheet",
+          "kitchen": "A well-stocked larder guarantees no plate at all",
           "expert": "Lesson"
         }
       },

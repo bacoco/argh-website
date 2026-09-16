@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La dernière adresse écrite efface la précédente",
+          "cuisine": "Une adresse de livraison pour toutes les tables",
           "expert": "Une connexion partagée que le dernier arrivé remplace"
         },
         "en": {
-          "kitchen": "The last address written rubs out the one before",
+          "kitchen": "The last table to write owns the plates",
           "expert": "A shared connection the latest arrival replaces"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une seule ligne d’adresse pour toute la salle",
+          "cuisine": "Le plat part sans nom de table",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "One address line for the whole room",
+          "kitchen": "The plate leaves with no table on it",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "À une seule table, le tableau a toujours raison",
+          "cuisine": "Le défaut n’apparaît qu’à la deuxième table",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "With one table in the room, the board is always right",
+          "kitchen": "The fault appears only with a second table",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le nom de la table sur le bon, pas au tableau",
+          "cuisine": "L’essai doit se faire à salle pleine",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "The table on the docket, not on the board",
+          "kitchen": "The test has to happen with a full room",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui doit partir avec l’assiette",
+          "cuisine": "La faute existe même sans incident connu",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What has to leave with the plate",
+          "kitchen": "No incident known, and the fault already stands",
           "expert": "Lesson"
         }
       },

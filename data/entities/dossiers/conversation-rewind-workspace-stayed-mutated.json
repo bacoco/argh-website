@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "On a remonté le carnet de commandes, pas le plan de travail",
+          "cuisine": "Chez Codex, la commande recule, la cuisine non",
           "expert": "La conversation a été rembobinée, le working tree non"
         },
         "en": {
-          "kitchen": "The order book was turned back; the worktop was not",
+          "kitchen": "Codex hands back the ticket, not the worktop",
           "expert": "The conversation rewound; the working tree did not"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui s’est passé, page après page",
+          "cuisine": "Les pages disparaissent, les préparations restent entières",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "What happened, page by page",
+          "kitchen": "Pages vanish; the prepared food stays out",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux mémoires qui ne reviennent pas ensemble",
+          "cuisine": "Seul le carnet a fait marche arrière",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Two memories that do not come back together",
+          "kitchen": "Only the order book went back",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’un vrai retour en arrière devrait montrer",
+          "cuisine": "Un vrai retour montrerait ce qui reste préparé",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What a real turn-back should show",
+          "kitchen": "A proper turn-back would show what clashes",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Où en est la question",
+          "cuisine": "Plusieurs maisons comptent la cuisine dans la reprise",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Where the question stands",
+          "kitchen": "Several houses now turn the worktop back too",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’une page rendue ne rend pas",
+          "cuisine": "Rendre la commande ne rend pas la cuisine",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What a returned page does not return",
+          "kitchen": "An old ticket does not restore the kitchen",
           "expert": "Lesson"
         }
       },

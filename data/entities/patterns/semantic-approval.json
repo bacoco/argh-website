@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Il demandait s’il pouvait passer au frigo, pas ce qu’il allait y faire",
+          "cuisine": "Dire oui à la phrase, pas au geste",
           "expert": "L’accord portait sur le segment affiché, pas sur l’autorité réellement accordée"
         },
         "en": {
-          "kitchen": "He asked to step into the cold room, not what he would do there",
+          "kitchen": "The nod covered only what was read aloud",
           "expert": "Consent covered the displayed segment, not the authority actually granted"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La demande qui revient sans qu’on puisse jamais la régler",
+          "cuisine": "On ne montre au chef que le premier pas",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The question that keeps coming back and never settles",
+          "kitchen": "The chef is shown only the first step",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une phrase juste peut désigner le mauvais geste",
+          "cuisine": "Annoncer le premier pas n’est pas annoncer la manœuvre",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A true sentence can name the wrong move",
+          "kitchen": "Announcing the first step is not announcing the manoeuvre",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Lire au chef le geste le plus lourd, pas le premier",
+          "cuisine": "Dire toute la manœuvre avant de demander un oui",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Read the chef the heaviest move, not the first one",
+          "kitchen": "Say the whole manoeuvre before asking for a yes",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que le oui de trop a appris chez Claude Code",
+          "cuisine": "Claude Code a fait dire oui au mauvais geste",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What one yes too many taught at Claude Code",
+          "kitchen": "Claude Code asked yes about the wrong move",
           "expert": "Lesson"
         }
       },

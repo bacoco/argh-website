@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le tableau disait « tout est parti », et plusieurs plats n’avaient jamais quitté la cuisine",
+          "cuisine": "Aider marque le service fait, rien n’est parti",
           "expert": "Des pannes sans rapport se réduisaient toutes au même succès affiché"
         },
         "en": {
-          "kitchen": "The board said “all sent” on nights when plates never left the kitchen",
+          "kitchen": "Aider’s board says done when nothing left",
           "expert": "Unrelated failures kept collapsing into the same reported success"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Les soirs où la ligne verte est tombée quand même",
+          "cuisine": "Trois pannes chez Aider, une seule ligne verte",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The nights the green line came up anyway",
+          "kitchen": "Three Aider breakdowns write the same green line",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi trois pannes différentes écrivent la même ligne",
+          "cuisine": "Une seule case au tableau, tout finit vert",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why three different breakdowns write the same line",
+          "kitchen": "With one box, a bad night looks green",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’il faudrait pouvoir écrire au tableau",
+          "cuisine": "Au tableau, une ligne par panne",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What the board should be able to say",
+          "kitchen": "Give the board a line for each failure",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on sait de la maison aujourd’hui",
+          "cuisine": "Aider n’a pas fermé, les réparations attendent",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Where the house stands today",
+          "kitchen": "Aider is not shut, but repairs sit waiting",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "La ligne verte fait partie du plat",
+          "cuisine": "Un tableau qui ment gâche tout le service",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The green line is part of the dish",
+          "kitchen": "If the board lies, nothing else counts",
           "expert": "Lesson"
         }
       },

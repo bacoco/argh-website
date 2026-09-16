@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Deux consignes se contredisent, laquelle le commis suit-il ?",
+          "cuisine": "Deux consignes se contredisent, aucune ne prime clairement",
           "expert": "Des fichiers d’instructions au même nom ne portent pas la même précédence"
         },
         "en": {
-          "kitchen": "Two notes contradict each other — which one does the cook follow?",
+          "kitchen": "Two notes disagree, and neither one clearly wins",
           "expert": "Instruction files that share a name do not share a precedence rule"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Les mêmes feuilles d’une maison à l’autre",
+          "cuisine": "La même feuille passe de Codex à Gemini",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The same sheets from house to house",
+          "kitchen": "One sheet, read at Codex and at Gemini",
           "expert": "Signals"
         }
       },
@@ -77,11 +77,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "On lit la même feuille, on n’obéit pas au même chef",
+          "cuisine": "La feuille ne tranche pas, la maison tranche",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Same sheet read, different chef obeyed",
+          "kitchen": "The sheet decides nothing; the house decides",
           "expert": "Mechanism"
         }
       },
@@ -103,11 +103,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Mets deux consignes en désaccord et regarde",
+          "cuisine": "Mettre deux consignes en désaccord dans chaque maison",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Put two notes at odds and watch",
+          "kitchen": "Put two notes at odds in every house",
           "expert": "Response"
         }
       },
@@ -129,11 +129,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Même papier, pas même autorité",
+          "cuisine": "Même feuille, aucune garantie sur la règle",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Same paper, different authority",
+          "kitchen": "Same sheet, no promise of the same rule",
           "expert": "Lesson"
         }
       },

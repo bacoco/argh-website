@@ -53,11 +53,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Un soir d’essai, du premier geste au refus",
+          "cuisine": "Hermes fait le plat, puis trois choses clochent",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "One trial shift, from first move to refusal",
+          "kitchen": "Hermes cooks the dish, then three things slip",
           "expert": "Timeline"
         }
       },
@@ -139,11 +139,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi un bon service peut cacher trois trous",
+          "cuisine": "Trois accrocs chez Hermes, aucun n'a crié",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a good shift can hide three holes",
+          "kitchen": "Three snags at Hermes, not one shouted",
           "expert": "Mechanism"
         }
       },
@@ -165,11 +165,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on a gardé de lui, et la porte qu’on a fermée",
+          "cuisine": "Les méthodes retenues, Hermes écarté par écrit",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What was kept from him, and the door that was shut",
+          "kitchen": "Methods kept, Hermes turned down in writing",
           "expert": "Response"
         }
       },
@@ -191,11 +191,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Un seul plat, un seul soir : ce que ça prouve",
+          "cuisine": "Un seul plat essayé, rien au-delà",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "One dish, one evening: what that proves",
+          "kitchen": "One dish tried, nothing beyond it",
           "expert": "Current state"
         }
       },
@@ -217,11 +217,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’un essai réussi ne dit pas",
+          "cuisine": "Une assiette toujours pareille n’apprend rien",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What a good trial shift does not say",
+          "kitchen": "A plate that never changes teaches nothing",
           "expert": "Lesson"
         }
       },

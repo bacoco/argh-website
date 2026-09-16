@@ -30,11 +30,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Toutes les maisons reçoivent dans les mêmes caisses, et n’ouvrent pas à n’importe qui",
+          "cuisine": "Avec MCP, mêmes caisses partout, portes différentes",
           "expert": "Un protocole commun n’a pas produit un modèle de sécurité commun"
         },
         "en": {
-          "kitchen": "Every house takes the same crates, and still opens its door to whoever it likes",
+          "kitchen": "MCP standardised the crates, never the doors",
           "expert": "A common protocol did not produce a common security model"
         }
       },
@@ -56,11 +56,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment la caisse est devenue la même partout",
+          "cuisine": "Toutes les maisons ont adopté la même caisse",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the crate became the same everywhere",
+          "kitchen": "Every house took the same crate size",
           "expert": "Timeline"
         }
       },
@@ -122,11 +122,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la caisse ne règle pas",
+          "cuisine": "Une caisse commune ne choisit pas le fournisseur",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "What the crate does not settle",
+          "kitchen": "A standard crate never picks your supplier",
           "expert": "Mechanism"
         }
       },
@@ -148,11 +148,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’il faut regarder avant de comparer deux maisons",
+          "cuisine": "Regarder qui entre, pas seulement la caisse",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to look at before comparing two houses",
+          "kitchen": "Compare who gets in, not the crate size",
           "expert": "Response"
         }
       },
@@ -174,11 +174,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Où en est l’alignement",
+          "cuisine": "L’accord s’arrête au seuil de la maison",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Where the alignment stands",
+          "kitchen": "The agreement ends at the back door",
           "expert": "Current state"
         }
       },
@@ -200,11 +200,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’une caisse ne dira jamais",
+          "cuisine": "Le même carton n’ouvre pas les mêmes portes",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What a crate will never tell you",
+          "kitchen": "The box tells you nothing about the doorman",
           "expert": "Lesson"
         }
       },

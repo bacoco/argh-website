@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Une assiette arrêtée laisse une trace au passe",
+          "cuisine": "Un plat arrêté, et la raison est lisible",
           "expert": "Un garde-fou dont la décision est inspectable"
         },
         "en": {
-          "kitchen": "A stopped plate leaves a mark at the pass",
+          "kitchen": "You can see which check held the plate",
           "expert": "A guardrail whose decision can be inspected"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui se lit avant que le plat sorte",
+          "cuisine": "Chez OpenHands, chaque contrôle laisse une marque lisible",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What can be read before the plate leaves",
+          "kitchen": "At OpenHands every check leaves a readable mark",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Arrêtée ou jamais commencée, de la salle c’est pareil",
+          "cuisine": "Un plat retenu ressemble à un plat jamais commencé",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Held back or never started looks the same from the room",
+          "kitchen": "A held plate looks like a plate never started",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Faire parler chaque contrôle, surtout quand il arrête",
+          "cuisine": "Chaque contrôle annonce ce qu'il a retenu",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Make every check speak, above all when it stops one",
+          "kitchen": "Every check says what it held back",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’un contrôle doit toujours dire",
+          "cuisine": "Une assiette arrêtée sans un mot n’apprend rien",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What a check must always say",
+          "kitchen": "A plate stopped without a word teaches nobody",
           "expert": "Lesson"
         }
       },

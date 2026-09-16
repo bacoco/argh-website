@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "On faisait signer la ligne sans risque, pendant que l’autre passait derrière",
+          "cuisine": "Claude Code faisait signer le mauvais geste",
           "expert": "Le prompt de permission demandait un accord — pour la mauvaise action"
         },
         "en": {
-          "kitchen": "The harmless line got signed while the one that mattered slipped past",
+          "kitchen": "Claude Code asked consent for the wrong move",
           "expert": "The permission prompt asked for approval — for the wrong action"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Une découpe réparée, une signature toujours fausse",
+          "cuisine": "La découpe réparée, la feuille montrait toujours faux",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The cutting was fixed, the signature stayed wrong",
+          "kitchen": "The cutting was repaired, the slip stayed wrong",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La découpe était juste, la feuille montrait le mauvais morceau",
+          "cuisine": "La feuille montrait le morceau le plus inoffensif",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The cutting was right, the slip showed the wrong piece",
+          "kitchen": "The slip printed the mildest piece",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Faire signer le geste le plus lourd, pas le premier",
+          "cuisine": "Faire signer le geste le plus lourd",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Put the heaviest move on the slip, not the first",
+          "kitchen": "Name what the whole order does, plainly",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Une récidive qui sert d’exemple",
+          "cuisine": "Chez Claude Code, la faute est revenue",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "A repeat that now serves as the example",
+          "kitchen": "At Claude Code the wrong slip came back",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Signer la mauvaise ligne, ce n’est pas accepter",
+          "cuisine": "Une signature ne couvre que la ligne écrite",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Signing the wrong line is not agreeing",
+          "kitchen": "Show the customer what he is really allowing",
           "expert": "Lesson"
         }
       },

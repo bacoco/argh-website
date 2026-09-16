@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Aucun écriteau de fermeture sur la porte, et pourtant plus personne aux fourneaux",
+          "cuisine": "Continue ouvre encore, sans personne aux fourneaux",
           "expert": "Le projet est passé en read-only sans que le repository soit archivé"
         },
         "en": {
-          "kitchen": "No closing notice on the door, and nobody at the stoves",
+          "kitchen": "Continue’s door still opens; the stoves are cold",
           "expert": "The project went read-only without the repository being archived"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment les fourneaux se sont éteints sans écriteau",
+          "cuisine": "Comment Continue s’est arrêté sans le dire",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the stoves went cold with nothing on the door",
+          "kitchen": "Continue closed without saying so",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi la porte ne dit pas tout",
+          "cuisine": "La porte ne dit rien de la cuisine",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the door does not tell you everything",
+          "kitchen": "The door never reported what the crew did",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’il faut regarder avant de conclure",
+          "cuisine": "Demander à l’équipe, pas seulement à la porte",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to check before calling it",
+          "kitchen": "Ask the crew before trusting the frontage",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on trouve si on pousse la porte",
+          "cuisine": "Carte encore lisible, brigade déjà partie",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What you find if you push the door",
+          "kitchen": "Continue’s menu reads; nobody cooks from it",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient : l’écriteau n’est pas le verdict",
+          "cuisine": "Une maison ferme quand les fourneaux s’éteignent",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What to keep: the notice on the door is not the verdict",
+          "kitchen": "Cold stoves close a house, not notices",
           "expert": "Lesson"
         }
       },

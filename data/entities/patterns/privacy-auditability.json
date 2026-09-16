@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La vitre dépolie protège le destinataire et aveugle le chef",
+          "cuisine": "Protéger le destinataire a rendu le chef aveugle",
           "expert": "Un même support portait le transport confidentiel et l’observabilité opérateur"
         },
         "en": {
-          "kitchen": "The frosted glass shields the recipient and blinds the chef",
+          "kitchen": "Protecting the hand-off blinded the head chef",
           "expert": "One representation carried both confidential transport and operator observability"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on ne voit plus une fois la vitre dépolie",
+          "cuisine": "Une trace a disparu chez Codex, sans décision",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What disappears once the glass is frosted",
+          "kitchen": "Codex lost a record nobody decided to remove",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une seule vitre pour deux besoins",
+          "cuisine": "Dépolir la vitre a aveuglé le chef",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "One pane of glass for two needs",
+          "kitchen": "The same pane was doing two jobs",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Garder la vitre, tenir une ardoise à côté",
+          "cuisine": "Qui a reçu quoi, sans montrer le contenu",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Keep the glass, hang a slate beside it",
+          "kitchen": "Record the handover, never the contents",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Deux besoins, deux supports",
+          "cuisine": "Protéger et renseigner demandent deux endroits",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Two needs, two surfaces",
+          "kitchen": "Shielding and informing need two separate places",
           "expert": "Lesson"
         }
       },

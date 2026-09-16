@@ -28,11 +28,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Corriger la recette, l’imprimer, la servir : trois preuves qui ne se remplacent pas",
+          "cuisine": "Chez Codex, corrigé ne veut pas dire servi",
           "expert": "Merged, released, installed et observed-fixed se sont révélés être des états différents"
         },
         "en": {
-          "kitchen": "Fix the recipe, print it, serve it: three proofs that do not replace one another",
+          "kitchen": "At Archon, fixed on paper is not served",
           "expert": "Merged, released, installed and observed-fixed kept turning out to be different states"
         }
       },
@@ -54,11 +54,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Le chemin d’une correction, du livre jusqu’à la table",
+          "cuisine": "De la rature jusqu’à la table",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "A correction’s route, from the book to the table",
+          "kitchen": "The route from scratched recipe to served plate",
           "expert": "Timeline"
         }
       },
@@ -120,11 +120,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "S’arrêter au livre, c’est ne jamais regarder l’assiette",
+          "cuisine": "Le livre corrigé ne cuit rien tout seul",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Stop at the book and you never look at the plate",
+          "kitchen": "A corrected recipe still has to be cooked",
           "expert": "Mechanism"
         }
       },
@@ -146,11 +146,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Nommer chaque étape, et garder le droit de rouvrir",
+          "cuisine": "Nommer chaque étape et pouvoir rouvrir l’affaire",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Name every step, and keep the right to reopen",
+          "kitchen": "Give each step a name, keep reopening possible",
           "expert": "Response"
         }
       },
@@ -172,11 +172,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la maison en a tiré comme règle",
+          "cuisine": "ARGH ne compte plus corrigé comme servi",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What the house turned this into",
+          "kitchen": "ARGH no longer counts fixed as served",
           "expert": "Current state"
         }
       },
@@ -198,11 +198,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La correction n’est finie qu’à table",
+          "cuisine": "La correction n’est finie que dans l’assiette",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A correction is done only at the table",
+          "kitchen": "Only the plate proves the recipe was fixed",
           "expert": "Lesson"
         }
       },

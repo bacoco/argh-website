@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Personne n’a demandé ce plat, c’est pourtant celui qui sort",
+          "cuisine": "Ce qui sort quand personne n'a rien demandé",
           "expert": "Le comportement effectif quand personne n’a rien configuré"
         },
         "en": {
-          "kitchen": "Nobody ordered it that way, and that is the way it goes out",
+          "kitchen": "The sauce you get without ordering it",
           "expert": "Effective behaviour when nobody configured anything"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le cahier dit une chose, l’assiette en dit une autre",
+          "cuisine": "Rien n’indique quelle règle est appliquée ce soir",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The book says one thing, the plate says another",
+          "kitchen": "Nothing tells you which rule is running tonight",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une règle que personne n’a choisie, personne ne va la vérifier",
+          "cuisine": "On ne relit pas ce qu’on n’a pas choisi",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A rule nobody chose is a rule nobody goes to check",
+          "kitchen": "Nobody rereads a rule they never chose",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Dater la page, et montrer la règle du soir dans la salle",
+          "cuisine": "Dire pour quelles maisons la nouvelle règle vaut",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Date the page, and show tonight’s rule in the room",
+          "kitchen": "Say which houses the new rule actually applies to",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une règle de maison qui change doit dire depuis quand",
+          "cuisine": "Une règle changée sans date trompe tout le monde",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A house rule that changes must say since when",
+          "kitchen": "A rule changed with no date misleads everyone",
           "expert": "Lesson"
         }
       },

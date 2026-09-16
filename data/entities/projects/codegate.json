@@ -53,11 +53,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment le poste à la porte a disparu",
+          "cuisine": "CodeGate déplace son poste, puis ferme la maison",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the post on the door disappeared",
+          "kitchen": "CodeGate moves the post, then shuts the house",
           "expert": "Timeline"
         }
       },
@@ -129,11 +129,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un poste utile dont personne ne voulait",
+          "cuisine": "Peu de preneurs, le poste change de place",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A useful post nobody wanted",
+          "kitchen": "Few takers, so the post changes place",
           "expert": "Mechanism"
         }
       },
@@ -155,11 +155,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’il faut lire avant d’écrire la fin",
+          "cuisine": "Avant d’écrire la fin, lire les derniers projets",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to read before writing the ending",
+          "kitchen": "An attempted turn is not a finished one",
           "expert": "Response"
         }
       },
@@ -181,11 +181,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Où en est CodeGate",
+          "cuisine": "Plus personne dedans, et la fin est expliquée",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Where CodeGate stands",
+          "kitchen": "Nobody left inside, and the ending is explained",
           "expert": "Current state"
         }
       },
@@ -207,11 +207,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient du poste vide",
+          "cuisine": "Comprendre son erreur ne fait pas rouvrir",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What the empty post teaches",
+          "kitchen": "Understanding the mistake does not bring it back",
           "expert": "Lesson"
         }
       },

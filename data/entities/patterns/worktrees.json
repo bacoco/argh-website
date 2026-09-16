@@ -27,11 +27,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Un billot pour chaque commis, et la maison qui l’attribue",
+          "cuisine": "Un billot par commis, fourni par la maison",
           "expert": "L’isolation du workspace passe de convention externe à propriété du runtime"
         },
         "en": {
-          "kitchen": "One bench per cook, handed out by the house",
+          "kitchen": "Separate benches, handed out by the kitchen itself",
           "expert": "Workspace isolation moves from external convention to runtime property"
         }
       },
@@ -53,11 +53,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux mains dans la même préparation, et personne ne l’a voulu",
+          "cuisine": "Chacun dans son coin, les gestes se croisent",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Two hands in the same preparation, and nobody meant it",
+          "kitchen": "Separate tickets do not separate the boards",
           "expert": "Signals"
         }
       },
@@ -79,11 +79,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La maison fait surgir des commis quand personne n’est là pour les placer",
+          "cuisine": "Des commis apparaissent sans que personne les place",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The house raises cooks when nobody is there to seat them",
+          "kitchen": "Cooks appear mid-service and nobody seats them",
           "expert": "Mechanism"
         }
       },
@@ -105,11 +105,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Attribuer la place, la garder, puis rendre au plat commun à voix haute",
+          "cuisine": "Une place attribuée, gardée, puis rendue à voix haute",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Hand out the spot, hold it, then give the work back out loud",
+          "kitchen": "A spot given, held, and returned out loud",
           "expert": "Response"
         }
       },
@@ -131,11 +131,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que quatre maisons ont appris sur le billot commun",
+          "cuisine": "Quatre maisons donnent désormais une planche par commis",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What four houses learned about the shared block",
+          "kitchen": "Four houses now give every cook a board",
           "expert": "Lesson"
         }
       },

@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le nom écrit à la craie avant que le plat existe",
+          "cuisine": "L'essai sur l'ardoise, pas encore sur la carte",
           "expert": "Un indice d’évolution qui précède l’intégration"
         },
         "en": {
-          "kitchen": "The name chalked up before the dish exists",
+          "kitchen": "A name chalked up before the dish exists",
           "expert": "An early indication that runs ahead of integration"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un beau nom à la craie et personne au fourneau",
+          "cuisine": "Un nom sur l'ardoise, personne au fourneau",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "A fine name in chalk and nobody at the stove",
+          "kitchen": "A name chalked up, nobody at the stove",
           "expert": "Signals"
         }
       },
@@ -77,11 +77,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi la craie se lit comme la carte",
+          "cuisine": "La craie se lit comme la carte imprimée",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why chalk gets read like the printed menu",
+          "kitchen": "Chalk gets read like the printed menu",
           "expert": "Mechanism"
         }
       },
@@ -103,11 +103,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Garder l’ardoise, la dater, ne pas l’annoncer en salle",
+          "cuisine": "Garder l’ardoise du fond hors de la salle",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Keeping the board, dating it, not announcing it out front",
+          "kitchen": "Keep the back board out of the dining room",
           "expert": "Response"
         }
       },
@@ -129,11 +129,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La craie annonce, elle ne sert pas",
+          "cuisine": "Une intention affichée n’est pas un plat servi",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Chalk announces, chalk does not serve",
+          "kitchen": "A posted intention is not a dish served",
           "expert": "Lesson"
         }
       },

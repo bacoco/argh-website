@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le commis a attendu, personne n’a répondu, l’assiette est partie",
+          "cuisine": "Sans réponse du chef, le commis envoie seul",
           "expert": "Une question adressée à un humain se résout en poursuite autonome"
         },
         "en": {
-          "kitchen": "The commis waited, nobody answered, the plate went out",
+          "kitchen": "No answer from the chef, the plate goes",
           "expert": "A question meant for a human resolves into autonomous continuation"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La question a une horloge, et l’horloge répond à votre place",
+          "cuisine": "L'horloge répond à la place du patron",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The question has a clock, and the clock answers for you",
+          "kitchen": "The clock answers, and the plate goes out",
           "expert": "Signals"
         }
       },
@@ -76,11 +76,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "On a réglé le plat qui refroidit, pas l’accord du patron",
+          "cuisine": "Le plat froid passe avant l'accord du patron",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The cold plate got solved; the owner's word did not",
+          "kitchen": "The cold plate beat the owner's word",
           "expert": "Mechanism"
         }
       },
@@ -102,11 +102,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Quand personne ne répond, l’assiette reste au passe",
+          "cuisine": "Le ticket doit distinguer l’accord de l’attente",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "When nobody answers, the plate stays at the pass",
+          "kitchen": "The ticket must tell a yes from a wait",
           "expert": "Response"
         }
       },
@@ -128,11 +128,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ne rien dire, ce n’est pas dire oui",
+          "cuisine": "Demander l’avis du patron et servir quand même",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Saying nothing is not saying yes",
+          "kitchen": "Asking the owner, then serving anyway",
           "expert": "Lesson"
         }
       },

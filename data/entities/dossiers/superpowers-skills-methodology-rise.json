@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Superpowers voyage de maison en maison dans la veste des cuisiniers",
+          "cuisine": "Superpowers a voyagé de maison en maison",
           "expert": "Superpowers : une méthodologie de skills qui franchit les frontières de harnais"
         },
         "en": {
-          "kitchen": "Superpowers travels house to house in the cooks’ jackets",
+          "kitchen": "Superpowers travelled with the cooks who changed houses",
           "expert": "Superpowers: a skills methodology crossing harness boundaries"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "D’un carnet de maison à une façon de faire commune",
+          "cuisine": "D'un carnet de maison à une pratique partagée",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From one house’s notebook to a shared way of working",
+          "kitchen": "One kitchen's notebook becomes everyone's method",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui voyage n’est pas la fiche, c’est l’ordre des gestes",
+          "cuisine": "Ce qui se transmet, c'est l'ordre des gestes",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "What travels is not the card, it is the order of the moves",
+          "kitchen": "What travels is the order of the moves",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Suivre une façon de faire jusque dans la maison suivante",
+          "cuisine": "Suivre la pratique dans la maison suivante",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Following the practice into the next house",
+          "kitchen": "Follow the method into the next house",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Assez avancé pour qu’on le suive de près",
+          "cuisine": "Superpowers est désormais suivi de près",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Far enough along to be watched closely",
+          "kitchen": "Superpowers is now watched closely",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une façon de faire s’installe avant d’avoir un nom sur la carte",
+          "cuisine": "Une pratique circule avant d'arriver sur la carte",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A practice settles in before it has a name on the menu",
+          "kitchen": "A practice spreads before it has a name",
           "expert": "Lesson"
         }
       },

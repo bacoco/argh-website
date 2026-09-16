@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le plat sort encore, et la maison a déjà annoncé qu’elle l’arrête",
+          "cuisine": "Un plat encore servi que la maison arrête",
           "expert": "Un élément encore disponible dont l’usage futur est déconseillé"
         },
         "en": {
-          "kitchen": "The dish still goes out, and the house has already said it is stopping",
+          "kitchen": "Still on the stove, already announced as finished",
           "expert": "An element still available whose future use is discouraged"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui annonce l’arrêt, ce n’est pas le silence",
+          "cuisine": "Le patron de CodeGate a prévenu avant l’arrêt",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What announces the end is not the silence",
+          "kitchen": "CodeGate announced the change before deliveries stopped",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi un plat encore servi rassure à tort",
+          "cuisine": "Un four qui chauffe ne promet pas demain",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a dish still going out is false comfort",
+          "kitchen": "A hot oven is no promise of tomorrow",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on note quand une maison prévient",
+          "cuisine": "Garder la raison donnée par le patron",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to write down when a house gives notice",
+          "kitchen": "Line up the replacement while the dish still sells",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui marche encore n’est pas ce qu’on continuera",
+          "cuisine": "Changer de carte n’est pas remplir la salle",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Still cooking is not still kept up",
+          "kitchen": "A new menu does not fill the room",
           "expert": "Lesson"
         }
       },

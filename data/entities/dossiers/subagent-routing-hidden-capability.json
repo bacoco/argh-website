@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Chez Codex, une colonne retirée du bon a emporté un poste entier",
+          "cuisine": "Codex retire une case et perd des postes",
           "expert": "Codex : des champs masqués pour la confidentialité ont supprimé une capacité de routage"
         },
         "en": {
-          "kitchen": "At Codex, a box dropped from the ticket took a whole station with it",
+          "kitchen": "Codex hid one box and lost a station",
           "expert": "Codex: fields hidden for privacy removed a routing capability"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment un ticket plus propre a fermé des postes",
+          "cuisine": "Le ménage de Codex a fermé des postes",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How a tidier ticket closed down stations",
+          "kitchen": "Tidying Codex’s slip closed down stations",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une case du bon est déjà un ordre",
+          "cuisine": "La case retirée portait le choix du poste",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A box on the slip is already an order",
+          "kitchen": "The box named which cook took the plate",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Éprouver le bon en plein service, pas à l’imprimerie",
+          "cuisine": "Vérifier en service, pas sur le papier sorti",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Test the slip in a real service, not at the printer",
+          "kitchen": "Call every station before trusting a clean printout",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce que cette maison montre à toutes les autres",
+          "cuisine": "Codex montre ce que la discrétion peut coûter",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What this house shows all the others",
+          "kitchen": "Codex shows what tidying a slip can cost",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Toute case dont on peut se servir est un pouvoir",
+          "cuisine": "Sur un bon, rien n’est décoratif",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Any box you can act on is a power",
+          "kitchen": "Ask who reads a line before wiping it",
           "expert": "Lesson"
         }
       },

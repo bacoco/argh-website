@@ -32,11 +32,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Tout le monde parle la même langue, personne ne prête les mêmes clés",
+          "cuisine": "Une langue commune, mais chacun garde ses clés",
           "expert": "Une interface commune, des règles de confiance restées locales"
         },
         "en": {
-          "kitchen": "Everyone speaks one language, nobody lends the same keys",
+          "kitchen": "Speaking the same language does not open doors",
           "expert": "One shared interface, trust rules that stayed local"
         }
       },
@@ -58,11 +58,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le même fournisseur, deux accueils différents",
+          "cuisine": "Claude Code n’arrivait pas à renvoyer ses livreurs",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The same supplier, two different welcomes",
+          "kitchen": "At Gemini, a stranger’s papers are refused whole",
           "expert": "Signals"
         }
       },
@@ -84,11 +84,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La langue commune rassure, l’arrière-cuisine décide",
+          "cuisine": "Un bon identique n’ouvre pas la réserve",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The shared language reassures, the back kitchen decides",
+          "kitchen": "The back kitchen decides who gets in",
           "expert": "Mechanism"
         }
       },
@@ -110,11 +110,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Demander les clés maison par maison",
+          "cuisine": "Exiger un nom, et pouvoir renvoyer le livreur",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Ask for the keys house by house",
+          "kitchen": "Know who delivers, and how to stop him",
           "expert": "Response"
         }
       },
@@ -136,11 +136,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la langue commune ne donne pas",
+          "cuisine": "Une langue commune ne prête pas les clés",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What the shared language does not give",
+          "kitchen": "A common tongue, and no shared keys",
           "expert": "Lesson"
         }
       },

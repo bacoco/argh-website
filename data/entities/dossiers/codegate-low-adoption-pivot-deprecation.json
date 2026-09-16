@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La salle est restée vide, et la nouvelle carte ne l’a pas remplie",
+          "cuisine": "CodeGate a équipé une salle jamais remplie",
           "expert": "Une adoption insuffisante a déclenché un pivot ; le pivot n’a pas empêché la dépréciation"
         },
         "en": {
-          "kitchen": "The room stayed empty, and the new menu did not fill it either",
+          "kitchen": "CodeGate never filled its room, on either menu",
           "expert": "Weak adoption triggered a pivot; the pivot did not prevent deprecation"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "De la grande salle au rideau baissé",
+          "cuisine": "CodeGate a rangé des postes, refait sa carte",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From the big room to the lowered shutter",
+          "kitchen": "Two menus at CodeGate, neither one caught on",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui a manqué, et ce qui n’a pas manqué",
+          "cuisine": "La cuisine allait bien, la salle restait vide",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "What was missing, and what was not",
+          "kitchen": "The CodeGate kitchen worked; the diners never came",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’il faut noter quand une maison change de carte",
+          "cuisine": "Noter pourquoi la carte a changé, pas quand",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to write down when a house rewrites its menu",
+          "kitchen": "A menu change warns long before the shutter",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’est cette maison aujourd’hui",
+          "cuisine": "CodeGate a baissé le rideau et l’a annoncé",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What this house is today",
+          "kitchen": "CodeGate says itself that it stopped serving",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient : changer de carte n’est pas se sauver",
+          "cuisine": "Changer de carte ne remplit pas la salle",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What to keep: a new menu is not a rescue",
+          "kitchen": "Understanding an empty room will not fill it",
           "expert": "Lesson"
         }
       },

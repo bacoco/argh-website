@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le plat repart alors que le premier cuit encore",
+          "cuisine": "Relancer le plat sans couper le premier feu",
           "expert": "Une nouvelle tentative démarre sans lire l’état laissé par la précédente"
         },
         "en": {
-          "kitchen": "The dish goes again while the first one is still cooking",
+          "kitchen": "Sending it again while the first still cooks",
           "expert": "A fresh attempt starts without reading the state the previous one left"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on voit quand deux plats avancent pour une seule commande",
+          "cuisine": "Deux assiettes pour une seule commande",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What two plates for one order look like",
+          "kitchen": "Two plates go out for one order",
           "expert": "Signals"
         }
       },
@@ -77,11 +77,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi le passe croit la casserole éteinte",
+          "cuisine": "Renoncer à attendre n’éteint pas le feu",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the pass believes the pan is off",
+          "kitchen": "The pass stops waiting, the pan keeps cooking",
           "expert": "Mechanism"
         }
       },
@@ -103,11 +103,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Couper le feu avant de relancer la commande",
+          "cuisine": "Ne relancer qu’après avoir vu la casserole",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Kill the flame before the order goes again",
+          "kitchen": "Look in the pan before the order repeats",
           "expert": "Response"
         }
       },
@@ -129,11 +129,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que LangGraph laisse au passe",
+          "cuisine": "Relancer sans regarder coûte deux fois",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule LangGraph leaves at the pass",
+          "kitchen": "Blind restarts double the bill",
           "expert": "Lesson"
         }
       },

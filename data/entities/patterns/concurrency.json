@@ -30,11 +30,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le soir où ils ont été deux sur le même plan de travail",
+          "cuisine": "Deux cuisiniers sur un plan prévu pour un",
           "expert": "Des contrôles écrits pour une exécution unique cèdent dès que deux exécutions se recouvrent"
         },
         "en": {
-          "kitchen": "The night two cooks shared one bench",
+          "kitchen": "A kitchen built for one, worked by two",
           "expert": "Controls written for one run at a time break once two runs overlap"
         }
       },
@@ -56,11 +56,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui n’existe qu’en un seul exemplaire",
+          "cuisine": "Une seule ardoise pour toute la brigade",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The things there is only one of",
+          "kitchen": "Look for what the whole brigade shares",
           "expert": "Signals"
         }
       },
@@ -82,11 +82,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Personne n’a fait un geste de travers",
+          "cuisine": "Pourquoi le service casse sans faute de personne",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Nobody made a wrong move",
+          "kitchen": "Every hand is right and the service still breaks",
           "expert": "Mechanism"
         }
       },
@@ -108,11 +108,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une ardoise, un plan de travail, un nom dessus",
+          "cuisine": "Une place nommée pour chaque cuisinier",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "One slate and one bench per cook, names on both",
+          "kitchen": "Hand out a named bench to every cook",
           "expert": "Response"
         }
       },
@@ -134,11 +134,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui est unique devient le point de collision",
+          "cuisine": "C’est le partage qui casse, pas les mains",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Whatever there is one of is where you collide",
+          "kitchen": "One slate is where two services crash",
           "expert": "Lesson"
         }
       },

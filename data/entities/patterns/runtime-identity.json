@@ -30,11 +30,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "On lui a dit que le poste était prêt, ce n’était pas le sien",
+          "cuisine": "Le feu vert portait sur un autre poste",
           "expert": "Le contexte d’exécution actif est rarement celui que le système croit décrire"
         },
         "en": {
-          "kitchen": "He was told his station was ready; it was not his station",
+          "kitchen": "All clear, but about the station next door",
           "expert": "The active execution context is rarely the one the system believes it describes"
         }
       },
@@ -56,11 +56,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui met en doute le poste où l’on croit être",
+          "cuisine": "Archon se souvient de tout, sauf du matériel",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What throws doubt on the station you think you are in",
+          "kitchen": "Archon remembers the words, not the equipment",
           "expert": "Signals"
         }
       },
@@ -82,11 +82,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi deux postes qui se ressemblent ne se valent pas",
+          "cuisine": "Deux postes identiques de loin, différents au service",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why two stations that look alike are not the same",
+          "kitchen": "Two stations look alike until service starts",
           "expert": "Mechanism"
         }
       },
@@ -108,11 +108,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Faire parler le tableau du bon poste",
+          "cuisine": "Comparer le tableau au poste réel",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Make the board describe the right station",
+          "kitchen": "Check the board against the real station",
           "expert": "Response"
         }
       },
@@ -134,11 +134,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que gstack et Archon laissent au tableau",
+          "cuisine": "La mémoire ne remplace pas le poste",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule gstack and Archon leave on the board",
+          "kitchen": "Remembering is not the same as standing there",
           "expert": "Lesson"
         }
       },

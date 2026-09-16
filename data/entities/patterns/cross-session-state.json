@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La consigne d’hier soir commande encore ce matin",
+          "cuisine": "La consigne d'un service commande encore le suivant",
           "expert": "Un garde limité à une session devenu contrainte pour les suivantes"
         },
         "en": {
-          "kitchen": "Last night’s note is still giving orders this morning",
+          "kitchen": "Last night's note still binds this morning's brigade",
           "expert": "A guard scoped to one session became a constraint on the next ones"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Les marques d’une consigne qui traîne",
+          "cuisine": "Une consigne sans signature ni heure de fin",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "How a note that outstayed its shift shows itself",
+          "kitchen": "No name on the note, no closing hour",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "« Cette étagère-là » ne veut rien dire demain",
+          "cuisine": "La consigne survit au service qui l’a écrite",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "“That shelf there” means nothing tomorrow",
+          "kitchen": "That shelf means whatever the next reader thinks",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "L’adresse complète, une signature, et on décroche en partant",
+          "cuisine": "Ne décrocher que sa propre consigne",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Full address, a signature, and you take it down on your way out",
+          "kitchen": "Pull only the note you pinned yourself",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une règle temporaire doit savoir où et jusqu’à quand",
+          "cuisine": "Une règle temporaire doit dire où et jusqu’à quand",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A temporary rule has to know where, and until when",
+          "kitchen": "With no address and no hour, tomorrow decides",
           "expert": "Lesson"
         }
       },

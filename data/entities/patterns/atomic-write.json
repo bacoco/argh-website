@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La place était vide avant que le remplacement existe",
+          "cuisine": "Enlever le plat avant que le suivant existe",
           "expert": "Le remplacement détruit l’ancien état avant d’être durable"
         },
         "en": {
-          "kitchen": "The spot was empty before the replacement existed",
+          "kitchen": "The spot sits empty if the replacement fails",
           "expert": "The replacement destroys the old state before it is durable"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Reconnaître une place vidée trop tôt",
+          "cuisine": "Une place nette est le vrai mauvais signe",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Spotting a spot cleared too early",
+          "kitchen": "The clean empty spot is the real warning",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "L’ordre des gestes, pas le geste raté",
+          "cuisine": "Débarrasser avant de dresser, voilà la faute",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The order of the moves, not the botched move",
+          "kitchen": "Clearing before plating is the whole fault",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Préparer à côté, échanger à la fin",
+          "cuisine": "Ne débarrasser qu’une fois le remplaçant prêt",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Build it alongside, swap at the end",
+          "kitchen": "Clear the spot only when the replacement is ready",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient : garder le dernier plat qui marchait",
+          "cuisine": "Un ratage ne doit jamais coûter l’ancien plat",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What to keep: never lose the last good plate",
+          "kitchen": "A failed prep must never cost the old plate",
           "expert": "Lesson"
         }
       },

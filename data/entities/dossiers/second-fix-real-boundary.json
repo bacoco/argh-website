@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le refus a fini par être posé sur la main qui écrit",
+          "cuisine": "Le cahier de Codex dévorait toute la réserve",
           "expert": "Le second correctif a placé le contrôle à la frontière que le premier avait manquée"
         },
         "en": {
-          "kitchen": "The refusal ended up on the hand that writes",
+          "kitchen": "Codex’s service ledger was eating the stores",
           "expert": "The second fix put the control at the boundary the first one missed"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Du premier tri jusqu’au fond du cahier",
+          "cuisine": "Deux tris chez Codex pour calmer le cahier",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From the first sort to the bottom of the ledger",
+          "kitchen": "Codex sorted twice before the ledger calmed",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "L’étiquette changeait en chemin",
+          "cuisine": "La note changeait d’étiquette après le tri",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The label changed along the way",
+          "kitchen": "The note was relabelled after the first sort",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Refuser au moment d’écrire, pas au moment de lire l’étiquette",
+          "cuisine": "Refuser à l’écriture, pas à l’entrée",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Refuse at the writing, not at the label",
+          "kitchen": "Codex moved the refusal to the ledger itself",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la réserve montre depuis",
+          "cuisine": "Le second tri de Codex est livré",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What the stores have shown since",
+          "kitchen": "Codex shipped the second sort, and it held",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Quand la même note repasse deux fois",
+          "cuisine": "Quand le tri rate deux fois, change d’endroit",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "When the same note gets through twice",
+          "kitchen": "Two failed fixes mean the wrong place",
           "expert": "Lesson"
         }
       },

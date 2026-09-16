@@ -60,11 +60,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "La maison a changé de rue, puis l’addition a cessé de correspondre",
+          "cuisine": "SWE-agent déménage, puis paye deux fois la commande",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The house moved streets, then the tally stopped adding up",
+          "kitchen": "SWE-agent moves, then pays for the order twice",
           "expert": "Timeline"
         }
       },
@@ -166,11 +166,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Qui tient vraiment les comptes pendant le service",
+          "cuisine": "Le caissier ne voit pas toute la cuisine",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Who is really keeping count during service",
+          "kitchen": "The till never sees the whole kitchen",
           "expert": "Mechanism"
         }
       },
@@ -192,11 +192,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Refaire le plat raté, pas toute la commande",
+          "cuisine": "L’ordre d’arrêter doit arriver jusqu’au bout",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Redo the plate that failed, not the whole order",
+          "kitchen": "The order to stop must reach the end",
           "expert": "Response"
         }
       },
@@ -218,11 +218,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "La maison tourne, les corrections dorment",
+          "cuisine": "Nouvelle adresse ouverte, l’addition se trompe encore",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The house is running, the repairs are sleeping",
+          "kitchen": "New address open, the bill is still wrong",
           "expert": "Current state"
         }
       },
@@ -244,11 +244,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient : changer de rue n’est pas fermer",
+          "cuisine": "Une limite ne tient pas les yeux fermés",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What to keep: a new street is not a closed house",
+          "kitchen": "You cannot cap what you cannot see",
           "expert": "Lesson"
         }
       },

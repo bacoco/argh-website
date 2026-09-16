@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La commande est cochée, le client attend toujours",
+          "cuisine": "Quatre gestes après la commande cochée, avant la table",
           "expert": "La complétion enregistrée chez le producteur, jamais chez le destinataire"
         },
         "en": {
-          "kitchen": "The order is ticked off, and the guest is still waiting",
+          "kitchen": "Four more moves after the cook says done",
           "expert": "Completion recorded at the producer, never at the recipient"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un carnet parfait et une salle qui râle",
+          "cuisine": "OpenClaw comptait juste et les tables attendaient",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "A perfect book and a room full of complaints",
+          "kitchen": "OpenClaw counted five moves as one stroke",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "On compte à la porte de la cuisine, pas à la table",
+          "cuisine": "La salle ne peut plus corriger le carnet",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The count is taken at the kitchen door, not at the table",
+          "kitchen": "The room cannot unwrite a tick",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ne cocher qu’une fois le plat posé devant quelqu’un",
+          "cuisine": "Cocher au dernier geste, pas au premier",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Tick it off only once the plate is down in front of someone",
+          "kitchen": "Tick on the fifth move, not the first",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "C’est la table qui dit qu’un service est fini",
+          "cuisine": "Seul le client atteste qu’un plat est arrivé",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The table is what says a service is over",
+          "kitchen": "Only the guest can say the plate arrived",
           "expert": "Lesson"
         }
       },

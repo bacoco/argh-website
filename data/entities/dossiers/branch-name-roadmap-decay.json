@@ -26,11 +26,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Une ardoise annonçait un plat que personne ne préparait plus",
+          "cuisine": "Une ardoise de Codex promet un plat abandonné",
           "expert": "Un nom de branche flatteur a survécu à sa propre divergence et n’indiquait plus aucune livraison proche"
         },
         "en": {
-          "kitchen": "A chalkboard kept promising a dish nobody was still cooking",
+          "kitchen": "Roo Code’s board still promises a dropped dish",
           "expert": "A promising branch name outlived its own divergence and no longer indicated near-term shipping"
         }
       },
@@ -52,11 +52,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment l’ardoise a vieilli",
+          "cuisine": "Deux préparations lancées, puis l’ardoise n’a plus bougé",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the board went stale",
+          "kitchen": "Two preparations started, then the board never changed",
           "expert": "Timeline"
         }
       },
@@ -118,11 +118,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi l’ardoise nous a trompés",
+          "cuisine": "L’ardoise est au mur, mais sans date",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the board misled the room",
+          "kitchen": "A board on the wall carries no date",
           "expert": "Mechanism"
         }
       },
@@ -144,11 +144,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la cuisine fait maintenant de ses ardoises",
+          "cuisine": "Une ardoise vieillie ne pèse presque plus rien",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "How the kitchen now reads its boards",
+          "kitchen": "An old board weighs less than tonight’s menu",
           "expert": "Response"
         }
       },
@@ -170,11 +170,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Ce que vaut une ardoise aujourd’hui",
+          "cuisine": "L’ardoise dit l’intention, jamais le service du soir",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What a board is worth today",
+          "kitchen": "The board still records what the house wanted",
           "expert": "Current state"
         }
       },
@@ -196,11 +196,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient : une ardoise n’est pas une commande",
+          "cuisine": "Une ardoise annonce une envie, pas une assiette",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What to keep: a board is not an order",
+          "kitchen": "Writing a dish up is not cooking it",
           "expert": "Lesson"
         }
       },

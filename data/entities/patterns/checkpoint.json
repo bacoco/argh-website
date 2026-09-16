@@ -34,11 +34,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le carnet revient en arrière, les casseroles non",
+          "cuisine": "Revenir en arrière ne défait pas la cuisson",
           "expert": "Rejouer la conversation ne restaure pas l’état d’exécution qu’elle suppose"
         },
         "en": {
-          "kitchen": "The order book goes back a page; the pans do not",
+          "kitchen": "Going back does not uncook the dish",
           "expert": "Replaying the conversation does not restore the execution state it assumes"
         }
       },
@@ -60,11 +60,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on remarque juste après avoir repris le service",
+          "cuisine": "Reprise propre sur le carnet, fausse aux fourneaux",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What surfaces right after you pick service back up",
+          "kitchen": "A restart that reads clean and cooks wrong",
           "expert": "Signals"
         }
       },
@@ -86,11 +86,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi un carnet bien tenu ne suffit pas",
+          "cuisine": "Un carnet complet ne dit rien des fourneaux",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a well-kept order book is not enough",
+          "kitchen": "A full order book says nothing about the stoves",
           "expert": "Mechanism"
         }
       },
@@ -112,11 +112,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Reprendre le plat, pas seulement le carnet",
+          "cuisine": "Noter l’état des casseroles avant de s’arrêter",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Pick the dish back up, not only the book",
+          "kitchen": "Note where the pans got to before stopping",
           "expert": "Response"
         }
       },
@@ -138,11 +138,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que laissent les reprises de Codex et d’Archon",
+          "cuisine": "Le carnet seul ne ramène pas le service",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule left by restarts at Codex and Archon",
+          "kitchen": "The book alone cannot bring a service back",
           "expert": "Lesson"
         }
       },

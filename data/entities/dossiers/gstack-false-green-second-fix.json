@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le bon « poste prêt » a été recopié sur un poste qui n’était pas le même",
+          "cuisine": "gstack a réutilisé le bon d’un autre poste",
           "expert": "Un false-green corrigé, puis reproduit sur une autre dimension d’identité"
         },
         "en": {
-          "kitchen": "One station’s ready slip kept being used for a station that was not the same",
+          "kitchen": "At gstack one ready slip covered two stations",
           "expert": "A false green was fixed, then recurred on a different identity dimension"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Le bon, la panne, la réparation, la même panne",
+          "cuisine": "Le bon vert a menti deux fois",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The slip, the failure, the repair, the same failure again",
+          "kitchen": "Green slip, dead service, repair, dead service again",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux postes qui se ressemblent ne cuisinent pas pareil",
+          "cuisine": "Même plan de travail, four et clés différents",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Two stations that look alike do not cook alike",
+          "kitchen": "Same bench, but a different oven and keys",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le bon doit nommer ce qui cuisine",
+          "cuisine": "Écrire sur le bon le four qui chauffe",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "The slip must name what actually cooks",
+          "kitchen": "The slip must name the oven that cooks",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "La deuxième panne a appris plus que la première",
+          "cuisine": "La deuxième panne de gstack a tout montré",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The second failure taught more than the first",
+          "kitchen": "The second failure taught what the first hid",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui est vérifié doit être ce qui cuisine",
+          "cuisine": "Le four qui chauffe, pas celui d’à côté",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What gets checked must be what does the cooking",
+          "kitchen": "A slip cannot be borrowed by a neighbour",
           "expert": "Lesson"
         }
       },

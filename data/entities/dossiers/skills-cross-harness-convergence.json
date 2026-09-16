@@ -29,11 +29,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La fiche de recette est devenue une boîte scellée que chaque maison sait ouvrir",
+          "cuisine": "De Claude Code à Goose, la fiche grossit",
           "expert": "Les skills sont passés du fichier de prompt au package runtime"
         },
         "en": {
-          "kitchen": "The recipe card became a sealed box every house knows how to open",
+          "kitchen": "From Claude Code to OpenHands, the card grew",
           "expert": "Skills moved from prompt file to runtime package"
         }
       },
@@ -55,11 +55,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment la fiche a pris du volume",
+          "cuisine": "La fiche de recette a pris du poids",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the card put on weight",
+          "kitchen": "The recipe card kept growing, house by house",
           "expert": "Timeline"
         }
       },
@@ -121,11 +121,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le papier ne suffit plus à juger la fiche",
+          "cuisine": "Le trajet de la fiche compte autant",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Paper alone no longer judges the card",
+          "kitchen": "How the card arrives matters as much",
           "expert": "Mechanism"
         }
       },
@@ -147,11 +147,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Traiter la fiche comme une denrée, pas comme un papier",
+          "cuisine": "Suivre les fiches comme on suit la marchandise",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Treat the card like stock, not like paper",
+          "kitchen": "Book cards in and out like stock",
           "expert": "Response"
         }
       },
@@ -173,11 +173,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Des maisons qui ne se parlent pas vont dans le même sens",
+          "cuisine": "Six maisons comptent leurs fiches sans s'être parlé",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Houses that never speak are heading the same way",
+          "kitchen": "Cline, Goose and the rest now count cards",
           "expert": "Current state"
         }
       },
@@ -199,11 +199,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Corriger la fiche ne suffit pas",
+          "cuisine": "Réparer la fiche ne répare pas le trajet",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Fixing the card is not enough",
+          "kitchen": "Fixing the writing does not fix the route",
           "expert": "Lesson"
         }
       },

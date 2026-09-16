@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Entrer dans la cuisine d’un autre, c’est accepter ses consignes et ses outils d’un coup",
+          "cuisine": "Gemini accorde sa confiance à la pièce entière",
           "expert": "Une seule décision de confiance couvre hooks, serveurs MCP et fichiers d’instructions"
         },
         "en": {
-          "kitchen": "Walking into someone else’s kitchen means taking its orders and its tools in one go",
+          "kitchen": "Gemini trusts the whole room or none",
           "expert": "A single trust decision covers hooks, MCP servers and instruction files"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment on en est venu à tout fermer d’un coup",
+          "cuisine": "Consignes, outils et porte de service jugés ensemble",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How it came to closing everything at once",
+          "kitchen": "Orders, tools and service door judged together",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Trois choses qui ne se ressemblent pas, un seul pouvoir",
+          "cuisine": "Trois choses différentes pèsent sur le même cuisinier",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Three things that look nothing alike, one shared power",
+          "kitchen": "Three unlike things push the same cook",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une seule décision, prise à la porte",
+          "cuisine": "Décider à la porte, pour toute la cuisine",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "One decision, taken at the door",
+          "kitchen": "One decision at the door, covering everything",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce que cette maison applique déjà",
+          "cuisine": "Gemini traite sa porte comme un choix unique",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What that house already runs",
+          "kitchen": "Gemini already treats the door as one decision",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle à retenir en franchissant une porte",
+          "cuisine": "Entrer quelque part revient à confier ses clés",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule worth keeping at someone else’s door",
+          "kitchen": "Entering a kitchen is handing over keys",
           "expert": "Lesson"
         }
       },

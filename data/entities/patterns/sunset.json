@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La maison ferme parce qu’elle l’a décidé, pas parce qu’elle s’est vidée",
+          "cuisine": "Une maison qui ferme parce qu’elle l’a décidé",
           "expert": "Une fin de vie décidée se lit dans les retraits et la version finale, jamais dans le silence"
         },
         "en": {
-          "kitchen": "The house closes by decision, not because it emptied out",
+          "kitchen": "A last service announced, then the shutter down",
           "expert": "A decided end of life reads in removed surfaces and a final release, never in silence"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui annonce un dernier service",
+          "cuisine": "La carte de Roo Code a beaucoup rétréci",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What announces a last service",
+          "kitchen": "Roo Code’s menu lost whole sections",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une fermeture décidée ressemble à une maison qui tourne",
+          "cuisine": "Le service continue jusqu’au dernier soir",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a planned closing looks like a house still trading",
+          "kitchen": "Service runs right up to the last night",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Suivre la carte et le rideau, pas le bruit de la salle",
+          "cuisine": "Compter ce qui quitte la carte",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Follow the menu and the shutter, not the noise in the room",
+          "kitchen": "Count what leaves the menu",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient d’une fermeture annoncée",
+          "cuisine": "Le travail restant n’est pas un signe de vie",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What a declared closing leaves behind",
+          "kitchen": "Pending work is not a sign of life",
           "expert": "Lesson"
         }
       },

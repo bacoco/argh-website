@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La consigne écrite sur la page part avec la page",
+          "cuisine": "Demander la discrétion au lieu de rayer soi-même",
           "expert": "Le caviardage doit précéder l’assemblage du contexte, non l’accompagner"
         },
         "en": {
-          "kitchen": "A note written on the page leaves with the page",
+          "kitchen": "Asking the outside reader to keep a secret",
           "expert": "Redaction must precede context assembly, not ride inside it"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Comment repérer une page qui sort sans être rayée",
+          "cuisine": "Gemini recopiait le brut sans le nettoyer",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "How to spot a page that leaves uncrossed",
+          "kitchen": "Gemini’s office copy was never crossed out",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une réponse propre ne prouve rien",
+          "cuisine": "Juger la réponse, croire avoir jugé la page",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a clean answer proves nothing about the page",
+          "kitchen": "A spotless answer says nothing about the page",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une seule main, toujours au même endroit",
+          "cuisine": "Glisser de faux secrets et voir s’ils sortent",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "One hand, always at the same spot",
+          "kitchen": "One hand at the door, every single page",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui ne doit pas sortir se raye au moment de sortir",
+          "cuisine": "Un lecteur n’oublie pas ce qu’il a lu",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What must not leave gets crossed out on the way out",
+          "kitchen": "Asking the reader to forget never works",
           "expert": "Lesson"
         }
       },

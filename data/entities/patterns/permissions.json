@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "On signe pour un pas de côté, on accorde le geste d’à côté",
+          "cuisine": "Signer un geste anodin, en accorder un autre",
           "expert": "Le prompt mettait en avant le segment anodin d’une commande composée"
         },
         "en": {
-          "kitchen": "You sign for a step sideways, you grant the act riding behind it",
+          "kitchen": "The slip names the harmless half only",
           "expert": "The prompt foregrounded the harmless segment of a composed command"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce que dit un papier mal rédigé",
+          "cuisine": "Le geste qui engage la maison n’apparaît pas",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What a badly written slip tells you",
+          "kitchen": "The binding move never reaches the slip",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Bien découpé, mal annoncé",
+          "cuisine": "La maison découpe bien, puis annonce le mauvais geste",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Cut correctly, announced wrongly",
+          "kitchen": "The mistake is which move goes on the slip",
           "expert": "Mechanism"
         }
       },
@@ -105,7 +105,7 @@
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Put the heaviest act on the slip",
+          "kitchen": "Prettier wording repairs nothing while the slip lies",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "On n’accorde que ce que le papier dit",
+          "cuisine": "Le plus gros geste passe sans être demandé",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "You grant only what the slip says",
+          "kitchen": "The biggest act goes through unasked",
           "expert": "Lesson"
         }
       },

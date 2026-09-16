@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Un comptoir commun, des maisons aux règles différentes",
+          "cuisine": "MCP a unifié les caisses, pas les serrures",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "One shared counter, house rules that differ",
+          "kitchen": "MCP made the crates match, not the locks",
           "expert": "Timeline"
         }
       },
@@ -76,11 +76,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Quand le comptoir ne retient que le dernier venu",
+          "cuisine": "L’assiette part à la mauvaise table",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "When the counter only remembers the last arrival",
+          "kitchen": "The tray goes out to the wrong table",
           "expert": "Mechanism"
         }
       },
@@ -102,11 +102,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’il faut écrire sur le bon",
+          "cuisine": "Le bon porte le nom de la table",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Write the table on the docket",
+          "kitchen": "Write the table on the docket, every time",
           "expert": "Response"
         }
       },
@@ -128,11 +128,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui est commun, ce qui ne l’est pas",
+          "cuisine": "Livraison commune, chacun ferme à sa façon",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What is shared, what never was",
+          "kitchen": "One way in, every house locks differently",
           "expert": "Current state"
         }
       },
@@ -154,11 +154,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le nom de la table voyage avec le plat",
+          "cuisine": "Une adresse manquante suffit à égarer un plat",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The plate carries its own table",
+          "kitchen": "A missing address loses the plate",
           "expert": "Lesson"
         }
       },

@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le même carnet de commandes ne fait pas la même maison",
+          "cuisine": "Un carnet partagé ne transporte pas les règles",
           "expert": "Un contrat d’échange commun ne transporte pas la politique locale"
         },
         "en": {
-          "kitchen": "One shared order pad does not make one kitchen",
+          "kitchen": "The order pad travels, the house rules stay",
           "expert": "A shared exchange contract does not carry local policy"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Où se voit le travail quand la carte ne bouge pas",
+          "cuisine": "Chez Goose, rien de neuf sur la carte",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Where the work shows when the menu does not move",
+          "kitchen": "Goose is building where guests never look",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi la carte ne prévient de rien",
+          "cuisine": "Le métier change, la carte suit longtemps après",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the menu gives no warning",
+          "kitchen": "The menu is the last thing to move",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’il faut vérifier maison par maison",
+          "cuisine": "Regarder les travaux, pas seulement le passe",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to check house by house",
+          "kitchen": "Ask each house who may touch what",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que Goose apprend sur le carnet partagé",
+          "cuisine": "Le carnet se prête, pas les règles",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What Goose teaches about the shared pad",
+          "kitchen": "Lending the pad lends none of the rules",
           "expert": "Lesson"
         }
       },

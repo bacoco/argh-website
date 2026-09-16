@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La maison sert encore, personne ne répare le passe",
+          "cuisine": "Ouverte tous les soirs, plus rien n'est réparé",
           "expert": "Un produit encore en service dont la réparation n’arrive plus"
         },
         "en": {
-          "kitchen": "The house still serves, nobody repairs the pass",
+          "kitchen": "Serving every night, fixing nothing any more",
           "expert": "A product still in service whose repairs stop arriving"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le même raté qui revient, mois après mois",
+          "cuisine": "Chez Aider, le même raté revient chaque mois",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The same fault coming back, month after month",
+          "kitchen": "At Aider the same fault keeps coming back",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Servir tous les soirs n’est pas entretenir",
+          "cuisine": "La salle ne voit pas ce qui rate derrière",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Serving every night is not keeping up",
+          "kitchen": "The room never learns what went wrong behind it",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Goûter, compter les retours, puis s’engager",
+          "cuisine": "Refaire l’essai avec un plat volontairement raté",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Taste it, count the returns, then decide",
+          "kitchen": "Test it again with a dish spoiled on purpose",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que dit une porte encore ouverte",
+          "cuisine": "Une porte ouverte ne prouve aucune réparation",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What an open door actually tells you",
+          "kitchen": "An open door proves no repair at all",
           "expert": "Lesson"
         }
       },

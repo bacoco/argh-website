@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "À force de tout noter, le cahier a fini par manger le service",
+          "cuisine": "Codex écrivait tant qu’il ne cuisinait plus",
           "expert": "La télémétrie construite pour expliquer l’agent est devenue la panne de ressources"
         },
         "en": {
-          "kitchen": "Writing everything down, the ledger ended up eating the service",
+          "kitchen": "Codex kept a ledger until it swallowed service",
           "expert": "Telemetry built to explain the agent became the resource failure"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Du cahier bien tenu au cahier qui bloque",
+          "cuisine": "Le cahier grossit, puis deux relectures le taillent",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From a well-kept ledger to a ledger that blocks",
+          "kitchen": "How the writing grew past the cooking",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "On avait compté le cahier pour rien",
+          "cuisine": "Le cahier passait pour gratuit, à tort",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The ledger had been counted as free",
+          "kitchen": "The ledger looked free, so it kept growing",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Donner au cahier ses propres limites",
+          "cuisine": "Limiter les pages, la vitesse, la durée",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Give the ledger limits of its own",
+          "kitchen": "Decide what never goes on the page",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Le compteur est resté près de la page",
+          "cuisine": "Codex a fini par limiter ce qu’il écrit",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The counter stayed next to the page",
+          "kitchen": "Codex finally capped how much it writes down",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Tenir le cahier, c’est du travail",
+          "cuisine": "Tenir le cahier, c’est un poste de plus",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Keeping the ledger is work",
+          "kitchen": "Watching service costs hands like any station",
           "expert": "Lesson"
         }
       },

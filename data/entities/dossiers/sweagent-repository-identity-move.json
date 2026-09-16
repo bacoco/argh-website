@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "SWE-agent a déménagé, et l’ancienne porte a fait croire à une fermeture",
+          "cuisine": "SWE-agent a déménagé, l'ancienne porte trompe",
           "expert": "SWE-agent : un changement d’identité de repository lu comme une disparition"
         },
         "en": {
-          "kitchen": "SWE-agent moved, and the old door made it look shut",
+          "kitchen": "SWE-agent moved, and the old door looks shut",
           "expert": "SWE-agent: a repository identity change read as disappearance"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Une adresse qui change, un feu qui ne s’éteint pas",
+          "cuisine": "L'adresse change, la maison ouvre toujours",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The address changes, the fire does not go out",
+          "kitchen": "The sign changed, the service did not",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le guetteur ne connaissait que l’ancienne rue",
+          "cuisine": "On surveillait une porte, pas la maison",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The watcher only knew the old street",
+          "kitchen": "The watcher knew the door, not the house",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Reconnaître la maison avant de juger son service",
+          "cuisine": "Retrouver la maison avant de juger",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Know the house before judging its service",
+          "kitchen": "Find the house before calling it closed",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "La maison tourne, à sa nouvelle adresse",
+          "cuisine": "SWE-agent tourne à sa nouvelle adresse",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The house is running, at its new address",
+          "kitchen": "SWE-agent is cooking at the new address",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une porte qui renvoie ailleurs n’est pas une porte fermée",
+          "cuisine": "Une porte qui renvoie ailleurs n'est pas fermée",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A door that points elsewhere is not a door shut",
+          "kitchen": "A door that points elsewhere is not shut",
           "expert": "Lesson"
         }
       },

@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "L’annulation arrive au carnet et n’arrive jamais au piano",
+          "cuisine": "Annuler au carnet ne défait pas le plat",
           "expert": "Une même tâche vit dans deux historiques que l’on restaure séparément"
         },
         "en": {
-          "kitchen": "The cancellation reaches the book and never reaches the stove",
+          "kitchen": "Struck off the book, still on the stove",
           "expert": "One task lives in two histories that get restored separately"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui trahit une maison qui se souvient de deux soirées",
+          "cuisine": "Le cuisinier refait un travail déjà fait",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What gives away a house holding two versions of one night",
+          "kitchen": "You have to read book and stove together",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi les deux moitiés ont l’air d’accord",
+          "cuisine": "L’encre revient sur le carnet, jamais sur la cuisson",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why both halves look perfectly in order",
+          "kitchen": "The pen reaches the book, never the heat",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Effacer des deux côtés, ou montrer ce qui ne s’efface pas",
+          "cuisine": "Montrer au cuisinier le travail qui ne s’effacera pas",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Clear both sides, or show what will not clear",
+          "kitchen": "Show the cook the work that will not undo",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que Codex laisse entre le carnet et le piano",
+          "cuisine": "Une annulation qui ne vaut que d’un côté",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule Codex leaves between the book and the stove",
+          "kitchen": "A cancellation that only holds on one side",
           "expert": "Lesson"
         }
       },

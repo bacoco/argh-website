@@ -56,11 +56,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "De la première salle au dernier service",
+          "cuisine": "Roo Code s’agrandit, puis démonte tout exprès",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From the first room to the last service",
+          "kitchen": "Roo Code grows, then takes itself apart",
           "expert": "Timeline"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une salle pleine ne dit pas qu’on rouvre demain",
+          "cuisine": "Roo Code a prévenu, Aider s’est juste tu",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A full book is not a promise to reopen",
+          "kitchen": "Roo Code gave notice, Aider simply went quiet",
           "expert": "Mechanism"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Lire le carnet avant d’écrire la nécrologie",
+          "cuisine": "Le silence seul ne prouve aucune fermeture",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Read the book before writing the obituary",
+          "kitchen": "Silence alone never proves a house is shut",
           "expert": "Response"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Rideau baissé, carnet plein",
+          "cuisine": "Fermée, et la liste des interdits reste contournable",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Shutter down, book still full",
+          "kitchen": "Closed, and the ban list still has gaps",
           "expert": "Current state"
         }
       },
@@ -220,11 +220,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "On ferme par décision, pas par silence",
+          "cuisine": "C’est le patron qui ferme, pas la clientèle",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Houses close by decision, not by silence",
+          "kitchen": "The owner closes the house, not the diners",
           "expert": "Lesson"
         }
       },

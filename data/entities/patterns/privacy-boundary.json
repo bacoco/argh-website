@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui est sorti est sorti, et la maison a plusieurs portes",
+          "cuisine": "Une seule porte gardée, plusieurs portes ouvertes",
           "expert": "Un contrôle ne couvre que l’amont de la ligne qu’il garde, et il y a plusieurs lignes"
         },
         "en": {
-          "kitchen": "What is out is out, and the house has more than one door",
+          "kitchen": "What left the house cannot be called back",
           "expert": "A control covers only what precedes the line it guards, and there is more than one line"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Les sorties qu’on oublie de compter",
+          "cuisine": "Deux sorties que personne ne surveille",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The ways out nobody counts",
+          "kitchen": "Two ways out with nobody watching them",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une sortie ne se reprend pas",
+          "cuisine": "Une réponse propre ne prouve aucun départ",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A departure cannot be taken back",
+          "kitchen": "The clean reply says nothing about what left",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Compter les portes avant de poster la garde",
+          "cuisine": "Gemini n’a pas encore listé ses portes",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Count the doors before posting the watch",
+          "kitchen": "Gemini has not yet listed its doors",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une garde ne protège que devant elle",
+          "cuisine": "Ce qui est dehors ne rentre plus jamais",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A watch protects only what is in front of it",
+          "kitchen": "What is outside never comes back in",
           "expert": "Lesson"
         }
       },

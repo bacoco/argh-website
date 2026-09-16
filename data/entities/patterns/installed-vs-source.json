@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "On a corrigé la recette du livre, pas la fiche du poste",
+          "cuisine": "Le livre corrigé, la fiche du poste inchangée",
           "expert": "Un artefact corrigé en source, exécuté en version installée"
         },
         "en": {
-          "kitchen": "The recipe in the book got fixed, the card at the station did not",
+          "kitchen": "The recipe book updated, the station card untouched",
           "expert": "An artifact fixed in source, executed from the installed copy"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le correctif est là, le geste n’a pas changé",
+          "cuisine": "La salle ne bouge pas après la correction",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The fix is there, the move has not changed",
+          "kitchen": "Corrected on paper, unchanged at the station",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "On a classé l’affaire en refermant le livre",
+          "cuisine": "On surveille la correction, jamais l’échange de fiche",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The case was closed by closing the book",
+          "kitchen": "The approval was watched, the swap was not",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Aller lire la fiche qui est au poste",
+          "cuisine": "Remplacer la fiche du poste soi-même, puis regarder",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Go and read the card that is at the station",
+          "kitchen": "Swap the card yourself, then watch the room",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui compte, c’est la fiche que le commis a sous les yeux",
+          "cuisine": "Seule compte la fiche posée au poste",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What counts is the card in front of the commis",
+          "kitchen": "The commis follows the card, not the book",
           "expert": "Lesson"
         }
       },

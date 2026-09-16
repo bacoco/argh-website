@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La table n’a pas répondu, le minuteur a sonné, l’assiette est partie quand même",
+          "cuisine": "Codex a laissé partir l’assiette sans réponse",
           "expert": "Un contrôle humain s’est ouvert de lui-même à l’expiration du délai"
         },
         "en": {
-          "kitchen": "The table never answered, the timer rang, and the plate went out anyway",
+          "kitchen": "Claude Code and Codex read silence as yes",
           "expert": "A human gate opened by itself when its timeout expired"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment l’assiette est partie sans réponse",
+          "cuisine": "Le minuteur a sonné, l’assiette est partie",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the plate left without an answer",
+          "kitchen": "The timer rang and the plate left anyway",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Les trois choses qu’on a confondues",
+          "cuisine": "Un silence traité comme un accord",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The three things that got confused",
+          "kitchen": "Three different answers filed in the same drawer",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on règle avant le prochain service",
+          "cuisine": "Pour les décisions lourdes, l’assiette ne part pas",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to settle before the next service",
+          "kitchen": "No answer, no plate, unless somebody owns it",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la répétition prouve, et ce qu’elle ne prouve pas",
+          "cuisine": "Deux maisons sans lien, le même silence",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What the repeat proves, and what it does not",
+          "kitchen": "Two unconnected houses played the same scene",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle qu’on ne laisse pas au minuteur",
+          "cuisine": "Le minuteur ne décide pas pour la table",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule you do not leave to a timer",
+          "kitchen": "A timer cannot answer for the guest",
           "expert": "Lesson"
         }
       },

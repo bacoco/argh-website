@@ -35,11 +35,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Sept maisons, sept façons d’éteindre les fourneaux",
+          "cuisine": "Une maison peut s’éteindre de plusieurs façons",
           "expert": "La fin d’un projet est un ensemble d’états distincts, pas un événement unique"
         },
         "en": {
-          "kitchen": "Seven houses, seven ways of letting the stoves go cold",
+          "kitchen": "Closing down is not one single ending",
           "expert": "A project’s end is a set of distinct states, not a single event"
         }
       },
@@ -61,11 +61,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on regarde avant de dire qu’une maison est morte",
+          "cuisine": "SWE-agent a changé d’adresse sans éteindre ses fourneaux",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What to look at before calling a house dead",
+          "kitchen": "SWE-agent moved address without letting the stoves cool",
           "expert": "Signals"
         }
       },
@@ -87,11 +87,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi l’écriteau sur la porte se trompe",
+          "cuisine": "Personne n’a posé d’écriteau chez Continue",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the notice on the door gets it wrong",
+          "kitchen": "Continue never put a notice on its door",
           "expert": "Mechanism"
         }
       },
@@ -113,11 +113,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on demande avant de rayer une maison de sa liste",
+          "cuisine": "Demander qui a repris la suite, et où",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to ask before crossing a house off the list",
+          "kitchen": "Ask who picked the work up, and where",
           "expert": "Response"
         }
       },
@@ -139,11 +139,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que laissent sept extinctions différentes",
+          "cuisine": "Le silence ne dit pas comment on a fermé",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule seven different endings leave behind",
+          "kitchen": "Silence never says how the house closed",
           "expert": "Lesson"
         }
       },

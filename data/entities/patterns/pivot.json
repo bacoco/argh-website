@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Deux maisons qui changent de direction sans baisser le rideau",
+          "cuisine": "Réécrire la carte pour une autre clientèle",
           "expert": "Deux changements de direction, deux issues distinctes"
         },
         "en": {
-          "kitchen": "Two houses that change direction without pulling the shutter",
+          "kitchen": "Turning the kitchen toward different customers",
           "expert": "Two direction changes, two distinct outcomes"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Où se voit un changement de direction",
+          "cuisine": "La maison change de métier, la carte non",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Where a change of direction shows",
+          "kitchen": "The house changes trade, the menu does not",
           "expert": "Signals"
         }
       },
@@ -77,11 +77,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi on lit mal ce moment-là",
+          "cuisine": "Le travail de Goose évite la carte",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why that moment gets read wrong",
+          "kitchen": "Goose’s work never travels through the menu",
           "expert": "Mechanism"
         }
       },
@@ -103,11 +103,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Regarder l’arrière, pas la carte",
+          "cuisine": "Noter la raison annoncée, pas le jour du silence",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Watch the back, not the board",
+          "kitchen": "Record the stated reason, not the day of silence",
           "expert": "Response"
         }
       },
@@ -129,11 +129,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Changer de direction n’est pas se sauver",
+          "cuisine": "CodeGate a changé de métier, puis a fermé",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Turning is not surviving",
+          "kitchen": "CodeGate changed direction and closed all the same",
           "expert": "Lesson"
         }
       },

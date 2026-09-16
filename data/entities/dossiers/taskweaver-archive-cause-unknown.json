@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "TaskWeaver a baissé le rideau sans écrire pourquoi dans le cahier",
+          "cuisine": "TaskWeaver a fermé, sans dire pourquoi",
           "expert": "TaskWeaver a été archivé ; la cause exacte n’est pas établie"
         },
         "en": {
-          "kitchen": "TaskWeaver pulled the shutter down and left the reason unwritten",
+          "kitchen": "TaskWeaver closed, and never said why",
           "expert": "TaskWeaver was archived; the exact cause is not established"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "De la salle pleine au rideau baissé",
+          "cuisine": "Du service plein au rideau baissé, sans explication",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From a full room to a lowered shutter",
+          "kitchen": "Full service, then the shutter, and no reason",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une porte close reçoit toujours une raison",
+          "cuisine": "Le quartier invente la raison de la fermeture",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a closed door always gets a reason",
+          "kitchen": "Passers-by invent the reason the house shut",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Lire la porte, pas les rumeurs du quartier",
+          "cuisine": "Noter ce qu'on voit, laisser le reste vide",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Read the door, not the talk on the street",
+          "kitchen": "Write down what you saw, nothing more",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Rideau baissé, case du pourquoi vide",
+          "cuisine": "TaskWeaver reste fermé, la raison reste inconnue",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Shutter down, the why line still blank",
+          "kitchen": "TaskWeaver stays shut, the cause stays unknown",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’un rideau baissé raconte vraiment",
+          "cuisine": "Un rideau baissé n'est pas une cause",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What a lowered shutter actually tells you",
+          "kitchen": "The shutter says today, not why",
           "expert": "Lesson"
         }
       },

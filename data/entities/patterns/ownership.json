@@ -27,11 +27,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Trois maisons où personne ne répondait du plat en cours",
+          "cuisine": "Le plat avance sans que personne en réponde",
           "expert": "Un contrôle qui répond sans détenir le travail qu’il prétend arrêter"
         },
         "en": {
-          "kitchen": "Three houses where nobody answered for the dish in hand",
+          "kitchen": "No cook’s name on the dish in hand",
           "expert": "A control that answers without holding the work it claims to stop"
         }
       },
@@ -53,11 +53,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Les signes qu’un plat n’a pas de nom",
+          "cuisine": "L’ordre est entendu, le plat continue",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "How you spot a dish with no name on it",
+          "kitchen": "Orders answered, and the dish keeps cooking",
           "expert": "Signals"
         }
       },
@@ -79,11 +79,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi l’ordre a l’air d’avoir porté",
+          "cuisine": "On a arrêté l’homme, pas le plat",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the order looks like it landed",
+          "kitchen": "The honest answer came from the wrong hand",
           "expert": "Mechanism"
         }
       },
@@ -105,11 +105,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Écrire le nom, et garder le moyen de rappeler le plat",
+          "cuisine": "Qui a lancé le plat, et comment l’arrêter",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Write the name, keep a way to call the dish back",
+          "kitchen": "The name rides the pad from start to plate",
           "expert": "Response"
         }
       },
@@ -131,11 +131,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un plat sans nom n’est à personne",
+          "cuisine": "Un plat sans nom, personne ne peut l’arrêter",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A dish with no name belongs to nobody",
+          "kitchen": "A nameless dish cannot be stopped or pulled",
           "expert": "Lesson"
         }
       },
