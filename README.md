@@ -33,9 +33,14 @@ is labelled as new; a changed dossier keeps its route and is labelled as enriche
 The first projection is only a baseline, so it cannot manufacture 59 simultaneous
 news items.
 
-`Sync ARGH public projection` polls private `bacoco/argh/main` hourly through the
-read-only deploy key stored as `ARGH_SOURCE_DEPLOY_KEY`. It validates and copies
-the complete `publication/argh/entities/` tree and public navigation,
-rebuilds every generated route, updates the public activity receipt, verifies the
-four authored modes and the absence of the private product name, then commits the
-projection to this repository. GitHub Pages serves `main`.
+The primary delivery path is the scheduled ChatGPT `CONSUME_BUNDLE` action in
+`bacoco/argh`. After the validated ARGH commit, that action pins this repository,
+runs `scripts/sync_from_argh.py`, the site tests, `build.py` and
+`scripts/verify_projection.py`, then commits the generated projection to `main`.
+It may write no other public repository and never authors editorial prose here.
+
+`Sync ARGH public projection` runs the same deterministic projection hourly as a
+recovery path through the read-only deploy key stored as
+`ARGH_SOURCE_DEPLOY_KEY`. Both paths copy the complete public entity and navigation
+stores, rebuild every generated route, update the public activity receipt and
+verify the four authored modes. GitHub Pages serves `main`.
