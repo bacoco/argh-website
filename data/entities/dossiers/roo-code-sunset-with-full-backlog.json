@@ -6,6 +6,8 @@
   "route": "/dossiers/roo-code-sunset-with-full-backlog/",
   "template": "dossier",
   "updated_at": "2026-09-13T08:00:00+02:00",
+  "event_date": "2026-05-15",
+  "date_basis": "incident",
   "relationships": {
     "projects": [
       "Roo Code"

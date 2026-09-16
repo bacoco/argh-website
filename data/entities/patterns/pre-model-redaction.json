@@ -6,6 +6,8 @@
   "route": "/patterns/pre-model-redaction/",
   "template": "pattern",
   "updated_at": "2026-09-13T08:00:00+02:00",
+  "event_date": "2025-01-01",
+  "date_basis": "backfilled",
   "relationships": {
     "projects": [
       "Gemini CLI"

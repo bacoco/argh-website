@@ -15,6 +15,10 @@ Rules:
 - one JSON file = one public entity;
 - each entity uses `argh/public-entity/v1`;
 - every slot contains FR/Cuisine, FR/Expert, EN/Kitchen and EN/Expert;
+- every entity carries `event_date` (`YYYY-MM-DD`, the date of the event it documents)
+  and `date_basis`: `incident` when the date is derived from a dated evidence record
+  and may be displayed, `backfilled` when it is a placeholder that orders the entry
+  and must never be shown as a date;
 - Cuisine/Kitchen is independently authored from meaning, never lexically transformed from Expert;
 - exact source/provenance stays private and is forbidden in this tree;
 - `index.json` uses `argh/public-entity-index/v2` and binds each entity to its exact Git blob identity; it contains no editorial prose;

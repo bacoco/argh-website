@@ -6,6 +6,8 @@
   "route": "/patterns/schema-capability/",
   "template": "pattern",
   "updated_at": "2026-09-12T17:50:00+02:00",
+  "event_date": "2025-01-01",
+  "date_basis": "backfilled",
   "relationships": {
     "projects": [
       "Codex"

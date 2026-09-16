@@ -6,6 +6,8 @@
   "route": "/dossiers/project-mortality-state-machine/",
   "template": "dossier",
   "updated_at": "2026-09-13T08:00:00+02:00",
+  "event_date": "2026-09-04",
+  "date_basis": "incident",
   "relationships": {
     "projects": [
       "Roo Code",

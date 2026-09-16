@@ -6,6 +6,8 @@
   "route": "/dossiers/session-scope-lock-became-global-state/",
   "template": "dossier",
   "updated_at": "2026-09-13T09:08:00+02:00",
+  "event_date": "2025-01-01",
+  "date_basis": "backfilled",
   "relationships": {
     "projects": [
       "gstack"
