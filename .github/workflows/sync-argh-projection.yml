@@ -4,7 +4,10 @@ on:
   pull_request:
     paths:
       - '.github/workflows/sync-argh-projection.yml'
+      - 'assets/**'
       - 'build.py'
+      - 'data/activity.json'
+      - 'data/taxonomy.json'
       - 'scripts/**'
       - 'tests/**'
   schedule:
@@ -57,7 +60,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git add -A -- 404.html index.html about atlas dossiers patterns projects data/entities data/meta.json
+          git add -A -- 404.html index.html about atlas dossiers patterns places projects data/activity.json data/entities data/meta.json
           if git diff --cached --quiet; then
             echo 'Projection already matches bacoco/argh/main.'
             exit 0
