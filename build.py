@@ -251,8 +251,6 @@ def home(store):
     """
     ds = sorted([e for e in store["items"] if e.get("type") == "dossier"],
                 key=sort_key, reverse=True)
-    ps = [e for e in store["items"] if e.get("type") == "pattern"]
-    pr = [e for e in store["items"] if e.get("type") == "project"]
 
     counts = {}
     for e in ds:
@@ -263,14 +261,8 @@ def home(store):
     body = ('<div class="argh-site argh-index" data-argh-renderer="%s">%s'
             '<main class="argh-wrap">'
             '<section class="argh-index-hero"><div class="argh-kicker">ARGH</div>%s%s</section>'
-            '<div class="argh-atlas-stats">'
-            '<div class="argh-stat"><b>%d</b><span>Dossiers</span></div>'
-            '<div class="argh-stat"><b>%d</b><span><span class="nav-fr">Motifs</span>'
-            '<span class="nav-en">Patterns</span></span></div>'
-            '<div class="argh-stat"><b>%d</b><span><span class="nav-fr">Projets</span>'
-            '<span class="nav-en">Projects</span></span></div></div>'
             % (VERSION, header("home"), quad(HOME_TITLE, "h1"),
-               quad(HOME_DECK, "p", "argh-standfirst"), len(ds), len(ps), len(pr)))
+               quad(HOME_DECK, "p", "argh-standfirst")))
 
     body += '<section class="argh-section">%s<div class="argh-index-grid">%s</div></section>' % (
         section_head(HOME_LATEST), "".join(card(e) for e in ds[:LATEST_N]))
