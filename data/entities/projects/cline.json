@@ -71,11 +71,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "De la consigne dite à la porte qui ferme",
+          "cuisine": "Cline remplace la consigne dite par une porte",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From a rule said out loud to a door that shuts",
+          "kitchen": "Cline turns a spoken rule into a door",
           "expert": "Timeline"
         }
       },
@@ -147,11 +147,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une phrase ne suffit pas",
+          "cuisine": "Une porte ne s’oublie pas en plein service",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a sentence is not enough",
+          "kitchen": "A door cannot be forgotten mid-service",
           "expert": "Mechanism"
         }
       },
@@ -173,11 +173,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Où poser la porte, et quoi garder intact",
+          "cuisine": "Garder le carnet d’origine intact et à part",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Where to hang the door, and what to keep whole",
+          "kitchen": "Keep the original book whole and set aside",
           "expert": "Response"
         }
       },
@@ -199,11 +199,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Où en est Cline",
+          "cuisine": "Portes posées chez Cline, jamais vues à l’usage",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Where Cline stands",
+          "kitchen": "Cline’s doors are hung, untried in real kitchens",
           "expert": "Current state"
         }
       },
@@ -225,11 +225,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la porte a appris à la maison",
+          "cuisine": "Le geste tient la règle, pas la phrase",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What the door taught the house",
+          "kitchen": "The gesture holds the rule, not the sentence",
           "expert": "Lesson"
         }
       },

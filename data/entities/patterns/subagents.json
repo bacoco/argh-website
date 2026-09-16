@@ -31,11 +31,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Envoyer un commis, c’est confier une commande à quelqu’un qu’on ne voit plus",
+          "cuisine": "Un commis travaille au fond, hors de vue",
           "expert": "La délégation est devenue un sous-système à part entière, avec sa propre identité d’exécution"
         },
         "en": {
-          "kitchen": "Sending a cook away means handing an order to someone you can no longer watch",
+          "kitchen": "Work handed to a cook nobody watches",
           "expert": "Delegation has become a subsystem of its own, with its own execution identity"
         }
       },
@@ -57,11 +57,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on remarque quand la commande part au fond de la cuisine",
+          "cuisine": "Le plat revient sans nom de commis",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What you notice once the order goes to the back of the kitchen",
+          "kitchen": "At Codex, the sheet stopped naming the cook",
           "expert": "Signals"
         }
       },
@@ -83,11 +83,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi on croit encore parler à sa propre main",
+          "cuisine": "Brouiller la parole efface aussi la trace",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the chef still thinks he is talking to his own hands",
+          "kitchen": "Nobody chose to lose the only record",
           "expert": "Mechanism"
         }
       },
@@ -109,11 +109,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Donner la mission, l’outil, et la façon de rendre compte",
+          "cuisine": "Envoyer un commis avant de couper une ligne",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Give the mission, the tools, and the way to report back",
+          "kitchen": "Keep a short register of who went where",
           "expert": "Response"
         }
       },
@@ -135,11 +135,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que Codex et les autres maisons laissent au passe",
+          "cuisine": "Ce qu’on montre au départ décide du retour",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule Codex and the other houses leave at the pass",
+          "kitchen": "Secrecy must not cost the house its record",
           "expert": "Lesson"
         }
       },

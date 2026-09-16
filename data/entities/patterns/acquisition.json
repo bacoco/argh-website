@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Avant d’ajouter une maison à sa liste, savoir lire sa devanture",
+          "cuisine": "Une devanture ouverte ne prouve pas qu'on cuisine",
           "expert": "Une source admise sans ses limites rend un verdict faux"
         },
         "en": {
-          "kitchen": "Before a house joins your list, learn to read its front",
+          "kitchen": "Trusting the door instead of asking the crew",
           "expert": "A source admitted without its limits returns a false verdict"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on regarde avant d’ajouter une maison à la liste",
+          "cuisine": "Chez Continue, la devanture et l’équipe se contredisent",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What you read before a house goes on your list",
+          "kitchen": "Four signs at Continue, four different answers",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi la devanture trompe sans mentir",
+          "cuisine": "Personne n’a le devoir de décrocher l’écriteau",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the front misleads without lying",
+          "kitchen": "Nobody is paid to take the sign down",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Écrire ce que la maison peut et ne peut pas dire",
+          "cuisine": "Demander qui tient la maison aujourd’hui",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Write down what the house can and cannot tell you",
+          "kitchen": "Decide which sign answers which question",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient : un écriteau n’est pas un verdict",
+          "cuisine": "Une porte ouverte ne prouve pas un service",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What to keep: a notice is not a verdict",
+          "kitchen": "An open door is no proof of dinner",
           "expert": "Lesson"
         }
       },

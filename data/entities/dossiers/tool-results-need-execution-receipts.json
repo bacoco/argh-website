@@ -26,11 +26,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Deux maisons, la même ligne écrite pour un plat jamais parti",
+          "cuisine": "gstack et Claude Code, un plat jamais cuisiné",
           "expert": "Un résultat d’outil doit porter la preuve que l’outil a été exécuté"
         },
         "en": {
-          "kitchen": "Two houses, the same line written for a plate that never left",
+          "kitchen": "gstack and Claude Code logged an uncooked plate",
           "expert": "A tool result must carry evidence that the tool actually ran"
         }
       },
@@ -52,11 +52,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Le tableau de santé et le ticket manquant",
+          "cuisine": "gstack réclamait des lignes, jamais de preuve",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The health board and the missing ticket",
+          "kitchen": "gstack asked for rows, never for proof",
           "expert": "Timeline"
         }
       },
@@ -108,11 +108,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une belle ligne ne prouve pas le geste",
+          "cuisine": "Fait et inventé descendent par le même passe",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A handsome line proves no work",
+          "kitchen": "Done and invented come down the same pass",
           "expert": "Mechanism"
         }
       },
@@ -134,11 +134,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le ticket voyage avec l’assiette",
+          "cuisine": "Pas de ticket, pas d'assiette comptée",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "The ticket travels with the plate",
+          "kitchen": "Only plates with a ticket get counted",
           "expert": "Response"
         }
       },
@@ -160,11 +160,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Une réparation encore ouverte, un mot ajouté ailleurs",
+          "cuisine": "gstack propose le ticket, Claude Code couvre une porte",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "One repair still open, one word added elsewhere",
+          "kitchen": "gstack proposed the ticket, Claude Code covered one door",
           "expert": "Current state"
         }
       },
@@ -186,11 +186,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que le ticket garde séparé",
+          "cuisine": "Une belle ligne ne prouve aucun geste",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What the ticket keeps apart",
+          "kitchen": "A tidy line is no proof of work",
           "expert": "Lesson"
         }
       },

@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Un seul plan de travail pour deux mains, et le service se mélange",
+          "cuisine": "Deux commis sur le même plan de travail",
           "expert": "Deux exécutions concurrentes partagent un état écrit pour une seule"
         },
         "en": {
-          "kitchen": "One bench, two pairs of hands, and the orders change owners",
+          "kitchen": "Two cooks on one bench, orders get mixed",
           "expert": "Two concurrent runs share state that was written for one"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui apparaît le soir où la brigade double",
+          "cuisine": "Rien n’a changé sauf le nombre de mains",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What shows up the night the brigade doubles",
+          "kitchen": "Nothing changed but the number of hands",
           "expert": "Signals"
         }
       },
@@ -77,11 +77,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi le même geste tenait hier et casse aujourd’hui",
+          "cuisine": "Un plan de travail prévu pour une seule main",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why yesterday’s safe habit breaks tonight",
+          "kitchen": "A bench built for one pair of hands",
           "expert": "Mechanism"
         }
       },
@@ -103,11 +103,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un plan de travail par cuisinier, donné par la maison",
+          "cuisine": "Codex distribue la place, encore à l’essai",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "A bench per cook, handed out by the house",
+          "kitchen": "Codex hands out the spot, still on trial",
           "expert": "Response"
         }
       },
@@ -129,11 +129,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que SWE-agent et Codex laissent au passe",
+          "cuisine": "Le voisin paie une erreur qu’il n’a pas faite",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What SWE-agent and Codex leave at the pass",
+          "kitchen": "Your neighbour pays for a mistake he never made",
           "expert": "Lesson"
         }
       },

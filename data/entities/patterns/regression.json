@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La même faute approuvée deux fois, à des mois d’écart",
+          "cuisine": "La même faute revient après avoir été réparée",
           "expert": "Un défaut qui revient après un correctif structurel"
         },
         "en": {
-          "kitchen": "The same wrong nod given twice, months apart",
+          "kitchen": "Mended once, and wrong the same way again",
           "expert": "A defect that returns after a structural fix"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui revient, et ce qui disparaît sans bruit",
+          "cuisine": "Chez Codex, une mention cachée choisissait le cuisinier",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What comes back, and what quietly goes missing",
+          "kitchen": "A hidden line at Codex was choosing the cook",
           "expert": "Signals"
         }
       },
@@ -77,11 +77,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une fiche qu’on allège devient dangereuse",
+          "cuisine": "Alléger la fiche retire parfois ce qui décidait",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a tidied slip turns dangerous",
+          "kitchen": "Tidying the slip removes what was deciding",
           "expert": "Mechanism"
         }
       },
@@ -103,11 +103,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on vérifie après avoir touché à une fiche",
+          "cuisine": "Demander qui se servait de la mention retirée",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to check after touching a slip",
+          "kitchen": "Ask who used a line before removing it",
           "expert": "Response"
         }
       },
@@ -129,11 +129,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que laissent ces deux fiches",
+          "cuisine": "La faute revient, et la fiche ment toujours",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule those two slips leave behind",
+          "kitchen": "The fault returns, and the slip still misleads",
           "expert": "Lesson"
         }
       },

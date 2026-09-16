@@ -26,11 +26,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La recette est corrigée, personne ne l’a encore cuisinée",
+          "cuisine": "Une recette corrigée n’est pas un plat réussi",
           "expert": "Cinq états distincts sous une seule étiquette"
         },
         "en": {
-          "kitchen": "The recipe is corrected; nobody has cooked it yet",
+          "kitchen": "Fixing the recipe does not feed anyone yet",
           "expert": "Five distinct states under one label"
         }
       },
@@ -52,11 +52,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui prouve qu’une recette est vraiment passée",
+          "cuisine": "« C’est corrigé » ne dit pas jusqu’où c’est allé",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What proves a recipe really went through",
+          "kitchen": "“It’s fixed” never says how far it got",
           "expert": "Signals"
         }
       },
@@ -78,11 +78,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi on croit le plat corrigé trop tôt",
+          "cuisine": "La correction se fait loin du passe",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the plate gets called fixed too early",
+          "kitchen": "The correction happens furthest from the pass",
           "expert": "Mechanism"
         }
       },
@@ -104,11 +104,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on note à chaque étape de la recette",
+          "cuisine": "Savoir qui travaille encore sur l’ancienne page",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to record at each step of the recipe",
+          "kitchen": "Find out who still works from the old page",
           "expert": "Response"
         }
       },
@@ -130,11 +130,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que quatre maisons apprennent sur la recette corrigée",
+          "cuisine": "Seul un plat correct au passe clôt l’affaire",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What four houses teach about a corrected recipe",
+          "kitchen": "Only a right plate at the pass settles it",
           "expert": "Lesson"
         }
       },

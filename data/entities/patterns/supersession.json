@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La maison reste ouverte, mais la nouvelle carte s’écrit à l’autre adresse",
+          "cuisine": "La maison reste ouverte, rien ne s’y invente",
           "expert": "Un projet reste maintenu après le déplacement de son développement stratégique"
         },
         "en": {
-          "kitchen": "The old room stays open; the new menu is written across the street",
+          "kitchen": "The owners write the new menu elsewhere",
           "expert": "A project stays maintained after its strategic development moves elsewhere"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui montre que l’invention a déménagé",
+          "cuisine": "Les nouveautés sortent toutes de l’autre adresse",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What shows the inventing has moved out",
+          "kitchen": "Everything new comes from the other address",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une maison bien tenue peut ne plus rien inventer",
+          "cuisine": "Aucun rideau baissé, aucun dernier service annoncé",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a well-kept room can stop inventing anything",
+          "kitchen": "No shutter came down, no last service announced",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Séparer la maison qu’on entretient de celle où l’on s’installe",
+          "cuisine": "Manger ce soir ou s’installer dix ans",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Tell the room you keep from the room you bet on",
+          "kitchen": "Eating tonight is not settling for ten years",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’AutoGen laisse entre deux adresses",
+          "cuisine": "Suivre les patrons, pas l’enseigne",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What AutoGen leaves between two addresses",
+          "kitchen": "Follow the owners, not the lit sign",
           "expert": "Lesson"
         }
       },

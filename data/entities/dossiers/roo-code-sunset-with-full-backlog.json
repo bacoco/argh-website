@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Des centaines de commandes au tableau, et la maison déjà fermée",
+          "cuisine": "Roo Code a fermé, le tableau plein",
           "expert": "Un arrêt stratégique pendant que des centaines d’issues restaient ouvertes"
         },
         "en": {
-          "kitchen": "Hundreds of orders on the board, and the house already closed",
+          "kitchen": "Roo Code shut with the board still full",
           "expert": "A strategic wind-down while hundreds of issues stayed open"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment Roo Code a fermé avec son tableau plein",
+          "cuisine": "Roo Code retire sa carte, puis ferme",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How Roo Code closed with a full board",
+          "kitchen": "Roo Code took its menu down in pieces",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un tableau plein n’est pas une cuisine qui tourne",
+          "cuisine": "Des commandes que Roo Code n’enverrait jamais",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A full board is not a kitchen still working",
+          "kitchen": "Roo Code kept orders nobody would cook",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’il faut lire à la place du tableau",
+          "cuisine": "Lire la dernière fournée, pas le tableau",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to read instead of the board",
+          "kitchen": "Read the last batch, not the board",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’est devenu Roo Code",
+          "cuisine": "Roo Code est fermé, la suite s’écrit ailleurs",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What Roo Code became",
+          "kitchen": "Roo Code is closed; others carry on",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un tableau plein peut être une preuve de mort",
+          "cuisine": "Un tableau plein peut annoncer une maison morte",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A full board can be proof of death",
+          "kitchen": "A full board can mean a dead house",
           "expert": "Lesson"
         }
       },

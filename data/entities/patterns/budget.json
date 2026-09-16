@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le plat refait trois fois et compté trois fois",
+          "cuisine": "Chaque plat refait gonfle l'addition sans nouvelle commande",
           "expert": "La limite annoncée et la dépense réelle divergent dès qu’une reprise refacture le même travail"
         },
         "en": {
-          "kitchen": "The dish remade three times and charged three times",
+          "kitchen": "Every remake is billed as a new order",
           "expert": "The advertised bound and the real spend diverge once a retry rebills the same work"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui trahit une addition qui gonfle toute seule",
+          "cuisine": "L’avertissement de la caisse n’arrive jamais aux fourneaux",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What gives away a bill that grows on its own",
+          "kitchen": "Nothing in the book mentions a restart",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi la maison croit tenir sa dépense",
+          "cuisine": "Le compte d’un côté, la dépense de l’autre",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the house believes its spending holds",
+          "kitchen": "Counting at one end, spending at the other",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Compter la commande, pas les allers-retours au fourneau",
+          "cuisine": "Le passe doit s’arrêter quand la limite tombe",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Count the order, not the trips back to the stove",
+          "kitchen": "Stop the pass when the limit is reached",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que SWE-agent laisse sur l’addition",
+          "cuisine": "Une limite qui oublie les reprises ne retient rien",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule SWE-agent leaves on the bill",
+          "kitchen": "A limit that ignores restarts holds nothing back",
           "expert": "Lesson"
         }
       },

@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le poste était éteint et le ticket disait servi",
+          "cuisine": "Un ticket parfait sorti d'un poste jamais allumé",
           "expert": "Un repli qui fabrique un résultat au lieu de le refuser"
         },
         "en": {
-          "kitchen": "The station was cold and the docket said served",
+          "kitchen": "No fire lit, and the docket says served",
           "expert": "A fallback that fabricates a result instead of declining"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un ticket parfait que personne ne rattache à un feu",
+          "cuisine": "Un ticket impeccable et aucun feu derrière",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "A perfect docket nobody can trace back to a burner",
+          "kitchen": "The docket is perfect and the station was shut",
           "expert": "Signals"
         }
       },
@@ -76,11 +76,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi un beau ticket passe mieux qu’un vrai",
+          "cuisine": "Un ticket bien rempli ne se discute pas",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a good-looking docket beats a real one",
+          "kitchen": "A properly filled docket never gets questioned",
           "expert": "Mechanism"
         }
       },
@@ -102,11 +102,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le tampon du poste, pas le ton du ticket",
+          "cuisine": "Coller le tampon du feu au ticket",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "The station’s stamp, not the docket’s tone",
+          "kitchen": "No docket travels without the station’s mark",
           "expert": "Response"
         }
       },
@@ -128,11 +128,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Poste fermé, ticket vide",
+          "cuisine": "Un plat raconté n’est pas un plat cuit",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Cold station, empty docket",
+          "kitchen": "Watched and described are not the same dish",
           "expert": "Lesson"
         }
       },

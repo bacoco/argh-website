@@ -27,11 +27,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Plus personne pour regarder l’assiette, et elle part quand même",
+          "cuisine": "Celui qui regarde tombe, l'assiette part quand même",
           "expert": "Le contrôle tombe, l’exécution continue"
         },
         "en": {
-          "kitchen": "Nobody left to look at the plate, and it goes out anyway",
+          "kitchen": "The watcher falls and the plate leaves anyway",
           "expert": "The control fails, execution continues"
         }
       },
@@ -53,11 +53,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on n’avait jamais décidé avant le coup de feu",
+          "cuisine": "Rien n’est prévu si celui qui vérifie tombe",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What was never settled before the rush",
+          "kitchen": "Nothing is planned for the day the checker drops",
           "expert": "Signals"
         }
       },
@@ -79,11 +79,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi le silence au passe ressemble à un accord",
+          "cuisine": "L’absence de refus produit exactement la même assiette",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why silence at the pass sounds like agreement",
+          "kitchen": "No refusal puts out exactly the same plate",
           "expert": "Mechanism"
         }
       },
@@ -105,11 +105,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Décider d’avance ce qu’on fait sans personne au passe",
+          "cuisine": "Écrire à l’avance ce qu’on fait sans lui",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Deciding in advance what happens with nobody at the pass",
+          "kitchen": "Write down beforehand what happens with no checker",
           "expert": "Response"
         }
       },
@@ -131,11 +131,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Rien dit n’est pas oui dit",
+          "cuisine": "Un contrôle qui tombe n’a rien autorisé",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Nothing said is not yes said",
+          "kitchen": "A check that fails has allowed nothing",
           "expert": "Lesson"
         }
       },

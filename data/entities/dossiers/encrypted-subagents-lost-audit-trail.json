@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Les plis fermés ont protégé les sous-chefs et vidé le carnet de service",
+          "cuisine": "Codex scelle les plis, le carnet se vide",
           "expert": "Le chiffrement entre subagents a gagné en confidentialité et perdu en auditabilité"
         },
         "en": {
-          "kitchen": "Sealed notes protected the sous-chefs and emptied the service book",
+          "kitchen": "Codex sealed the notes; the book went blank",
           "expert": "Encryption between subagents gained confidentiality and lost auditability"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment le carnet s’est vidé",
+          "cuisine": "Le chef ne sait plus qui fait quoi",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the book went empty",
+          "kitchen": "The head chef stopped seeing who did what",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un seul papier pour deux usages",
+          "cuisine": "Un seul papier portait consigne et trace",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "One piece of paper doing two jobs",
+          "kitchen": "One paper carried both the order and record",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Séparer le pli et le registre",
+          "cuisine": "Un cahier à côté du pli fermé",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Separate the note from the register",
+          "kitchen": "Keep the note sealed, hold a register",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Où en est l’arbitrage",
+          "cuisine": "Personne ne sait doser le secret et la trace",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Where the trade-off stands",
+          "kitchen": "No house has balanced secrecy against the record",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’un seul papier ne peut pas porter",
+          "cuisine": "Secret et trace ne tiennent pas ensemble",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What one piece of paper cannot carry",
+          "kitchen": "Secrecy and a readable record need two papers",
           "expert": "Lesson"
         }
       },

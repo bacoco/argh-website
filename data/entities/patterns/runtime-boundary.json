@@ -29,11 +29,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La consigne est au mur, le geste se fait ailleurs",
+          "cuisine": "La consigne dit ajouter, la main écrase",
           "expert": "Le contrôle vivait en amont du point où l’effet irréversible se produit"
         },
         "en": {
-          "kitchen": "The rule is on the wall, the move happens elsewhere",
+          "kitchen": "The wall said add, the hand wiped",
           "expert": "The control lived upstream of the point where the irreversible effect occurs"
         }
       },
@@ -55,11 +55,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui trahit un contrôle posé trop tôt",
+          "cuisine": "Hermes, Codex et Claude Code ont contrôlé trop tôt",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What gives away a check made too early",
+          "kitchen": "Hermes, Codex and Claude Code all checked too early",
           "expert": "Signals"
         }
       },
@@ -81,11 +81,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi un contrôle juste rate quand même le plat",
+          "cuisine": "Le contrôle a raison et n’a plus prise",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why an accurate check still misses the plate",
+          "kitchen": "The check is right, the plate leaves anyway",
           "expert": "Mechanism"
         }
       },
@@ -107,11 +107,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Mettre le contrôle sur la main qui fait le dernier geste",
+          "cuisine": "Le contrôle doit tenir le dernier geste",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Put the check on the hand making the last move",
+          "kitchen": "Check the last hand, not the easy one",
           "expert": "Response"
         }
       },
@@ -133,11 +133,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que ces quatre pannes laissent au passe",
+          "cuisine": "Un contrôle mal placé reste juste et inutile",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule these four failures leave at the pass",
+          "kitchen": "Where the check stands decides what it proves",
           "expert": "Lesson"
         }
       },

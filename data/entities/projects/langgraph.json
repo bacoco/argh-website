@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Onze postes passés en revue, des trous assumés",
+          "cuisine": "Onze postes visités chez LangGraph, pas de dates",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Eleven stations walked, gaps written down",
+          "kitchen": "Eleven stations walked at LangGraph, no dates",
           "expert": "Timeline"
         }
       },
@@ -77,11 +77,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi la mémoire d’un commis ne suffit pas",
+          "cuisine": "Une casserole sans consigne au changement d’équipe",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a cook’s memory is not a record",
+          "kitchen": "A pan handed over with no instructions",
           "expert": "Mechanism"
         }
       },
@@ -103,11 +103,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce que LangGraph écrit noir sur blanc",
+          "cuisine": "Écrire au tableau l’état de chaque plat",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What LangGraph puts in writing",
+          "kitchen": "Put every dish’s state on the board",
           "expert": "Response"
         }
       },
@@ -129,11 +129,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Où en est LangGraph au passe",
+          "cuisine": "Un tour de cuisine, pas un service",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Where LangGraph stands at the pass",
+          "kitchen": "A kitchen walked, not a service worked",
           "expert": "Current state"
         }
       },
@@ -155,11 +155,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui doit rester écrit",
+          "cuisine": "Le commis suivant repart de zéro",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Keep the board, not the memory",
+          "kitchen": "The next cook starts the dish over",
           "expert": "Lesson"
         }
       },

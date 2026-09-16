@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La consigne d’un soir commandait encore des services qu’elle ne connaissait pas",
+          "cuisine": "Une consigne sans adresse commande une autre maison",
           "expert": "Un contrôle destiné à une seule session a survécu en état global à la machine"
         },
         "en": {
-          "kitchen": "One night’s note was still running services it had never seen",
+          "kitchen": "A note with no address runs another kitchen",
           "expert": "A control meant for one session survived as machine-global state"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un poste bloqué sans que personne ait rien demandé",
+          "cuisine": "Chez gstack, la mauvaise réserve s’est retrouvée fermée",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "A station shut with nobody having asked for it",
+          "kitchen": "At gstack, a cook stopped by yesterday’s note",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux oublis dans la même consigne",
+          "cuisine": "La même consigne désigne une autre réserve ailleurs",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Two things missing from the same note",
+          "kitchen": "The same words name a different cupboard elsewhere",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Punaiser proprement : l’adresse, le nom, l’heure de fin",
+          "cuisine": "Une consigne qui voyage doit nommer son endroit",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Pin it properly: the address, the name, the closing time",
+          "kitchen": "Name the exact cupboard, not the near one",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que la consigne de gstack a laissée au mur",
+          "cuisine": "Une consigne sans adresse finit ailleurs",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule the gstack note left on the wall",
+          "kitchen": "An address that moves is no address",
           "expert": "Lesson"
         }
       },

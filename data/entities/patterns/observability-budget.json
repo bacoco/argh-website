@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le cahier de suivi a fini par bloquer le service",
+          "cuisine": "Le cahier a fini par encombrer la cuisine",
           "expert": "Quand l’instrumentation devient elle-même la panne"
         },
         "en": {
-          "kitchen": "The tally book ended up stalling the service",
+          "kitchen": "Writing everything down slowed the whole service",
           "expert": "When the instrumentation becomes the outage itself"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux réductions, et le cahier déborde encore",
+          "cuisine": "Codex a rogné deux fois, le cahier déborde",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Two cuts, and the book still overflows",
+          "kitchen": "Two cuts at Codex, the book still overflows",
           "expert": "Signals"
         }
       },
@@ -76,11 +76,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Plus le service est chargé, plus le cahier grossit",
+          "cuisine": "On surveille la main, pas le cahier",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The busier the service, the fatter the book",
+          "kitchen": "Other hands reach the book without passing anyone",
           "expert": "Mechanism"
         }
       },
@@ -102,11 +102,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Contrôler à l’entrée du cahier",
+          "cuisine": "Déplacer le contrôle à l’entrée du cahier",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Stand the check at the mouth of the book",
+          "kitchen": "Decide beforehand what the book may cost",
           "expert": "Response"
         }
       },
@@ -128,11 +128,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La part à réserver au cahier",
+          "cuisine": "Deux corrections ratées désignent le mauvais endroit",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The share the book is owed",
+          "kitchen": "The tally takes its cut of the service",
           "expert": "Lesson"
         }
       },

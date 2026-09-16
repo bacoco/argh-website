@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Chez Gemini, la brigade avait déjà changé de recette pendant que le classeur disait l’ancienne",
+          "cuisine": "Gemini a changé sa recette avant son classeur",
           "expert": "Le comportement par défaut a changé avant que la documentation n’en rende compte"
         },
         "en": {
-          "kitchen": "At Gemini the brigade had already switched recipes while the binder still said the old one",
+          "kitchen": "Gemini changed the recipe, not the binder",
           "expert": "Default behavior changed before the documentation caught up"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "L’essai devenu le service normal",
+          "cuisine": "L’essai de Gemini devient le service normal",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From trial run to normal service",
+          "kitchen": "Gemini’s trial quietly became normal service",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un seul classeur pour plusieurs cuisines",
+          "cuisine": "Le classeur de Gemini n’est pas daté",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "One binder for several kitchens",
+          "kitchen": "Gemini’s binder never says which generation",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Dater le classeur, montrer le réglage du soir",
+          "cuisine": "Dater le classeur et montrer le réglage servi",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Date the binder, show which dial is turned",
+          "kitchen": "Show the guest which dial is turned tonight",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "La fiche fait désormais partie du service",
+          "cuisine": "Les fiches de Gemini font partie du service",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The card is part of service now",
+          "kitchen": "Gemini’s cards are part of service now",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un réglage qui change se date",
+          "cuisine": "Un changement de réglage se date",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The day the house changes its habit",
+          "kitchen": "A new habit needs a dated page",
           "expert": "Lesson"
         }
       },

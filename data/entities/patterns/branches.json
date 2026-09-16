@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Une ardoise annonce un plat que personne n’a commencé",
+          "cuisine": "Une ardoise pleine, un plat jamais commencé",
           "expert": "Un nom de travail en cours annonce une direction sans rien garantir de sa livraison"
         },
         "en": {
-          "kitchen": "A chalkboard promising a dish nobody has started",
+          "kitchen": "A dish promised, and not yet begun",
           "expert": "A work-in-progress name announces direction while guaranteeing nothing about delivery"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui sépare une ardoise vivante d’une ardoise oubliée",
+          "cuisine": "Une annonce sans date ne vaut rien",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Telling a live board from a forgotten one",
+          "kitchen": "Check the date before you believe the board",
           "expert": "Signals"
         }
       },
@@ -77,11 +77,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une ardoise se lit trop vite",
+          "cuisine": "Une ardoise dit l’ambition, pas la date",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a chalkboard gets read too fast",
+          "kitchen": "A board shows ambition and hides its age",
           "expert": "Mechanism"
         }
       },
@@ -103,11 +103,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on fait d’une ardoise avant d’y croire",
+          "cuisine": "Classer les ardoises au lieu de les aligner",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to do with a board before trusting it",
+          "kitchen": "Sort the boards by date and by distance",
           "expert": "Response"
         }
       },
@@ -129,11 +129,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que laissent les ardoises de Codex et de Roo Code",
+          "cuisine": "Le nom sur l’ardoise ne prouve aucun plat",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule left by the boards at Codex and Roo Code",
+          "kitchen": "The name on the board proves no dish",
           "expert": "Lesson"
         }
       },

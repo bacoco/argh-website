@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La maison a déménagé, le client va toujours à l’ancienne adresse",
+          "cuisine": "Un déménagement pris pour une fermeture",
           "expert": "Une migration d’identité lue comme une disparition"
         },
         "en": {
-          "kitchen": "The house moved; the regular still walks to the old address",
+          "kitchen": "Reported closed because the address changed",
           "expert": "An identity migration read as a disappearance"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un rideau baissé qui ne veut pas dire fermeture",
+          "cuisine": "SWE-agent a laissé l’adresse sur la porte",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "A shutter down that does not mean closed",
+          "kitchen": "Nothing at the old number, and a note",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi on suit l’adresse au lieu de suivre la maison",
+          "cuisine": "On suit le numéro, pas les gens",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why people follow the address instead of the house",
+          "kitchen": "Watching SWE-agent’s old number, not its crew",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on fait quand une adresse ne répond plus",
+          "cuisine": "Prévenir ceux qui écrivent encore au vieux numéro",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to do when an address stops answering",
+          "kitchen": "Follow the note before you call it closed",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que le déménagement de SWE-agent laisse comme règle",
+          "cuisine": "La maison survit au numéro peint dessus",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule SWE-agent’s move leaves behind",
+          "kitchen": "A shutter closes an address, not a house",
           "expert": "Lesson"
         }
       },

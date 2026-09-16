@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Une cuisine de nuit qui sonne toujours la même clochette",
+          "cuisine": "La clochette sonne pareil, plat réussi ou brûlé",
           "expert": "Le résultat doit être lisible sans personne pour regarder"
         },
         "en": {
-          "kitchen": "A night kitchen that always rings the same bell",
+          "kitchen": "The same bell whether it worked or burned",
           "expert": "The outcome has to be readable with nobody watching"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La clochette a sonné et des plats manquent",
+          "cuisine": "Chez Aider, la même sonnerie pour chaque panne",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The bell rang and plates are missing",
+          "kitchen": "At Aider, plates missing and the bell fine",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une clochette unique ne dit jamais rien",
+          "cuisine": "De nuit, la sonnerie remplace l’assiette",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why one single bell never says anything",
+          "kitchen": "In daylight nobody needs the bell",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un son différent pour chaque manière de rater",
+          "cuisine": "La clochette compte autant que l’assiette",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "A different sound for every way of failing",
+          "kitchen": "Test the bell when nobody is listening",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Sans personne en salle, le son est le plat",
+          "cuisine": "Une clochette toujours pareille ne dit plus rien",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "With nobody in the room, the sound is the plate",
+          "kitchen": "One sound for every failure is silence",
           "expert": "Lesson"
         }
       },

@@ -54,11 +54,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Une maison qui envoyait vite, puis presque plus",
+          "cuisine": "Aider envoyait chaque semaine, puis plus rien",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "A house that sent fast, then barely sent at all",
+          "kitchen": "Aider sent out something new weekly, then stopped",
           "expert": "Timeline"
         }
       },
@@ -130,11 +130,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un service qui se termine bien ne prouve pas que le plat est sorti",
+          "cuisine": "Un plat annoncé, jamais passé au feu",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A clean close does not prove the plate left",
+          "kitchen": "A plate called away, never cooked at all",
           "expert": "Mechanism"
         }
       },
@@ -156,11 +156,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’il faut regarder avant d’annoncer",
+          "cuisine": "Crier plutôt que rendre une assiette vide",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to check before calling a plate away",
+          "kitchen": "Shout, rather than hand back an empty plate",
           "expert": "Response"
         }
       },
@@ -182,11 +182,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Où en est Aider",
+          "cuisine": "Aider ralentit, et les corrections restent sans preneur",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Where Aider stands",
+          "kitchen": "Aider slowed, and the offered corrections sit unclaimed",
           "expert": "Current state"
         }
       },
@@ -208,11 +208,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient du passe",
+          "cuisine": "La maison croit nourrir, la salle a faim",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What the pass teaches",
+          "kitchen": "The house believes it fed a hungry room",
           "expert": "Lesson"
         }
       },

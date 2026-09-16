@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Celui qui jetait un œil au passe peut désormais bloquer une assiette",
+          "cuisine": "Chez Cline, celui qui regarde peut retenir une assiette",
           "expert": "Les hooks de Cline sont devenus une couche de contrôle runtime à part entière"
         },
         "en": {
-          "kitchen": "The man who used to glance at the pass can now stop a plate",
+          "kitchen": "Cline’s checker can now hold a plate back",
           "expert": "Cline’s hooks became a control layer in the runtime, not scripting bolted on"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment le contrôle du passe a pris du galon",
+          "cuisine": "Le coup d’œil est devenu un vrai poste",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the check at the pass gained rank",
+          "kitchen": "A glance grew into a station with hours",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui change quand le contrôleur devient indispensable",
+          "cuisine": "Celui qui vérifie se fige, tout s’arrête",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "What changes once the checker is load-bearing",
+          "kitchen": "An essential checker who freezes halts the service",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la maison a fait de son contrôleur",
+          "cuisine": "Le contrôle a son poste, son cahier, ses règles",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What the house did with its checker",
+          "kitchen": "Checking became a station with its own book",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Le contrôle est devenu un poste, pas une habitude",
+          "cuisine": "Le poste existe, aucune assiette n’est garantie",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Checking is a station now, not a habit",
+          "kitchen": "Cline has the station, not a guarantee",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient : un pouvoir se déclare",
+          "cuisine": "Un pouvoir de refuser doit être écrit d’avance",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What to keep: authority gets written down",
+          "kitchen": "Write down what the checker may turn back",
           "expert": "Lesson"
         }
       },

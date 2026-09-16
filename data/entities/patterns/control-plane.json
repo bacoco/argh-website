@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le talent du cuisinier ne dit pas qui peut arrêter l’assiette",
+          "cuisine": "Savoir cuisiner n'est pas avoir le dernier mot",
           "expert": "Ce qui entoure l’exécution décide de ce qu’un modèle peut réellement faire"
         },
         "en": {
-          "kitchen": "A cook’s talent does not say who may stop the plate",
+          "kitchen": "Knowing how to cook is not the last word",
           "expert": "What surrounds execution decides what a model can actually do"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La maison se met à chronométrer le passe",
+          "cuisine": "Chez Cline, on note et on chronomètre",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The house starts timing the pass",
+          "kitchen": "At Cline, outsiders now watch the pass",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un bras qui retient devient un poste, sans que personne l’ait décidé",
+          "cuisine": "Retenir un plat, c’est déjà tenir un poste",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "An arm that holds plates becomes a station nobody staffed",
+          "kitchen": "Holding a plate is already holding a station",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Écrire le pouvoir à côté de la main qui le tient",
+          "cuisine": "Écrire le pouvoir de chaque main au passe",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Write the power beside the hand that holds it",
+          "kitchen": "Put each hand's limits on the same page",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Qui tient le passe tient le service",
+          "cuisine": "Qui peut retenir un plat tient le service",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Whoever holds the pass holds the service",
+          "kitchen": "Whoever can hold a plate holds the service",
           "expert": "Lesson"
         }
       },

@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La vieille maison est toujours tenue, mais tout ce qui est neuf ouvre en face",
+          "cuisine": "AutoGen est tenue, le neuf se fait ailleurs",
           "expert": "Un projet peut rester maintenu après le déplacement de son futur stratégique"
         },
         "en": {
-          "kitchen": "The old house is still kept up, but everything new opens across the street",
+          "kitchen": "AutoGen still serves, the new stoves are elsewhere",
           "expert": "A project can stay maintained after its strategic future moves elsewhere"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment la maison a changé d’adresse",
+          "cuisine": "Les patrons d’AutoGen ont ouvert une seconde maison",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the house changed address",
+          "kitchen": "The AutoGen owners built a second house",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Tenir une maison n’est pas parier dessus",
+          "cuisine": "Servir ses habitués n’est pas construire la suite",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Keeping a house open is not betting on it",
+          "kitchen": "Keeping the room clean is not investing",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’il faut écrire à côté du nom de la maison",
+          "cuisine": "Il faut une case entre ouverte et fermée",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to write next to the house’s name",
+          "kitchen": "Open or shut is not enough for AutoGen",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Où en est la maison",
+          "cuisine": "AutoGen sert ses habitués, décide en face",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Where the house stands",
+          "kitchen": "The old AutoGen room still has its regulars",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Bien tenue n'est pas là où ça se construit",
+          "cuisine": "Cherche les nouveaux fourneaux, pas la salle propre",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Well kept is not where the building happens",
+          "kitchen": "A well-kept house may be building nothing",
           "expert": "Lesson"
         }
       },

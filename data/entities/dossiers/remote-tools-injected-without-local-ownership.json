@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Des ustensiles sont arrivés du siège, sans personne pour en répondre",
+          "cuisine": "Claude Code reçoit des ustensiles sans propriétaire",
           "expert": "La synchronisation d’outils distants a créé un second control plane"
         },
         "en": {
-          "kitchen": "Utensils arrived from head office with nobody to answer for them",
+          "kitchen": "Utensils arrive at Claude Code with no owner",
           "expert": "Remote tool synchronization created a second control plane"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment la cuisine s’est retrouvée avec deux jeux d’ustensiles",
+          "cuisine": "Le siège double les ustensiles choisis par le chef",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the kitchen ended up with two sets of utensils",
+          "kitchen": "Head office doubles what the chef already chose",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux mains rangent le même tiroir",
+          "cuisine": "Deux mains rangent le tiroir sans se parler",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Two hands arranging the same drawer",
+          "kitchen": "Two people fill one drawer, neither knowing",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une étiquette sur chaque ustensile",
+          "cuisine": "Marquer d’où vient chaque ustensile et qui répond",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "A label on every utensil",
+          "kitchen": "Label every utensil and warn the kitchen",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi le désordre va s’aggraver",
+          "cuisine": "Le désordre grandit dans toutes les maisons",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Why the muddle gets worse",
+          "kitchen": "The utensil muddle grows in every house",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un ustensile sans propriétaire ne se retire pas",
+          "cuisine": "Un ustensile sans nom ne se retire pas",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A utensil with no owner cannot be taken away",
+          "kitchen": "Anything set down must name who set it",
           "expert": "Lesson"
         }
       },

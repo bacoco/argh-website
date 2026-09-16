@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Chez LangGraph, le minuteur sonne au passe et le four du fond continue",
+          "cuisine": "Chez LangGraph, le minuteur sonne, le four continue",
           "expert": "Chez LangGraph, le timeout de l’appelant ne terminait pas le travail descendant"
         },
         "en": {
-          "kitchen": "At LangGraph the timer rings at the pass and the back oven keeps going",
+          "kitchen": "LangGraph's timer rings, the oven keeps cooking",
           "expert": "In LangGraph, the caller’s timeout did not terminate descendant work"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Du minuteur à la double addition",
+          "cuisine": "On relance, et deux plats partent",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From the timer to the doubled bill",
+          "kitchen": "Fired again, and two plates leave",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le minuteur ne commandait pas le feu",
+          "cuisine": "Le minuteur mesurait l'attente, pas la cuisson",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The timer never controlled the heat",
+          "kitchen": "The timer measured the wait, nothing else",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Couper le feu avant de relancer",
+          "cuisine": "Couper le feu, puis l'écrire au passe",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Kill the heat before firing again",
+          "kitchen": "Kill the heat, then write the order closed",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce que le silence du fond ne prouve pas",
+          "cuisine": "Le silence du fond ne prouve rien",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What silence from the back does not prove",
+          "kitchen": "Silence from the back proves nothing yet",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que mesure vraiment un minuteur",
+          "cuisine": "La sonnerie mesure la patience, rien d'autre",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What a timer actually measures",
+          "kitchen": "A timer that stops nothing measures only patience",
           "expert": "Lesson"
         }
       },

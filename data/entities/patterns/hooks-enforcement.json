@@ -37,11 +37,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Quelqu’un au passe qui peut retenir l’assiette",
+          "cuisine": "La consigne affichée devient quelqu'un qui retient l'assiette",
           "expert": "La politique s’applique au point d’action, plus en amont"
         },
         "en": {
-          "kitchen": "Someone at the pass who can hold the plate back",
+          "kitchen": "The rule now stands at the pass",
           "expert": "Policy applied at the point of action, not upstream"
         }
       },
@@ -63,11 +63,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui distingue un vrai contrôle au passe d’un écriteau",
+          "cuisine": "OpenHands note qui a arrêté quoi, et quand",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What tells a real check at the pass from a sign on the wall",
+          "kitchen": "OpenHands writes down who stopped what, and when",
           "expert": "Signals"
         }
       },
@@ -89,11 +89,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "On raisonne sur la consigne, jamais sur celui qui la tient",
+          "cuisine": "L’homme au passe peut manquer, se tromper, mélanger",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "You reason about the rule, never about the one holding it",
+          "kitchen": "The man at the pass can fail three ways",
           "expert": "Mechanism"
         }
       },
@@ -115,11 +115,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Lui dire jusqu’où il décide, et ce qu’on fait sans lui",
+          "cuisine": "Un carnet par service, et un remplaçant prévu",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Tell him how far he decides, and what happens without him",
+          "kitchen": "A book each service, and a stand-in named",
           "expert": "Response"
         }
       },
@@ -141,11 +141,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un contrôle vaut ce que valent ses limites",
+          "cuisine": "Sans limites ni traces, ce n’est qu’une habitude",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A check is worth exactly what its limits are worth",
+          "kitchen": "No limits, no marks: that is only habit",
           "expert": "Lesson"
         }
       },

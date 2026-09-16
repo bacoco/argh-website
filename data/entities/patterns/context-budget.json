@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La feuille du commis est pleine avant la première commande",
+          "cuisine": "Toute la carte récitée avant la première commande",
           "expert": "Un catalogue de capacités consomme le contexte avant toute invocation"
         },
         "en": {
-          "kitchen": "The cook’s sheet is full before the first order",
+          "kitchen": "The whole menu recited before the first order",
           "expert": "A capability catalogue spends context before anything is invoked"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Quand la maison se met à compter ce qu’elle récite",
+          "cuisine": "Codex commence à compter ce qu’il récite au commis",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "When the house starts counting what it recites",
+          "kitchen": "Codex starts counting what it recites to the cook",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ajouter une ligne paraît gratuit, et c’est faux",
+          "cuisine": "Le répertoire se récite en entier, commandé ou non",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Adding one line looks free, and it is not",
+          "kitchen": "The whole repertoire gets recited, ordered or not",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Récite ce qui sert ce soir",
+          "cuisine": "Décider ce que la feuille du commis peut porter",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Recite what tonight needs",
+          "kitchen": "Decide what the cook’s sheet can actually carry",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on récite avant prend la place de ce qu’on écrira pendant",
+          "cuisine": "Tout ce qu’on récite avant se paie pendant",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What you recite before takes the room you need during",
+          "kitchen": "Everything recited beforehand is paid for during service",
           "expert": "Lesson"
         }
       },

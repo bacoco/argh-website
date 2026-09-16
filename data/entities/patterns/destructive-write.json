@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "On débarrasse la place avant de savoir si le remplaçant arrivera",
+          "cuisine": "Un ordre qui disait ajouter a tout effacé",
           "expert": "L’état précédent disparaît avant que le remplacement soit garanti"
         },
         "en": {
-          "kitchen": "The spot gets cleared before anyone knows the replacement is coming",
+          "kitchen": "Told to add, the cook removes instead",
           "expert": "Previous state disappears before the replacement is guaranteed"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "À quoi on voit qu’une place se vide trop tôt",
+          "cuisine": "On dit ajouter, et l’assiette d’avant disparaît",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "How to spot a place emptied too early",
+          "kitchen": "They say add, and the old plate vanishes",
           "expert": "Signals"
         }
       },
@@ -77,11 +77,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi la sécurité paraît tenue alors que l’assiette est déjà partie",
+          "cuisine": "Vérifié sur la feuille, perdu sur la table",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the safeguard looks satisfied after the plate is gone",
+          "kitchen": "The check looks where the loss never happens",
           "expert": "Mechanism"
         }
       },
@@ -103,11 +103,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Préparer à côté, échanger seulement à la fin",
+          "cuisine": "Cline a adopté la réparation, la suite est inconnue",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Prepare beside, swap only at the end",
+          "kitchen": "Cline took the repair; the rest is unknown",
           "expert": "Response"
         }
       },
@@ -129,11 +129,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Tant que le remplaçant n’est pas là, on ne débarrasse pas",
+          "cuisine": "L’assiette posée est la seule version sûre",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Until the replacement is in hand, nothing gets cleared",
+          "kitchen": "The plate standing is the only sure version",
           "expert": "Lesson"
         }
       },

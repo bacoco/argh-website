@@ -29,11 +29,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "L’homme au passe annonçait ; maintenant il peut retenir l’assiette",
+          "cuisine": "Chez Codex comme chez Goose, le passe refuse",
           "expert": "Les hooks passent de la notification à l’application de la politique"
         },
         "en": {
-          "kitchen": "The man at the pass used to call the plates; now he can hold one back",
+          "kitchen": "Codex and Goose let the pass refuse",
           "expert": "Hooks are moving from lifecycle notification to policy enforcement"
         }
       },
@@ -55,11 +55,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment le poste a pris du galon",
+          "cuisine": "Le passe annonçait, maintenant il peut arrêter",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the post gained rank",
+          "kitchen": "From calling out plates to holding them back",
           "expert": "Timeline"
         }
       },
@@ -121,11 +121,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi tout se concentre au passe",
+          "cuisine": "Une main au passe arrête tout le service",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why everything gathers at the pass",
+          "kitchen": "Power collects where every plate must cross",
           "expert": "Mechanism"
         }
       },
@@ -147,11 +147,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la maison doit afficher",
+          "cuisine": "Chaque maison doit afficher les règles du passe",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What the house must post",
+          "kitchen": "Post the rules of the pass in writing",
           "expert": "Response"
         }
       },
@@ -173,11 +173,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Où en sont les maisons",
+          "cuisine": "Six maisons ont un passe, chacune ses règles",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Where the houses stand",
+          "kitchen": "Six houses now have a pass, powers differ",
           "expert": "Current state"
         }
       },
@@ -199,11 +199,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que ça dit du pouvoir en cuisine",
+          "cuisine": "Les ordres viennent maintenant de la cuisine",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What it says about power in a kitchen",
+          "kitchen": "Orders now start behind the kitchen door",
           "expert": "Lesson"
         }
       },

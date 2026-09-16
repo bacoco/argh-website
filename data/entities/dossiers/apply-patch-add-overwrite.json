@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "« Dresse une assiette de plus » a commencé par jeter celle qui était déjà là",
+          "cuisine": "Chez Cline, « ajoute » a jeté l’assiette déjà posée",
           "expert": "Une opération d’ajout pouvait remplacer un fichier existant sans avertissement"
         },
         "en": {
-          "kitchen": "“Set one more plate” began by binning the plate already there",
+          "kitchen": "At Cline, “add” binned the plate already down",
           "expert": "An add operation could replace an existing file with no warning"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "De la commande à l’assiette jetée",
+          "cuisine": "Chez Cline, on a vérifié sur une liste incomplète",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From the order to the binned plate",
+          "kitchen": "At Cline the check trusted a list from memory",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi la sécurité n’a rien vu",
+          "cuisine": "La place semblait libre sur le papier seulement",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the safeguard saw nothing",
+          "kitchen": "The place looked free on paper only",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on regarde maintenant avant de poser",
+          "cuisine": "Regarder la table juste avant de poser l’assiette",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What gets checked now before a plate goes down",
+          "kitchen": "Check the place before the plate goes down",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui est réglé, ce qui ne l’est pas",
+          "cuisine": "La réparation est adoptée, sa portée reste inconnue",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What is settled and what is not",
+          "kitchen": "Cline took the repair; its reach is unknown",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Regarder la place avant de poser l'assiette",
+          "cuisine": "Ajouter ne doit jamais effacer ce qui existe",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Look at the space before setting the plate down",
+          "kitchen": "Adding must never take away what is there",
           "expert": "Lesson"
         }
       },

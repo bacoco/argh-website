@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le classeur était en règle ; sur le passe, le commis n’avait pas les mêmes fiches",
+          "cuisine": "Codex comptait l’étagère, pas le passe",
           "expert": "L’audit est passé du scan de répertoires à la lecture de l’inventaire de skills réellement injecté dans le prompt"
         },
         "en": {
-          "kitchen": "The binder was in order; at the pass the cook held different cards",
+          "kitchen": "Codex counted the shelf, not the cook’s hand",
           "expert": "The audit moved from directory scanning to reading the skill inventory actually injected into the prompt"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "De l’étagère au passe",
+          "cuisine": "Codex change sa façon de compter les fiches",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From shelf to pass",
+          "kitchen": "Codex moves its count to the pass",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui se perd entre l’étagère et le passe",
+          "cuisine": "Les fiches changent de nom et de rang",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "What goes missing between shelf and pass",
+          "kitchen": "Cards get renamed, reordered and dropped",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Compter d’abord ce qui est sur le passe",
+          "cuisine": "Le passe donne le compte, l’étagère l’écart",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Count the pass first",
+          "kitchen": "Count at the pass, check the shelf after",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "La règle ne s’arrête pas aux fiches",
+          "cuisine": "Codex compte aussi ses outils et fournisseurs",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The rule reaches past the cards",
+          "kitchen": "Tools and outside suppliers get the same count",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La seule fiche qui compte",
+          "cuisine": "Une fiche rangée n’a jamais fait cuire",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The only card that counts",
+          "kitchen": "A card on the shelf cooks nothing",
           "expert": "Lesson"
         }
       },

@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La maison n’ajoute plus de plats : elle réécrit la circulation entre cuisines",
+          "cuisine": "Goose construit des passe-plats, pas des plats",
           "expert": "Le centre de gravité s’est déplacé des fonctionnalités vers l’architecture de protocoles"
         },
         "en": {
-          "kitchen": "No new dishes on the card; the house is rebuilding how kitchens pass work",
+          "kitchen": "Goose is building hatches, not new dishes",
           "expert": "Center of gravity shifted from end-user features to agent protocol architecture"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment la maison a changé de chantier",
+          "cuisine": "Les travaux de Goose ne parlent plus de plats",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the house changed what it was building",
+          "kitchen": "The work moved to the back, quietly",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce n’est plus le même concours",
+          "cuisine": "Goose veut fournir les rails des autres cuisines",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "It is not the same contest any more",
+          "kitchen": "Goose wants to supply the other kitchens",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’il faut regarder pour voir le mouvement",
+          "cuisine": "Chez Goose, la carte ne montre plus le travail",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to watch if you want to see the move",
+          "kitchen": "Look at the back, not the card",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Le chantier est ouvert, pas terminé",
+          "cuisine": "Les travaux de Goose ne sont pas finis",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The work is open, not finished",
+          "kitchen": "Goose’s rebuild is under way, not finished",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "On change de métier avant que la salle s’en aperçoive",
+          "cuisine": "Goose a changé de métier, pas sa carte",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A house changes trade before the dining room notices",
+          "kitchen": "A house changes trade before its card",
           "expert": "Lesson"
         }
       },

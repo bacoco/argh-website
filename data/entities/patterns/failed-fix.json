@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La recette corrigée dans le classeur, jamais sur la fiche du piano",
+          "cuisine": "Une correction faite là où personne ne cuisine",
           "expert": "Un correctif appliqué qui laisse la panne en place"
         },
         "en": {
-          "kitchen": "The recipe fixed in the office binder, never on the card at the stove",
+          "kitchen": "The fix lands on the copy nobody reads",
           "expert": "An applied correction that leaves the failure in place"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le même plat qui repart faux après la correction",
+          "cuisine": "Archon a corrigé, et le défaut est revenu",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The same wrong plate going out after the fix",
+          "kitchen": "Two copies of one card, and they differ",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi le classeur rassure alors que rien n’a bougé",
+          "cuisine": "Corrigé au bureau, jamais arrivé au piano",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the binder reassures while nothing has moved",
+          "kitchen": "Corrected in the office, never reaching the stove",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Vérifier sur la fiche que le commis a sous la main",
+          "cuisine": "Voir le plat ressortir juste, sinon rien",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Checking the card the cook actually has to hand",
+          "kitchen": "Proof comes from the stove, not the binder",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une page corrigée n’est pas un plat corrigé",
+          "cuisine": "Le calme après la correction trompe encore",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A corrected page is not a corrected plate",
+          "kitchen": "The old card is still the one read",
           "expert": "Lesson"
         }
       },

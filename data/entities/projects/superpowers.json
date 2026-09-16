@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment un cahier de recettes est passé de cuisine en cuisine",
+          "cuisine": "Le cahier Superpowers voyage, puis accroche deux fois",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How one house notebook travelled from kitchen to kitchen",
+          "kitchen": "The Superpowers notebook travels, then snags twice",
           "expert": "Timeline"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui voyage bien, et ce qui se perd en route",
+          "cuisine": "Chaque maison annonce son passe autrement",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "What travels well, and what gets lost on the way",
+          "kitchen": "Every house calls its pass a different way",
           "expert": "Mechanism"
         }
       },
@@ -153,11 +153,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Regarder le plat, pas la fiche au mur",
+          "cuisine": "Compter ce que le goûteur rattrape vraiment",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Watch the plate, not the card on the wall",
+          "kitchen": "Count what a taster really catches",
           "expert": "Response"
         }
       },
@@ -179,11 +179,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Suivie de près, avec une question ouverte sur les goûteurs",
+          "cuisine": "Superpowers tient ; les goûteurs restent à chiffrer",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Worth watching, with one open question about tasters",
+          "kitchen": "Superpowers holds; the tasters still need pricing",
           "expert": "Current state"
         }
       },
@@ -205,11 +205,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient : la méthode voyage avant le nom",
+          "cuisine": "Une façon de travailler se répand avant son nom",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What to keep: the method travels before the name does",
+          "kitchen": "A way of working spreads before its name",
           "expert": "Lesson"
         }
       },

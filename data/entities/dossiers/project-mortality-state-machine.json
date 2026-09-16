@@ -30,11 +30,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Fermé ne veut pas dire la même chose d’une maison à l’autre",
+          "cuisine": "Chez AutoGen ou Aider, fermé ne dit rien",
           "expert": "« Vivant ou mort » est le mauvais modèle de trajectoire de projet"
         },
         "en": {
-          "kitchen": "“Closed” does not mean the same thing from one house to the next",
+          "kitchen": "AutoGen, Aider, SWE-agent: closed means different things",
           "expert": "‘Alive or dead’ is the wrong model for a project’s trajectory"
         }
       },
@@ -56,11 +56,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Six rideaux baissés, six histoires différentes",
+          "cuisine": "Six rideaux baissés, six raisons différentes",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Six shutters down, six different stories",
+          "kitchen": "Six closings, six unrelated reasons",
           "expert": "Timeline"
         }
       },
@@ -122,11 +122,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Compter les lumières allumées ne dit pas qui cuisine",
+          "cuisine": "Juger au bruit confond vivants et partis",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Counting lit windows does not tell you who is cooking",
+          "kitchen": "A quiet room can still be cooking",
           "expert": "Mechanism"
         }
       },
@@ -148,11 +148,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Suivre les passages d’un état à l’autre",
+          "cuisine": "Noter ce que la maison vient de changer",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Follow the moves from one state to the next",
+          "kitchen": "Record each turn a house takes, and why",
           "expert": "Response"
         }
       },
@@ -174,11 +174,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "C’est devenu la façon de lire une maison",
+          "cuisine": "ARGH suit désormais les passages, pas le bruit",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "It has become the way a house gets read",
+          "kitchen": "ARGH now reads a house by its moves",
           "expert": "Current state"
         }
       },
@@ -200,11 +200,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le silence n’est pas une fermeture",
+          "cuisine": "Une maison silencieuse n’est pas une maison fermée",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Silence is not a closure",
+          "kitchen": "Going quiet is not the same as closing",
           "expert": "Lesson"
         }
       },

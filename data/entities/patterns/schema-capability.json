@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "On a nettoyé le bon de commande, et le poste a disparu avec",
+          "cuisine": "Nettoyer le bon de commande a retiré le choix",
           "expert": "Un champ retiré pour l’affichage portait aussi la décision de routage"
         },
         "en": {
-          "kitchen": "They tidied the order ticket, and the station went with it",
+          "kitchen": "Tidying the order ticket removed the choice of cook",
           "expert": "A field removed for display also carried the routing decision"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le bon est plus propre, et le plat part au mauvais poste",
+          "cuisine": "Codex raccourcit le bon, le poste change",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The ticket reads cleaner, and the dish goes to the wrong station",
+          "kitchen": "A tidy-up at Codex that changed the cooking",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le bon n’est pas une vitrine, c’est un ordre",
+          "cuisine": "Chaque ligne du bon porte une décision",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A ticket is not a display; it is an order",
+          "kitchen": "Tidy away a line, tidy away a choice",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Traiter le bon comme un ordre, pas comme une maquette",
+          "cuisine": "Envoyer un plat et voir où il atterrit",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Treat the ticket as an order, not as a layout",
+          "kitchen": "Ask who uses each line, and for what",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que le bon raccourci de Codex a laissé comme règle",
+          "cuisine": "Une ligne qui décide n’est pas décorative",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule left by the shortened ticket at Codex",
+          "kitchen": "A line you choose from is not decoration",
           "expert": "Lesson"
         }
       },

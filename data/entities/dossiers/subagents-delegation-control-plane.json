@@ -30,11 +30,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Distribuer les postes est devenu un métier en soi",
+          "cuisine": "Confier un poste est devenu un métier",
           "expert": "La délégation est devenue son propre control plane"
         },
         "en": {
-          "kitchen": "Handing out the stations became a craft of its own",
+          "kitchen": "Handing out a station became its own craft",
           "expert": "Delegation became its own control plane"
         }
       },
@@ -56,11 +56,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Du mot glissé au passage au tableau des postes",
+          "cuisine": "Du mot lancé au tableau des postes",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From a word in passing to a station board",
+          "kitchen": "From a word in passing to written rules",
           "expert": "Timeline"
         }
       },
@@ -122,11 +122,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une deuxième brigade sous la première",
+          "cuisine": "Une deuxième équipe à rattacher au chef",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A second crew under the first",
+          "kitchen": "A second crew still tied to the chef",
           "expert": "Mechanism"
         }
       },
@@ -148,11 +148,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Donner à chaque poste un nom et une fenêtre",
+          "cuisine": "Nommer le commis et limiter ce qu'il voit",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Give every station a name and a window",
+          "kitchen": "Name the cook, and bound what he sees",
           "expert": "Response"
         }
       },
@@ -174,11 +174,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Les maisons s’alignent sur l’idée, pas sur les règles",
+          "cuisine": "Toutes les maisons délèguent, chacune à sa façon",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Houses agree on the idea, not on the rules",
+          "kitchen": "Every house delegates now, none the same way",
           "expert": "Current state"
         }
       },
@@ -200,11 +200,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un commis n’est pas une ligne de plus sur le ticket",
+          "cuisine": "Chaque poste confié a un responsable",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A cook is not one more line on the ticket",
+          "kitchen": "The cook you send answers for his plate",
           "expert": "Lesson"
         }
       },

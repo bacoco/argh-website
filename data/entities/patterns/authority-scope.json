@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Celui qui empêchait de partir s’est mis à dire quoi cuisiner",
+          "cuisine": "Le portier de la cuisine choisit les plats",
           "expert": "Un contrôle de terminaison a répondu à une question d’autorisation"
         },
         "en": {
-          "kitchen": "The one who kept you from leaving began saying what to cook",
+          "kitchen": "Posted to watch the door, deciding the menu",
           "expert": "A termination control answered an authorization question"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Quand une consigne déborde de son poste",
+          "cuisine": "Chez Claude Code, une consigne sans limites écrites",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "When one instruction spills past its station",
+          "kitchen": "The door man at Claude Code decides too much",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux questions, une seule consigne",
+          "cuisine": "Une seule consigne répond à deux questions",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Two questions, one instruction",
+          "kitchen": "Nobody ever drew the limits of that post",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Dire ce qu’on a le droit de trancher",
+          "cuisine": "Cinq pouvoirs différents, un seul confié",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Say what you are allowed to settle",
+          "kitchen": "Five separate powers, and only one was given",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient : un but ne remplace pas un poste",
+          "cuisine": "Claude Code n’a rien changé, l’avertissement tient",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What to keep: an objective is not a station",
+          "kitchen": "Claude Code changed nothing, so the warning stands",
           "expert": "Lesson"
         }
       },

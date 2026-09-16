@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La porte a résisté, la clé est partie à la poubelle",
+          "cuisine": "La clé jetée parce qu’elle a coincé",
           "expert": "Un échec d’authentification récupérable déclenchait la suppression définitive des identifiants"
         },
         "en": {
-          "kitchen": "The door stuck once, and the key went in the bin",
+          "kitchen": "One stiff lock, and the key is gone",
           "expert": "A recoverable authentication failure triggered permanent deletion of the credentials"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui met la puce à l’oreille devant le garde-manger",
+          "cuisine": "Deux cuisiniers, un trousseau, une clé jetée",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What to notice at the pantry door",
+          "kitchen": "Two cooks share a keyring, one key vanishes",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une porte qui résiste et une porte fermée se ressemblent",
+          "cuisine": "On jette la clé quand attendre aurait suffi",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A stiff door and a closed one look the same",
+          "kitchen": "Waiting would have done; the key was thrown away",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Nommer le refus avant de toucher au trousseau",
+          "cuisine": "Attendre après une panne, jeter après un refus",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Name the refusal before touching the keyring",
+          "kitchen": "Wait out a breakdown, throw away after refusal",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que goose laisse sur le trousseau",
+          "cuisine": "Rien d’irréversible sans un refus net",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule goose leaves on the keyring",
+          "kitchen": "A setback must never trigger what cannot be undone",
           "expert": "Lesson"
         }
       },

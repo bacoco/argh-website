@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le carnet est revenu intact, le poste n’était plus le même",
+          "cuisine": "Archon rouvre le carnet, le poste a changé",
           "expert": "La reprise restaurait la conversation, pas assez d’état d’exécution"
         },
         "en": {
-          "kitchen": "The order pad came back intact; the station had changed",
+          "kitchen": "Archon reopens the pad onto a different station",
           "expert": "Resume restored the conversation but too little execution state"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "La reprise, dans l’ordre",
+          "cuisine": "La reprise chez Archon repart d’un poste dépareillé",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Picking the service back up, in order",
+          "kitchen": "Archon picks the service up at another station",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi le carnet ne suffit pas à reprendre",
+          "cuisine": "Ranger le carnet ne range pas la cuisine autour",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the pad alone cannot resume a service",
+          "kitchen": "Storing the pad stores nothing around it",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on range avec le carnet",
+          "cuisine": "Ranger tout ce qui fait ce service-là",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What gets stored alongside the pad",
+          "kitchen": "Store the whole station, not just the orders",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Où en est la reprise",
+          "cuisine": "Archon a réparé la reprise, essais à l’appui",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Where resuming stands",
+          "kitchen": "Archon resumes better now, with trials behind it",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Le carnet ne rend pas le poste",
+          "cuisine": "Reprendre demande le poste, pas que le carnet",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The notebook does not give the station back",
+          "kitchen": "Notes alone will not restart a service",
           "expert": "Lesson"
         }
       },

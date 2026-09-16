@@ -26,11 +26,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Il racontait la soirée par cœur, et deux tables attendaient encore",
+          "cuisine": "OpenClaw et Codex perdent les tables qui attendent",
           "expert": "La compaction du contexte a gardé le récit et perdu l’obligation en cours"
         },
         "en": {
-          "kitchen": "He could tell you the whole evening, and two tables were still waiting",
+          "kitchen": "OpenClaw and Codex forget the tables still waiting",
           "expert": "Context compaction kept the story and dropped the live obligation"
         }
       },
@@ -52,11 +52,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment le pic s’est vidé",
+          "cuisine": "Les bons retirés, les tables dues avec eux",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the spike got cleared",
+          "kitchen": "Tickets cleared, and the owed tables with them",
           "expert": "Timeline"
         }
       },
@@ -118,11 +118,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi un récit ne remplace pas un bon",
+          "cuisine": "Une dette ne tient pas dans un récit",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a retelling is not a ticket",
+          "kitchen": "A debt does not survive a retelling",
           "expert": "Mechanism"
         }
       },
@@ -144,11 +144,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui reste affiché au mur",
+          "cuisine": "Les tables non servies restent affichées au mur",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What stays up on the wall",
+          "kitchen": "Unserved tables stay on the wall whatever happens",
           "expert": "Response"
         }
       },
@@ -170,11 +170,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce que ça vaut au-delà de cette soirée",
+          "cuisine": "Tout service qui dure oublie les tables dues",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What it is worth beyond that one night",
+          "kitchen": "The longest nights lose the tables still owed",
           "expert": "Current state"
         }
       },
@@ -196,11 +196,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle des bons",
+          "cuisine": "Le résumé ne règle pas les tables dues",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule of the tickets",
+          "kitchen": "A write-up settles nothing that is owed",
           "expert": "Lesson"
         }
       },

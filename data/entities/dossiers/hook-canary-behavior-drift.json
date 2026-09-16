@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le carnet des entorses s’est rempli d’un coup, alors que la règle n’avait pas bougé",
+          "cuisine": "Le carnet des écarts de Claude Code s’est rempli",
           "expert": "Un garde-fou local est devenu le capteur d’une régression non mesurée"
         },
         "en": {
-          "kitchen": "The tally of slips filled up overnight, though the house rule had not moved",
+          "kitchen": "Claude Code started marking slips every service",
           "expert": "A local guardrail became the sensor for an unmeasured regression"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Un carnet presque vide, puis plein",
+          "cuisine": "Le carnet reste vide des mois, puis se remplit",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "A book almost empty, then full",
+          "kitchen": "Months of empty pages, then a steady tally",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une règle qui punit finit par compter",
+          "cuisine": "Le carnet vide était déjà un instrument",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A rule that punishes ends up counting",
+          "kitchen": "The empty book was the measure all along",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Garder les croix, les dates et la façon dont tournait le service",
+          "cuisine": "Garder chaque croix avec sa date",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Keep the marks, the dates and how the house was being run",
+          "kitchen": "Keep every mark, its date, and the conditions",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "La mesure tient, la cause non",
+          "cuisine": "Les croix ont une date, pas une cause",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The measurement holds; the cause does not",
+          "kitchen": "The book gives the date, never the cause",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui retient un geste sait aussi le compter",
+          "cuisine": "Une consigne qui punit mesure aussi la maison",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Whatever holds a move back can also count it",
+          "kitchen": "Whatever stops a move also counts it",
           "expert": "Lesson"
         }
       },

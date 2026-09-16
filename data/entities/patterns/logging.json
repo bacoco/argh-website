@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "On a envoyé les pages, puis demandé de ne pas les lire",
+          "cuisine": "Demander la discrétion après l'envoi des pages",
           "expert": "Le caviardage placé après la traversée qu’il devait empêcher"
         },
         "en": {
-          "kitchen": "The pages went out, then came the request not to read them",
+          "kitchen": "The pages leave first, the warning follows",
           "expert": "Redaction placed after the crossing it was meant to prevent"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La consigne voyage avec les pages, jamais devant",
+          "cuisine": "La demande de discrétion voyage dans l’enveloppe",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The instruction travels with the pages, never ahead of them",
+          "kitchen": "The request for silence travels inside the envelope",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La copie qui revient est propre, celle qui est partie ne l’était pas",
+          "cuisine": "On regarde le retour, jamais le départ",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "What comes back is clean; what left was not",
+          "kitchen": "The house checks the reply, not the envelope",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Barrer avant de fermer l’enveloppe, et relire le cahier",
+          "cuisine": "Nettoyer avant l’enveloppe, jamais après",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Strike it out before sealing, and read the book too",
+          "kitchen": "Clean the page before it leaves, never after",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui est sorti est sorti, et le cahier sort aussi",
+          "cuisine": "Demander de ne pas lire n’annule rien",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What has left has left, and the book leaves too",
+          "kitchen": "Asking him not to read undoes nothing",
           "expert": "Lesson"
         }
       },

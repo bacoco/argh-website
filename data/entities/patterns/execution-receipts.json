@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le carnet porte une ligne pour un plat que personne n’a cuisiné",
+          "cuisine": "Une ligne au carnet sans cuisinier derrière",
           "expert": "Un résultat mis en forme n’atteste pas sa propre exécution"
         },
         "en": {
-          "kitchen": "The book has a line for a dish nobody cooked",
+          "kitchen": "A neat entry with no cooking behind it",
           "expert": "A formatted result does not attest its own execution"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le carnet est plein alors que rien ne s’est passé",
+          "cuisine": "Un service sans ustensiles rend une page complète",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The book is full on a night when nothing happened",
+          "kitchen": "A night with no utensils, a full page",
           "expert": "Signals"
         }
       },
@@ -76,11 +76,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une belle page prouve la main qui écrit, pas le geste qui cuisine",
+          "cuisine": "Fait, raté, impossible, inventé : même encre",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A handsome page proves the hand that wrote it, not the cooking",
+          "kitchen": "Done, failed, impossible, invented, all one hand",
           "expert": "Mechanism"
         }
       },
@@ -102,11 +102,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce que le carnet doit noter pour chaque ustensile",
+          "cuisine": "Une case à part pour le geste impossible",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What the book must record for every utensil",
+          "kitchen": "Its own box for work never done",
           "expert": "Response"
         }
       },
@@ -128,11 +128,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Demande le plat, pas la ligne",
+          "cuisine": "Une belle page ne prouve aucun plat",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Ask for the dish, not the line",
+          "kitchen": "A well-kept page proves no cooking at all",
           "expert": "Lesson"
         }
       },

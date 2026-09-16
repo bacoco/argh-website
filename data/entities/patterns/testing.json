@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Deux cuisines où le goûteur se tenait à trois pas de l’endroit qui rate",
+          "cuisine": "Goûter le bol ne dit rien de l’assiette",
           "expert": "Un vert mesure la couture traversée, pas le chemin dont dépend l’utilisateur"
         },
         "en": {
-          "kitchen": "Two kitchens where the taster stood three steps from the spot that failed",
+          "kitchen": "The taster stands where nothing goes wrong",
           "expert": "A green measures the seam it crossed, not the path the user depends on"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui doit inquiéter quand tout le carnet est vert",
+          "cuisine": "On goûte le bol, jamais l’assiette qui voyage",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What should worry you when the whole book comes back green",
+          "kitchen": "The bowl gets tasted; the travelling plate does not",
           "expert": "Signals"
         }
       },
@@ -77,11 +77,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi on goûte toujours là où c’est commode",
+          "cuisine": "Pourquoi l’endroit commode devient l’endroit goûté",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the tasting always happens where it is easy",
+          "kitchen": "Why the easy spot becomes the tested spot",
           "expert": "Mechanism"
         }
       },
@@ -103,11 +103,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Goûter au dernier geste, pas au premier",
+          "cuisine": "Le goûteur doit suivre l’assiette jusqu’au client",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Taste at the last gesture, not the first",
+          "kitchen": "The taster must follow the plate to the table",
           "expert": "Response"
         }
       },
@@ -129,11 +129,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que Hermes et Cline laissent au goûteur",
+          "cuisine": "Un carnet vert ne couvre que son propre poste",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What Hermes and Cline leave the taster",
+          "kitchen": "A green book covers its own station only",
           "expert": "Lesson"
         }
       },

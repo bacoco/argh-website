@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La soirée recopiée en une page, sans la commande encore due",
+          "cuisine": "Un résumé qui oublie la commande encore due",
           "expert": "Le résumé a conservé le récit et perdu l’obligation en cours"
         },
         "en": {
-          "kitchen": "The evening recopied onto one page, minus the order still owed",
+          "kitchen": "Shrinking the notes drops the order still owed",
           "expert": "The summary kept the story and dropped the obligation in force"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "À quoi on voit que la page ne suffit plus",
+          "cuisine": "OpenClaw racontait tout sauf ce qui restait dû",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "How you see the single page fall short",
+          "kitchen": "Every plate remembered at OpenClaw, one still owed",
           "expert": "Signals"
         }
       },
@@ -76,11 +76,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une belle page trompe",
+          "cuisine": "On recopie le récit, pas la dette",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a good page misleads",
+          "kitchen": "The story gets recopied, the debt does not",
           "expert": "Mechanism"
         }
       },
@@ -102,11 +102,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Garder la commande en attente hors de la page",
+          "cuisine": "La commande due tient sur sa propre feuille",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Keep the open order off the page",
+          "kitchen": "The open order gets its own sheet",
           "expert": "Response"
         }
       },
@@ -128,11 +128,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient d’un carnet recopié trop vite",
+          "cuisine": "Une bonne mémoire ne sert pas la commande",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What a book recopied too quickly leaves behind",
+          "kitchen": "A good memory never sent a plate out",
           "expert": "Lesson"
         }
       },

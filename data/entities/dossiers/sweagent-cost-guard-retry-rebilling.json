@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Chez SWE-agent, un plat refait a été facturé autant de fois qu’il est reparti",
+          "cuisine": "Chez SWE-agent, le plat refait est refacturé",
           "expert": "SWE-agent : les retries transforment un appel modèle en multiplicateur de coût caché"
         },
         "en": {
-          "kitchen": "At SWE-agent, a plate sent back was rung up again every time",
+          "kitchen": "SWE-agent rang up every plate it sent back",
           "expert": "SWE-agent: retries turn one model call into a hidden cost multiplier"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment l’addition a doublé sans que le plafond bouge",
+          "cuisine": "L'addition double, le plafond ne bouge pas",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the bill doubled while the ceiling stayed put",
+          "kitchen": "The bill doubles while the ceiling stands still",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La caisse ne voyait qu’un bout du service",
+          "cuisine": "La caisse ignorait les renvois en cuisine",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The till could only see part of the service",
+          "kitchen": "The till never saw the plates come back",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Compter le plat, et laisser l’alarme sonner",
+          "cuisine": "Compter la commande entière, et laisser sonner l'alarme",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Count the dish, and let the alarm ring out",
+          "kitchen": "Count the whole order, let the alarm carry",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Des réparations annoncées, pas toutes en service",
+          "cuisine": "Des réparations bien visées, pas toutes en service",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Repairs announced, not all of them in service",
+          "kitchen": "Repairs well aimed, not all in service",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Compte les plats, pas les allers-retours",
+          "cuisine": "Ce qu'on commande une fois coûte une fois",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Count the plates, not the trips",
+          "kitchen": "One order should cost once, whatever the tries",
           "expert": "Lesson"
         }
       },

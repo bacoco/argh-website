@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "L’appel est passé une minute trop tôt, et le poste est resté vide tout le service",
+          "cuisine": "Claude Code a fait l’appel trop tôt",
           "expert": "Le contrôle était valide sur disque et absent du runtime"
         },
         "en": {
-          "kitchen": "Roll call came a minute early, and the station stayed empty all service",
+          "kitchen": "Claude Code took roll call before anyone arrived",
           "expert": "The control was valid on disk and absent from the runtime"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Une minute d’écart, et le poste ne compte plus",
+          "cuisine": "L’appel, puis les renforts une minute après",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "One minute apart, and the station stops counting",
+          "kitchen": "The extra hands arrived one minute too late",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Les papiers étaient bons, c’est l’heure de l’appel qui était fausse",
+          "cuisine": "Les papiers étaient bons, l’heure de l’appel non",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The paperwork was right, the hour of roll call was wrong",
+          "kitchen": "The paperwork was right, the hour was wrong",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Refaire l’appel après l’ouverture",
+          "cuisine": "Laisser les arrivants se signaler eux-mêmes",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Take roll call again once the doors are open",
+          "kitchen": "Check the station before trusting the sheet",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Tout ce qui arrive après l’appel court le même risque",
+          "cuisine": "Tout ce qui arrive après l’appel peut manquer",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Anything arriving after roll call runs the same risk",
+          "kitchen": "Anything arriving after roll call can be missed",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Être inscrit au tableau n’est pas tenir le poste",
+          "cuisine": "Inscrit au tableau ne veut pas dire présent",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Being on the board is not holding the station",
+          "kitchen": "A station is held only when it answers",
           "expert": "Lesson"
         }
       },

@@ -63,11 +63,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Le tour des postes, du premier soir à la rechute",
+          "cuisine": "gstack ajoute le tour des postes, puis rechute",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Walking the line, from the first night to the relapse",
+          "kitchen": "gstack starts walking the stations, then slips again",
           "expert": "Timeline"
         }
       },
@@ -129,11 +129,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi le tour des postes peut mentir deux fois",
+          "cuisine": "Deux fois, le tour a posé la mauvaise question",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why walking the line can lie twice",
+          "kitchen": "Twice the walk asked the wrong question",
           "expert": "Mechanism"
         }
       },
@@ -155,11 +155,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce que le tour doit demander maintenant",
+          "cuisine": "Demander s’il peut cuisiner, pas s’il répond",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What the walk has to ask now",
+          "kitchen": "Ask whether it cooks, not whether it answers",
           "expert": "Response"
         }
       },
@@ -181,11 +181,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Une maison bien pleine, un correctif qui attend",
+          "cuisine": "La correction de gstack attend toujours son tour",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "A house in full swing, a fix still waiting",
+          "kitchen": "gstack’s correction is still waiting its turn",
           "expert": "Current state"
         }
       },
@@ -207,11 +207,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’un « tout est prêt » doit prouver",
+          "cuisine": "« Tout est prêt » au-dessus d’un feu éteint",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What an “all ready” has to prove",
+          "kitchen": "“All ready” said over a cold stove",
           "expert": "Lesson"
         }
       },

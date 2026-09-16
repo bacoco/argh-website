@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La carte reste en vitrine, les fourneaux ne s’allument plus",
+          "cuisine": "La carte reste lisible, la cuisine est arrêtée",
           "expert": "L’accès à l’historique survit à la fin des mutations"
         },
         "en": {
-          "kitchen": "The menu stays in the window, the stoves stay cold",
+          "kitchen": "The window stayed lit, the stoves went cold",
           "expert": "History stays readable after the changes stop"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui distingue une maison éteinte d’une maison fermée",
+          "cuisine": "Continue ne sert plus aucun plat du jour",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Telling a cold kitchen from a closed one",
+          "kitchen": "Continue serves no dish of the day",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une vitrine allumée trompe",
+          "cuisine": "Les fourneaux sont froids, l’enseigne est allumée",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a lit window fools you",
+          "kitchen": "A lit window says nothing about the stoves",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on demande avant de commander",
+          "cuisine": "L’annonce de l’équipe vaut mieux que la vitrine",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to ask before ordering",
+          "kitchen": "What the crew announced beats what the window shows",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que laisse la vitrine de Continue",
+          "cuisine": "Lire la carte ne veut pas dire manger",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What Continue’s window leaves behind",
+          "kitchen": "Reading the menu is not eating",
           "expert": "Lesson"
         }
       },

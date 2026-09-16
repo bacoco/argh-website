@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le mot laissé au mur survit à la soirée qui l’a écrit",
+          "cuisine": "Le mot du soir vaut encore le lendemain",
           "expert": "Un contrôle reste actif après la disparition de la condition qui fondait son autorité"
         },
         "en": {
-          "kitchen": "The note left on the wall outlives the night that wrote it",
+          "kitchen": "Last night’s note still holds back today’s brigade",
           "expert": "A control stays active after the condition that grounded its authority is gone"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "À quoi on reconnaît un ordre qui n’a plus de patron",
+          "cuisine": "Un poste bloqué par un ordre sans auteur",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "How to spot an order with nobody left behind it",
+          "kitchen": "Blocked by an instruction nobody claims",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi un mot juste hier devient faux aujourd’hui",
+          "cuisine": "Personne ne vient retirer le papier",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why last night’s right note reads wrong tonight",
+          "kitchen": "Paper waits for a hand that never comes",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Signer le mot, et le retirer soi-même en partant",
+          "cuisine": "Donner au mot une heure où il meurt",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Sign the note, and take it down yourself on the way out",
+          "kitchen": "Sign the note and give it an end",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que gstack laisse punaisée au mur",
+          "cuisine": "Un ordre sans fin devient un ordre faux",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule gstack leaves pinned to the wall",
+          "kitchen": "An order that never expires ends up wrong",
           "expert": "Lesson"
         }
       },

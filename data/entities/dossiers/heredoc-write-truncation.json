@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "L’ardoise a été effacée avant que le nouveau menu soit dicté",
+          "cuisine": "Claude Code efface l’ardoise avant d’écrire le menu",
           "expert": "L’écriture s’est bloquée après que la destination avait déjà été tronquée"
         },
         "en": {
-          "kitchen": "The board was wiped clean before the new menu was ever dictated",
+          "kitchen": "Claude Code wipes the board before writing",
           "expert": "The write hung after the destination had already been truncated"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Une dictée qui se coince, et une ardoise déjà effacée",
+          "cuisine": "La dictée s’est coincée, l’ardoise était déjà blanche",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "A dictation that jams, and a board already wiped",
+          "kitchen": "The dictation stuck again, the board already blank",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "L’éponge passe avant la dictée, pas après",
+          "cuisine": "Entre l’éponge et le premier mot, plus rien",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The sponge goes first, the dictation second",
+          "kitchen": "Wipe first, write second, nothing in between",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Écrire la nouvelle ardoise à côté, puis échanger",
+          "cuisine": "Remplir une ardoise neuve avant de décrocher",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Write the new board beside the old one, then swap",
+          "kitchen": "Finish the spare board first, then swap",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "La perte est refaite, la protection n’existe pas",
+          "cuisine": "La perte se refait, aucune protection n’est livrée",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The loss was reproduced; the safeguard does not exist",
+          "kitchen": "The loss repeats, with nothing to catch it",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "On n’efface pas l’ardoise avant d’avoir la suivante",
+          "cuisine": "L’ancienne ardoise reste jusqu’à la nouvelle",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Never wipe the board before the next one exists",
+          "kitchen": "Take the old board down last",
           "expert": "Lesson"
         }
       },

@@ -98,11 +98,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Deux portes surveillées, puis un carnet qui dévore la réserve",
+          "cuisine": "Chez Codex, le carnet dévorait la réserve",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Two watched doors, then a logbook that eats the storeroom",
+          "kitchen": "At Codex, the ledger ate the storeroom",
           "expert": "Timeline"
         }
       },
@@ -184,11 +184,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi le tri à l’entrée laisse passer ce qui a changé de nom",
+          "cuisine": "Les étiquettes changent après le tri",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why sorting at the door misses whatever changed its name",
+          "kitchen": "Labels get rewritten after the sorting",
           "expert": "Mechanism"
         }
       },
@@ -210,11 +210,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la maison a déplacé, et ce qui n’est encore qu’une consigne",
+          "cuisine": "Un contrôle déplacé, trois consignes sans preuve",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What the house moved, and what is still only a rule on paper",
+          "kitchen": "One check moved, three rules with no proof",
           "expert": "Response"
         }
       },
@@ -236,11 +236,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Le carnet est tenu ; les autres portes ne le sont pas",
+          "cuisine": "Codex tient le carnet, pas encore le reste",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The logbook is under control; the other doors are not",
+          "kitchen": "Codex holds the ledger, not yet the rest",
           "expert": "Current state"
         }
       },
@@ -262,11 +262,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Poste le contrôle là où le geste devient définitif",
+          "cuisine": "Contrôler là où plus rien ne se reprend",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Stand the check where the move becomes final",
+          "kitchen": "Check where nothing can be taken back",
           "expert": "Lesson"
         }
       },

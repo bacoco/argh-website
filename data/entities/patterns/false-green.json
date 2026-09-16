@@ -30,11 +30,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le tableau est effacé et la table neuf n’a rien eu",
+          "cuisine": "Le tableau est barré, la table attend encore",
           "expert": "Un succès apparent produit par un signal qui ne mesure pas le résultat"
         },
         "en": {
-          "kitchen": "The board is wiped clean and table nine ate nothing",
+          "kitchen": "The board says served, the table says otherwise",
           "expert": "Apparent success from a signal that measures the wrong outcome"
         }
       },
@@ -56,11 +56,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Barré chez Aider, chez Hermes, chez gstack",
+          "cuisine": "Une réserve muette comptait pour vide chez Hermes",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Crossed off at Aider, at Hermes, at gstack",
+          "kitchen": "At Hermes a silent pantry counted as empty",
           "expert": "Signals"
         }
       },
@@ -82,11 +82,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi un tableau propre rassure plus qu’une salle pleine",
+          "cuisine": "Le tableau voit la sortie, jamais l’assiette mangée",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a clean board reassures more than a full room",
+          "kitchen": "The board sees what leaves, never what gets eaten",
           "expert": "Mechanism"
         }
       },
@@ -108,11 +108,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Barrer la ligne devant la table, pas devant le passe",
+          "cuisine": "Écrire « je ne sais pas » plutôt que rien",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Crossing the line off at the table, not at the pass",
+          "kitchen": "Write I do not know instead of nothing",
           "expert": "Response"
         }
       },
@@ -134,11 +134,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Tout barré ne veut pas dire tout servi",
+          "cuisine": "Un tableau propre peut mesurer la mauvaise chose",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "All crossed off does not mean all served",
+          "kitchen": "A clean board measuring the wrong thing",
           "expert": "Lesson"
         }
       },

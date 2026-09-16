@@ -53,11 +53,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Ce que l’ardoise promet, ce que le service montre",
+          "cuisine": "Ce qu’agent-scripts annonce, ce que le cuisinier reçoit",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "What the board promises, what service shows",
+          "kitchen": "What agent-scripts announces, what the cook gets",
           "expert": "Timeline"
         }
       },
@@ -119,11 +119,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "L’étagère n’est pas la feuille du soir",
+          "cuisine": "Seule la feuille du soir commande le service",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The shelf is not the evening sheet",
+          "kitchen": "Only the evening sheet runs service",
           "expert": "Mechanism"
         }
       },
@@ -145,11 +145,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Lire la feuille, pas l’étagère",
+          "cuisine": "Compter les ustensiles posés, pas ceux du catalogue",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Read the sheet, not the shelf",
+          "kitchen": "Count the utensils laid out, not the catalogue",
           "expert": "Response"
         }
       },
@@ -171,11 +171,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Deux fiches à la carte, et l’écart toujours là",
+          "cuisine": "Deux fiches rattachées à agent-scripts, rien de goûté",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Two cards on the menu, and the gap still there",
+          "kitchen": "Two cards attached to agent-scripts, nothing tasted yet",
           "expert": "Current state"
         }
       },
@@ -197,11 +197,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui compte, c’est ce qu’on a en main au coup de feu",
+          "cuisine": "La craie promet, le coup de feu tranche",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What counts is what is in your hands when the rush starts",
+          "kitchen": "Chalk promises, the rush decides",
           "expert": "Lesson"
         }
       },

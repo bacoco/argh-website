@@ -33,11 +33,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le talent du cuisinier ne décide plus rien, la cuisine autour de lui si",
+          "cuisine": "Le talent ne décide plus, la cuisine si",
           "expert": "Les produits d’agents convergent vers le même control plane périphérique"
         },
         "en": {
-          "kitchen": "The cook’s talent no longer decides; the kitchen around him does",
+          "kitchen": "The kitchen decides, not the cook’s talent",
           "expert": "Agent products are converging on the same surrounding control plane"
         }
       },
@@ -59,11 +59,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment la cuisine a pris le pas sur le cuisinier",
+          "cuisine": "Les bricolages sont devenus des postes fixes",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the kitchen overtook the cook",
+          "kitchen": "Workarounds turned into stations and house rules",
           "expert": "Timeline"
         }
       },
@@ -125,11 +125,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Qui décide vraiment de ce qui sort du passe",
+          "cuisine": "Le cuisinier ne choisit ni place ni produits",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Who really decides what leaves the pass",
+          "kitchen": "The cook picks neither station nor produce",
           "expert": "Mechanism"
         }
       },
@@ -151,11 +151,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’il faut regarder pour juger une maison",
+          "cuisine": "Juger une maison sur son coup de feu",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to look at when judging a house",
+          "kitchen": "Watch who may stop an order leaving",
           "expert": "Response"
         }
       },
@@ -177,11 +177,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Où en est ce mouvement",
+          "cuisine": "Chaque maison apprend à tenir sa propre cuisine",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Where this movement stands",
+          "kitchen": "Most houses observed are making the same turn",
           "expert": "Current state"
         }
       },
@@ -203,11 +203,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que le talent seul ne suffit pas à faire",
+          "cuisine": "Un bon cuisinier ne sauve pas la cuisine",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What talent alone cannot do",
+          "kitchen": "Talent does not reach the table alone",
           "expert": "Lesson"
         }
       },

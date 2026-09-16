@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Deux cuisiniers, une seule ardoise, et le plat est parti à la mauvaise table",
+          "cuisine": "SWE-agent a mis deux cuisiniers sur une ardoise",
           "expert": "Un contrôle sûr en exécution sérielle a corrompu son état en exécution parallèle"
         },
         "en": {
-          "kitchen": "One slate, two cooks, and a plate sent to the wrong table",
+          "kitchen": "SWE-agent gave two cooks one slate",
           "expert": "A check that was safe when runs were serial corrupted its state once runs overlapped"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment la ligne a changé de main",
+          "cuisine": "Le second efface la ligne du premier",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the line changed hands",
+          "kitchen": "The second cook chalks over the first",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi personne n’a vu venir",
+          "cuisine": "Doubler la brigade n’a pas changé l’ardoise",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why nobody saw it coming",
+          "kitchen": "More hands on the chalk, same single slate",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on a changé au passe",
+          "cuisine": "Chacun sa craie, et le double service rejoué",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What changed at the pass",
+          "kitchen": "Stage the crowded pass before it happens",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce que ça vaut pour les autres cuisines",
+          "cuisine": "L’ardoise partagée ne casse qu’au coup de feu",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What it is worth to other kitchens",
+          "kitchen": "Nothing breaks until two cooks write at once",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La ligne à retenir",
+          "cuisine": "Deux mains sur la craie, plus de propriétaire",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The line to keep",
+          "kitchen": "One slate each, or nobody owns anything",
           "expert": "Lesson"
         }
       },

@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le carnet tenu pour punir s’est mis à mesurer",
+          "cuisine": "Un carnet tenu pour punir finit par mesurer",
           "expert": "Un contrôle d’enforcement devient un instrument de mesure"
         },
         "en": {
-          "kitchen": "The book kept to punish started to measure",
+          "kitchen": "A punishment tally turns into a thermometer",
           "expert": "An enforcement check becomes a measuring instrument"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Les croix reviennent alors que la consigne n’a pas changé",
+          "cuisine": "Des croix groupées sous une consigne inchangée",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The marks come back though the house rule has not moved",
+          "kitchen": "A cluster of marks under an unchanged rule",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un carnet vide a l’air inutile jusqu’au jour où il se remplit",
+          "cuisine": "Les mois vides valent plus que les croix",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "An empty book looks useless until the day it fills",
+          "kitchen": "The empty months are the book's real value",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Garder les croix, les dates, et ce que la maison faisait ce soir-là",
+          "cuisine": "Ne rien effacer d’un service à l’autre",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Keep the marks, the dates, and how the house ran that night",
+          "kitchen": "Keep the dates, not just the count",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une règle tenue longtemps finit par mesurer la maison",
+          "cuisine": "Une consigne tenue des mois raconte la maison",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A rule held long enough ends up measuring the house",
+          "kitchen": "What the book really counts is the house",
           "expert": "Lesson"
         }
       },

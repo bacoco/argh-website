@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Celui qui regardait passer les plats a reçu le droit de les retenir",
+          "cuisine": "Chez Goose, le passe peut arrêter un plat",
           "expert": "De callbacks non bloquants au veto, puis à une politique d’échec configurable"
         },
         "en": {
-          "kitchen": "The man watching the pass was given the right to stop a plate",
+          "kitchen": "At Goose the pass can now refuse plates",
           "expert": "Hooks went from non-blocking observation to explicit veto, then to a configurable failure policy"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment le poste du passe a changé de rôle",
+          "cuisine": "Du carnet au droit d’arrêter un plat",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the job at the pass changed",
+          "kitchen": "From keeping notes to stopping plates",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le garde qui peut dire non peut aussi manquer à l’appel",
+          "cuisine": "Le garde absent devient une deuxième panne",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The guard who can say no can also fail to show up",
+          "kitchen": "A silent check becomes a second breakdown",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Écrire la réponse avant la panne, pas pendant",
+          "cuisine": "Fermer, laisser passer ou ralentir, décidé d’avance",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Write the answer before the breakdown, not during",
+          "kitchen": "Shut, let through or slow down, decided early",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Un vrai poste de contrôle, plus une clochette",
+          "cuisine": "Goose a écrit la règle du poste muet",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "A real checkpoint now, no longer a bell",
+          "kitchen": "Goose wrote the rule for a silent pass",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un garde sans consigne de panne n’est pas un garde",
+          "cuisine": "Donner le droit de refuser se paie d’avance",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A guard with no rule for his own absence is not a guard",
+          "kitchen": "The right to refuse is paid for",
           "expert": "Lesson"
         }
       },

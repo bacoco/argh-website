@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Tu rayes le fournisseur de ta liste, le camion revient quand même",
+          "cuisine": "Des fournisseurs livrent sans figurer sur ta liste",
           "expert": "L’inventaire réel des outils s’éloigne de la configuration que l’utilisateur croit tenir"
         },
         "en": {
-          "kitchen": "You cross the supplier off your list and the van comes anyway",
+          "kitchen": "Crossed off the list and still delivering",
           "expert": "The live tool inventory drifts away from the configuration the user believes they hold"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Les caisses en double et la ligne rayée pour rien",
+          "cuisine": "Des livraisons que personne en cuisine n’a commandées",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Double crates and a line struck through for nothing",
+          "kitchen": "Deliveries the kitchen never ordered, arriving twice",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux mains écrivent sur la même liste",
+          "cuisine": "Deux mains écrivent, une seule peut effacer",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Two hands write on the same list",
+          "kitchen": "Your eraser lifts only your own handwriting",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Inscrire qui l’a fait entrer et qui peut le renvoyer",
+          "cuisine": "Une marchandise, une seule ligne sur la liste",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Write down who let them in and who can send them away",
+          "kitchen": "Goods from two houses belong on one line",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un fournisseur sans nom et sans porte de sortie",
+          "cuisine": "La liste au mur ne commande pas les livraisons",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A supplier with no name and no way out",
+          "kitchen": "What comes through the door beats the list",
           "expert": "Lesson"
         }
       },

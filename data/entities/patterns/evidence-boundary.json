@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "« C’est parti » et « je crois que c’est parti » s’annoncent du même ton",
+          "cuisine": "Vu, deviné ou supposé, la phrase sort pareille",
           "expert": "L’affirmation et ce qui l’établit ne voyagent pas ensemble"
         },
         "en": {
-          "kitchen": "“It’s away” and “I think it’s away” get called the same way",
+          "kitchen": "Checked or assumed, it is announced the same",
           "expert": "A claim and what establishes it do not travel together"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui doit faire redemander « tu l’as vue partir ? »",
+          "cuisine": "L’aplomb du commis tient lieu de preuve",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "What should make the chef ask “did you see it go?”",
+          "kitchen": "The answer is quick and nobody saw anything",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une phrase bien dite emporte la décision",
+          "cuisine": "Le chef tranche sur ce qu’on lui raconte",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a well-turned sentence carries the decision",
+          "kitchen": "The chef rules on a story, not a plate",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui part avec l’annonce, et ce qu’on éprouve ensuite",
+          "cuisine": "Dire quand on n’a pas pu vérifier",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What leaves with the call, and what gets tested afterwards",
+          "kitchen": "Name what was seen, and what was not",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "L’assurance n’est pas une assiette",
+          "cuisine": "L’aplomb ne remplace pas le coup d’œil",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Confidence is not a plate",
+          "kitchen": "A sure-sounding cook has proved nothing",
           "expert": "Lesson"
         }
       },

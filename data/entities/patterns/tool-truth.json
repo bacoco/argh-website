@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Une ligne parfaite au carnet pour un plat que personne n’a fait",
+          "cuisine": "Le carnet décrit un plat jamais cuisiné",
           "expert": "Un texte ayant la forme d’un résultat survit à l’exécution qui n’a pas eu lieu"
         },
         "en": {
-          "kitchen": "A perfect line in the book for a dish nobody cooked",
+          "kitchen": "A clean line for a pan never touched",
           "expert": "Text shaped like a result outlives the execution that never happened"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Comment reconnaître une ligne qui n’a rien derrière elle",
+          "cuisine": "Rien ne distingue le fait de l’inventé",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "How to spot a line with nothing behind it",
+          "kitchen": "Counting the plates from the book alone",
           "expert": "Signals"
         }
       },
@@ -76,11 +76,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une belle ligne emporte la décision",
+          "cuisine": "La belle écriture est tout ce qui reste",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a well-written line wins the decision",
+          "kitchen": "The book shows the shape, never the gesture",
           "expert": "Mechanism"
         }
       },
@@ -102,11 +102,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Aucune assiette comptée sans son ticket",
+          "cuisine": "Chaque ustensile sorti laisse un reçu",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "No plate counted without its ticket",
+          "kitchen": "Every utensil off the rack leaves a receipt",
           "expert": "Response"
         }
       },
@@ -128,11 +128,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que gstack et Claude Code laissent au carnet",
+          "cuisine": "Sans témoin, le carnet ne prouve rien",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule gstack and Claude Code leave in the book",
+          "kitchen": "No witness, no proof in the book",
           "expert": "Lesson"
         }
       },

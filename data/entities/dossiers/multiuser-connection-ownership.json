@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le plat était pour la table d’avant, mais la fiche portait déjà un autre nom",
+          "cuisine": "Avec MCP, le plat changeait de table",
           "expert": "Un état de connexion global et mutable pouvait faire livrer un message à la mauvaise session"
         },
         "en": {
-          "kitchen": "The plate belonged to the earlier table, but the card already carried another name",
+          "kitchen": "An MCP plate could reach the wrong table",
           "expert": "Shared mutable connection state could deliver a message to the wrong session"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment la fiche a changé de nom",
+          "cuisine": "Une seule fiche, remplacée à chaque arrivée",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the card changed names",
+          "kitchen": "One card, replaced each time someone sits",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi le plat ne savait pas pour qui il partait",
+          "cuisine": "Le nom était lu au départ du plat",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why the plate did not know who it was for",
+          "kitchen": "The name was read as the plate left",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui doit partir avec la commande",
+          "cuisine": "La table est notée dès la commande",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What must travel with the order",
+          "kitchen": "Fix the owner when the order is taken",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce que ça vaut ailleurs",
+          "cuisine": "Toute salle qui sert plusieurs tables est exposée",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What it is worth elsewhere",
+          "kitchen": "One card cannot cover two parties at once",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle de la fiche",
+          "cuisine": "Ne lis pas le comptoir, lis la commande",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule of the card",
+          "kitchen": "Read the order, never the counter",
           "expert": "Lesson"
         }
       },

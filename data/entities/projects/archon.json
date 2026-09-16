@@ -59,11 +59,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui se passe pendant qu’on attend la signature",
+          "cuisine": "Archon attend la signature, le fournisseur n’attend pas",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "What happens while the signature is awaited",
+          "kitchen": "The supplier does not wait for Archon’s signature",
           "expert": "Timeline"
         }
       },
@@ -135,11 +135,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’un papier de reprise ne peut pas promettre",
+          "cuisine": "Le papier n’engage que la maison",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "What a resume slip cannot promise",
+          "kitchen": "The slip binds the house and nobody else",
           "expert": "Mechanism"
         }
       },
@@ -161,11 +161,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Écrire ce qu’on tient, et ce qu’on ne tient pas",
+          "cuisine": "Redemander au fournisseur juste avant de servir",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Write down what you hold, and what you do not",
+          "kitchen": "Ask the supplier again just before serving",
           "expert": "Response"
         }
       },
@@ -187,11 +187,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Où en est Archon",
+          "cuisine": "Réparé deux fois, jamais éprouvé un soir",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Where Archon stands",
+          "kitchen": "Repaired twice, never tested through a night",
           "expert": "Current state"
         }
       },
@@ -213,11 +213,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient de l’attente",
+          "cuisine": "La deuxième réparation dit où était le défaut",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What the wait teaches",
+          "kitchen": "The second repair shows where the fault sat",
           "expert": "Lesson"
         }
       },

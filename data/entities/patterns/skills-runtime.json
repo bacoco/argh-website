@@ -38,11 +38,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le classeur est plein ; ce qui compte tient dans les mains du commis",
+          "cuisine": "Une fiche rangée n’est pas une fiche utilisée",
           "expert": "Un catalogue de skills est une ressource d’exécution, pas un ensemble de fichiers"
         },
         "en": {
-          "kitchen": "The binder is full; what counts fits in the cook’s hands",
+          "kitchen": "Only the cards in a cook’s hands count",
           "expert": "A skills catalog is an execution resource, not a set of files"
         }
       },
@@ -64,11 +64,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Trois façons de s’apercevoir qu’une fiche ne sort jamais",
+          "cuisine": "Claude Code sortait ses fiches à la main",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Three ways to notice a card never leaves the drawer",
+          "kitchen": "At Claude Code, cards pulled out by hand",
           "expert": "Signals"
         }
       },
@@ -90,11 +90,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Pourquoi une bonne fiche ne suffit pas",
+          "cuisine": "Rien n’oblige une fiche à sortir du classeur",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Why a good card is not enough",
+          "kitchen": "Space on the pass decides which cards go",
           "expert": "Mechanism"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Montrer la pile qu’on tend vraiment",
+          "cuisine": "Prévenir quand on change la façon de ranger",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Show the stack you actually hand over",
+          "kitchen": "Give the pass a fixed number of cards",
           "expert": "Response"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La règle que laissent les classeurs de Codex, Claude Code et Gemini",
+          "cuisine": "Le chemin jusqu’à la main, pas la recette",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The rule left by the binders at Codex, Claude Code and Gemini",
+          "kitchen": "The road to the hand, not the recipe",
           "expert": "Lesson"
         }
       },

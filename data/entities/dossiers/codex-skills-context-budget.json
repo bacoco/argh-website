@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le tableau des consignes s’est rempli avant qu’on cuisine quoi que ce soit",
+          "cuisine": "Codex a trop de fiches pour son tableau",
           "expert": "Le catalogue de skills est devenu assez large pour exiger un budget de contexte"
         },
         "en": {
-          "kitchen": "The instruction board filled up before a single dish was cooked",
+          "kitchen": "Codex posts more recipes than the board holds",
           "expert": "The skill catalog grew large enough to need a context budget"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment le classeur est devenu une charge",
+          "cuisine": "Les recettes ont fini par manger le tableau",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the recipe binder became a cost",
+          "kitchen": "How Codex’s recipe cards ate the board",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce que coûte une fiche qu’on n’utilise pas",
+          "cuisine": "Une fiche affichée coûte sa place chaque soir",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "What an unused card still costs",
+          "kitchen": "A posted card costs its line every night",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la maison fait maintenant de son tableau",
+          "cuisine": "Codex rationne le tableau et trie les fiches",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "How the house now runs its board",
+          "kitchen": "Codex now rations the board and ranks cards",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’une fiche est devenue",
+          "cuisine": "Chaque recette ajoutée coûte une place au tableau",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What a recipe card has turned into",
+          "kitchen": "Every new recipe now takes a line",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on retient : une ligne au tableau se paie",
+          "cuisine": "Une liste de recettes coûte avant le service",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What to keep: a line on the board is paid for",
+          "kitchen": "A long recipe list costs you before service",
           "expert": "Lesson"
         }
       },

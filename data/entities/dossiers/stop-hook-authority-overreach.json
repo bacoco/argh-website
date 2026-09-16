@@ -24,11 +24,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Chez Claude Code, le veilleur de la fermeture a pu se mettre à lancer des plats",
+          "cuisine": "Chez Claude Code, celui qui ferme envoie des plats",
           "expert": "Claude Code : un stop hook de persistance lu comme une autorité d’exécution"
         },
         "en": {
-          "kitchen": "At Claude Code, the man who kept the kitchen open could start firing dishes",
+          "kitchen": "At Claude Code the closer can send dishes out",
           "expert": "Claude Code: a persistence stop hook read as execution authority"
         }
       },
@@ -50,11 +50,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "De la fermeture retenue au plat lancé",
+          "cuisine": "Celui qui ferme est passé au fourneau",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From holding the shutter to firing a plate",
+          "kitchen": "The one who closes ended up cooking",
           "expert": "Timeline"
         }
       },
@@ -116,11 +116,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un seul veilleur, deux questions différentes",
+          "cuisine": "La fiche de celui qui ferme ne bornait rien",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "One watchman, two different questions",
+          "kitchen": "One post answering two different questions",
           "expert": "Mechanism"
         }
       },
@@ -142,11 +142,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Écrire les pouvoirs un par un sur la fiche",
+          "cuisine": "Retenir le rideau ne donne pas les fourneaux",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Each power gets its own line on the card",
+          "kitchen": "One line on the card for each power",
           "expert": "Response"
         }
       },
@@ -168,11 +168,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Un avertissement qui tient même si rien ne bouge",
+          "cuisine": "Aucune réparation chez Claude Code, l’avertissement tient",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "A warning that stands even if nothing is changed",
+          "kitchen": "No fix at Claude Code; the warning holds",
           "expert": "Current state"
         }
       },
@@ -194,11 +194,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un garde se définit par ce qu’il n’a pas le droit de faire",
+          "cuisine": "Sans interdits écrits, celui qui ferme improvise",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A guard is defined by what he may not do",
+          "kitchen": "Write down what the closer may never decide",
           "expert": "Lesson"
         }
       },

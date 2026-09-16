@@ -64,11 +64,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Des contrôles qui ont changé de maison, puis un soir d’essai",
+          "cuisine": "OpenHands finit par poser une porte qui retient",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Checks that changed houses, then one trial night",
+          "kitchen": "OpenHands finally fits a door that holds",
           "expert": "Timeline"
         }
       },
@@ -130,11 +130,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La réserve n’avait pas de murs",
+          "cuisine": "Le commis va où il veut dans l’immeuble",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A pantry without walls",
+          "kitchen": "The commis goes anywhere in the building",
           "expert": "Mechanism"
         }
       },
@@ -156,11 +156,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui a été posé, ce qui est resté en plan",
+          "cuisine": "Deux réparations livrées, deux défauts sans réponse",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What got fitted, what stayed unfinished",
+          "kitchen": "Two repairs delivered, two faults unanswered",
           "expert": "Response"
         }
       },
@@ -182,11 +182,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui a été goûté, et ce qui ne l’a pas été",
+          "cuisine": "Un soir, un seul poste, rien de plus",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "What was tasted, and what was not",
+          "kitchen": "One evening on one bench, nothing more",
           "expert": "Current state"
         }
       },
@@ -208,11 +208,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une cuisine doit pouvoir dire si elle est fermée",
+          "cuisine": "Un arrêt qui laisse un feu n’arrête rien",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A kitchen should be able to say whether it is shut",
+          "kitchen": "A burner still lit means nothing was stopped",
           "expert": "Lesson"
         }
       },

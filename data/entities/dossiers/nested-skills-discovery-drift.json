@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Les fiches dormaient dans le tiroir du fond, et la mise en place ne descendait pas si bas",
+          "cuisine": "Claude Code n’ouvrait jamais le tiroir du fond",
           "expert": "Un contournement de la découverte des skills est devenu une dépendance fragile de plus"
         },
         "en": {
-          "kitchen": "The cards sat in the bottom drawer, and morning prep never reached that far down",
+          "kitchen": "Claude Code skipped the cards filed deepest",
           "expert": "A workaround for missing skill discovery became one more fragile dependency"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Du tiroir du fond au geste qui ne prend plus",
+          "cuisine": "Le geste qui sortait les fiches a lâché",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From the bottom drawer to a move that grips nothing",
+          "kitchen": "The extra opening move came back empty",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui comptait, c’était la tournée des tiroirs, pas la fiche",
+          "cuisine": "La tournée des tiroirs décidait, pas la fiche",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "What mattered was the round of the drawers, not the card",
+          "kitchen": "Nobody had written the morning round down",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Écrire la tournée, et montrer ce qui est vraiment sorti",
+          "cuisine": "Écrire la tournée et afficher les fiches sorties",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Write the round down, and show what actually came out",
+          "kitchen": "Publish what actually reached the worktop",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Les maisons se mettent à dire comment elles ouvrent",
+          "cuisine": "Quelques maisons annoncent maintenant ce qu’elles sortent",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Houses are starting to state how they open",
+          "kitchen": "Some houses now say what they take out",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La tournée fait partie de la fiche",
+          "cuisine": "Une fiche ne sert que sortie du tiroir",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The round is part of the card",
+          "kitchen": "A card nobody fetches changes nothing",
           "expert": "Lesson"
         }
       },

@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Une consigne affichée, pas encore un service observé",
+          "cuisine": "Rien à raconter chez pstack, sauf une consigne",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "A note on the wall, not yet a service watched",
+          "kitchen": "Nothing to tell at pstack, beyond one note",
           "expert": "Timeline"
         }
       },
@@ -77,11 +77,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "« C’est prêt » n’est pas « j’ai goûté »",
+          "cuisine": "Deux commis, même annonce, un seul a goûté",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "“Ready” is not “I tasted it”",
+          "kitchen": "Same call from two cooks, one tasted",
           "expert": "Mechanism"
         }
       },
@@ -103,11 +103,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Goûté, jugé, ou supposé : on le dit",
+          "cuisine": "Dire comment on sait, avant d’envoyer",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Tasted, judged, or assumed — say which",
+          "kitchen": "Say how you know before the plate goes",
           "expert": "Response"
         }
       },
@@ -129,11 +129,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "La consigne est au mur, l’effet n’est pas mesuré",
+          "cuisine": "Personne n’est allé voir au feu",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The note is up; the effect is unmeasured",
+          "kitchen": "Nobody has gone to look at the stoves",
           "expert": "Current state"
         }
       },
@@ -155,11 +155,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La preuve reste à côté de l’assiette",
+          "cuisine": "Annoncer sans savoir, c’est parier",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Proof travels with the plate",
+          "kitchen": "Calling a plate you never tasted is betting",
           "expert": "Lesson"
         }
       },

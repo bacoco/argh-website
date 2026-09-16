@@ -27,11 +27,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Les mêmes feuilles de consignes, et deux brigades qui n’obéissent pas pareil",
+          "cuisine": "Même classeur, obéissance différente chez Codex et Gemini",
           "expert": "Les fichiers d’instructions projet convergent, leur précédence et leur confiance non"
         },
         "en": {
-          "kitchen": "The same order sheets, and two brigades that obey them differently",
+          "kitchen": "Codex and Gemini read one binder, differently",
           "expert": "Project instruction files converge; their precedence and trust rules do not"
         }
       },
@@ -53,11 +53,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment le classeur est passé d’une cuisine à l’autre",
+          "cuisine": "Un classeur de consignes fait travailler plusieurs brigades",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the binder travelled from kitchen to kitchen",
+          "kitchen": "One binder started running several kitchens",
           "expert": "Timeline"
         }
       },
@@ -119,11 +119,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la feuille ne dit pas d’elle-même",
+          "cuisine": "Une feuille ne dit jamais qui la lit",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "What the sheet does not say about itself",
+          "kitchen": "A sheet never says how far it reaches",
           "expert": "Mechanism"
         }
       },
@@ -145,11 +145,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’il faut vérifier avant de partager le classeur",
+          "cuisine": "Faire trancher deux consignes qui se contredisent",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What to check before sharing the binder",
+          "kitchen": "Make the brigade settle two clashing orders",
           "expert": "Response"
         }
       },
@@ -171,11 +171,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Où en est le partage aujourd’hui",
+          "cuisine": "Les classeurs circulent, l’accord sur l’autorité non",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Where the sharing stands today",
+          "kitchen": "Binders travel; agreement on authority does not",
           "expert": "Current state"
         }
       },
@@ -197,11 +197,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’un intitulé commun ne promet pas",
+          "cuisine": "Le même classeur commande deux services différents",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What a shared label does not promise",
+          "kitchen": "The label matches, the service does not",
           "expert": "Lesson"
         }
       },

@@ -101,11 +101,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment les consignes du mur sont devenues des portes",
+          "cuisine": "Les consignes de Claude Code bloquent, puis cèdent",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the notes on the wall turned into doors",
+          "kitchen": "Claude Code’s notes start blocking, then give way",
           "expert": "Timeline"
         }
       },
@@ -177,11 +177,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le mur n’est pas le piano",
+          "cuisine": "La fiche était là, personne ne l’avait lue",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The wall is not the stoves",
+          "kitchen": "The card was there, nobody had read it",
           "expert": "Mechanism"
         }
       },
@@ -203,11 +203,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui doit être vrai au moment du geste",
+          "cuisine": "Attendre la réponse, même si le service presse",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "What has to be true at the moment of the gesture",
+          "kitchen": "Wait for the answer, however busy service gets",
           "expert": "Response"
         }
       },
@@ -229,11 +229,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Où en est Claude Code",
+          "cuisine": "Claude Code dit corrigé, sans date ni preuve",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Where Claude Code stands",
+          "kitchen": "Claude Code says fixed, with no date attached",
           "expert": "Current state"
         }
       },
@@ -255,11 +255,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la grande maison apprend",
+          "cuisine": "Une porte se juge au plat retenu",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What the big house teaches",
+          "kitchen": "Judge a door by the plate it stopped",
           "expert": "Lesson"
         }
       },

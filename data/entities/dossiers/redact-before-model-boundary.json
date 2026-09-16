@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on raye sur la page est déjà parti avec elle",
+          "cuisine": "Gemini demande d’oublier ce qui est déjà lu",
           "expert": "Caviarder dans le prompt est déjà trop tard"
         },
         "en": {
-          "kitchen": "What you cross out has already left with the page",
+          "kitchen": "Gemini asks the reader to forget the page",
           "expert": "Redacting inside the prompt is already too late"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Comment la page est sortie sans être rayée",
+          "cuisine": "La page sort entière, la consigne dessus",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "How the page went out uncrossed",
+          "kitchen": "The private note travels with the page itself",
           "expert": "Timeline"
         }
       },
@@ -107,11 +107,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une page lue ne se dé-lit pas, et la copie du bureau reste entière",
+          "cuisine": "Le bureau garde une copie entière, non rayée",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A page once read cannot be unread, and the back-office copy stays whole",
+          "kitchen": "Nothing gets unread, and the office copy stays",
           "expert": "Mechanism"
         }
       },
@@ -133,11 +133,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Rayer à la porte, pas chez le lecteur",
+          "cuisine": "Rayer la page à la porte, pas après",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Cross it out at the door, not at the reader’s table",
+          "kitchen": "Strike the page at the door, not after",
           "expert": "Response"
         }
       },
@@ -159,11 +159,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Le défaut est nommé, la réparation n’est pas faite",
+          "cuisine": "Le défaut est nommé, rien n’est encore réparé",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The flaw is named; the repair is not done",
+          "kitchen": "The flaw is named, nothing repaired yet",
           "expert": "Current state"
         }
       },
@@ -185,11 +185,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Rayer avant la porte",
+          "cuisine": "Une consigne sur la page ne protège rien",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Cross it out before the door",
+          "kitchen": "A note on the page removes nothing",
           "expert": "Lesson"
         }
       },

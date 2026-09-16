@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Une consigne écrite pour un seul service commandait encore la cuisine du lendemain",
+          "cuisine": "La consigne de gstack commandait le service suivant",
           "expert": "Un verrou de débogage prévu pour une session a survécu en état global à la machine"
         },
         "en": {
-          "kitchen": "A note written for one service was still giving orders the next day",
+          "kitchen": "gstack left a repair note pinned after closing",
           "expert": "A debugging lock scoped to one session survived as machine-wide state"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "La consigne, du mur au service suivant",
+          "cuisine": "Le papier passe d’une cuisine à l’autre",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The note, from the wall to the next service",
+          "kitchen": "gstack’s note reached the next kitchen",
           "expert": "Timeline"
         }
       },
@@ -107,11 +107,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce que la consigne avait oublié d’écrire",
+          "cuisine": "Un papier sans adresse et sans heure",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "What the note forgot to say",
+          "kitchen": "The note said where, but not which room",
           "expert": "Mechanism"
         }
       },
@@ -133,11 +133,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Écrire la consigne pour qu’elle meure avec le service",
+          "cuisine": "Signer la consigne et la décrocher soi-même",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Writing the note so it dies with the service",
+          "kitchen": "Only the writer takes the note down",
           "expert": "Response"
         }
       },
@@ -159,11 +159,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Le papier est toujours au mur",
+          "cuisine": "La panne de gstack se refait toujours",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The note is still on the wall",
+          "kitchen": "No repair established at gstack yet",
           "expert": "Current state"
         }
       },
@@ -185,11 +185,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’une consigne doit porter",
+          "cuisine": "Une consigne provisoire a besoin d’une fin",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "What a note has to carry",
+          "kitchen": "Nothing temporary should outlive its service",
           "expert": "Lesson"
         }
       },

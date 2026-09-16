@@ -23,11 +23,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La même assiette refaite trois fois, facturée trois fois",
+          "cuisine": "Un plafond de dépense qui ignore les reprises",
           "expert": "Une limite annoncée qui ne compte pas le travail réellement facturé"
         },
         "en": {
-          "kitchen": "The same plate fired three times, charged three times",
+          "kitchen": "The spending ceiling never counts the second firing",
           "expert": "An announced limit that does not count the work actually billed"
         }
       },
@@ -49,11 +49,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Ce qui ne colle pas entre le carnet et la caisse",
+          "cuisine": "Le plafond tient au carnet, pas à la caisse",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Where the order book and the till stop agreeing",
+          "kitchen": "The ceiling holds on paper, not at the till",
           "expert": "Signals"
         }
       },
@@ -75,11 +75,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Chaque reprise repart comme une commande neuve",
+          "cuisine": "Personne ne tient l’addition entière d’un même plat",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Every remake starts life as a brand-new order",
+          "kitchen": "Nobody holds the whole bill for one dish",
           "expert": "Mechanism"
         }
       },
@@ -101,11 +101,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Compter la commande entière, et laisser l’alarme sortir",
+          "cuisine": "Facturer toutes les reprises et laisser l’alarme sortir",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Count the whole order, and let the alarm out",
+          "kitchen": "Bill every remake and let the alarm out",
           "expert": "Response"
         }
       },
@@ -127,11 +127,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le budget suit le plat, pas les allers-retours",
+          "cuisine": "Un plafond posé au mauvais endroit ne retient rien",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The budget follows the dish, not the trips to the pass",
+          "kitchen": "A ceiling set in the wrong place stops nothing",
           "expert": "Lesson"
         }
       },

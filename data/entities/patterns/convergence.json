@@ -44,11 +44,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Des maisons qui ne se parlent pas inventent le même geste",
+          "cuisine": "Des cuisines qui s'ignorent adoptent les mêmes gestes",
           "expert": "Des harnais indépendants font apparaître les mêmes primitives de contrôle"
         },
         "en": {
-          "kitchen": "Houses that never speak invent the same move",
+          "kitchen": "Separate kitchens land on the same few habits",
           "expert": "Independent harnesses grow the same control primitives"
         }
       },
@@ -70,11 +70,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le même geste apparaît partout en même temps",
+          "cuisine": "Une langue commune pour commander, MCP",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The same move shows up everywhere at once",
+          "kitchen": "Everyone orders in the same language now, MCP",
           "expert": "Signals"
         }
       },
@@ -96,11 +96,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le même mot, pas la même règle",
+          "cuisine": "Même nom, même moment, décision différente",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Same word, different rule",
+          "kitchen": "Same name, same moment, a different call",
           "expert": "Mechanism"
         }
       },
@@ -148,11 +148,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le même geste n’est pas la même règle",
+          "cuisine": "Le geste est partout, la règle non",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The same move is not the same rule",
+          "kitchen": "The move is everywhere, the rule is not",
           "expert": "Lesson"
         }
       },

@@ -25,11 +25,11 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "On goûtait le bol du commis, jamais l’assiette qui partait en salle",
+          "cuisine": "Chez Hermes, on goûtait le bol, pas l’assiette",
           "expert": "Le test était vert parce qu’il ne traversait pas la couture dont dépendaient les utilisateurs"
         },
         "en": {
-          "kitchen": "They tasted the prep bowl and never the plate that left for the room",
+          "kitchen": "Hermes tasted the prep bowl, never the plate",
           "expert": "The test passed because it never crossed the seam users depended on"
         }
       },
@@ -51,11 +51,11 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Du bol à l’assiette, où la consigne s’est perdue",
+          "cuisine": "Le bol est goûté, l’assiette part fausse",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From bowl to plate, where the instruction went missing",
+          "kitchen": "The bowl tasted right, the plate went wrong",
           "expert": "Timeline"
         }
       },
@@ -117,11 +117,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le goûteur était au bon endroit pour lui, pas pour le client",
+          "cuisine": "On a goûté là où c’était facile",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The taster stood where it suited him, not where the guest was served",
+          "kitchen": "The taster stood where tasting was easy",
           "expert": "Mechanism"
         }
       },
@@ -143,11 +143,11 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Goûter ce qui part, pas ce qui attend",
+          "cuisine": "Prendre la preuve à la sortie du passe",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Taste what leaves, not what is waiting",
+          "kitchen": "Watch the plate leave the pass",
           "expert": "Response"
         }
       },
@@ -169,11 +169,11 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Ce piège n’appartient pas à une seule cuisine",
+          "cuisine": "N’importe quelle maison peut goûter trop tôt",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "This trap belongs to no single kitchen",
+          "kitchen": "Any kitchen can post its taster too early",
           "expert": "Current state"
         }
       },
@@ -195,11 +195,11 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un carnet vert peut parler d’autre chose",
+          "cuisine": "Demande toujours où le goûteur se tenait",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A green book can be about something else entirely",
+          "kitchen": "The book only proves where the spoon went",
           "expert": "Lesson"
         }
       },
