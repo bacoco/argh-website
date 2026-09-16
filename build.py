@@ -80,6 +80,7 @@ def header(section=""):
         nav("/patterns/", "patterns", '<span class="nav-en">Patterns</span><span class="nav-fr">Motifs</span>', section),
         nav("/projects/", "projects", '<span class="nav-en">Projects</span><span class="nav-fr">Projets</span>', section),
         nav("/atlas/", "atlas", "Atlas", section),
+        nav("/harness/", "harness", '<span class="nav-en">The harness</span><span class="nav-fr">Le harnais</span>', section),
         nav("/glossary/", "glossary", '<span class="nav-en">Glossary</span><span class="nav-fr">Glossaire</span>', section),
         nav("/about/", "about", '<span class="nav-en">About</span><span class="nav-fr">À propos</span>', section),
     ]))
@@ -161,7 +162,8 @@ def related(e, store):
 def entity_visual(e, store):
     if e.get("type") == "dossier":
         place = store["place_by_id"].get(store["assignments"].get(e["slug"]))
-        return (PLACE_ILLUSTRATIONS.get(place["id"]), place["label"], "/places/%s/" % place["id"]) if place else (None, None, None)
+        image = (place.get("image") or PLACE_ILLUSTRATIONS.get(place["id"])) if place else None
+        return (image, place["label"], "/places/%s/" % place["id"]) if place else (None, None, None)
     if e.get("type") == "pattern":
         family = store["family_by_id"].get(store["pattern_assignments"].get(e["slug"]))
         return (family["image"], family["label"], "/patterns/#%s" % family["id"]) if family else (None, None, None)
@@ -246,7 +248,7 @@ def index(t, store):
         for place in store["places"]:
             grouped_items = store["dossiers_by_place"].get(place["id"], [])
             if grouped_items:
-                group = {**place, "image": PLACE_ILLUSTRATIONS.get(place["id"])}
+                group = {**place, "image": place.get("image") or PLACE_ILLUSTRATIONS.get(place["id"], PAGE_ILLUSTRATIONS["dossier"])}
                 body += grouped_index_section(group, grouped_items)
     elif t == "pattern":
         for family in store["families"]:
@@ -361,6 +363,20 @@ HOME_IDENTITY = [
      "en": {"kitchen": "Signs to watch before the next failure", "expert": "Monitoring axes and leading signals"}},
 ]
 
+HOME_HARNESS_TITLE = {
+    "fr": {"cuisine": "Un harnais, à quoi ça sert ?", "expert": "Comprendre le rôle d’un harnais d’agents"},
+    "en": {"kitchen": "What is a harness for?", "expert": "Understand the role of an agent harness"}}
+
+HOME_HARNESS_DECK = {
+    "fr": {"cuisine": "Suivez une commande du ticket jusqu’à la table pour voir comment toute la cuisine tient ensemble.",
+           "expert": "Suivez le parcours complet : entrée, orchestration, outils, exécution, validation, livraison et reprise."},
+    "en": {"kitchen": "Follow an order from its ticket to the table and see how the whole kitchen holds together.",
+           "expert": "Follow the complete path: input, orchestration, tools, execution, validation, delivery and recovery."}}
+
+HOME_HARNESS_LINK = {
+    "fr": {"cuisine": "Découvrir le harnais", "expert": "Voir le parcours expliqué"},
+    "en": {"kitchen": "Discover the harness", "expert": "See the explained path"}}
+
 HOME_LATEST = {
     "fr": {"cuisine": "Ce qui vient d’arriver", "expert": "Incidents nouveaux ou mis à jour"},
     "en": {"kitchen": "What just came in", "expert": "New or updated incidents"}}
@@ -447,7 +463,7 @@ def update_card(e, kind, store):
 
 def place_card(place, number, store):
     dossiers = store["dossiers_by_place"].get(place["id"], [])
-    illustration = PLACE_ILLUSTRATIONS.get(place["id"])
+    illustration = place.get("image") or PLACE_ILLUSTRATIONS.get(place["id"], PAGE_ILLUSTRATIONS["dossier"])
     classes = "argh-place-card" + (" argh-place-card-illustrated" if illustration else "")
     picture = (
         '<picture class="argh-place-card-picture"><img src="%s" width="320" height="213" '
@@ -468,7 +484,7 @@ def place_card(place, number, store):
 
 def place_page(place, store):
     items = store["dossiers_by_place"].get(place["id"], [])
-    illustration = PLACE_ILLUSTRATIONS.get(place["id"])
+    illustration = place.get("image") or PLACE_ILLUSTRATIONS.get(place["id"], PAGE_ILLUSTRATIONS["dossier"])
     hero_class = " argh-place-hero-illustrated" if illustration else ""
     picture = (
         '<picture class="argh-place-hero-illustration"><img src="%s" width="320" height="213" '
@@ -503,6 +519,13 @@ def home(store):
                quad(HOME_DECK, "p", "argh-standfirst"), quad(HOME_IDENTITY_TITLE, "strong"),
                "".join(quad(item, "li") for item in HOME_IDENTITY)))
 
+    body += ('<a class="argh-harness-callout" href="/harness/">'
+             '<picture><img src="/assets/illustrations/category-roles-orchestration-320.jpg" '
+             'width="320" height="213" alt="" aria-hidden="true" loading="lazy" decoding="async"></picture>'
+             '<div>%s%s<span class="argh-harness-callout-link">%s <span aria-hidden="true">→</span></span></div></a>'
+             % (quad(HOME_HARNESS_TITLE, "h2"), quad(HOME_HARNESS_DECK, "p"),
+                quad(HOME_HARNESS_LINK)))
+
     body += ('<section class="argh-updates"><div class="argh-updates-head"><div>%s</div>%s</div>'
              '<div class="argh-update-grid">%s</div></section>'
              % (quad(HOME_LATEST, "h2"), quad(HOME_LATEST_DECK, "p"),
@@ -536,6 +559,14 @@ def about(store):
     return page("À propos — ARGH", body, "Ce qu'est ARGH et comment ses dossiers sont établis.")
 
 
+def harness(store):
+    blk = (ROOT / "recovered" / "harness.html").read_text(encoding="utf-8")
+    body = ('<div class="argh-site" data-argh-renderer="%s">%s'
+            '<main class="argh-wrap">%s</main>%s</div>' % (VERSION, header("harness"), blk, FOOT))
+    return page("Un harnais, à quoi ça sert ? — ARGH", body,
+                "Le parcours illustré d’un harnais d’agents, de la demande au résultat livré.")
+
+
 def glossary_column(place, reader):
     fr_key, en_key = ("cuisine", "kitchen") if reader == "kitchen" else ("expert", "expert")
     label = place["label"]
@@ -555,7 +586,7 @@ def glossary_column(place, reader):
 def glossary(store):
     entries = []
     for number, place in enumerate(store["places"], 1):
-        illustration = PLACE_ILLUSTRATIONS[place["id"]]
+        illustration = place.get("image") or PLACE_ILLUSTRATIONS.get(place["id"], PAGE_ILLUSTRATIONS["dossier"])
         picture = ('<picture class="argh-glossary-picture"><img src="%s" width="320" height="213" '
                    'alt="" aria-hidden="true" loading="lazy" decoding="async"></picture>'
                    % esc(illustration))
@@ -621,14 +652,73 @@ def load_navigation(store):
     dossiers = {e["slug"]: e for e in store["items"] if e.get("type") == "dossier"}
     patterns = {e["slug"]: e for e in store["items"] if e.get("type") == "pattern"}
     projects = {e["slug"]: e for e in store["items"] if e.get("type") == "project"}
-    if set(pattern_assignments) != set(patterns):
-        raise ValueError("every pattern must have exactly one family")
-    if set(project_state_assignments) != set(projects):
-        raise ValueError("every project must have exactly one documented state")
+    unknown_patterns = set(pattern_assignments) - set(patterns)
+    unknown_projects = set(project_state_assignments) - set(projects)
+    if unknown_patterns:
+        raise ValueError("pattern assignments reference unknown entities")
+    if unknown_projects:
+        raise ValueError("project assignments reference unknown entities")
+
+    missing_dossiers = set(dossiers) - set(assignments)
+    if missing_dossiers:
+        fallback = {
+            "id": "unclassified-dossiers",
+            "phase": phases[-1]["id"],
+            "image": PAGE_ILLUSTRATIONS["dossier"],
+            "label": UNCLASSIFIED,
+            "description": {
+                "fr": {"cuisine": "Ces histoires restent visibles pendant que la bonne place est choisie.",
+                       "expert": "Ces incidents restent publiés en attente d’une classification éditoriale."},
+                "en": {"kitchen": "These stories remain visible while the right place is chosen.",
+                       "expert": "These incidents remain published pending editorial classification."}},
+            "meaning": {
+                "fr": {"cuisine": "La fiche est servie, mais son rangement doit encore être décidé.",
+                       "expert": "Le contenu est public ; seule son affectation taxonomique reste ouverte."},
+                "en": {"kitchen": "The card is served, but its shelf still has to be chosen.",
+                       "expert": "The content is public; only its taxonomic assignment remains open."}},
+        }
+        places.append(fallback)
+        place_ids.append(fallback["id"])
+
+    missing_patterns = set(patterns) - set(pattern_assignments)
+    if missing_patterns:
+        fallback = {
+            "id": "unclassified-patterns",
+            "image": PAGE_ILLUSTRATIONS["pattern"],
+            "label": UNCLASSIFIED,
+            "description": {
+                "fr": {"cuisine": "Ces problèmes restent visibles pendant que la bonne famille est choisie.",
+                       "expert": "Ces mécanismes restent publiés en attente d’une classification éditoriale."},
+                "en": {"kitchen": "These problems remain visible while the right family is chosen.",
+                       "expert": "These mechanisms remain published pending editorial classification."}},
+        }
+        families.append(fallback)
+        family_ids.append(fallback["id"])
+        pattern_assignments = dict(pattern_assignments)
+        pattern_assignments.update({slug: fallback["id"] for slug in missing_patterns})
+
+    missing_projects = set(projects) - set(project_state_assignments)
+    if missing_projects:
+        fallback = {
+            "id": "unclassified-projects",
+            "image": PAGE_ILLUSTRATIONS["project"],
+            "label": UNCLASSIFIED,
+            "description": {
+                "fr": {"cuisine": "Ces maisons restent visibles tant que leur situation n’est pas assez claire.",
+                       "expert": "Ces systèmes restent publiés en attente d’un état de cycle de vie documenté."},
+                "en": {"kitchen": "These houses remain visible until their situation is clear enough.",
+                       "expert": "These systems remain published pending a documented lifecycle state."}},
+        }
+        project_states.append(fallback)
+        project_state_ids.append(fallback["id"])
+        project_state_assignments = dict(project_state_assignments)
+        project_state_assignments.update({slug: fallback["id"] for slug in missing_projects})
     dossiers_by_place = {place_id: [] for place_id in place_ids}
     for slug, place_id in assignments.items():
         if slug in dossiers:
             dossiers_by_place[place_id].append(dossiers[slug])
+    if missing_dossiers:
+        dossiers_by_place["unclassified-dossiers"] = [dossiers[slug] for slug in missing_dossiers]
     for items in dossiers_by_place.values():
         items.sort(key=sort_key, reverse=True)
 
@@ -702,6 +792,8 @@ def main():
     (ROOT / "index.html").write_text(home(store), encoding="utf-8")
     (ROOT / "about").mkdir(exist_ok=True)
     (ROOT / "about" / "index.html").write_text(about(store), encoding="utf-8")
+    (ROOT / "harness").mkdir(exist_ok=True)
+    (ROOT / "harness" / "index.html").write_text(harness(store), encoding="utf-8")
     (ROOT / "glossary").mkdir(exist_ok=True)
     (ROOT / "glossary" / "index.html").write_text(glossary(store), encoding="utf-8")
     (ROOT / "404.html").write_text(page("404 — ARGH",
@@ -710,7 +802,7 @@ def main():
         '<div class="argh-chips"><a class="argh-chip" href="/dossiers/">Dossiers</a>'
         '<a class="argh-chip" href="/patterns/">Motifs</a><a class="argh-chip" href="/projects/">Projets</a></div>'
         '</article>%s</main></div>' % (header(), FOOT)), encoding="utf-8")
-    print("  %d pages d'entité + %d endroits + 3 index + atlas + glossaire + accueil + 404" %
+    print("  %d pages d'entité + %d endroits + 3 index + atlas + harnais + glossaire + accueil + 404" %
           (n, len(store["places"])))
 
 if __name__ == "__main__":

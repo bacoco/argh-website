@@ -32,7 +32,8 @@ def main() -> int:
                 f"missing={sorted(expected[kind] - actual)}, stale={sorted(actual - expected[kind])}"
             )
     for required in ("index.html", "dossiers/index.html", "projects/index.html",
-                     "patterns/index.html", "atlas/index.html", "about/index.html", "404.html"):
+                     "patterns/index.html", "atlas/index.html", "about/index.html",
+                     "glossary/index.html", "harness/index.html", "404.html"):
         (ROOT / required).read_text(encoding="utf-8")
     taxonomy = json.loads((ROOT / "data/taxonomy.json").read_text(encoding="utf-8"))
     place_ids = {place["id"] for place in taxonomy["places"]}
@@ -44,11 +45,19 @@ def main() -> int:
     if activity.get("schema") != "argh/public-activity/v1":
         raise SystemExit("wrong public activity schema")
     home = (ROOT / "index.html").read_text(encoding="utf-8")
-    for required in ("argh-home-hero", "argh-updates", "argh-map", "/assets/logo-imagine.png"):
+    for required in ("argh-home-hero", "argh-harness-callout", "argh-updates", "argh-map",
+                     "/assets/logo-imagine.png"):
         if required not in home:
             raise SystemExit(f"missing generated home feature: {required}")
     if "Un nouvel endroit" in home:
         raise SystemExit("an unclassified incident must not be rendered as a permanent place")
+    harness = (ROOT / "harness/index.html").read_text(encoding="utf-8")
+    for image in ("category-inputs-triggers-320.jpg", "category-roles-orchestration-320.jpg",
+                  "category-tools-infrastructure-320.jpg", "category-execution-lifecycle-320.jpg",
+                  "category-validation-evidence-320.jpg", "category-publication-outcome-320.jpg",
+                  "category-cancellation-recovery-320.jpg"):
+        if image not in harness:
+            raise SystemExit(f"missing harness illustration: {image}")
     for path in ROOT.rglob("*.html"):
         if re.search(r"loriq", path.read_text(encoding="utf-8"), re.I):
             raise SystemExit(f"forbidden product name in generated page: {path}")

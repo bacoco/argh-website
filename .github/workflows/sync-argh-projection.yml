@@ -8,6 +8,8 @@ on:
       - 'build.py'
       - 'data/activity.json'
       - 'data/taxonomy.json'
+      - 'data/visual-taxonomy.json'
+      - 'recovered/**'
       - 'scripts/**'
       - 'tests/**'
   schedule:
@@ -37,6 +39,7 @@ jobs:
           ref: main
           path: .source/argh
           persist-credentials: false
+          ssh-key: ${{ secrets.ARGH_SOURCE_DEPLOY_KEY }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -51,6 +54,7 @@ jobs:
           PYTHONPATH=.source/argh python -c "from pathlib import Path; from scheduler.v2.entity_store import validate_store; print(len(validate_store(Path('.source/argh/publication/argh/entities'))['entities']))"
           python scripts/sync_from_argh.py \
             --source .source/argh/publication/argh/entities \
+            --source-navigation .source/argh/publication/argh/navigation \
             --source-head "$source_head" \
             --generated-at "$generated_at"
           python build.py
@@ -60,7 +64,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git add -A -- 404.html index.html about atlas dossiers patterns places projects data/activity.json data/entities data/meta.json
+          git add -A -- 404.html index.html about atlas dossiers glossary harness patterns places projects data/activity.json data/entities data/meta.json data/taxonomy.json data/visual-taxonomy.json
           if git diff --cached --quiet; then
             echo 'Projection already matches bacoco/argh/main.'
             exit 0

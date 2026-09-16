@@ -92,6 +92,36 @@ class SyncTests(unittest.TestCase):
                 sync(source, website, "a" * 40, "2026-09-16T12:00:00Z")
             self.assertEqual(marker.read_text(), "unchanged")
 
+    def test_sync_copies_public_navigation_from_argh(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            source = root / "source"
+            navigation = root / "navigation"
+            website = root / "website"
+            source_store(source, [entity("dossier", "one")])
+            navigation.mkdir()
+            (navigation / "taxonomy.json").write_text(json.dumps({
+                "schema": "argh/public-navigation/v1", "phases": [],
+                "places": [], "assignments": {},
+            }) + "\n")
+            (navigation / "visual-taxonomy.json").write_text(json.dumps({
+                "schema": "argh/visual-taxonomy/v1", "families": [],
+                "pattern_assignments": {}, "project_states": [],
+                "project_state_assignments": {},
+            }) + "\n")
+
+            result = sync(source, website, "a" * 40, "2026-09-16T12:00:00Z", navigation)
+
+            self.assertTrue(result["navigation_changed"])
+            self.assertEqual(
+                json.loads((website / "data/taxonomy.json").read_text())["schema"],
+                "argh/public-navigation/v1",
+            )
+            self.assertEqual(
+                json.loads((website / "data/visual-taxonomy.json").read_text())["schema"],
+                "argh/visual-taxonomy/v1",
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
