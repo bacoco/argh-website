@@ -278,6 +278,56 @@ UNCLASSIFIED_PLACE = {
     "fr": {"cuisine": "Visible dès son arrivée", "expert": "Taxonomie à réviser"},
     "en": {"kitchen": "Visible as soon as it arrives", "expert": "Taxonomy review required"}}
 
+HOME_CARD_COPY = {
+    "skills-cross-harness-convergence": {
+        "heading": {"fr": "La fiche de recette a pris une place entière au poste",
+                    "en": "The recipe card became a whole station of its own"},
+        "body": {"fr": "Au début, la recette tenait sur une feuille posée au poste. Elle arrive maintenant avec ses propres ustensiles et sa façon d’être appelée. La brigade doit savoir quelle version elle suit.",
+                 "en": "At first the recipe fit on one sheet at the station. It now arrives with its own utensils and its own way of being called. The brigade must know which version it follows."},
+    },
+    "project-mortality-state-machine": {
+        "heading": {"fr": "Un rideau baissé ne raconte pas toute l’histoire",
+                    "en": "A lowered shutter does not tell the whole story"},
+        "body": {"fr": "Une cuisine peut fermer, déménager ou ne plus préparer de nouveaux plats. Vue de la rue, la scène semble identique. Avant de conclure, il faut savoir ce qui s’est réellement passé.",
+                 "en": "A kitchen may close, move away or stop preparing new dishes. From the street each scene looks the same. Before drawing a conclusion, find out what actually happened."},
+    },
+    "hooks-cross-harness-convergence": {
+        "heading": {"fr": "Le passe ne se contente plus de regarder",
+                    "en": "The pass no longer merely watches"},
+        "body": {"fr": "Autrefois, le passe annonçait simplement les assiettes. Il peut désormais en retenir une et imposer une règle à toute la brigade. Ce pouvoir demande des limites claires.",
+                 "en": "The pass once merely announced each plate. It can now hold one back and impose a rule on the whole brigade. That power needs clear limits."},
+    },
+    "gstack-false-green-second-fix": {
+        "heading": {"fr": "Le bon d’un autre poste a fait croire que tout était prêt",
+                    "en": "A ticket from another station made everything look ready"},
+        "body": {"fr": "Un poste vérifié reçoit un bon pour le service. Le lendemain, un poste ressemblant hérite du même bon sans avoir été contrôlé. La ressemblance a remplacé la vérification.",
+                 "en": "A checked station receives a ticket for service. The next day a similar station inherits that ticket without being checked. Resemblance has replaced inspection."},
+    },
+    "archon-installed-skill-drift": {
+        "heading": {"fr": "La recette corrigée n’est jamais arrivée au poste",
+                    "en": "The corrected recipe never reached the station"},
+        "body": {"fr": "Le classeur du bureau contient la bonne recette. Au poste, la photocopie jaunie reste punaisée et guide encore le service. Tout le monde croit pourtant l’affaire réglée.",
+                 "en": "The office binder contains the right recipe. At the station, the yellowed copy is still pinned up and still guides service. Everyone nevertheless thinks the matter is settled."},
+    },
+    "aider-false-success-family": {
+        "heading": {"fr": "Le tableau annonce la fin du service, mais rien n’est parti",
+                    "en": "The board says service is over, but nothing went out"},
+        "body": {"fr": "Trois soirs, trois pannes différentes, mais la même ligne verte sur le tableau. En salle, personne ne voit la cuisine. Le tableau rassure alors que les assiettes n’arrivent pas.",
+                 "en": "Three nights, three different failures, yet the same green line on the board. Nobody in the dining room can see the kitchen. The board reassures while no plates arrive."},
+    },
+}
+
+
+def home_card_quad(entity, slot, part):
+    source = slot["heading"] if part == "heading" else (slot.get("body") or [{}])[0]
+    authored = HOME_CARD_COPY.get(entity["slug"], {}).get(part)
+    if not authored:
+        return source
+    return {
+        "fr": {"cuisine": authored["fr"], "expert": source["fr"]["expert"]},
+        "en": {"kitchen": authored["en"], "expert": source["en"]["expert"]},
+    }
+
 
 def latest_dossiers(store):
     """Return real activity first, then fill the initial baseline with recent incidents."""
@@ -315,8 +365,9 @@ def update_card(e, kind, store):
     classes = "argh-update-card" + (" argh-unclassified" if unclassified else "")
     return ('<a class="%s" href="%s">%s%s%s%s</a>'
             % (classes, esc(e["route"]), quad(status, "span", "argh-update-status"),
-               quad(location, "span", "argh-update-place"), quad(h["heading"], "h3"),
-               quad((h.get("body") or [{}])[0], "p")))
+               quad(location, "span", "argh-update-place"),
+               quad(home_card_quad(e, h, "heading"), "h3"),
+               quad(home_card_quad(e, h, "body"), "p")))
 
 
 def place_card(place, number, store):
