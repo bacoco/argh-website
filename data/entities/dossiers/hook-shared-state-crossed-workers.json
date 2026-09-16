@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "SWE-agent a mis deux cuisiniers sur une ardoise",
+          "cuisine": "Deux cuisiniers écrivent sur la même ardoise",
           "expert": "Un contrôle sûr en exécution sérielle a corrompu son état en exécution parallèle"
         },
         "en": {
-          "kitchen": "SWE-agent gave two cooks one slate",
+          "kitchen": "Two cooks share a single slate",
           "expert": "A check that was safe when runs were serial corrupted its state once runs overlapped"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Au passe de SWE-agent, il y a une ardoise et une craie. Le cuisinier y écrit sa table et le plat qu’il monte, puis il efface en envoyant. Tant qu’il travaillait seul, la ligne était toujours la sienne. Le jour où ils ont été deux à écrire dessus, un plat est parti à la mauvaise table.",
+            "cuisine": "Au passe, une seule ardoise sert à noter la table et le plat en cours. Seul, chaque cuisinier retrouve toujours sa ligne. Dès qu’ils écrivent à deux, leurs notes se croisent. Une assiette part alors à la mauvaise table.",
             "expert": "Un contrôle conservait, pour chaque exécution, les conditions d’environnement et les données du problème dans des champs ordinaires d’une instance unique. Sous exécution parallèle, deux exécutions partageaient cette instance et pouvaient s’écraser mutuellement. Des sorties ont pu être enregistrées sous le mauvais dossier de problème."
           },
           "en": {
-            "kitchen": "SWE-agent keeps one slate at the pass and one stick of chalk. A cook writes his table and his dish on it, then wipes the line when the plate goes out. Working alone, he never read anything but his own handwriting. Put a second cook on the same slate and a plate leaves for the wrong table.",
+            "kitchen": "One slate at the pass records the table and dish being prepared. Alone, each cook always finds his own line. With two writers, their notes cross. A plate then leaves for the wrong table.",
             "expert": "A check stored per-run environment conditions and problem data in ordinary fields on a single shared instance. Once runs overlapped, two of them shared that instance and could overwrite each other’s values. Outputs could be recorded against the wrong problem directory."
           }
         }
@@ -51,62 +51,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Le second efface la ligne du premier",
+          "cuisine": "Deux commis écrivent sur la même ardoise",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The second cook chalks over the first",
+          "kitchen": "Two cooks write on the same slate",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un seul cuisinier au passe, une seule ligne à la craie. Rien ne se mélange, parce que personne d’autre n’écrit.",
+            "cuisine": "Avec un seul commis au passe, l’ardoise ne porte qu’une commande et reste toujours juste.",
             "expert": "En exécution sérielle, le contrôle fonctionnait correctement : une seule exécution vivait à la fois."
           },
           "en": {
-            "kitchen": "One cook at the pass, one chalk line at a time. Nothing crosses, because nobody else is writing.",
+            "kitchen": "With one cook at the pass, the slate carries one order and always stays correct.",
             "expert": "Run one at a time and the check behaved correctly; only one run was ever live."
           }
         },
         {
           "fr": {
-            "cuisine": "Le service en rafale met plusieurs cuisiniers au même passe. L’ardoise, elle, reste unique.",
+            "cuisine": "Quand les commandes partent ensemble, plusieurs commis travaillent à la fois, mais ils gardent une seule ardoise commune.",
             "expert": "Le mode par lots a introduit plusieurs exécutions concurrentes partageant la même instance de contrôle."
           },
           "en": {
-            "kitchen": "Batch service crowds several cooks onto the same pass. The slate stays the same single slate.",
+            "kitchen": "When orders run together, several cooks work at once but still share one slate.",
             "expert": "Batch mode introduced several concurrent runs sharing one control instance."
           }
         },
         {
           "fr": {
-            "cuisine": "Le second efface la ligne du premier et écrit la sienne pendant qu’il travaille encore. Le premier n’a rien vu passer.",
+            "cuisine": "Le deuxième commis remplace la commande inscrite alors que le premier prépare encore la sienne.",
             "expert": "Une exécution pouvait réécrire les champs partagés pendant qu’une autre était encore en cours."
           },
           "en": {
-            "kitchen": "The second cook wipes the first one’s line and chalks his own while the first is still working. The first never looks up.",
+            "kitchen": "The second cook replaces the written order while the first is still preparing his own.",
             "expert": "One run could rewrite the shared fields while another was still in flight."
           }
         },
         {
           "fr": {
-            "cuisine": "Quand le premier plat est prêt, le passe lit la table inscrite maintenant. Ce n’est plus la sienne.",
+            "cuisine": "À la sortie du premier plat, le passe relit la dernière ligne et l’envoie à la mauvaise table.",
             "expert": "Au moment d’enregistrer un résultat, le contrôle relisait ces champs et pouvait l’attribuer au mauvais dossier de problème."
           },
           "en": {
-            "kitchen": "When the first plate is ready, the pass reads whatever table is chalked up now. It is not his.",
+            "kitchen": "When the first plate is ready, the pass reads the newest line and sends it to the wrong table.",
             "expert": "At write time the control re-read those fields and could file a result under the wrong problem directory."
           }
         },
         {
           "fr": {
-            "cuisine": "On a donné son ardoise à chaque cuisinier, puis on a remonté le double service exprès pour vérifier.",
+            "cuisine": "La réparation donne une ardoise séparée à chaque commis, puis rejoue volontairement deux commandes en même temps.",
             "expert": "Le correctif a déplacé l’état par exécution vers un stockage propre au thread, avec un test de régression déterministe à deux exécutions."
           },
           "en": {
-            "kitchen": "Each cook got a slate of his own, and the double service was staged again on purpose to check.",
+            "kitchen": "The repair gives each cook a separate slate, then deliberately stages two orders at once.",
             "expert": "The fix moved per-run state into thread-local storage and added a deterministic two-worker regression test."
           }
         }
@@ -117,22 +117,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Doubler la brigade n’a pas changé l’ardoise",
+          "cuisine": "La brigade grandit, l’unique ardoise reste",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "More hands on the chalk, same single slate",
+          "kitchen": "The brigade grows but the slate stays single",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "L’ardoise avait été pensée pour un homme qui écrit et efface tout seul. Doubler la brigade a changé le nombre de mains, pas la façon d’écrire. Personne ne s’est demandé si une ligne pouvait appartenir à quelqu’un d’autre.",
+            "cuisine": "L’ardoise convenait tant qu’un seul commis écrivait. La maison a ajouté des mains sans ajouter de tableaux. Dès lors, la ligne visible pouvait appartenir à une autre commande.",
             "expert": "L’objet de contrôle était traité comme si sa durée de vie coïncidait avec une exécution unique. Le passage au parallèle a changé le modèle de propriété sans que le modèle de stockage suive. Les champs sont restés communs alors que leur contenu était devenu propre à chaque exécution."
           },
           "en": {
-            "kitchen": "The slate was built for one man who writes and wipes his own line. Adding cooks changed how many hands reach for the chalk, not how the slate works. Nobody asked whether a line could belong to somebody else.",
+            "kitchen": "The slate worked while one cook wrote on it. The house added hands without adding boards, so the visible line could now belong to another order.",
             "expert": "The control object was treated as though its lifetime matched a single run. Parallelism changed the ownership model while the storage model stayed where it was. The fields remained common after their contents had become private to each run."
           }
         }
@@ -143,22 +143,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Chacun sa craie, et le double service rejoué",
+          "cuisine": "Une ardoise par commis, puis deux commandes à la fois",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Stage the crowded pass before it happens",
+          "kitchen": "Give each cook a slate, then stage the rush",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une ardoise par cuisinier, avec son nom dessus, et plus rien de commun qui traîne au passe. Et pour en être sûr, on rejoue le double service à froid, avec les deux mains au même instant.",
+            "cuisine": "Chaque commis reçoit un tableau portant sa propre commande. Pour vérifier la séparation, la brigade lance exprès deux préparations au même instant au lieu d’attendre le prochain coup de feu.",
             "expert": "L’état par exécution doit être isolé par tâche, par thread, par contexte asynchrone ou par identité d’exécution explicite, jamais par un champ partagé. Les défauts de concurrence exigent des tests déterministes à barrières, et non un entrelacement laissé au hasard."
           },
           "en": {
-            "kitchen": "Give every cook his own slate with his own name on it, and leave nothing shared at the pass. Then stage the two-handed service deliberately, instead of waiting for a busy night to show you.",
+            "kitchen": "Each cook gets a board carrying only his order. To check the separation, the brigade deliberately starts two preparations together instead of waiting for the next rush.",
             "expert": "Per-run state belongs to a task, a thread, an async context or an explicit run identity — never to a shared field. Concurrency defects need barrier-based deterministic tests rather than hoped-for interleavings."
           }
         }
@@ -169,22 +169,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "L’ardoise partagée ne casse qu’au coup de feu",
+          "cuisine": "La faute attend que deux craies bougent ensemble",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Nothing breaks until two cooks write at once",
+          "kitchen": "The fault waits for two pieces of chalk to move",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "C’est l’avertissement à relire avant de doubler la brigade sur un passe conçu pour un seul cuisinier. La panne est patiente : elle attend le soir où deux mains écrivent ensemble.",
+            "cuisine": "Avant d’ajouter un second commis à un passe ancien, il faut chercher tout ce qu’ils partageront. L’ardoise paraît sûre jusqu’au soir où deux commandes se chevauchent.",
             "expert": "Le cas sert d’avertissement canonique à tout système qui ajoute des exécutions parallèles à des contrôles écrits pour l’exécution sérielle."
           },
           "en": {
-            "kitchen": "Read this one again before you put a second cook on a pass built for one. The failure is patient: it waits for the night when two hands write at once.",
+            "kitchen": "Before adding a second cook to an old pass, look for everything they will share. The slate appears safe until two orders overlap.",
             "expert": "The case stands as a canonical warning for any system adding parallel runs on top of controls written for serial execution."
           }
         }
@@ -195,22 +195,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Deux mains sur la craie, plus de propriétaire",
+          "cuisine": "Une ligne commune n’appartient plus à aucune commande",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "One slate each, or nobody owns anything",
+          "kitchen": "A shared line no longer belongs to one order",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une ardoise partagée, c’est une erreur partagée : dès qu’on est deux à écrire dessus, plus personne ne sait à qui appartient la ligne.",
+            "cuisine": "Dès que deux commis utilisent le même tableau, la dernière ligne peut remplacer la première. Chaque commande doit garder sa propre ardoise.",
             "expert": "Un état de contrôle partagé devient un risque de corruption partagé dès la première exécution concurrente."
           },
           "en": {
-            "kitchen": "Share the slate and you share the mistake: with two hands on the chalk, no line has an owner any more.",
+            "kitchen": "When two cooks use one board, the newest line can replace the first. Every order needs its own slate.",
             "expert": "Shared control state becomes shared corruption risk the moment two runs overlap."
           }
         }

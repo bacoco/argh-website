@@ -1,4 +1,477 @@
 {
   "schema": "argh/public-activity/v1",
-  "events": []
+  "events": [
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/agent-claims-need-evidence-labels.json",
+      "kind": "updated",
+      "entity_path": "dossiers/agent-claims-need-evidence-labels.json",
+      "entity_hash": "2091780fc3399c0233b0f3bb195f4c591cf194d1",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/aider-false-success-family.json",
+      "kind": "updated",
+      "entity_path": "dossiers/aider-false-success-family.json",
+      "entity_hash": "51a22d849bafb3450118a9c5d4d3fce256e75884",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/apply-patch-add-overwrite.json",
+      "kind": "updated",
+      "entity_path": "dossiers/apply-patch-add-overwrite.json",
+      "entity_hash": "542a704e15966488c5a9c6604b905d76fe779332",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/archon-installed-skill-drift.json",
+      "kind": "updated",
+      "entity_path": "dossiers/archon-installed-skill-drift.json",
+      "entity_hash": "9c4e47dde8b0ec72217a1981e8c40287ec776d99",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/archon-session-resume-checkpoint.json",
+      "kind": "updated",
+      "entity_path": "dossiers/archon-session-resume-checkpoint.json",
+      "entity_hash": "e457a7e1a2b01d7571fb25b2335f5af53ed4f713",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/autogen-superseded-not-dead.json",
+      "kind": "updated",
+      "entity_path": "dossiers/autogen-superseded-not-dead.json",
+      "entity_hash": "696b764d71bceaa6a03711efcf9102a5561e9ea3",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/branch-name-roadmap-decay.json",
+      "kind": "updated",
+      "entity_path": "dossiers/branch-name-roadmap-decay.json",
+      "entity_hash": "6d5dc3f9c1b002bb1aeb412f993ff91d5de42fee",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/cline-hooks-control-layer.json",
+      "kind": "updated",
+      "entity_path": "dossiers/cline-hooks-control-layer.json",
+      "entity_hash": "3d09ef7c4b94fbeacfd7f4a96775aa1680bdd03f",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/codegate-low-adoption-pivot-deprecation.json",
+      "kind": "updated",
+      "entity_path": "dossiers/codegate-low-adoption-pivot-deprecation.json",
+      "entity_hash": "08ea295602f69c8a18de38031b57845eb953ad27",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/codex-managed-worktrees.json",
+      "kind": "updated",
+      "entity_path": "dossiers/codex-managed-worktrees.json",
+      "entity_hash": "53bea108e41cf225683ac1512289dac028f77f3b",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/codex-skills-context-budget.json",
+      "kind": "updated",
+      "entity_path": "dossiers/codex-skills-context-budget.json",
+      "entity_hash": "db9d0b678b8fee4e932d7f6ff01d697d86dd9fa0",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/continue-readonly-without-archive.json",
+      "kind": "updated",
+      "entity_path": "dossiers/continue-readonly-without-archive.json",
+      "entity_hash": "8542c3e83677c97bbd3056a7601ea42a6a1a6173",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/control-files-interoperability.json",
+      "kind": "updated",
+      "entity_path": "dossiers/control-files-interoperability.json",
+      "entity_hash": "1de6f166a6514ff69cb7a201cc6113e44c3cad74",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/control-plane-convergence.json",
+      "kind": "updated",
+      "entity_path": "dossiers/control-plane-convergence.json",
+      "entity_hash": "f0dd0240c1f78b50f764c60480a789e91e41b0c3",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/conversation-rewind-workspace-stayed-mutated.json",
+      "kind": "updated",
+      "entity_path": "dossiers/conversation-rewind-workspace-stayed-mutated.json",
+      "entity_hash": "f5436649a458af503a814c97db8d5ef67bffe753",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/delivery-finished-user-got-nothing.json",
+      "kind": "updated",
+      "entity_path": "dossiers/delivery-finished-user-got-nothing.json",
+      "entity_hash": "fe6e7b936daff6fe11515c87228618655b76e929",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/encrypted-subagents-lost-audit-trail.json",
+      "kind": "updated",
+      "entity_path": "dossiers/encrypted-subagents-lost-audit-trail.json",
+      "entity_hash": "989be166dec36335a82c5628a764c4cafca3f248",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/gemini-trust-couples-hooks-mcp-instructions.json",
+      "kind": "updated",
+      "entity_path": "dossiers/gemini-trust-couples-hooks-mcp-instructions.json",
+      "entity_hash": "c91a37e7c2aea89899927b23b855f2cdf287dd35",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/goose-hooks-observer-to-enforcer.json",
+      "kind": "updated",
+      "entity_path": "dossiers/goose-hooks-observer-to-enforcer.json",
+      "entity_hash": "a1d43ad697a85f7b109f11b46c8a8c9e6fbc7f15",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/goose-protocol-pivot-acp.json",
+      "kind": "updated",
+      "entity_path": "dossiers/goose-protocol-pivot-acp.json",
+      "entity_hash": "5174c3b8e0e833e96179b6aaaf9b09ecf0458a5d",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/green-test-wrong-seam.json",
+      "kind": "updated",
+      "entity_path": "dossiers/green-test-wrong-seam.json",
+      "entity_hash": "7a411f59f03f2eec1e604eb8b60fbc85529ec42d",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/gstack-false-green-second-fix.json",
+      "kind": "updated",
+      "entity_path": "dossiers/gstack-false-green-second-fix.json",
+      "entity_hash": "dd9b4b92a19ffaa8f21936219f35f8137f18e5f2",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/heredoc-write-truncation.json",
+      "kind": "updated",
+      "entity_path": "dossiers/heredoc-write-truncation.json",
+      "entity_hash": "b2afd253e6e7324c499225557a6344c7ed44e847",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/hook-canary-behavior-drift.json",
+      "kind": "updated",
+      "entity_path": "dossiers/hook-canary-behavior-drift.json",
+      "entity_hash": "d163607e75ea41d720646d73e5c90e32d28fb5ca",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/hook-shared-state-crossed-workers.json",
+      "kind": "updated",
+      "entity_path": "dossiers/hook-shared-state-crossed-workers.json",
+      "entity_hash": "83bcb37fe810fb903b64c4127ad0202c57b834db",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/hooks-cross-harness-convergence.json",
+      "kind": "updated",
+      "entity_path": "dossiers/hooks-cross-harness-convergence.json",
+      "entity_hash": "98a9c2485777116aae7f0bec70e1cdec2f83523f",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/human-gate-timeout.json",
+      "kind": "updated",
+      "entity_path": "dossiers/human-gate-timeout.json",
+      "entity_hash": "a6629f89d982da0a2f170afa5cd1a65f1d81eb51",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/mcp-common-protocol-local-policy.json",
+      "kind": "updated",
+      "entity_path": "dossiers/mcp-common-protocol-local-policy.json",
+      "entity_hash": "98a3e875fbd0f3cc472aa319de2008be830d1f6a",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/memory-kept-history-lost-mission.json",
+      "kind": "updated",
+      "entity_path": "dossiers/memory-kept-history-lost-mission.json",
+      "entity_hash": "923b879850cad2c4b3df344172ebb8b29b4b958e",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/multiuser-connection-ownership.json",
+      "kind": "updated",
+      "entity_path": "dossiers/multiuser-connection-ownership.json",
+      "entity_hash": "d4a4fe656121a6745acff7b64e86950064b3be9c",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/nested-skills-discovery-drift.json",
+      "kind": "updated",
+      "entity_path": "dossiers/nested-skills-discovery-drift.json",
+      "entity_hash": "4fac6be3d732c3567ce89fba4fbbdf1053ac4564",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/observability-became-outage.json",
+      "kind": "updated",
+      "entity_path": "dossiers/observability-became-outage.json",
+      "entity_hash": "a83043076e9cdb0036d24e0b26fef403c283f759",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/openhands-hook-blocking-state.json",
+      "kind": "updated",
+      "entity_path": "dossiers/openhands-hook-blocking-state.json",
+      "entity_hash": "13badef6994ca5d9f8d47e7a64a8588b7bdf79f0",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/permission-ui-approved-wrong-action.json",
+      "kind": "updated",
+      "entity_path": "dossiers/permission-ui-approved-wrong-action.json",
+      "entity_hash": "86100c4a8ca765200915ed0e9f9b063b5e8c5ce0",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/plugin-init-before-control-load.json",
+      "kind": "updated",
+      "entity_path": "dossiers/plugin-init-before-control-load.json",
+      "entity_hash": "65f155a3a4960b9f319081e83c1403ba7d0d6afa",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/project-mortality-state-machine.json",
+      "kind": "updated",
+      "entity_path": "dossiers/project-mortality-state-machine.json",
+      "entity_hash": "d476c98ecd483f39d49e901871389486fa34f757",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/recovery-state-convergence.json",
+      "kind": "updated",
+      "entity_path": "dossiers/recovery-state-convergence.json",
+      "entity_hash": "52feb8df006bf4c2468701dd60472aea16509f1f",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/redact-before-model-boundary.json",
+      "kind": "updated",
+      "entity_path": "dossiers/redact-before-model-boundary.json",
+      "entity_hash": "4b33649cd8d95db47f9384fc1c426eff095ae3af",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/release-does-not-equal-observed-fix.json",
+      "kind": "updated",
+      "entity_path": "dossiers/release-does-not-equal-observed-fix.json",
+      "entity_hash": "08bd9739031c2fbb217bb046d8cab282a6b83e80",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/remote-tools-injected-without-local-ownership.json",
+      "kind": "updated",
+      "entity_path": "dossiers/remote-tools-injected-without-local-ownership.json",
+      "entity_hash": "fafa43cf08232d56d646bb8d91c53f4f079e90ad",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/retryable-auth-errors-must-not-delete-credentials.json",
+      "kind": "updated",
+      "entity_path": "dossiers/retryable-auth-errors-must-not-delete-credentials.json",
+      "entity_hash": "143c2224d42280922b5db3a4c4c4d1d81ee5c496",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/roo-code-sunset-with-full-backlog.json",
+      "kind": "updated",
+      "entity_path": "dossiers/roo-code-sunset-with-full-backlog.json",
+      "entity_hash": "634a39874d37274b2602d325c619442025ed3a52",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/runtime-skill-inventory-not-filesystem.json",
+      "kind": "updated",
+      "entity_path": "dossiers/runtime-skill-inventory-not-filesystem.json",
+      "entity_hash": "921b5464b12545eb0fa32f2c0b92c26e3e4d2f28",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/safety-control-failure-became-permission.json",
+      "kind": "updated",
+      "entity_path": "dossiers/safety-control-failure-became-permission.json",
+      "entity_hash": "bc187eb481d846a06645fce9e1d52636a63409c0",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/second-fix-real-boundary.json",
+      "kind": "updated",
+      "entity_path": "dossiers/second-fix-real-boundary.json",
+      "entity_hash": "23b8552179d8c10fd2ba3289623223aa17d92fad",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/session-scope-lock-became-global-state.json",
+      "kind": "updated",
+      "entity_path": "dossiers/session-scope-lock-became-global-state.json",
+      "entity_hash": "3c156d3b799f5a1ad834db8da5f8b7342cd66635",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/skills-cross-harness-convergence.json",
+      "kind": "updated",
+      "entity_path": "dossiers/skills-cross-harness-convergence.json",
+      "entity_hash": "b5539acee98a1410d0f86c172e32ecffce276835",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/skills-default-on-docs-lag.json",
+      "kind": "updated",
+      "entity_path": "dossiers/skills-default-on-docs-lag.json",
+      "entity_hash": "72e15040647933143a2355cd8b08a010298d1ef0",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/stop-hook-authority-overreach.json",
+      "kind": "updated",
+      "entity_path": "dossiers/stop-hook-authority-overreach.json",
+      "entity_hash": "51c24c48c6d59a2da97ca04098599e398b1ab98b",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/subagent-routing-hidden-capability.json",
+      "kind": "updated",
+      "entity_path": "dossiers/subagent-routing-hidden-capability.json",
+      "entity_hash": "d1ac34ba543f1370a7511e98d81808d74bbd1584",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/subagents-delegation-control-plane.json",
+      "kind": "updated",
+      "entity_path": "dossiers/subagents-delegation-control-plane.json",
+      "entity_hash": "51e8f532c41d3ea86f448322ae8b579623c5c4d4",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/superpowers-skills-methodology-rise.json",
+      "kind": "updated",
+      "entity_path": "dossiers/superpowers-skills-methodology-rise.json",
+      "entity_hash": "6efffbd1c1f312e930851c9b41d8900fedbb19a5",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/sweagent-cost-guard-retry-rebilling.json",
+      "kind": "updated",
+      "entity_path": "dossiers/sweagent-cost-guard-retry-rebilling.json",
+      "entity_hash": "1b89c020ac1e4a4dfdb9bcc20d0e98d46a895445",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/sweagent-repository-identity-move.json",
+      "kind": "updated",
+      "entity_path": "dossiers/sweagent-repository-identity-move.json",
+      "entity_hash": "9c853ab66abf38c97eb8949b9931da6e18df8619",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/taskweaver-archive-cause-unknown.json",
+      "kind": "updated",
+      "entity_path": "dossiers/taskweaver-archive-cause-unknown.json",
+      "entity_hash": "3ced89f8de2886d860f4c2f8b88d680d7d937d53",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/timeout-left-descendants-running.json",
+      "kind": "updated",
+      "entity_path": "dossiers/timeout-left-descendants-running.json",
+      "entity_hash": "df8d55324227dce9190dcaff779ccc7152286d22",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/tool-results-need-execution-receipts.json",
+      "kind": "updated",
+      "entity_path": "dossiers/tool-results-need-execution-receipts.json",
+      "entity_hash": "870f60af0b6cb5b48ce160f95036d3ebf37db89a",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/unknown-flattened-to-empty.json",
+      "kind": "updated",
+      "entity_path": "dossiers/unknown-flattened-to-empty.json",
+      "entity_hash": "333d23f5c06c64e31a45270c083f07b182455be8",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    },
+    {
+      "id": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe:dossiers/worktree-isolation-convergence.json",
+      "kind": "updated",
+      "entity_path": "dossiers/worktree-isolation-convergence.json",
+      "entity_hash": "9f9a25ebe699a5fdd4579274eac9f4bef904683e",
+      "detected_at": "2026-09-16T13:28:24Z",
+      "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe"
+    }
+  ]
 }

@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Ce qu’on ignore est écrit comme un fait",
+          "cuisine": "Au passe — Ce qu’on ignore est écrit comme un fait",
           "expert": "L’inconnu disparaît soit à l’interface, soit dans le récit"
         },
         "en": {
-          "kitchen": "An empty board reads as an answer",
+          "kitchen": "At the pass — An empty board reads as an answer",
           "expert": "The unknown disappears either at the interface or in the narrative"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Hermes, la réserve était fermée et l’ardoise a écrit « vide ». Chez TaskWeaver, le rideau est tombé, la case du pourquoi est restée blanche, et le quartier l’a remplie. Dans les deux cas, ce qu’on ne savait pas a quitté l’ardoise sous une autre forme.",
+            "cuisine": "Dans une maison, la réserve est inaccessible mais l’ardoise écrit « vide ». Dans une autre, le rideau est définitivement baissé sans raison établie ; le quartier invente alors la cause. Dans les deux cas, une ignorance réelle ressort déguisée en certitude.",
             "expert": "Deux formes d’effacement de l’inconnu. Chez Hermes, une source d’historique indisponible était aplatie en résultat vide, masquant l’incertitude à tous les composants en aval. Pour TaskWeaver, l’archivage est certain et la cause ne l’est pas : ses propres matériaux reconnaissent des ressources limitées, ce qui n’établit aucune chaîne causale."
           },
           "en": {
-            "kitchen": "At Hermes the pantry was shut and the board read empty. At TaskWeaver the shutter came down with the reason left blank, so the street filled it in. Both times, what nobody knew left the board wearing something else.",
+            "kitchen": "In one house, the pantry cannot be reached, yet the board says empty. In another, the shutter is down for good with no established reason, so the street invents one. Both times, real uncertainty leaves the kitchen disguised as certainty.",
             "expert": "Two ways the unknown gets erased. In Hermes an unavailable history source was flattened into an empty result, hiding the uncertainty from every downstream component. For TaskWeaver the archival is certain and the cause is not: its own materials acknowledge limited resources, which establishes no causal chain."
           }
         }
@@ -51,22 +51,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Plus on s’éloigne du témoin, plus la réponse durcit",
+          "cuisine": "Au passe — Plus on s’éloigne du témoin, plus la réponse durcit",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The further from the witness, the surer the answer",
+          "kitchen": "At the pass — The further from the witness, the surer the answer",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le même mot sert pour « il n’y a rien » et pour « je n’ai pas pu aller voir ». Plus on s’éloigne de celui qui a regardé, plus la réponse devient sûre d’elle. Et quand une maison ferme, la raison arrive toujours avant la preuve.",
+            "cuisine": "Au service, Le même mot sert pour « il n’y a rien » et pour « je n’ai pas pu aller voir ». Plus on s’éloigne de celui qui a regardé, plus la réponse devient sûre d’elle. Et quand une maison ferme, la raison arrive toujours avant la preuve.",
             "expert": "Trois signaux : un type de retour qui n’offre aucune place à l’indisponibilité, un consommateur en aval plus certain que sa source, et une cause disponible à proximité immédiate d’un événement inexpliqué. L’aplatissement se produit à l’interface, avant tout consommateur, ce qui le tient hors des traces en aval. L’absence de preuve y arrive sous la même forme que la preuve d’absence."
           },
           "en": {
-            "kitchen": "One word covers both there is none and I could not go and look. The further you stand from whoever looked, the surer the answer sounds. And when a house closes, the reason always arrives ahead of the proof.",
+            "kitchen": "During service, One word covers both there is none and I could not go and look. The further you stand from whoever looked, the surer the answer sounds. And when a house closes, the reason always arrives ahead of the proof.",
             "expert": "Three signals: a return type with no room for unavailability, a downstream consumer more certain than its source, and a ready cause sitting next to an unexplained event. The flattening happens at the interface, ahead of any consumer, which keeps it out of downstream traces. Absence of evidence arrives there in the same shape as evidence of absence."
           }
         }
@@ -77,22 +77,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une case blanche se remplit avec ce qui traîne",
+          "cuisine": "Au passe — Une case blanche se remplit avec ce qui traîne",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A blank space gets filled by whatever is near",
+          "kitchen": "At the pass — A blank space gets filled by whatever is near",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une ardoise réclame un mot, et « rien » est le plus court de tous. Une porte close réclame une raison, et la première qui passe fera l’affaire. Ce qui manque n’est pas conservé : il est remplacé par ce qui se trouvait à portée de main.",
+            "cuisine": "Au service, Une ardoise réclame un mot, et « rien » est le plus court de tous. Une porte close réclame une raison, et la première qui passe fera l’affaire. Ce qui manque n’est pas conservé : il est remplacé par ce qui se trouvait à portée de main.",
             "expert": "Un canal de sortie sans état dédié à l’indisponibilité pousse l’inconnu vers la valeur la plus proche, ici le vide. Un trou causal se comble symétriquement par l’hypothèse la plus disponible, ici la contrainte de ressources. Dans les deux cas la sortie est bien formée, ce qui la rend précisément indiscernable d’un fait établi."
           },
           "en": {
-            "kitchen": "A board wants a word written on it, and none is the shortest word there is. A closed door wants a reason, and the first one passing will do. What was missing does not survive; it is swapped for whatever stood within reach.",
+            "kitchen": "During service, A board wants a word written on it, and none is the shortest word there is. A closed door wants a reason, and the first one passing will do. What was missing does not survive; it is swapped for whatever stood within reach.",
             "expert": "An output channel with no state for unavailability pushes the unknown toward the nearest value, here emptiness. A causal gap fills symmetrically with the most available hypothesis, here resource constraint. Both outputs are well formed, which is exactly what makes them indistinguishable from an established fact."
           }
         }
@@ -103,22 +103,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Distinguer l’étagère vide de la porte fermée",
+          "cuisine": "Au passe — Distinguer l’étagère vide de la porte fermée",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Tell an empty shelf from a shut door",
+          "kitchen": "At the pass — Tell an empty shelf from a shut door",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Donne un mot différent à chaque situation : épuisé, porte fermée, périmé, abîmé, jamais eu. Fais voyager ce mot jusqu’au dernier poste qui s’en sert, sans le raccourcir en route. Pour une maison fermée, note le rideau et la date, puis laisse la case du pourquoi telle quelle.",
+            "cuisine": "Au service, Donne un mot différent à chaque situation : épuisé, porte fermée, périmé, abîmé, jamais eu. Fais voyager ce mot jusqu’au dernier poste qui s’en sert, sans le raccourcir en route. Pour une maison fermée, note le rideau et la date, puis laisse la case du pourquoi telle quelle.",
             "expert": "Représenter indisponible, périmé, corrompu, vide et absent comme des états distincts, et garantir que le marqueur survit à chaque interface. Séparer la transition observée de la cause inférée : archivage, activité et direction annoncée s’observent indépendamment, et la certitude sur la transition n’autorise aucune certitude sur la cause. L’état de preuve retenu pour TaskWeaver reste : archivage certain, cause inconnue."
           },
           "en": {
-            "kitchen": "Give each case its own word: run out, door shut, past its date, spoiled, never had any. Carry that word to the last station that uses it, without shortening it along the way. For a house that has closed, record the shutter and the date, then leave the why exactly as it stands.",
+            "kitchen": "During service, Give each case its own word: run out, door shut, past its date, spoiled, never had any. Carry that word to the last station that uses it, without shortening it along the way. For a house that has closed, record the shutter and the date, then leave the why exactly as it stands.",
             "expert": "Represent unavailable, stale, corrupt, empty and missing as distinct states, and make the marker survive every interface. Keep the observed transition apart from the inferred cause: archival, activity and announced direction are each observed independently, and certainty about the transition licenses none about the cause. The evidence state held for TaskWeaver remains archival certain, cause unknown."
           }
         }
@@ -129,22 +129,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une ignorance effacée revient en certitude",
+          "cuisine": "Au passe — Une ignorance effacée revient en certitude",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Not-knowing wiped away comes back as certainty",
+          "kitchen": "At the pass — Not-knowing wiped away comes back as certainty",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "« Je ne sais pas » est une réponse, et elle doit sortir en salle sans être traduite. Effacée au passe, elle revient toujours en certitude que personne n’a vérifiée.",
+            "cuisine": "Au service, « Je ne sais pas » est une réponse, et elle doit sortir en salle sans être traduite. Effacée au passe, elle revient toujours en certitude que personne n’a vérifiée.",
             "expert": "Unknown est une information : il doit survivre à l’interface et rester un résultat publiable. Une corrélation disponible ne devient pas une cause parce qu’aucune autre n’était à portée."
           },
           "en": {
-            "kitchen": "I do not know is an answer, and it has to reach the room untranslated. Wiped at the pass, it comes back as a certainty nobody ever checked.",
+            "kitchen": "During service, I do not know is an answer, and it has to reach the room untranslated. Wiped at the pass, it comes back as a certainty nobody ever checked.",
             "expert": "Unknown is information: it must survive the interface and stay a publishable result. An available correlation does not become a cause because nothing else was within reach."
           }
         }

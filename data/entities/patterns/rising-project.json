@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Une façon de travailler qui gagne d’autres maisons",
+          "cuisine": "Au passe — Une façon de travailler qui gagne d’autres maisons",
           "expert": "Superpowers est passé de candidat à projet suivi parce que sa méthode traverse les harnais"
         },
         "en": {
-          "kitchen": "A way of working other kitchens copied",
+          "kitchen": "At the pass — A way of working other kitchens copied",
           "expert": "Superpowers moved from candidate to tracked project because its method crosses harnesses"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Superpowers n’a pas séduit avec un plat. C’est sa façon de préparer, d’exécuter et de vérifier qui s’est mise à circuler. Des cuisiniers l’appliquent aujourd’hui dans des maisons qui n’ont rien à voir avec celle d’origine. C’est ce qui a fait passer la maison de curiosité à cas suivi.",
+            "cuisine": "Au service, ce n’est pas un plat qui a séduit, mais une façon de préparer, d’exécuter et de vérifier qui s’est mise à circuler. Des cuisiniers l’appliquent désormais dans des maisons sans lien avec celle d’origine. C’est ce qui a fait passer cette méthode de curiosité à cas suivi.",
             "expert": "Une progression rapide d’adoption ou d’attention est un signal de découverte, jamais une preuve de qualité. Superpowers a émergé comme méthodologie distinctive de workflows et de skills, et son influence traverse plusieurs environnements d’agents de code. C’est cette traversée, et non le volume d’attention, qui a justifié sa promotion de candidat à projet suivi."
           },
           "en": {
-            "kitchen": "No single dish made the name of Superpowers. What spread was the order of work itself: prepare, cook, then check before anything leaves. Cooks now run it in houses that never heard of the first one, and that is why it stopped being a curiosity.",
+            "kitchen": "During service, no single dish made the name. What spread was the order of work itself: prepare, cook, then check before anything leaves. Cooks now use it in houses with no link to the first one, and that is why the method stopped being a curiosity.",
             "expert": "A rapid rise in adoption or attention is a discovery signal, never proof of quality. Superpowers emerged as a distinctive workflow and skills methodology, and its influence runs across several coding-agent environments. That crossing, rather than the volume of attention, is what justified promoting it from candidate to tracked project."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Des cuisiniers emportent la méthode de Superpowers ailleurs",
+          "cuisine": "Au passe — Des cuisiniers emportent la méthode dans d’autres maisons",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Cooks carry the Superpowers method into other houses",
+          "kitchen": "At the pass — Cooks carry the method into other houses",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La maison tourne encore : on y travaille tous les jours, ce n’est pas un recueil de vieilles fiches. D’autres tables s’ouvrent autour et reprennent la même manière. Et surtout, des cuisiniers l’emportent ailleurs, là où rien ne ressemble à la maison mère.",
+            "cuisine": "Au service, La maison tourne encore : on y travaille tous les jours, ce n’est pas un recueil de vieilles fiches. D’autres tables s’ouvrent autour et reprennent la même manière. Et surtout, des cuisiniers l’emportent ailleurs, là où rien ne ressemble à la maison mère.",
             "expert": "Un repository ciblé établit une méthodologie de workflow cohérente plutôt qu’une collection de prompts figée, et reste activement maintenu. Des repositories liés et des surfaces de distribution apparaissent autour de lui. Le signal décisif est l’application de la méthodologie hors de son environnement d’origine, par des praticiens, dans plusieurs environnements d’agents de code."
           },
           "en": {
-            "kitchen": "Look for a place still being worked in daily, not a drawer of old cards nobody updates. Around it, other tables open and take up the same order of work. The one that counts: cooks carry it into houses that resemble the first in nothing.",
+            "kitchen": "During service, Look for a place still being worked in daily, not a drawer of old cards nobody updates. Around it, other tables open and take up the same order of work. The one that counts: cooks carry it into houses that resemble the first in nothing.",
             "expert": "A focused repository establishes a coherent workflow methodology rather than a frozen prompt collection, and stays actively maintained. Linked repositories and distribution surfaces appear around it. The decisive signal is practitioners applying the methodology outside its original environment, across several coding-agent environments."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Être commenté n’est pas avoir été jugé",
+          "cuisine": "Au passe — Être commenté n’est pas avoir été jugé",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A loud house is not a proven house",
+          "kitchen": "At the pass — A loud house is not a proven house",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On parle beaucoup d’une maison, et on croit avoir jugé sa cuisine. Ce qui voyage ici, ce n’est pas la réputation : c’est une manière de préparer, d’exécuter et de vérifier. Le bruit se compte de loin ; la manière ne se constate qu’en entrant.",
+            "cuisine": "Au service, On parle beaucoup d’une maison, et on croit avoir jugé sa cuisine. Ce qui voyage ici, ce n’est pas la réputation : c’est une manière de préparer, d’exécuter et de vérifier. Le bruit se compte de loin ; la manière ne se constate qu’en entrant.",
             "expert": "La valeur n’est pas un skill isolé mais une manière répétable de structurer planification, exécution et vérification, qui se conserve à travers différents harnais hôtes. La tromperie est de lire le volume d’attention comme une mesure de cette propriété. Il ne la mesure pas : seule l’inspection directe des mécanismes et des limites établit ce qui est réellement transportable."
           },
           "en": {
-            "kitchen": "Being talked about is mistaken, every time, for having been judged. Reputation is not what moved between these houses; an order of work is. One can be counted from the street, the other only from inside.",
+            "kitchen": "During service, Being talked about is mistaken, every time, for having been judged. Reputation is not what moved between these houses; an order of work is. One can be counted from the street, the other only from inside.",
             "expert": "The value is not an isolated skill but a repeatable way of structuring planning, execution and verification, one that survives across different host harnesses. The deception is reading attention volume as a measure of that property. It does not measure it: only direct inspection of mechanisms and limitations establishes what is actually transportable."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Aller voir de près ce qui survit au déménagement",
+          "cuisine": "Au passe — Aller voir de près ce qui survit au déménagement",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Walk in and see what survived the move",
+          "kitchen": "At the pass — Walk in and see what survived the move",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Quand une maison monte, va voir de près au lieu de te fier à ce qu’on en dit. Regarde ce qui tient une fois sorti des murs d’origine, et ce qui ne tient pas. Une manière de travailler qui survit au changement de maison en dit plus long que l’engouement. Superpowers est en progression et suivi de près ; c’est tout ce qui est établi.",
+            "cuisine": "Au service, quand une maison monte, va voir de près au lieu de te fier à ce qu’on en dit. Regarde ce qui tient une fois sorti des murs d’origine, et ce qui ne tient pas. Une manière de travailler qui survit au changement de maison en dit plus long que l’engouement. Cette méthode est en progression et suivie de près ; c’est tout ce qui est établi.",
             "expert": "Traiter la progression comme un signal de découverte et la compléter par une inspection directe des mécanismes et des limites. Suivre en priorité les méthodologies qui survivent au changement d’hôte : elles indiquent une convergence architecturale située au-dessus d’un produit particulier. Superpowers est en progression et promu au suivi actif ; c’est l’état établi, pas un verdict de qualité."
           },
           "en": {
-            "kitchen": "A house on the rise is an invitation to walk in, not a verdict to repeat. Watch what survives the move out of its first walls, and be as interested in what does not. Superpowers is rising and now followed closely; that is the state, nothing more.",
+            "kitchen": "During service, a house on the rise is an invitation to walk in, not a verdict to repeat. Watch what survives the move out of its first walls, and be as interested in what does not. This method is rising and now followed closely; that is the state, nothing more.",
             "expert": "Treat the rise as a discovery signal and complete it with direct inspection of mechanisms and limitations. Prioritise methodologies that survive a change of host: they mark architectural convergence sitting above any particular product. Superpowers is rising and promoted to active tracking; that is the established state, not a quality verdict."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une manière de travailler voyage avant les plats",
+          "cuisine": "Au passe — Une manière de travailler voyage avant les plats",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A way of working travels before any dish does",
+          "kitchen": "At the pass — A way of working travels before any dish does",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Les idées qui durent voyagent d’abord comme une manière de faire, bien avant d’exister comme plat à la carte. Une montée rapide dit où regarder, jamais ce qu’on va trouver.",
+            "cuisine": "Au service, Les idées qui durent voyagent d’abord comme une manière de faire, bien avant d’exister comme plat à la carte. Une montée rapide dit où regarder, jamais ce qu’on va trouver.",
             "expert": "Les idées de harnais les plus durables peuvent se diffuser comme méthodes bien avant de devenir des fonctionnalités produit. Une progression rapide indique où porter l’inspection ; elle ne remplace pas son résultat."
           },
           "en": {
-            "kitchen": "The ideas with staying power move as a way of working long before any menu lists them. A fast rise points at a door; it never says what is behind it.",
+            "kitchen": "During service, The ideas with staying power move as a way of working long before any menu lists them. A fast rise points at a door; it never says what is behind it.",
             "expert": "The most durable harness ideas can spread as methods well before becoming product features. A rapid rise indicates where to point the inspection; it does not substitute for its result."
           }
         }

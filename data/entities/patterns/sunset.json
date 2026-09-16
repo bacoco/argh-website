@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Une maison qui ferme parce qu’elle l’a décidé",
+          "cuisine": "Au passe — Une maison qui ferme parce qu’elle l’a décidé",
           "expert": "Une fin de vie décidée se lit dans les retraits et la version finale, jamais dans le silence"
         },
         "en": {
-          "kitchen": "A last service announced, then the shutter down",
+          "kitchen": "At the pass — A last service announced, then the shutter down",
           "expert": "A decided end of life reads in removed surfaces and a final release, never in silence"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Roo Code n’a pas fermé faute de clients. Les plats ont quitté la carte les uns après les autres. Un dernier service a été annoncé, puis servi, et le rideau est tombé pour de bon. Ceux qui voulaient encore cette cuisine sont allés la chercher ailleurs, ou l’ont refaite eux-mêmes.",
+            "cuisine": "Cette maison n’a pas disparu par manque de clients. Elle a retiré des pans entiers de sa carte, annoncé un dernier service, puis baissé définitivement le rideau. Les habitués ont dû rejoindre d’autres cuisines ou reprendre eux-mêmes certaines recettes.",
             "expert": "Un sunset est une trajectoire de fin de vie décidée, pas une extinction par inactivité. Roo Code a été arrêté délibérément : des surfaces majeures — cloud, enterprise, télémétrie, marketplace — ont été retirées, une version finale a formalisé l’arrêt, et le repository a été archivé. La continuité s’est déplacée vers des alternatives et des forks communautaires, hors du produit d’origine."
           },
           "en": {
-            "kitchen": "Roo Code did not go quiet for lack of custom. Dish by dish, the menu was cut back. A final service was announced and served, and then the shutter came down for good. Anyone who still wanted that cooking went looking for it in other houses, or started cooking it themselves.",
+            "kitchen": "This house did not fade for lack of guests. It removed whole sections of the menu, announced a final service, and then lowered the shutter for good. Regulars had to move to other kitchens or take up some recipes themselves.",
             "expert": "A sunset is a decided end-of-life trajectory, not extinction by inactivity. Roo Code was deliberately halted: major surfaces — cloud, enterprise, telemetry, marketplace — were removed, a final release formalized the stop, and the repository was archived. Continuity moved to alternatives and community forks, outside the original product."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La carte de Roo Code a beaucoup rétréci",
+          "cuisine": "Au passe — Des pans entiers quittent la carte avant le dernier soir",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Roo Code’s menu lost whole sections",
+          "kitchen": "At the pass — Whole sections leave the menu before the final night",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Regarde ce qui quitte la carte. Chez Roo Code, ce sont des pans entiers du service qui ont disparu, pas un plat isolé. Ensuite vient un dernier soir, annoncé comme tel. La question n’est plus de savoir si la maison ferme, mais où l’on mangera demain.",
+            "cuisine": "Il faut regarder ce qui quitte la carte : ici, des parties entières du service ont disparu, pas un plat isolé. Puis la maison a annoncé clairement sa dernière soirée. La question utile est alors de savoir quelle cuisine prendra la suite.",
             "expert": "Le signal d’un sunset est une séquence de décisions, non une absence d’activité. Chez Roo Code, des pans entiers de la surface produit disparaissent, puis une version finale formalise l’arrêt. Aucun de ces marqueurs ne se déduit d’un compteur ; la question utile devient la destination de la continuité, non l’état de l’original."
           },
           "en": {
-            "kitchen": "Watch what leaves the menu. At Roo Code whole parts of the service went, not one dish here and there. Then comes a last night, announced as such. After that the question is no longer whether the house is closing, but where the regulars will eat.",
+            "kitchen": "Watch what leaves the menu: here, whole parts of service disappeared, not one isolated dish. The house then clearly announced its final night. The useful question becomes which kitchen will carry the cooking forward.",
             "expert": "A sunset shows as a sequence of decisions rather than an absence of activity. At Roo Code whole parts of the product surface disappear, then a final release formalizes the stop. None of those markers can be inferred from a counter; the useful question becomes where continuity went, not what state the original is in."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le service continue jusqu’au dernier soir",
+          "cuisine": "Au passe — Le service continue jusqu’au dernier soir",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Service runs right up to the last night",
+          "kitchen": "At the pass — Service runs right up to the last night",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une maison qui ferme sur décision continue de servir jusqu’au dernier soir. Le bruit de la salle ne baisse pas, les commandes tombent encore, et pourtant plus rien ne sera reconduit. C’est la carte qui rétrécit, pas la salle qui se vide, et personne ne regarde la carte.",
+            "cuisine": "Au service, Une maison qui ferme sur décision continue de servir jusqu’au dernier soir. Le bruit de la salle ne baisse pas, les commandes tombent encore, et pourtant plus rien ne sera reconduit. C’est la carte qui rétrécit, pas la salle qui se vide, et personne ne regarde la carte.",
             "expert": "Une fin de vie décidée conserve, jusqu’à la version finale, l’essentiel des indices d’activité sur lesquels on juge un projet vivant. Les métriques d’activité mesurent du travail inachevé et non un engagement stratégique, de sorte qu’un volume élevé accompagne sans contradiction un arrêt déjà arbitré. Le signal discriminant est un retrait, et un retrait ne produit aucun compteur qui monte."
           },
           "en": {
-            "kitchen": "A house closing on purpose keeps serving right up to the last night. The room stays loud, orders keep arriving, and none of it will be carried over. The menu is what shrinks; the room is not what empties — and nobody reads the menu.",
+            "kitchen": "During service, A house closing on purpose keeps serving right up to the last night. The room stays loud, orders keep arriving, and none of it will be carried over. The menu is what shrinks; the room is not what empties — and nobody reads the menu.",
             "expert": "A decided end of life keeps, up to the final release, most of the activity evidence used to call a project alive. Activity metrics measure unfinished work rather than strategic commitment, so a high volume sits without contradiction beside a decision already taken. The discriminating signal is a removal, and a removal produces no rising counter."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Compter ce qui quitte la carte",
+          "cuisine": "Au passe — Compter ce qui quitte la carte",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Count what leaves the menu",
+          "kitchen": "At the pass — Count what leaves the menu",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une fermeture se lit dans l’ordre des gestes : ce qu’on retire, le soir qu’on annonce, le rideau qu’on baisse. Suis cette suite, et tu sauras à quel moment la maison a cessé d’être la tienne. Chez Roo Code, elle s’est déroulée en entier, et la suite se cuisine maintenant sous d’autres enseignes.",
+            "cuisine": "Une fermeture décidée se lit dans l’ordre : des plats sont retirés, un dernier soir est annoncé, puis le rideau descend. Ici, toute cette suite est établie. La continuité se trouve désormais sous d’autres enseignes, pas dans une reprise de la maison d’origine.",
             "expert": "Traiter le sunset comme un état distinct et suivre la trajectoire plutôt que le volume : changement de direction, suppression de surfaces, release finale, archivage, continuité par alternative ou fork, déclarations de mainteneurs. Chez Roo Code, cette trajectoire est complète et la continuation se situe hors du produit d’origine. Pour un consommateur, la décision utile porte sur la cible de migration, non sur la probabilité d’une reprise de l’original."
           },
           "en": {
-            "kitchen": "A closing reads in the order of the moves: what is pulled, the night that is announced, the shutter that comes down. Follow that order and you know when the house stopped being yours to rely on. At Roo Code the whole sequence ran, and the cooking now happens under other signs.",
+            "kitchen": "A deliberate closing appears in order: dishes are removed, a final night is announced, then the shutter comes down. Here, that whole sequence is established. Continuity now sits under other signs, not in a reopening of the original house.",
             "expert": "Treat sunset as a distinct state and track the trajectory rather than the volume: direction change, surface removal, final release, archival, continuity through an alternative or a fork, maintainer statements. At Roo Code that trajectory is complete, and the continuation sits outside the original product. For a consumer, the useful decision concerns the migration target, not the likelihood of the original resuming."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le travail restant n’est pas un signe de vie",
+          "cuisine": "Au passe — Le travail restant n’est pas un signe de vie",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Pending work is not a sign of life",
+          "kitchen": "At the pass — Pending work is not a sign of life",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une maison ne s’éteint pas toujours en silence : parfois elle annonce, retire, sert une dernière fois et ferme. Ce qui reste à faire ne dit rien ; ce qui a été retiré dit tout.",
+            "cuisine": "Au service, Une maison ne s’éteint pas toujours en silence : parfois elle annonce, retire, sert une dernière fois et ferme. Ce qui reste à faire ne dit rien ; ce qui a été retiré dit tout.",
             "expert": "Un arrêt délibéré se prouve par des retraits et une version finale, non par un silence. Un inventaire de travail encore plein peut alors être une preuve de mort et non de vie, lorsque la stratégie est déjà partie ailleurs."
           },
           "en": {
-            "kitchen": "A house does not always go quiet on its way out; sometimes it announces, strips back, serves once more and closes. What is left to do tells you nothing. What was taken away tells you everything.",
+            "kitchen": "During service, A house does not always go quiet on its way out; sometimes it announces, strips back, serves once more and closes. What is left to do tells you nothing. What was taken away tells you everything.",
             "expert": "A deliberate stop is evidenced by removals and a final release, not by silence. An inventory of open work still full can then be evidence of death rather than life, once strategy has already moved elsewhere."
           }
         }

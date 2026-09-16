@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Toute la carte récitée avant la première commande",
+          "cuisine": "La feuille était pleine avant la première commande",
           "expert": "Un catalogue de capacités consomme le contexte avant toute invocation"
         },
         "en": {
-          "kitchen": "The whole menu recited before the first order",
+          "kitchen": "The sheet was full before the first order",
           "expert": "A capability catalogue spends context before anything is invoked"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le commis n’a qu’une feuille, et elle tient dans sa poche. Avant le service, on lui récite tout ce que la maison sait faire, les cent plats et les cent tours de main, au cas où. Quand la première commande tombe, la feuille est déjà pleine. Chez Codex, la maison a fini par compter ce que cette récitation coûte.",
+            "cuisine": "Le commis n’avait qu’une feuille qui tenait dans sa poche. Avant le service, on lui récitait toute la carte et tous les tours de main, au cas où. La première commande arrivait sur une feuille déjà pleine.",
             "expert": "Le système de skills de Codex a évolué vers un ordre de discovery explicite, des sémantiques de confiance, des toggles, des watchers et des contraintes de budget de prompt. Dès que les skills sont nombreux et chargés dynamiquement, leurs descriptions se disputent le contexte du modèle avant qu’un seul soit invoqué. Le coût est donc porté par la taille du catalogue et non par son usage."
           },
           "en": {
-            "kitchen": "The junior cook has one sheet of paper and it fits in his pocket. Before service, someone recites the whole house repertoire at him, a hundred dishes and a hundred turns of the hand, just in case. The first order lands on a sheet that is already full. At Codex the house ended up counting what that recital costs.",
+            "kitchen": "The junior cook had one sheet that fit in his pocket. Before service, he was told the whole menu and every kitchen trick, just in case. The first order landed on a sheet already full.",
             "expert": "Codex’s skills system grew an explicit discovery order, trust semantics, toggles, watchers and prompt-budget constraints. Once skills are numerous and dynamically loaded, their descriptions compete for model context before a single one is invoked. The cost therefore follows catalogue size rather than catalogue use."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Codex commence à compter ce qu’il récite au commis",
+          "cuisine": "Ce qui était écrit n’était pas toujours lu au commis",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Codex starts counting what it recites to the cook",
+          "kitchen": "What was written was not always read to the cook",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On le voit quand la maison compte ce qu’elle n’avait jamais compté. Dans quel ordre on récite, ce qu’on peut couper, qui a le droit d’ajouter une ligne. On l’entend aussi dans cette phrase tranquille : « c’est écrit sur sa feuille ». Personne n’a vérifié qu’on la lui avait lue ce soir-là, ni qu’il l’avait encore en main.",
+            "cuisine": "La maison a commencé à compter l’ordre des phrases, ce qu’on pouvait retirer et qui ajoutait une ligne. Dire « c’est sur sa feuille » ne prouvait pas que le commis l’avait entendu ce soir-là. La feuille pouvait être trop pleine ou ne jamais lui être arrivée.",
             "expert": "Le produit se met à déclarer un ordre de discovery, des chemins canoniques, des toggles, des watchers et des limites de contexte explicites : l’inventaire est traité comme une ressource runtime. Second signal : la présence d’une capacité au catalogue n’établit ni son chargement, ni sa visibilité, ni son application. Troisième : chaque ajout porte un coût indépendant de son utilité au moment de l’exécution."
           },
           "en": {
-            "kitchen": "You see it when a house starts counting what it never counted before. The order of the recital, what may be cut, who is allowed to add a line. You hear it too in one calm sentence, “it is on his sheet”. Nobody checked that it was read to him that evening, or that he still holds the sheet.",
+            "kitchen": "The house began counting the order of the words, what could be removed, and who added a line. Saying “it is on his sheet” did not prove the cook heard it that night. The sheet might be too full or never have reached him.",
             "expert": "The product begins declaring a discovery order, canonical paths, toggles, watchers and explicit context limits: the inventory is being treated as a runtime resource. Second signal: presence in the catalogue establishes neither loading, nor visibility, nor application. Third: every addition carries a cost independent of its usefulness at execution time."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le répertoire se récite en entier, commandé ou non",
+          "cuisine": "Un plat absent de la commande encombrait quand même la feuille",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The whole repertoire gets recited, ordered or not",
+          "kitchen": "An unordered dish still crowded the sheet",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ajouter un plat au répertoire paraît gratuit : une ligne de plus, qu’on ne servira peut-être jamais. Mais la ligne est récitée à chaque service, commandée ou non. Ce n’est pas le plat qui coûte, c’est son annonce. Et elle se paie sur la seule feuille que le commis emporte au passe.",
+            "cuisine": "Ajouter un plat semblait gratuit puisqu’il ne serait peut-être jamais commandé. Mais sa description prenait quand même une place sur la feuille à chaque service. Ce qui pesait n’était pas le plat, mais tout ce qu’il fallait dire avant de commencer.",
             "expert": "L’erreur de raisonnement consiste à imputer le coût à l’usage alors qu’il est payé à l’exposition. Une capacité jamais invoquée dépense quand même la part de contexte qu’occupe sa description. L’exhaustivité du catalogue se présente comme une qualité, alors qu’elle est une dépense d’exécution prélevée avant toute décision."
           },
           "en": {
-            "kitchen": "Adding a dish to the repertoire looks free: one more line, and perhaps nobody ever orders it. The line still gets recited at every service, ordered or not. What costs is the announcement, not the dish. And it is paid on the one sheet the cook carries to the pass.",
+            "kitchen": "Adding a dish looked free because nobody might order it. Yet its description still took room on the sheet every service. What weighed was not the dish, but everything said before work began.",
             "expert": "The reasoning error is to charge the cost to use when it is paid at exposure. A capability that is never invoked still spends the share of context its description occupies. Catalogue completeness presents itself as a quality while it is an execution expense levied before any decision is taken."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Décider ce que la feuille du commis peut porter",
+          "cuisine": "Choisir ce que le commis doit porter ce soir",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Decide what the cook’s sheet can actually carry",
+          "kitchen": "Choose what the cook must carry tonight",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Traite le répertoire comme les provisions : il a une taille, et cette taille se décide. Fixe d’abord ce que la feuille peut porter, puis choisis l’ordre et ce qui reste visible ce soir-là. Un répertoire complet n’est pas un bon répertoire ; un répertoire qui tient dans la poche du commis, oui.",
+            "cuisine": "Décidez d’abord ce que la feuille peut porter. Choisissez ensuite l’ordre et les plats utiles à ce service. Une carte complète vaut moins qu’une feuille que le commis peut vraiment lire.",
             "expert": "Traiter l’inventaire comme un catalogue runtime budgété, avec ordre, visibilité et confiance explicites. Le budget est la contrainte de premier rang ; l’ordre de discovery et la visibilité servent à l’arbitrer. Le dimensionnement du catalogue devient alors une décision d’exécution, pas une question d’exhaustivité."
           },
           "en": {
-            "kitchen": "Treat the repertoire the way you treat stock: it has a size, and the size is a decision. Set what the sheet can carry first, then choose the order and what stays visible tonight. A complete repertoire is not a good one; a repertoire that fits in the cook’s pocket is.",
+            "kitchen": "Decide first what the sheet can carry. Then choose the order and dishes useful for that service. A complete menu is worth less than a sheet the cook can really read.",
             "expert": "Treat the inventory as a budgeted runtime catalogue with explicit order, visibility and trust. The budget is the first-order constraint; discovery order and visibility are how it gets arbitrated. Catalogue sizing then becomes an execution decision rather than a question of completeness."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Tout ce qu’on récite avant se paie pendant",
+          "cuisine": "Une grande carte peut laisser le commis sans place",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Everything recited beforehand is paid for during service",
+          "kitchen": "A large menu can leave the cook with no room",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Tout ce qu’on récite au commis avant le service occupe la place dont il aura besoin pendant. Une maison se juge à ce qu’elle sait retirer de la feuille, pas à ce qu’elle sait y ajouter.",
+            "cuisine": "Tout ce qu’on met sur la feuille avant le service y prend une place pendant le service. La bonne question n’est pas ce que la maison peut ajouter. C’est ce qu’elle peut enlever pour que le commis voie encore sa commande.",
             "expert": "Un catalogue de capacités consomme du contexte avant qu’une seule capacité soit utilisée. Sa taille est donc une décision d’exécution, arbitrée comme une ressource, et non une mesure de couverture."
           },
           "en": {
-            "kitchen": "Everything recited to a cook before service takes the room he will need during it. Judge a house by what it can take off the sheet, not by what it can add to it.",
+            "kitchen": "Everything put on the sheet before service takes room during service. The question is not what the house can add. It is what it can remove so the cook can still see his order.",
             "expert": "A capability catalogue consumes context before a single capability is used. Its size is therefore an execution decision, arbitrated like a resource, not a coverage metric."
           }
         }

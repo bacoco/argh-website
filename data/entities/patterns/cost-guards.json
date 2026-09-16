@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Un plafond de dépense qui ignore les reprises",
+          "cuisine": "La même commande dépassait la limite en revenant au passe",
           "expert": "Une limite annoncée qui ne compte pas le travail réellement facturé"
         },
         "en": {
-          "kitchen": "The spending ceiling never counts the second firing",
+          "kitchen": "One order crossed the limit each time it returned",
           "expert": "An announced limit that does not count the work actually billed"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une assiette revient au passe, on la refait, elle revient encore. La caisse compte trois additions là où le carnet ne voit qu’une commande. Le plafond de la soirée tient sur le papier, la note réelle le dépasse. SWE-agent a montré cette famille d’écarts.",
+            "cuisine": "Une assiette revenait au passe, était refaite, puis revenait encore. Le carnet voyait une commande, la caisse en voyait trois. La limite restait respectée sur le papier alors que l’addition la dépassait.",
             "expert": "Les garde-fous de coût bornent dépense, reprises et effets cumulés avant qu’ils ne franchissent un seuil autorisé. Sur SWE-agent, une famille de problèmes a montré comment reprises, sélection de modèle et exceptions de budget avalées font diverger limite nominale et dépense réelle."
           },
           "en": {
-            "kitchen": "A plate comes back, you fire it again, and it comes back once more. The order book still counts one order; the till has rung three. The evening’s ceiling holds on paper while the real total walks straight past it. SWE-agent exposed that family of gaps.",
+            "kitchen": "A plate returned to the pass, was remade, then returned again. The order book saw one order while the till saw three. The limit held on paper while the bill passed it.",
             "expert": "Cost guards bound spend, retries and cumulative effects before they cross an authorized threshold. A family of cost-control defects in SWE-agent showed nominal limits and actual spend diverging through retries, model selection, and budget exceptions swallowed inside internal control."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le plafond tient au carnet, pas à la caisse",
+          "cuisine": "L’alarme ne traversait pas la cuisine",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The ceiling holds on paper, not at the till",
+          "kitchen": "The alarm did not travel through the kitchen",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le carnet annonce un plafond respecté, la caisse sort un total plus haut. Une alarme de budget part quelque part dans la maison et n’arrive jamais au passe. Changer de four fait bouger la note sans que personne l’ait décidé. Et le total grimpe avec les reprises, jamais avec les commandes.",
+            "cuisine": "La caisse donnait un total plus haut que le carnet. Une alarme pouvait sonner dans l’arrière-cuisine sans atteindre le passe. Les reprises, et même le four choisi, faisaient bouger l’addition loin de la commande du client.",
             "expert": "La limite nominale est respectée alors que la dépense agrégée la dépasse. Une condition fatale de budget est avalée par le contrôle interne et n’interrompt pas le travail. Le coût varie avec la sélection de modèle sans apparaître dans le compteur nominal, et il croît avec le nombre de reprises plutôt qu’avec le nombre de tâches logiques."
           },
           "en": {
-            "kitchen": "The book says the ceiling was respected; the till prints a bigger number. A budget alarm goes off somewhere in the house and never reaches the pass. Move a dish to a different oven and the price shifts with nobody deciding it. The total grows with remakes, not with orders.",
+            "kitchen": "The till gave a higher total than the order book. An alarm could ring in the back kitchen without reaching the pass. Remakes, and even the oven chosen, changed the bill far from the guest’s order.",
             "expert": "Nominal limits report as respected while aggregate spend exceeds them. A terminal budget condition is absorbed by internal control and fails to stop the run. Cost tracks model selection without appearing in the nominal counter, and it scales with the number of retries rather than with the number of logical tasks."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Personne ne tient l’addition entière d’un même plat",
+          "cuisine": "Chaque reprise se faisait passer pour une nouvelle commande",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Nobody holds the whole bill for one dish",
+          "kitchen": "Every remake pretended to be a new order",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le gardien de la caisse ne voit qu’un poste, pas toute la famille des reprises. Chaque nouvelle tentative se présente à lui comme une commande neuve, et une commande neuve n’a rien dépassé. Rien ne paraît hors limite parce que personne ne tient l’addition entière. L’alarme qui dirait le contraire reste coincée à l’intérieur.",
+            "cuisine": "La caisse ne suivait pas toute l’histoire d’un plat. Chaque reprise arrivait comme une commande neuve qui n’avait encore rien dépensé. Personne ne tenait l’addition entière, et l’alarme restait sans voix.",
             "expert": "L’enforcement du budget vit à une couche qui ne possède pas le graphe complet des reprises et des choix de modèle. L’opération logique et les opérations facturables divergent donc : chaque tentative est comptée comme une unité indépendante, jamais comme un descendant de la même tâche. Une exception terminale de budget avalée à cette couche supprime le seul signal d’arrêt."
           },
           "en": {
-            "kitchen": "The man on the till watches one station, not the whole run of remakes. Each attempt arrives looking like a fresh order, and a fresh order has overrun nothing. Nothing reads as over budget because nobody is holding the whole bill. The alarm that would say otherwise stays stuck inside the house.",
+            "kitchen": "The till did not follow a dish’s whole history. Each remake arrived as a fresh order that had spent nothing yet. Nobody held the complete bill, and the alarm had no voice.",
             "expert": "Budget enforcement sits at a layer that does not own the full graph of retries and model choices. Logical operation and billable operations therefore diverge: each attempt counts as an independent unit rather than as a descendant of one task. A terminal budget exception swallowed at that layer removes the only stop signal."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Facturer toutes les reprises et laisser l’alarme sortir",
+          "cuisine": "Garder toutes les reprises sur la même addition",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Bill every remake and let the alarm out",
+          "kitchen": "Keep every remake on the same bill",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Comptez la commande logique avec tout ce qu’elle a engendré : la première assiette et chacune de ses reprises. Laissez l’alarme de budget traverser la maison jusqu’au passe au lieu de l’étouffer en route. Sur SWE-agent, des réparations de cette famille sont proposées ; toutes ne sont pas établies servies.",
+            "cuisine": "Comptez la première assiette et toutes ses reprises sur la même addition. Laissez l’alarme atteindre le passe au lieu de l’étouffer derrière. Des réparations ont été proposées, mais toutes n’étaient pas établies comme mises en place.",
             "expert": "Faire suivre à la comptabilité budgétaire tout l’arbre des descendants d’une tâche logique, reprises et sous-appels compris. Propager les échecs terminaux de budget jusqu’à la couche capable d’arrêter l’exécution, sans les avaler. Sur SWE-agent, des correctifs de cette famille sont proposés ; tous ne sont pas établis livrés au cutoff observé."
           },
           "en": {
-            "kitchen": "Bill the logical order together with everything it spawned — the first plate and every remake behind it. Let a fatal budget alarm travel all the way to the pass instead of dying in a back corridor. On SWE-agent, repairs in this family are proposed; not all of them are established as delivered.",
+            "kitchen": "Count the first plate and every remake on one bill. Let the alarm reach the pass instead of dying behind it. Repairs were proposed, but not all were established as put in place.",
             "expert": "Have budget accounting follow the entire descendant tree of a logical task, retries and nested calls included. Propagate terminal budget failures up to the layer able to halt execution instead of absorbing them. On SWE-agent, fixes in this family are proposed; not all are established as delivered at the observed cutoff."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un plafond posé au mauvais endroit ne retient rien",
+          "cuisine": "Une limite utile suit le plat jusqu’au dernier essai",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A ceiling set in the wrong place stops nothing",
+          "kitchen": "A useful limit follows the dish to its last attempt",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un budget qui compte les gestes au lieu des plats ne protège rien. Fixez la limite sur la commande, reprises comprises, et laissez-la crier quand elle est atteinte.",
+            "cuisine": "Une limite ne sert que si elle tient toute l’histoire de la commande. Elle doit compter les reprises et arrêter le passe lorsqu’elle est atteinte.",
             "expert": "Les budgets de reprise doivent suivre le travail logique, pas seulement le nombre d’appels API. Un plafond qui n’interrompt pas l’exécution quand il est atteint ne borne rien."
           },
           "en": {
-            "kitchen": "A budget that counts gestures instead of dishes protects nothing. Put the limit on the order, remakes included, and let it shout the moment it is reached.",
+            "kitchen": "A limit matters only if it holds the whole story of the order. It must count remakes and stop the pass when it is reached.",
             "expert": "Retry budgets must follow logical work, not just the number of API calls. A ceiling that does not halt execution once reached bounds nothing."
           }
         }

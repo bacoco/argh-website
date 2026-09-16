@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "gstack a réutilisé le bon d’un autre poste",
+          "cuisine": "Un poste hérite du bon de contrôle d’un autre",
           "expert": "Un false-green corrigé, puis reproduit sur une autre dimension d’identité"
         },
         "en": {
-          "kitchen": "At gstack one ready slip covered two stations",
+          "kitchen": "One ready slip is reused for two stations",
           "expert": "A false green was fixed, then recurred on a different identity dimension"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez gstack, quelqu’un vérifie un poste un matin et accroche le bon : prêt pour le service. Le lendemain, un poste qui lui ressemble hérite du même bon, sans être vérifié. Même plan de travail, pas le même four ni les mêmes clés.",
+            "cuisine": "Un matin, quelqu’un vérifie un poste et accroche le bon « prêt pour le service ». Le lendemain, un poste ressemblant reçoit ce même bon sans contrôle. Le billot paraît identique, mais le four et les clés diffèrent.",
             "expert": "Un état de santé en cache déclarait l’environnement utilisable alors que le chemin réel échouait. Un premier correctif a traité l’incompatibilité observée ; une incompatibilité d’identité structurellement similaire a ensuite reproduit le même faux vert. Le second correctif a élargi la clé de cache vers l’exécutable et le contexte d’authentification réel."
           },
           "en": {
-            "kitchen": "One morning at gstack someone checks a station and hangs the slip: ready for service. The next day a station that looks the same inherits that slip without being checked. Same bench, different oven, different keys to the store.",
+            "kitchen": "One morning, someone checks a station and hangs a ready-for-service slip. The next day, a similar station inherits that slip without inspection. The bench looks alike, but the oven and pantry keys differ.",
             "expert": "Cached health state reported a usable environment while the real path failed. A first repair closed the observed mismatch, and a structurally similar identity mismatch then reproduced the same false green. The second repair widened the cache key toward the executable and the real authentication context."
           }
         }
@@ -51,62 +51,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Le bon vert a menti deux fois",
+          "cuisine": "Le poste était déclaré prêt, puis il a échoué deux fois",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Green slip, dead service, repair, dead service again",
+          "kitchen": "The station was marked ready and failed twice",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le bon accroché au poste annonce qu’on peut envoyer.",
+            "cuisine": "Une fiche verte affirme que ce poste peut recevoir les commandes.",
             "expert": "Un signal de santé déclare l’environnement utilisable."
           },
           "en": {
-            "kitchen": "The slip on the station says orders can be sent.",
+            "kitchen": "A green card says this station is ready to take orders.",
             "expert": "A health signal reported the environment as usable."
           }
         },
         {
           "fr": {
-            "cuisine": "La première vraie commande tombe et rien ne sort.",
+            "cuisine": "Mais dès la première commande réelle, le poste ne produit aucune assiette.",
             "expert": "Le chemin de commande réel échoue."
           },
           "en": {
-            "kitchen": "The first real order comes in and nothing leaves.",
+            "kitchen": "But the first real order produces no plate at all.",
             "expert": "The real command path failed."
           }
         },
         {
           "fr": {
-            "cuisine": "On corrige ce qui avait trompé le bon ce jour-là.",
+            "cuisine": "La brigade répare le défaut précis qui avait rendu la fiche trompeuse.",
             "expert": "Un premier correctif ferme l’incompatibilité telle qu’elle avait été observée."
           },
           "en": {
-            "kitchen": "What fooled the slip that day gets corrected.",
+            "kitchen": "The brigade repairs the exact fault that made the card misleading.",
             "expert": "A first fix addressed the mismatch that had been observed."
           }
         },
         {
           "fr": {
-            "cuisine": "Plus tard, le même bon vert ment de nouveau, sur un autre détail du poste.",
+            "cuisine": "Plus tard, une autre différence entre deux postes rend la même fiche verte fausse une seconde fois.",
             "expert": "Un faux vert similaire réapparaît via une autre dimension d’identité."
           },
           "en": {
-            "kitchen": "Later the same green slip lies again, over a different detail of the station.",
+            "kitchen": "Later, another difference between two stations makes the same green card wrong again.",
             "expert": "A similar false green later surfaced through a different identity dimension."
           }
         },
         {
           "fr": {
-            "cuisine": "La réparation suivante élargit le bon : il doit nommer le four et les clés, pas seulement le plan de travail.",
+            "cuisine": "La deuxième réparation exige une fiche plus précise : elle nomme le vrai four et la vraie clé de réserve.",
             "expert": "Le correctif suivant élargit l’identité runtime retenue pour l’état de santé en cache."
           },
           "en": {
-            "kitchen": "The next repair widens the slip: it must name the oven and the keys, not just the bench.",
+            "kitchen": "The second repair demands a more precise card naming the actual oven and pantry key.",
             "expert": "The follow-up repair moved cached health state onto a richer runtime identity."
           }
         }
@@ -117,22 +117,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Même plan de travail, four et clés différents",
+          "cuisine": "Deux postes se ressemblent, mais ne cuisinent pas pareil",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Same bench, but a different oven and keys",
+          "kitchen": "Two stations look alike but do not cook alike",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le bon avait été gardé au chaud et resservi à des postes qui se ressemblaient de loin. Ce qui fait réussir une commande n’est pas ce qui se voit de loin. C’est le four qui chauffe vraiment et la clé qui ouvre vraiment la réserve.",
+            "cuisine": "Une ancienne fiche verte était réutilisée dès qu’un poste ressemblait au précédent. Pourtant, la réussite dépend du four réellement allumé et de la clé réellement utilisée, pas de l’apparence du plan de travail.",
             "expert": "Un résultat de santé en cache était réutilisé entre des contextes similaires en surface. Ces contextes différaient sur l’identité qui déterminait réellement le succès de l’exécution. La clé de cache était donc plus étroite que la clé de réussite."
           },
           "en": {
-            "kitchen": "The slip had been kept warm and handed to stations that resembled each other from a distance. What makes an order succeed is not what shows from a distance. It is the oven that actually heats and the key that actually opens the store.",
+            "kitchen": "An old green card was reused whenever a station resembled the last one. Success actually depends on the oven that is lit and the key in use, not on how the bench looks.",
             "expert": "A cached health result was reused across contexts that matched at a shallow level. Those contexts differed on the identity that actually determined whether execution succeeded. The cache key was narrower than the key that governed the outcome."
           }
         }
@@ -143,22 +143,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Écrire sur le bon le four qui chauffe",
+          "cuisine": "La fiche doit nommer le poste qui fera le plat",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "The slip must name the oven that cooks",
+          "kitchen": "The card must name the station that will cook",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un bon qui ne nomme pas le four, la réserve et la clé ne prouve rien. Il doit désigner exactement ce qui va préparer la commande, et rien d’autre. Sinon il parle du poste voisin.",
+            "cuisine": "Avant de déclarer le poste prêt, la fiche doit identifier le four, la réserve et la clé qui serviront vraiment. S’il manque un de ces détails, elle peut décrire une autre cuisine.",
             "expert": "Lier l’état de santé aux mêmes dimensions d’identité que celles qui déterminent l’exécution : exécutable, endpoint, authentification, workspace ou provider selon le cas. Toute dimension absente de la clé peut redevenir un faux vert."
           },
           "en": {
-            "kitchen": "A slip that does not name the oven, the store and the key proves nothing. It must point at exactly what will cook the order, and nothing else. Otherwise it is describing the station next door.",
+            "kitchen": "Before marking a station ready, the card must identify the oven, pantry, and key that will truly be used. Leave one out and it may describe another kitchen.",
             "expert": "Bind health state to the identity dimensions that decide execution: executable, endpoint, authentication, workspace or provider, whichever apply. Any dimension left out of the key stays a candidate for the next false green."
           }
         }
@@ -169,22 +169,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "La deuxième panne de gstack a tout montré",
+          "cuisine": "La deuxième panne révèle le bon réutilisé",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The second failure taught what the first hid",
+          "kitchen": "The return of the fault revealed the missing rule",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La première fois, on a rebouché un trou. La deuxième fois, la règle est devenue visible : le bon appartient au poste qui cuisine, pas à celui qui lui ressemble. Une panne qui revient sous un autre visage vaut mieux qu’une réparation propre.",
+            "cuisine": "La première réparation traitait un seul trou. Quand la panne est revenue autrement, la vraie règle est apparue : la fiche verte appartient au poste exact qui prépare la commande.",
             "expert": "La récidive est plus instructive que le premier correctif : elle révèle l’abstraction manquante. La santé appartient à l’identité d’exécution, non au contexte déclaré autour d’elle."
           },
           "en": {
-            "kitchen": "The first time, a hole was patched. The second time the rule became visible: the slip belongs to the station that cooks, not to its lookalike. A failure that returns wearing another face is worth more than a tidy repair.",
+            "kitchen": "The first repair covered one hole. When the fault returned in another form, the real rule appeared: the green card belongs to the exact station cooking the order.",
             "expert": "The recurrence carries more information than the first fix because it exposes the missing abstraction. Health belongs to execution identity, not to the context declared around it."
           }
         }
@@ -195,22 +195,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le four qui chauffe, pas celui d’à côté",
+          "cuisine": "Une fiche verte ne se prête pas au poste voisin",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A slip cannot be borrowed by a neighbour",
+          "kitchen": "A green card cannot be lent to the next station",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un bon vert ne vaut que pour le poste sur lequel on l’a écrit. Dès qu’on le recopie ailleurs parce que ça se ressemble, il ne parle plus du service qui commence. Vérifie le four qui va chauffer, pas son portrait.",
+            "cuisine": "La fiche « prêt » ne vaut que pour le four, la réserve et les clés qu’elle a vraiment vérifiés. La recopier sur un poste ressemblant transforme le contrôle en devinette.",
             "expert": "Un health check doit être indexé sur ce qui s’exécute réellement. Toute dimension d’identité exclue de cette clé reste une source possible de faux vert."
           },
           "en": {
-            "kitchen": "A green slip is only good for the station it was written on. Copy it elsewhere because things look alike and it stops describing the service about to start. Check the oven that will heat, not its portrait.",
+            "kitchen": "A ready card is valid only for the oven, pantry, and keys it truly checked. Copying it to a similar station turns the check into a guess.",
             "expert": "A health check must be keyed to whatever actually runs. Every identity dimension excluded from that key stays a live source of false greens."
           }
         }

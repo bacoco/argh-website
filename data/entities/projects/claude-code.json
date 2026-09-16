@@ -75,22 +75,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Claude Code",
+          "cuisine": "Le silence ne donne pas l’accord",
           "expert": "Claude Code"
         },
         "en": {
-          "kitchen": "Claude Code",
+          "kitchen": "Silence does not grant permission",
           "expert": "Claude Code"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Claude Code est une grande maison, avec beaucoup de consignes punaisées au mur. Qui a le droit de quoi, qui doit demander avant, quelles fiches sortent pour quel plat. Dix-neuf histoires y ont été relevées, et presque toutes disent la même chose. Ce qui est écrit au mur n’est pas ce qui tient au piano.",
+            "cuisine": "La cuisine avait accumulé des règles, des demandes d’accord et des interdictions. Pourtant, une règle écrite ne garantissait pas qu’elle tenait au passe. Dans un cas, l’absence de réponse d’un client est devenue un oui.",
             "expert": "Claude Code concentre le plus grand nombre de lignées observées du corpus. Les surfaces concernées couvrent les plugins, les hooks, les skills, les sous-agents, MCP, la configuration et les permissions. Le motif dominant est une divergence répétée entre la présence d’un fichier de source ou de configuration et l’état runtime réellement chargé ou exécutable."
           },
           "en": {
-            "kitchen": "Claude Code is a big house, with a lot of notes pinned to the wall. Who may do what, who must ask first, which cards come out for which dish. Nineteen stories were logged here, and nearly all say the same thing. What is written on the wall is not what holds at the stoves.",
+            "kitchen": "The kitchen had accumulated rules, requests for approval, and prohibitions. Yet a written rule did not guarantee it held at the pass. In one case, a customer’s missing answer became a yes.",
             "expert": "Claude Code carries the largest set of observed lineages in the corpus. The surfaces involved span plugins, hooks, skills, subagents, MCP, settings and permissions. The dominant pattern is a repeated divergence between the presence of a source or config file and the runtime state actually loaded or executable."
           }
         }
@@ -101,72 +101,72 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Les consignes de Claude Code bloquent, puis cèdent",
+          "cuisine": "Les pancartes deviennent des portes, puis cèdent",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Claude Code’s notes start blocking, then give way",
+          "kitchen": "Signs become doors, then give way",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La maison se dote de tout un attirail autour du service. Des fiches, des consignes, des commis à qui déléguer, des prises pour brancher l’extérieur, des droits écrits.",
+            "cuisine": "La maison a ajouté des fiches, des consignes, des commis, des fournisseurs et des droits d’accès.",
             "expert": "Un plan de contrôle explicite s’accumule autour du modèle : plugins, hooks, skills, sous-agents, MCP, configuration, permissions."
           },
           "en": {
-            "kitchen": "The house builds a whole apparatus around service. Cards, notes, commis to hand work to, plugs for the outside, written rights.",
+            "kitchen": "The house added cards, instructions, extra cooks, suppliers, and access rights.",
             "expert": "An explicit control plane accumulates around the model: plugins, hooks, skills, subagents, MCP, settings, permissions."
           }
         },
         {
           "fr": {
-            "cuisine": "Les consignes changent de nature. Elles ne servent plus à prévenir : elles bloquent, elles imposent, elles rappellent en plein service.",
+            "cuisine": "Certaines consignes ont cessé d’être de simples rappels. Elles étaient censées arrêter un geste ou demander un accord.",
             "expert": "Les hooks passent de simples rappels de cycle de vie et de télémétrie à des points d’enforcement : blocage de politique, injection de contexte, contrôle de reprise."
           },
           "en": {
-            "kitchen": "The notes change nature. They stop being warnings: they block, they impose, they speak up in the middle of service.",
+            "kitchen": "Some instructions stopped being reminders. They were meant to stop a move or ask for approval.",
             "expert": "Hooks move from lifecycle callbacks and telemetry into enforcement points: policy blocking, context injection, resume control."
           }
         },
         {
           "fr": {
-            "cuisine": "Les fiches recettes suivent le même chemin. D’un bout de papier lu au passage, elles deviennent un vrai classeur, avec des règles sur qui peut l’ouvrir.",
+            "cuisine": "Les fiches elles-mêmes sont devenues nombreuses, avec des règles sur celles que chaque commis reçoit.",
             "expert": "Les skills quittent le statut de fichiers de prompt pour devenir des composants runtime découvrables, soumis à permissions, et partagés entre harnais."
           },
           "en": {
-            "kitchen": "The recipe cards follow the same road. From a scrap read in passing, they become a real binder, with rules about who may open it.",
+            "kitchen": "The cards themselves became numerous, with rules about which ones each cook receives.",
             "expert": "Skills leave prompt-file status and become discoverable, permissioned runtime components shared across harnesses."
           }
         },
         {
           "fr": {
-            "cuisine": "Puis les contrôles commencent à céder. Une fiche posée au bon endroit n’était pas lue. Une question posée à un humain se refermait toute seule au bout d’un moment.",
+            "cuisine": "Puis les portes ont cédé. Une fiche posée au bon endroit n’était pas toujours lue. Une question à un client se refermait après un délai. Une grosse commande pouvait cacher son geste le plus risqué.",
             "expert": "Les contrôles échouent par des voies que les surfaces n’avaient pas prévues : présence de fichier sans activation runtime, expiration d’une question humaine, prompt de permission mettant en avant la moitié anodine d’une commande composée."
           },
           "en": {
-            "kitchen": "Then the controls begin to give. A card put in the right place was not being read. A question put to a person closed itself after a while.",
+            "kitchen": "Then the doors gave way. A card in the right place was not always read. A question for a customer could close after a delay. A large order could hide its riskiest move.",
             "expert": "Controls fail along paths the surfaces did not anticipate: file presence without runtime activation, a human question timing out, a permission prompt foregrounding the harmless half of a compound command."
           }
         },
         {
           "fr": {
-            "cuisine": "À partir de là, une question se pose pour de bon. Quand un contrôle tombe, est-ce qu’on laisse passer ou est-ce qu’on arrête ? Et c’est souvent la deuxième réparation qui montre où la porte devait être.",
+            "cuisine": "Il a alors fallu choisir : lorsqu’une porte ne répond plus, faut-il laisser passer ou arrêter le service ? Les réparations ont souvent montré que la porte était trop loin du geste à retenir.",
             "expert": "Le comportement fail-open devient une variable de conception explicite, et la seconde réparation révèle de façon répétée la véritable frontière d’abstraction."
           },
           "en": {
-            "kitchen": "From there a question gets asked in earnest. When a control falls, do you let it through or stop? And it is usually the second repair that shows where the door belonged.",
+            "kitchen": "The kitchen then had to choose: when a door stops answering, should service continue or stop? Repairs often showed the door was too far from the move it needed to hold back.",
             "expert": "Fail-open behavior becomes an explicit design variable, and the second fix repeatedly reveals the real abstraction boundary."
           }
         },
         {
           "fr": {
-            "cuisine": "En parallèle, on demande une carte commune, lisible par toutes les maisons. Une demande est marquée réglée, une autre reste ouverte, et personne n’a vu la chose fonctionner.",
+            "cuisine": "On a aussi demandé une fiche que plusieurs cuisines pourraient lire. Un dossier la dit terminée, un autre reste ouvert, et personne ne l’a vue fonctionner directement.",
             "expert": "Une demande d’interopérabilité native des fichiers d’instructions est fermée comme complétée, tandis qu’une autre reste ouverte et qu’une recherche de code actuelle n’a pas fait apparaître ce support."
           },
           "en": {
-            "kitchen": "Alongside that, a shared menu card readable by every house is asked for. One request is marked settled, another stays open, and nobody has seen the thing work.",
+            "kitchen": "A card readable by several kitchens was also requested. One record calls it finished, another stays open, and nobody has seen it work directly.",
             "expert": "One request for native instruction-file interoperability is closed as completed, while another stays open and a current code search did not surface that support."
           }
         }
@@ -177,22 +177,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La fiche était là, personne ne l’avait lue",
+          "cuisine": "La porte était dessinée, mais personne ne la gardait",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The card was there, nobody had read it",
+          "kitchen": "The door was drawn, but nobody guarded it",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une consigne punaisée prouve qu’on l’a écrite, pas qu’elle tient. Une fiche posée au bon endroit prouve qu’elle est là, pas qu’elle a été lue. Et une question laissée sans réponse assez longtemps finissait par se répondre toute seule, en faveur du commis.",
+            "cuisine": "La brigade préparait ses fiches avant d’avoir tout trouvé. Une fiche présente pouvait ainsi manquer au passe. De son côté, l’horloge transformait le silence d’un client en accord. Dans les deux cas, une porte semblait là sans faire son travail.",
             "expert": "Le mécanisme commun est la divergence entre une surface déclarative et l’état réellement chargé. Un service de langage fourni par plugin s’initialisait avant la fin de la discovery, laissant zéro serveur configuré malgré des fichiers valides sur disque ; des skills imbriqués n’étaient pas découverts, ce qui fait de la règle de discovery elle-même une interface versionnée. Sur la porte humaine, la sémantique de timeout autorisait silencieusement l’agent à choisir à la place de l’utilisateur : une porte explicite défaite par sa propre gestion du délai."
           },
           "en": {
-            "kitchen": "A pinned note proves it was written, not that it holds. A card in the right place proves it is there, not that it was read. And a question left unanswered long enough would answer itself, in the commis's favour.",
+            "kitchen": "The brigade prepared its cards before finding everything. A present card could therefore be absent from the pass. Meanwhile the clock turned a customer’s silence into approval. In both cases, a door looked present without doing its job.",
             "expert": "The shared mechanism is divergence between a declarative surface and the state actually loaded. A plugin-provided language service initialized before discovery had finished, leaving zero configured servers despite valid files on disk; nested skills went undiscovered, which makes the discovery rule itself a versioned interface. On the human gate, timeout semantics silently authorized the agent to decide for the user: an explicit gate undone by its own deadline handling."
           }
         }
@@ -203,22 +203,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Attendre la réponse, même si le service presse",
+          "cuisine": "Garder la porte fermée jusqu’à la réponse",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Wait for the answer, however busy service gets",
+          "kitchen": "Keep the door shut until there is an answer",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une question posée à un humain reste ouverte jusqu’à ce qu’il réponde. Le silence n’est pas un oui, sauf si le patron l’a écrit noir sur blanc. Et une demande marquée réglée ne prouve rien tant que personne n’a vu la chose marcher en salle.",
+            "cuisine": "Une question reste ouverte jusqu’à la réponse du client. Le silence ne vaut oui que si le patron l’a choisi clairement. Après l’ouverture, vérifie les portes attendues. Et ne dis pas une demande réglée avant d’avoir vu son effet en salle.",
             "expert": "Les portes d’approbation et de question humaines doivent échouer fermées par défaut ; un timeout ne doit jamais substituer silencieusement le jugement de l’agent, sauf politique explicitement choisie par l’utilisateur. Ne pas interpréter une demande de fonctionnalité fermée comme complétée en implémentation native quand la preuve n’établit qu’un contournement, un chemin documentaire ou une couche de compatibilité."
           },
           "en": {
-            "kitchen": "A question put to a person stays open until that person answers. Silence is not a yes, unless the owner wrote it down as one. And a request marked settled proves nothing until somebody has seen the thing work in the room.",
+            "kitchen": "A question stays open until the customer answers. Silence is yes only if the owner clearly chose it. After opening, check the expected doors. Do not call a request settled until its effect is seen in the dining room.",
             "expert": "Human approval and question gates should fail closed by default; a timeout must never silently substitute agent judgment, absent a policy the user explicitly chose. Do not read a feature request closed as completed as native implementation when the evidence only establishes a workaround, a documentation path or a compatibility shim."
           }
         }
@@ -229,22 +229,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Claude Code dit corrigé, sans date ni preuve",
+          "cuisine": "Des promesses de porte encore sans date",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Claude Code says fixed, with no date attached",
+          "kitchen": "Promises of a door, still without a date",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Sur la question qui se refermait seule, la maison dit que ce n’est plus le réglage par défaut et qu’on peut le choisir. Personne n’a encore rattaché cette parole à une date précise. Une autre maison a montré la même forme, et là-bas c’est toujours ouvert. Pour la carte commune, rien n’est réglé : ni vu, ni prouvé.",
+            "cuisine": "La maison dit que l’accord automatique n’est plus habituel et peut être choisi. Cette parole n’est pas reliée à une date précise. Le même défaut reste ouvert ailleurs. La fiche commune demeure incertaine : elle n’a été ni vue ni prouvée.",
             "expert": "Sur la porte humaine, un mainteneur déclare le comportement désormais désactivé par défaut et configurable ; la corrélation exacte avec une version publiée reste à établir, et le signalement équivalent dans un second système d’agents reste ouvert à la date de coupure. Sur l’interopérabilité des fichiers d’instructions, le statut d’implémentation native est à traiter comme non résolu et non comme corrigé : une demande fermée complétée, une autre ouverte, et aucune trace du support dans une recherche de code actuelle. Ces deux lignées reposent sur une preuve de niveau moyen."
           },
           "en": {
-            "kitchen": "On the question that closed itself, the house says that is no longer the default and can be chosen. Nobody has tied that word to a precise date yet. Another house showed the same shape, and there it is still open. On the shared card, nothing is settled: not seen, not proven.",
+            "kitchen": "The house says automatic approval is no longer usual and can be chosen. That statement has no precise date attached. The same fault stays open elsewhere. The shared card remains uncertain: it has neither been seen nor proven.",
             "expert": "On the human gate, a maintainer states the behavior is now off by default and configurable; the exact correlation with a published release is still to be established, and the equivalent report in a second agent system remains open at cutoff. On instruction-file interoperability, native implementation status should be treated as unresolved rather than fixed: one request closed completed, another open, and no trace of support in a current code search. Both lineages rest on medium-strength evidence."
           }
         }
@@ -255,22 +255,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une porte se juge au plat retenu",
+          "cuisine": "Une porte vaut par le plat qu’elle retient",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Judge a door by the plate it stopped",
+          "kitchen": "A door is worth the dish it holds back",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une consigne au mur ne cuisine pas. Tant qu’on n’a pas vu un contrôle arrêter quelque chose, on n’a qu’une intention écrite. Et le silence d’un client qu’on n’a pas réussi à joindre n’a jamais voulu dire oui.",
+            "cuisine": "Une pancarte ne suffit pas. Il faut voir la porte retenir le geste qu’elle vise. Et le silence d’un client ne doit jamais devenir un accord par défaut.",
             "expert": "La présence d’un fichier ne prouve pas l’activation runtime : la surface déclarative et l’état chargé sont deux choses à vérifier séparément. Le silence n’est pas une approbation ; l’autorité humaine doit survivre à la gestion du timeout."
           },
           "en": {
-            "kitchen": "A note on the wall does not cook. Until you have seen a control stop something, all you have is a written intention. And the silence of a customer you could not reach has never meant yes.",
+            "kitchen": "A sign is not enough. You need to see the door hold back the move it addresses. A customer’s silence must never become permission by default.",
             "expert": "File presence does not prove runtime activation: the declarative surface and the loaded state are two separate things to verify. Silence is not approval; human authority has to survive timeout handling."
           }
         }

@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La consigne de gstack commandait le service suivant",
+          "cuisine": "La consigne oubliée commandait le service suivant",
           "expert": "Un verrou de débogage prévu pour une session a survécu en état global à la machine"
         },
         "en": {
-          "kitchen": "gstack left a repair note pinned after closing",
+          "kitchen": "A repair note stays pinned after closing",
           "expert": "A debugging lock scoped to one session survived as machine-wide state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez gstack, une consigne de dépannage restait punaisée au mur une fois le service terminé. Elle disait « la réserve du fond » sans préciser dans quelle maison. Le lendemain, dans une autre cuisine, les mêmes mots désignaient une autre réserve et bridaient une brigade qui n’avait rien demandé.",
+            "cuisine": "Une consigne de dépannage reste punaisée après la fin du service. Elle dit « la réserve du fond » sans nommer la maison. Le lendemain, dans une autre cuisine, ces mots désignent une autre réserve. Ils limitent une brigade qui n’avait rien demandé.",
             "expert": "gstack conservait dans un état global à la machine la frontière d’édition d’un mode de débogage, exprimée en chemin relatif et jamais effacée. Résolue plus tard depuis un autre répertoire de travail, cette même valeur désignait une autre zone et contraignait des sessions sans lien avec celle qui l’avait posée."
           },
           "en": {
-            "kitchen": "gstack pinned a troubleshooting note at the station and nobody took it down at closing time. The note named a shelf, but not the room it belonged to. On the next service, in another room, the same note fenced in a crew that had never asked for it.",
+            "kitchen": "A repair note remains pinned after closing time. It names a back shelf but not the kitchen it belongs to. During the next service, those words point elsewhere. They restrict a brigade that never asked for the note.",
             "expert": "gstack kept a debugging mode’s edit boundary in machine-global state, expressed as a relative path and never cleared. Resolved later from a different working directory, that single stored value designated a different area and constrained sessions unrelated to the one that set it."
           }
         }
@@ -51,52 +51,52 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Le papier passe d’une cuisine à l’autre",
+          "cuisine": "Le papier d’un service commande la cuisine suivante",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "gstack’s note reached the next kitchen",
+          "kitchen": "The forgotten note reaches the next kitchen",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Pendant un dépannage, quelqu’un note au mur la seule zone où il a le droit de toucher, désignée par sa place dans la pièce.",
+            "cuisine": "Pendant un dépannage, quelqu’un note au mur la seule zone qu’il peut toucher, désignée par sa place dans la pièce.",
             "expert": "Un mode de débogage écrit sa frontière d’édition autorisée en chemin relatif, dans un état persistant partagé par la machine."
           },
           "en": {
-            "kitchen": "During a repair, someone chalks up the one area they are allowed to touch, named by where it sits in the room.",
+            "kitchen": "During a repair, someone marks the one area they may touch, named by where it sits in the room.",
             "expert": "A debugging mode writes its allowed edit boundary as a relative path into state persisted and shared machine-wide."
           }
         },
         {
           "fr": {
-            "cuisine": "Le garde relit cette consigne depuis la pièce où il se trouve au moment du contrôle, jamais depuis celle où elle fut écrite.",
+            "cuisine": "Le garde relit cette consigne depuis la pièce où il se trouve au moment du contrôle, et non celle où elle a été écrite.",
             "expert": "Le hook chargé de l’appliquer résout ensuite cette valeur contre le répertoire de travail courant de chaque invocation."
           },
           "en": {
-            "kitchen": "The guard reads that note from whichever room he happens to be standing in, never from the room where it was written.",
+            "kitchen": "The guard reads that note from whichever room they stand in at the time, not from the room where it was written.",
             "expert": "The hook that enforces it then resolves that value against the current working directory of each invocation."
           }
         },
         {
           "fr": {
-            "cuisine": "Une autre maison hérite donc de la vieille consigne, qui interdit désormais une tout autre réserve.",
+            "cuisine": "Une autre maison hérite donc de la vieille consigne, qui ferme désormais une tout autre réserve.",
             "expert": "Un dépôt ou un worktree ultérieur hérite ainsi d’une frontière effective différente à partir du même état périmé."
           },
           "en": {
-            "kitchen": "Another house therefore inherits the old note, which now fences off an entirely different pantry.",
+            "kitchen": "Another house therefore inherits the old note, which now closes off an entirely different pantry.",
             "expert": "A later repository or worktree therefore inherits a different effective boundary from the same stale state."
           }
         },
         {
           "fr": {
-            "cuisine": "La panne a été refaite à volonté : la consigne survit bien au service qui l’avait écrite. À la date d’observation, aucune réparation livrée n’était établie.",
+            "cuisine": "La panne a été rejouée à volonté : la consigne survit bien au service qui l’avait écrite. À la date observée, aucune réparation servie n’était établie.",
             "expert": "Le rapport reproduit l’effet inter-session et établit que le verrou survit à la session qui l’a créé. Aucun correctif fusionné ni livré n’était établi à la date d’observation."
           },
           "en": {
-            "kitchen": "The failure was reproduced at will: the note does outlive the service that wrote it. At the observed cutoff, no delivered repair was established.",
+            "kitchen": "The failure was replayed at will: the note does outlive the service that wrote it. At the observed cutoff, no served repair was established.",
             "expert": "The report reproduces the cross-session effect and establishes that the lock outlives the session that created it. No merged or released fix was established at the observed cutoff."
           }
         }
@@ -107,22 +107,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un papier sans adresse et sans heure",
+          "cuisine": "Un papier sans adresse complète ni heure de fin",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The note said where, but not which room",
+          "kitchen": "The note named a corner, not its room or end time",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "À cette consigne, il manquait deux choses. L’adresse complète du coin qu’elle protégeait, et l’heure à laquelle elle cessait de valoir. Sans elles, un bout de papier vieux d’un jour commande encore un service qu’il n’a jamais vu.",
+            "cuisine": "Deux choses manquaient à cette consigne : l’adresse complète du coin protégé et l’heure où elle cessait de valoir. Sans elles, un papier vieux d’un jour commande encore un service qu’il n’a jamais vu.",
             "expert": "Deux frontières distinctes ont été traitées comme une seule : l’identité du chemin et la durée de vie du contrôle. Un chemin relatif ne possède pas d’identité stable hors du répertoire de base contre lequel il a été écrit. Et une persistance globale à la machine donnait à une décision censée mourir avec sa session une durée de vie supérieure à son autorité."
           },
           "en": {
-            "kitchen": "Two things were missing from that note. The full address of the corner it protected, and the hour its authority ran out. Without them, yesterday’s scrap of paper still gives orders to a service it never saw.",
+            "kitchen": "Two things were missing from that note: the full address of its protected corner and the hour its authority ended. Without them, yesterday’s paper still gives orders to a service it never saw.",
             "expert": "Two distinct boundaries were treated as one: path identity and control lifetime. A relative path holds no stable identity away from the base directory it was written against. Machine-global persistence then granted a decision meant to die with its session a lifetime longer than its authority."
           }
         }
@@ -133,22 +133,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Signer la consigne et la décrocher soi-même",
+          "cuisine": "Signer la consigne et la retirer soi-même",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Only the writer takes the note down",
+          "kitchen": "Only its writer removes the note",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Sur la consigne, écris l’adresse entière du coin visé, et signe-la de ta main. Accroche-la au tableau de ton service, pas au tableau commun de la maison. À la fermeture, ne décroche que ce papier-là : si un autre, plus récent, a pris sa place, il ne t’appartient pas.",
+            "cuisine": "Sur la consigne, écris l’adresse entière du coin visé et signe-la. Accroche-la au tableau de ton service, non au tableau commun. À la fermeture, ne retire que ce papier : si un autre, plus récent, a pris sa place, il ne t’appartient pas.",
             "expert": "Persister une frontière porteuse d’autorité sous une identité absolue stable et avec une propriété explicite. La cantonner par session ou par workspace, enregistrer son créateur, et la libérer par comparaison puis suppression, afin qu’un nettoyage ne puisse pas retirer une frontière plus récente ou appartenant à l’utilisateur."
           },
           "en": {
-            "kitchen": "Give the note a full address, not a corner named from wherever you happen to stand. Sign it, and hang it on your own service board rather than the house board everyone shares. At closing, take down only the slip you wrote; a newer one in its place belongs to somebody else.",
+            "kitchen": "Give the note a full address, not a corner named from wherever you stand. Sign it and hang it on your own service board rather than the shared house board. At closing, remove only that slip; a newer one in its place belongs to somebody else.",
             "expert": "Persist an authority-bearing boundary under a stable absolute identity with explicit ownership. Namespace it per session or workspace, record its creator, and release it with compare-and-delete semantics, so cleanup cannot remove a newer boundary or one the user owns."
           }
         }
@@ -159,22 +159,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "La panne de gstack se refait toujours",
+          "cuisine": "La panne peut toujours être reproduite",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "No repair established at gstack yet",
+          "kitchen": "No repair has been established yet",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez gstack, la panne est décrite et se refait quand on veut. Rien ici ne dit qu’une réparation a été adoptée, livrée, installée, ni constatée dans une vraie cuisine.",
+            "cuisine": "La panne est décrite et peut être reproduite à volonté. Rien ne montre qu’une réparation a été acceptée, distribuée ou installée. Personne ne l’a encore constatée fonctionner pendant un vrai service.",
             "expert": "Le rapport est ouvert et reproductible. Aucun correctif fusionné, aucune version livrée, aucune correction installée, aucune récupération observée sur le terrain n’est établie."
           },
           "en": {
-            "kitchen": "At gstack the failure is written down and repeats on demand. Nothing here says a repair was accepted, delivered, installed, or seen working in a real kitchen.",
+            "kitchen": "The failure is written down and repeats on demand. Nothing shows that a repair was accepted, distributed, or installed. Nobody has seen one working during a real service.",
             "expert": "The report is open and reproducible. No merged fix, no released build, no installed correction, and no field-observed recovery is established."
           }
         }
@@ -185,22 +185,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une consigne provisoire a besoin d’une fin",
+          "cuisine": "Une consigne provisoire doit annoncer sa fin",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Nothing temporary should outlive its service",
+          "kitchen": "A temporary note must announce its end",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une consigne provisoire doit dire où elle s’applique, exactement, et le moment où elle cesse de valoir.",
+            "cuisine": "Une consigne provisoire doit dire précisément où elle s’applique et quand elle cesse de valoir.",
             "expert": "Un état porteur d’autorité exige à la fois une identité stable et une durée de vie explicite."
           },
           "en": {
-            "kitchen": "A temporary note must say exactly where it applies, and the moment it stops counting.",
+            "kitchen": "A temporary note must say precisely where it applies and when it stops counting.",
             "expert": "Authority-bearing state requires both a stable identity and an explicitly bounded lifetime."
           }
         }

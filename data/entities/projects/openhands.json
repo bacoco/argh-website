@@ -38,22 +38,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "OpenHands",
+          "cuisine": "Un passe lisible, une réserve sans murs",
           "expert": "OpenHands"
         },
         "en": {
-          "kitchen": "OpenHands",
+          "kitchen": "A readable pass, a pantry without walls",
           "expert": "OpenHands"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "OpenHands montre son tableau de contrôle : on y voit ce qui a été retenu et ce qui est passé. Mais la réserve qu’elle appelle la sienne, c’est tout l’immeuble, et quand on crie l’arrêt, un feu du fond continue. Sept dossiers sont rattachés à la maison.",
+            "cuisine": "La maison montre son tableau de contrôle : on y voit ce qui a été retenu et ce qui est passé. Mais sa prétendue réserve est tout l’immeuble, et quand on crie l’arrêt, un feu du fond continue. Sept dossiers sont rattachés à cette maison.",
             "expert": "OpenHands expose un plan de contrôle lisible : les exécutions de hooks apparaissent avec des résultats success et blocked sur ses surfaces runtime et UI/API. Un pilote mené sur son serveur d’agents en 1.46.0 établit par ailleurs deux constats opposés à cette lisibilité : l’espace de travail déclaré n’est pas une frontière, et l’annulation répond success sans terminer tout le travail. Sept dossiers publics sont rattachés."
           },
           "en": {
-            "kitchen": "OpenHands puts its checks where you can see them: what was held back and what went through, both visible. Yet the pantry it calls its own is the whole building, and when the call to stop goes out, one back burner keeps going. Seven dossiers hang on this house.",
+            "kitchen": "The house puts its checks where you can see them: what was held back and what went through. Yet its supposed pantry is the whole building, and when the call to stop goes out, one back burner keeps going. Seven case files are tied to this house.",
             "expert": "OpenHands exposes a readable control plane: hook executions surface with success and blocked outcomes through its runtime and UI/API. A pilot run against its agent server at 1.46.0 records two findings that cut against that readability: the declared workspace is not a boundary, and cancellation reports success without terminating all of the work. Seven public dossiers are attached."
           }
         }
@@ -64,62 +64,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "OpenHands finit par poser une porte qui retient",
+          "cuisine": "Une porte qui retient finit par être posée",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "OpenHands finally fits a door that holds",
+          "kitchen": "A door that holds is finally fitted",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une demande de contrôle a d’abord été ouverte dans la maison principale, puis refermée sans suite.",
+            "cuisine": "Une demande pour garder le passe a d’abord été ouverte dans la grande maison, puis rangée sans suite.",
             "expert": "Une demande de hooks dans le dépôt applicatif se referme en état périmé, sans que la fonction y soit livrée."
           },
           "en": {
-            "kitchen": "A request for checks was first raised in the main house, then closed with nothing done there.",
+            "kitchen": "A request to guard the pass was first raised in the main house, then shelved with nothing done there.",
             "expert": "A hooks request in the application repository closed stale, without the feature shipping there."
           }
         },
         {
           "fr": {
-            "cuisine": "Le travail a repris ailleurs, dans l’atelier voisin de la même famille. Là, le contrôle a été posé pour de bon : il peut retenir un plat. Deux morceaux sont annoncés inachevés.",
+            "cuisine": "Le travail a repris dans l’atelier voisin de la même famille. Là, le garde a été posé pour de bon : il peut retenir un plat. Deux morceaux sont annoncés inachevés.",
             "expert": "L’implémentation repart dans le SDK d’agent logiciel, où un moteur de hooks à sémantique bloquante est fusionné. L’arrêt et les conversations distantes y sont explicitement incomplets."
           },
           "en": {
-            "kitchen": "The work started again next door, in the same family’s workshop, and there the check was fitted for real: it can hold a plate back. Two pieces are declared unfinished.",
+            "kitchen": "The work started again next door, in the same family’s workshop. There the guard was fitted for real: it can hold a plate back. Two parts are declared unfinished.",
             "expert": "Implementation resumed in the software-agent SDK, where a hook engine with blocking semantics merged. Stop support and remote conversations were explicitly incomplete in that change."
           }
         },
         {
           "fr": {
-            "cuisine": "Depuis la salle comme depuis le passe, on voit ce que le contrôle a laissé partir et ce qu’il a retenu.",
+            "cuisine": "Depuis la salle comme depuis le passe, on voit ce que le garde a laissé partir et ce qu’il a retenu.",
             "expert": "Les événements d’exécution de hooks sont exposés avec les résultats success et blocked sur les surfaces runtime et UI/API."
           },
           "en": {
-            "kitchen": "From the room and from the pass alike, you can see what the check let out and what it held back.",
+            "kitchen": "From the room and from the pass alike, you can see what the guard let out and what it held back.",
             "expert": "Hook execution events became visible with success and blocked outcomes across the runtime and UI/API surfaces."
           }
         },
         {
           "fr": {
-            "cuisine": "Si le contrôleur n’est pas là à l’ouverture, le service démarre quand même. C’est écrit, et c’est voulu.",
+            "cuisine": "Si le garde n’est pas là à l’ouverture, le service démarre quand même. C’est écrit, et c’est voulu.",
             "expert": "La sémantique de démarrage est fusionnée en fail-open : lorsque les hooks ne peuvent pas être chargés, l’exécution continue."
           },
           "en": {
-            "kitchen": "If the checker is not there at opening, service starts anyway. That is written down, and it is on purpose.",
+            "kitchen": "If the guard is not there at opening, service starts anyway. That is written down, and it is on purpose.",
             "expert": "Startup semantics merged fail-open: when hooks cannot be loaded, execution continues."
           }
         },
         {
           "fr": {
-            "cuisine": "Un soir d’essai, la maison a fait exactement le travail demandé, sans se tromper. C’est le reste du relevé qui pose question.",
+            "cuisine": "Un soir d’essai, la maison a fait exactement le travail demandé, sans se tromper. Mais une porte de service n’était rattachée à aucune table, et l’arrêt a laissé quelqu’un au travail. C’est le reste du relevé qui pose question.",
             "expert": "Un pilote exerce ensuite le serveur d’agents en 1.46.0 sur la boucle locale. Le moteur exécute correctement la tâche demandée, mais la route bash n’appartient à aucune conversation et l’annulation laisse un descendant vivant."
           },
           "en": {
-            "kitchen": "On the trial night the house did the exact job it was asked for, correctly. It is the rest of the write-up that raises questions.",
+            "kitchen": "On the trial night the house did the exact job it was asked for, correctly. But a service door belonged to no table, and the stop left someone working. It is the rest of the record that raises questions.",
             "expert": "A pilot then exercised the agent server at 1.46.0 on loopback. The engine completed the requested task correctly, while the bash route belonged to no conversation and cancellation left a descendant alive."
           }
         }
@@ -130,22 +130,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le commis va où il veut dans l’immeuble",
+          "cuisine": "La réserve annoncée ouvre sur tout l’immeuble",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The commis goes anywhere in the building",
+          "kitchen": "The stated pantry opens onto the whole building",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La maison parle d’une réserve à elle. En vrai, la porte donne sur tout l’immeuble : on a demandé un carnet rangé chez le voisin, il est arrivé sans un mot. Demander à travailler porte fermée, c’est un refus sec, sans explication, trois fois sur trois. Leur propre notice le dit : poser les murs n’est pas leur métier.",
+            "cuisine": "La maison parle d’une réserve à elle. En vrai, la porte donne sur tout l’immeuble : un carnet rangé chez le voisin arrive sans question. Une porte de service, sans numéro de table ni accord du maître d’hôtel, a lu ce carnet. Elle a visité les réserves de l’immeuble et sonné dehors, toujours comme si le service allait bien. Demander une réserve fermée reçoit trois fois le même refus, sur un ticket vide. La carte ne promet pas de murs : on ne peut ni savoir s’ils existent ni les demander. Leur propre notice le dit, construire les murs n’est pas leur métier.",
             "expert": "L’espace de travail déclaré n’est pas une frontière mais un répertoire courant de l’hôte : la route de téléchargement a rendu 200 et le contenu d’un fichier situé hors de cet espace, et la route bash — sans paramètre d’espace de travail, hors de toute conversation, sans consultation d’une politique de confirmation — a lu ce même fichier, listé des répertoires système et joint le réseau public, chaque fois avec un code de sortie 0. Déclarer un espace de travail distant a été refusé trois fois sur trois par le même 422 au message vide, et aucune des capacités annoncées par le serveur ne mentionne le bac à sable : l’appelant ne peut ni savoir s’il est confiné, ni demander à l’être. La documentation d’architecture du produit range elle-même la fourniture du bac à sable parmi ce dont il n’est pas responsable."
           },
           "en": {
-            "kitchen": "The house speaks of its own pantry. Ask for a ledger kept two floors up and it comes back, no questions asked. Ask to work with the door shut and the answer is a flat refusal with nothing written on it, three times out of three. Their own handbook says it: putting up the walls is not their trade.",
+            "kitchen": "The house speaks of its own pantry. In truth, the door opens onto the whole building: a ledger kept next door arrives without a question. A service door, with no table number or maître d’s approval, also read that ledger. It toured the building’s stores and rang outside, always as though service were normal. Asking for a locked pantry gets the same refusal three times, on a blank slip. The menu promises no walls: you can neither tell whether they exist nor ask for them. Their own handbook says building walls is not their trade.",
             "expert": "The declared workspace is a host working directory rather than a boundary: the download route answered 200 with the contents of a file outside that workspace, and the bash route — which takes no workspace argument, belongs to no conversation and consults no confirmation policy — read the same file, listed system directories and reached the public network, each time with exit code 0. Requesting a remote workspace was refused three times out of three by the same empty-message 422, and none of the server’s advertised capabilities mentions sandboxing, so a caller can neither learn whether it is confined nor ask to be. The product’s own architecture documentation lists providing the sandbox or workspace isolation layer among the things it does not do."
           }
         }
@@ -156,22 +156,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux réparations livrées, deux défauts sans réponse",
+          "cuisine": "Deux réparations posées, deux défauts sans réponse",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Two repairs delivered, two faults unanswered",
+          "kitchen": "Two repairs fitted, two faults unanswered",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le contrôle a été posé pour de bon, avec le droit de retenir un plat : ça, c’est fait. Une autre réparation est passée aussi, sur la façon de changer une clé sans effacer les autres du trousseau. Une troisième, plus large, a été abandonnée en route. Et sur la réserve sans murs comme sur l’arrêt qui n’arrête pas, rien n’a été annoncé.",
+            "cuisine": "Le garde a été posé pour de bon, avec le droit de retenir un plat : ça, c’est fait. Mais l’arrêt et les conversations avec les salles éloignées restent annoncés inachevés, et l’ouverture se fait quand même si le garde manque. Une autre réparation est passée, pour changer une clé sans effacer les autres du trousseau, avec un essai en salle. Une troisième, plus large, a été abandonnée en route : elle reste une idée essayée, pas un usage servi. Sur la réserve sans murs comme sur l’arrêt qui n’arrête pas, rien n’a été annoncé.",
             "expert": "Du côté des contrôles, le moteur de hooks est bien fusionné dans le SDK, avec sémantique bloquante, arrêt et conversations distantes explicitement incomplets, et démarrage fail-open assumé. Côté secrets, le correctif de mutation partielle MCP est fusionné avec preuve de régression navigateur, tandis que la modification plus large de synchronisation managed-Codex a été fermée sans fusion : son dessin reste un contrôle tenté, pas un comportement livré. Sur l’annulation et l’espace de travail relevés par le pilote, la matière n’établit aucun correctif."
           },
           "en": {
-            "kitchen": "The check is fitted and it can hold a plate back — that part is done. A second repair went in too, about changing one key without wiping the rest of the ring. A third, wider one was dropped before it landed. On the pantry without walls, and on the call to stop that does not stop, nothing has been announced.",
+            "kitchen": "The guard is fitted for real, with the right to hold a plate back: that part is done. But stopping and conversations with distant rooms are still declared unfinished, and opening goes ahead when the guard is absent. Another repair went in, to change one key without wiping the rest of the ring, with a dining-room trial. A third, broader one was dropped before it landed: it remains an attempted idea, not a served practice. On the pantry without walls, and on the call to stop that does not stop, nothing has been announced.",
             "expert": "On the control side, the hook engine did merge into the SDK, with blocking semantics, with stop and remote-conversation support explicitly incomplete, and with startup semantics deliberately fail-open. On credentials, the MCP sparse-mutation fix merged with browser regression evidence, while the broader managed-Codex synchronisation change closed unmerged, leaving its design attempted control rather than shipped behaviour. For the cancellation and workspace findings from the pilot, the material establishes no fix at all."
           }
         }
@@ -182,22 +182,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Un soir, un seul poste, rien de plus",
+          "cuisine": "Un soir, un seul poste, et pas davantage",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "One evening on one bench, nothing more",
+          "kitchen": "One evening on one bench, and no more",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Tout ce qui précède vaut pour une seule version de la machine, essayée un soir sur un poste tenu à l’écart. La grande caisse toute prête n’a pas été ouverte ; la salle, les commandes automatiques et les branchements avec l’extérieur sont restés hors de l’essai. Deux choses tiennent quand même : privée de son fournisseur, la maison s’arrête net au lieu d’aller se servir ailleurs. Et le compteur de passages annoncé éteint l’est côté machine, pas dans la caisse livrée.",
+            "cuisine": "Tout ce qui précède vaut pour une seule version de la maison, essayée un soir sur un poste tenu à l’écart. La grande caisse toute prête n’a pas été ouverte ; la salle, les commandes automatiques et les liens avec d’autres maisons sont restés hors de l’essai. Une chose a tenu : privée de son fournisseur par quatre chemins différents, la maison s’est arrêtée net les quatre fois, sans aller se servir ailleurs. Le compteur de passages annoncé éteint l’est dans la cuisine seule, pas dans la caisse livrée, où une étiquette de comptage est recopiée. Ce dernier constat est de confiance haute.",
             "expert": "Le relevé ne vaut que pour la version 1.46.0 du serveur, exercée en venv isolé sur la boucle locale ; l’image conteneurisée n’a pas été tirée, et le frontend, le serveur d’automatisations, les intégrations tierces, le mode cloud et les agents ACP tiers étaient hors du pilote. Une propriété a tenu : quatre façons de casser l’accès modèle produisent quatre fois le même échec, statut d’exécution en erreur et événement d’erreur de conversation, sans repli vers un cloud, un compte ou un autre fournisseur. La télémétrie annoncée désactivée par défaut l’est pour le backend seul et non pour la pile livrée, dont le fichier de valeurs par défaut embarque une clé d’analytique que l’entrypoint recopie ; ce point est porté à confiance haute."
           },
           "en": {
-            "kitchen": "Everything above comes from one version of the machine, tried for a single evening on a bench kept to itself. The ready-made crate was never opened; the dining room, the automatic orders and the outside links all stayed out of the trial. Two things hold regardless: cut off from its supplier, the house stops dead rather than shopping elsewhere. And the counter of visits said to be off is off in the machine, not in the crate as delivered.",
+            "kitchen": "Everything above holds for one version of the house, tried for a single evening on a bench kept apart. The ready-made crate was never opened; the dining room, automatic orders, and links with other houses all stayed outside the trial. One thing held: cut off from its supplier in four different ways, the house stopped dead all four times, without shopping elsewhere. The visitor counter said to be off is off in the kitchen alone, not in the delivered crate, where a counting label is copied forward. That last finding is high confidence.",
             "expert": "The record holds for server version 1.46.0 only, exercised in an isolated virtualenv on loopback; the container image was never pulled, and the frontend, the automations server, third-party integrations, cloud mode and third-party ACP agents all sat outside the pilot. One property did hold: four distinct ways of breaking model access produced the same failure four times, an error execution status and a conversation error event, with no fallback to a cloud, an account or another provider. Telemetry described as off by default is off for the backend alone and not for the shipped stack, whose defaults file carries an analytics key that the entrypoint copies forward; that point is carried at high confidence."
           }
         }
@@ -208,22 +208,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un arrêt qui laisse un feu n’arrête rien",
+          "cuisine": "Un feu qui brûle encore dément l’arrêt",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A burner still lit means nothing was stopped",
+          "kitchen": "A burner still lit disproves the stop",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une cuisine qui ne sait pas dire si sa porte est fermée n’a pas de porte. Un arrêt qui laisse un feu allumé n’est qu’un cri dans le service.",
+            "cuisine": "Une cuisine qui ne peut pas dire si sa porte est fermée n’a pas de porte. Un arrêt qui laisse un feu allumé n’est qu’un cri dans le service.",
             "expert": "Une surface d’exécution incapable de dire si elle est confinée n’est pas une frontière, et une annulation qui répond success sans terminer le travail n’est qu’une réponse."
           },
           "en": {
-            "kitchen": "A kitchen that cannot tell you whether its door is shut has no door. A stop that leaves a burner lit is only a shout across the pass.",
+            "kitchen": "A kitchen that cannot say whether its door is shut has no door. A stop that leaves a burner lit is only a shout across the pass.",
             "expert": "An execution surface that cannot report whether it is confined is not a boundary, and a cancellation that answers success without ending the work is only an answer."
           }
         }

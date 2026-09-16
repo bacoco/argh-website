@@ -29,22 +29,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Codex rend le carnet, pas le poste",
+          "cuisine": "Le commis retrouve son carnet, pas son poste",
           "expert": "La reprise de conversation se sépare de la reprise d’exécution"
         },
         "en": {
-          "kitchen": "Cline hands back the pad, not the station",
+          "kitchen": "The cook gets the pad back, but not the station",
           "expert": "Conversation recovery is separating from execution recovery"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le commis revient, on lui rend son carnet. Il y relit chaque commande prise. Mais ses casseroles ont bougé, la réserve n’est plus la même, et personne ne lui dit ce qu’il doit encore. Codex, Cline, OpenHands, Archon et Claude Code butent tous sur ce même trou.",
+            "cuisine": "Le commis revient et retrouve toutes ses commandes dans le carnet. Pourtant, ses casseroles ont bougé, la réserve a changé et le travail restant manque. Cinq maisons rencontrent ce même écart entre le carnet rendu et le poste réel.",
             "expert": "Les fonctions de reprise et de rewind de Codex, Cline, OpenHands, Archon et Claude Code exposent la même abstraction manquante. État conversationnel, état du workspace et identité d’exécution sont trois historiques distincts mais interdépendants. Restaurer le transcript ne restaure ni les outils, ni le plan de travail, ni les obligations restées ouvertes."
           },
           "en": {
-            "kitchen": "Hand a returning cook his pad and he can read back every order he took. It does not tell him which pans are on his station, which pantry he draws from now, or what he still owes the pass. Codex, Cline, OpenHands, Archon and Claude Code all run into the same gap.",
+            "kitchen": "A returning cook can read every order from the recovered pad. Yet the pans, pantry, and unfinished work may all have changed. Five houses meet this same gap between the returned pad and the real station.",
             "expert": "Resume and rewind in Codex, Cline, OpenHands, Archon and Claude Code keep surfacing one missing abstraction. Transcript state, workspace state and execution identity are separate histories that depend on each other. Restoring the transcript restores neither the tool surface, nor the workspace, nor the obligations still outstanding."
           }
         }
@@ -55,62 +55,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Le carnet a cessé de suffire pour reprendre",
+          "cuisine": "Reprendre exige le carnet, le poste et la commande ouverte",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Coming back needed more than the pad",
+          "kitchen": "Resuming needs the pad, the station, and the open order",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Au début, reprendre voulait dire rendre le carnet, rien de plus.",
+            "cuisine": "Au départ, le commis revenait seulement avec le cahier racontant les échanges précédents.",
             "expert": "Les premières implémentations de reprise se limitent à l’historique conversationnel."
           },
           "en": {
-            "kitchen": "At first, coming back meant getting the pad, and nothing else.",
+            "kitchen": "At first, the returning cook received only the pad containing earlier exchanges.",
             "expert": "Early resume implementations covered conversation history only."
           }
         },
         {
           "fr": {
-            "cuisine": "Puis les commis ont vu que le fournisseur, les ustensiles et le plan de travail ne suivaient pas.",
+            "cuisine": "La brigade constate ensuite que le fournisseur, les outils et le billot peuvent être différents à la reprise.",
             "expert": "Les utilisateurs remontent ensuite des incompatibilités de provider, d’outils et de workspace après reprise."
           },
           "en": {
-            "kitchen": "Then cooks found the supplier, the utensils and the bench no longer matched the pad.",
+            "kitchen": "The brigade then finds that the supplier, utensils, and bench may differ after resuming.",
             "expert": "Users then reported provider, tool and workspace mismatches after a resume."
           }
         },
         {
           "fr": {
-            "cuisine": "Revenir en arrière dans le carnet ne ramenait pas la réserve au même moment.",
+            "cuisine": "Remettre le cahier à une ancienne page ne replace pas les produits et les casseroles dans leur ancien état.",
             "expert": "Le rewind met au jour des désynchronisations entre historique de conversation et système de fichiers."
           },
           "en": {
-            "kitchen": "Winding the pad back did not wind the pantry back with it.",
+            "kitchen": "Turning the pad back to an earlier page does not return produce and pans to their earlier state.",
             "expert": "Rewind exposed splits between conversation history and the filesystem."
           }
         },
         {
           "fr": {
-            "cuisine": "Les plans de travail séparés et les points de reprise entrent peu à peu dans la cuisine elle-même.",
+            "cuisine": "Peu à peu, les maisons préparent des billots séparés et des fiches permettant de reprendre exactement au bon poste.",
             "expert": "Worktrees et checkpoints entrent progressivement dans le runtime lui-même."
           },
           "en": {
-            "kitchen": "Separate benches and pick-up points start being built into the kitchen itself.",
+            "kitchen": "Little by little, houses prepare separate benches and cards that resume work at the exact station.",
             "expert": "Worktrees and checkpoints began moving into the runtime itself."
           }
         },
         {
           "fr": {
-            "cuisine": "Ce qui se dessine garde la commande due et le poste du commis sur une fiche qui survit à la coupure.",
+            "cuisine": "La nouvelle fiche conserve la commande restante et l’identité du poste même après une interruption.",
             "expert": "Le modèle émergent traite la mission et l’identité d’exécution comme un état structuré durable."
           },
           "en": {
-            "kitchen": "What is taking shape keeps the order still owed and the cook’s station on a card that survives the break.",
+            "kitchen": "The new card keeps the remaining order and the station’s identity even after an interruption.",
             "expert": "The emerging model treats mission and execution identity as durable structured state."
           }
         }
@@ -121,22 +121,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le carnet garde les commandes, pas les casseroles",
+          "cuisine": "Relire le bon ne rallume pas le même fourneau",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The pad holds the orders, never the pans",
+          "kitchen": "Reading the ticket does not relight the same stove",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le carnet garde ce qui a été commandé. Il ne garde pas ce que le commis avait sous la main, ni ce qu’on l’autorisait à toucher. Relire les commandes ne rallume pas les feux.",
+            "cuisine": "Le cahier se souvient des paroles et des choix. Il ne remet pas le commis devant le même billot, avec les mêmes ustensiles et les mêmes clés. Le poste doit être retrouvé séparément.",
             "expert": "Un transcript reconstruit ce qui a été dit. Il ne reconstruit pas à lui seul l’environnement dans lequel l’agent était autorisé et capable d’agir."
           },
           "en": {
-            "kitchen": "The pad holds what was ordered. It does not hold what the cook had within reach, nor what he was cleared to touch. Reading the orders back does not relight the stoves.",
+            "kitchen": "The book remembers words and choices. It does not return the cook to the same bench with the same utensils and keys. The station must be restored separately.",
             "expert": "A transcript reconstructs what was said. It cannot by itself reconstruct the environment in which the agent was authorized and able to act."
           }
         }
@@ -147,22 +147,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le poste doit revenir avec le carnet",
+          "cuisine": "Conserver la fiche du poste à côté du cahier",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Keep the station beside the pad, not apart",
+          "kitchen": "Keep the station card beside the service book",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ranger à côté du carnet la commande encore due, le poste, le fournisseur et la marchandise choisie, les ustensiles autorisés et ce qui reste à rendre.",
+            "cuisine": "À côté du récit, la brigade garde une fiche séparée : commande à terminer, billot, fournisseur, produits choisis, outils permis et travail encore dû.",
             "expert": "Persister mission, workspace, provider et modèle, outils, permissions et obligations ouvertes aux côtés de l’état conversationnel."
           },
           "en": {
-            "kitchen": "Store beside the pad the order still owed, the station, the supplier and the goods chosen, the utensils allowed, and whatever is still due.",
+            "kitchen": "Beside the story, the brigade keeps a separate card: order to finish, bench, supplier, chosen goods, allowed utensils, and work still owed.",
             "expert": "Persist mission, workspace, provider and model, tool surface, permissions and open obligations alongside conversation state."
           }
         }
@@ -173,22 +173,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Cinq maisons réparent, aucune n’a terminé",
+          "cuisine": "Cinq cuisines avancent vers la même reprise inachevée",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Five houses are repairing, none has finished",
+          "kitchen": "Five kitchens move toward the same unfinished recovery",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La direction est la même dans les cinq maisons. Chacune la met en place à son rythme, et aucune n’est au bout.",
+            "cuisine": "Les cinq maisons cherchent à rendre ensemble le cahier, le poste et la commande ouverte. Elles avancent à des vitesses différentes, sans solution achevée commune.",
             "expert": "Tendance architecturale forte et convergente entre projets, encore implémentée de manière inégale."
           },
           "en": {
-            "kitchen": "All five houses are heading the same way. Each moves at its own pace, and none has arrived.",
+            "kitchen": "All five houses aim to restore the book, station, and open order together. They move at different speeds, with no shared finished solution yet.",
             "expert": "A strong convergent architecture trend across projects, still unevenly implemented."
           }
         }
@@ -199,22 +199,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "On ne reprend pas avec le carnet seul",
+          "cuisine": "Le service reprend quand le commis peut finir le plat",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A cook is back only when he can send",
+          "kitchen": "Service resumes when the cook can finish the dish",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un commis n’a repris son service que le jour où il retrouve, avec son carnet, le poste capable d’envoyer ce qui reste dû.",
+            "cuisine": "Rendre le cahier ne suffit pas. Le commis a réellement repris lorsqu’il retrouve aussi le bon poste, les bons outils et la commande qu’il doit encore servir.",
             "expert": "La mémoire n’est pas la mission, et le transcript n’est pas l’état d’exécution."
           },
           "en": {
-            "kitchen": "A cook is only back on service when the pad comes back with a station able to send what is still owed.",
+            "kitchen": "Returning the book is not enough. The cook has truly resumed when the right station, tools, and order still owed return as well.",
             "expert": "Memory is not mission, and transcript is not execution state."
           }
         }

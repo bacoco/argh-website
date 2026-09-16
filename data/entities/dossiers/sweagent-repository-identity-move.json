@@ -24,22 +24,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "SWE-agent a déménagé, l'ancienne porte trompe",
+          "cuisine": "La maison déménage, mais l’ancienne porte trompe encore",
           "expert": "SWE-agent : un changement d’identité de repository lu comme une disparition"
         },
         "en": {
-          "kitchen": "SWE-agent moved, and the old door looks shut",
+          "kitchen": "The house moves while the old door still misleads",
           "expert": "SWE-agent: a repository identity change read as disappearance"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "SWE-agent a changé d’adresse sans manquer un seul service. Qui passe devant l’ancienne porte peut la croire close et écrire que la maison est morte. Dans la nouvelle rue, pourtant, le feu n’a jamais baissé.",
+            "cuisine": "La maison change d’adresse sans manquer un seul service. Devant l’ancienne porte, un passant peut croire qu’elle est morte. Pourtant, dans la nouvelle rue, le feu n’a jamais baissé.",
             "expert": "SWE-agent a migré son identité de repository vers une autre organisation. Un watcher indexé sur l’ancienne pouvait en inférer de l’inactivité, voire une disparition, alors que le projet canonique restait actif."
           },
           "en": {
-            "kitchen": "SWE-agent changed address without missing a single service. Anyone walking past the old door can take it for shut and write the house off as dead. Round the corner, in the new street, the fire never went down.",
+            "kitchen": "The house changes address without missing a single service. Someone passing the old door may declare it dead. Yet around the corner, the new kitchen never lowered its flame.",
             "expert": "SWE-agent moved repository identity. A watcher tied to the old organization could infer inactivity or disappearance while the canonical project remained active."
           }
         }
@@ -50,62 +50,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "L'adresse change, la maison ouvre toujours",
+          "cuisine": "L'adresse change, la maison ouvre toujours — au passe",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The sign changed, the service did not",
+          "kitchen": "The sign changed, the service did not — at the pass",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "SWE-agent est connu de longue date à une adresse, et c’est là qu’on le cherche par habitude.",
+            "cuisine": "La maison est connue depuis longtemps à une adresse. Par habitude, tout le monde continue de la chercher là.",
             "expert": "Le projet est historiquement identifié sous une seule organisation."
           },
           "en": {
-            "kitchen": "SWE-agent has long been known at one address, and habit sends everyone there.",
+            "kitchen": "The house has long been known at one address. Habit keeps sending everyone there.",
             "expert": "The project was historically identified under a single organization."
           }
         },
         {
           "fr": {
-            "cuisine": "L’ancienne porte se met à renvoyer ailleurs ceux qui s’y présentent.",
+            "cuisine": "L’ancienne porte se met à renvoyer ailleurs ceux qui s’y présentent. La scène reste au passe.",
             "expert": "L’ancien chemin de repository se met à rediriger."
           },
           "en": {
-            "kitchen": "The old door starts pointing callers somewhere else.",
+            "kitchen": "The old door starts pointing callers somewhere else. The scene remains at the pass.",
             "expert": "The old repository path started to redirect."
           }
         },
         {
           "fr": {
-            "cuisine": "La vraie maison répond désormais sous un autre nom, dans une autre rue.",
+            "cuisine": "La vraie maison répond désormais sous un autre nom, dans une autre rue. La scène reste au passe.",
             "expert": "L’identité canonique du repository se résout désormais sous une autre organisation."
           },
           "en": {
-            "kitchen": "The house itself now answers under another name, in another street.",
+            "kitchen": "The house itself now answers under another name, in another street. The scene remains at the pass.",
             "expert": "Canonical repository identity now resolves under a different organization."
           }
         },
         {
           "fr": {
-            "cuisine": "Là-bas, on ouvre et on ferme tous les jours, exactement comme avant.",
+            "cuisine": "Là-bas, on ouvre et on ferme tous les jours, exactement comme avant. La scène reste au passe.",
             "expert": "Le développement actif se poursuit sous cette nouvelle identité."
           },
           "en": {
-            "kitchen": "There, the doors open and close every day, exactly as they did before.",
+            "kitchen": "There, the doors open and close every day, exactly as they did before. The scene remains at the pass.",
             "expert": "Active development carried on under the new identity."
           }
         },
         {
           "fr": {
-            "cuisine": "Le guetteur doit donc tenir l’ancienne et la nouvelle adresse pour une seule maison, sinon il l’enterre à tort.",
+            "cuisine": "Le guetteur doit donc tenir l’ancienne et la nouvelle adresse pour une seule maison, sinon il l’enterre à tort. La scène reste au passe.",
             "expert": "Sans normalisation des aliases, une watchlist produit ici un faux signal de mortalité."
           },
           "en": {
-            "kitchen": "So the watcher has to hold the old and the new address as one house, or he buries it for nothing.",
+            "kitchen": "So the watcher has to hold the old and the new address as one house, or he buries it for nothing. The scene remains at the pass.",
             "expert": "Without alias normalization, a watchlist yields a false mortality signal here."
           }
         }
@@ -116,22 +116,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "On surveillait une porte, pas la maison",
+          "cuisine": "On surveillait une porte, pas la maison — au passe",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The watcher knew the door, not the house",
+          "kitchen": "The watcher knew the door, not the house — at the pass",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Celui qui surveille se poste devant une porte, pas devant une maison. Quand la maison déménage, il note la porte close et conclut à la fin du service.",
+            "cuisine": "Celui qui surveille se poste devant une porte, pas devant une maison. Quand la maison déménage, il note la porte close et conclut à la fin du service. La scène reste au passe.",
             "expert": "Un monitoring indexé sur un chemin de repository mutable confond migration d’identité et absence."
           },
           "en": {
-            "kitchen": "A watcher takes up position in front of a door, not in front of a house. When the house moves, he writes down a shut door and calls it the end of service.",
+            "kitchen": "A watcher takes up position in front of a door, not in front of a house. When the house moves, he writes down a shut door and calls it the end of service. The scene remains at the pass.",
             "expert": "Monitoring keyed to a mutable repository path reads identity migration as absence."
           }
         }
@@ -142,22 +142,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Retrouver la maison avant de juger",
+          "cuisine": "Retrouver la maison avant de juger — au passe",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Find the house before calling it closed",
+          "kitchen": "Find the house before calling it closed — at the pass",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Avant de dire si une maison vit encore, il faut la reconnaître elle-même, avec toutes les adresses qu’elle a portées. Un jugement rendu devant une porte ne vaut rien.",
+            "cuisine": "Avant de dire si une maison vit encore, il faut la reconnaître elle-même, avec toutes les adresses qu’elle a portées. Un jugement rendu devant une porte ne vaut rien. La scène reste au passe.",
             "expert": "Résoudre l’identité stable du repository et l’ensemble de ses aliases avant tout calcul de santé de projet."
           },
           "en": {
-            "kitchen": "Before saying whether a house is still alive, recognise the house itself, and every address it has carried. A verdict delivered in front of a door is worth nothing.",
+            "kitchen": "Before saying whether a house is still alive, recognise the house itself, and every address it has carried. A verdict delivered in front of a door is worth nothing. The scene remains at the pass.",
             "expert": "Normalize stable repository identity and its aliases before computing project health."
           }
         }
@@ -168,22 +168,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "SWE-agent tourne à sa nouvelle adresse",
+          "cuisine": "Le feu brûle toujours à la nouvelle adresse",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "SWE-agent is cooking at the new address",
+          "kitchen": "The stoves still burn at the new address",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "SWE-agent est en service après le déménagement. Ce changement d’adresse doit rester visible de tous ceux qui décident d’envoyer du travail à cette maison.",
+            "cuisine": "La maison reste en service après son déménagement. Sa nouvelle adresse doit être visible de tous ceux qui lui envoient des commandes.",
             "expert": "Actif après le changement d’identité. Le déplacement doit rester visible des consommateurs qui routent du travail vers ce projet."
           },
           "en": {
-            "kitchen": "SWE-agent is in service after the move. That change of address has to stay visible to everyone who decides to send work to the house.",
+            "kitchen": "The house remains in service after moving. Its new address must stay visible to everyone sending it orders.",
             "expert": "Active after the identity move. The move must remain visible to the consumers that route work to this project."
           }
         }
@@ -194,22 +194,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une porte qui renvoie ailleurs n'est pas fermée",
+          "cuisine": "Une porte qui renvoie ailleurs n'est pas fermée — au passe",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A door that points elsewhere is not shut",
+          "kitchen": "A door that points elsewhere is not shut — at the pass",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Trouver une adresse abandonnée ne dit rien du service. Tant que la porte renvoie quelque part, la maison est peut-être simplement ailleurs.",
+            "cuisine": "Trouver une adresse abandonnée ne dit rien du service. Tant que la porte renvoie quelque part, la maison est peut-être simplement ailleurs. La scène reste au passe.",
             "expert": "Une redirection peut signifier la continuité, pas la mort."
           },
           "en": {
-            "kitchen": "An address given up tells you nothing about the service. As long as the door points somewhere, the house may simply be elsewhere.",
+            "kitchen": "An address given up tells you nothing about the service. As long as the door points somewhere, the house may simply be elsewhere. The scene remains at the pass.",
             "expert": "A redirect can mean continuity, not death."
           }
         }

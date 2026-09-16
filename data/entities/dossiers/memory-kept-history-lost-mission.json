@@ -26,22 +26,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "OpenClaw et Codex perdent les tables qui attendent",
+          "cuisine": "Le résumé de la soirée oublie les tables qui attendent",
           "expert": "La compaction du contexte a gardé le récit et perdu l’obligation en cours"
         },
         "en": {
-          "kitchen": "OpenClaw and Codex forget the tables still waiting",
+          "kitchen": "The night’s summary forgets the tables still waiting",
           "expert": "Context compaction kept the story and dropped the live obligation"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez OpenClaw comme chez Codex, un long service finit par remplir le pic où l’on plante les bons de commande. Pour y voir clair, on résume la soirée sur une feuille et on vide le pic. Celui qui reprend sait tout de la soirée : les retards, les coups de feu, ce qui a manqué. Ce qu’il ne sait plus, c’est quelles tables attendent encore.",
+            "cuisine": "Dans deux maisons, un long service remplit entièrement le pic à commandes. La brigade résume alors la soirée sur une feuille et retire les bons. Le remplaçant connaît les retards et les manques. Il ne sait plus quelles tables attendent encore.",
             "expert": "La compaction du contexte pouvait conserver des fragments d’historique tout en perdant l’obligation active : ce qui restait dû et ce qui comptait comme terminé. Le modèle repris restait cohérent sur le passé."
           },
           "en": {
-            "kitchen": "At OpenClaw and at Codex, a long service loads the spike where the order tickets go. To see straight, someone writes the evening up on one sheet and clears the spike. Whoever takes over can recite the night: the delays, the rushes, what ran out. What he no longer has is the list of tables still waiting.",
+            "kitchen": "In two houses, a long service fills the order spike. The brigade summarizes the night on one sheet and removes the tickets. Whoever takes over knows the delays and shortages. The waiting tables are no longer known.",
             "expert": "Context compaction could keep fragments of history while losing the live obligation: what was still owed, and what counted as done. The resumed model stayed coherent about the past."
           }
         }
@@ -52,62 +52,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Les bons retirés, les tables dues avec eux",
+          "cuisine": "Le récit du soir remplace les bons encore ouverts",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Tickets cleared, and the owed tables with them",
+          "kitchen": "The story of the night replaces the open tickets",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un service qui dure fait grossir le paquet de bons heure après heure.",
+            "cuisine": "Pendant un long service, les bons et les échanges s’empilent au passe.",
             "expert": "Une tâche de longue durée accumule un historique conversationnel important."
           },
           "en": {
-            "kitchen": "A service that runs long stacks the tickets higher hour by hour.",
+            "kitchen": "During a long service, tickets and exchanges pile up at the pass.",
             "expert": "A long-running task builds up substantial conversation history."
           }
         },
         {
           "fr": {
-            "cuisine": "Pour tenir, on résume la soirée sur une feuille et on retire les bons.",
+            "cuisine": "Pour dégager le comptoir, la brigade raconte la soirée sur une seule feuille puis range les anciens bons.",
             "expert": "La compaction remplace cet historique par un résumé."
           },
           "en": {
-            "kitchen": "To cope, the evening is written up on one sheet and the tickets come off.",
+            "kitchen": "To clear the counter, the brigade writes the evening on one sheet and stores the old tickets.",
             "expert": "Compaction replaces that history with a summary."
           }
         },
         {
           "fr": {
-            "cuisine": "Celui qui reprend le poste raconte la soirée sans une hésitation.",
+            "cuisine": "Le commis qui reprend peut expliquer exactement tout ce qui s’est déjà passé.",
             "expert": "Le modèle repris conserve le contexte narratif et reste juste sur ce qui s’est passé."
           },
           "en": {
-            "kitchen": "The cook who picks the station up recites the evening without a stumble.",
+            "kitchen": "The cook taking over can explain exactly everything that has already happened.",
             "expert": "The resumed model keeps the narrative context and stays accurate about what happened."
           }
         },
         {
           "fr": {
-            "cuisine": "Mais les tables encore dues, et ce qu’il faut pour qu’une table soit servie, peuvent ne figurer nulle part.",
+            "cuisine": "Pourtant, la feuille peut oublier les tables encore en attente et la règle qui dira qu’elles sont enfin servies.",
             "expert": "Les obligations ouvertes et les critères de fin peuvent ne pas survivre au résumé."
           },
           "en": {
-            "kitchen": "But the tables still owed, and what it takes for a table to count as served, can be nowhere on that sheet.",
+            "kitchen": "Yet the sheet may omit the tables still waiting and the rule for deciding when they are finally served.",
             "expert": "Open obligations and completion criteria may not survive the summary."
           }
         },
         {
           "fr": {
-            "cuisine": "Il continue, sûr de lui, parfaitement d’accord avec la soirée qu’il raconte, et à côté du travail qui reste.",
+            "cuisine": "Le commis poursuit alors avec confiance, fidèle au récit passé mais éloigné des commandes qu’il devait terminer.",
             "expert": "L’agent devient cohérent sur le passé tout en dérivant de la mission en cours."
           },
           "en": {
-            "kitchen": "He works on, sure of himself, perfectly true to the evening he describes, and off the job still owed.",
+            "kitchen": "The cook continues confidently, faithful to the past story but drifting away from the orders still owed.",
             "expert": "The agent ends up coherent about the past while drifting from the mission it is on."
           }
         }
@@ -118,22 +118,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une dette ne tient pas dans un récit",
+          "cuisine": "Raconter le service ne garde pas les commandes ouvertes",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A debt does not survive a retelling",
+          "kitchen": "Retelling service does not preserve open orders",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un résumé retient ce qui fait une histoire : l’ordre des choses, les incidents, le ton de la soirée. Ce qui est dû n’est pas une histoire, c’est une dette. Une dette ne tient pas dans un récit ; elle tient sur un bon accroché quelque part.",
+            "cuisine": "Le récit conserve les événements marquants et leur ordre. Une table encore en attente est différente : elle exige un bon qui reste accroché jusqu’au service. Le souvenir seul ne garde pas cette obligation.",
             "expert": "Un résumé optimise l’historique sémantique, pas l’obligation contractuelle. Ce sont deux structures d’information distinctes, et la seconde ne se reconstruit pas depuis la première."
           },
           "en": {
-            "kitchen": "A summary keeps what makes a story: the order of events, the incidents, the feel of the night. What is owed is not a story, it is a debt. A debt does not live in a retelling; it lives on a ticket hanging somewhere.",
+            "kitchen": "The story keeps notable events and their order. A table still waiting is different: it needs a ticket that stays up until service. Memory alone does not preserve that duty.",
             "expert": "A summary optimizes semantic history, not contractual obligation. They are distinct information structures, and the second cannot be rebuilt from the first."
           }
         }
@@ -144,22 +144,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Les tables non servies restent affichées au mur",
+          "cuisine": "Les commandes à finir gardent leur propre tableau",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Unserved tables stay on the wall whatever happens",
+          "kitchen": "Orders still owed keep their own board",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ce qui reste dû ne se range pas avec le récit de la soirée. La commande en cours, les tables non servies et la règle qui dit qu’une table est finie restent affichées, quoi qu’on fasse du reste.",
+            "cuisine": "La brigade garde séparément la commande du soir, les tables en attente et la condition pour décrocher chaque bon. Même si le récit est raccourci, ce tableau ne change pas.",
             "expert": "La mission, les obligations ouvertes et la définition de terminé doivent être persistées hors du résumé, dans une structure qui ne subit pas la perte du transcript."
           },
           "en": {
-            "kitchen": "What is owed does not get filed with the story of the night. The job in hand, the tables unserved, and the rule for calling a table finished all stay up on the wall. Whatever happens to the sheet, those three do not come down.",
+            "kitchen": "The brigade separately keeps the night’s order, waiting tables, and the condition for taking down each ticket. Even if the story is shortened, that board does not change.",
             "expert": "Mission, open obligations and definition-of-done belong outside the summary, in a store that does not take the transcript’s losses."
           }
         }
@@ -170,22 +170,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Tout service qui dure oublie les tables dues",
+          "cuisine": "Un long service peut garder l’histoire et perdre la commande",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The longest nights lose the tables still owed",
+          "kitchen": "A long service may keep the story and lose the order",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La leçon vaut pour toute mémoire de cuisine : se souvenir de la soirée ne garantit pas de se souvenir de ce qu’on doit encore.",
+            "cuisine": "Dans toute cuisine, connaître parfaitement la soirée passée ne garantit pas que les bons encore ouverts soient restés au mur.",
             "expert": "Le cas constitue une leçon de conception mémoire valable au-delà d’un seul système."
           },
           "en": {
-            "kitchen": "The lesson holds for any kitchen memory: remembering the night is no guarantee of remembering what is still owed.",
+            "kitchen": "In any kitchen, knowing the past evening perfectly does not guarantee that open tickets remain on the wall.",
             "expert": "The case stands as a memory design lesson that carries beyond any single system."
           }
         }
@@ -196,22 +196,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Le résumé ne règle pas les tables dues",
+          "cuisine": "Le récit du service n’est pas la liste des tables à servir",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A write-up settles nothing that is owed",
+          "kitchen": "The service story is not the list of tables still waiting",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Se souvenir du service n’est pas tenir la commande : la table qui attend doit survivre au résumé.",
+            "cuisine": "Le cahier peut raccourcir l’histoire, mais le bon d’une table en attente doit rester intact jusqu’à l’assiette.",
             "expert": "La mémoire n’est pas la mission."
           },
           "en": {
-            "kitchen": "Remembering the service is not holding the order: the table still waiting has to survive the write-up.",
+            "kitchen": "The book may shorten the story, but a waiting table’s ticket must remain intact until its plate arrives.",
             "expert": "Memory is not mission."
           }
         }

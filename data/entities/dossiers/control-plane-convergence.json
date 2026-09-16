@@ -33,22 +33,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le talent ne décide plus, la cuisine si",
+          "cuisine": "Autour du cuisinier, l’organisation décide du service",
           "expert": "Les produits d’agents convergent vers le même control plane périphérique"
         },
         "en": {
-          "kitchen": "The kitchen decides, not the cook’s talent",
+          "kitchen": "The organisation around the cook decides service",
           "expert": "Agent products are converging on the same surrounding control plane"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Mettez le meilleur cuisinier du pays dans une cuisine sans règles, sans postes définis, sans personne pour dire ce qui a le droit de sortir. Il vous fera un très beau plat, au mauvais moment, avec les mauvais produits. Ce qui se joue aujourd’hui n’est plus son talent. C’est la cuisine qu’on lui construit autour, chez Claude Code, Codex, Gemini, Goose, Cline et OpenHands.",
+            "cuisine": "Mettez le meilleur cuisinier du pays dans une cuisine sans règles ni postes définis. Il fera peut-être un beau plat, mais au mauvais moment et avec les mauvais produits. Six maisons travaillent désormais surtout sur l’organisation qui l’entoure.",
             "expert": "Le signal inter-produits le plus fort n’est pas une fonctionnalité isolée. Les principaux produits d’agents convergent vers le même control plane périphérique : hooks, skills, délégation, confiance, reprise, workspaces et protocoles. La différenciation se déplace de l’accès modèle vers cette couche."
           },
           "en": {
-            "kitchen": "Put the country’s best cook in a kitchen with no rules, no set stations, nobody to say what may leave the pass. You will get a beautiful plate, at the wrong moment, from the wrong produce. What is at stake now is not his talent. It is the kitchen Claude Code, Codex, Gemini, Goose, Cline and OpenHands are each building around him.",
+            "kitchen": "Put the country’s best cook in a kitchen with no rules or fixed stations. A beautiful plate may appear at the wrong time from the wrong produce. Six houses are now concentrating on the kitchen built around that cook.",
             "expert": "The strongest cross-product signal is not an isolated feature. Major agent products are converging on the same surrounding control plane: hooks, skills, delegation, trust, recovery, workspaces and protocols. Differentiation is shifting from model access toward that layer."
           }
         }
@@ -59,62 +59,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Les bricolages sont devenus des postes fixes",
+          "cuisine": "Les parades improvisées deviennent des règles de maison",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Workarounds turned into stations and house rules",
+          "kitchen": "Improvised answers become stations and house rules",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Au début, chaque maison se vendait sur son cuisinier et sur la façon de lui passer commande.",
+            "cuisine": "Au début, les maisons vantent surtout leur meilleur cuisinier. Elles se distinguent aussi par la manière de lui transmettre une commande.",
             "expert": "Les premiers produits se différenciaient surtout par l’accès modèle et l’UX chat/outils."
           },
           "en": {
-            "kitchen": "At first, each house sold itself on its cook and on how you placed an order.",
+            "kitchen": "At first, houses mainly praise their finest cook. They also differ in how an order reaches that cook.",
             "expert": "Early products differentiated mainly through model access and chat/tool UX."
           }
         },
         {
           "fr": {
-            "cuisine": "Les mêmes ratés sont revenus service après service, et chaque brigade a bricolé ses parades dans son coin.",
+            "cuisine": "Les mêmes erreurs reviennent ensuite soir après soir. Chaque brigade improvise seule une manière de les éviter.",
             "expert": "Des pannes répétées ont produit des règles locales, des enveloppes et des contournements."
           },
           "en": {
-            "kitchen": "The same mishaps came back service after service, and each brigade improvised its own workarounds.",
+            "kitchen": "The same mistakes then return night after night. Each brigade privately improvises a way around them.",
             "expert": "Repeated failures produced local rules, wrappers and workarounds."
           }
         },
         {
           "fr": {
-            "cuisine": "Ces bricolages ont fini par recevoir un nom, une place au mur et un responsable.",
+            "cuisine": "Ces réponses improvisées finissent par être nommées. Elles gagnent une place au mur et une personne chargée de les tenir.",
             "expert": "Ces contournements sont devenus des primitives runtime nommées."
           },
           "en": {
-            "kitchen": "Those improvisations eventually earned a name, a place on the wall and someone in charge.",
+            "kitchen": "Those improvised answers eventually receive names. They gain a place on the wall and someone responsible for them.",
             "expert": "Those workarounds became named runtime primitives."
           }
         },
         {
           "fr": {
-            "cuisine": "Chacun a ajouté ses contrôles au passe, ses fiches de poste, ses sous-chefs, ses clés, ses façons de reprendre un service raté.",
+            "cuisine": "Chaque maison installe alors ses propres vérifications, fiches de poste et sous-chefs. Elle prévoit aussi ses clés et sa façon de reprendre une soirée ratée.",
             "expert": "Les produits ont ajouté indépendamment hooks, skills, subagents, frontières de confiance et mécanismes de reprise."
           },
           "en": {
-            "kitchen": "Each house separately added checks at the pass, station cards, sous-chefs, keys, and ways to restart a botched service.",
+            "kitchen": "Each house then installs its own checks, station cards, and sous-chefs. It also plans keys and ways to restart a botched night.",
             "expert": "Products independently added hooks, skills, subagents, trust boundaries and recovery mechanisms."
           }
         },
         {
           "fr": {
-            "cuisine": "On ne compare plus les maisons sur le cuisinier. On les compare sur la cuisine qui tient debout un soir de coup de feu.",
+            "cuisine": "Le meilleur cuisinier ne suffit plus pour comparer les maisons. La différence apparaît dans la cuisine capable de tenir pendant le coup de feu.",
             "expert": "La surface de compétition s’est déplacée de l’invocation du modèle vers la fiabilité et le contrôle du harnais."
           },
           "en": {
-            "kitchen": "Houses are no longer compared on their cook. They are compared on the kitchen that holds up on a hard night.",
+            "kitchen": "The finest cook no longer settles the comparison. The difference appears in the kitchen that survives a hard night.",
             "expert": "The competitive surface shifted from model invocation toward harness reliability and control."
           }
         }
@@ -125,22 +125,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le cuisinier ne choisit ni place ni produits",
+          "cuisine": "La maison décide de tout ce qui entoure le cuisinier",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The cook picks neither station nor produce",
+          "kitchen": "The house decides everything around the cook",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le cuisinier décide de ce qu’il veut faire. Il ne décide pas de ce qu’il a sous les yeux, ni de ce qu’on le laisse toucher. Il ne choisit ni sa place, ni ce qu’on fait quand il se rate. Tout cela, c’est la cuisine qui le tranche.",
+            "cuisine": "Le cuisinier choisit son geste, mais pas son poste ni les produits placés devant lui. Il ne décide pas davantage des assiettes qu’on l’autorise à sortir. Ces choix appartiennent à l’organisation de la cuisine.",
             "expert": "Le modèle génère l’intention. Le harnais décide du contexte visible, des actions permises, de l’isolation du travail, du chemin de reprise après panne et de ce qui rend un résultat fiable. La capacité du modèle n’arbitre aucune de ces décisions."
           },
           "en": {
-            "kitchen": "The cook decides what he wants to make. He does not decide what is in front of him, or what he is allowed to touch. He does not choose his station, or what happens when he gets it wrong. The kitchen settles all of that.",
+            "kitchen": "The cook chooses a move, but not the station or produce placed before him. Nor does he decide which plates may leave. The kitchen’s organisation settles those choices.",
             "expert": "The model generates intent. The harness decides what context is visible, which actions are permitted, how work is isolated, how failures recover, and whether a result can be trusted. Model capability arbitrates none of those decisions."
           }
         }
@@ -151,22 +151,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Juger une maison sur son coup de feu",
+          "cuisine": "Observer le trajet d’une commande pendant le coup de feu",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Watch who may stop an order leaving",
+          "kitchen": "Watch an order travel during the rush",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ne jugez pas une maison sur son cuisinier, ni sur la longueur de sa batterie. Regardez comment une commande circule, qui a le droit de l’arrêter, et ce qui se passe le soir où elle tombe.",
+            "cuisine": "Suivez une commande depuis la table jusqu’au passe. Regardez qui peut la retenir et comment la maison réagit quand elle se perd. Cette soirée renseigne mieux que la renommée du cuisinier.",
             "expert": "Évaluer un système d’agents par son control plane et ses transitions d’état, pas seulement par la qualité du modèle ou une checklist de fonctionnalités. Les propriétés discriminantes sont le chemin de contrôle et le comportement en panne."
           },
           "en": {
-            "kitchen": "Do not judge a house by its cook, or by the length of its tool rack. Watch how an order travels, who is allowed to stop it, and what happens the night it drops.",
+            "kitchen": "Follow an order from table to pass. See who may hold it and how the house reacts when it disappears. That night reveals more than the cook’s fame.",
             "expert": "Evaluate an agent system by its control plane and its state transitions, not only by model quality or a feature checklist. The discriminating properties are the control path and behavior under failure."
           }
         }
@@ -177,22 +177,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Chaque maison apprend à tenir sa propre cuisine",
+          "cuisine": "La même leçon apparaît dans plusieurs maisons",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Most houses observed are making the same turn",
+          "kitchen": "The same lesson appears across several houses",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ce déplacement n’est pas un accident isolé. C’est le fil qui relie la plupart des maisons observées, chacune apprenant de son côté à tenir sa propre cuisine.",
+            "cuisine": "La plupart des maisons observées font ce même déplacement. Chacune construit séparément les règles et les postes qui entourent son cuisinier. Il ne s’agit donc pas d’un accident unique.",
             "expert": "C’est la thèse organisatrice de l’architecture publique d’intelligence d’ARGH. La convergence est observée à travers plusieurs produits, chacun ayant ajouté ces mécanismes indépendamment."
           },
           "en": {
-            "kitchen": "This shift is not one isolated accident. It is the thread running through most of the houses observed, each learning on its own to run its own kitchen.",
+            "kitchen": "Most observed houses make this same turn. Each separately builds rules and stations around its cook. This is therefore not one isolated accident.",
             "expert": "This is the organizing thesis for ARGH’s public intelligence architecture. The convergence is observed across several products, each of which added these mechanisms independently."
           }
         }
@@ -203,22 +203,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un bon cuisinier ne sauve pas la cuisine",
+          "cuisine": "Le talent n’arrive à table que si la cuisine tient",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Talent does not reach the table alone",
+          "kitchen": "Talent reaches the table only through a sound kitchen",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un bon cuisinier dans une mauvaise cuisine ne fait pas un bon service. En vrai service, c’est la cuisine qui décide si son talent arrive jusqu’à la table.",
+            "cuisine": "Même un excellent cuisinier échoue dans une maison mal organisée. Le client profite de son talent seulement si les postes, les règles et le passe tiennent ensemble.",
             "expert": "Dans les systèmes d’agents en production, le harnais détermine de plus en plus si l’intelligence du modèle devient utile. La capacité brute ne suffit plus à expliquer l’écart entre deux produits."
           },
           "en": {
-            "kitchen": "A good cook in a bad kitchen does not make a good service. In real service, the kitchen decides whether his talent ever reaches the table.",
+            "kitchen": "Even an excellent cook fails in a badly organised house. Diners benefit from his talent only when stations, rules, and pass hold together.",
             "expert": "In production agent systems, the harness increasingly determines whether model intelligence becomes useful. Raw capability no longer accounts on its own for the gap between two products."
           }
         }

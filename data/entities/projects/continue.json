@@ -27,22 +27,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Continue",
+          "cuisine": "La porte reste ouverte, mais personne ne prend de commande",
           "expert": "Continue"
         },
         "en": {
-          "kitchen": "Continue",
+          "kitchen": "The door stays open, but nobody takes orders",
           "expert": "Continue"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Continue n’a pas fermé un soir sans prévenir. La maison a fini son service proprement, elle a été rachetée, et sa porte est restée ouverte à qui veut lire les cahiers. Simplement, plus personne n’y prend de commande.",
+            "cuisine": "La cuisine a fini proprement son dernier service. La porte est restée ouverte pour lire les cahiers, mais personne n’y prend plus de commande. La maison a changé de patron.",
             "expert": "Continue est passé d’assistant de code open source à agent de code multi-surfaces, puis à une version 2.0.0 de clôture, avant l’acquisition de l’entreprise et du projet par Cursor. Le dépôt autonome est déclaré non maintenu activement et placé en lecture seule, sans être archivé ; le code open source est conservé comme fondation. L’état courant retenu est read_only, après une trajectoire active_growth → active → final_release."
           },
           "en": {
-            "kitchen": "Continue did not close one evening without warning. The house finished its service properly, it was bought, and the door stays open to anyone who wants to read the books. Only nobody takes an order there any more.",
+            "kitchen": "The kitchen finished its last service properly. Its door stayed open for reading the books, but nobody takes orders there any more. The house changed owners.",
             "expert": "Continue moved from an open-source coding assistant to a multi-surface coding agent, then to a closing 2.0.0 release, before the company and project were acquired by Cursor. The standalone repository is declared no longer actively maintained and set read-only without being archived; the open-source code is retained as a foundation. Current state is recorded as read_only, after an active_growth → active → final_release trajectory."
           }
         }
@@ -53,72 +53,72 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Continue est rachetée, la porte reste ouverte",
+          "cuisine": "Le dernier service laisse les cahiers à la porte",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Continue is bought, the door stays open",
+          "kitchen": "The last service leaves the books at the door",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Au début, Continue tient un seul poste. Il aide celui qui écrit, à sa table, et ses recettes sont ouvertes à tout le monde.",
+            "cuisine": "Au début, la cuisine tenait un seul poste avec des recettes ouvertes à tous.",
             "expert": "Continue démarre comme assistant de code open source intégré à l’éditeur. C’est l’état initial de la trajectoire reconstruite : active_growth."
           },
           "en": {
-            "kitchen": "At the start, Continue works one station. It helps whoever is writing, right there at the table, and its recipes are open to anyone.",
+            "kitchen": "At first, the kitchen ran one station with recipes open to everyone.",
             "expert": "Continue starts as an open-source in-editor coding assistant. That is the initial state of the reconstructed trajectory: active_growth."
           }
         },
         {
           "fr": {
-            "cuisine": "Puis il ne reste plus à une seule table. Il passe au comptoir, en salle, chez le voisin : trois endroits, le même cuisinier.",
+            "cuisine": "Puis le même service s’est étendu à trois endroits de la maison.",
             "expert": "Le produit devient un agent de code présent sur trois surfaces : l’éditeur VS Code, la ligne de commande et les IDE JetBrains. La portée s’élargit sans changer de nature."
           },
           "en": {
-            "kitchen": "Then it stops working one table. It takes the counter, the dining room, the place next door: three rooms, the same cook.",
+            "kitchen": "Then the same service spread to three places in the house.",
             "expert": "The product becomes a coding agent across three surfaces: VS Code, the command line and JetBrains IDEs. Reach widens without the nature of the product changing."
           }
         },
         {
           "fr": {
-            "cuisine": "Vient un dernier grand ménage. On range, on jette ce qui ne sert plus, on annonce que c’est la 2.0.0. Un service soigné, pas un service bâclé.",
+            "cuisine": "Un dernier grand rangement a préparé la fin du service.",
             "expert": "Une version 2.0.0 de clôture est publiée, accompagnée du nettoyage correspondant. C’est la dernière étape enregistrée avant le changement de propriétaire."
           },
           "en": {
-            "kitchen": "Then comes one last clear-out. Things are put away, what no longer serves is thrown out, and it is announced as 2.0.0. A careful service, not a rushed one.",
+            "kitchen": "One final clear-out prepared the end of service.",
             "expert": "A closing 2.0.0 release ships with the associated cleanup. It is the last step recorded before ownership changes."
           }
         },
         {
           "fr": {
-            "cuisine": "Ensuite, la maison est rachetée par Cursor. L’équipe et le nom changent de patron ; l’adresse, elle, ne bouge pas tout de suite.",
+            "cuisine": "Ensuite, la maison a été achetée et a changé de patron.",
             "expert": "L’entreprise et le projet sont acquis par Cursor. L’acquisition précède immédiatement la fin de la maintenance autonome."
           },
           "en": {
-            "kitchen": "Then the house is bought by Cursor. The team and the name change owner; the address itself does not move straight away.",
+            "kitchen": "Then the house was bought and changed owners.",
             "expert": "The company and the project are acquired by Cursor. The acquisition immediately precedes the end of standalone maintenance."
           }
         },
         {
           "fr": {
-            "cuisine": "Le message est écrit noir sur blanc : ici, on n’entretient plus rien. On peut entrer, lire les cahiers, tout regarder. Personne ne prend plus de commande.",
+            "cuisine": "La note a ensuite été claire : plus d’entretien ici. On peut lire les cahiers, mais plus personne ne prend de commande.",
             "expert": "Le dépôt autonome est explicitement déclaré non maintenu activement et passé en lecture seule. Il n’est pas archivé : l’état déclaré tient à la politique écrite, pas au drapeau du dépôt."
           },
           "en": {
-            "kitchen": "The notice is plain: nothing here is looked after any more. You can walk in, read the books, look at everything. Nobody takes an order.",
+            "kitchen": "The notice was clear: no more upkeep here. People may read the books, but nobody takes an order.",
             "expert": "The standalone repository is explicitly declared no longer actively maintained and set read-only. It is not archived: the declared state rests on the written policy, not on the repository flag."
           }
         },
         {
           "fr": {
-            "cuisine": "Les cahiers, eux, n’ont pas été jetés. Ils servent de base à la maison qui a racheté. Ce qui a été écrit ici continue de cuisiner ailleurs.",
+            "cuisine": "Les cahiers n’ont pas été jetés. Ils servent encore de base dans la cuisine qui a repris la maison.",
             "expert": "Le code open source est conservé comme fondation par l’acquéreur. La continuité technique survit à la fin de la maintenance autonome."
           },
           "en": {
-            "kitchen": "The books themselves were not thrown out. They serve as the base of the house that bought in. What was written here still cooks somewhere else.",
+            "kitchen": "The books were not thrown out. They still serve as a base in the kitchen that took over the house.",
             "expert": "The open-source code is retained as a foundation by the acquirer. Technical continuity outlives the end of standalone maintenance."
           }
         }
@@ -129,22 +129,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "On peut s’arrêter sans jamais baisser le rideau",
+          "cuisine": "Une porte ouverte peut cacher des fourneaux froids",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A house can stop without lowering its shutter",
+          "kitchen": "An open door can hide cold stoves",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On juge une maison à son rideau de fer : baissé, c’est fini ; levé, ça tourne. Continue montre que le rideau ne dit rien. Ce qui compte, c’est la note sur la porte et l’adresse où l’équipe cuisine maintenant.",
+            "cuisine": "Une porte ouverte ne prouve pas que la cuisine travaille encore. Ce qui compte est la note sur la porte et l’adresse où les responsables cuisinent maintenant.",
             "expert": "L’heuristique courante lit l’état du dépôt comme cause du projet. Or archive, lecture seule, arrêt de maintenance et transfert sont quatre classes causales distinctes, à qualifier séparément. Une acquisition peut mettre fin à la maintenance autonome sans qu’aucun drapeau d’archive ne soit jamais posé."
           },
           "en": {
-            "kitchen": "People judge a house by its shutter: down means finished, up means running. Continue shows the shutter says nothing. What counts is the notice on the door, and the address where the team now cooks.",
+            "kitchen": "An open door does not prove the kitchen still works. What counts is the notice on the door and the address where the people responsible now cook.",
             "expert": "The common heuristic reads repository state as project cause. Archive, read-only, maintenance stop and transfer are four distinct causal classes and have to be classified separately. An acquisition can end standalone maintenance while no archive flag is ever set."
           }
         }
@@ -155,22 +155,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Lire la note, puis demander où est l’équipe",
+          "cuisine": "Lire la porte avant de choisir la cuisine",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Read the notice, then find the team",
+          "kitchen": "Read the door before choosing the kitchen",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Alors on ne regarde plus le rideau en premier. On lit la note écrite sur la porte, et on demande où l’équipe travaille aujourd’hui. Un successeur nommé, avec le chemin pour y aller, dit bien plus qu’un rideau baissé.",
+            "cuisine": "Avant de choisir une cuisine, lis la note laissée sur la porte. Elle dit si le service est encore entretenu et où les nouveaux clients doivent aller.",
             "expert": "La classification doit s’appuyer sur la politique de maintenance déclarée et sur la preuve organisationnelle du successeur, pas sur le drapeau d’archive. Un successeur nommé assorti d’un chemin de migration est une preuve plus forte de supersession stratégique que l’état d’archive du dépôt d’origine. Chaque cause — sunset, arrêt de maintenance, supersession, transfert — se qualifie pour elle-même."
           },
           "en": {
-            "kitchen": "So the shutter is no longer the first thing to look at. Read the notice written on the door, then ask where the team works today. A named successor, with the road to get there, tells you far more than a shutter pulled down.",
+            "kitchen": "Before choosing a kitchen, read the note left on its door. It says whether service is still maintained and where new customers should go.",
             "expert": "Classification belongs to the declared maintenance policy and to organisational successor evidence, not to the archive flag. A named successor plus a migration path is stronger evidence of strategic supersession than whether the original repository is archived. Each cause — sunset, maintenance stop, supersession, transfer — must be qualified on its own terms."
           }
         }
@@ -181,22 +181,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Fourneaux froids, entretien arrêté, rachat moins certain",
+          "cuisine": "L’arrêt de l’entretien est certain, le reste l’est moins",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Stoves cold, upkeep stopped, the buyout less certain",
+          "kitchen": "The end of upkeep is certain; the rest is less so",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Aujourd’hui, l’état est clair et il est écrit : plus d’entretien, lecture libre. Ça, on en est sûr. Le reste de l’histoire — le rachat, les cahiers repris comme base — repose sur une preuve plus faible, et on le dit.",
+            "cuisine": "L’arrêt de l’entretien est écrit et certain. L’histoire du rachat et des cahiers repris repose sur des preuves moins fortes. Personne ne montre un retour de l’ancien service.",
             "expert": "L’état courant read_only et la trajectoire active_growth → active → final_release sont retenus à très haute confiance. La lignée narrative — agent open source, clôture 2.0, acquisition par Cursor, dépôt autonome en lecture seule pendant que le code subsiste — est retenue à confiance moyenne, de même que la conservation du code comme fondation. Aucune reprise de maintenance autonome n’est établie."
           },
           "en": {
-            "kitchen": "Today the state is plain and it is written down: nothing maintained, free to read. That much is certain. The rest of the story — the buyout, the books taken on as a base — rests on thinner evidence. That is said out loud.",
+            "kitchen": "The end of upkeep is written down and certain. The story of the buyout and reused books rests on thinner evidence. Nobody shows the old service returning.",
             "expert": "The current read_only state and the active_growth → active → final_release trajectory are held at very high confidence. The narrative lineage — open-source agent, 2.0 closure, acquisition by Cursor, standalone repository read-only while the code survives — is held at medium confidence, as is the retention of the code as a foundation. No resumption of standalone maintenance is established."
           }
         }
@@ -207,22 +207,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une maison s’éteint par étapes, pas d’un coup",
+          "cuisine": "Une porte ouverte ne raconte pas la suite",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Houses go dark in stages, not overnight",
+          "kitchen": "An open door does not tell the next chapter",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une maison ne meurt pas d’un coup, un soir, au moment où l’on baisse le rideau. Elle glisse, service après service, et la porte ouverte ne prouve rien du tout.",
+            "cuisine": "Une cuisine peut cesser de prendre des commandes sans fermer sa porte. Pour comprendre la suite, lis la note laissée aux clients.",
             "expert": "La mortalité d’un projet est une transition orientée entre états, pas un instantané à zéro commit. L’état d’archive est une preuve parmi d’autres, jamais la définition."
           },
           "en": {
-            "kitchen": "A house does not die all at once, one evening, the moment the shutter comes down. It slides, service after service, and an open door proves nothing at all.",
+            "kitchen": "A kitchen can stop taking orders without closing its door. To understand what comes next, read the note left for customers.",
             "expert": "Project mortality is a directional transition between states, not a zero-commit snapshot. Archive state is one piece of evidence, never the definition."
           }
         }

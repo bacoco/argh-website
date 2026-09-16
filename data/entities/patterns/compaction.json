@@ -24,22 +24,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Un résumé qui oublie la commande encore due",
+          "cuisine": "Le récit tenait, la commande due avait disparu",
           "expert": "Le résumé a conservé le récit et perdu l’obligation en cours"
         },
         "en": {
-          "kitchen": "Shrinking the notes drops the order still owed",
+          "kitchen": "The story held, but the order still owed had gone",
           "expert": "The summary kept the story and dropped the obligation in force"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le carnet devient trop épais, alors on recopie la soirée en une page. Chez OpenClaw et Codex, cette page racontait très bien la soirée : qui avait commandé quoi, ce qui était sorti. Ce qu’elle ne portait plus, c’était le plat encore attendu et ce qui permettait de le dire prêt.",
+            "cuisine": "Le carnet était devenu trop épais, alors la soirée a été recopiée en une page. La page racontait très bien les repas et les clients. Elle avait pourtant perdu le plat encore attendu et la façon de savoir qu’il serait prêt.",
             "expert": "La compaction réduit le contexte en remplaçant l’historique par un résumé. Chez OpenClaw et Codex, ce résumé conservait des fragments d’historique tout en perdant l’obligation active : ce qui restait dû et ce qui comptait comme terminé. Le modèle repris restait cohérent sur le passé tout en dérivant de la mission en cours."
           },
           "en": {
-            "kitchen": "The book gets too thick, so the whole evening is recopied onto a single page. At OpenClaw and Codex it was a good page: every guest, every order, everything that went out. The plate still waiting was not on it, and neither was the test for calling it ready.",
+            "kitchen": "The book had grown too thick, so the evening was copied onto one page. That page told the meals and guests well. Yet it lost the plate still awaited and how anyone would know it was ready.",
             "expert": "Compaction shrinks context by replacing history with a summary. At OpenClaw and Codex that summary kept fragments of history while losing the active obligation: what was still owed and what counted as finished. The resumed model stayed coherent about the past while drifting from the mission in force."
           }
         }
@@ -50,22 +50,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "OpenClaw racontait tout sauf ce qui restait dû",
+          "cuisine": "La page connaissait le passé et oubliait la dette",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Every plate remembered at OpenClaw, one still owed",
+          "kitchen": "The page knew the past and forgot the debt",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le cuisinier répond juste sur tout ce qui s’est passé avant. Il raconte la soirée sans se tromper d’un plat. Puis il s’arrête, satisfait, alors qu’une commande n’est jamais partie — et rien, sur sa page, ne lui paraît manquer.",
+            "cuisine": "Le cuisinier racontait la soirée sans se tromper sur les plats sortis. Puis il s’arrêtait, satisfait, alors qu’une commande n’était jamais partie. Sa page ne lui montrait aucun manque.",
             "expert": "Le signal est une cohérence intacte sur le passé associée à une dérive sur le travail restant : le modèle repris ne se contredit pas, il s’arrête ou change de cap. Les obligations ouvertes et les critères de fin sont absents sans que rien ne signale leur absence. Le terrain habituel est une tâche de longue durée dont l’historique a été résumé au moins une fois."
           },
           "en": {
-            "kitchen": "The cook answers everything about earlier without a single mistake. He walks the evening back, plate by plate. Then he stops, satisfied, while one order never left the pass — and nothing on his page feels missing to him.",
+            "kitchen": "The cook retold the evening without mistaking a single meal served. Then he stopped, satisfied, while one order had never left the pass. Nothing on his page showed the gap.",
             "expert": "The signal is intact coherence about the past paired with drift on the remaining work: the resumed model does not contradict itself, it stops early or changes direction. Open obligations and completion criteria are gone, with nothing marking their absence. The usual ground is a long-running task whose history has been summarized at least once."
           }
         }
@@ -76,22 +76,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "On recopie le récit, pas la dette",
+          "cuisine": "Le récit et la commande en attente ne tenaient pas sur la même feuille",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The story gets recopied, the debt does not",
+          "kitchen": "The story and the waiting order did not fit on one sheet",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une page de résumé est faite pour raconter, et elle raconte bien. Une commande en attente n’est pas un récit : c’est une dette, avec une heure et une condition pour la solder. Ce qu’on recopie garde le récit, parce que c’est précisément ce qu’on lui a demandé de garder.",
+            "cuisine": "La page était faite pour raconter, et elle le faisait bien. Une commande en attente est autre chose : elle porte un devoir et ce qui permettra de l’effacer. En recopiant seulement le récit, on a naturellement perdu ce devoir.",
             "expert": "Un résumé optimise l’historique sémantique, pas l’obligation contractuelle : ce sont deux structures d’information distinctes, et la seconde ne se reconstruit pas depuis la première. La tromperie vient de ce que la sortie reste fluide et exacte sur le passé, qui est le critère de qualité qu’on applique spontanément à un résumé. Rien dans cette sortie ne marque l’endroit où l’obligation a disparu."
           },
           "en": {
-            "kitchen": "A summary page exists to tell the evening, and it tells it well. An order still waiting is not a story: it is a debt, with a time on it and a condition for clearing it. What gets recopied keeps the story, because the story is what it was asked to keep.",
+            "kitchen": "The page was made to tell the evening, and it did that well. A waiting order is different: it carries a duty and what will clear it. Copying only the story naturally lost that duty.",
             "expert": "A summary optimizes semantic history, not contractual obligation: two distinct information structures, and the second does not rebuild from the first. The deception is that the output stays fluent and accurate about the past, which is the quality test a summary is reflexively held to. Nothing in that output marks the place where the obligation dropped out."
           }
         }
@@ -102,22 +102,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La commande due tient sur sa propre feuille",
+          "cuisine": "Accrocher les commandes dues hors du récit",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "The open order gets its own sheet",
+          "kitchen": "Hang orders still owed outside the story",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ce qui reste à servir ne se range pas dans le récit de la soirée. Accroche-le à part, avec l’heure et ce qui fera dire que c’est prêt. Recopie le carnet autant que tu veux : cette feuille-là ne bouge pas.",
+            "cuisine": "Écrivez ce qui reste dû sur sa propre feuille, avec l’heure et ce qui dira que le plat est prêt. Gardez-la même lorsque vous raccourcissez le carnet. Le récit peut alors perdre des détails sans perdre la commande.",
             "expert": "La mission, les obligations ouvertes et la définition de terminé doivent être persistées hors du résumé, dans une structure qui ne subit pas la perte du transcript. Le résumé redevient alors libre de compresser le récit, puisqu’il ne porte plus la partie contractuelle. La leçon de conception mémoire vaut au-delà des produits où elle a été observée."
           },
           "en": {
-            "kitchen": "What is still to be served does not belong inside the story of the evening. Hang it apart, with the time on it and with what makes it count as ready. Recopy the book as often as you like; that sheet stays where it is.",
+            "kitchen": "Write what is still owed on its own sheet, with the time and what will make the dish ready. Keep it when you shorten the book. The story can then lose detail without losing the order.",
             "expert": "Mission, open obligations and the definition of done have to live outside the summary, in a structure untouched by transcript loss. The summary is then free to compress the narrative again, because it no longer carries the contractual part. The memory-design lesson holds beyond the products where it was observed."
           }
         }
@@ -128,22 +128,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une bonne mémoire ne sert pas la commande",
+          "cuisine": "Bien raconter la soirée ne sert pas ce qui reste dû",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A good memory never sent a plate out",
+          "kitchen": "Telling the evening well does not serve what is still owed",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Se souvenir de la soirée n’est pas tenir la commande. Ce qu’on doit encore au client se note ailleurs que dans le récit de ce qu’on a déjà fait.",
+            "cuisine": "Un récit fidèle du passé ne prouve pas que la prochaine assiette partira. La commande due doit survivre à part, sinon une belle mémoire laisse le client attendre.",
             "expert": "La mémoire n’est pas la mission. Un résumé fidèle du passé ne prouve pas que l’obligation en cours a survécu, et rien dans sa qualité narrative ne le signale."
           },
           "en": {
-            "kitchen": "Remembering the evening is not holding the order. What the guest is still owed gets written somewhere other than the story of what you already did.",
+            "kitchen": "A faithful story of the past does not prove the next plate will leave. The order still owed must survive apart, or a fine memory leaves the guest waiting.",
             "expert": "Memory is not the mission. A faithful summary of the past is no evidence that the obligation in force survived, and its narrative quality never signals otherwise."
           }
         }

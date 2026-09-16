@@ -27,22 +27,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Un cahier de consignes suivi par plusieurs maisons",
+          "cuisine": "Un même cahier passait entre plusieurs cuisines",
           "expert": "Une méthode et des fichiers de contrôle qui traversent plusieurs harnais"
         },
         "en": {
-          "kitchen": "One book of standing orders, several different houses",
+          "kitchen": "One standing-order book passed between several kitchens",
           "expert": "A method and control files that travel across harnesses"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le même cahier de consignes est accroché au mur de plusieurs maisons. Claude Code, Codex et Gemini CLI le lisent, et une manière de travailler comme Superpowers passe de brigade en brigade. Tout le monde lit les mêmes pages. Rien ne dit que tout le monde leur donne la même autorité.",
+            "cuisine": "Le même cahier de consignes était accroché dans plusieurs cuisines. Une manière de travailler passait aussi de brigade en brigade. Les pages restaient les mêmes, mais leur poids pouvait changer d’une maison à l’autre.",
             "expert": "Ce motif couvre les règles, méthodes et fichiers de contrôle conçus pour conserver leur sémantique à travers plusieurs harnais. Les fichiers d’instructions projet de Claude Code, Codex et Gemini CLI convergent sur les noms et le format, tandis que Superpowers montre une méthodologie de workflows qui se diffuse d’un environnement d’agents de code à l’autre avant d’être une fonctionnalité produit."
           },
           "en": {
-            "kitchen": "One book of standing orders now hangs on the wall of several houses. Claude Code, Codex and Gemini CLI all read it, and a way of working like Superpowers is carried from brigade to brigade. The pages are the same everywhere. What each house grants those pages is not.",
+            "kitchen": "The same standing-order book hung in several kitchens. A way of working also passed from brigade to brigade. The pages stayed the same, but their weight could change from one house to another.",
             "expert": "This pattern covers rules, methods and control files meant to keep their semantics across several harnesses. Project instruction files in Claude Code, Codex and Gemini CLI converge on naming and format, while Superpowers shows a workflow methodology spreading from one coding-agent environment to the next before becoming any product’s feature."
           }
         }
@@ -53,22 +53,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux réponses pour une seule consigne",
+          "cuisine": "Une même page donnait deux réponses",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Same page, different plate at the pass",
+          "kitchen": "The same page gave two answers",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La page est reconnue partout : même intitulé, même place au mur, même mise en page. Posez à deux brigades une question où deux consignes se contredisent, et vous obtenez deux réponses. La manière de travailler, elle, circule par les gens qui l’emportent, bien avant qu’une maison ne l’installe dans ses murs.",
+            "cuisine": "La page était reconnue partout, avec le même titre et la même place au mur. Deux brigades pouvaient pourtant répondre différemment à deux consignes contraires. La méthode voyageait par les gestes des cuisiniers avant d’être vraiment adoptée par une maison.",
             "expert": "Le nom de fichier et le format sont reconnus par plusieurs harnais, et des chemins de migration apparaissent. Les règles de précédence et le modèle de confiance divergent pourtant : deux hôtes lisant les mêmes sources produisent des décisions différentes quand ces sources se contredisent. L’adoption d’une méthodologie précède son support produit, et sa portabilité se mesure au comportement conservé, non à sa reconnaissance."
           },
           "en": {
-            "kitchen": "The page is recognised everywhere: same title, same spot on the wall, same layout. Put two contradicting orders to two brigades and you get two different rulings. The way of working spreads through the cooks who carry it, long before any house builds it into its own walls.",
+            "kitchen": "The page was recognised everywhere, with the same title and place on the wall. Yet two brigades could answer two opposing notes differently. The method travelled in cooks’ hands before a house truly adopted it.",
             "expert": "File names and formats are recognised by several harnesses, and migration paths appear. Precedence rules and trust models still diverge: two hosts reading identical sources reach different decisions where those sources conflict. Adoption of a methodology precedes product support, and its portability is measured by the behaviour it preserves, not by whether it is recognised."
           }
         }
@@ -79,22 +79,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Accrocher la page ne transporte pas la règle",
+          "cuisine": "Le cahier voyageait, pas la façon de trancher",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A page never says how far it reaches",
+          "kitchen": "The book travelled, not the way of settling disputes",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une consigne ne dit pas elle-même jusqu’où elle s’applique, ni laquelle l’emporte quand une autre la contredit, ni combien on doit la croire. Tout cela reste dans la tête de la brigade qui la lit. Accrocher la même page dans deux maisons est facile ; obtenir le même service ne l’est pas. La ressemblance rassure, et c’est exactement là qu’elle trompe.",
+            "cuisine": "Une consigne ne dit pas jusqu’où elle va ni laquelle gagne contre une autre. La brigade qui la lit apporte cette réponse avec elle. Accrocher le même cahier dans deux cuisines est facile ; obtenir le même service ne l’est pas.",
             "expert": "Des fichiers de but identique peuvent porter des sémantiques différentes de portée, de fusion, de confiance et de précédence. La compatibilité syntaxique ne garantit donc pas la compatibilité comportementale : lire le même format ne permet pas de prédire la décision appliquée. Une méthodologie subit la même contrainte, puisqu’elle dépend du harnais hôte pour être chargée, ordonnée et respectée."
           },
           "en": {
-            "kitchen": "An order does not say how far it reaches, which order beats it in a clash, or how far it should be trusted. All of that lives in the head of the brigade reading it. Hanging the same page in two houses is easy; getting the same service out of them is not. The likeness is reassuring, and that is precisely where it misleads.",
+            "kitchen": "A standing order does not say how far it reaches or which note wins against another. The brigade reading it brings that answer with it. Hanging the same book in two kitchens is easy; getting the same service is not.",
             "expert": "Files with identical purpose can carry different scope, merge, trust and precedence semantics. Syntactic compatibility therefore does not imply behavioural compatibility: reading the same format does not predict the decision that will be applied. A methodology meets the same constraint, since it depends on the host harness to load it, order it and honour it."
           }
         }
@@ -105,22 +105,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Éprouver la maison avant de lui confier le cahier",
+          "cuisine": "Mettre deux consignes en conflit avant de confier le cahier",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Test the house before handing over the book",
+          "kitchen": "Set two notes in conflict before trusting the book",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Avant de confier le cahier à une autre maison, donnez-lui deux consignes qui s’opposent et regardez ce qu’elle sert. Sa réponse vous dit laquelle passe devant chez elle. Suivez une manière de travailler aux maisons qui l’adoptent et au geste qu’elle garde intact, pas au bruit autour de son nom. Faire correspondre les intitulés ne vous apprend rien.",
+            "cuisine": "Avant de confier le cahier, placez deux consignes contraires devant la brigade et regardez son assiette. Elle montrera la règle qui gagne chez elle. Suivez aussi une méthode par les gestes qu’elle conserve, pas par le bruit autour de son nom.",
             "expert": "Définir et tester la précédence effective en observant la décision produite lorsque deux sources se contredisent, plutôt que la reconnaissance des noms de fichiers. Suivre les méthodologies qui survivent à un changement d’hôte comme signaux de convergence architecturale au-dessus d’un produit particulier, en mesurant le comportement qu’elles conservent."
           },
           "en": {
-            "kitchen": "Before you hand the book to another house, give it two orders that fight and watch what comes out of the pass. The plate tells you which order wins there. Judge a way of working by the houses that take it up and the gesture it keeps intact, not by the noise around its name. Matching titles teach you nothing.",
+            "kitchen": "Before trusting the book, put two opposing notes before the brigade and watch its plate. It will show which rule wins there. Judge a method by the moves it keeps, not by the noise around its name.",
             "expert": "Define and test effective precedence by observing the decision produced when two sources contradict each other, rather than checking that file names are recognised. Track methodologies that survive a change of host as signals of architectural convergence above any single product, measuring the behaviour they preserve."
           }
         }
@@ -131,22 +131,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Même intitulé, pas forcément même autorité",
+          "cuisine": "Une couverture semblable ne garantit pas le même service",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Recognising the book is not obeying it",
+          "kitchen": "A matching cover does not guarantee the same service",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Deux maisons peuvent lire la même page et servir deux choses différentes. Ce qui compte n’est pas l’intitulé sur la couverture, c’est la consigne que la brigade suit quand deux se contredisent.",
+            "cuisine": "Deux cuisines peuvent lire la même page et servir deux réponses différentes. Ce qui compte est la consigne suivie lorsque deux ordres se contredisent. Le titre sur la couverture ne prouve rien.",
             "expert": "Des noms de fichiers compatibles ne garantissent pas des sémantiques de contrôle compatibles ; la propriété à vérifier est la précédence réellement appliquée. Les idées de harnais les plus durables peuvent d’ailleurs se diffuser comme méthodes avant de devenir des fonctionnalités produit."
           },
           "en": {
-            "kitchen": "Two houses can read the same page and send out two different plates. What matters is not the title on the cover but the order the brigade follows when two of them collide.",
+            "kitchen": "Two kitchens can read the same page and serve two different answers. What matters is the order followed when two notes collide. The title on the cover proves nothing.",
             "expert": "Compatible file names do not guarantee compatible control semantics; the property to verify is the precedence actually applied. The most durable harness ideas may also spread as methods well before any product turns them into a feature."
           }
         }

@@ -24,22 +24,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Archon rouvre le carnet, le poste a changé",
+          "cuisine": "Le carnet reprend le service dans une autre cuisine",
           "expert": "La reprise restaurait la conversation, pas assez d’état d’exécution"
         },
         "en": {
-          "kitchen": "Archon reopens the pad onto a different station",
+          "kitchen": "The order pad resumes service at a different station",
           "expert": "Resume restored the conversation but too little execution state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Archon, après la coupure, on rouvre le carnet et tout y est : les commandes, l’ordre, les notes. Mais on a repris à un autre poste, avec d’autres casseroles et une livraison qui n’est pas celle de la veille. Le cuisinier continue comme si de rien n’était.",
+            "cuisine": "Après une coupure, le commis retrouve toutes les commandes dans son carnet. Pourtant, il reprend devant d’autres casseroles avec une livraison différente. Il continue comme si le service n’avait jamais changé de poste.",
             "expert": "Une lignée d’incidents de reprise de session montre pourquoi rejouer la seule conversation ne suffit pas dès que le travail dépend du workspace, du provider et du contexte d’exécution."
           },
           "en": {
-            "kitchen": "At Archon the pad reopens after the break and everything is there: orders, sequence, notes. But work resumed at another station, with other pans and a delivery that is not last night’s. The cook carries on as though nothing moved.",
+            "kitchen": "After an interruption, the cook finds every order in the pad. Yet service resumes beside different pans with a different delivery. The cook carries on as though the station never changed.",
             "expert": "A session-resume lineage shows why replaying conversation alone falls short whenever the job depends on workspace, provider and execution context."
           }
         }
@@ -50,62 +50,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "La reprise chez Archon repart d’un poste dépareillé",
+          "cuisine": "Le service reprend avec le bon carnet au mauvais poste",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Archon picks the service up at another station",
+          "kitchen": "Service resumes with the right pad at the wrong station",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On reprend un service qui avait été interrompu.",
+            "cuisine": "La brigade reprend un service interrompu. Elle veut continuer exactement là où elle s’était arrêtée.",
             "expert": "Un utilisateur reprend une session d’agent interrompue."
           },
           "en": {
-            "kitchen": "An interrupted service is picked back up.",
+            "kitchen": "The brigade resumes an interrupted service. It wants to continue from the exact point where work stopped.",
             "expert": "A user resumes an interrupted agent session."
           }
         },
         {
           "fr": {
-            "cuisine": "Le carnet donne une impression de continuité parfaite.",
+            "cuisine": "Le carnet rend toutes les commandes et les notes dans le bon ordre. À sa lecture, rien ne semble avoir bougé.",
             "expert": "La continuité conversationnelle paraît intacte."
           },
           "en": {
-            "kitchen": "The pad gives an impression of perfect continuity.",
+            "kitchen": "The pad returns every order and note in the right sequence. Reading it makes the service appear perfectly unchanged.",
             "expert": "Conversational continuity looked intact."
           }
         },
         {
           "fr": {
-            "cuisine": "Le reste du poste, lui, revient incomplet ou mal assorti.",
+            "cuisine": "Autour du carnet, le poste revient incomplet ou mal assorti. Les casseroles et les livraisons ne correspondent plus forcément.",
             "expert": "L’état d’exécution restauré est incomplet ou incohérent."
           },
           "en": {
-            "kitchen": "The rest of the station comes back incomplete or mismatched.",
+            "kitchen": "Around the pad, the station returns incomplete or mismatched. Pans and deliveries may no longer belong to that service.",
             "expert": "Restored execution state came back incomplete or inconsistent."
           }
         },
         {
           "fr": {
-            "cuisine": "Le cuisinier travaille alors depuis un poste qui ne correspond pas au service qu’il croit finir.",
+            "cuisine": "Le commis croit terminer l’ancien service. En réalité, il travaille depuis un poste qui ne lui correspond plus.",
             "expert": "L’agent repris peut agir depuis un contexte incompatible avec celui de l’interruption."
           },
           "en": {
-            "kitchen": "The cook then works from a station that does not match the service he believes he is finishing.",
+            "kitchen": "The cook believes the old service is being finished. In reality, the station no longer matches that work.",
             "expert": "The resumed agent could act from a context incompatible with the interrupted one."
           }
         },
         {
           "fr": {
-            "cuisine": "Une réparation, appuyée par des essais, fait revenir le poste par la même porte que le carnet.",
+            "cuisine": "Une réparation remet le carnet et le poste ensemble au retour. Des essais appuient cette réparation.",
             "expert": "Un correctif soutenu par des tests renforce la restauration du checkpoint."
           },
           "en": {
-            "kitchen": "A repair, backed by trials, brings the station back through the same door as the pad.",
+            "kitchen": "A repair brings the order pad and its station back together. Trials support that repair.",
             "expert": "A test-backed repair strengthened checkpoint restoration."
           }
         }
@@ -116,22 +116,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Ranger le carnet ne range pas la cuisine autour",
+          "cuisine": "Sauver les commandes ne sauve pas le poste",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Storing the pad stores nothing around it",
+          "kitchen": "Saving the orders does not save the station",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le récit du service a été pris pour le service lui-même. Tout le reste — le poste, les casseroles, le fournisseur — a été refait avec ce qu’on avait sous la main ce jour-là.",
+            "cuisine": "La maison a soigneusement gardé le carnet, puis l’a pris pour tout le service. Au retour, elle a choisi le poste, les casseroles et le fournisseur disponibles ce jour-là. Le carnet et la cuisine racontaient alors deux soirées différentes.",
             "expert": "L’état conversationnel était traité comme identité principale, tandis que l’identité d’exécution était reconstruite à partir des valeurs par défaut du moment."
           },
           "en": {
-            "kitchen": "The story of the service was mistaken for the service. Everything else — station, pans, supplier — was rebuilt from whatever happened to be at hand that day.",
+            "kitchen": "The house carefully kept the order pad, then mistook it for the whole service. On return, it used whatever station, pans, and supplier were available that day. Pad and kitchen now described different nights.",
             "expert": "Conversation state served as the primary identity; execution identity was rebuilt from whatever defaults were current at resume."
           }
         }
@@ -142,22 +142,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Ranger tout ce qui fait ce service-là",
+          "cuisine": "Garder le carnet avec le poste qui lui appartient",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Store the whole station, not just the orders",
+          "kitchen": "Keep the order pad with the station it belongs to",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Noter aussi le poste, les casseroles et le fournisseur — tout ce qui fait qu’un service est ce service-là. Et au moment de reprendre, vérifier que c’est bien ça qu’on retrouve.",
+            "cuisine": "Le carnet doit désigner le poste, les casseroles et le fournisseur de ce service. À la reprise, le chef vérifie que chacun est revenu. Sinon, la brigade ne continue pas la même soirée.",
             "expert": "Persister les dimensions qui définissent l’identité d’exécution, puis les valider au moment de la reprise plutôt que les redériver."
           },
           "en": {
-            "kitchen": "Write down the station, the pans and the supplier too — everything that makes a service that service. Then, on picking it up, check that this is what actually came back.",
+            "kitchen": "The pad must identify the station, pans, and supplier for that service. On return, the chef checks that each came back. Otherwise, the brigade is not continuing the same night.",
             "expert": "Persist the dimensions that constitute execution identity, and validate them at resume time instead of re-deriving them."
           }
         }
@@ -168,22 +168,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Archon a réparé la reprise, essais à l’appui",
+          "cuisine": "La reprise réparée remet le carnet au bon poste",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Archon resumes better now, with trials behind it",
+          "kitchen": "The repaired return puts the pad back at its station",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une réparation appuyée par des essais a amélioré la reprise. C’est la même règle qui revient ailleurs : ce qu’on range doit suffire à reprendre.",
+            "cuisine": "Une réparation appuyée par des essais a amélioré la reprise du service. Elle remet davantage d’éléments du poste avec le carnet. Ce cas confirme qu’une reprise exige plus que les commandes écrites.",
             "expert": "Un correctif soutenu par des tests a amélioré le comportement et conforte le pattern plus large de convergence des checkpoints."
           },
           "en": {
-            "kitchen": "A trial-backed repair improved how service resumes. The same rule turns up elsewhere: what you store must be enough to pick the work back up.",
+            "kitchen": "A repair supported by trials improved how service resumes. More of the station now returns with the order pad. This case confirms that written orders alone are not enough.",
             "expert": "A test-backed fix improved behaviour and reinforces the broader checkpoint-convergence pattern."
           }
         }
@@ -194,22 +194,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Reprendre demande le poste, pas que le carnet",
+          "cuisine": "Un service revient seulement avec toute sa cuisine",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Notes alone will not restart a service",
+          "kitchen": "A service returns only with its whole kitchen",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On ne reprend pas un service en relisant le carnet : il faut retrouver le poste avec.",
+            "cuisine": "Relire les commandes ne suffit pas pour reprendre une soirée interrompue. Il faut aussi retrouver le poste où elles devaient être préparées.",
             "expert": "Reprendre le travail, pas seulement la conversation."
           },
           "en": {
-            "kitchen": "You do not resume a service by rereading the pad; the station has to come back with it.",
+            "kitchen": "Rereading the orders cannot restart an interrupted night by itself. The station where they belonged must return with them.",
             "expert": "Resume the job, not only the transcript."
           }
         }

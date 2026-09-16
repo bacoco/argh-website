@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Une fiche présente dans la maison, jamais lue",
+          "cuisine": "Une fiche était rangée mais ne rejoignait jamais le passe",
           "expert": "Ce qui est présent n’est pas ce qui est chargé"
         },
         "en": {
-          "kitchen": "A card in the drawer service never opens",
+          "kitchen": "A card was filed but never reached the pass",
           "expert": "What is present is not what gets loaded"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une fiche peut dormir dans un tiroir toute une saison. Chez Claude Code, celles rangées dans un tiroir glissé à l’intérieur d’un autre ne remontaient jamais à l’ouverture. La brigade ne les voyait pas, donc elles n’ont rien changé au service. Ce qui décide, c’est la tournée du matin, pas le rangement.",
+            "cuisine": "Une fiche pouvait dormir dans un tiroir toute une saison. Celles rangées derrière un autre tiroir ne remontaient jamais à l’ouverture. La brigade ne les voyait pas et le service ne changeait pas.",
             "expert": "La découverte est le mécanisme par lequel un environnement d’exécution identifie les ressources réellement disponibles et applicables. Chez Claude Code, les skills imbriqués n’étaient pas découverts : les fichiers existaient, l’inventaire chargé au démarrage ne les contenait pas. Les utilisateurs les exposaient alors par des hooks de démarrage."
           },
           "en": {
-            "kitchen": "A card can sit in a drawer for a whole season. At Claude Code the ones tucked in a drawer inside another drawer never came up at opening. The brigade never saw them, so they changed nothing during service. What decides is the morning round, not the filing.",
+            "kitchen": "A card could sleep in a drawer for a whole season. Cards tucked behind another drawer never came out at opening. The brigade never saw them, and service did not change.",
             "expert": "Discovery is the mechanism by which a runtime identifies the resources that are actually available and applicable. At Claude Code nested skills were not discovered: the files existed, the inventory loaded at startup did not contain them. Users exposed them through startup hooks instead."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Chez Claude Code, la fiche reste au tiroir",
+          "cuisine": "La fiche existait, mais quelqu’un devait la chercher à la main",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Claude Code's card never leaves the drawer",
+          "kitchen": "The card existed, but someone had to fetch it by hand",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La fiche est là, écrite, rangée, et pourtant rien ne change au service. Quelqu’un finit par ajouter un geste à l’ouverture pour aller la chercher à la main. Puis un matin ce geste ne remonte plus rien, alors que personne n’a touché aux fiches.",
+            "cuisine": "La fiche était écrite et rangée, mais elle ne faisait rien au service. Quelqu’un a donc ajouté une tournée manuelle à l’ouverture. Un matin, cette tournée n’a plus rien ramené alors que les fiches n’avaient pas bougé.",
             "expert": "Une ressource présente sur disque reste sans effet observable. Des contournements apparaissent pour l’exposer — chez Claude Code, des hooks de démarrage. Le signal le plus net vient ensuite : une évolution du démarrage casse le contournement alors que les fichiers de skills sont restés inchangés."
           },
           "en": {
-            "kitchen": "The card is there, written, filed, and service does not change. Someone ends up adding a move at opening to fetch it by hand. Then one morning that move comes back empty, though nobody touched the cards.",
+            "kitchen": "The card was written and filed, but it did nothing for service. Someone added a manual round at opening. One morning, that round brought back nothing although the cards had not moved.",
             "expert": "A resource present on disk has no observable effect. Workarounds appear to expose it — at Claude Code, startup hooks. The sharpest signal comes next: a change in startup breaks the workaround while the skill files themselves stayed unchanged."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "On juge la fiche écrite, jamais la fiche sortie",
+          "cuisine": "Le rangement ne prouvait pas la lecture",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A filed card looks like a followed card",
+          "kitchen": "Filing did not prove reading",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La fiche se voit, la tournée ne se voit pas. Alors on juge sur ce qu’on a écrit, jamais sur ce qui a été ouvert. Une fiche rangée et jamais sortie ressemble en tous points à une fiche suivie, et personne ne fait la différence pendant le service.",
+            "cuisine": "On voyait la fiche, pas la tournée qui ouvrait les tiroirs. Une fiche rangée et une fiche suivie se ressemblaient donc parfaitement. La différence n’apparaissait jamais pendant le service.",
             "expert": "L’interface effective n’est pas le format du fichier mais l’algorithme de découverte associé à l’ordre d’initialisation. La présence se lit comme une disponibilité, si bien qu’une ressource ignorée passe pour une ressource qui devrait fonctionner. Les utilisateurs dépendent alors d’une interface non documentée, sans contrat ni garantie de compatibilité."
           },
           "en": {
-            "kitchen": "The card is visible; the round is not. So people judge by what they wrote, never by what was opened. A card filed and never pulled looks exactly like a card being followed, and nobody tells them apart during service.",
+            "kitchen": "People saw the card, not the round that opened drawers. A filed card and a followed card therefore looked exactly alike. The difference never appeared during service.",
             "expert": "The effective interface is not the file format but the discovery algorithm together with initialization order. Presence reads as availability, so an ignored resource looks like one that ought to work. Users then depend on an undocumented interface, with no contract and no compatibility guarantee."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Rendre visible ce que la tournée a vraiment sorti",
+          "cuisine": "Afficher les fiches sorties à chaque ouverture",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Make visible what the morning round actually brought out",
+          "kitchen": "Show the cards brought out at every opening",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Afficher chaque matin la liste de ce qui est réellement sorti des tiroirs, poste par poste. Prévenir quand la tournée change, comme on préviendrait d’un changement d’horaire. Et vérifier les gestes ajoutés à l’ouverture avant chaque changement, puisque c’est sur eux que la brigade s’appuie. Plusieurs maisons semblent aller dans ce sens ; rien ne dit qu’elles s’y prennent pareil.",
+            "cuisine": "Affichez à l’ouverture les fiches réellement sorties, poste par poste. Prévenez lorsque la tournée change et vérifiez les gestes ajoutés pour la compléter. Plusieurs cuisines semblent aller dans ce sens, sans qu’une même méthode soit établie.",
             "expert": "Versionner la sémantique de découverte et publier l’inventaire effectivement chargé au démarrage, afin que présence et chargement se constatent séparément. Traiter les points d’extension utilisés par les contournements comme une surface de compatibilité, testée à chaque montée de version. Les systèmes de skills des principaux harnais s’orientent vers des sémantiques explicites de découverte et d’activation ; c’est une tendance observée, aucun comportement uniforme n’est établi."
           },
           "en": {
-            "kitchen": "Post every morning the list of what actually came out of the drawers, station by station. Give notice when the round changes, the way you would for a change of hours. And check the added opening moves before every change, since that is what the brigade leans on. Several houses seem to be heading that way; nothing says they go about it alike.",
+            "kitchen": "At opening, show the cards actually brought out for every station. Announce changes to the round and check the extra moves that complete it. Several kitchens appear to be moving this way, without one method being established.",
             "expert": "Version the discovery semantics and publish the inventory actually loaded at startup, so that presence and loading are established separately. Treat the extension points workarounds rely on as a compatibility surface, tested at every version bump. Major harness skill systems are moving toward explicit discovery and activation semantics; that is an observed trend, and no uniform behavior is established."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "La consigne écrite n’a rien changé chez Claude Code",
+          "cuisine": "Une fiche ignorée n’existe pas pour le service",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The written card changed nothing at Claude Code",
+          "kitchen": "A card ignored does not exist for service",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Range la fiche là où la tournée passe, ou change la tournée. Une fiche que personne ne sort n’a jamais existé pour le service.",
+            "cuisine": "Rangez la fiche là où la tournée passe, ou changez la tournée. Ce qui n’est jamais sorti d’un tiroir n’a jamais guidé le service.",
             "expert": "Les règles de découverte appartiennent à l’API des ressources qu’elles exposent. Les modifier revient à modifier un contrat public, même quand aucun format de fichier ne bouge."
           },
           "en": {
-            "kitchen": "Keep the card where the round passes, or change the round. A card nobody pulls has never existed as far as service goes.",
+            "kitchen": "Keep the card where the round passes, or change the round. What never leaves a drawer has never guided service.",
             "expert": "Discovery rules belong to the API of the resources they expose. Changing them changes a public contract, even when no file format moves."
           }
         }

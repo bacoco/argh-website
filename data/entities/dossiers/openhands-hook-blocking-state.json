@@ -24,22 +24,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "OpenHands dit enfin qui a retenu l’assiette",
+          "cuisine": "Le ticket dit enfin qui a retenu l’assiette",
           "expert": "L’exécution des hooks est devenue un état observable de l’agent"
         },
         "en": {
-          "kitchen": "OpenHands now says who held the plate back",
+          "kitchen": "The ticket now says who held the plate back",
           "expert": "Hook execution became observable agent state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Au passe d’OpenHands, quelqu’un vérifie chaque assiette avant qu’elle parte. Longtemps, quand une assiette restait là, personne ne savait si elle avait été refusée ou simplement oubliée. Maintenant le ticket le dit : partie, ou retenue, et par qui. Ce n’est pas un contrôle de plus, c’est le même contrôle enfin lisible.",
+            "cuisine": "Au passe, quelqu’un vérifie chaque assiette avant son départ. Longtemps, une assiette immobile pouvait être refusée ou simplement oubliée. Maintenant, le ticket indique si elle est partie, si elle est retenue et par qui. Le même contrôle devient enfin lisible.",
             "expert": "OpenHands expose les événements d’exécution de hooks avec des résultats distincts, succès ou blocage, via ses surfaces runtime et UI/API. Le comportement des garde-fous devient inspectable au lieu de rester implicite. Un contrôle placé sur le chemin d’action peut observer, bloquer ou décider, et le risque tient à ce que son autorité change sans être annoncée."
           },
           "en": {
-            "kitchen": "At the OpenHands pass, someone checks every plate before it goes out. For a long time, when a plate stayed put, nobody could tell whether it had been refused or simply missed. Now the ticket says it: sent, or held, and by whom. It is not another check, it is the same check finally readable.",
+            "kitchen": "At the pass, someone checks every plate before it leaves. For a long time, a waiting plate might be refused or merely forgotten. Now the ticket says whether it left, whether it was held, and by whom. The same check finally becomes readable.",
             "expert": "Hook execution surfaces in OpenHands as events carrying distinct success and blocked outcomes, on both the runtime and the UI/API side. Guardrail behaviour is therefore inspectable rather than implicit. A control on the action path may observe, block or decide, and the risk is that its authority shifts without being declared."
           }
         }
@@ -50,62 +50,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Du refus sans explication au ticket signé",
+          "cuisine": "Chaque assiette retenue reçoit enfin un ticket",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "From a silent refusal to a written ticket",
+          "kitchen": "Every held plate finally receives a ticket",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le contrôle ne se fait plus à côté : il est dans le geste même d’envoyer l’assiette.",
+            "cuisine": "Le garde intervient désormais au passe, pendant que l’assiette est envoyée, et non depuis un coin de la cuisine.",
             "expert": "Les hooks sont intégrés aux actions runtime plutôt qu’exécutés à côté."
           },
           "en": {
-            "kitchen": "The check no longer happens off to the side; it sits inside the act of sending the plate.",
+            "kitchen": "The guard now acts at the pass while the plate is being sent, not from a corner of the kitchen.",
             "expert": "Hooks were integrated into runtime actions rather than run alongside them."
           }
         },
         {
           "fr": {
-            "cuisine": "Chaque passage laisse un ticket derrière lui, que l’assiette soit acceptée ou non.",
+            "cuisine": "Chaque décision produit un bon lisible, aussi bien pour une assiette servie que pour une assiette retenue.",
             "expert": "Les résultats d’exécution deviennent des événements explicites."
           },
           "en": {
-            "kitchen": "Every pass leaves a ticket behind, whether the plate is accepted or not.",
+            "kitchen": "Every decision produces a readable slip, whether the plate was served or held.",
             "expert": "Execution outcomes became explicit events."
           }
         },
         {
           "fr": {
-            "cuisine": "Le ticket distingue les deux fins possibles : l’assiette est partie, ou elle a été retenue.",
+            "cuisine": "Le bon indique clairement « partie en salle » ou « bloquée au passe ».",
             "expert": "Les états blocked et success deviennent distinguables."
           },
           "en": {
-            "kitchen": "The ticket tells the two endings apart: the plate went out, or it was held.",
+            "kitchen": "The slip clearly says either “sent to the dining room” or “held at the pass.”",
             "expert": "Blocked and successful outcomes became distinguishable."
           }
         },
         {
           "fr": {
-            "cuisine": "Le tableau du passe peut afficher ces tickets, au lieu de les laisser dans une pile au fond.",
+            "cuisine": "Le tableau montre ces décisions à toute la brigade au lieu de cacher les bons dans l’arrière-cuisine.",
             "expert": "Les surfaces UI/API peuvent exposer l’état du service de hooks."
           },
           "en": {
-            "kitchen": "The board at the pass can show those tickets instead of leaving them in a pile at the back.",
+            "kitchen": "The board shows these decisions to the whole brigade instead of hiding the slips in back.",
             "expert": "The UI and API surfaces could expose hook service state."
           }
         },
         {
           "fr": {
-            "cuisine": "Le contrôle devient une étape du service qu’on peut regarder, pas une habitude qu’on suppose.",
+            "cuisine": "Le passage devant le garde devient visible comme le dressage ou l’envoi, et la brigade peut suivre son résultat.",
             "expert": "L’exécution du contrôle devient une étape du lifecycle observable de l’agent."
           },
           "en": {
-            "kitchen": "The check becomes a step of service you can watch, not a habit you assume.",
+            "kitchen": "Passing the guard becomes as visible as plating or serving, so the brigade can follow its result.",
             "expert": "Control execution became part of the agent’s observable lifecycle."
           }
         }
@@ -116,22 +116,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un refus muet oblige la brigade à deviner",
+          "cuisine": "Sans ticket, un plat absent n’explique rien",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A silent refusal leaves the brigade guessing",
+          "kitchen": "Without a ticket, a missing plate explains nothing",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Tant que le refus reste muet, la brigade devine. Elle refait le plat, change de poste, accuse le four, et perd le service à chercher. Dès que la décision est écrite sur le ticket, on lit la règle appliquée au lieu de la reconstituer.",
+            "cuisine": "Quand une assiette disparaît sans mot, les commis accusent le four, refont la préparation ou changent de poste. Un ticket « retenue par le garde » montre immédiatement ce qui s’est réellement passé.",
             "expert": "Un garde-fou invisible est difficile à déboguer : son effet se déduit d’une absence. En représentant le résultat du hook comme un état runtime, le système rend la politique inspectable sans exiger la lecture de logs bruts de scripts."
           },
           "en": {
-            "kitchen": "While the refusal stays silent, the brigade guesses. It remakes the plate, swaps stations, blames the oven, and loses the service to the search. Once the decision is written on the ticket, the rule applied can be read instead of reconstructed.",
+            "kitchen": "When a plate vanishes without a word, cooks blame the oven, remake it, or switch stations. A slip saying “held by the guard” immediately shows what happened.",
             "expert": "Invisible guardrails are hard to debug because their effect is inferred from an absence. Representing the hook outcome as runtime state makes policy behaviour inspectable without reading raw script logs."
           }
         }
@@ -142,22 +142,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Écrire ce qui part et ce qui reste",
+          "cuisine": "Rendre un bon clair après chaque contrôle",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Every check hands back a readable decision",
+          "kitchen": "Every check returns a clear slip",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un contrôle doit rendre un ticket lisible par n’importe qui au passe : ce qui est parti, ce qui a été retenu, et qui l’a retenu. Une pile de notes griffonnées à déchiffrer plus tard ne remplace pas ce ticket.",
+            "cuisine": "Après chaque assiette, le passe doit afficher son sort et le poste qui a décidé. Des notes éparses rangées au fond ne remplacent pas ce bon compris immédiatement par la brigade.",
             "expert": "Rendre l’exécution des contrôles observable sous forme d’état et d’événements structurés, et non de sorties de scripts à interpréter. Le résultat doit séparer explicitement l’autorisation du blocage."
           },
           "en": {
-            "kitchen": "A check should hand back a ticket anyone at the pass can read: what went out, what was held, and who held it. A pile of scribbled notes to decipher later is not that ticket.",
+            "kitchen": "After every plate, the pass should show its fate and the station that decided. Scattered notes stored in back cannot replace a slip the brigade understands at once.",
             "expert": "Expose control execution as structured state and events rather than script output to be interpreted. The result should separate allow from block explicitly."
           }
         }
@@ -168,22 +168,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Le ticket s’installe chez OpenHands, rien n’est figé",
+          "cuisine": "Le ticket s’installe, mais rien d’autre n’est figé",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "OpenHands keeps the ticket; nothing else is settled",
+          "kitchen": "The house keeps the ticket; nothing else is settled",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La direction est claire : le contrôle devient une étape visible du service. L’organisation de la maison, elle, continue de changer, donc rien n’est figé.",
+            "cuisine": "La maison rend progressivement le contrôle visible dans le service lui-même. Les travaux continuent toutefois, et aucun agencement final n’est encore établi.",
             "expert": "L’architecture continue d’évoluer, mais la direction observée est celle de hooks devenus des primitives runtime explicites. Aucun état final n’est établi."
           },
           "en": {
-            "kitchen": "The direction is clear: the check becomes a visible step of service. How the house is organised keeps changing, so nothing here is settled.",
+            "kitchen": "The house is steadily making the check visible inside service itself. Work continues, however, and no final arrangement is established.",
             "expert": "The architecture is still evolving, though the observed direction is toward hooks as explicit runtime primitives. No final state is established."
           }
         }
@@ -194,22 +194,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Pas de décision au passe sans trace écrite",
+          "cuisine": "Toute assiette bloquée doit porter la raison du passe",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "No plate held without a name on it",
+          "kitchen": "Every blocked plate must carry the pass decision",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un contrôle qui retient une assiette sans rien écrire laisse la brigade inventer une raison. Ce qui décide au passe doit laisser une trace, sinon on ne sait plus qui commande.",
+            "cuisine": "Si le garde arrête un plat, il laisse un bon disant ce qu’il a décidé. Sans cette trace, la brigade ignore quelle règle agit réellement et ne voit pas quand elle change.",
             "expert": "Un garde-fou doit laisser une trace observable de ce qu’il a décidé. Sans cette trace, l’autorité effective du contrôle n’est pas vérifiable et son évolution passe inaperçue."
           },
           "en": {
-            "kitchen": "A check that holds a plate without writing anything leaves the brigade to invent a reason. Whatever decides at the pass must leave a trace, or nobody knows who is in charge.",
+            "kitchen": "If the guard stops a dish, he leaves a slip saying what he decided. Without that trace, the brigade cannot know which rule truly acts or notice when it changes.",
             "expert": "A guardrail should leave an observable trace of what it decided. Without one, the control’s effective authority cannot be verified and changes to it go unnoticed."
           }
         }

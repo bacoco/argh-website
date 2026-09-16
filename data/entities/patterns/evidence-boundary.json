@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Vu, deviné ou supposé, la phrase sort pareille",
+          "cuisine": "Le billet devait dire s’il venait du coup d’œil ou d’une supposition",
           "expert": "L’affirmation et ce qui l’établit ne voyagent pas ensemble"
         },
         "en": {
-          "kitchen": "Checked or assumed, it is announced the same",
+          "kitchen": "The note needed to say whether it came from sight or supposition",
           "expert": "A claim and what establishes it do not travel together"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Au passe, le ton ne trie rien. Le commis a vu l’assiette partir, ou l’a déduit du bruit, ou l’a simplement supposé : la phrase sort pareille. Chez pstack, une consigne réécrite demande désormais de dire lequel des trois, et de faire soi-même les vérifications à portée de main.",
+            "cuisine": "Au passe, un commis annonçait une assiette avec le même aplomb, qu’il l’ait vue, déduite ou seulement imaginée. Une consigne réécrite demande désormais de le dire et de faire les contrôles à portée de main. La consigne elle-même est établie ; son effet sur le service ne l’est pas.",
             "expert": "La frontière de preuve sépare une affirmation, une inférence ou une intention de l’évidence qui permet de la tenir pour vérifiée. Chez pstack, une révision de consigne impose d’accompagner chaque affirmation de sa preuve ou d’une qualification explicite — mesuré, déduit, supposé — et laisse à l’agent les contrôles qu’il peut exécuter lui-même. La modification est vérifiable dans les sources ; son effet sur le comportement réel n’a pas été mesuré."
           },
           "en": {
-            "kitchen": "At the pass, tone sorts nothing. The cook watched the plate go, or guessed it from the noise, or simply assumed it: the words come out the same. At pstack a rewritten notice now asks which of the three it is, and asks the cook to run the checks within his own reach.",
+            "kitchen": "At the pass, a cook announced a plate with the same confidence whether it was seen, inferred, or merely imagined. A rewritten notice now asks for that distinction and for checks within reach. The notice itself is established; its effect on service is not.",
             "expert": "The evidence boundary separates a claim, an inference or an intention from the evidence that lets it count as verified. At pstack a revised instruction requires every claim to carry its evidence or an explicit qualification — measured, inferred, assumed — and keeps with the agent the checks it can run itself. The revision is verifiable in the sources; its effect on actual behavior was not measured."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "L’aplomb du commis tient lieu de preuve",
+          "cuisine": "Une réponse très sûre ne montrait aucune assiette",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The answer is quick and nobody saw anything",
+          "kitchen": "A very sure answer showed no plate at all",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La réponse est nette, rapide, sans une once d’hésitation, et personne ne peut dire ce qui a été vu. Une raison est donnée pour un plat en retard que personne n’a suivi jusqu’au four. Et le commis renvoie au chef une vérification qu’il pouvait faire lui-même, au passe, en trois secondes.",
+            "cuisine": "Le signe est une réponse nette dont personne ne peut montrer l’assiette. On donne une raison à un retard sans avoir suivi le plat jusqu’au four. Puis le commis laisse au chef un coup d’œil qu’il pouvait prendre lui-même au passe.",
             "expert": "Affirmations et contrôles partagent un même canal et un même registre. Le compte rendu nomme une cause que personne n’a observée, ou présente une prédiction comme un fait établi — le défaut de compte rendu identifié chez pstack. Un contrôle à portée de l’agent est renvoyé à l’opérateur, et l’assurance de la formulation croît avec le soin apporté, non avec la preuve."
           },
           "en": {
-            "kitchen": "The answer is crisp, fast, without a flicker of hesitation, and nobody can say what was seen. A reason is offered for a late dish that nobody followed as far as the oven. And the cook hands the chef a check he could have run himself at the pass, in three seconds.",
+            "kitchen": "The sign is a crisp answer with no plate anyone can show. A reason is given for lateness without following the dish to the oven. Then the cook leaves the chef a glance that could have been taken at the pass.",
             "expert": "Claims and checks share one channel and one register. The report names a cause nobody observed, or presents a prediction as established fact — the reporting defect identified at pstack. A check within the agent’s reach is deferred to the operator, and confidence grows with polish rather than with evidence."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le chef tranche sur ce qu’on lui raconte",
+          "cuisine": "Une belle phrase faisait passer l’hypothèse pour le coup d’œil",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The chef rules on a story, not a plate",
+          "kitchen": "A polished line made a hunch pass for a sighting",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une phrase soignée ne garde aucune trace d’où elle vient. Le chef décide dessus parce qu’il n’a rien d’autre au passe. L’étiquette remet la différence sous ses yeux au bon moment, mais elle se pose mal, ou pas du tout : l’étiquette n’est pas l’assiette.",
+            "cuisine": "Une phrase bien tournée cache la différence entre un regard, une déduction et une attente. Dire laquelle aide le chef au moment de décider. Mais la mention peut être mal posée ou oubliée : elle ne remplace jamais l’assiette vue.",
             "expert": "Une formulation soignée masque l’écart entre un résultat observé, une déduction et une prédiction. La qualification rend cet écart visible au point de décision de l’opérateur, mais le contrôle reste de niveau instruction. Un agent peut mal qualifier une affirmation ou ne pas suivre la consigne ; la qualification ne constitue donc pas une preuve."
           },
           "en": {
-            "kitchen": "A polished sentence keeps no trace of where it came from. The chef decides on it because there is nothing else at the pass. A label drags that difference back in front of him at the right moment. But labels get put on wrong, or skipped: a label is not a plate.",
+            "kitchen": "A well-turned sentence hides the difference between a sighting, an inference, and an expectation. Naming it helps the chef when deciding. Yet the mark may be wrong or absent: it never replaces a plate that was seen.",
             "expert": "Careful phrasing hides the gap between an observed result, an inference and a prediction. The qualification makes that gap visible at the operator’s decision point, but the control stays at instruction level. An agent can mislabel a claim or ignore the instruction, so the qualification is not itself evidence."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Dire quand on n’a pas pu vérifier",
+          "cuisine": "Garder le ticket du contrôle contre le billet annoncé",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Name what was seen, and what was not",
+          "kitchen": "Keep the check ticket beside the announced note",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chaque annonce qui compte part avec ce qui a été vu : l’assiette, l’heure, le poste. Une vérification impossible se dit telle quelle, et ne se confond pas avec une vérification qui a échoué. Chez pstack la consigne est affichée et datée ; que la brigade la lise et la suive n’est pas établi.",
+            "cuisine": "Chaque annonce importante garde le ticket du contrôle et son résultat. Un contrôle impossible ne se confond pas avec un contrôle qui a raté. La consigne changée et sa date sont visibles ; rien n’établit encore que les commis la reçoivent ou la suivent.",
             "expert": "Conserver le contrôle exécuté et son résultat auprès de l’affirmation, et distinguer un contrôle indisponible d’un contrôle en échec. Laisser à l’agent les vérifications qu’il peut exécuter, au lieu de les renvoyer à l’opérateur. Mesurer si la consigne chargée déplace le comportement : chez pstack, la révision des sources et la version déclarée sont vérifiées, tandis qu’adoption, chargement à l’exécution et respect de la consigne ne le sont pas."
           },
           "en": {
-            "kitchen": "Every call that matters leaves with what was seen: the plate, the time, the station. A check that could not be run is said so plainly, and never confused with a check that failed. At pstack the notice is posted and dated; whether the brigade reads and follows it is not established.",
+            "kitchen": "Every important call keeps the check ticket and its result. A check that could not be made is not the same as one that failed. The changed notice and its date are visible; nothing yet establishes that cooks receive or follow it.",
             "expert": "Keep the executed check and its result next to the claim, and distinguish an unavailable check from a failed one. Leave with the agent the verifications it can run rather than deferring them to the operator. Measure whether the loaded instruction moves behavior: at pstack the source revision and declared version are verified, while adoption, load at runtime and compliance are not."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "L’aplomb ne remplace pas le coup d’œil",
+          "cuisine": "Une consigne au mur ne devient pas une preuve en étant belle",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A sure-sounding cook has proved nothing",
+          "kitchen": "A notice on the wall does not become proof by being well written",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "L’assurance d’un commis n’a jamais fait sortir une assiette. Et une consigne affichée au mur n’est pas une consigne suivie : elle s’éprouve comme le reste.",
+            "cuisine": "Gardez ce qui établit l’annonce contre l’annonce elle-même. Une règle de compte rendu doit être éprouvée, jamais prise pour la preuve. L’aplomb du commis ne remplace pas le coup d’œil.",
             "expert": "Garder la preuve contre l’affirmation, et éprouver la règle de compte rendu au lieu de la prendre pour la preuve."
           },
           "en": {
-            "kitchen": "A cook’s confidence never put a plate on a table. And a notice on the wall is not a notice followed: it gets tested like everything else.",
+            "kitchen": "Keep what establishes the announcement beside the announcement itself. A reporting rule must be tried, never mistaken for proof. A cook’s confidence cannot replace seeing the plate.",
             "expert": "Keep the evidence against the claim, and test the reporting rule instead of mistaking the rule for evidence."
           }
         }

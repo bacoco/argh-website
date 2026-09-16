@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le livre corrigé, la fiche du poste inchangée",
+          "cuisine": "Le livre avait changé, la fiche du poste restait ancienne",
           "expert": "Un artefact corrigé en source, exécuté en version installée"
         },
         "en": {
-          "kitchen": "The recipe book updated, the station card untouched",
+          "kitchen": "The book had changed while the station card stayed old",
           "expert": "An artifact fixed in source, executed from the installed copy"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La recette du livre a été corrigée, et tout le monde l’a vue. Mais le commis ne lit pas le livre : il lit la fiche punaisée à son poste, celle d’avant. Chez Archon, c’est arrivé à une consigne de sécurité, et pendant ce temps la maison se croyait en règle.",
+            "cuisine": "La recette du livre avait été corrigée et tout le monde l’avait vue. Le commis, lui, lisait la vieille fiche punaisée à son poste. La maison se croyait donc en règle tout en suivant encore l’ancienne consigne.",
             "expert": "Un artefact de contrôle pouvait être corrigé dans le repository source alors que la copie installée, seule chargée à l’exécution par l’agent, restait obsolète. Le produit maintenait plusieurs copies du même contrôle sans identité garantie entre la source et l’installation chargée au runtime. La conséquence directe est un faux sentiment de résolution : le correctif est visible, le comportement observé ne change pas."
           },
           "en": {
-            "kitchen": "The recipe in the book was corrected and everyone saw it. But the commis does not read the book: he reads the card pinned at his station, the old one. At Archon this happened to a safety rule, and all the while the house believed itself in order.",
+            "kitchen": "The recipe in the book had been corrected and everyone saw it. The commis, however, read the old card pinned at the station. The house therefore believed itself in order while still following the old instruction.",
             "expert": "A control artifact could be corrected in the source repository while the installed copy — the only one the agent loads at execution — stayed stale. The product kept several copies of the same control with no guaranteed identity between the source and the installation loaded at runtime. The direct consequence is a false sense of resolution: the fix is visible, the observed behavior does not move."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La salle ne bouge pas après la correction",
+          "cuisine": "La correction était visible, le service ne changeait pas",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Corrected on paper, unchanged at the station",
+          "kitchen": "The correction was visible while service did not change",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On repère le motif quand la correction est visible et que rien ne bouge en salle. Deux exemplaires existent, et personne ne sait lequel sert. Faites lire au commis, à voix haute, la fiche qu’il a sous les yeux : c’est la seule preuve disponible.",
+            "cuisine": "La correction était visible mais rien ne changeait en salle. Deux exemplaires existaient et personne ne savait lequel guidait le commis. Seule la fiche lue au poste donnait la réponse.",
             "expert": "Le motif se reconnaît à une divergence entre un correctif appliqué et un comportement inchangé, sur un artefact qui existe en plusieurs exemplaires sans lien d’identité entre eux. Rien n’expose la version réellement chargée à l’exécution, donc la revue porte exclusivement sur la source. Le signal décisif est l’incapacité à répondre, depuis le système en fonctionnement, à la question de savoir quelle copie est active."
           },
           "en": {
-            "kitchen": "The shape shows when the correction is visible and nothing changes in the room. Two copies exist and nobody knows which one is being worked from. Have the commis read out the card in front of him: that is the only proof available.",
+            "kitchen": "The correction was visible but nothing changed in the room. Two copies existed and nobody knew which guided the commis. Only the card read at the station gave the answer.",
             "expert": "The pattern shows as a divergence between an applied fix and unchanged behavior, on an artifact that exists as several copies with no identity link between them. Nothing exposes the version actually loaded at execution, so review targets the source alone. The decisive signal is being unable to answer, from the running system, which copy is active."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "On surveille la correction, jamais l’échange de fiche",
+          "cuisine": "Corriger le livre et changer la fiche étaient deux gestes différents",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The approval was watched, the swap was not",
+          "kitchen": "Correcting the book and changing the card were two different acts",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ce qui trompe, c’est que la correction a bien eu lieu. Elle a été écrite, relue, approuvée — dans le livre. Le moment où la fiche du poste est remplacée est un autre moment, que personne ne surveille. Et quand cette fiche porte une consigne de sécurité, la maison applique encore une règle que plus personne ne croit en vigueur.",
+            "cuisine": "La correction avait réellement été écrite et approuvée dans le livre. Remplacer la fiche du poste était un autre geste, que personne ne suivait. La cuisine pouvait donc garder une règle que tout le monde croyait retirée.",
             "expert": "L’installation copie plutôt qu’elle ne référence, ce qui scinde la correction et son déploiement en deux événements distincts. La revue n’observe que le premier : le changement en source est l’événement visible, le remplacement de la copie installée ne l’est pas. La clôture est alors déclenchée par la correction de source et non par le comportement observé, ce qui est exactement la condition du failed fix : la vraie frontière était la distribution, pas la source."
           },
           "en": {
-            "kitchen": "What fools you is that the correction really happened. It was written, read back, approved — in the book. The moment the card at the station gets swapped is a different moment, and nobody watches it. When that card carries a safety rule, the house still works to a rule everyone believes was retired.",
+            "kitchen": "The correction had truly been written and approved in the book. Replacing the station card was another act that nobody followed. The kitchen could therefore keep a rule everyone believed removed.",
             "expert": "Installation copies rather than references, which splits the correction and its deployment into two separate events. Review observes only the first: the source change is the visible event, the replacement of the installed copy is not. Closure is then triggered by the source fix rather than by observed behavior, which is exactly the failed-fix condition: the real boundary was distribution, not the source."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Remplacer la fiche du poste soi-même, puis regarder",
+          "cuisine": "Vérifier la fiche lue, puis revoir le plat sortir",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Swap the card yourself, then watch the room",
+          "kitchen": "Check the card being read, then watch the plate leave",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Ne classez pas l’affaire sur le livre. Allez au poste, décrochez la fiche, comparez-la à la bonne, et remplacez-la vous-même. Ensuite seulement, regardez si le geste a changé en salle : c’est cela qui clôt l’affaire, pas la correction écrite.",
+            "cuisine": "Ne classez pas l’affaire sur le livre seul. Allez au poste, lisez la fiche et remplacez-la si nécessaire. Regardez ensuite si le plat sort autrement : c’est cela qui établit la réparation.",
             "expert": "Traiter la livraison des contrôles comme une livraison logicielle : versionner l’artefact, le hasher, tester la copie installée et exposer son identité à l’exécution. Le correctif inclut donc la réinstallation, et la vérification porte sur la copie chargée plutôt que sur la source. Sur Archon, un travail ultérieur a reconstruit le chemin de livraison et ajouté une validation plus stricte."
           },
           "en": {
-            "kitchen": "Do not close the case on the book. Walk to the station, take the card down, hold it against the corrected one, and swap it yourself. Only then watch whether the move has changed in the room: that is what closes the case, not the writing.",
+            "kitchen": "Do not close the case on the book alone. Go to the station, read the card, and replace it if needed. Then watch whether the plate leaves differently: that establishes the repair.",
             "expert": "Ship controls the way software ships: version the artifact, hash it, test the installed copy, and expose its identity at execution. The fix therefore includes reinstallation, and verification targets the loaded copy rather than the source. On Archon, later work rebuilt the delivery path and added stricter validation."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Seule compte la fiche posée au poste",
+          "cuisine": "La recette ne change le service qu’une fois arrivée au poste",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The commis follows the card, not the book",
+          "kitchen": "A recipe changes service only when it reaches the station",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une recette corrigée dans le livre n’a encore rien changé au service. Tant que la fiche du poste n’a pas été remplacée, le commis fait comme avant. Et il a raison : c’est ce qu’il a sous les yeux. La correction n’existe qu’au poste.",
+            "cuisine": "Une recette corrigée dans le livre ne change pas le service par elle-même. Tant que le poste garde son ancienne fiche, le commis fait comme avant. La correction commence quand elle est lue là où l’on cuisine.",
             "expert": "Un fichier source corrigé n’est pas un contrôle installé corrigé. Tant que l’identité de l’artefact réellement chargé n’a pas été vérifiée, le correctif est proposé et non appliqué, et l’écart coûte d’autant plus cher que l’artefact est lui-même un contrôle."
           },
           "en": {
-            "kitchen": "A recipe corrected in the book has changed nothing about service yet. Until the card at the station is swapped, the commis works as before — and he is right, it is what is in front of him. The correction exists only at the station.",
+            "kitchen": "A recipe corrected in the book does not change service by itself. Until the station keeps the new card, the commis works as before. The correction begins when it is read where cooking happens.",
             "expert": "A fixed source file is not a fixed installed control. Until the identity of the artifact actually loaded has been checked, the fix is proposed rather than applied, and the gap costs most when the artifact is itself a control."
           }
         }

@@ -24,22 +24,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Chez Codex, la commande recule, la cuisine non",
+          "cuisine": "Le carnet recule, mais la préparation reste sur le billot",
           "expert": "La conversation a été rembobinée, le working tree non"
         },
         "en": {
-          "kitchen": "Codex hands back the ticket, not the worktop",
+          "kitchen": "The order book goes back while the worktop stays changed",
           "expert": "The conversation rewound; the working tree did not"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Codex, on a remonté le carnet de commandes de trois pages. Le cuisinier reprend donc une commande d’il y a vingt minutes. Mais sur le plan de travail, tout ce qu’il a préparé entre-temps est encore là, découpé, assaisonné, entamé. Il lit un passé et travaille dans un présent.",
+            "cuisine": "Le chef remonte le carnet de commandes de trois pages. Le commis reprend alors un ticket vieux de vingt minutes. Pourtant, les aliments découpés et assaisonnés depuis sont toujours sur le billot. Le carnet revient en arrière, pas la cuisine.",
             "expert": "Un rewind pouvait restaurer l’historique conversationnel en laissant les modifications de fichiers en place. Le résultat est un état divisé entre ce dont l’agent se souvient et ce que contient réellement le workspace."
           },
           "en": {
-            "kitchen": "At Codex the order book was turned back three pages. The cook picks up a ticket from twenty minutes ago. But on the worktop, everything he prepared since then is still there, cut, seasoned, half started. He reads one past and works in another present.",
+            "kitchen": "The chef turns the order book back three pages. The cook resumes a ticket from twenty minutes ago. Yet everything cut and seasoned since then remains on the bench. The book goes back; the kitchen does not.",
             "expert": "A rewind could restore conversational history while leaving file edits in place. The result is a split state between what the agent remembers and what the workspace actually contains."
           }
         }
@@ -50,62 +50,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Les pages disparaissent, les préparations restent entières",
+          "cuisine": "Le carnet perd vingt minutes, le billot les garde",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Pages vanish; the prepared food stays out",
+          "kitchen": "The book loses twenty minutes while the bench keeps them",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le client fait remonter le carnet jusqu’à une commande antérieure.",
+            "cuisine": "Le client demande au chef de revenir à une ancienne commande. Le carnet est donc rouvert vingt minutes plus tôt.",
             "expert": "L’utilisateur rembobine une session vers un point conversationnel antérieur."
           },
           "en": {
-            "kitchen": "The customer has the order book turned back to an earlier ticket.",
+            "kitchen": "The diner asks the chef to return to an earlier order. The book is turned back by twenty minutes.",
             "expert": "The user rewound a session to an earlier conversational point."
           }
         },
         {
           "fr": {
-            "cuisine": "Les pages écrites après ce point disparaissent du carnet.",
+            "cuisine": "Toutes les pages ajoutées après cette commande sont retirées. Le commis ne peut plus relire ce qu’elles racontaient.",
             "expert": "L’historique de la conversation recule jusqu’à ce point."
           },
           "en": {
-            "kitchen": "The pages written after that point vanish from the book.",
+            "kitchen": "Every page added after that order is removed. The cook can no longer read what those pages recorded.",
             "expert": "Chat history moved back to that point."
           }
         },
         {
           "fr": {
-            "cuisine": "Les préparations faites pendant ces pages, elles, restent entières sur le plan de travail.",
+            "cuisine": "Les aliments découpés pendant ces vingt minutes restent pourtant sur le billot. Aucun geste de cuisine n’a été défait.",
             "expert": "Les modifications de fichiers produites par l’agent restent dans le working tree."
           },
           "en": {
-            "kitchen": "The preparations made during those pages stay intact on the worktop.",
+            "kitchen": "Food chopped during those twenty minutes still lies on the bench. None of the kitchen work was undone.",
             "expert": "File changes produced by the agent remained in the working tree."
           }
         },
         {
           "fr": {
-            "cuisine": "Le cuisinier raisonne donc sur une commande ancienne, devant un plan de travail plus récent qu’elle.",
+            "cuisine": "Le commis lit désormais un ancien ticket. Devant lui, le billot porte encore les conséquences des commandes plus récentes.",
             "expert": "L’agent repris raisonne depuis une conversation antérieure contre un filesystem plus récent."
           },
           "en": {
-            "kitchen": "The cook therefore reasons from an old ticket, facing a worktop newer than the ticket itself.",
+            "kitchen": "The cook now reads an old ticket. Before him, the bench still carries the consequences of later orders.",
             "expert": "The resumed agent reasoned from an earlier conversation against a later filesystem."
           }
         },
         {
           "fr": {
-            "cuisine": "Une demande est apparue : que remonter le carnet montre aussi ce qui reste sur le plan de travail, et ce qui se contredit. Rien n’établit qu’elle ait été satisfaite.",
+            "cuisine": "Une amélioration a été demandée : montrer les préparations restantes et leurs contradictions avant la reprise. Rien ne prouve que la maison l’ait réalisée.",
             "expert": "Une demande de checkpoints unifiés, avec prévisualisation et gestion des conflits, est apparue. Aucun correctif fusionné n’est établi ici."
           },
           "en": {
-            "kitchen": "A request appeared: turning the book back should also show what is left on the worktop, and what clashes. Nothing establishes that it was met.",
+            "kitchen": "An improvement was requested: show remaining preparations and clashes before resuming. Nothing proves that the house completed it.",
             "expert": "A request for unified checkpoints, with preview and conflict handling, emerged. No merged fix is established here."
           }
         }
@@ -116,22 +116,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Seul le carnet a fait marche arrière",
+          "cuisine": "Deux mémoires racontent maintenant deux services",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Only the order book went back",
+          "kitchen": "Two memories now describe different services",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le carnet et le plan de travail gardent chacun leur propre mémoire. On a remonté l’un sans toucher à l’autre. Or le cuisinier a besoin des deux au même instant pour savoir ce qui lui reste à faire.",
+            "cuisine": "Le carnet se souvient des commandes, tandis que le billot conserve les gestes accomplis. Revenir dans l’un sans revenir dans l’autre crée deux histoires. Le commis ne sait plus laquelle suivre.",
             "expert": "L’état conversationnel et l’état du workspace étaient traités comme deux historiques indépendants, chacun avec son propre point de restauration. La tâche, elle, dépend de leur alignement : rembobiner un seul des deux produit une divergence silencieuse."
           },
           "en": {
-            "kitchen": "The book and the worktop each keep their own memory. One was turned back and the other was left alone. Yet the cook needs both to agree at the same instant to know what is left to do.",
+            "kitchen": "The book remembers orders while the bench keeps completed work. Turning back one without the other creates two histories. The cook no longer knows which to follow.",
             "expert": "Conversation state and workspace state were treated as two independent histories, each with its own restore point. The task depends on their alignment, so rewinding only one produces a silent divergence."
           }
         }
@@ -142,22 +142,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Un vrai retour montrerait ce qui reste préparé",
+          "cuisine": "Avant la reprise, comparer le ticket et le billot",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "A proper turn-back would show what clashes",
+          "kitchen": "Before resuming, compare the ticket with the bench",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Remonter le carnet devrait aussi dire ce qui reste sur le plan de travail, et ce qui se contredit. Tout cela avant de rendre la commande au cuisinier. C’est ce qui a été demandé. Ce n’est pas ce qui est établi comme fait.",
+            "cuisine": "Avant de rendre l’ancien ticket, la maison devrait montrer ce qui reste préparé et ce qui ne correspond plus. Cette réparation a été demandée. Elle n’est pas établie comme réalisée.",
             "expert": "Un rewind correct demande un modèle de checkpoint capable de restaurer ou de préserver explicitement les mutations du workspace, et d’afficher les conflits avant application. C’est la réponse proposée, pas un correctif dont la livraison soit établie."
           },
           "en": {
-            "kitchen": "Turning the book back should also say what remains on the worktop, and what clashes, before the ticket goes back to the cook. That is what was asked for. It is not what is established as done.",
+            "kitchen": "Before returning the old ticket, the house should show what remains prepared and what no longer matches. That repair was requested. It is not established as completed.",
             "expert": "A correct rewind requires a checkpoint model able to restore or explicitly preserve workspace mutations, and to surface conflicts before applying them. This is the proposed response, not a fix whose delivery is established."
           }
         }
@@ -168,22 +168,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Plusieurs maisons comptent la cuisine dans la reprise",
+          "cuisine": "Plusieurs maisons veulent reprendre le billot avec le carnet",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Several houses now turn the worktop back too",
+          "kitchen": "Several houses want the bench restored with the book",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La direction prise, dans plusieurs maisons, est de compter le plan de travail comme faisant partie de ce qu’on reprend. Aucune correction n’est établie ici.",
+            "cuisine": "Plusieurs maisons commencent à traiter le billot comme une partie du service à reprendre. Pour ce cas précis, aucune réparation n’est prouvée.",
             "expert": "La direction de design observée à travers plusieurs harnais traite l’environnement d’exécution comme une partie de l’état reprenable. Aucun correctif fusionné n’est établi sur ce point."
           },
           "en": {
-            "kitchen": "The direction taken across several houses is to count the worktop as part of what gets resumed. No correction is established here.",
+            "kitchen": "Several houses begin treating the bench as part of the service to restore. For this particular case, no repair is proven.",
             "expert": "The design direction observed across several harnesses treats the execution environment as part of resumable state. No merged fix is established on this point."
           }
         }
@@ -194,22 +194,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Rendre la commande ne rend pas la cuisine",
+          "cuisine": "Un ancien ticket ne recrée pas l’ancien billot",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "An old ticket does not restore the kitchen",
+          "kitchen": "An old ticket cannot recreate the old bench",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Rendre au cuisinier une commande d’il y a vingt minutes ne lui rend pas la cuisine d’il y a vingt minutes. Une reprise ne tient que si la commande et le plan de travail reviennent au même instant.",
+            "cuisine": "Le ticket d’il y a vingt minutes ne retire pas les préparations faites depuis. Pour reprendre sans contradiction, le carnet et le billot doivent raconter le même moment.",
             "expert": "Un identifiant de conversation n’est pas un checkpoint d’exécution. Restaurer l’un sans l’autre laisse un état que ni la trace ni le disque ne décrit correctement."
           },
           "en": {
-            "kitchen": "Handing the cook a twenty-minute-old ticket does not hand him a twenty-minute-old kitchen. A resume holds only when the ticket and the worktop come back to the same instant.",
+            "kitchen": "A twenty-minute-old ticket does not remove later preparations. To resume without conflict, the book and bench must describe the same moment.",
             "expert": "A conversation ID is not an execution checkpoint. Restoring one without the other leaves a state that neither the transcript nor the disk describes correctly."
           }
         }

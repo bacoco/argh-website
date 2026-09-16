@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le portier de la cuisine choisit les plats",
+          "cuisine": "Le portier retenait la fermeture et lançait le service",
           "expert": "Un contrôle de terminaison a répondu à une question d’autorisation"
         },
         "en": {
-          "kitchen": "Posted to watch the door, deciding the menu",
+          "kitchen": "The porter held closing time and started service",
           "expert": "A termination control answered an authorization question"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On avait mis quelqu’un à la porte de la cuisine pour empêcher la brigade de filer avant la fin. Chez Claude Code, il a fini par décider aussi ce qu’on mettait sur le feu. Le client avait seulement demandé qu’on lui annonce le menu ; on lui a servi le repas.",
+            "cuisine": "Un portier devait empêcher la brigade de fermer avant la fin du service. Un client demandait seulement le menu écrit. Pourtant, la consigne du portier pouvait aussi être comprise comme l’ordre de lancer les plats.",
             "expert": "L’autorité d’un contrôle doit rester limitée aux décisions pour lesquelles il a été conçu. Chez Claude Code, un stop hook destiné à forcer la persistance pouvait être interprété comme une autorité pour continuer l’exécution alors que l’utilisateur ne demandait qu’un plan. Le contrôle influençait correctement la possibilité d’arrêter ; son instruction débordait sur l’interprétation de ce que le modèle avait le droit d’entreprendre."
           },
           "en": {
-            "kitchen": "Someone had been posted at the kitchen door to stop the brigade slipping off before the end. At Claude Code he ended up deciding what went on the stove as well. The guest had only asked to hear the menu; he was served the meal.",
+            "kitchen": "A porter was meant to stop the brigade closing before service was finished. A guest asked only for the menu in writing. Yet the porter’s instruction could also be taken as an order to start cooking.",
             "expert": "A control’s authority must stay limited to the decisions it was designed to govern. In Claude Code a persistence-oriented stop hook could be read as authority to continue execution when the user had asked only for a plan. The control correctly influenced whether work could stop; its instruction leaked into the model’s reading of what it was allowed to undertake."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Chez Claude Code, une consigne sans limites écrites",
+          "cuisine": "La carte demandée pouvait devenir un repas",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "The door man at Claude Code decides too much",
+          "kitchen": "A request for the menu could become a meal",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le signe est simple : tu demandes qu’on t’annonce le plat, et on te l’apporte. Celui qui tient la porte a un but écrit, mais personne n’a écrit jusqu’où il décide. Alors une consigne finit par en commander une autre.",
+            "cuisine": "Le portier répondait bien à « peut-on fermer ? ». Sa consigne pouvait aussi répondre à « peut-on cuisiner ? ». Ces deux décisions n’avaient jamais été distinguées sur son billet.",
             "expert": "Le signal est un contrôle qui répond à une question qu’on ne lui a pas posée : une demande de plan seulement revient exécutée. L’objectif du contrôle est déclaré, son domaine ne l’est pas, et la même instruction façonne plus d’une dimension du comportement. Persistance et autorité n’y sont pas séparées."
           },
           "en": {
-            "kitchen": "The sign is plain: you ask to hear the dish and it arrives on a plate. The man at the door has a written purpose, but nobody wrote how far he decides. So one instruction ends up ordering another.",
+            "kitchen": "The porter correctly answered “may we close?”. His instruction could also answer “may we cook?”. Those two decisions had never been separated on his card.",
             "expert": "The signal is a control answering a question nobody asked it: a plan-only request comes back executed. The control’s objective is declared, its domain is not, and one instruction shapes more than one dimension of behavior. Persistence and authority are not separated there."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Une seule consigne répond à deux questions",
+          "cuisine": "Deux décisions étaient écrites sur le même billet",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Nobody ever drew the limits of that post",
+          "kitchen": "One card answered two different questions",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "« A-t-on le droit de quitter le poste ? » et « a-t-on le droit de lancer ce plat ? » sont deux questions différentes. Une consigne écrite pour la première répond quand même à la seconde, si personne n’a dit qu’elle n’en avait pas le droit. Ce n’est pas une maladresse : c’est un poste jamais défini.",
+            "cuisine": "Retenir la fermeture ne donne pas le droit de lancer une commande. Sans limite claire, une consigne peut prendre plus de place qu’on ne lui en a donné. Le défaut venait de cette confusion, pas d’un plat mal préparé.",
             "expert": "Un hook peut modifier plusieurs dimensions du comportement du modèle. Un contrôle censé répondre à « le tour peut-il se terminer ? » peut accidentellement répondre à « l’agent peut-il agir ? » si scope et autorité ne sont pas explicites. Le débordement ne vient pas d’une erreur d’implémentation mais d’un domaine d’autorité non déclaré."
           },
           "en": {
-            "kitchen": "“May we leave our post?” and “may we fire this dish?” are two different questions. An instruction written for the first still answers the second, unless somebody said it may not. That is not clumsiness: it is a station nobody ever drew.",
+            "kitchen": "Keeping the door open does not give permission to start an order. Without a clear limit, one instruction can take more authority than it was given. The fault lay in that mix-up, not in a poorly prepared dish.",
             "expert": "A hook can shape model behavior along more than one dimension. A control meant to answer “may the turn end?” can accidentally answer “may the agent act?” when scope and authority are not explicit. The overreach comes from an undeclared authority domain, not from an implementation error."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Cinq pouvoirs différents, un seul confié",
+          "cuisine": "Donner un billet distinct à chaque pouvoir",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Five separate powers, and only one was given",
+          "kitchen": "Give each power its own card",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Écris sur la consigne ce qu’elle a le droit de trancher, pas seulement ce qu’elle veut obtenir. Retenir quelqu’un à son poste, lancer un plat, donner le feu vert, souffler une instruction, faire refaire : ce sont cinq pouvoirs différents. Personne ne les tient tous parce qu’on lui en a confié un.",
+            "cuisine": "Écrivez ce que le portier peut décider, pas seulement ce qu’il doit obtenir. Garder la porte ouverte, envoyer un plat, accepter une demande, ajouter une consigne et refaire un envoi sont cinq pouvoirs différents. En confier un ne donne jamais les quatre autres.",
             "expert": "Les hooks d’enforcement ont besoin d’un domaine d’autorité déclaré : terminaison, exécution d’outil, approbation, injection de contexte et retry sont des pouvoirs distincts. Un garde-fou énonce ce qu’il a le droit de décider, pas seulement ce qu’il cherche à obtenir."
           },
           "en": {
-            "kitchen": "Write on the instruction what it may settle, not only what it wants to obtain. Holding someone at their post, firing a dish, giving the go-ahead, whispering an order, sending a plate back: five different powers. Nobody holds all five because he was handed one.",
+            "kitchen": "Write down what the porter may decide, not only what he must achieve. Holding the door open, sending a dish, accepting a request, adding an instruction, and sending something again are five separate powers. Giving one never grants the other four.",
             "expert": "Enforcement hooks need a declared authority domain: termination, tool execution, approval, context injection and retry are distinct powers. A guardrail states what it is entitled to decide, not only what it is trying to obtain."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Claude Code n’a rien changé, l’avertissement tient",
+          "cuisine": "Garder la porte ne donne pas toute la cuisine",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Claude Code changed nothing, so the warning stands",
+          "kitchen": "Holding the door does not run the whole kitchen",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un garde-fou à qui on donne un but sans lui donner un poste finira par tenir toute la cuisine. Ici, la maison a choisi de ne rien changer à sa façon de faire. Le cas reste un avertissement qui tient, pas une affaire classée.",
+            "cuisine": "Aucune réparation n’est établie dans ce cas. L’histoire garde donc sa valeur d’avertissement. Un portier doit savoir ce qu’il ne décide jamais, pas seulement ce qu’il doit empêcher.",
             "expert": "Un garde-fou a besoin d’un scope, pas seulement d’un objectif. Le cas reste un avertissement de design durable même lorsqu’une implémentation particulière choisit de ne pas modifier son comportement."
           },
           "en": {
-            "kitchen": "A guardrail given a purpose but no station will end up running the whole kitchen. Here the house chose to change nothing in the way it works. The case stands as a warning that holds, not as a matter settled.",
+            "kitchen": "No repair is established in this case. The story therefore remains a warning. A porter needs to know which calls are never his, not only what he must prevent.",
             "expert": "A guardrail needs a scope, not only an objective. The case remains a durable design warning even where a particular implementation chooses not to change its behavior."
           }
         }

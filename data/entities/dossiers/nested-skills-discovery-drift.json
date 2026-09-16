@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Claude Code n’ouvrait jamais le tiroir du fond",
+          "cuisine": "Les fiches restent cachées dans le tiroir du fond",
           "expert": "Un contournement de la découverte des skills est devenu une dépendance fragile de plus"
         },
         "en": {
-          "kitchen": "Claude Code skipped the cards filed deepest",
+          "kitchen": "The deepest recipe cards stay hidden in a drawer",
           "expert": "A workaround for missing skill discovery became one more fragile dependency"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Claude Code, des équipes rangeaient leurs fiches dans un tiroir glissé à l’intérieur d’un autre tiroir. La mise en place du matin ne descendait pas si bas, et ces fiches ne sortaient jamais. Quelqu’un a donc ajouté un geste à l’ouverture pour aller les chercher. Le jour où la maison a changé son ouverture, ce geste n’a plus rien remonté.",
+            "cuisine": "Des brigades rangent leurs fiches dans un tiroir caché derrière un autre. La mise en place du matin ne va jamais les chercher. Un geste spécial les récupère pendant un temps. Quand l’ouverture de la maison change, ce geste revient les mains vides.",
             "expert": "Les skills imbriqués n’étaient pas découverts, ce qui a poussé les utilisateurs à les exposer par des hooks de démarrage. Une évolution ultérieure du démarrage a cassé ce contournement alors que les fichiers de skills n’avaient pas changé. La découverte se comporte donc comme une interface versionnée du harnais, jamais documentée comme telle."
           },
           "en": {
-            "kitchen": "At Claude Code some teams kept their cards in a drawer tucked inside another drawer. Morning prep never opened that far down, so those cards stayed put. Someone added an extra move at opening to fetch them by hand. When the house changed how it opens, that move came back empty.",
+            "kitchen": "Some brigades keep their cards in a drawer hidden behind another. Morning preparation never reaches them. A special opening move retrieves them for a while. When the house changes its opening routine, that move returns empty-handed.",
             "expert": "A startup-hook workaround stopped working although no skill file had changed. The workaround existed because nested skills were never picked up by runtime discovery, and it broke when a later release altered startup behaviour. Discovery plus initialisation order therefore acts as a versioned interface, documented or not."
           }
         }
@@ -51,62 +51,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Le geste qui sortait les fiches a lâché",
+          "cuisine": "Les fiches sont restées rangées après le changement d’ouverture",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The extra opening move came back empty",
+          "kitchen": "The cards stayed in their drawers after opening changed",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Les équipes rangent leurs fiches par familles, un tiroir dans un tiroir, comme elles l’entendent.",
+            "cuisine": "La brigade classe ses fiches de recettes dans des tiroirs, parfois à l’intérieur d’autres tiroirs.",
             "expert": "Les utilisateurs organisent leurs skills en arborescences imbriquées."
           },
           "en": {
-            "kitchen": "Teams file their cards by family, a drawer inside a drawer, however it suits them.",
+            "kitchen": "The brigade sorts recipe cards into drawers, sometimes inside other drawers.",
             "expert": "Users arranged their skills in nested directory structures."
           }
         },
         {
           "fr": {
-            "cuisine": "La mise en place du matin ouvre le premier tiroir, jamais celui qui se glisse dedans.",
+            "cuisine": "À l’ouverture, le commis vérifie seulement le premier rang et ignore les compartiments plus profonds.",
             "expert": "La découverte au démarrage ne descend pas dans ces niveaux et les ignore."
           },
           "en": {
-            "kitchen": "Morning prep opens the first drawer, never the one tucked inside it.",
+            "kitchen": "At opening time, the cook checks only the first row and misses the deeper compartments.",
             "expert": "Runtime discovery did not descend into those levels and skipped them."
           }
         },
         {
           "fr": {
-            "cuisine": "Un geste ajouté à l’ouverture va chercher les fiches oubliées et les pose sur le plan de travail.",
+            "cuisine": "La maison ajoute alors une tournée matinale qui sort ces fiches oubliées et les pose près des fourneaux.",
             "expert": "Des hooks de démarrage sont utilisés pour injecter ou exposer les skills manquants."
           },
           "en": {
-            "kitchen": "An added opening move fetches the overlooked cards and lays them on the worktop.",
+            "kitchen": "The house adds a morning round that fetches the forgotten cards and lays them by the stoves.",
             "expert": "Startup hooks were used to inject or expose the missing skills."
           }
         },
         {
           "fr": {
-            "cuisine": "La maison change sa façon d’ouvrir, et le geste ajouté n’a plus le même appui.",
+            "cuisine": "Plus tard, la procédure d’ouverture change et cette tournée ajoutée ne trouve plus son ancien passage.",
             "expert": "Une évolution ultérieure modifie le comportement de démarrage."
           },
           "en": {
-            "kitchen": "The house changes how it opens, and the added move loses its footing.",
+            "kitchen": "Later, the opening routine changes, and the added round can no longer use its old path.",
             "expert": "A later upgrade changed startup behaviour."
           }
         },
         {
           "fr": {
-            "cuisine": "Les fiches, elles, n’ont pas bougé d’un millimètre : c’est la manœuvre qui a lâché.",
+            "cuisine": "Aucune recette n’a été déplacée ; seule la façon improvisée de les sortir a cessé de marcher.",
             "expert": "Le contournement casse alors que les fichiers de skills sont restés inchangés."
           },
           "en": {
-            "kitchen": "The cards themselves never moved an inch; it is the manoeuvre that gave way.",
+            "kitchen": "No recipe moved; only the improvised way of fetching the cards stopped working.",
             "expert": "The workaround failed even though no skill file had changed."
           }
         }
@@ -117,22 +117,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La tournée des tiroirs décidait, pas la fiche",
+          "cuisine": "La recette existe, mais l’ouverture décide si elle sort",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Nobody had written the morning round down",
+          "kitchen": "The recipe exists, but opening decides whether it appears",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Tout le monde croyait que la fiche faisait foi. En vérité, ce qui décidait, c’était la tournée des tiroirs au petit matin et l’ordre dans lequel on les ouvre. Cette tournée n’était écrite nulle part, et pourtant la brigade s’appuyait dessus.",
+            "cuisine": "La brigade pensait qu’une fiche rangée serait forcément disponible. En réalité, tout dépendait de l’ordre secret dans lequel les tiroirs étaient ouverts le matin. Ce parcours n’était écrit nulle part.",
             "expert": "L’interface effective n’était pas le fichier SKILL.md mais l’algorithme de découverte associé à l’ordre d’initialisation. Les utilisateurs dépendaient donc d’une API non documentée, sans contrat ni garantie de compatibilité."
           },
           "en": {
-            "kitchen": "Everyone assumed the card was what counted. What actually decided was the round of the drawers at dawn, and the order that round follows. Nobody had ever written that round down, yet the whole brigade leaned on it.",
+            "kitchen": "The brigade assumed that a stored card would always be available. In fact, everything depended on the secret order used to open drawers each morning. That route was never written down.",
             "expert": "The effective contract was never SKILL.md; it was the discovery algorithm combined with initialisation order. Depending on it meant depending on an undocumented API that carried no compatibility guarantee."
           }
         }
@@ -143,22 +143,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Écrire la tournée et afficher les fiches sorties",
+          "cuisine": "Publier l’ordre des tiroirs et la liste posée au fourneau",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Publish what actually reached the worktop",
+          "kitchen": "Publish the drawer order and the cards placed by the stove",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La tournée des tiroirs doit être écrite, datée, et annoncée quand elle change. Le poste doit pouvoir dire d’un coup d’œil quelles fiches sont réellement sur le plan de travail. Et les appuis dont se servent les gestes ajoutés doivent être éprouvés avant chaque changement d’ouverture.",
+            "cuisine": "La maison écrit quels tiroirs sont ouverts, dans quel ordre, et annonce toute modification. À chaque service, elle affiche aussi les recettes réellement sorties. Avant de changer l’ouverture, elle vérifie les tournées ajoutées par la brigade.",
             "expert": "Versionner la sémantique de découverte et publier l’inventaire effectivement chargé au démarrage. Traiter les points d’extension utilisés par les contournements comme une surface de compatibilité et tester leur comportement à chaque montée de version."
           },
           "en": {
-            "kitchen": "The round of the drawers should be written down, dated, and announced whenever it changes. Each station should be able to say at a glance which cards are actually on the worktop. And the footholds those added moves rely on should be tested before opening changes again.",
+            "kitchen": "The house writes which drawers open, in what order, and announces every change. At each service it also lists the recipes actually fetched. Before changing opening, it checks the extra rounds the brigade added.",
             "expert": "Version discovery semantics and publish the inventory actually loaded at startup. Treat the extension points workarounds depend on as a compatibility surface, and test them across upgrades."
           }
         }
@@ -169,22 +169,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Quelques maisons annoncent maintenant ce qu’elles sortent",
+          "cuisine": "Les grandes cuisines commencent à montrer leurs tiroirs ouverts",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Some houses now say what they take out",
+          "kitchen": "Large kitchens are starting to show which drawers open",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Les grandes maisons commencent à dire clairement quelles fiches elles sortent, et quand. C’est une direction prise, pas la preuve que le tiroir du fond soit déjà ouvert partout.",
+            "cuisine": "Plusieurs grandes maisons expliquent désormais quand et comment elles sortent leurs fiches. La tendance est visible, mais rien ne prouve que toutes les cuisines ouvrent encore les mêmes tiroirs.",
             "expert": "Les systèmes de skills des principaux harnais évoluent vers des sémantiques explicites de découverte et d’activation. Il s’agit d’une tendance observée ; aucun comportement uniforme n’est établi."
           },
           "en": {
-            "kitchen": "The larger houses are starting to say plainly which cards they take out, and when. That is a direction of travel, not proof that every bottom drawer now gets opened.",
+            "kitchen": "Several large houses now explain when and how they fetch their cards. The direction is visible, but nothing proves that every kitchen opens the same drawers yet.",
             "expert": "Skill systems across the major harnesses are converging on explicit discovery and enablement semantics. That is an observed direction; uniform behaviour across harnesses is not established."
           }
         }
@@ -195,22 +195,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une fiche ne sert que sortie du tiroir",
+          "cuisine": "Une recette oubliée dans le tiroir ne guide aucun plat",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A card nobody fetches changes nothing",
+          "kitchen": "A recipe left in the drawer guides no dish",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une fiche ne vaut que si quelqu’un va la chercher. Les règles qui décident quels tiroirs on ouvre font donc partie de la fiche, autant que ce qui est écrit dessus.",
+            "cuisine": "Écrire une bonne recette ne suffit pas : la mise en place doit aussi savoir où la trouver. Changer l’ordre des tiroirs change donc les recettes disponibles au service.",
             "expert": "Les règles de découverte appartiennent à l’API des skills. Les modifier revient à modifier un contrat public, même lorsqu’aucun format de fichier ne bouge."
           },
           "en": {
-            "kitchen": "A card is worth only what the hand that fetches it makes it worth. So the rules deciding which drawers get opened belong to the card as much as the writing on it.",
+            "kitchen": "Writing a good recipe is not enough; morning prep must know where to find it. Changing the drawer order changes which recipes are available during service.",
             "expert": "Discovery rules are part of the skill API. Changing them changes a public contract, even when no file format moves."
           }
         }

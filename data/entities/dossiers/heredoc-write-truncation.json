@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Claude Code efface l’ardoise avant d’écrire le menu",
+          "cuisine": "L’ardoise est effacée avant l’arrivée du nouveau menu",
           "expert": "L’écriture s’est bloquée après que la destination avait déjà été tronquée"
         },
         "en": {
-          "kitchen": "Claude Code wipes the board before writing",
+          "kitchen": "The board is wiped before the new menu arrives",
           "expert": "The write hung after the destination had already been truncated"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Claude Code, on efface l’ardoise du jour d’un coup d’éponge, puis on attend la dictée du nouveau menu. Ce jour-là, la dictée ne vient jamais : elle reste coincée quelque part. L’ancien menu est parti, le nouveau n’arrivera pas, et l’ardoise reste blanche.",
+            "cuisine": "Le commis efface entièrement l’ardoise du jour avant d’attendre le nouveau menu. Cette fois, la dictée reste bloquée et n’arrive jamais. L’ancien menu a disparu, le nouveau manque, et l’ardoise reste blanche.",
             "expert": "Un deadlock shell/heredoc récurrent, observé sur un chemin Bash de macOS, a pris une conséquence plus grave. Avec redirection vers fichier, la destination pouvait être tronquée avant que le payload de remplacement soit écrit en sécurité. Le blocage cesse alors d’être bénin : il laisse la destination vide."
           },
           "en": {
-            "kitchen": "At Claude Code the board gets wiped in one pass, then the kitchen waits for the new menu to be dictated. That day the dictation never arrives; it sticks somewhere out of sight. The old menu is gone, the new one will not come, and the board stays blank.",
+            "kitchen": "The cook wipes the entire daily board before waiting for the new menu. This time, the dictation sticks and never arrives. The old menu is gone, the new one is missing, and the board stays blank.",
             "expert": "A recurring shell/heredoc deadlock, seen on one macOS Bash path, took on a heavier consequence. Under file redirection the destination could be truncated before the replacement payload was safely written. The hang stops being benign at that point: it leaves the destination empty."
           }
         }
@@ -51,62 +51,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "La dictée s’est coincée, l’ardoise était déjà blanche",
+          "cuisine": "L’ardoise a été effacée avant que la dictée commence",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The dictation stuck again, the board already blank",
+          "kitchen": "The board was wiped before the dictation began",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La dictée s’était déjà arrêtée comme ça, et pas à un seul poste.",
+            "cuisine": "La même dictée s’était déjà bloquée dans plusieurs cuisines.",
             "expert": "Le même deadlock de heredoc était déjà apparu sur plusieurs surfaces d’exécution."
           },
           "en": {
-            "kitchen": "The dictation had jammed like this before, and not at one station only.",
+            "kitchen": "The same dictation had already jammed in several kitchens.",
             "expert": "The same heredoc deadlock had already shown up on more than one execution surface."
           }
         },
         {
           "fr": {
-            "cuisine": "À l’époque, cela bloquait le travail sans qu’une vraie protection en sorte.",
+            "cuisine": "Ces premiers blocages arrêtaient le travail, mais aucune protection durable n’avait été installée.",
             "expert": "Ces occurrences bloquaient le travail sans établir de mitigation durable au niveau produit."
           },
           "en": {
-            "kitchen": "Back then it stopped the work, and no lasting safeguard came out of it.",
+            "kitchen": "Those earlier jams stopped the work, but no lasting safeguard was installed.",
             "expert": "Those occurrences hung work without establishing any durable product-level mitigation."
           }
         },
         {
           "fr": {
-            "cuisine": "On l’a refaite récemment, dans une maison à jour, avec une autre manière de dicter.",
+            "cuisine": "La panne a ensuite été reproduite dans une cuisine récente, avec une autre voix pour dicter.",
             "expert": "Une reproduction sur version courante a remontré la panne sous macOS avec un Bash alternatif."
           },
           "en": {
-            "kitchen": "It was reproduced again recently, in an up-to-date house, with a different way of dictating.",
+            "kitchen": "The failure was later reproduced in a current kitchen with a different voice doing the dictation.",
             "expert": "A current-version reproduction showed the failure again under macOS with an alternate Bash."
           }
         },
         {
           "fr": {
-            "cuisine": "Cette fois, l’éponge était passée sur l’ardoise avant que le premier mot arrive.",
+            "cuisine": "Lors de cet essai, l’ancienne ardoise était déjà nettoyée quand la dictée s’est figée.",
             "expert": "Avec redirection vers fichier, la destination était déjà tronquée avant que le payload atteigne le consommateur."
           },
           "en": {
-            "kitchen": "This time the sponge had crossed the board before the first word arrived.",
+            "kitchen": "In that trial, the old board had already been wiped when the dictation froze.",
             "expert": "Under file redirection the destination was already truncated before the payload reached its consumer."
           }
         },
         {
           "fr": {
-            "cuisine": "À la date où on a regardé, aucune protection livrée n’était en place.",
+            "cuisine": "Au dernier relevé, aucune barrière installée dans la maison n’empêchait encore cette perte.",
             "expert": "Au cutoff observé, aucune mitigation produit livrée n’est établie."
           },
           "en": {
-            "kitchen": "At the date of the last look, no shipped safeguard was in place.",
+            "kitchen": "At the last check, no safeguard installed in the house prevented this loss.",
             "expert": "No shipped product-level mitigation was established as of the observed cutoff."
           }
         }
@@ -117,22 +117,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Entre l’éponge et le premier mot, plus rien",
+          "cuisine": "On efface d’abord, puis la nouvelle écriture se bloque",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Wipe first, write second, nothing in between",
+          "kitchen": "The old board is wiped before the new words can arrive",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "L’ordre des gestes est tout le problème. On efface d’abord, on écrit ensuite, et entre les deux il n’y a plus rien. Un simple blocage, qui coûtait une attente, coûte alors le menu de la veille.",
+            "cuisine": "Le danger vient de l’ordre des gestes : l’éponge efface l’ancien menu avant que le nouveau soit prêt. Si la dictée se bloque ensuite, la brigade perd aussi la dernière version correcte.",
             "expert": "La redirection shell peut modifier la destination avant que le chemin producteur-consommateur du heredoc ait progressé. Un comportement d’interpréteur et de pipe dépendant de l’environnement transforme alors un blocage ordinaire en commit destructif partiel."
           },
           "en": {
-            "kitchen": "The order of the gestures is the whole problem. Wipe first, write second, and in between there is nothing at all. A plain jam, which used to cost a wait, now costs yesterday’s menu.",
+            "kitchen": "The danger comes from the order of work: the old menu is wiped before the new one is ready. If dictation then jams, the brigade also loses the last correct version.",
             "expert": "Shell redirection can mutate the destination before the heredoc’s producer-consumer path has made progress. Environment-dependent interpreter and pipe behavior then turns an ordinary hang into a partial destructive commit."
           }
         }
@@ -143,22 +143,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Remplir une ardoise neuve avant de décrocher",
+          "cuisine": "Préparer le nouveau menu sur une autre ardoise",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Finish the spare board first, then swap",
+          "kitchen": "Write the new menu on a spare board first",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On prend une ardoise vierge, on y écrit tout le menu, on relit. Seulement alors on décroche l’ancienne et on accroche la neuve. Tant que la nouvelle n’est pas complète, l’ancienne reste au mur.",
+            "cuisine": "La brigade écrit et relit le menu entier sur une seconde ardoise. Elle ne remplace l’ancienne qu’une fois la nouvelle terminée. Si la dictée cale, le menu connu reste visible.",
             "expert": "Préférer des primitives d’écriture atomiques et conserver la destination existante intacte jusqu’à ce que le remplacement soit durable. Borner l’exécution shell, et rendre explicite la sémantique de l’interpréteur lorsque la composition shell est inévitable."
           },
           "en": {
-            "kitchen": "Take a spare board, write the whole menu on it, read it back. Only then take the old one off the wall and hang the new one. Until the new board is complete, the old one stays up.",
+            "kitchen": "The brigade writes and checks the whole menu on a second board. The old one is replaced only after the new one is complete. If dictation jams, the known menu remains visible.",
             "expert": "Prefer atomic file-write primitives and leave the existing destination untouched until the replacement is durable. Bound shell execution, and state interpreter semantics explicitly wherever shell composition cannot be avoided."
           }
         }
@@ -169,22 +169,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "La perte se refait, aucune protection n’est livrée",
+          "cuisine": "La perte est reproductible et reste sans protection établie",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The loss repeats, with nothing to catch it",
+          "kitchen": "The loss repeats, and no shipped safeguard is established",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La perte a été refaite pour de bon : on sait la provoquer. Aucune protection livrée n’est en place à la date où on a regardé. Selon la maison et sa façon de dicter, l’exposition change.",
+            "cuisine": "La brigade sait désormais reproduire l’effacement. Au dernier relevé, aucune protection livrée n’était établie, et le risque variait encore selon la cuisine et sa manière de dicter.",
             "expert": "La cause racine récurrente dispose désormais d’une reproduction destructive. Aucune mitigation livrée au niveau produit n’est établie au cutoff observé, et l’exposition reste dépendante de l’environnement."
           },
           "en": {
-            "kitchen": "The loss has been reproduced for real: it can be triggered on demand. No shipped safeguard is in place as of the last look. Exposure still depends on the house and on how it dictates.",
+            "kitchen": "The brigade can now reproduce the wipeout. At the last check, no shipped safeguard was established, and the risk still varied with the kitchen and its way of dictating.",
             "expert": "The recurring root cause now has a destructive reproduction attached to it. No shipped product-level mitigation is established as of the observed cutoff, and exposure remains environment-dependent."
           }
         }
@@ -195,22 +195,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "L’ancienne ardoise reste jusqu’à la nouvelle",
+          "cuisine": "Ne décrocher l’ancien menu qu’après avoir fini le nouveau",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Take the old board down last",
+          "kitchen": "Keep the old menu up until the new one is complete",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une écriture n’est sûre que si l’on peut tout arrêter au milieu sans rien perdre. Tant que la nouvelle ardoise n’est pas finie, l’ancienne reste accrochée. C’est la seule version dont on soit certain.",
+            "cuisine": "Une réécriture sûre peut s’interrompre sans effacer le dernier bon menu. La nouvelle ardoise doit donc être complète avant que l’ancienne quitte le mur.",
             "expert": "Une écriture de fichier généré n’est sûre que si un échec survenu avant commit laisse l’ancien fichier intact. La propriété à garantir est la survie de la dernière version connue bonne, pas la réussite du chemin nominal."
           },
           "en": {
-            "kitchen": "A write is only safe if you can stop halfway and lose nothing. Until the new board is finished, the old one stays on the wall. It is the only version anyone is sure of.",
+            "kitchen": "A safe rewrite may stop halfway without erasing the last good menu. The new board must be complete before the old one leaves the wall.",
             "expert": "A generated-file write is safe only when failure before commit leaves the previous file intact. The property to guarantee is survival of the last known-good version, not success of the nominal path."
           }
         }

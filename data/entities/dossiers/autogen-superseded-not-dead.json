@@ -24,22 +24,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "AutoGen est tenue, le neuf se fait ailleurs",
+          "cuisine": "La vieille maison sert encore, le neuf se fait en face",
           "expert": "Un projet peut rester maintenu après le déplacement de son futur stratégique"
         },
         "en": {
-          "kitchen": "AutoGen still serves, the new stoves are elsewhere",
+          "kitchen": "The old house still serves; the new stoves are elsewhere",
           "expert": "A project can stay maintained after its strategic future moves elsewhere"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez AutoGen, la salle ouvre tous les jours, les habitués sont servis, l’entretien se fait. Mais les patrons ont ouvert une autre maison, et c’est là qu’ils mettent les nouveaux plats et les fourneaux neufs.",
+            "cuisine": "La salle ouvre toujours, sert ses habitués et reçoit son entretien. Mais les patrons ont ouvert une seconde maison. C’est là qu’ils installent les nouveaux fourneaux et préparent les nouveaux plats.",
             "expert": "AutoGen est passé en maintenance tandis que ses créateurs dirigeaient le développement nouveau vers un framework successeur. Le repository existe toujours ; c’est son état stratégique qui a changé."
           },
           "en": {
-            "kitchen": "AutoGen still opens its room daily, still serves its regulars, still keeps the place up. But the owners opened a second house, and that is where the new dishes and the new stoves go.",
+            "kitchen": "The dining room still opens, serves regulars, and receives its upkeep. But the owners opened a second house. New stoves and new dishes now go there.",
             "expert": "AutoGen moved into maintenance while its creators steered new development toward a successor framework. The repository is still there; what changed is its strategic state."
           }
         }
@@ -50,62 +50,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Les patrons d’AutoGen ont ouvert une seconde maison",
+          "cuisine": "Les patrons ont ouvert une seconde maison",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The AutoGen owners built a second house",
+          "kitchen": "The owners built a second house",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La maison s’installe et devient une adresse connue.",
+            "cuisine": "La première maison ouvre et attire rapidement ses habitués. Elle devient une adresse importante de la rue.",
             "expert": "AutoGen s’établit comme framework multi-agent majeur."
           },
           "en": {
-            "kitchen": "The house establishes itself and becomes a known address.",
+            "kitchen": "The first house opens and quickly attracts regulars. It becomes an important address on the street.",
             "expert": "AutoGen became a major multi-agent framework."
           }
         },
         {
           "fr": {
-            "cuisine": "Les mêmes patrons montent une seconde maison, plus loin dans la rue.",
+            "cuisine": "Les mêmes patrons ouvrent ensuite une seconde maison. Elle se trouve un peu plus loin dans la rue.",
             "expert": "Une architecture successeur est développée par la même organisation, élargie."
           },
           "en": {
-            "kitchen": "The same owners build a second house further down the street.",
+            "kitchen": "The same owners later open a second house. It stands farther down the street.",
             "expert": "A successor architecture came out of the same, broader organization."
           }
         },
         {
           "fr": {
-            "cuisine": "Les nouveaux plats sortent là-bas, plus ici.",
+            "cuisine": "Les nouveaux plats sont désormais préparés dans la seconde maison. L’ancienne n’en reçoit plus.",
             "expert": "Le développement de nouvelles fonctionnalités se déplace vers le successeur."
           },
           "en": {
-            "kitchen": "New dishes come out over there now, not here.",
+            "kitchen": "The second house now prepares every new dish. The old room receives none of them.",
             "expert": "New feature work shifted to the successor."
           }
         },
         {
           "fr": {
-            "cuisine": "La vieille maison reste ouverte, mais on n’y fait plus que l’entretien.",
+            "cuisine": "La vieille salle ne ferme pas ses portes. La brigade y assure seulement l’entretien nécessaire aux habitués.",
             "expert": "AutoGen passe en mode maintenance."
           },
           "en": {
-            "kitchen": "The old house stays open, but only upkeep happens there.",
+            "kitchen": "The old dining room does not close. Its brigade only provides the upkeep needed by regulars.",
             "expert": "AutoGen entered maintenance mode."
           }
         },
         {
           "fr": {
-            "cuisine": "Qui veut engager quelque chose de neuf est attendu en face.",
+            "cuisine": "Pour lancer un nouveau plat, les patrons dirigent désormais la brigade vers la seconde maison. C’est là que partent les nouveaux moyens.",
             "expert": "La migration devient le chemin attendu pour tout nouvel investissement stratégique."
           },
           "en": {
-            "kitchen": "Anyone committing to something new is expected across the street.",
+            "kitchen": "For a new dish, the owners now direct the brigade to the second house. New resources go there.",
             "expert": "Migration became the expected path for any new strategic investment."
           }
         }
@@ -116,22 +116,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Servir ses habitués n’est pas construire la suite",
+          "cuisine": "Une salle ouverte ne révèle pas où partent les nouveaux fourneaux",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Keeping the room clean is not investing",
+          "kitchen": "An open room does not reveal where new stoves go",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une salle propre, un service assuré, des habitués contents : rien de tout ça ne dit où les patrons mettent leur argent. Les deux choses se regardent séparément.",
+            "cuisine": "La vieille salle reste propre et les habitués sont servis. Cela ne montre pas où les patrons installent les nouveaux fourneaux. Entretien et avenir sont deux questions distinctes.",
             "expert": "L’activité du repository et l’investissement stratégique peuvent diverger. La maintenance préserve les utilisateurs existants pendant que la direction produit se déplace vers une nouvelle abstraction."
           },
           "en": {
-            "kitchen": "A clean room, service held, happy regulars: none of it says where the owners put their money. The two are read separately.",
+            "kitchen": "The old room stays clean and regulars still eat. That does not show where the owners install new stoves. Upkeep and future direction are separate questions.",
             "expert": "Repository activity and strategic investment can diverge. Maintenance protects existing users while product direction relocates to a new abstraction."
           }
         }
@@ -142,22 +142,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Il faut une case entre ouverte et fermée",
+          "cuisine": "Ajouter une case pour la maison entretenue mais dépassée",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Open or shut is not enough for AutoGen",
+          "kitchen": "Add a box for a maintained but superseded house",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Garder une case pour « tenue, mais ce n’est plus là que ça se passe ». Sinon il ne reste que deux réponses, ouverte ou fermée, et aucune des deux n’est vraie.",
+            "cuisine": "Le registre doit pouvoir dire : « toujours entretenue, mais l’avenir se cuisine ailleurs ». Les seules cases ouverte et fermée donnent ici deux réponses fausses.",
             "expert": "Suivre la supersession comme un état distinct, situé entre la croissance active et l’abandon."
           },
           "en": {
-            "kitchen": "Keep a box for “kept up, but no longer where it happens.” Otherwise only two answers remain, open or shut, and neither one is true.",
+            "kitchen": "The house book needs a line for “maintained, while the future is cooked elsewhere.” Open and shut both give the wrong answer here.",
             "expert": "Treat supersession as its own tracked state, sitting between active growth and abandonment."
           }
         }
@@ -168,22 +168,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "AutoGen sert ses habitués, décide en face",
+          "cuisine": "Les habitués restent ici, les nouveautés partent en face",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The old AutoGen room still has its regulars",
+          "kitchen": "The old room still serves its regulars",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La vieille maison est tenue et sert encore ses habitués. Ce qui est neuf se décide et se construit en face.",
+            "cuisine": "L’ancienne salle continue d’accueillir ses habitués. Les patrons entretiennent ce service. Pour chaque nouveauté, leurs décisions et leurs moyens vont désormais à l’autre maison.",
             "expert": "Maintenu, mais remplacé pour tout nouveau développement stratégique."
           },
           "en": {
-            "kitchen": "The old house is kept up and still serves its regulars. What is new gets decided and built across the street.",
+            "kitchen": "The old room continues to welcome regulars, and the owners maintain that service. Every new decision and investment now goes to the other house.",
             "expert": "Maintained, and superseded for strategic new development."
           }
         }
@@ -194,22 +194,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Cherche les nouveaux fourneaux, pas la salle propre",
+          "cuisine": "Pour connaître l’avenir, suivre les nouveaux fourneaux",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A well-kept house may be building nothing",
+          "kitchen": "To find the future, follow the new stoves",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une maison bien tenue n’est pas forcément celle où les patrons construisent la suite.",
+            "cuisine": "Une salle bien entretenue peut encore servir longtemps. Pour savoir où se prépare la suite, regarde où les patrons installent leurs nouveaux fourneaux.",
             "expert": "La maintenance n’est pas le futur stratégique."
           },
           "en": {
-            "kitchen": "A well-kept house is not necessarily the one where the owners build what comes next.",
+            "kitchen": "A well-kept room may serve for years. To find what comes next, watch where the owners install their new stoves.",
             "expert": "Maintenance and strategic future are separate states."
           }
         }

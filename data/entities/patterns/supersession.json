@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "La maison reste ouverte, rien ne s’y invente",
+          "cuisine": "Au passe — La maison reste ouverte, rien ne s’y invente",
           "expert": "Un projet reste maintenu après le déplacement de son développement stratégique"
         },
         "en": {
-          "kitchen": "The owners write the new menu elsewhere",
+          "kitchen": "At the pass — The owners write the new menu elsewhere",
           "expert": "A project stays maintained after its strategic development moves elsewhere"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "AutoGen n’a pas fermé. Les mêmes patrons ont ouvert une seconde adresse, plus large, et c’est là que les nouveaux plats se créent désormais. La première reste ouverte et bien tenue : on y sert la carte connue, on ne l’écrit plus.",
+            "cuisine": "La première maison n’a pas fermé. Les mêmes patrons ont ouvert une seconde adresse, plus vaste, où ils inventent désormais les nouveaux plats. L’ancienne reste entretenue et continue de servir sa carte connue, mais l’avenir se prépare ailleurs.",
             "expert": "La supersession est le déplacement du développement stratégique vers un successeur pendant que le projet d’origine reste maintenu. AutoGen est passé en maintenance tandis que ses créateurs dirigeaient le développement nouveau vers un framework successeur, produit par la même organisation et plus large. Le repository existe toujours ; c’est son état stratégique qui a changé."
           },
           "en": {
-            "kitchen": "Nothing shut at AutoGen. The same owners opened a second, larger room, and that is where new dishes get invented now. The first one is still open and kept in good order: the familiar menu is served there, and no longer written there.",
+            "kitchen": "The first house did not close. The same owners opened a larger second address where new dishes are now invented. The old room stays maintained and serves its familiar menu, but the future is prepared elsewhere.",
             "expert": "Supersession is the shift of strategic development to a successor while the original project stays maintained. AutoGen moved into maintenance while its creators directed new development toward a successor framework, built by the same organization and broader in scope. The repository still exists; what changed is its strategic state."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Les nouveautés sortent toutes de l’autre adresse",
+          "cuisine": "Au passe — Les nouveautés sortent toutes de l’autre adresse",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Everything new comes from the other address",
+          "kitchen": "At the pass — Everything new comes from the other address",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La maison est propre, le service tourne, et pourtant plus aucun plat nouveau n’y apparaît. Les nouveautés sortent toutes de l’autre adresse, tenue par les mêmes. Et quand un habitué demande où s’installer pour les années qui viennent, on lui indique la nouvelle porte.",
+            "cuisine": "Au service, La maison est propre, le service tourne, et pourtant plus aucun plat nouveau n’y apparaît. Les nouveautés sortent toutes de l’autre adresse, tenue par les mêmes. Et quand un habitué demande où s’installer pour les années qui viennent, on lui indique la nouvelle porte.",
             "expert": "Le signal n’est pas l’arrêt de l’activité mais son changement de nature : correctifs et support continuent pendant que la capacité nouvelle n’arrive plus. Chez AutoGen, le développement de nouvelles fonctionnalités s’est déplacé vers le successeur, et la migration est devenue le chemin attendu pour tout nouvel investissement stratégique. Activité du repository et investissement stratégique divergent sans qu’aucun événement d’archivage ne le signale."
           },
           "en": {
-            "kitchen": "The room is clean, service runs, and yet no new dish ever appears on that menu. Everything new comes out of the other address, run by the same people. Ask where to settle for the years ahead and the answer points at the new door.",
+            "kitchen": "During service, The room is clean, service runs, and yet no new dish ever appears on that menu. Everything new comes out of the other address, run by the same people. Ask where to settle for the years ahead and the answer points at the new door.",
             "expert": "The signal is not that activity stops but that its nature changes: fixes and support continue while new capability stops arriving. At AutoGen, new feature development moved to the successor, and migration became the expected path for any new strategic investment. Repository activity and strategic investment diverge with no archival event to mark it."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Aucun rideau baissé, aucun dernier service annoncé",
+          "cuisine": "Au passe — Aucun rideau baissé, aucun dernier service annoncé",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "No shutter came down, no last service announced",
+          "kitchen": "At the pass — No shutter came down, no last service announced",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Entretenir une maison et y inventer sont deux métiers différents. On peut tenir la première impeccablement en donnant toutes ses idées à l’autre adresse. Ici rien n’a été retiré de la carte, aucun dernier service annoncé, aucun rideau baissé. Les habitués sont servis comme avant, et c’est ce qui masque l’endroit où se décide la suite.",
+            "cuisine": "Au service, Entretenir une maison et y inventer sont deux métiers différents. On peut tenir la première impeccablement en donnant toutes ses idées à l’autre adresse. Ici rien n’a été retiré de la carte, aucun dernier service annoncé, aucun rideau baissé. Les habitués sont servis comme avant, et c’est ce qui masque l’endroit où se décide la suite.",
             "expert": "La maintenance préserve les utilisateurs existants pendant que la direction produit se déplace vers une nouvelle abstraction ; les deux états produisent alors des indices compatibles. Le projet d’origine ne présente aucun marqueur de fin de vie décidée : ni retrait de surfaces, ni version finale d’arrêt, ni archivage. La supersession se situe entre la croissance active et l’abandon, et ne se lit que dans la destination du développement nouveau."
           },
           "en": {
-            "kitchen": "Keeping a room and inventing in it are two different jobs. The first can be done impeccably while every new idea goes to the other address. Nothing was cut from this menu, no last service was announced, no shutter came down. Yesterday’s regulars are served as always, and that is what hides where the future is decided.",
+            "kitchen": "During service, Keeping a room and inventing in it are two different jobs. The first can be done impeccably while every new idea goes to the other address. Nothing was cut from this menu, no last service was announced, no shutter came down. Yesterday’s regulars are served as always, and that is what hides where the future is decided.",
             "expert": "Maintenance preserves existing users while product direction moves to a new abstraction, so both states produce compatible evidence. The original project shows no marker of a decided end of life: no surface removal, no terminal release, no archival. Supersession sits between active growth and abandonment, and reads only in where new development lands."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Manger ce soir ou s’installer dix ans",
+          "cuisine": "Au passe — Manger ce soir ou s’installer dix ans",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Eating tonight is not settling for ten years",
+          "kitchen": "At the pass — Eating tonight is not settling for ten years",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Demande où se crée le prochain plat, pas si la maison est encore ouverte. Si tu manges ce soir, l’ancienne adresse fait très bien l’affaire. Si tu t’installes pour dix ans, prends la nouvelle. C’est là qu’on cuisine la suite, et la maison le dit elle-même.",
+            "cuisine": "Au service, Demande où se crée le prochain plat, pas si la maison est encore ouverte. Si tu manges ce soir, l’ancienne adresse fait très bien l’affaire. Si tu t’installes pour dix ans, prends la nouvelle. C’est là qu’on cuisine la suite, et la maison le dit elle-même.",
             "expert": "Suivre la supersession comme un état distinct, situé entre la croissance active et l’abandon, plutôt que de la ranger avec l’abandon. Pour une dépendance existante, la maintenance reste un support valable ; pour un nouvel investissement, la cible est le successeur désigné par la même organisation. Chez AutoGen, l’état établi est : maintenu, mais remplacé pour tout nouveau développement stratégique."
           },
           "en": {
-            "kitchen": "Ask where the next dish gets invented, not whether the doors are still open. Eating tonight, the old room serves you perfectly well. Settling in for ten years, take the new address. That is where the future is being cooked, and the house says so itself.",
+            "kitchen": "During service, Ask where the next dish gets invented, not whether the doors are still open. Eating tonight, the old room serves you perfectly well. Settling in for ten years, take the new address. That is where the future is being cooked, and the house says so itself.",
             "expert": "Track supersession as a distinct state between active growth and abandonment, rather than filing it with abandonment. For an existing dependency, maintenance remains valid support; for new investment, the target is the successor named by the same organization. At AutoGen the established state is: maintained, but replaced for any new strategic development."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Suivre les patrons, pas l’enseigne",
+          "cuisine": "Au passe — Suivre les patrons, pas l’enseigne",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Follow the owners, not the lit sign",
+          "kitchen": "At the pass — Follow the owners, not the lit sign",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une porte ouverte ne dit pas où s’écrira la carte de demain. Regarde de quel côté les patrons passent leurs journées.",
+            "cuisine": "Au service, Une porte ouverte ne dit pas où s’écrira la carte de demain. Regarde de quel côté les patrons passent leurs journées.",
             "expert": "La maintenance n’est pas le futur stratégique. Un projet peut rester utilisable, supporté et non archivé tout en ayant cessé d’être l’endroit où se décide sa propre suite."
           },
           "en": {
-            "kitchen": "An open door tells you nothing about where tomorrow’s menu gets written. Watch which room the owners spend their days in.",
+            "kitchen": "During service, An open door tells you nothing about where tomorrow’s menu gets written. Watch which room the owners spend their days in.",
             "expert": "Maintenance is not the strategic future. A project can stay usable, supported and unarchived while no longer being the place where its own next step is decided."
           }
         }

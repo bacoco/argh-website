@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Claude Code faisait signer le mauvais geste",
+          "cuisine": "Le client signe pour un geste, la cuisine en fait un autre",
           "expert": "Le prompt de permission demandait un accord — pour la mauvaise action"
         },
         "en": {
-          "kitchen": "Claude Code asked consent for the wrong move",
+          "kitchen": "The diner signs for one move and the kitchen makes another",
           "expert": "The permission prompt asked for approval — for the wrong action"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Claude Code, une commande arrive en plusieurs morceaux, lancés d’une traite. Avant de commencer, on tend une feuille à signer pour annoncer ce qu’on va faire. Sur la feuille s’affichait le morceau anodin, celui qui ne coûte rien, pendant que le geste lourd attendait derrière. Le client signait donc pour autre chose que ce qu’il autorisait.",
+            "cuisine": "Une commande arrive en plusieurs gestes annoncés d’une traite. Avant de commencer, la cuisine tend une feuille au client. Elle montre le geste anodin, tandis que le plus lourd attend derrière. Le client signe donc pour autre chose que ce qui sera fait.",
             "expert": "Sur des commandes shell composées, le prompt de permission pouvait mettre en avant un changement de répertoire anodin tandis que l’opération Git significative restait masquée derrière. L’utilisateur validait alors un libellé sans rapport avec l’autorité réellement accordée."
           },
           "en": {
-            "kitchen": "At Claude Code an order arrives in several pieces, called out in one breath. Before anything starts, a slip goes out to be signed, so nothing happens unannounced. The slip showed the harmless piece, the one that costs nothing, while the heavy move waited behind it. So the signature covered something other than what it allowed.",
+            "kitchen": "An order arrives as several moves called in one breath. Before starting, the kitchen sends the diner a slip. It shows the harmless move while the heavier one waits behind it. The signature therefore covers something other than what will happen.",
             "expert": "With compound shell commands, the permission prompt could foreground a harmless directory change while the meaningful Git operation stayed hidden behind it. The approval then granted authority that the displayed label did not describe."
           }
         }
@@ -51,62 +51,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "La découpe réparée, la feuille montrait toujours faux",
+          "cuisine": "La commande est bien découpée, mais le client signe la mauvaise ligne",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The cutting was repaired, the slip stayed wrong",
+          "kitchen": "The order is cut correctly, but the guest signs the wrong line",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Pour demander l’accord, on découpe en morceaux la commande lancée d’une traite.",
+            "cuisine": "Pour faire signer le client, la brigade sépare une longue commande en plusieurs gestes.",
             "expert": "Les commandes composées sont parsées pour prendre les décisions de permission."
           },
           "en": {
-            "kitchen": "To ask for consent, the one-breath order is cut into separate pieces.",
+            "kitchen": "To ask for approval, the brigade splits one long order into several actions.",
             "expert": "Compound commands were parsed to drive permission decisions."
           }
         },
         {
           "fr": {
-            "cuisine": "Une réparation rend la découpe plus sûre et fait passer les refus avant tout le reste.",
+            "cuisine": "Une première réparation améliore cette séparation et donne la priorité aux interdictions.",
             "expert": "Un correctif structurel améliore la segmentation et la priorité des règles de refus."
           },
           "en": {
-            "kitchen": "A repair makes the cutting safer and puts refusals ahead of everything else.",
+            "kitchen": "A first repair improves the separation and gives refusals priority.",
             "expert": "A structural fix improved segmentation and gave deny rules precedence."
           }
         },
         {
           "fr": {
-            "cuisine": "Plus tard, la feuille montre encore le mauvais morceau de la commande.",
+            "cuisine": "Malgré cela, la feuille présentée ensuite affiche encore un geste différent de celui qui compte vraiment.",
             "expert": "Un comportement ultérieur affiche encore l’approbation du mauvais sous-ordre."
           },
           "en": {
-            "kitchen": "Later, the slip still shows the wrong piece of the order.",
+            "kitchen": "Even so, a later slip still shows a different action from the one that truly matters.",
             "expert": "Later behaviour still surfaced approval for the wrong sub-command."
           }
         },
         {
           "fr": {
-            "cuisine": "On redemande la même signature sans arrêt, et l’accord donné ne sert à rien la fois suivante.",
+            "cuisine": "Le client doit donc signer encore et encore, sans pouvoir autoriser utilement la vraie préparation.",
             "expert": "Les utilisateurs subissent des prompts répétés, impossibles à mettre en liste blanche utilement."
           },
           "en": {
-            "kitchen": "The same signature gets asked for again and again, and granting it helps nothing next time.",
+            "kitchen": "The guest must therefore sign again and again, with no useful way to approve the real preparation.",
             "expert": "Users faced repeated prompts that could not be usefully whitelisted."
           }
         },
         {
           "fr": {
-            "cuisine": "La récidive le montre : savoir découper la commande n’apprend pas quoi faire signer.",
+            "cuisine": "Le retour du problème prouve qu’une bonne découpe ne suffit pas à choisir la ligne que le client doit approuver.",
             "expert": "La récidive établit que correction du parsing et sémantique d’approbation sont deux problèmes distincts."
           },
           "en": {
-            "kitchen": "The repeat shows it: knowing how to cut the order does not say what to put on the slip.",
+            "kitchen": "The problem returning proves that correct cutting does not choose the line the guest should approve.",
             "expert": "The recurrence established that parsing correctness and approval semantics are separate problems."
           }
         }
@@ -117,22 +117,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La feuille montrait le morceau le plus inoffensif",
+          "cuisine": "Le bon cache le geste important derrière le plus petit",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "The slip printed the mildest piece",
+          "kitchen": "The slip hides the important action behind the smallest one",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La découpe pouvait être exacte et la feuille rester trompeuse. Elle affichait le premier morceau venu, le plus inoffensif, au lieu du geste qui engage vraiment la maison. Ce qu’on lisait et ce qu’on autorisait n’étaient pas la même chose.",
+            "cuisine": "La brigade peut séparer correctement tous les gestes et choisir pourtant le mauvais pour la signature. Si le bon montre seulement une petite découpe alors que la commande engage toute la réserve, le client n’autorise pas ce qui sera réellement fait.",
             "expert": "Le parser peut être syntaxiquement correct alors que l’interface retient un segment à faible risque comme action représentative. L’utilisateur approuve un libellé qui ne correspond pas à l’autorité accordée, et la répétition du prompt empêche toute mise en liste blanche utile."
           },
           "en": {
-            "kitchen": "The cutting could be exact and the slip still mislead. It printed whichever piece came first, the mildest one, rather than the move that truly puts the house on the line. What was read and what was allowed were not the same thing.",
+            "kitchen": "The brigade may separate every action correctly yet choose the wrong one for signature. If the slip shows a small cut while the order commits the whole pantry, the guest does not approve what will truly happen.",
             "expert": "The parser can be syntactically correct while the interface picks a low-risk segment as the representative action. Approval then attaches to a label that misstates the granted authority, and the repeated prompt cannot be turned into a usable allowlist entry."
           }
         }
@@ -143,22 +143,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Faire signer le geste le plus lourd",
+          "cuisine": "Le bon doit décrire toute la commande et son plus grand risque",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Name what the whole order does, plainly",
+          "kitchen": "The slip must state the whole order and its biggest risk",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La feuille doit dire l’effet de la commande entière, en une ligne que le client comprend. Et elle doit mettre en avant le geste le plus lourd, pas le premier morceau que la découpe a sorti.",
+            "cuisine": "Avant la signature, le bon résume clairement ce que produira toute la commande. Il montre d’abord l’action la plus engageante, même si elle n’apparaît pas en premier dans la préparation.",
             "expert": "Un prompt de permission doit résumer l’effet sémantique de la commande complète et afficher l’action de plus haute autorité. Le premier segment parsable n’est pas un candidat acceptable pour représenter la décision."
           },
           "en": {
-            "kitchen": "The slip should state what the whole order does, in one line the customer can follow. And it should lead with the heaviest move, not the first piece the cutting happened to produce.",
+            "kitchen": "Before signature, the slip clearly sums up what the whole order will do. It leads with the most serious action, even if that action is not prepared first.",
             "expert": "A permission prompt should summarise the semantic effect of the whole command and display its highest-authority action. The first parseable segment is not an acceptable stand-in for the decision."
           }
         }
@@ -169,22 +169,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Chez Claude Code, la faute est revenue",
+          "cuisine": "La mauvaise feuille est revenue après réparation",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "At Claude Code the wrong slip came back",
+          "kitchen": "The wrong slip returned after repair",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Cette famille d’incidents sert d’exemple : ce qu’on montre au client fait partie de la protection, pas de la décoration. Qu’elle soit revenue après une première réparation en dit plus long que la réparation elle-même.",
+            "cuisine": "Le problème revenu après une première réparation montre que le texte présenté au client protège autant que la serrure. Une étiquette trompeuse rend la signature inutile, même si la commande est bien découpée.",
             "expert": "La famille d’incidents reste un cas de référence : l’UX de sécurité appartient à la correction de l’enforcement, pas à sa présentation. La récidive après un correctif structurel est l’élément probant."
           },
           "en": {
-            "kitchen": "This family of incidents has become the example: what the customer is shown is part of the protection, not decoration. That it came back after a first repair says more than the repair did.",
+            "kitchen": "The problem returning after a first repair shows that the words shown to the guest protect as much as the lock. A misleading label defeats the signature even when the order is split correctly.",
             "expert": "The issue family remains a reference case for treating security UX as part of enforcement correctness rather than presentation. The recurrence after a structural fix is what carries the evidence."
           }
         }
@@ -195,22 +195,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une signature ne couvre que la ligne écrite",
+          "cuisine": "Le client autorise les mots qu’il lit, rien de plus",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Show the customer what he is really allowing",
+          "kitchen": "The guest approves the words shown, and nothing more",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un accord ne vaut que pour ce qui était écrit sur la feuille. Si la feuille nomme le petit geste et laisse le gros derrière, la signature ne protège personne.",
+            "cuisine": "La signature porte sur la préparation décrite sur le bon. Si la cuisine affiche un petit geste mais en accomplit un plus lourd, elle n’a jamais reçu un accord éclairé.",
             "expert": "Approuver la mauvaise description n’est pas une approbation éclairée. L’accord ne couvre que ce que le libellé énonce, indépendamment de ce que le système exécute ensuite."
           },
           "en": {
-            "kitchen": "Consent only covers what the slip actually said. If the slip names the small move and leaves the big one behind it, the signature protects nobody.",
+            "kitchen": "The signature covers the preparation described on the slip. If the kitchen shows a small action but performs a larger one, it never received informed approval.",
             "expert": "Approving the wrong description is not informed approval. Consent covers only what the label stated, whatever the system goes on to execute."
           }
         }

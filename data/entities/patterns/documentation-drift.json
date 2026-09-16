@@ -23,22 +23,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le classeur décrit un service qui a changé",
+          "cuisine": "Le classeur décrivait le service d’une autre saison",
           "expert": "La documentation publiée ne décrit plus le comportement effectif"
         },
         "en": {
-          "kitchen": "The binder still teaches yesterday's way of working",
+          "kitchen": "The binder described service from another season",
           "expert": "Published documentation no longer describes effective behavior"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Gemini CLI, les fiches sont passées d’un essai qu’il fallait demander à un réglage servi d’office. Le classeur et les écrans ont gardé l’ancien mot, exprès, pour ne pas dérouter ceux qui travaillent encore à l’ancienne. Un lecteur y apprend donc un service qui n’est plus celui du jour.",
+            "cuisine": "Des fiches sont passées d’un essai demandé à une règle servie d’office. Le classeur a gardé l’ancien mot pour aider les cuisines restées à l’ancienne saison. Il enseignait donc un service qui n’était plus celui du jour.",
             "expert": "La dérive de documentation apparaît lorsque la documentation publiée ne reflète plus le comportement ou les valeurs par défaut effectifs. Chez Gemini CLI, les skills sont passés d’un mode expérimental opt-in à un comportement activé par défaut, et les noms de configuration d’une sémantique expérimentale à une sémantique stable. Documentation et interface ont conservé le vocabulaire antérieur, volontairement, pour ne pas casser les utilisateurs d’anciennes versions."
           },
           "en": {
-            "kitchen": "At Gemini CLI the cards moved from a trial you had to ask for to a setting served by default. The binder and the screens kept the older word on purpose, so nobody still working the old way would be thrown. A reader there learns a service that is no longer today’s.",
+            "kitchen": "Some cards moved from a trial you requested to a rule served by default. The binder kept the older word to help kitchens on an earlier season. It therefore taught a service that was no longer today’s.",
             "expert": "Documentation drift appears when published documentation no longer reflects effective behavior or defaults. At Gemini CLI, skills moved from experimental opt-in to on-by-default, and configuration names moved from experimental to stable semantics. Documentation and UI deliberately kept the earlier vocabulary so that users on older versions would not break."
           }
         }
@@ -49,22 +49,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Gemini sert d’office ce qu’il appelle encore essai",
+          "cuisine": "La sauce servie d’office portait encore le nom d’un essai",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Served by default at Gemini, still called trial",
+          "kitchen": "The default sauce still carried a trial name",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le mot de la page appartient encore à la période d’essai, alors que le plat sort tout seul depuis des semaines. Le nom du réglage a changé sur le fourneau, pas dans le classeur. Et une même page doit être vraie pour plusieurs saisons à la fois, ce qui n’arrive jamais.",
+            "cuisine": "Le classeur appelait encore essai une sauce sortie d’office depuis des semaines. Le nom avait changé au fourneau, pas sur la page. Une même page essayait ainsi d’être vraie pour plusieurs saisons.",
             "expert": "Le défaut documenté diverge du réglage effectivement appliqué à l’exécution. Le vocabulaire de configuration bascule d’expérimental à stable sans que la page publiée suive. Une seule page non versionnée prétend décrire plusieurs générations, et le retard peut être délibéré au nom de la compatibilité."
           },
           "en": {
-            "kitchen": "The word on the page still belongs to the trial period, while the dish has been going out on its own for weeks. The name of the setting changed on the stove, not in the binder. And one page is expected to be true for several seasons at once, which never happens.",
+            "kitchen": "The binder still called a default sauce a trial after weeks of serving it automatically. The name had changed at the stove, not on the page. One page was trying to be true for several seasons.",
             "expert": "The documented default diverges from the setting actually applied at runtime. Configuration vocabulary moves from experimental to stable while the published page does not follow. One unversioned page claims to describe several generations, and the lag may be deliberate in the name of compatibility."
           }
         }
@@ -75,22 +75,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La page a raison pour une autre saison",
+          "cuisine": "Une page propre pouvait rester fausse pour le service du jour",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A clean page that is right about yesterday",
+          "kitchen": "A clean page could still be wrong for today’s service",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "L’ancien mot a été gardé pour rendre service, pas par négligence. Rien ne signale l’écart : la page est propre, elle a simplement raison pour une autre saison. Le lecteur applique une règle qui a cessé d’être vraie pour lui, sans aucune raison de s’en méfier.",
+            "cuisine": "L’ancien mot était gardé pour aider, pas par oubli. La page semblait donc propre et vraie, mais pour une autre saison. Le lecteur suivait une règle qui n’était plus la sienne sans raison de s’en méfier.",
             "expert": "Une documentation non versionnée tente de décrire plusieurs générations d’exécution en même temps. Le lecteur ne peut pas savoir pour quelle version la phrase est vraie, et un retard délibéré ressemble à un choix de compatibilité plutôt qu’à une erreur. C’est ce qui rend la dérive difficile à détecter : la page n’est fausse que relativement à la version employée."
           },
           "en": {
-            "kitchen": "The old word was kept as a kindness, not out of neglect. Nothing marks the gap: the page is clean, it is simply right about another season. The reader applies a rule that stopped being true for him, with no reason at all to distrust it.",
+            "kitchen": "The old word was kept to help, not through neglect. The page therefore looked clean and true, but for another season. The reader followed a rule no longer theirs with no reason to distrust it.",
             "expert": "Unversioned documentation tries to describe several runtime generations at once. The reader cannot tell which version a sentence is true for, and a deliberate lag looks like a compatibility choice rather than an error. That is what makes the drift hard to detect: the page is false only relative to the version in use."
           }
         }
@@ -101,22 +101,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Lire le réglage sur le fourneau lui-même",
+          "cuisine": "Dater les pages et montrer la sauce réellement servie",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Every page names the seasons it covers",
+          "kitchen": "Date the pages and show the sauce actually served",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une page qui annonce un changement de réglage doit dire pour quelles saisons elle vaut. Et le réglage réellement en marche doit se lire sur le fourneau lui-même, pas dans le classeur. Personne ne devrait avoir à croire une page pour savoir ce que fait la cuisine.",
+            "cuisine": "Une page qui annonce une nouvelle sauce doit nommer les saisons concernées. La recette servie ce soir doit aussi se lire au passe, pas seulement dans le classeur. Personne ne devrait devoir croire une vieille page pour savoir ce qui sort.",
             "expert": "Versionner la documentation qui décrit un changement de comportement, en nommant les versions auxquelles chaque valeur par défaut s’applique. Exposer dans le produit le réglage effectivement actif, pour que le lecteur constate au lieu de déduire. Chez Gemini CLI, les skills se comportent désormais davantage comme des composants d’exécution que comme de simples prompts optionnels."
           },
           "en": {
-            "kitchen": "A page that announces a change of setting must say which seasons it holds for. And the setting actually running should be readable on the stove itself, not in the binder. Nobody should have to believe a page to know what the kitchen is doing.",
+            "kitchen": "A page announcing a new sauce must name the seasons it covers. Tonight’s recipe should also be readable at the pass, not only in the binder. Nobody should have to trust an old page to know what leaves the kitchen.",
             "expert": "Version the documentation that describes a behavior change, naming the versions each default applies to. Surface the effective setting inside the product, so the reader observes instead of inferring. At Gemini CLI, skills now behave more like runtime components than like optional prompts."
           }
         }
@@ -127,22 +127,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Une page sans date ne vaut pour personne",
+          "cuisine": "Une page sans saison peut servir deux recettes contraires",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A page without a date serves nobody",
+          "kitchen": "A page without a season can serve two opposing recipes",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Quand un réglage change, la page doit dire à partir de quand. Sinon elle reste vraie pour hier et fausse pour aujourd’hui, et le lecteur ne sait pas laquelle des deux il tient.",
+            "cuisine": "Quand une recette change, la page doit dire depuis quelle saison. Sans cette date, elle reste juste pour hier et trompe le service d’aujourd’hui.",
             "expert": "Un changement de valeur par défaut exige une documentation consciente des versions. La page doit nommer les versions pour lesquelles la nouvelle valeur est effectivement servie."
           },
           "en": {
-            "kitchen": "When a setting changes, the page must say from when. Otherwise it stays true for yesterday and false for today, and the reader cannot tell which of the two he is holding.",
+            "kitchen": "When a recipe changes, the page must say from which season. Without that date, it stays right for yesterday and misleads today’s service.",
             "expert": "A default change requires version-aware documentation. The page must name the versions for which the new value is actually served."
           }
         }

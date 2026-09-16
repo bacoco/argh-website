@@ -30,22 +30,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Roo Code",
+          "cuisine": "Une fermeture choisie, le carnet encore plein",
           "expert": "Roo Code"
         },
         "en": {
-          "kitchen": "Roo Code",
+          "kitchen": "A chosen closing, the book still full",
           "expert": "Roo Code"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Roo Code a fermé avec le carnet plein. Ce n’est pas une maison qui s’est vidée faute de clients : les patrons ont décidé que l’avenir n’était plus dans cette salle-là. Ils ont démonté les nouvelles adresses, servi un dernier service et baissé le rideau. Trois dossiers sont rattachés à cette fermeture.",
+            "cuisine": "La maison a fermé avec le carnet encore plein. Elle ne s’est pas vidée faute de clients : les patrons ont décidé que l’avenir n’était plus dans cette salle. Ils ont démonté les nouvelles adresses, servi un dernier service et baissé le rideau. Trois dossiers sont rattachés à cette fermeture.",
             "expert": "Roo Code est en état archived, au terme d’une trajectoire active_growth → scope_expanded → strategic_pivot → sunset_announced → final_release, donnée à confiance très haute. L’arrêt est délibéré : des surfaces cloud, entreprise et communauté ont été retirées, une version finale a été livrée, le dépôt a été archivé. Trois dossiers publics sont rattachés."
           },
           "en": {
-            "kitchen": "Roo Code shut its doors with the book still full. This was not a house that emptied out: the owners decided the future was no longer in that room. They took the newer addresses apart, served one last service and pulled the shutter down. Three dossiers hang on that closing.",
+            "kitchen": "The house shut its doors with the book still full. It had not emptied out: the owners decided the future was no longer in that room. They took the newer addresses apart, served one last service, and pulled the shutter down. Three case files hang on that closing.",
             "expert": "Roo Code is in an archived state, at the end of a trajectory running active growth, scope expansion, strategic pivot, announced sunset and final release, recorded at very high confidence. The stop was deliberate: cloud, enterprise and community surfaces were removed, a final release shipped, and the repository was archived. Three public dossiers are attached."
           }
         }
@@ -56,82 +56,82 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Roo Code s’agrandit, puis démonte tout exprès",
+          "cuisine": "La maison grandit, puis se démonte exprès",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Roo Code grows, then takes itself apart",
+          "kitchen": "The house grows, then takes itself apart",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La maison ouvre dans le sillage d’une autre, Cline, avec la même façon de travailler.",
+            "cuisine": "La maison ouvre dans le sillage d’une autre, avec la même façon de travailler.",
             "expert": "Roo Code démarre comme un agent de code dans l’IDE, dérivé de Cline."
           },
           "en": {
-            "kitchen": "The house opens in another’s wake — Cline — and cooks the same way.",
+            "kitchen": "The house opens in another’s wake and cooks the same way.",
             "expert": "Roo Code began as an IDE coding agent derived from Cline."
           }
         },
         {
           "fr": {
-            "cuisine": "On ajoute des façons de faire à la carte, et la salle se remplit.",
+            "cuisine": "De nouvelles façons de faire s’ajoutent à la carte, et la salle se remplit.",
             "expert": "Des modes personnalisés et une croissance de l’extension locale suivent."
           },
           "en": {
-            "kitchen": "New ways of working go up on the menu, and the room fills.",
+            "kitchen": "New ways of working go onto the menu, and the room fills.",
             "expert": "Custom modes followed, and the local extension grew."
           }
         },
         {
           "fr": {
-            "cuisine": "On ouvre plus grand : une deuxième adresse, des commis qui travaillent seuls, des tablées entières.",
+            "cuisine": "La maison ouvre plus grand : une deuxième adresse, des commis qui travaillent seuls et des tablées entières.",
             "expert": "L’offre s’étend au cloud, avec agents autonomes et usage en équipe."
           },
           "en": {
-            "kitchen": "They open wider: a second address, cooks working unsupervised, whole parties at a time.",
+            "kitchen": "The house opens wider: a second address, cooks working unsupervised, and whole parties at a time.",
             "expert": "The offering expanded into the cloud, with autonomous agents and team usage."
           }
         },
         {
           "fr": {
-            "cuisine": "Puis les patrons tranchent : l’avenir n’est plus dans cette salle-là.",
+            "cuisine": "Puis les patrons prennent leur décision : l’avenir n’est plus dans cette salle-là.",
             "expert": "L’équipe rejette explicitement un futur centré sur l’IDE."
           },
           "en": {
-            "kitchen": "Then the owners call it: the future is not in that room.",
+            "kitchen": "Then the owners make their decision: the future is not in that room.",
             "expert": "The team explicitly rejected an IDE-centred future."
           }
         },
         {
           "fr": {
-            "cuisine": "On démonte ce qui avait été ouvert en grand, pièce par pièce, volontairement.",
+            "cuisine": "On démonte volontairement ce qui avait été ouvert en grand, pièce par pièce.",
             "expert": "Les surfaces cloud, entreprise et communauté sont retirées délibérément."
           },
           "en": {
-            "kitchen": "What had been opened wide comes apart, room by room, on purpose.",
+            "kitchen": "What had been opened wide is taken apart deliberately, room by room.",
             "expert": "Cloud, enterprise and community surfaces were deliberately removed."
           }
         },
         {
           "fr": {
-            "cuisine": "Un dernier service est assuré, et annoncé comme le dernier.",
+            "cuisine": "Un dernier service est assuré et annoncé comme le dernier.",
             "expert": "Une version finale de l’extension est publiée."
           },
           "en": {
-            "kitchen": "One last service is served, and announced as the last.",
+            "kitchen": "One last service is served and announced as the last.",
             "expert": "A final extension release shipped."
           }
         },
         {
           "fr": {
-            "cuisine": "Le rideau descend, et la maison reste en l’état.",
+            "cuisine": "Le rideau descend et la maison reste en l’état.",
             "expert": "Le dépôt est archivé."
           },
           "en": {
-            "kitchen": "The shutter comes down, and the house is left as it stands.",
+            "kitchen": "The shutter comes down and the house is left as it stands.",
             "expert": "The repository was archived."
           }
         }
@@ -142,22 +142,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Roo Code a prévenu, Aider s’est juste tu",
+          "cuisine": "Une vraie fermeture se reconnaît autrement qu’au silence",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Roo Code gave notice, Aider simply went quiet",
+          "kitchen": "A true closing takes more than silence to recognise",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On croit reconnaître une maison morte au silence de ses annonces. C’est un mauvais signe à lire. Roo Code a fait un dernier service annoncé : là, c’est clair. Aider espace les siennes sans cause établie, SWE-agent en fait rarement et tourne, gstack n’en fait jamais et travaille tous les jours.",
+            "cuisine": "On croit reconnaître une maison morte au silence de ses annonces. C’est un mauvais signe à lire. Ici, un dernier service a été annoncé, puis la fermeture est arrivée : là, c’est clair. Ailleurs, une maison espace ses nouvelles sans cause établie. Une autre en donne rarement tout en tournant. Une troisième n’en donne jamais tout en travaillant chaque jour.",
             "expert": "La mortalité d’un projet est une transition directionnelle, pas un instantané à zéro commit : ici, l’archivage est l’aboutissement d’un pivot stratégique assumé, non d’un tarissement d’activité. La seule cadence de publication aurait mal classé le cas. Une version finale soutient le sunset explicite de Roo Code, alors qu’un écart de publication chez Aider renforce sans prouver une cause de ralentissement, que des publications rares chez SWE-agent n’impliquent pas la mort, et que gstack n’a aucune GitHub Release tout en étant manifestement actif."
           },
           "en": {
-            "kitchen": "The usual tell for a dead house is that it goes quiet. It is a poor tell. Roo Code served a final, announced service, and that settles it. Aider has gone quiet with no established cause, SWE-agent announces rarely and still cooks, gstack never announces and works daily.",
+            "kitchen": "People often read a dead house in the silence of its announcements. It is a poor sign to read. Here, a final service was announced and the closing followed: that is clear. Elsewhere, one house spaces out its news for no established reason. Another makes rare announcements while still cooking. A third makes none while working every day.",
             "expert": "Project mortality is a directional transition, not a zero-commit snapshot: archiving here is the end point of an owned strategic pivot rather than a slow fade. Release cadence alone would have misclassified the case. A final release supports Roo Code’s explicit sunset, while a release gap at Aider strengthens but does not prove a slowdown cause, sparse releases at SWE-agent imply no death, and gstack publishes no GitHub Releases while plainly active."
           }
         }
@@ -168,22 +168,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Le silence seul ne prouve aucune fermeture",
+          "cuisine": "Le silence ne suffit pas à dire une maison fermée",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Silence alone never proves a house is shut",
+          "kitchen": "Silence is not enough to call a house shut",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Avant d’écrire qu’une maison est morte, on lit ce qu’elle préparait juste avant. Les projets en cours, les demandes laissées en plan, ce que les patrons ont annoncé. On regarde aussi qui a repris la suite, et comment la maison servait ses clients. Le silence tout seul ne raconte rien.",
+            "cuisine": "Avant d’écrire qu’une maison est morte, on lit ce qu’elle préparait juste avant. On regarde les chantiers en cours, les demandes laissées en plan et ce que les patrons ont annoncé. On regarde aussi qui reprend la recette et comment la maison servait ses clients. Les derniers menus de route et les bons encore ouverts révèlent souvent un virage tenté puis abandonné. Le silence seul ne raconte rien.",
             "expert": "La règle tirée est de ne jamais inférer la mort ou la santé d’un projet à partir de la seule cadence de publication : il faut la corréler à l’identité du dépôt, à l’activité de branches et de PR, aux déclarations de maintenance ou d’arrêt, aux successeurs et au modèle de distribution. S’y ajoute une pratique : lire les dernières feuilles de route, issues et PR avant d’écrire une nécrologie, car elles révèlent souvent le pivot tenté qui a échoué ou été abandonné. Ces deux règles sont portées à confiance très haute."
           },
           "en": {
-            "kitchen": "Before writing that a house is dead, read what it was preparing right to the end. The plans in progress, the requests left hanging, what the owners announced. Look at who carried the work on afterwards, and how the house reached its customers. Silence on its own tells you nothing.",
+            "kitchen": "Before writing that a house is dead, read what it was preparing at the end. Look at work in progress, requests left hanging, and what the owners announced. Look too at who takes up the recipe and how the house served its diners. The last menus of intent and still-open slips often reveal a turn that was tried and then abandoned. Silence alone tells you nothing.",
             "expert": "The stated rule is never to infer a project’s death or health from release cadence alone: correlate it with repository identity, branch and PR activity, maintenance or sunset statements, successors, and the distribution model. A second practice follows: read the last roadmap, issues and PRs before writing an obituary, since they usually expose the pivot that was attempted and then failed or was dropped. Both are carried at very high confidence."
           }
         }
@@ -194,22 +194,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Fermée, et la liste des interdits reste contournable",
+          "cuisine": "Fermée, et une liste d’interdits reste contournable",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Closed, and the ban list still has gaps",
+          "kitchen": "Closed, and a ban list still has gaps",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La maison d’origine est fermée et ne rouvrira pas. L’équipe est partie ailleurs, et d’autres maisons tiennent la même façon de faire. On le dit sans certitude absolue. Une chose reste en suspens : la liste des commandes interdites pouvait être contournée en les enchaînant, et personne n’annonce l’avoir réparée.",
+            "cuisine": "La maison d’origine est fermée et ne rouvrira pas. L’équipe est partie ailleurs, et d’autres maisons gardent la même façon de faire. On le dit avec une confiance moyenne. Une chose reste en suspens : la liste des commandes interdites pouvait être contournée en les enchaînant. Elle n’a été regardée que lorsque le feu vert était donné d’avance, ou sur une commande composée vue par morceaux. Le dossier est toujours ouvert, la proposition reste un brouillon et personne ne dit l’avoir réparée.",
             "expert": "Le produit Roo Code d’origine est arrêté et le dépôt archivé ; l’équipe d’origine se dirige vers Roomote, tandis que Cline et ZooCode conservent la lignée de l’extension. Ces éléments sont portés à confiance moyenne. Un point reste ouvert : une liste de commandes refusées contournable par composition shell, évaluée seulement sous auto-approbation ou sur une représentation incomplète de l’exécution composée. À la date de coupure, l’issue reste ouverte, la proposition reste un brouillon, et aucun correctif n’est revendiqué."
           },
           "en": {
-            "kitchen": "The original house is shut and will not reopen. The team has gone elsewhere, and other houses keep the same way of working alive. That is said without full certainty. One thing is still hanging: the list of forbidden orders could be slipped past by stringing them together, and nobody claims to have fixed it.",
+            "kitchen": "The original house is shut and will not reopen. The team has gone elsewhere, and other houses keep that way of working alive. This is held at medium confidence. One thing is still hanging: the list of forbidden orders could be slipped past by chaining them together. It was only examined when the green light had been given in advance, or by seeing a combined order in pieces. The case remains open, the proposal is still a draft, and nobody claims a repair.",
             "expert": "The original Roo Code product is sunset and the repository archived; the original team is moving toward Roomote while Cline and ZooCode carry the extension lineage forward. Those points are held at medium confidence. One item remains open: a denied-command list that command composition can bypass, evaluated only under auto-approval or against an incomplete representation of compound shell execution. At cutoff the issue is still open, the proposed change is still a draft, and no fix is claimed."
           }
         }
@@ -220,22 +220,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "C’est le patron qui ferme, pas la clientèle",
+          "cuisine": "La fermeture vient du patron, non de la clientèle",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "The owner closes the house, not the diners",
+          "kitchen": "A closing comes from the owner, not the diners",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un carnet de réservations plein le soir de la fermeture ne prouve pas la vie : il dit ce qu’on a décidé de ne plus servir.",
+            "cuisine": "Un carnet de réservations plein le soir de la fermeture ne prouve pas la vie. Il dit ce que la maison a décidé de ne plus servir. Les bons non réglés à cette date disent qu’elle ferme, non qu’elle a tout achevé.",
             "expert": "Traiter la mort d’un projet comme une trajectoire causale, pas comme une étiquette d’inactivité, et relever le backlog non résolu au moment de l’arrêt, car il distingue une fermeture d’un achèvement."
           },
           "en": {
-            "kitchen": "A reservation book still full on closing night proves nothing about life; it records what the house decided to stop serving.",
+            "kitchen": "A reservation book still full on closing night proves nothing about life; it records what the house decided to stop serving. Unsettled slips on that date show a closing, not that everything was finished.",
             "expert": "Treat a project’s death as a causal trajectory rather than an inactivity label, and capture the unresolved backlog at sunset, because it separates a shutdown from a completion."
           }
         }

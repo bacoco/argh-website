@@ -27,22 +27,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "CodeGate",
+          "cuisine": "Le poste de contrôle a été retiré",
           "expert": "CodeGate"
         },
         "en": {
-          "kitchen": "CodeGate",
+          "kitchen": "The checking post was removed",
           "expert": "CodeGate"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "CodeGate avait posté quelqu’un à la porte de livraison : tout ce qui entrait passait devant lui. L’idée était bonne, mais peu de maisons ont voulu du poste. Il a été déplacé ailleurs, puis retiré, et la porte est restée sans personne.",
+            "cuisine": "Un contrôleur attendait à la porte de livraison. Peu de cuisines ont voulu de ce poste. On a essayé de le déplacer, puis il a été retiré et la porte est restée sans gardien.",
             "expert": "CodeGate était une passerelle de sécurité pour assistants de codage, avec plusieurs intégrations côté IDE et clients. L’état courant est archivé, après une phase active, un pivot stratégique, puis la fin d’un projet expérimental. Cette classification de trajectoire est solidement établie ; le détail causal du pivot repose sur une preuve de niveau moyen."
           },
           "en": {
-            "kitchen": "CodeGate put someone on the delivery door: everything coming in passed in front of them. The idea was sound, but few houses wanted the post. It was moved elsewhere, then pulled, and the door was left unmanned.",
+            "kitchen": "A checker stood at the delivery door. Few kitchens wanted that post. It was moved, then removed, and the door was left unguarded.",
             "expert": "CodeGate was a security gateway for coding assistants, with several IDE and client integrations. Its current state is archived, after an active phase, a strategic pivot, then the end of an experimental project. That trajectory classification is firmly established; the causal detail of the pivot rests on medium-strength evidence."
           }
         }
@@ -53,72 +53,72 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "CodeGate déplace son poste, puis ferme la maison",
+          "cuisine": "Le poste déménage, puis la porte ferme",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "CodeGate moves the post, then shuts the house",
+          "kitchen": "The post moves, then the door closes",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le poste est créé pour filtrer tout ce qui entre chez ceux qui cuisinent avec une machine.",
+            "cuisine": "Le poste a été créé pour vérifier ce qui entrait dans la cuisine.",
             "expert": "CodeGate se positionne comme passerelle de sécurité pour les assistants de codage."
           },
           "en": {
-            "kitchen": "The post is created to filter everything coming in where a machine helps with the cooking.",
+            "kitchen": "The post was created to check what entered the kitchen.",
             "expert": "CodeGate positioned itself as a security gateway for coding assistants."
           }
         },
         {
           "fr": {
-            "cuisine": "Il s’installe chez plusieurs maisons, avec des raccords faits sur mesure pour chacune.",
+            "cuisine": "Il a été installé dans plusieurs cuisines, avec un raccord différent à chaque fois.",
             "expert": "Plusieurs intégrations sont livrées côté IDE et clients."
           },
           "en": {
-            "kitchen": "It is fitted in several houses, with connections made to measure for each one.",
+            "kitchen": "It was fitted in several kitchens, with a different connection each time.",
             "expert": "Several IDE and client integrations shipped."
           }
         },
         {
           "fr": {
-            "cuisine": "Puis celui qui tient le poste le dit lui-même : trop peu de maisons s’en servent.",
+            "cuisine": "La personne au poste a ensuite dit que trop peu de cuisines s’en servaient.",
             "expert": "Le mainteneur rapporte une adoption et une traction insuffisantes."
           },
           "en": {
-            "kitchen": "Then the person holding the post says it plainly: too few houses use it.",
+            "kitchen": "The person at the post then said too few kitchens used it.",
             "expert": "The maintainer reported insufficient adoption and traction."
           }
         },
         {
           "fr": {
-            "cuisine": "Les raccords faits pour chaque maison sont annoncés comme bientôt abandonnés.",
+            "cuisine": "Les raccords propres à chaque cuisine ont alors été annoncés comme bientôt retirés.",
             "expert": "Les clients sont annoncés en dépréciation."
           },
           "en": {
-            "kitchen": "The connections made for each house are announced as soon to be dropped.",
+            "kitchen": "The connections made for each kitchen were then announced as soon to be removed.",
             "expert": "The clients were slated for deprecation."
           }
         },
         {
           "fr": {
-            "cuisine": "On tente de déplacer le poste. Plus à la porte de livraison, mais au milieu du service, là où les commis travaillent.",
+            "cuisine": "On a essayé de placer le poste au milieu du service plutôt qu’à la porte.",
             "expert": "Une tentative de recentrage vise les flux de travail agentiques plutôt que la couche assistant."
           },
           "en": {
-            "kitchen": "The post is moved. No longer on the delivery door, but into the middle of service, where the commis work.",
+            "kitchen": "The post was tried in the middle of service instead of at the door.",
             "expert": "An attempted refocus targeted agent workflows rather than the assistant layer."
           }
         },
         {
           "fr": {
-            "cuisine": "Le déplacement n’a pas sauvé la maison. Le projet est déclaré abandonné, et plus rien n’y bouge.",
+            "cuisine": "Ce déplacement n’a pas suffi. La maison a été déclarée fermée et plus personne ne l’entretient.",
             "expert": "Le projet est déprécié, déclaré non maintenu, et archivé."
           },
           "en": {
-            "kitchen": "The move did not save the house. The project is declared dropped, and nothing moves there any more.",
+            "kitchen": "That move was not enough. The house was declared closed and nobody maintains it any more.",
             "expert": "The project was deprecated, declared unmaintained, and archived."
           }
         }
@@ -129,22 +129,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Peu de preneurs, le poste change de place",
+          "cuisine": "Le poste cherchait sa place",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Few takers, so the post changes place",
+          "kitchen": "The post was looking for its place",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le poste ne s’est pas trompé sur le danger. Il s’est trompé sur l’endroit où les gens voulaient bien le voir. Quand trop peu de maisons s’en servent, on déplace le poste avant de fermer. C’est ce déplacement qui raconte la fin, pas la porte fermée.",
+            "cuisine": "Le danger n’était pas le problème. Trop peu de cuisines voulaient du poste à cet endroit. Le déplacement tenté raconte la fin mieux que la porte désormais fermée.",
             "expert": "L’adoption faible est le signal amont, et le pivot en est la conséquence observable : la tentative déplace le produit d’une couche de harnais vers une autre. L’état du dépôt n’est pas la cause du projet ; archive, lecture seule, maintenance et transfert se classent causalement de façon distincte. Ici l’archivage suit un signal explicite de faible adoption, ce qui distingue une fin de projet expérimental d’un abandon silencieux."
           },
           "en": {
-            "kitchen": "The post was not wrong about the danger. It was wrong about where people were willing to see it. When too few houses use it, the post gets moved before it is closed. That move is what tells the ending, not the shut door.",
+            "kitchen": "The danger was not the problem. Too few kitchens wanted the post in that place. The attempted move tells the ending better than the door now being shut.",
             "expert": "Weak adoption is the upstream signal and the pivot is its observable consequence: the attempt moves the product from one harness layer to another. Repository state is not project cause; archive, read-only, maintenance and transfer are classified causally and separately. Here the archiving follows an explicit weak-adoption signal, which separates the end of an experimental project from a silent abandonment."
           }
         }
@@ -155,22 +155,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Avant d’écrire la fin, lire les derniers projets",
+          "cuisine": "Lire le dernier essai avant de dire la fin",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "An attempted turn is not a finished one",
+          "kitchen": "Read the last attempt before calling the end",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Avant de dire qu’une maison est morte, on lit ce qui a été écrit en dernier. Les derniers projets, les dernières demandes, les dernières promesses : c’est là que se trouve le virage tenté. Et un virage tenté n’est pas un virage réussi tant que rien n’est sorti derrière.",
+            "cuisine": "Avant d’expliquer une fermeture, lis les derniers essais et les dernières promesses. Ils montrent le virage tenté. Mais un virage ne devient pas une réussite tant qu’aucun plat n’en est sorti.",
             "expert": "Avant de rédiger une notice de fin, lire les dernières feuilles de route, demandes et propositions : elles révèlent souvent le pivot tenté, échoué ou abandonné. Une adoption faible peut déclencher un pivot d’une couche de harnais vers une autre ; vérifier que ce pivot est effectivement livré avant de le traiter comme une stratégie de succession."
           },
           "en": {
-            "kitchen": "Before calling a house dead, read what was written last. The last plans, the last requests, the last promises: that is where the attempted turn sits. And an attempted turn is not a completed one until something comes out behind it.",
+            "kitchen": "Before explaining a closure, read the last attempts and promises. They show the turn that was tried. But a turn is not a success until a dish comes out of it.",
             "expert": "Before writing an obituary, read the last roadmaps, requests and proposals: they often reveal the attempted pivot, failed or abandoned. Weak adoption can trigger a pivot from one harness layer to another; check that the pivot actually ships before treating it as a successor strategy."
           }
         }
@@ -181,22 +181,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Plus personne dedans, et la fin est expliquée",
+          "cuisine": "La fermeture est établie, le virage reste incertain",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Nobody left inside, and the ending is explained",
+          "kitchen": "The closure is established; the turn remains uncertain",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La maison est fermée, le rideau baissé, et personne ne l’entretient plus. Le virage vers le milieu du service a été tenté ; rien ne dit qu’il a donné quelque chose derrière. C’est une fin de maison d’essai, pas un silence inexpliqué.",
+            "cuisine": "La fermeture et l’arrêt de l’entretien sont établis. Le déplacement vers le milieu du service a été tenté, sans preuve qu’il ait abouti. La raison détaillée repose sur des indices moins forts.",
             "expert": "CodeGate est déprécié, déclaré non maintenu et archivé. L’état courant est archivé, après actif, pivot stratégique, puis fin de projet expérimental ; cette trajectoire est solidement établie. Le rattachement causal détaillé — passerelle large, adoption faible, tentative de pivot vers les flux agentiques, dépréciation — repose sur une preuve de niveau moyen. La matière n’établit pas que le pivot ait été livré."
           },
           "en": {
-            "kitchen": "The house is shut, the shutter is down, and nobody keeps it up any more. The turn toward the middle of service was attempted; nothing says anything came out behind it. This is the end of a trial house, not an unexplained silence.",
+            "kitchen": "Closure and the end of maintenance are established. The move toward the middle of service was attempted, with no proof that it worked. The detailed reason rests on weaker evidence.",
             "expert": "CodeGate is deprecated, declared unmaintained and archived. The current state is archived, after active, strategic pivot, then experimental-project end; that trajectory is firmly established. The detailed causal chain — broad gateway, weak adoption, attempted pivot to agent workflows, deprecation — rests on medium-strength evidence. The material does not establish that the pivot ever shipped."
           }
         }
@@ -207,22 +207,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Comprendre son erreur ne fait pas rouvrir",
+          "cuisine": "Un virage n’est pas une nouvelle maison",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Understanding the mistake does not bring it back",
+          "kitchen": "A turn is not a new kitchen",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Changer de place n’est pas se sauver. Un virage prouve qu’on a compris quelque chose ; il ne promet pas que la maison rouvrira demain.",
+            "cuisine": "Essayer un autre poste montre qu’on a appris. Cela ne promet pas que la cuisine vivra après cet essai.",
             "expert": "Un pivot est une preuve d’apprentissage, pas une garantie de survie. L’état du dépôt n’est pas la cause du projet : la mortalité se lit comme une transition orientée, pas comme un instantané à zéro commit."
           },
           "en": {
-            "kitchen": "Changing your spot is not saving yourself. A turn proves something was learned; it does not promise the house opens again tomorrow.",
+            "kitchen": "Trying another post shows something was learned. It does not promise the kitchen will live after that attempt.",
             "expert": "A pivot is evidence of learning, not a guarantee of survival. Repository state is not project cause: mortality reads as a directional transition, not a zero-commit snapshot."
           }
         }

@@ -1,8 +1,8 @@
 {
   "schema": "argh/static-projection/v1",
-  "generated_at": "2026-09-16T07:46:28+02:00",
+  "generated_at": "2026-09-16T13:28:24Z",
   "source_repository": "bacoco/argh",
-  "source_head": "b0fc18fff18119ea5921bb05dd78ec4d65c04af8",
+  "source_head": "5c71c2e2a827c4bb2ac6409dd3c8f41b22e43ffe",
   "dossier_count": 59,
   "project_count": 22,
   "pattern_count": 83,

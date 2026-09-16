@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Chez pstack, le commis annonce sans avoir regardé",
+          "cuisine": "Le commis annonce une assiette qu’il n’a pas vue",
           "expert": "Une réponse assurée n’est pas un résultat de vérification"
         },
         "en": {
-          "kitchen": "At pstack a cook calls away without looking",
+          "kitchen": "The cook calls a plate he never saw leave",
           "expert": "A confident reply is not a verification result"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez pstack, le ton ne dit rien. « Parti », « ça vient », « c’est prêt » sonnent pareil, que le commis ait vu l’assiette partir, qu’il l’ait déduit du bruit ou qu’il l’ait simplement supposé. Le chef décide sur cette phrase.",
+            "cuisine": "« C’est parti », annonce le commis. Il peut avoir vu l’assiette, reconnu un bruit ou simplement deviné. Le chef, lui, doit décider avec ces trois mots.",
             "expert": "Une révision de la consigne de workflow impose désormais que chaque affirmation de l’agent porte sa preuve ou une qualification explicite : mesuré, déduit ou supposé. Elle laisse aussi à l’agent les contrôles qu’il peut exécuter lui-même, au lieu de les renvoyer à l’opérateur. La modification est vérifiable dans les sources ; son effet sur le comportement réel n’a pas été mesuré ici."
           },
           "en": {
-            "kitchen": "At pstack, “away,” “coming,” “ready” all sound the same. The cook may have watched the plate go, guessed from the noise, or simply assumed it. The chef decides on that one word.",
+            "kitchen": "“Plate away,” calls the cook. He may have seen it leave, guessed from a sound, or merely hoped. The chef must decide from the same confident call.",
             "expert": "A workflow-instruction revision now requires every agent claim to carry its evidence or an explicit measured, inferred or guessed qualifier. It also puts executable checks back on the agent instead of handing them to the operator. The edit is verifiable in source; its effect on observed behaviour has not been measured here."
           }
         }
@@ -51,52 +51,52 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "pstack récrit sa consigne le 9 septembre",
+          "cuisine": "La consigne du 9 septembre distingue vu et deviné",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "The pstack house rule is rewritten in September",
+          "kitchen": "The September notice separates sight from guesswork",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Pendant des mois, la même chose revient. Un commis annonce une cause qu’il n’a pas vue, ou une suite qu’il devine, et ça sort du passe comme un fait.",
+            "cuisine": "Pendant des mois, le même appel revient au passe. Un commis donne comme certain ce qu’il n’a pas vu ou ce qu’il imagine pour la suite.",
             "expert": "Le descriptif du changement identifie un défaut de compte rendu récurrent : des prédictions et des causes non observées présentées comme des faits établis."
           },
           "en": {
-            "kitchen": "The same thing keeps coming back. A cook names a cause he never saw, or predicts what follows, and it leaves the pass as fact.",
+            "kitchen": "For months, the same call returns at the pass. A cook presents an unseen cause or a guess about tomorrow as tonight’s fact.",
             "expert": "The change description identifies a recurring reporting defect: predictions and unobserved causes stated as established fact."
           }
         },
         {
           "fr": {
-            "cuisine": "Le 9 septembre, la consigne punaisée au mur est récrite. Le feuillet change de numéro : 0.15.1.",
+            "cuisine": "Le 9 septembre, le chef remplace la consigne au mur. Le nouveau feuillet porte le numéro 0.15.1.",
             "expert": "Le 9 septembre, la consigne de workflow a été amendée et sa version déclarée portée à 0.15.1."
           },
           "en": {
-            "kitchen": "On 9 September the notice on the wall is rewritten. The sheet takes a new number: 0.15.1.",
+            "kitchen": "On 9 September, the chef replaces the notice by the pass. The new sheet is numbered 0.15.1.",
             "expert": "The amendment landed on 9 September, carrying a declared version of 0.15.1."
           }
         },
         {
           "fr": {
-            "cuisine": "La nouvelle règle est courte. Quand tu annonces, tu dis ce que tu as vu. Ce que tu peux aller vérifier toi-même, tu vas le vérifier, tu ne le renvoies pas au chef.",
+            "cuisine": "La nouvelle consigne demande au commis de dire ce qu’il a réellement vu. S’il peut regarder lui-même, il doit le faire au lieu d’envoyer le chef.",
             "expert": "L’instruction associe à chaque affirmation soit sa preuve, soit une qualification d’incertitude, et conserve auprès de l’agent les contrôles qu’il est en mesure d’exécuter."
           },
           "en": {
-            "kitchen": "The rule is short. Say what you saw when you call it. Anything you can go and check yourself, you check — you do not hand it back to the chef.",
+            "kitchen": "The new notice tells each cook to say what was actually seen. If the cook can look, the chef should not be sent instead.",
             "expert": "Each claim must now arrive with evidence or an uncertainty qualifier, and checks the agent can run stay with the agent rather than the operator."
           }
         },
         {
           "fr": {
-            "cuisine": "On peut lire la consigne au mur, elle y est. Personne n’a encore montré que tous les postes l’ont lue, ni que les annonces ont changé depuis.",
+            "cuisine": "La nouvelle consigne est bien au mur. Personne n’a encore montré que chaque poste la lit, ni que les annonces sont devenues plus fiables.",
             "expert": "L’inspection des sources confirme la modification de l’instruction. Elle n’apporte ni comparaison comportementale indépendante, ni preuve que toutes les exécutions en cours chargent la version amendée."
           },
           "en": {
-            "kitchen": "The notice is on the wall; anyone can read it. Nobody has yet shown that every station reads it, or that the calls at the pass changed.",
+            "kitchen": "The new notice is plainly on the wall. Nobody has shown that every station reads it, or that calls at the pass are now more dependable.",
             "expert": "Source inspection confirms the edit and nothing beyond it. No independent before/after behavioural comparison exists, and no evidence shows that every live run loads the amended version."
           }
         }
@@ -107,22 +107,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Une annonce bien dite passe pour un fait",
+          "cuisine": "Une voix assurée fait oublier de regarder l’assiette",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A smooth call sounds like a fact",
+          "kitchen": "A confident call makes the chef forget the plate",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Une belle phrase couvre la différence entre ce qu’on a vu, ce qu’on a déduit et ce qu’on espère. L’étiquette remet cette différence sous le nez du chef, au moment où il décide. Mais une étiquette se pose mal, ou pas du tout. L’étiquette n’est pas l’assiette.",
+            "cuisine": "Un appel assuré peut cacher la différence entre une assiette vue, supposée ou seulement espérée. Le commis doit annoncer laquelle des trois il décrit. Mais ses mots peuvent encore être faux : ils ne remplacent pas l’assiette.",
             "expert": "Une formulation soignée masque l’écart entre un résultat observé, une déduction et une prédiction. La qualification rend cet écart visible au point de décision de l’opérateur. Le contrôle reste de niveau instruction : un agent peut mal qualifier une affirmation ou ne pas suivre la consigne, et la qualification ne constitue donc pas une preuve."
           },
           "en": {
-            "kitchen": "Polish hides the gap between seen, inferred and hoped for. A label drags that gap back in front of the chef while the decision is still open. Labels can be put on wrong, or skipped entirely. The label is still not the plate.",
+            "kitchen": "A polished call can hide whether a plate was seen, inferred, or merely hoped for. The cook must name which one it is. The wording can still be wrong, so it never replaces the plate itself.",
             "expert": "Fluent prose flattens observed results, inferences and predictions into a single register. Qualification restores the distinction where the operator actually decides. The control lives at instruction level only: mislabelling and non-compliance remain possible, so a label is not evidence."
           }
         }
@@ -133,22 +133,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Annoncer avec la preuve, ou dire qu’on devine",
+          "cuisine": "Montrer l’assiette ou reconnaître qu’on devine",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Say what you saw, or say you guessed",
+          "kitchen": "Show the plate, or admit it was a guess",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chaque annonce qui compte part avec ce qu’on a vu : l’assiette, l’heure, le plat. Sinon on le dit franchement — deviné, estimé, entendu dire. Et on éprouve la règle elle-même, parce qu’une règle affichée n’est pas une règle suivie.",
+            "cuisine": "À chaque annonce importante, le commis montre ce qu’il a contrôlé : le plat, l’heure ou l’assiette. Sinon, il dit franchement qu’il devine. Il faut encore observer le service, car une consigne affichée peut rester ignorée.",
             "expert": "La réponse documentée durcit le contrat de compte rendu, pas le modèle. Une équipe qui reprend l’idée devrait conserver le contrôle exécuté et son résultat à côté de l’affirmation, distinguer un contrôle indisponible d’un contrôle en échec, et mesurer si la consigne chargée déplace le comportement. Ces étapes sont des recommandations, pas des tests réalisés ici."
           },
           "en": {
-            "kitchen": "Every call that matters leaves with what was actually seen: the plate, the time, the dish. Otherwise say it plainly — guessed, estimated, heard from someone. Then test the rule itself, because a posted rule is not a followed rule.",
+            "kitchen": "For every important call, the cook shows what was checked: dish, time, or plate. Otherwise, the cook plainly admits to guessing. The service still needs watching, because a posted rule may go unfollowed.",
             "expert": "What was tightened is the reporting contract, not the model. Adopters should keep the executed check and its result next to the claim, separate an unavailable check from a failed one, and measure whether the loaded instruction moves behaviour. None of those validation steps were performed for this case."
           }
         }
@@ -159,22 +159,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "La consigne est affichée, l’effet reste inconnu",
+          "cuisine": "La nouvelle consigne est visible, son effet ne l’est pas",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The pstack notice exists; its effect is unmeasured",
+          "kitchen": "The new notice is visible; its effect is not",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La consigne est écrite et affichée, ça c’est sûr. Rien ne dit encore que les annonces au passe sont devenues plus honnêtes. On a une bonne règle de maison, pas une preuve.",
+            "cuisine": "La consigne a bien été récrite et affichée. On ignore encore si chaque poste la suit et si les annonces se sont améliorées. Le feuillet prouve un changement au mur, pas dans le service.",
             "expert": "La révision des sources et la version déclarée sont vérifiées. L’adoption, le chargement à l’exécution, le respect de la consigne et la baisse des affirmations non étayées restent non vérifiés. C’est une conception de contrôle transposable, pas une preuve d’apprentissage du modèle ni un gain de fiabilité démontré."
           },
           "en": {
-            "kitchen": "The notice exists and is posted; that much is certain. Nothing yet says the calls at the pass got more honest. What we hold is a sound house rule, not proof.",
+            "kitchen": "The notice was rewritten and posted. Whether every station follows it, or calls became more truthful, remains unknown. It proves a changed wall notice, not a changed service.",
             "expert": "Verified: the source revision and the declared version. Unverified: adoption, load at runtime, compliance, and any reduction in unsupported claims. Read it as a reusable control design, not as model learning or a measured reliability gain."
           }
         }
@@ -185,22 +185,22 @@
       "kind": "section",
       "heading": {
         "fr": {
-          "cuisine": "Demander ce qui a été vu, pas cru",
+          "cuisine": "Une belle annonce ne remplace jamais l’assiette",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Tone is not evidence at the pass",
+          "kitchen": "A fine call never replaces the plate",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un commis sûr de lui n’est pas une assiette sortie. Demande-lui ce qu’il a vu, pas ce qu’il croit.",
+            "cuisine": "Le commis peut parler avec aplomb sans avoir vu partir le plat. Avant de décider, le chef lui demande ce qu’il a réellement contrôlé.",
             "expert": "Garder la preuve contre l’affirmation, et éprouver la règle de compte rendu au lieu de la prendre pour la preuve."
           },
           "en": {
-            "kitchen": "A confident cook is not a plate that left. Ask him what he saw, not what he believes.",
+            "kitchen": "A cook may sound certain without seeing the dish leave. Before deciding, the chef asks what was actually checked.",
             "expert": "Bind the evidence to the claim, and test the reporting rule rather than counting it as proof."
           }
         }

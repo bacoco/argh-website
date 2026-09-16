@@ -30,22 +30,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Le premier contrôle laissait passer par la cour",
+          "cuisine": "La première barrière gardait la porte, pas la chambre froide",
           "expert": "Le second correctif a déplacé le garde jusqu’à la frontière de l’effet irréversible"
         },
         "en": {
-          "kitchen": "Screened at the front, still coming in behind",
+          "kitchen": "The first guard watched the door, not the cold room",
           "expert": "The second fix moved the guard to the boundary of the irreversible effect"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Codex, la cuisine croulait sous les livraisons ; on a filtré à la porte d’entrée et le volume a baissé. Mais une partie des caisses changeait d’étiquette en chemin et entrait quand même par la cour. La fois d’après, le contrôle est passé à la porte de la chambre froide, là où la marchandise est rangée pour de bon.",
+            "cuisine": "La cuisine croule sous les caisses. Un premier garde réduit les entrées, mais certaines livraisons changent d’étiquette dans le couloir et atteignent encore le stockage. La seconde réparation place la barrière devant la chambre froide, juste avant le rangement définitif.",
             "expert": "Un chemin de journalisation à très fort volume a été réduit puis livré chez Codex, tandis qu’un chemin d’événements transformés continuait d’écrire à travers le garde. Le second correctif a rapproché l’enforcement de la frontière finale de persistance, où la classe interdite est rejetée quelle que soit son identité amont. Ce second correctif a été livré et la récupération observée s’est nettement améliorée ; un correctif livré reste distinct d’une récupération universellement observée."
           },
           "en": {
-            "kitchen": "At Codex the kitchen was drowning in deliveries, so they screened them at the front door and the volume dropped. Some crates changed labels on the way and still came in through the yard. Next time round the check moved to the cold room door, where goods are put away for good.",
+            "kitchen": "The kitchen is drowning in crates. A first guard reduces arrivals, but some deliveries change labels in the corridor and still reach storage. The second repair places the barrier at the cold-room door, just before goods are stored for good.",
             "expert": "A very high-volume logging path was reduced and shipped at Codex, while a path of transformed events kept writing through the guard. The second fix moved enforcement close to the final persistence boundary, where the forbidden class is rejected regardless of its upstream identity. That second fix shipped and observed recovery improved markedly; a shipped fix remains distinct from universally observed recovery."
           }
         }
@@ -56,22 +56,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Codex a dû s’y reprendre plusieurs fois",
+          "cuisine": "Le désordre revient par un chemin voisin",
           "expert": "Signaux"
         },
         "en": {
-          "kitchen": "Codex needed several rounds before it stopped",
+          "kitchen": "The mess returns by a neighbouring route",
           "expert": "Signals"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le premier arrangement tient quelques jours, puis le désordre revient, identique, par un chemin qu’on n’avait pas regardé. Chez gstack, le coup d’œil qui disait « tout est bon » est redevenu faux pour une raison voisine de la première. Chez Codex, il a fallu plusieurs passages avant que le volume cesse vraiment de monter.",
+            "cuisine": "La première réparation améliore réellement le service, puis le même type de désordre réapparaît par une autre porte. Dans un cas, la fiche verte oubliait encore un détail du poste. Dans l’autre, plusieurs passages ont été nécessaires avant que le stock cesse vraiment de grossir.",
             "expert": "Le signal est la récidive d’un défaut déjà traité, sous une variante structurellement voisine plutôt qu’identique. Chez gstack, un faux vert corrigé une fois est réapparu via une autre dimension d’identité, l’état de santé en cache étant réutilisé entre des contextes qui différaient sur ce qui déterminait réellement le succès de l’exécution. Chez Codex, la réduction de volume a demandé plusieurs vagues, la première n’ayant pas contenu la charge."
           },
           "en": {
-            "kitchen": "The first repair holds a few days, then the mess comes back, identical, along a route nobody had looked at. At gstack the glance that said “all good” went false again for a reason close to the first one. At Codex it took several rounds before the volume truly stopped climbing.",
+            "kitchen": "The first repair genuinely improves service, then the same kind of mess returns through another door. In one case, the green card still missed a station detail. In the other, several rounds were needed before the stock truly stopped growing.",
             "expert": "The signal is recurrence of an already-treated defect, in a structurally adjacent variant rather than an identical one. At gstack a false green fixed once returned through another identity dimension, the cached health state being reused across contexts that differed on what actually determined execution success. At Codex volume reduction took several waves, the first having failed to contain the load."
           }
         }
@@ -82,22 +82,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "La caisse change d’étiquette entre les deux portes",
+          "cuisine": "Le garde reconnaît la caisse avant qu’elle change de nom",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "A crate changes label between the two doors",
+          "kitchen": "The guard recognises the crate before its label changes",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "On rebouche là où on a vu le désordre, parce que c’est là qu’on l’a vu. Cet endroit est rarement celui où la marchandise devient impossible à ressortir. Entre les deux, une caisse change d’étiquette, et le contrôle d’entrée la laisse passer en toute bonne foi.",
+            "cuisine": "La brigade installe naturellement le garde à l’endroit où elle a découvert la faute. Mais la caisse peut encore être reconditionnée plus loin. Quand elle atteint le stockage sous un autre nom, la première barrière ne la reconnaît plus.",
             "expert": "Le premier modèle mental suppose que l’identité observée près de l’ingestion est celle qui atteindra l’effet final. Une transformation intermédiaire peut modifier cette classification, si bien qu’un filtre amont correct manque quand même l’écriture finale. La tromperie est que le premier correctif est réellement efficace sur ce qu’il mesure : le volume baisse, le vert revient, et la frontière fautive n’a pas été touchée."
           },
           "en": {
-            "kitchen": "You seal the spot where you saw the mess, because that is where you saw it. That spot is rarely the one past which goods can no longer be taken out. In between, a crate changes label, and the door check waves it through in good faith.",
+            "kitchen": "The brigade naturally posts the guard where the fault was first seen. But the crate may be repacked farther along. When it reaches storage under another name, the first barrier no longer recognises it.",
             "expert": "The first mental model assumes the identity observed near ingestion is the one that will reach the final effect. An intermediate transformation can change that classification, so a correct upstream filter still misses the final write. The deception is that the first fix genuinely works on what it measures: volume drops, green returns, and the faulty boundary was never touched."
           }
         }
@@ -108,22 +108,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Contrôler à la porte après laquelle rien ne ressort",
+          "cuisine": "Placer le garde juste avant le rangement définitif",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Check at the door past which nothing returns",
+          "kitchen": "Place the guard just before final storage",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Quand le même désordre revient deux fois, cesse de reboucher là où tu l’as vu. Va à la dernière porte, celle après laquelle la marchandise ne ressort plus, et contrôle là. Attache aussi le coup d’œil qui dit « tout est bon » à ce qui travaille vraiment : le fourneau allumé, pas l’écriteau accroché dessus. Ce que tu laisses hors de ce coup d’œil pourra le rendre faux une fois de plus.",
+            "cuisine": "Après une récidive, le chef déplace le contrôle vers la dernière porte, avant que la caisse soit rangée sans retour. Il lie aussi la fiche verte au fourneau, aux clés et au fournisseur réellement utilisés. Tout détail omis peut produire le prochain faux feu vert.",
             "expert": "Quand un correctif échoue deux fois, cesser de patcher la représentation vue en premier et déplacer le garde là où l’effet irréversible se produit, chez Codex le sink de persistance. Indexer de même un état de santé sur les dimensions d’identité qui déterminent l’exécution réelle : exécutable, contexte d’authentification, workspace ou provider selon le cas, comme l’a fait le second correctif chez gstack. Toute dimension exclue de cette clé reste une source possible de faux vert."
           },
           "en": {
-            "kitchen": "When the same mess comes back twice, stop sealing the spot where you saw it. Walk to the last door, the one past which nothing comes out again, and check there. Tie the glance that says “all good” to what is actually working: the lit stove, not the sign hung on it. Whatever you leave outside that glance can make it lie once more.",
+            "kitchen": "After the fault returns, the chef moves the check to the last door before the crate is stored for good. The green card is also tied to the actual stove, keys, and supplier. Any omitted detail may produce the next false all-clear.",
             "expert": "When a fix fails twice, stop patching the representation seen first and move the guard to where the irreversible effect happens, at Codex the persistence sink. Index health state likewise on the identity dimensions that determine real execution: executable, authentication context, workspace or provider as applicable, as the second gstack fix did. Any dimension left out of that key remains a possible source of false green."
           }
         }
@@ -134,22 +134,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Réparé veut dire quatre choses différentes",
+          "cuisine": "Une réparation traverse cinq portes avant d’être prouvée",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Four different things can be called repaired",
+          "kitchen": "A repair crosses five doors before it is proven",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La récidive apprend plus que la première réparation : elle montre la porte qu’on avait mal choisie. Et « réparé » n’est jamais un seul mot : écrit, envoyé, rangé, vraiment suivi, chez Codex comme chez Archon, Claude Code ou Gemini.",
+            "cuisine": "Le retour de la panne révèle la mauvaise porte choisie la première fois. Ensuite, le chef distingue cinq étapes : correction écrite, acceptée, publiée, installée dans la cuisine et enfin observée pendant un vrai service.",
             "expert": "Un second correctif est une preuve causale : l’échec d’une première réparation incomplète localise le mécanisme ou la frontière réellement fautive. Il n’autorise pas pour autant à confondre les états de livraison — correctif source, code mergé, release, artefact installé, récupération observée — que plusieurs lineages indépendantes chez Codex, Archon, Claude Code et Gemini CLI ont montrés distincts."
           },
           "en": {
-            "kitchen": "A second round teaches more than the first repair: it shows which door was wrongly chosen. And “repaired” is never one word: written, sent out, put away, actually followed — at Codex as at Archon, Claude Code or Gemini.",
+            "kitchen": "The fault returning reveals which door was wrongly chosen the first time. The chef then separates five stages: repair written, accepted, published, installed in the kitchen, and finally observed during real service.",
             "expert": "A second fix is causal evidence: the failure of an incomplete first repair locates the mechanism or boundary actually at fault. It does not license collapsing delivery states — source fix, merged code, release, installed artifact, observed recovery — which independent lineages at Codex, Archon, Claude Code and Gemini CLI showed to be distinct."
           }
         }

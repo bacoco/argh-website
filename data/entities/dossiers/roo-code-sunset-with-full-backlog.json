@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Roo Code a fermé, le tableau plein",
+          "cuisine": "La maison ferme avec des centaines de commandes au tableau",
           "expert": "Un arrêt stratégique pendant que des centaines d’issues restaient ouvertes"
         },
         "en": {
-          "kitchen": "Roo Code shut with the board still full",
+          "kitchen": "The house closes with hundreds of orders on the board",
           "expert": "A strategic wind-down while hundreds of issues stayed open"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le tableau de Roo Code portait encore des centaines de commandes quand la maison a fermé. Elle ne s’est pas éteinte faute de clients : on a décidé de l’arrêter. Des pans entiers de la carte ont été retirés, une dernière fournée est sortie, et ceux qui voulaient continuer ont ouvert ailleurs.",
+            "cuisine": "Le tableau porte encore des centaines de commandes lorsque la maison ferme. Ce n’est pas un manque de clients : les patrons décident l’arrêt. Ils retirent des parties entières de la carte, servent une dernière fournée, puis certains continuent ailleurs.",
             "expert": "Roo Code ne s’est pas éteint par inactivité. Le produit a été arrêté délibérément : des surfaces majeures ont été supprimées, une version finale a été livrée, et la continuité s’est déplacée vers des alternatives et des forks communautaires."
           },
           "en": {
-            "kitchen": "Roo Code’s board still carried hundreds of orders when the house closed. It did not go quiet for want of custom: closing it was a decision. Whole sections of the menu came down, a last batch went out, and whoever wanted to carry on opened somewhere else.",
+            "kitchen": "The board still carries hundreds of orders when the house closes. Diners did not disappear; the owners chose to stop. Whole menu sections come down, one last batch leaves, and some cooks continue elsewhere.",
             "expert": "Roo Code did not fade out through inactivity. The product was wound down deliberately: major surfaces were removed, a final release shipped, and continuity moved toward alternatives and community forks."
           }
         }
@@ -51,62 +51,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Roo Code retire sa carte, puis ferme",
+          "cuisine": "La maison retire sa carte morceau par morceau",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Roo Code took its menu down in pieces",
+          "kitchen": "The house takes its menu down in pieces",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Roo Code part de la recette d’une autre maison, puis ouvre la sienne, avec la vente à emporter et les contrats de groupe en tête.",
+            "cuisine": "La maison part d’une recette venue d’ailleurs, puis ouvre sa propre salle. Elle vise d’abord la vente à emporter et les grandes commandes.",
             "expert": "Roo Code grandit depuis un fork jusqu’à un produit important, avec ses propres ambitions cloud et enterprise."
           },
           "en": {
-            "kitchen": "Roo Code starts from another house’s recipe, then opens its own, with takeaway and group contracts in mind.",
+            "kitchen": "The house begins from another restaurant’s recipe, then opens its own room. It first aims at takeaway and large group orders.",
             "expert": "Roo Code grew from a fork into a substantial product with its own cloud and enterprise ambitions."
           }
         },
         {
           "fr": {
-            "cuisine": "Le tableau déborde, et beaucoup de monde veut encore mettre la main à la pâte.",
+            "cuisine": "Le tableau déborde et de nombreuses mains veulent encore mettre la main à la pâte.",
             "expert": "Le backlog et la surface de contribution restent très importants."
           },
           "en": {
-            "kitchen": "The board overflows, and plenty of hands still want a turn at the bench.",
+            "kitchen": "The board overflows, and many hands still want a turn at the bench.",
             "expert": "The backlog and contribution surface remained very large."
           }
         },
         {
           "fr": {
-            "cuisine": "La direction change : la vente à emporter, les contrats de groupe, le comptage des couverts et l’étal disparaissent de la carte.",
+            "cuisine": "La direction change : la vente à emporter, les contrats de groupe, le comptage des couverts et l’étal quittent la carte.",
             "expert": "La stratégie change : le produit commence à retirer les surfaces cloud, enterprise, télémétrie et marketplace."
           },
           "en": {
-            "kitchen": "Direction changes: takeaway, group contracts, the covers count and the stall come off the menu.",
+            "kitchen": "Direction changes: takeaway, group contracts, the covers count, and the stall leave the menu.",
             "expert": "Strategy changed: the product began removing its cloud, enterprise, telemetry and marketplace surfaces."
           }
         },
         {
           "fr": {
-            "cuisine": "Une dernière fournée sort, et elle dit clairement que c’est la dernière.",
+            "cuisine": "Une ultime fournée sort en annonçant clairement qu’elle sera la dernière.",
             "expert": "Une version finale formalise l’arrêt."
           },
           "en": {
-            "kitchen": "A last batch goes out, and it says plainly that it is the last.",
+            "kitchen": "A final batch goes out, plainly announced as the last.",
             "expert": "A final release formalized the wind-down."
           }
         },
         {
           "fr": {
-            "cuisine": "Le rideau tombe pour de bon, le tableau encore plein, pendant que la suite s’écrit ailleurs.",
+            "cuisine": "Le rideau tombe pour de bon alors que le tableau reste plein, et la suite s’écrit ailleurs.",
             "expert": "Le repository est archivé tandis que la continuité se déplace ailleurs."
           },
           "en": {
-            "kitchen": "The shutter comes down for good, the board still full, while what comes next is written somewhere else.",
+            "kitchen": "The shutter comes down for good while the board remains full, and what comes next is written elsewhere.",
             "expert": "The repository was archived while continuity shifted elsewhere."
           }
         }
@@ -117,22 +117,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Des commandes que Roo Code n’enverrait jamais",
+          "cuisine": "Des centaines de commandes que personne ne servira",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Roo Code kept orders nobody would cook",
+          "kitchen": "Hundreds of orders remain that nobody will cook",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un tableau plein ressemble à une maison qui tourne. Ce sont pourtant des commandes que plus personne n’avait l’intention d’envoyer. Une fois la direction partie, ce qui reste écrit au mur n’est plus un programme mais une pile de souhaits.",
+            "cuisine": "Un tableau plein ressemble à une maison qui tourne. Pourtant, ce sont des commandes que personne n’avait plus l’intention d’envoyer. Une fois la direction partie, ce qui reste au mur n’est plus un programme mais une pile de souhaits.",
             "expert": "Les métriques d’activité mesurent du travail inachevé, pas un engagement stratégique. Issues et branches ouvertes sont devenues les fossiles d’une roadmap sans propriétaire produit disposé à la livrer."
           },
           "en": {
-            "kitchen": "A full board looks like a house still working. Those are orders nobody intended to send any more. Once direction had left, what stayed chalked on the wall was no longer a plan but a pile of wishes.",
+            "kitchen": "A full board looks like a house still working. Yet these are orders nobody intended to send any longer. Once direction had left, what remained on the wall was no longer a plan but a pile of wishes.",
             "expert": "Activity metrics measure unfinished work, not strategic commitment. Open issues and branches became fossils of a roadmap with no product owner willing to ship it."
           }
         }
@@ -143,22 +143,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Lire la dernière fournée, pas le tableau",
+          "cuisine": "Lire la dernière fournée avant de croire le tableau",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Read the last batch, not the board",
+          "kitchen": "Read the last batch before believing the board",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Pour savoir si une maison vit, lire la dernière fournée, ce qui a disparu de la carte, le changement de direction, ce qu’en disent ceux qui la tenaient, et où la suite s’est installée. Pas le tableau.",
+            "cuisine": "Pour savoir si une maison vit, regarde sa dernière fournée, les plats retirés et ses changements de direction. Écoute aussi ceux qui la tenaient et cherche où la suite s’est installée. Ne pas se fier au seul tableau.",
             "expert": "La santé d’un projet doit suivre les changements de direction, les releases finales, la suppression de surfaces, la continuité par successeur ou fork, et les déclarations des mainteneurs — pas les seuls commits."
           },
           "en": {
-            "kitchen": "To tell whether a house is alive, read the last batch, what vanished from the menu, the change of direction, what the people who ran it say, and where the next thing settled. Not the board.",
+            "kitchen": "To tell whether a house is alive, inspect its last batch, removed dishes, and changes of direction. Hear the old brigade and find where the cooking continued. Do not rely on the board alone.",
             "expert": "Project health must track direction changes, final releases, surface removal, successor or fork continuity, and maintainer statements — not commit counts alone."
           }
         }
@@ -169,22 +169,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Roo Code est fermé, la suite s’écrit ailleurs",
+          "cuisine": "La maison est fermée, certains cuisiniers continuent ailleurs",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "Roo Code is closed; others carry on",
+          "kitchen": "The house is closed; some cooks carry on elsewhere",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "La maison d’origine est fermée, et c’est une décision, pas un essoufflement. Ce qui continue continue ailleurs, sous d’autres enseignes.",
+            "cuisine": "La maison d’origine est fermée par décision, non par essoufflement. Ce qui continue le fait ailleurs, sous d’autres enseignes.",
             "expert": "Roo Code original relève d’un sunset stratégique, avec continuation en dehors du produit d’origine."
           },
           "en": {
-            "kitchen": "The original house is closed, and that was a decision, not exhaustion. What carries on carries on elsewhere, under other signs.",
+            "kitchen": "The original house is closed by decision, not exhaustion. What carries on does so elsewhere, under other signs.",
             "expert": "Original Roo Code is a strategic sunset, with continuation outside the original product."
           }
         }
@@ -195,22 +195,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un tableau plein peut annoncer une maison morte",
+          "cuisine": "Un tableau plein peut annoncer une maison déjà fermée",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "A full board can mean a dead house",
+          "kitchen": "A full board can announce a house already closed",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Un tableau couvert de commandes peut être le dernier signe d’une maison qui a déjà retiré ses plats et fermé sa salle.",
+            "cuisine": "Un tableau couvert de commandes peut être le dernier signe d’une maison qui a déjà retiré ses plats et clos sa salle.",
             "expert": "Un backlog plein peut être une preuve de mort, non de vie, lorsque la stratégie est déjà partie ailleurs."
           },
           "en": {
-            "kitchen": "A board covered in orders can be the last sign of a house that has already pulled its dishes and shut its room.",
+            "kitchen": "A board covered in orders can be the last sign of a house that has already pulled its dishes and closed its room.",
             "expert": "A full backlog can be evidence of death, not life, when strategy has already moved on."
           }
         }

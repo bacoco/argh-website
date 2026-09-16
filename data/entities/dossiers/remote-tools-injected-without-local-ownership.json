@@ -25,22 +25,22 @@
       "kind": "hero",
       "heading": {
         "fr": {
-          "cuisine": "Claude Code reçoit des ustensiles sans propriétaire",
+          "cuisine": "Des ustensiles sans propriétaire arrivent sur le billot",
           "expert": "La synchronisation d’outils distants a créé un second control plane"
         },
         "en": {
-          "kitchen": "Utensils arrive at Claude Code with no owner",
+          "kitchen": "Ownerless utensils appear on the workbench",
           "expert": "Remote tool synchronization created a second control plane"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Chez Claude Code, des ustensiles arrivaient du siège et se retrouvaient sur le plan de travail. Ils doublaient parfois ceux que le chef avait déjà choisis. Et les retirer du poste ne suffisait pas : ce n’était pas là qu’ils étaient rangés.",
+            "cuisine": "Le siège envoie des ustensiles qui apparaissent directement sur le billot. Certains doublent ceux que le chef a déjà choisis. Les retirer du poste ne suffit pas, car leur véritable rangement se trouve ailleurs.",
             "expert": "Dans Claude Code, des connecteurs distants de niveau compte pouvaient apparaître dans le CLI local, dupliquer des serveurs configurés localement et contourner la sémantique de suppression locale attendue par les utilisateurs."
           },
           "en": {
-            "kitchen": "At Claude Code, utensils turned up on the bench, sent down from head office. Sometimes they doubled the ones the chef had already chosen. And taking them off the station was not enough: that was not where they were kept.",
+            "kitchen": "Head office sends utensils that appear directly on the workbench. Some duplicate tools already chosen by the chef. Removing them from the station is not enough because their true cupboard sits elsewhere.",
             "expert": "In Claude Code, remote account-level connectors could appear in the local CLI, duplicate locally configured servers and bypass the local removal semantics users expected."
           }
         }
@@ -51,62 +51,62 @@
       "kind": "timeline",
       "heading": {
         "fr": {
-          "cuisine": "Le siège double les ustensiles choisis par le chef",
+          "cuisine": "Le siège ajoute des doubles au poste du chef",
           "expert": "Chronologie"
         },
         "en": {
-          "kitchen": "Head office doubles what the chef already chose",
+          "kitchen": "Head office adds duplicates to the chef’s station",
           "expert": "Timeline"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le chef choisit ses ustensiles et les installe à son poste.",
+            "cuisine": "Le chef choisit ses ustensiles et les range à son poste.",
             "expert": "Les utilisateurs configurent leurs propres serveurs d’outils locaux."
           },
           "en": {
-            "kitchen": "The chef picks his utensils and sets them up at his station.",
+            "kitchen": "The chef picks his utensils and arranges them at his station.",
             "expert": "Users configure their own local tool servers."
           }
         },
         {
           "fr": {
-            "cuisine": "Le siège en envoie d’autres, qui se posent sur le même plan de travail.",
+            "cuisine": "Le siège en expédie d’autres, qui arrivent sur le même plan de travail.",
             "expert": "Des connecteurs distants de niveau compte sont synchronisés dans le CLI."
           },
           "en": {
-            "kitchen": "Head office sends down others, which land on the same bench.",
+            "kitchen": "Head office sends others down, and they arrive on the same bench.",
             "expert": "Remote account-level connectors are synchronized into the CLI."
           }
         },
         {
           "fr": {
-            "cuisine": "Le même ustensile se retrouve alors en double.",
+            "cuisine": "Le plan de travail se retrouve alors avec le même ustensile deux fois.",
             "expert": "Des services équivalents peuvent dès lors apparaître deux fois."
           },
           "en": {
-            "kitchen": "The same utensil then sits there twice.",
+            "kitchen": "The workbench then holds the same utensil twice.",
             "expert": "Equivalent services can then appear twice."
           }
         },
         {
           "fr": {
-            "cuisine": "Le retirer du poste ne le reprend pas au siège, donc il peut revenir.",
+            "cuisine": "Le retirer du poste ne le fait pas disparaître du siège ; il peut donc revenir.",
             "expert": "La suppression locale ne révoque pas nécessairement la source distante."
           },
           "en": {
-            "kitchen": "Taking it off the station does not take it back from head office, so it can return.",
+            "kitchen": "Removing it from the station does not make it disappear at head office, so it can return.",
             "expert": "Local removal does not necessarily revoke the remote source."
           }
         },
         {
           "fr": {
-            "cuisine": "Plus personne ne sait qui a posé quoi, ni à qui s’adresser pour l’enlever.",
+            "cuisine": "On ne sait plus qui a posé quoi, ni à qui demander de l’enlever.",
             "expert": "L’usage des ressources et la propriété deviennent difficiles à raisonner."
           },
           "en": {
-            "kitchen": "Nobody can tell any more who put what there, or who to ask to have it taken away.",
+            "kitchen": "No one can tell who put what there any longer, or whom to ask to have it removed.",
             "expert": "Resource use and ownership become difficult to reason about."
           }
         }
@@ -117,22 +117,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Deux mains rangent le tiroir sans se parler",
+          "cuisine": "Deux mains remplissent le même tiroir sans accord",
           "expert": "Mécanisme"
         },
         "en": {
-          "kitchen": "Two people fill one drawer, neither knowing",
+          "kitchen": "Two hands fill one drawer without agreement",
           "expert": "Mechanism"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Deux personnes rangent le même tiroir : le chef à son poste, le siège de loin. Aucune des deux ne sait ce que l’autre y a mis, ni ce qu’elle a le droit d’en retirer.",
+            "cuisine": "Deux personnes remplissent le même tiroir : le chef à son poste et le siège de loin. Aucune ne sait ce que l’autre y a posé, ni ce qu’elle peut en retirer.",
             "expert": "Deux autorités — configuration locale et état distant du compte — peuvent muter la même surface d’outils runtime sans modèle de propriété unifié."
           },
           "en": {
-            "kitchen": "Two people arrange the same drawer: the chef at his station, head office from a distance. Neither knows what the other put in it, nor what either is entitled to take out.",
+            "kitchen": "Two people fill the same drawer: the chef at the station and head office from afar. Neither knows what the other set inside, nor what either may take out.",
             "expert": "Two authorities — local configuration and remote account state — can mutate the same runtime tool surface with no unified ownership model."
           }
         }
@@ -143,22 +143,22 @@
       "kind": "paragraph",
       "heading": {
         "fr": {
-          "cuisine": "Marquer d’où vient chaque ustensile et qui répond",
+          "cuisine": "Étiqueter chaque ustensile et son responsable",
           "expert": "Réponse"
         },
         "en": {
-          "kitchen": "Label every utensil and warn the kitchen",
+          "kitchen": "Label every utensil and name its keeper",
           "expert": "Response"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Sur chaque ustensile, marquer d’où il vient, qui en répond et s’il a été repris. Retirer les doublons. Et prévenir la cuisine quand le siège en dépose un nouveau.",
+            "cuisine": "Sur chaque ustensile, indiquer son origine, celui qui en répond et s’il a été repris. Retirer les doubles et prévenir la cuisine quand le siège en apporte un nouveau.",
             "expert": "Exposer source, propriété et état de révocation pour chaque outil runtime. Dédupliquer les services équivalents et rendre l’injection distante explicite."
           },
           "en": {
-            "kitchen": "On every utensil, mark where it came from, who answers for it, and whether it has been taken back. Clear the duplicates. And tell the kitchen when head office drops a new one off.",
+            "kitchen": "On every utensil, show where it came from, who answers for it, and whether it has been taken back. Remove the duplicates and tell the kitchen when head office brings a new one.",
             "expert": "Expose source, ownership and revocation state for every runtime tool. Deduplicate equivalent services and make remote injection explicit."
           }
         }
@@ -169,22 +169,22 @@
       "kind": "status",
       "heading": {
         "fr": {
-          "cuisine": "Le désordre grandit dans toutes les maisons",
+          "cuisine": "Le désordre s’étend quand les cuisines se mêlent",
           "expert": "État actuel"
         },
         "en": {
-          "kitchen": "The utensil muddle grows in every house",
+          "kitchen": "The muddle grows as kitchens mix",
           "expert": "Current state"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Le problème grandit à mesure que les maisons mêlent leurs propres ustensiles à ceux que le siège leur envoie.",
+            "cuisine": "Le problème prend de l’ampleur quand les maisons mêlent leurs propres ustensiles à ceux envoyés par le siège.",
             "expert": "Le pattern gagne en importance à mesure que les produits d’agents mêlent écosystèmes d’outils gérés à distance et locaux."
           },
           "en": {
-            "kitchen": "The problem grows as houses mix their own utensils with the ones head office sends them.",
+            "kitchen": "The problem grows as houses mix their own utensils with those sent by head office.",
             "expert": "The pattern matters more as agent products blend remotely managed and local tool ecosystems."
           }
         }
@@ -195,22 +195,22 @@
       "kind": "lesson",
       "heading": {
         "fr": {
-          "cuisine": "Un ustensile sans nom ne se retire pas",
+          "cuisine": "Un ustensile sans responsable ne se reprend pas",
           "expert": "Leçon"
         },
         "en": {
-          "kitchen": "Anything set down must name who set it",
+          "kitchen": "A utensil without a keeper cannot be taken back",
           "expert": "Lesson"
         }
       },
       "body": [
         {
           "fr": {
-            "cuisine": "Tout ustensile qui apparaît pendant le service doit porter le nom de celui qui l’a posé, et la manière de le reprendre.",
+            "cuisine": "Tout ustensile apparu pendant le service doit nommer celui qui l’a posé et la manière de le reprendre.",
             "expert": "Chaque outil runtime a besoin d’un propriétaire visible et d’un chemin de révocation."
           },
           "en": {
-            "kitchen": "Any utensil that appears during service must carry the name of whoever set it down, and the way to take it back.",
+            "kitchen": "Any utensil appearing during service must name who set it down and how to take it back.",
             "expert": "Every runtime tool needs a visible owner and a revocation path."
           }
         }
