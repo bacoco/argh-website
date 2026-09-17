@@ -1,7 +1,7 @@
 {
   "schema": "argh/static-projection/v1",
   "generated_at": "2026-09-16T15:51:31+02:00",
-  "source_repository": "bacoco/argh",
+  "source_repository": "bacoco/loriq-argh",
   "source_head": "94597ef000779ac65c93814258410513fc2a6fcb",
   "dossier_count": 59,
   "project_count": 22,
