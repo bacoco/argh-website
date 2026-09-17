@@ -35,7 +35,7 @@ jobs:
       - name: Check out the canonical public store
         uses: actions/checkout@v4
         with:
-          repository: bacoco/argh
+          repository: bacoco/loriq-argh
           ref: main
           path: .source/argh
           persist-credentials: false
@@ -66,7 +66,7 @@ jobs:
           set -euo pipefail
           git add -A -- 404.html index.html about atlas dossiers glossary harness patterns places projects data/activity.json data/entities data/meta.json data/taxonomy.json data/visual-taxonomy.json
           if git diff --cached --quiet; then
-            echo 'Projection already matches bacoco/argh/main.'
+            echo 'Projection already matches bacoco/loriq-argh/main.'
             exit 0
           fi
           source_head="$(git -C .source/argh rev-parse --short=12 HEAD)"

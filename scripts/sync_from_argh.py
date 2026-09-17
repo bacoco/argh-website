@@ -255,7 +255,7 @@ def sync(source: Path, website: Path, source_head: str, generated_at: str,
     meta = {
         "schema": "argh/static-projection/v1",
         "generated_at": projection_generated_at,
-        "source_repository": "bacoco/argh",
+        "source_repository": "bacoco/loriq-argh",
         "source_head": source_head,
         "dossier_count": counts["dossier"],
         "project_count": counts["project"],
