@@ -39,8 +39,7 @@ runs `scripts/sync_from_argh.py`, the site tests, `build.py` and
 `scripts/verify_projection.py`, then commits the generated projection to `main`.
 It may write no other public repository and never authors editorial prose here.
 
-`Sync ARGH public projection` runs the same deterministic projection hourly as a
-recovery path through the read-only deploy key stored as
-`ARGH_SOURCE_DEPLOY_KEY`. Both paths copy the complete public entity and navigation
-stores, rebuild every generated route, update the public activity receipt and
-verify the four authored modes. GitHub Pages serves `main`.
+The ARGH scheduler performs the deterministic projection directly from the active
+ChatGPT invocation and writes the verified result to `main` through the GitHub
+connector. GitHub Actions is not used for synchronization, recovery, validation,
+build or publication. GitHub Pages serves `main`.
