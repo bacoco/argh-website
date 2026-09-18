@@ -427,7 +427,7 @@ def latest_dossiers(store):
         e = store["by_rel"].get(event["entity_path"])
         if not e or e.get("type") != "dossier" or e["slug"] in seen:
             continue
-        selected.append((e, event["kind"]))
+        selected.append((e, event))
         seen.add(e["slug"])
         if len(selected) == LATEST_N:
             return selected
@@ -439,24 +439,40 @@ def latest_dossiers(store):
     for e in dossiers:
         if e["slug"] in seen:
             continue
-        selected.append((e, "recent"))
+        selected.append((e, {"kind": "recent", "detected_at": e.get("updated_at") or e.get("event_date") or ""}))
         seen.add(e["slug"])
         if len(selected) == LATEST_N:
             break
     return selected
 
 
-def update_card(e, kind, store):
+def update_card(e, event, store):
     h = slot_of(e, "hero")
     place_id = store["assignments"].get(e["slug"])
     place = store["place_by_id"].get(place_id)
     unclassified = place is None
+    kind = event.get("kind", "recent") if isinstance(event, dict) else str(event)
     status = STATUS["unclassified" if unclassified else kind]
     location = place["label"] if place else UNCLASSIFIED_PLACE
     classes = "argh-update-card" + (" argh-unclassified" if unclassified else "")
-    return ('<a class="%s" href="%s">%s%s%s%s</a>'
+    detected = (event.get("detected_at") or "") if isinstance(event, dict) else ""
+    published_date = detected[:10] if detected else ""
+    incident_date = entry_date(e)
+    dates = ""
+    if published_date:
+        dates += '<span class="argh-update-date"><span class="nav-fr">%s le %s</span><span class="nav-en">%s %s</span></span>' % (
+            "Nouveau" if kind == "new" else ("Mis à jour" if kind == "updated" else "Publié"),
+            esc(published_date),
+            "New" if kind == "new" else ("Updated" if kind == "updated" else "Published"),
+            esc(published_date),
+        )
+    if incident_date and incident_date != published_date:
+        dates += '<span class="argh-incident-date"><span class="nav-fr">Incident du %s</span><span class="nav-en">Incident %s</span></span>' % (
+            esc(incident_date), esc(incident_date))
+    date_meta = '<div class="argh-update-dates">%s</div>' % dates if dates else ""
+    return ('<a class="%s" href="%s">%s%s%s%s%s</a>'
             % (classes, esc(e["route"]), quad(status, "span", "argh-update-status"),
-               quad(location, "span", "argh-update-place"),
+               quad(location, "span", "argh-update-place"), date_meta,
                quad(h["heading"], "h3"),
                quad((h.get("body") or [{}])[0], "p")))
 
@@ -529,12 +545,12 @@ def home(store):
     body += ('<section class="argh-updates"><div class="argh-updates-head"><div>%s</div>%s</div>'
              '<div class="argh-update-grid">%s</div></section>'
              % (quad(HOME_LATEST, "h2"), quad(HOME_LATEST_DECK, "p"),
-                "".join(update_card(e, kind, store) for e, kind in latest_dossiers(store))))
+                "".join(update_card(e, event, store) for e, event in latest_dossiers(store))))
 
     if store["unclassified"]:
         body += ('<section class="argh-unclassified-section">%s<div class="argh-update-grid">%s</div></section>'
                  % (section_head(UNCLASSIFIED),
-                    "".join(update_card(e, "recent", store) for e in store["unclassified"])))
+                    "".join(update_card(e, {"kind": "recent", "detected_at": e.get("updated_at") or ""}, store) for e in store["unclassified"])))
 
     body += ('<section class="argh-map"><div class="argh-map-intro">%s%s</div>'
              % (quad(HOME_MAP, "h2"), quad(HOME_MAP_DECK, "p")))
