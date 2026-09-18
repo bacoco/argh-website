@@ -75,5 +75,3 @@ jobs:
           git commit -m "data: sync ARGH projection from ${source_head}"
           git pull --rebase origin main
           git push origin HEAD:main
-
-# chatgpt reversible write probe
