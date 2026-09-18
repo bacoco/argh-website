@@ -2,6 +2,110 @@
   "schema": "argh/public-activity/v1",
   "events": [
     {
+      "id": "fed83dcc150300f903e8e924bf63d8052bda44f3:dossiers/agent-identity-does-not-prove-independent-authority.json",
+      "kind": "new",
+      "entity_path": "dossiers/agent-identity-does-not-prove-independent-authority.json",
+      "entity_hash": "085d587dee6334bf2ed25f222ab4fcbc61f1cc84",
+      "detected_at": "2026-09-18T20:11:37Z",
+      "source_head": "fed83dcc150300f903e8e924bf63d8052bda44f3"
+    },
+    {
+      "id": "fed83dcc150300f903e8e924bf63d8052bda44f3:dossiers/append-only-snapshots-need-retention-bound.json",
+      "kind": "new",
+      "entity_path": "dossiers/append-only-snapshots-need-retention-bound.json",
+      "entity_hash": "4e425bfa02de48385c780848b0aa11e519383e73",
+      "detected_at": "2026-09-18T20:11:37Z",
+      "source_head": "fed83dcc150300f903e8e924bf63d8052bda44f3"
+    },
+    {
+      "id": "fed83dcc150300f903e8e924bf63d8052bda44f3:dossiers/background-artifacts-need-terminal-lifecycle.json",
+      "kind": "new",
+      "entity_path": "dossiers/background-artifacts-need-terminal-lifecycle.json",
+      "entity_hash": "44e333619dca33cbd6b175bf356a83c3a83fea02",
+      "detected_at": "2026-09-18T20:11:37Z",
+      "source_head": "fed83dcc150300f903e8e924bf63d8052bda44f3"
+    },
+    {
+      "id": "fed83dcc150300f903e8e924bf63d8052bda44f3:dossiers/consent-before-command-capable-config.json",
+      "kind": "new",
+      "entity_path": "dossiers/consent-before-command-capable-config.json",
+      "entity_hash": "00b259aaff7c9ea4aa32faf908699b2c17c4412c",
+      "detected_at": "2026-09-18T20:11:37Z",
+      "source_head": "fed83dcc150300f903e8e924bf63d8052bda44f3"
+    },
+    {
+      "id": "fed83dcc150300f903e8e924bf63d8052bda44f3:dossiers/decisions-need-active-lifecycle.json",
+      "kind": "new",
+      "entity_path": "dossiers/decisions-need-active-lifecycle.json",
+      "entity_hash": "7ec0c9a26f6cc237eb87ee9aeed4956d9f600a62",
+      "detected_at": "2026-09-18T20:11:37Z",
+      "source_head": "fed83dcc150300f903e8e924bf63d8052bda44f3"
+    },
+    {
+      "id": "fed83dcc150300f903e8e924bf63d8052bda44f3:dossiers/health-verdict-must-preserve-status-and-coverage.json",
+      "kind": "new",
+      "entity_path": "dossiers/health-verdict-must-preserve-status-and-coverage.json",
+      "entity_hash": "e9f9cacfe6fffd03af030757c24f8eae8e8dd23e",
+      "detected_at": "2026-09-18T20:11:37Z",
+      "source_head": "fed83dcc150300f903e8e924bf63d8052bda44f3"
+    },
+    {
+      "id": "fed83dcc150300f903e8e924bf63d8052bda44f3:dossiers/existing-first-admission-landed.json",
+      "kind": "new",
+      "entity_path": "dossiers/existing-first-admission-landed.json",
+      "entity_hash": "52c4dbbfd4ff9dee52d0b5e1c57306ce044cc4f4",
+      "detected_at": "2026-09-18T20:11:37Z",
+      "source_head": "fed83dcc150300f903e8e924bf63d8052bda44f3"
+    },
+    {
+      "id": "fed83dcc150300f903e8e924bf63d8052bda44f3:dossiers/mechanical-rules-belong-in-deterministic-checks.json",
+      "kind": "new",
+      "entity_path": "dossiers/mechanical-rules-belong-in-deterministic-checks.json",
+      "entity_hash": "2610132c30777933a1d83e85a3409ff49942db5a",
+      "detected_at": "2026-09-18T20:11:37Z",
+      "source_head": "fed83dcc150300f903e8e924bf63d8052bda44f3"
+    },
+    {
+      "id": "fed83dcc150300f903e8e924bf63d8052bda44f3:dossiers/reject-path-shaped-fallback-names-before-io.json",
+      "kind": "new",
+      "entity_path": "dossiers/reject-path-shaped-fallback-names-before-io.json",
+      "entity_hash": "6aeb83b9f71bb914c52495657bb731239bef706d",
+      "detected_at": "2026-09-18T20:11:37Z",
+      "source_head": "fed83dcc150300f903e8e924bf63d8052bda44f3"
+    },
+    {
+      "id": "fed83dcc150300f903e8e924bf63d8052bda44f3:dossiers/resume-must-reconcile-control-state.json",
+      "kind": "new",
+      "entity_path": "dossiers/resume-must-reconcile-control-state.json",
+      "entity_hash": "d9435bd2692d206c6f54c61b207f6a38c647598d",
+      "detected_at": "2026-09-18T20:11:37Z",
+      "source_head": "fed83dcc150300f903e8e924bf63d8052bda44f3"
+    },
+    {
+      "id": "fed83dcc150300f903e8e924bf63d8052bda44f3:dossiers/scheduled-success-needs-effect-proof.json",
+      "kind": "new",
+      "entity_path": "dossiers/scheduled-success-needs-effect-proof.json",
+      "entity_hash": "f0a3a0c7aaf926892e43ea98be2889458cc4fb71",
+      "detected_at": "2026-09-18T20:11:37Z",
+      "source_head": "fed83dcc150300f903e8e924bf63d8052bda44f3"
+    },
+    {
+      "id": "fed83dcc150300f903e8e924bf63d8052bda44f3:dossiers/shared-contract-prevents-provider-drift.json",
+      "kind": "new",
+      "entity_path": "dossiers/shared-contract-prevents-provider-drift.json",
+      "entity_hash": "349e6e44e0e346819a5aee0348e924d8ea6f835c",
+      "detected_at": "2026-09-18T20:11:37Z",
+      "source_head": "fed83dcc150300f903e8e924bf63d8052bda44f3"
+    },
+    {
+      "id": "fed83dcc150300f903e8e924bf63d8052bda44f3:dossiers/task-snapshot-needs-coherent-ordering.json",
+      "kind": "new",
+      "entity_path": "dossiers/task-snapshot-needs-coherent-ordering.json",
+      "entity_hash": "6e916ba63d8d3a3427a9155e1ad48c11898649ab",
+      "detected_at": "2026-09-18T20:11:37Z",
+      "source_head": "fed83dcc150300f903e8e924bf63d8052bda44f3"
+    },
+    {
       "id": "94597ef000779ac65c93814258410513fc2a6fcb:dossiers/encrypted-subagents-lost-audit-trail.json",
       "kind": "updated",
       "entity_path": "dossiers/encrypted-subagents-lost-audit-trail.json",

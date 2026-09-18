@@ -1,0 +1,126 @@
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:scheduled-success-needs-effect-proof",
+  "type": "dossier",
+  "slug": "scheduled-success-needs-effect-proof",
+  "route": "/dossiers/scheduled-success-needs-effect-proof/",
+  "template": "dossier",
+  "updated_at": "2026-09-17T13:25:30+00:00",
+  "event_date": "2026-09-16",
+  "date_basis": "incident",
+  "relationships": {
+    "projects": ["Claude Code"],
+    "patterns": ["false-green", "execution-receipts", "headless-contract"],
+    "dossiers": ["delivery-finished-user-got-nothing"]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {"cuisine": "La commande est cochée pendant que le commis attend un accord", "expert": "Un succès planifié rapporté sans preuve du résultat attendu"},
+        "en": {"kitchen": "The ticket says done, but the cook is still waiting", "expert": "Scheduled-task success can be reported without evidence of the intended outcome"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Un commis attend l'accord du chef pour poursuivre un plat. Pourtant, la commande apparaît cochée sur le tableau. C'est ce que raconte un signalement, pas une scène que nous avons vérifiée. Aucune réparation confirmée n'accompagne ce récit.",
+          "expert": "Un signalement concernant Claude Code Desktop et CLI décrit des tâches planifiées présentées comme réussies malgré une demande de permission, un blocage ou l'absence de message final. Le comportement reste rapporté : aucune reproduction indépendante ni correction fusionnée n'est établie dans les éléments arrêtés au 16 septembre 2026."
+        },
+        "en": {
+          "kitchen": "A finished ticket hangs above a cook who cannot continue until the chef answers. That is the account we received, not something we witnessed. There is no confirmed repair in that account.",
+          "expert": "The available Claude Code report challenges the meaning of scheduled-task success across Desktop and CLI. Permission interruptions, blocked runs and missing final messages are described under successful status, but neither independent reproduction nor a merged correction is established as of 16 September 2026."
+        }
+      }]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {"cuisine": "Le tableau annonce davantage que le récit ne prouve", "expert": "Chronologie"},
+        "en": {"kitchen": "A finished mark arrives without a checked plate", "expert": "Timeline"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Le récit arrive le 16 septembre 2026. Il décrit une commande cochée alors que sa préparation reste arrêtée ou incertaine. À cette date, personne n'apporte de réparation confirmée.",
+          "expert": "Le signalement est daté du 16 septembre 2026 et décrit plusieurs situations incompatibles avec une réussite simplement déduite du statut. L'observation disponible le conserve ouvert, sans correctif fusionné établi ; elle n'atteste pas le comportement de versions ultérieures."
+        },
+        "en": {
+          "kitchen": "On 16 September 2026, an account describes orders marked finished while the cook is stopped or the plate remains unchecked. The account supplies no confirmed repair. What happened on later services is not established here.",
+          "expert": "The reported event dates to 16 September 2026. The recorded state remains open with no observed merged fix, so later product behavior cannot be inferred from this snapshot."
+        }
+      }]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {"cuisine": "Une coche ne montre pas ce qu'il y a dans l'assiette", "expert": "Mécanisme"},
+        "en": {"kitchen": "The board cannot tell us whether dinner exists", "expert": "Mechanism"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Une coche ne permet pas de savoir si le plat existe. Mais le silence du commis ne prouve pas non plus une assiette vide. Il faut regarder ce qui a réellement été préparé. Nous ignorons pourquoi le tableau s'est trompé dans ce récit.",
+          "expert": "L'écart rapporté porte sur l'autorité du statut terminal, pas sur une cause interne démontrée. L'absence de message final ne prouve pas, à elle seule, l'absence d'effet ; inversement, le succès affiché ne démontre pas l'effet attendu. Le cas ne doit donc pas être assimilé à un incident où un résultat valide existe déjà mais échoue uniquement à la livraison."
+        },
+        "en": {
+          "kitchen": "A quiet cook might already have prepared the dish; a crossed-off ticket might hide an unfinished one. Neither tells us what is on the plate. The account does not establish why the board gave the wrong answer.",
+          "expert": "The internal cause is unknown. A missing final message and an absent business effect are different observations, and neither a terminal label nor narrative silence settles the outcome. This differs from a delivery failure after valid output has already been produced and stored."
+        }
+      }]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {"cuisine": "Contrôler le plat avant de fermer sa commande", "expert": "Réponse"},
+        "en": {"kitchen": "Check the dish against its own ticket", "expert": "Response"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Le chef devrait vérifier le plat demandé avant de cocher sa commande. Une attente d'accord doit rester une attente, pas devenir un repas annoncé. Cette règle est proposée ; rien ne prouve qu'elle soit déjà appliquée dans la cuisine décrite.",
+          "expert": "La réponse proposée consiste à définir un témoin vérifiable de l'effet ou de la sortie, lié à l'occurrence et à sa tentative. Les états d'attente de permission, de blocage et de résultat non vérifié doivent rester distincts du succès métier. Il s'agit d'une recommandation de conception, non d'un correctif observé dans Claude Code."
+        },
+        "en": {
+          "kitchen": "Before closing a ticket, the chef should inspect the dish that ticket requested. A cook awaiting permission still has an open order. This is a proposed rule, not a change confirmed in the kitchen described.",
+          "expert": "Bind the success criterion to an observable outcome for the specific occurrence and attempt. Preserve waiting-for-permission, blocked and unverified states instead of silently promoting them to business completion. These are proposed controls, not evidence that an upstream repair shipped."
+        }
+      }]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {"cuisine": "Le récit reste ouvert et la réparation reste à constater", "expert": "État actuel"},
+        "en": {"kitchen": "No checked repair closes this account", "expert": "Current state"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Au 16 septembre 2026, nous disposons d'un récit, pas d'un essai refait par une autre cuisine. Aucun changement confirmé ne permet de le déclarer réglé. Le tableau ne gagne pas notre confiance simplement parce qu'il affiche une réussite.",
+          "expert": "Au cutoff du 16 septembre 2026, la preuve reste celle d'un signalement, sans reproduction indépendante ni correctif fusionné établi. Les incidents historiques de faux succès soutiennent la pertinence du contrôle, mais ne reproduisent pas ce défaut précis. Aucune fréquence ni portée universelle n'est déduite de ce cas."
+        },
+        "en": {
+          "kitchen": "The account was still unconfirmed by another kitchen on 16 September 2026. No verified repair had been supplied. Similar troubles elsewhere do not prove what happened at this particular stove.",
+          "expert": "This record preserves the reported state at the 16 September 2026 cutoff. Related false-success cases justify investigation but are not independent reproductions of the Claude Code behavior. No fix, incidence rate or universal scope is asserted."
+        }
+      }]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {"cuisine": "C'est le plat vérifié qui donne sa valeur à la coche", "expert": "Leçon"},
+        "en": {"kitchen": "A checked plate earns the finished mark", "expert": "Lesson"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Le tableau aide à suivre les commandes ; il ne prépare aucun plat. Vérifiez ce qui était demandé avant d'annoncer la réussite. Cette leçon reste utile même quand le récit initial attend encore sa vérification.",
+          "expert": "Un statut d'exécution et la preuve d'un résultat sont deux contrats distincts. Le verdict doit suivre le critère métier effectivement vérifié, en maintenant l'incertitude lorsque le témoin manque. Le signalement motive cet invariant sans démontrer sa mise en œuvre."
+        },
+        "en": {
+          "kitchen": "The ticket keeps the kitchen organised, but it cannot fill a plate. Let the checked dish justify the finished mark. That rule does not turn an unconfirmed account into a witnessed event.",
+          "expert": "Completion should be justified by the required observable effect, not inferred from a scheduler label. Keep the result unverified when that evidence is unavailable. A useful design inference does not upgrade the underlying report into a reproduced incident."
+        }
+      }]
+    }
+  ]
+}

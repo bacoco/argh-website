@@ -1,0 +1,86 @@
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:background-artifacts-need-terminal-lifecycle",
+  "type": "dossier",
+  "slug": "background-artifacts-need-terminal-lifecycle",
+  "route": "/dossiers/background-artifacts-need-terminal-lifecycle/",
+  "template": "dossier",
+  "updated_at": "2026-09-17T14:02:00+00:00",
+  "event_date": "2026-05-05",
+  "date_basis": "incident",
+  "relationships": {"projects": ["Gemini CLI"], "patterns": ["runtime-visible-state", "retry-semantics"], "dossiers": ["memory-kept-history-lost-mission"]},
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {"cuisine": "Les fiches écartées reviennent dans les mains du commis", "expert": "Gemini CLI : des objets mémoire ignorés ou invalides restent admissibles au traitement"},
+        "en": {"kitchen": "The cook keeps receiving sheets that were put aside", "expert": "Gemini CLI reports expose missing terminal states for background memory artifacts"}
+      },
+      "body": [{
+        "fr": {"cuisine": "Un commis raconte qu'une fiche laissée de côté revient encore à sa prochaine lecture. Une autre, jugée inutilisable, disparaît du tableau mais rejoint toujours sa pile. Ces deux récits restent à vérifier ; aucune réparation n'est établie.", "expert": "Deux signalements ouverts de Gemini CLI décrivent des artefacts de fond qui ne quittent pas effectivement le traitement. Une session ignorée par Auto Memory peut être reproposée ; un patch invalide masqué par l'interface reste dans le contexte de l'extracteur. Le bundle ne fournit ni reproduction indépendante ni correction établie."},
+        "en": {"kitchen": "The cook's next pile can contain a sheet already set aside. Another sheet disappears from the board but still reaches the workbench. These are accounts of trouble, not independently checked events, and no repair is established.", "expert": "The available Gemini CLI reports concern two distinct paths: skipped sessions can return to Auto Memory, and UI-hidden invalid patches can remain in extractor input. They support a lifecycle question rather than a confirmed shared implementation defect. Independent reproduction and a landed fix are not established."}
+      }]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {"cuisine": "Les récits datent de mai, pas du dernier service", "expert": "Chronologie"},
+        "en": {"kitchen": "Old reports must keep their original dates", "expert": "Timeline"}
+      },
+      "body": [{
+        "fr": {"cuisine": "Les deux récits sont datés du 5 mai 2026. Le relevé du 16 septembre les garde encore sans résolution établie. Il ne dit pas que ces difficultés sont apparues ce jour-là.", "expert": "Les deux issues ont été publiées le 5 mai 2026, à quelques secondes d'intervalle. Elles sont ouvertes dans le bundle du 16 septembre. La proximité temporelle ne prouve ni une cause commune ni deux sources indépendantes."},
+        "en": {"kitchen": "Both accounts were written on 5 May 2026. The 16 September record still provides no established resolution. Reading them again in September does not make them new incidents that day.", "expert": "Publication dates place both reports on 5 May 2026; the September bundle retains them as open. This is the evidence cutoff, not a claim of current live status. Closely timed reports do not establish a common root cause."}
+      }]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {"cuisine": "Retirer une fiche du tableau ne la retire pas de la pile", "expert": "Mécanisme"},
+        "en": {"kitchen": "The board and the cook's pile can disagree", "expert": "Mechanism"}
+      },
+      "body": [{
+        "fr": {"cuisine": "Le tableau et la pile du commis ne disent pas toujours la même chose, d'après ces récits. Une fiche peut être cachée au chef sans cesser d'être relue. Une fiche volontairement écartée peut aussi revenir faute de mention disant que son examen est fini.", "expert": "Les signalements séparent trois dimensions : visibilité UI, état de traitement et admissibilité dans le contexte. Un skip non enregistré peut laisser une session sélectionnable ; filtrer un patch à l'affichage ne l'exclut pas nécessairement de l'extracteur. La cause de code exacte reste inconnue."},
+        "en": {"kitchen": "Taking a sheet off the board does not necessarily stop someone putting it into tomorrow's pile. A cook may also set a sheet aside without anyone recording that the examination is over. That is the difficulty described; its precise cause has not been checked here.", "expert": "The reported mismatch is between presentation and future processing eligibility. Neither hiding an invalid artifact nor producing no extraction result necessarily records a terminal decision. These observations do not establish which implementation layer owns the defect."}
+      }]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {"cuisine": "Écrire pourquoi la fiche ne doit plus revenir", "expert": "Réponse"},
+        "en": {"kitchen": "Give every sheet a reason to return or stay aside", "expert": "Response"}
+      },
+      "body": [{
+        "fr": {"cuisine": "La piste proposée est de marquer séparément une fiche examinée puis écartée, une fiche inutilisable et un travail réellement raté. Le commis doit retrouver ces mentions demain. Cacher seulement la fiche au tableau ne suffit pas ; cette piste n'est pas une réparation démontrée.", "expert": "La réponse de conception proposée distingue skipped, invalid ou quarantined, et failed avec reprise autorisée. L'admissibilité doit être contrôlée dans l'entrée de l'extracteur et l'état rester visible après reprise. Aucun de ces contrôles n'est présenté comme déjà fusionné ou livré dans Gemini CLI."},
+        "en": {"kitchen": "A sheet set aside after examination needs a different mark from an unusable sheet or a failed piece of work. Those marks must survive until the next service. This is a proposed remedy, not a repair shown to work in this kitchen.", "expert": "A candidate control would persist separate terminal reasons and reconcile them with extractor eligibility after restart. User-facing visibility should expose, rather than substitute for, that decision. This analysis does not claim an upstream implementation of the proposed state model."}
+      }]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {"cuisine": "Deux récits, aucune fin heureuse prouvée", "expert": "État actuel"},
+        "en": {"kitchen": "There is no verified ending to these accounts", "expert": "Current state"}
+      },
+      "body": [{
+        "fr": {"cuisine": "Le relevé conserve deux récits non résolus provenant de la même maison. Il ne montre ni vérification extérieure, ni réparation éprouvée, ni montant du travail gaspillé. Il faut garder ces limites avant de conclure.", "expert": "Les deux issues sont ouvertes au cutoff retenu. Leur indépendance n'est pas établie, et aucun coût, taux de réapparition ou succès de correction n'est mesuré ici. La comparaison historique n'ajoute pas une reproduction indépendante de ces comportements."},
+        "en": {"kitchen": "We have two accounts from the same house's notebook, not an outside check of the trouble. No measured waste or successful repair accompanies them. The conclusion must stay within those limits.", "expert": "Evidence remains reported rather than independently reproduced. Two artifacts in one upstream project are not counted as two independent confirmations. No claim is made about frequency, spend, or a fixed installed version."}
+      }]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {"cuisine": "La fiche écartée n'est pas une commande ratée", "expert": "Leçon"},
+        "en": {"kitchen": "Setting a sheet aside is not failing an order", "expert": "Lesson"}
+      },
+      "body": [{
+        "fr": {"cuisine": "Le chef doit savoir pourquoi une fiche revient, pas seulement voir qu'elle a quitté le tableau. Un examen terminé sans suite n'est pas un échec à recommencer. La marque portée sur la fiche doit guider le prochain service.", "expert": "Masquer un artefact ne clôt pas son cycle de vie, et une décision de ne rien extraire ne doit pas devenir un retry implicite. Le cas diffère de la perte d'une mission par compaction et de la répétition d'un lot après un échec transitoire. Les états durables doivent porter cette distinction."},
+        "en": {"kitchen": "Before handing the pile over, record which sheets deserve another look and which have finished their journey. A deliberate decision to do nothing is not a failed dish. Tomorrow's cook needs that distinction, not merely a tidier board.", "expert": "Persist why processing ended and enforce that reason where future context is selected. This is not the same failure as losing live obligations during compaction or replaying successful calls after a batch error. Reuse the broader state principles without merging the incidents."}
+      }]
+    }
+  ]
+}

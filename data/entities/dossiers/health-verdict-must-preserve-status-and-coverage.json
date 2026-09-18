@@ -1,0 +1,126 @@
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:health-verdict-must-preserve-status-and-coverage",
+  "type": "dossier",
+  "slug": "health-verdict-must-preserve-status-and-coverage",
+  "route": "/dossiers/health-verdict-must-preserve-status-and-coverage/",
+  "template": "dossier",
+  "updated_at": "2026-09-17T14:25:00+00:00",
+  "event_date": "2026-09-16",
+  "date_basis": "incident",
+  "relationships": {
+    "projects": ["gstack"],
+    "patterns": ["false-green", "observability", "verification"],
+    "dossiers": ["gstack-false-green-second-fix"]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {"cuisine": "La dernière ligne du contrôle ne dit pas si le plat est bon", "expert": "gstack : un verdict de santé lié au statut et à la couverture réelle"},
+        "en": {"kitchen": "A tidy inspection slip can hide an unfinished check", "expert": "gstack health reporting preserves checker status and coverage"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Imaginez un commis qui recopie seulement la fin d'une longue fiche de contrôle. Sa copie réussit, mais cela ne rend pas le plat bon. La consigne corrigée est intégrée au cahier de la maison ; son application au service reste à vérifier.",
+          "expert": "Le changement gstack observé le 16 septembre 2026 empêche tail de masquer le code d'échec du vérificateur et conserve la sortie complète pour le comptage. Il rend les catégories indisponibles visibles et refuse les scores vides ou les tendances de couvertures différentes. La fusion est établie dans le matériau examiné ; le déploiement et la correction terrain ne le sont pas."
+        },
+        "en": {
+          "kitchen": "At the pass, a neatly copied slip may show only the end of a long inspection. Good copying does not mean good food. The house has accepted a revised checking rule, but we have not seen it working during service.",
+          "expert": "The gstack change recorded on 16 September 2026 separates the checker's exit status from successful output display. Full-output counting and explicit unavailable categories accompany safeguards against empty scores and mismatched trend coverage. The evidence establishes an upstream merge, not rollout or observed recovery in production."
+        }
+      }]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {"cuisine": "Le cahier reçoit une règle, pas encore un constat en salle", "expert": "Chronologie"},
+        "en": {"kitchen": "An accepted rule still needs a service check", "expert": "Timeline"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Le 16 septembre, la maison intègre une façon plus exigeante de remplir sa fiche de contrôle. Le verdict doit garder tout ce qui a été vérifié. Ce constat ne dit pas encore ce qui s'est passé pendant un vrai service.",
+          "expert": "Le matériau daté du 16 septembre rattache à un même changement fusionné la propagation du statut, le comptage complet et les conditions de comparaison. Il ne fournit pas de date de distribution ni de vérification en exploitation. La chronologie des précédents défauts de cache reste distincte."
+        },
+        "en": {
+          "kitchen": "The house accepted the revised inspection instructions on 16 September. The slip must now account for the checks actually made. Acceptance alone does not tell us how the next service went.",
+          "expert": "The 16 September snapshot records one merged change addressing status propagation, complete counts and comparable coverage. No release date or field confirmation accompanies it. Earlier cache-identity incidents are related history, not established earlier stages of this change."
+        }
+      }]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {"cuisine": "Une fiche raccourcie oublie ce qui n'a pas été goûté", "expert": "Mécanisme"},
+        "en": {"kitchen": "Missing checks must not look like passed dishes", "expert": "Mechanism"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Une fiche peut être bien recopiée alors que le contrôle a échoué. Elle peut aussi taire les assiettes non examinées. Comparer cette fiche à celle d'un autre service devient trompeur si les plats vérifiés ne sont pas les mêmes.",
+          "expert": "La présentation, le statut du processus contrôlé et la couverture sont trois informations distinctes. Une troncature peut masquer des résultats, tandis qu'une catégorie indisponible ou une exécution vide ne constitue pas un succès. Des couvertures différentes rendent une tendance non comparable ; le matériau ne permet pas de reconstruire toute la cause racine."
+        },
+        "en": {
+          "kitchen": "A copied slip can look finished even when an inspection failed. Leaving unexamined plates off the slip makes the picture smaller still. Two services cannot be compared fairly when different dishes were checked.",
+          "expert": "A display operation succeeding is not evidence that the underlying checker succeeded. Counts derived from an excerpt and omitted unavailable categories change the meaning of the report; zero executed checks cannot support a score. Coverage must match before a trend is interpreted, and the complete root cause remains outside the available evidence."
+        }
+      }]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {"cuisine": "Garder le verdict du goûteur et la liste entière", "expert": "Réponse"},
+        "en": {"kitchen": "Keep the inspection result beside the complete dish list", "expert": "Response"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Gardez le verdict du contrôle, même quand le commis raccourcit la fiche destinée à la salle. Comptez sur la fiche entière et nommez les plats non examinés. Sans contrôle, pas de note ; sans les mêmes plats vérifiés, pas de comparaison.",
+          "expert": "Le changement conserve le code du vérificateur indépendamment de tail, compte la sortie complète et annonce les catégories indisponibles. Il écarte le scoring d'une exécution vide et les comparaisons de tendance à couverture différente. Ce sont les contrôles décrits dans le changement fusionné, pas une activation automatique dans d'autres harnais."
+        },
+        "en": {
+          "kitchen": "The dining room may receive a shorter slip, but the inspector's verdict must travel with it. Count from the whole inspection and name every unexamined dish. Leave the grade blank when nothing was checked, and compare only like-for-like inspections.",
+          "expert": "The merged response preserves the checker's status through display processing and derives counts from the full output. Unavailable categories remain explicit; empty runs and coverage-mismatched trends are not scored or compared. Adopting those controls elsewhere would require a separate implementation and verification."
+        }
+      }]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {"cuisine": "La règle est acceptée, le service n'est pas encore observé", "expert": "État actuel"},
+        "en": {"kitchen": "The revised notebook is not proof of the next meal", "expert": "Current state"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Nous savons que la maison a intégré la nouvelle consigne au 16 septembre. Nous n'avons pas de constat indépendant montrant son application pendant le service. Rien ne permet non plus d'affirmer que toutes les autres cuisines avaient ce défaut.",
+          "expert": "L'état retenu est une fusion amont dans le snapshot du 16 septembre, sans preuve de distribution, de déploiement ou de correction observée. Un seul artefact du projet soutient ce constat ; aucune corroboration indépendante n'est établie. La généralisation reste une leçon de conception."
+        },
+        "en": {
+          "kitchen": "By 16 September, the house had adopted the new instruction. No independent observer has shown us the resulting service. Other kitchens are not proven faulty merely because this checking rule could help them.",
+          "expert": "The supported state is merged as of the examined snapshot, with release and field behavior unverified. The project's own change is not independent corroboration of its effectiveness. Nothing here establishes the same defect in another system."
+        }
+      }]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {"cuisine": "Avant de croire la note, demandez ce qui a été goûté", "expert": "Leçon"},
+        "en": {"kitchen": "Ask what was inspected before trusting the grade", "expert": "Lesson"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Une belle fiche ne remplace pas le contrôle du plat. Avant de croire sa note, regardez le verdict, les plats examinés et ceux qui ne l'ont pas été. C'est une règle à éprouver, pas une garantie pour chaque cuisine.",
+          "expert": "Un verdict de santé doit conserver le statut réel et la couverture dont il dépend. La réussite de l'affichage, l'absence de contrôles et une réduction du périmètre ne peuvent pas devenir silencieusement des preuves de qualité. L'invariant reste à valider sur chaque chemin où il sera appliqué."
+        },
+        "en": {
+          "kitchen": "The important question is not whether the slip looks complete. It is whether the inspection succeeded and which dishes it covered. That rule deserves testing in each kitchen, not blind trust.",
+          "expert": "Interpret health only with execution status and coverage attached. Presentation success cannot replace checker success, and a narrower or empty measurement cannot justify a stronger conclusion. This is a transferable design rule, not a claim of universal field validation."
+        }
+      }]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:existing-first-admission-landed",
+  "type": "dossier",
+  "slug": "existing-first-admission-landed",
+  "route": "/dossiers/existing-first-admission-landed/",
+  "template": "dossier",
+  "updated_at": "2026-09-18T09:44:28.671880+00:00",
+  "event_date": "2026-09-16",
+  "date_basis": "incident",
+  "relationships": {
+    "projects": [],
+    "patterns": [
+      "hooks-enforcement",
+      "verification"
+    ],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {
+          "cuisine": "Avant de changer la cuisine, montrer ce qui a été regardé",
+          "expert": "Une première admission Existing-First est raccordée, sans couvrir tous les hôtes"
+        },
+        "en": {
+          "kitchen": "A look around the kitchen now needs a written record",
+          "expert": "Existing-First admission is merged on selected mutation paths"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Avant de remplacer une casserole, le chef veut savoir lesquelles ont été examinées. La maison a adopté ce contrôle à plusieurs postes. Cela ne prouve pas encore que chaque poste y passe, ni que chaque examen est bon.",
+            "expert": "Le projet a fusionné un receipt Existing-First et des raccordements d'admission sur plusieurs chemins Father, Operator et forge. Le bundle conserve les hôtes directs non interceptés et la coordination multi-hôtes comme écarts ouverts. La fusion n'établit ni une couverture universelle ni l'efficacité terrain."
+          },
+          "en": {
+            "kitchen": "The chef asks what was checked before anyone changes the kitchen equipment. Several stations now require a written record. Other stations remain outside that check, and its quality has not been independently demonstrated.",
+            "expert": "The recorded change introduces an Existing-First receipt and admission checks for selected Father, Operator and forge mutations. Direct hosts outside interception and cross-host coordination remain explicit gaps. This is evidence of a merged integration, not of universal enforcement or measured operational effectiveness."
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {
+          "cuisine": "Le contrôle entre dans le cahier de la maison",
+          "expert": "Chronologie"
+        },
+        "en": {
+          "kitchen": "The new check reaches the shared kitchen book",
+          "expert": "Timeline"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le 16 septembre, la maison ajoute cette vérification à son organisation. Plusieurs postes doivent désormais montrer la trace de leur examen. Les postes non couverts et le travail entre plusieurs cuisines restent à traiter.",
+            "expert": "L'observation du 16 septembre 2026 retient une intégration fusionnée et ses limites de couverture. Elle décrit un receipt et des admissions raccordées avant plusieurs mutations. Aucun état plus récent n'est déduit de cette observation."
+          },
+          "en": {
+            "kitchen": "The kitchen's shared book records the new arrangement on September 16. It names the stations covered and leaves other stations unfinished. Working across several kitchens also remains unresolved.",
+            "expert": "A September 16, 2026 observation records the merged admission change. Its scope includes several mutation paths, while unhooked direct hosts and multi-host coordination remain unresolved. The observation does not establish what happened after that date."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Le billet doit être demandé avant le remplacement",
+          "expert": "Mécanisme"
+        },
+        "en": {
+          "kitchen": "A note matters only where someone asks for it",
+          "expert": "Mechanism"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Écrire que les casseroles ont été regardées ne suffit pas. Il faut demander le billet avant qu'une casserole soit remplacée. Un poste qui ne demande rien reste hors de ce contrôle.",
+            "expert": "Le mécanisme lie l'examen préalable à une admission placée avant l'effet. Un receipt disponible, une vérification effectivement appelée et la couverture de chaque chemin sont trois propriétés distinctes. Le bundle ne détaille pas toutes les conditions de validité du receipt."
+          },
+          "en": {
+            "kitchen": "A cook can leave a note without anyone checking it before equipment changes. The useful step is asking for that note at the station. A station that never asks is not covered.",
+            "expert": "The integration moves a prior-review requirement onto mutation entry paths. Receipt existence alone does not prove enforcement, and enforcement on one path says nothing about another. Exact freshness and binding conditions are not established by the supplied observation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {
+          "cuisine": "Nommer les postes qui demandent déjà le billet",
+          "expert": "Réponse"
+        },
+        "en": {
+          "kitchen": "Keep the list of checked stations beside the rule",
+          "expert": "Response"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "La maison a ajouté un billet d'examen et raccordé plusieurs postes à ce contrôle. Elle garde les postes manquants dans les travaux à finir. Une règle adoptée dans le cahier ne suffit pas à démontrer son efficacité pendant le service.",
+            "expert": "La réponse fusionnée associe un contrat de receipt à des raccordements Father, Operator et forge. Les limites restantes sont conservées plutôt que transformées en garantie générale. Cette consommation ne prétend pas avoir testé ces chemins."
+          },
+          "en": {
+            "kitchen": "The shared arrangement now includes a review note and checks at several stations. The house still lists stations that are not covered. No independent service trial is established here.",
+            "expert": "The merged response combines the receipt contract with selected admission integrations. Uncovered hosts and multi-host behavior are retained as limitations. No execution of those integrations is claimed by this review."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {
+          "cuisine": "Plusieurs postes sont raccordés, pas toute la maison",
+          "expert": "État actuel"
+        },
+        "en": {
+          "kitchen": "The covered stations are not the whole kitchen",
+          "expert": "Current state"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le changement est inscrit dans le travail commun de la maison. Les passages directs non contrôlés et les échanges entre cuisines restent ouverts. Nous n'avons pas de preuve indépendante du résultat pendant un service réel.",
+            "expert": "État retenu : intégration fusionnée, couverture bornée et écarts explicites. La source est le projet lui-même ; aucune corroboration indépendante n'est comptée. Le fonctionnement terrain et la qualité de l'examen préalable ne sont pas démontrés."
+          },
+          "en": {
+            "kitchen": "The house has accepted the change into its shared work. Some direct stations and coordination between kitchens still fall outside what is established. The house's account is not an independent demonstration.",
+            "expert": "The evidence supports a merged change with known coverage gaps. It comes from the project itself, with no independent corroboration. Neither field effectiveness nor the semantic quality of prior-review evidence has been established."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {
+          "cuisine": "Un billet demandé ici ne contrôle pas le poste voisin",
+          "expert": "Leçon"
+        },
+        "en": {
+          "kitchen": "One station's check cannot speak for every station",
+          "expert": "Lesson"
+        }
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Demande la trace de l'examen là où le remplacement commence. Puis dis quels postes le font réellement. Ne confonds jamais une amélioration de la maison avec la preuve que tous ses postes demandent le billet.",
+            "expert": "Évaluer séparément la preuve d'examen, le raccordement de l'admission et sa couverture. Les essais devraient distinguer refus sans receipt admissible, acceptation avec preuve valide et chemins non interceptés. Cette recommandation reste une piste de recherche, pas une modification automatique du produit."
+          },
+          "en": {
+            "kitchen": "Before equipment changes, the station should ask what was examined. Keep a separate account of stations that do not ask. A useful improvement still has limits that must stay visible.",
+            "expert": "Treat review evidence, admission execution and path coverage as separate claims. A useful test matrix distinguishes invalid evidence, admissible evidence and bypassing hosts without borrowing success from one case for another. The resulting guidance remains research-only."
+          }
+        }
+      ]
+    }
+  ]
+}

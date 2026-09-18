@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr-FR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ARGH dossier</title>
+<link rel="icon" href="/assets/logo.png">
+<link rel="stylesheet" href="/assets/renderer.css?v=1.7.0">
+<script src="/assets/renderer.js?v=1.7.0" defer></script>
+</head>
+<body class="argh-fr argh-reader-simple argh-rendered-page">
+<div class="argh-site" data-argh-renderer="1.7.0" data-argh-route="/dossiers/mechanical-rules-belong-in-deterministic-checks/">
+<header class="argh-top"><div class="argh-topin"><a class="argh-brand" href="/" aria-label="ARGH"><img src="/assets/logo-imagine.png" alt="ARGH — Agent Reliability &amp; Guard for Harnesses"></a><nav class="argh-nav"><a href="/">Accueil</a><a href="/dossiers/" aria-current="page">Dossiers</a><a href="/patterns/">Motifs</a><a href="/projects/">Projets</a><a href="/atlas/">Atlas</a></nav></div></header>
+<main class="argh-wrap"><article class="argh-article" id="entity">
+<div class="argh-q"><span class="argh-mode argh-fr-cuisine">Chargement…</span><span class="argh-mode argh-fr-specialist">Chargement…</span><span class="argh-mode argh-en-kitchen">Loading…</span><span class="argh-mode argh-en-specialist">Loading…</span></div>
+</article></main></div>
+<script>
+const esc=s=>String(s||'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+const q=(o,t='span')=>{o=o||{};const f=o.fr||{},e=o.en||{};return '<'+t+' class="argh-q"><span class="argh-mode argh-fr-cuisine">'+esc(f.cuisine||'')+'</span><span class="argh-mode argh-fr-specialist">'+esc(f.expert||f.specialist||'')+'</span><span class="argh-mode argh-en-kitchen">'+esc(e.kitchen||'')+'</span><span class="argh-mode argh-en-specialist">'+esc(e.expert||e.specialist||'')+'</span></'+t+'>'};
+fetch('/data/entities/dossiers/mechanical-rules-belong-in-deterministic-checks.json').then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(x=>{let h='';for(const [i,s] of (x.slots||[]).entries()){if(i===0){h+=q(s.heading,'h1');for(const b of s.body||[])h+=q(b,'p');}else{h+='<section class="argh-section argh-kind-'+esc(s.kind||'paragraph')+'">'+q(s.heading,'h2');for(const b of s.body||[])h+=q(b,'p');h+='</section>';}}document.getElementById('entity').innerHTML=h;document.title=((x.slots?.[0]?.heading?.fr?.cuisine)||x.slug)+' — ARGH';}).catch(()=>{document.getElementById('entity').innerHTML='<h1>Dossier indisponible</h1>';});
+</script>
+</body></html>

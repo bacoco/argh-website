@@ -1,0 +1,138 @@
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:consent-before-command-capable-config",
+  "type": "dossier",
+  "slug": "consent-before-command-capable-config",
+  "route": "/dossiers/consent-before-command-capable-config/",
+  "template": "dossier",
+  "updated_at": "2026-09-17T13:30:22+00:00",
+  "event_date": "2026-09-16",
+  "date_basis": "incident",
+  "relationships": {
+    "projects": ["Goose"],
+    "patterns": ["permissions", "trust-boundary", "initialization-order"],
+    "dossiers": ["plugin-init-before-control-load", "remote-tools-injected-without-local-ownership"]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {"cuisine": "Le commis allume les fourneaux avant de demander l'accord", "expert": "Une recette exécutable peut produire des effets avant le consentement"},
+        "en": {"kitchen": "The recipe reaches the stove before the chef can say no", "expert": "Command-capable recipes require consent before their first effect"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Une recette venue d'ailleurs arrive sur le poste du commis. D'après un signalement, il commence certains gestes avant de demander l'accord du chef. Une nouvelle façon de faire est proposée, mais sa réparation n'est pas confirmée.",
+          "expert": "Un signalement Goose décrit des commandes de recette lancées avant consentement, notamment via les extensions stdio et les contrôles de retry. Une proposition Desktop cherche à déplacer la décision avant la création de session. Au 16 septembre 2026, le défaut reste rapporté et la proposition ouverte, sans correction fusionnée ni efficacité observée établie."
+        },
+        "en": {
+          "kitchen": "The chef receives a recipe from elsewhere and is asked to approve it after the cook has already begun. That is a reported account. A different order has been proposed, but no confirmed repair closes the story.",
+          "expert": "The Goose record pairs a report of pre-consent recipe execution with an open Desktop proposal. Stdio extensions and retry checks are among the command-capable paths described. Neither a merged correction nor independent confirmation of effective remediation is established at the 16 September 2026 cutoff."
+        }
+      }]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {"cuisine": "Le récit de juillet reçoit une proposition en septembre", "expert": "Chronologie"},
+        "en": {"kitchen": "A July complaint leads to a September proposal", "expert": "Timeline"}
+      },
+      "body": [
+        {
+          "fr": {
+            "cuisine": "Le 8 juillet 2026, un récit signale que certains gestes partent avant l'accord. La vérification oublie une partie de la recette. Une autre manière de la transmettre ne passe même pas par cette vérification.",
+            "expert": "Le signalement du 8 juillet 2026 décrit des commandes dans les extensions stdio et les contrôles de retry, hors du scan existant. Il indique également que le CLI ne lance pas ce scan. Ces assertions restent celles du signalement, non d'une reproduction effectuée ici."
+          },
+          "en": {
+            "kitchen": "An account dated 8 July 2026 describes cooking that begins before permission. Some instructions on the recipe escape the check. Another way of handing in the recipe skips that check altogether.",
+            "expert": "The initial report dates to 8 July 2026. It identifies executable recipe fields outside the existing scan and a CLI path that does not invoke the scan; this review does not independently reproduce those claims."
+          }
+        },
+        {
+          "fr": {
+            "cuisine": "Le 16 septembre, une proposition demande de faire accepter la recette avant d'ouvrir le poste concerné. Elle ne traite pas l'autre entrée. Elle ne promet pas non plus de montrer ou de vérifier tous les gestes écrits.",
+            "expert": "La proposition du 16 septembre 2026 résout la recette côté client, vérifie son acceptation puis demande le consentement avant session/new. Son périmètre est Desktop ; ni le CLI, ni l'affichage exhaustif des commandes, ni le scan de tous les champs exécutables ne sont modifiés."
+          },
+          "en": {
+            "kitchen": "A proposal on 16 September would make the chef accept the recipe before that station opens. The other entrance is left unchanged. Showing and checking every written instruction also remain outside the proposal.",
+            "expert": "On 16 September 2026, the Desktop proposal places client-side recipe resolution and acceptance checks ahead of consent and session creation. Command-display completeness, exhaustive executable-field scanning and the CLI remain explicitly outside its scope."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {"cuisine": "Demander après le premier geste n'est plus empêcher", "expert": "Mécanisme"},
+        "en": {"kitchen": "Permission after the flame cannot prevent the first flame", "expert": "Mechanism"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Le problème raconté n'est pas un ustensile arrivé en retard. C'est une recette que le commis commence avant le oui du chef. Une question posée ensuite ne peut plus empêcher ce premier geste. Le récit ne prouve pas que chaque entrée soit déjà réparée.",
+          "expert": "La frontière concernée est temporelle : une configuration non fiable peut déclencher des commandes avant la décision qui devrait les autoriser. Ce mécanisme rapporté diffère d'un contrôle chargé trop tard ou d'un outil distant impossible à révoquer localement. Déplacer une demande Desktop ne démontre ni la couverture de toutes les commandes, ni la protection des autres chemins."
+        },
+        "en": {
+          "kitchen": "Once the cook has acted on an outside recipe, asking the chef cannot prevent what already happened. That differs from discovering a missing utensil. Changing one entrance also leaves the other entrance unaccounted for.",
+          "expert": "The reported defect concerns authorization before execution, not discovery completeness or local tool ownership. A command-capable setup step can cross the trust boundary before the prompt is shown. The proposed ordering change and comprehensive path coverage are separate properties."
+        }
+      }]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {"cuisine": "Faire lire et accepter la recette avant de mettre le feu", "expert": "Réponse"},
+        "en": {"kitchen": "Keep the stove off while the chef decides", "expert": "Response"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Le chef devrait lire ce qui lui est soumis sans que le commis commence à cuisiner. Sans accord, aucun geste demandé ne doit partir. Il faut aussi vérifier chaque façon d'apporter une recette, pas seulement le comptoir. Ce sont des règles proposées, pas une réparation constatée.",
+          "expert": "Séparer la consultation inerte de la recette de toute opération susceptible de lancer ses commandes. Des essais instrumentés devraient vérifier zéro lancement en cas de refus ou d'absence d'accord, séparément pour Desktop, CLI, extensions stdio et contrôles de retry. Cette recommandation de conception ne constitue pas une validation du correctif proposé."
+        },
+        "en": {
+          "kitchen": "Reading the recipe should leave the stove untouched until the chef agrees. A refusal must mean that none of its instructions have begun. Check every way a recipe can enter, not just the counter. These are proposed precautions, not a witnessed repair.",
+          "expert": "Test the first-effect boundary directly: deny or withhold consent and verify that no recipe command starts. Exercise each command-capable entry path rather than treating a Desktop prompt as universal coverage. The suggested tests have not been executed in this review."
+        }
+      }]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {"cuisine": "La proposition laisse encore une entrée et des gestes à vérifier", "expert": "État actuel"},
+        "en": {"kitchen": "One proposed change does not close every kitchen entrance", "expert": "Current state"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Au 16 septembre 2026, le changement reste proposé, sans réparation confirmée. L'autre entrée et la lecture complète de tous les gestes restent hors de ce changement. Deux papiers sur la même affaire ne font pas deux cuisines ayant refait l'essai.",
+          "expert": "Au cutoff du 16 septembre 2026, le signalement et la proposition restent ouverts dans les observations disponibles. Le CLI ainsi que l'exhaustivité de l'affichage et du scan demeurent hors du périmètre annoncé. Les deux artefacts d'un même problème ne sont pas comptés comme des reproductions indépendantes."
+        },
+        "en": {
+          "kitchen": "By 16 September 2026, the proposed repair had not been confirmed. It left another entrance and the full reading of recipe instructions untouched. A complaint and its proposed answer are not two kitchens independently repeating the event.",
+          "expert": "The snapshot supports a reported issue and a limited, open proposal, not a shipped or observed fix. CLI behavior and complete command visibility and scanning remain unresolved by that proposal. Its relationship to the report is a single incident-response chain, not independent corroboration."
+        }
+      }]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {"cuisine": "Le oui du chef doit arriver avant le premier geste", "expert": "Leçon"},
+        "en": {"kitchen": "The chef's answer belongs before cooking begins", "expert": "Lesson"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Une autorisation donnée après le début de la préparation ne protège pas son premier geste. Demander à temps, montrer la bonne recette et surveiller toutes les entrées sont trois vérifications différentes. Le récit motive cette prudence sans prouver qu'elle soit déjà appliquée.",
+          "expert": "Le consentement doit précéder l'effet qu'il autorise. Antériorité de la décision, information présentée et couverture des chemins doivent être évaluées séparément. Ce cas rapporté justifie l'invariant sans démontrer son déploiement."
+        },
+        "en": {
+          "kitchen": "The cook needs the answer before acting on the recipe. Asking at the right time is not the same as showing every instruction or watching every entrance. An unconfirmed account can teach that distinction without proving a repair.",
+          "expert": "Authorization has a temporal requirement as well as a scope requirement. Correct prompt ordering alone does not establish complete command disclosure or enforcement across every entry path. The lesson remains a design inference from a reported incident and an unmerged proposal."
+        }
+      }]
+    }
+  ]
+}

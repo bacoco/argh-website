@@ -1,0 +1,91 @@
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:task-snapshot-needs-coherent-ordering",
+  "type": "dossier",
+  "slug": "task-snapshot-needs-coherent-ordering",
+  "route": "/dossiers/task-snapshot-needs-coherent-ordering/",
+  "template": "dossier",
+  "updated_at": "2026-09-18T02:08:00+00:00",
+  "event_date": "2026-08-12",
+  "date_basis": "incident",
+  "relationships": {
+    "projects": [],
+    "patterns": ["checkpoint", "state-split", "protocols"],
+    "dossiers": []
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {"cuisine": "Trois carnets racontent la même commande à des heures différentes", "expert": "Une tâche distribuée a besoin d’un ordre commun entre statuts, messages et artefacts"},
+        "en": {"kitchen": "Three order books tell the same service at different times", "expert": "A distributed task needs common ordering across status, messages, and artifacts"}
+      },
+      "body": [{
+        "fr": {"cuisine": "Un commis note que le plat est prêt, un autre ajoute ensuite une nouvelle préparation, et le chef relit les deux sans savoir lequel vient d’abord. Tout paraît juste séparément. Ensemble, l’histoire devient ambiguë. Une solution est proposée, mais rien n’établit qu’elle soit déjà servie.", "expert": "Une PR A2A ouverte propose une timeline dans le snapshot de tâche et des générations monotones afin de conserver l’ordre entre messages, progressions et artefacts. La proposition réutilise l’événement de statut existant au lieu d’ajouter un nouveau type de flux. Elle n’est pas établie comme fusionnée ou livrée dans le bundle observé."},
+        "en": {"kitchen": "One cook marks the dish ready, another later adds fresh preparation, and the chef cannot tell which note came first. Each book looks right alone. Together, the story is ambiguous. A remedy is proposed, but nothing shows it has reached service.", "expert": "An open A2A pull request proposes a task-snapshot timeline plus monotonic generations to preserve ordering across messages, progress, and artifacts. It reuses the existing status event rather than adding another stream event type. The observed bundle does not establish that the proposal has merged or shipped."}
+      }]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {"cuisine": "Les billets sont bons, mais leur ordre manque", "expert": "Chronologie"},
+        "en": {"kitchen": "The notes are right, but their order is missing", "expert": "Timeline"}
+      },
+      "body": [
+        {"fr": {"cuisine": "La maison suit une même commande avec plusieurs billets : ce qui a été demandé, ce qui avance et ce qui est posé sur le passe.", "expert": "Le snapshot de tâche regroupe plusieurs catégories d’information liées à une même exécution."}, "en": {"kitchen": "The house follows one order with several notes: what was requested, what is moving, and what reached the pass.", "expert": "The task snapshot aggregates several classes of information about one execution."}},
+        {"fr": {"cuisine": "Quand deux billets changent presque ensemble, leur contenu reste lisible mais leur succession peut devenir incertaine.", "expert": "Sans relation d’ordre explicite, des messages, statuts et artefacts individuellement valides peuvent être difficiles à réconcilier."}, "en": {"kitchen": "When two notes change almost together, each remains readable while their sequence becomes uncertain.", "expert": "Without explicit ordering, individually valid messages, statuses, and artifacts can be hard to reconcile."}},
+        {"fr": {"cuisine": "Une proposition numérote les passages et tient un seul carnet de marche pour les réunir. Elle reste une proposition ouverte.", "expert": "La PR propose une timeline et des générations monotones. Son intégration n’est pas établie."}, "en": {"kitchen": "A proposal numbers the hand-offs and keeps one running book for them. It remains an open proposal.", "expert": "The PR proposes a timeline and monotonic generations. Integration is not established."}}
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {"cuisine": "Chaque carnet peut être juste sans raconter la même minute", "expert": "Mécanisme"},
+        "en": {"kitchen": "Each book can be right while describing a different minute", "expert": "Mechanism"}
+      },
+      "body": [{
+        "fr": {"cuisine": "Le problème n’est pas qu’un billet mente. C’est qu’ils n’ont pas la même horloge. Quand le chef doit reconstruire la commande, il peut réunir des pages exactes qui ne décrivent pas le même moment.", "expert": "Le défaut potentiel est un state split temporel : plusieurs composantes du snapshot évoluent sous des séquences implicites. Leur validité locale ne suffit pas à établir leur cohérence mutuelle. Une relation d’ordre commune rend ce lien vérifiable."},
+        "en": {"kitchen": "No note has to be wrong. The trouble is that the books do not share a clock. The chef can combine accurate pages that describe different moments of the same order.", "expert": "The potential failure is a temporal state split: snapshot components evolve under implicit sequences. Local validity does not establish mutual coherence. A shared ordering relation makes that relationship testable."}
+      }]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {"cuisine": "Numéroter les passages avant de recomposer l’histoire", "expert": "Réponse"},
+        "en": {"kitchen": "Number the hand-offs before rebuilding the story", "expert": "Response"}
+      },
+      "body": [{
+        "fr": {"cuisine": "Chaque changement reçoit sa place dans la marche du service. Le chef peut alors voir qu’une assiette appartient à une étape plus récente qu’un billet. Cette façon de faire est proposée, pas encore établie en service.", "expert": "La proposition A2A associe une timeline au snapshot et des générations monotones aux artefacts, tout en conservant le canal de statut existant. La compatibilité finale peut encore évoluer avant intégration."},
+        "en": {"kitchen": "Each change gets a place in the service sequence. The chef can then see that one plate belongs to a later step than one note. This approach is proposed, not proven in service.", "expert": "The A2A proposal adds a snapshot timeline and monotonic artifact generations while retaining the existing status channel. Final compatibility choices may still change before integration."}
+      }]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {"cuisine": "Le nouveau carnet reste sur la table à dessin", "expert": "État actuel"},
+        "en": {"kitchen": "The new order book is still on the drawing table", "expert": "Current state"}
+      },
+      "body": [{
+        "fr": {"cuisine": "Le besoin est décrit et une façon de l’adresser est écrite. Rien dans les éléments observés ne permet d’affirmer que la maison l’a adoptée ou qu’elle évite déjà les confusions.", "expert": "L’état de preuve reste une PR ouverte observée dans le bundle du 16 septembre 2026. Aucune fusion, livraison ni mesure d’efficacité n’est établie par cette veille."},
+        "en": {"kitchen": "The need is described and a remedy has been written down. The observed material does not show that the house adopted it or that confusion is already prevented.", "expert": "Evidence remains an open pull request observed in the September 16, 2026 bundle. This watch establishes no merge, release, or measured effectiveness."}
+      }]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {"cuisine": "Une commande n’a qu’une histoire, même si plusieurs carnets la suivent", "expert": "Leçon"},
+        "en": {"kitchen": "One order needs one history even when several books follow it", "expert": "Lesson"}
+      },
+      "body": [{
+        "fr": {"cuisine": "Plusieurs billets peuvent être exacts et pourtant mal s’emboîter. Pour reprendre l’histoire sans deviner, la brigade doit savoir dans quel ordre les choses ont changé.", "expert": "Un snapshot cohérent exige un contrat d’ordre entre les objets qui décrivent la même tâche. La sérialisation seule ne doit pas être interprétée comme cet ordre si le contrat ne le garantit pas."},
+        "en": {"kitchen": "Several notes can be accurate and still fit together badly. To rebuild the story without guessing, the brigade needs to know the order in which things changed.", "expert": "A coherent snapshot needs an ordering contract across objects that describe the same task. Serialization order must not be treated as that contract unless it is guaranteed."}
+      }]
+    }
+  ]
+}

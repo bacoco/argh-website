@@ -1,0 +1,91 @@
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:append-only-snapshots-need-retention-bound",
+  "type": "dossier",
+  "slug": "append-only-snapshots-need-retention-bound",
+  "route": "/dossiers/append-only-snapshots-need-retention-bound/",
+  "template": "dossier",
+  "updated_at": "2026-09-18T02:18:00+00:00",
+  "event_date": "2026-06-22",
+  "date_basis": "incident",
+  "relationships": {
+    "projects": [],
+    "patterns": ["budget", "compaction"],
+    "dossiers": ["observability-became-outage"]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {"cuisine": "La réserve garde une copie entière après chaque changement", "expert": "Des snapshots complets append-only sans rétention bornée peuvent saturer le stockage"},
+        "en": {"kitchen": "The pantry keeps a full copy after every change", "expert": "Unbounded append-only full snapshots can exhaust storage"}
+      },
+      "body": [{
+        "fr": {"cuisine": "À chaque correction d’une commande, la brigade range une nouvelle boîte complète sans jeter l’ancienne. Deux réserves décrites dans le signalement finissent près de 13 Go. Quand les étagères sont pleines, le service devient inutilisable. Aucun remède livré n’est établi dans les éléments observés.", "expert": "Une issue OpenCode rapporte deux bases proches de 13 Go, dominées par des snapshots complets `message.updated` conservés sans TTL, compactage ni plafond. Le remplissage du disque peut rendre une instance inutilisable. L’issue est ouverte dans le bundle observé et aucune correction fusionnée n’y est établie."},
+        "en": {"kitchen": "Every time an order changes, the brigade stores another complete box and keeps the old one too. Two reported pantries grow to roughly 13 GB. When the shelves fill, service becomes unusable. The observed material establishes no shipped remedy.", "expert": "An OpenCode issue reports two databases near 13 GB, dominated by complete `message.updated` snapshots retained without TTL, compaction, or a cap. Disk exhaustion can make a persistent instance unusable. The observed bundle shows the issue open and establishes no merged fix."}
+      }]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {"cuisine": "Les boîtes s’empilent jusqu’au plafond", "expert": "Chronologie"},
+        "en": {"kitchen": "The boxes stack up to the ceiling", "expert": "Timeline"}
+      },
+      "body": [
+        {"fr": {"cuisine": "Une commande change. La brigade garde la nouvelle boîte complète et conserve aussi la précédente.", "expert": "Chaque mise à jour peut ajouter un snapshot complet à un journal durable."}, "en": {"kitchen": "An order changes. The brigade stores the new full box and keeps the previous one as well.", "expert": "Each update can append a complete snapshot to durable history."}},
+        {"fr": {"cuisine": "Les services passent, mais aucune règle observée ne dit quand retirer les anciennes boîtes.", "expert": "Le signalement décrit l’absence de TTL, de compactage et de plafond de rétention."}, "en": {"kitchen": "Services pass, yet the observed setup gives no rule for removing old boxes.", "expert": "The report describes no TTL, compaction, or retention cap."}},
+        {"fr": {"cuisine": "Deux réserves rapportées approchent 13 Go, puis le manque de place empêche la maison de fonctionner normalement.", "expert": "Deux instances rapportées approchent 13 Go et la saturation du volume rend l’instance inutilisable."}, "en": {"kitchen": "Two reported pantries approach 13 GB, and lack of room prevents the house from operating normally.", "expert": "Two reported instances approach 13 GB, and volume exhaustion makes the instance unusable."}}
+      ]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {"cuisine": "Se souvenir de tout finit par prendre toute la réserve", "expert": "Mécanisme"},
+        "en": {"kitchen": "Remembering everything eventually takes the whole pantry", "expert": "Mechanism"}
+      },
+      "body": [{
+        "fr": {"cuisine": "La maison veut pouvoir retrouver les anciennes commandes, mais elle paie ce souvenir avec des copies entières. Plus une commande change, plus elle occupe d’étagères. Sans règle de sortie, la mémoire du service finit par chasser le service lui-même.", "expert": "Le coût vient de la conservation de versions complètes plutôt que d’un état courant borné ou d’un historique compacté. La croissance suit le nombre de mises à jour et la taille des snapshots. Sans contrat de rétention, une propriété utile pour le rejeu peut devenir une défaillance de ressources."},
+        "en": {"kitchen": "The house wants old orders to remain recoverable, but pays for that memory with complete copies. The more an order changes, the more shelf space it consumes. Without a discard rule, service history eventually crowds out service itself.", "expert": "The cost comes from retaining full versions rather than a bounded current state or compacted history. Growth follows update count and snapshot size. Without a retention contract, replayability can become a resource failure."}
+      }]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {"cuisine": "Décider combien de boîtes la maison doit vraiment garder", "expert": "Réponse"},
+        "en": {"kitchen": "Decide how many boxes the house truly needs to keep", "expert": "Response"}
+      },
+      "body": [{
+        "fr": {"cuisine": "Avant de jeter quoi que ce soit, le chef décide combien d’anciens services doivent rester consultables. Ensuite seulement, il peut retirer, regrouper ou limiter les boîtes sans perdre ce qui est nécessaire. Cette règle est une leçon proposée, pas une réparation déjà livrée.", "expert": "Définir d’abord le contrat réel de rejeu et d’audit, puis borner volume, durée ou profondeur de versions, ou compacter les snapshots. Le finding ne permet pas de choisir automatiquement entre TTL, compactage ou plafond de versions. Aucun correctif fusionné n’est établi."},
+        "en": {"kitchen": "Before discarding anything, the chef decides how much past service must remain recoverable. Only then can old boxes be removed, combined, or capped without losing what the house needs. This is a proposed lesson, not an established shipped repair.", "expert": "Define the required replay and audit contract first, then bound volume, age, or version depth, or compact snapshots. The finding does not justify choosing automatically between TTL, compaction, or a version cap. No merged fix is established."}
+      }]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {"cuisine": "Le problème est signalé, la règle de rangement reste à prouver", "expert": "État actuel"},
+        "en": {"kitchen": "The problem is reported; the storage rule remains unproven", "expert": "Current state"}
+      },
+      "body": [{
+        "fr": {"cuisine": "Le signalement décrit deux réserves saturées et une maison devenue inutilisable. Rien dans cette veille ne prouve une réparation ni sa tenue dans le temps. Le précédent d’une autre maison montre seulement qu’un grand registre doit recevoir un budget.", "expert": "L’état de preuve est un signalement OpenCode ouvert avec deux mesures d’instance. Il n’existe dans ce bundle ni reproduction indépendante ni correction fusionnée. Le précédent Codex sur la télémétrie confirme l’utilité d’un budget de persistance, pas la cause ni le remède exacts de cet incident."},
+        "en": {"kitchen": "The report describes two saturated pantries and a house made unusable. This watch proves neither a repair nor its durability. Another house’s earlier case shows only that large records need a budget.", "expert": "Evidence is an open OpenCode report with measurements from two instances. The bundle contains no independent reproduction and no merged correction. The Codex telemetry precedent supports budgeting persistent data, not the exact cause or remedy of this incident."}
+      }]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {"cuisine": "Garder l’histoire exige aussi de savoir quand elle quitte les étagères", "expert": "Leçon"},
+        "en": {"kitchen": "Keeping history also means knowing when it leaves the shelves", "expert": "Lesson"}
+      },
+      "body": [{
+        "fr": {"cuisine": "Une maison peut vouloir tout retrouver sans pouvoir tout garder pour toujours. Le bon rangement conserve ce qui sert encore et annonce clairement ce qui peut partir.", "expert": "Append-only ne signifie pas rétention infinie. Toute histoire durable de snapshots complets a besoin d’une borne explicite compatible avec ses garanties de rejeu et d’audit."},
+        "en": {"kitchen": "A house may want every old order recoverable without being able to keep every box forever. Good storage preserves what is still required and clearly defines what may leave.", "expert": "Append-only does not imply infinite retention. Durable full-snapshot history needs an explicit bound compatible with its replay and audit guarantees."}
+      }]
+    }
+  ]
+}

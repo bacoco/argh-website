@@ -1,0 +1,126 @@
+{
+  "schema": "argh/public-entity/v1",
+  "id": "dossier:mechanical-rules-belong-in-deterministic-checks",
+  "type": "dossier",
+  "slug": "mechanical-rules-belong-in-deterministic-checks",
+  "route": "/dossiers/mechanical-rules-belong-in-deterministic-checks/",
+  "template": "dossier",
+  "updated_at": "2026-09-17T14:38:00+00:00",
+  "event_date": "2026-09-15",
+  "date_basis": "incident",
+  "relationships": {
+    "projects": [],
+    "patterns": ["testing", "verification"],
+    "dossiers": ["cline-hooks-control-layer", "superpowers-skills-methodology-rise"]
+  },
+  "slots": [
+    {
+      "id": "hero",
+      "kind": "hero",
+      "heading": {
+        "fr": {"cuisine": "Le gabarit compte les parts, le chef juge le repas", "expert": "mattpocock/skills : séparer contrôles mécaniques et revue contextuelle"},
+        "en": {"kitchen": "Let the portion guide count; keep the chef for the meal", "expert": "mattpocock/skills separates fixed checks from contextual review"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Imaginez le chef appelé pour recompter les mêmes parts à chaque assiette. Un gabarit pourrait s'en charger, sans décider si le repas convient au client. La méthode a été acceptée ; son usage réel et ses gains restent à vérifier.",
+          "expert": "Le bundle du 16 septembre décrit une modification de méthode fusionnée dans mattpocock/skills le 15 septembre 2026. Les motifs fixes de syntaxe, d'import ou d'emplacement sont orientés vers des contrôles déterministes ; le LLM conserve les jugements de cohérence et d'intention. Cette fusion ne prouve ni des contrôles déployés chez les utilisateurs, ni des économies mesurées."
+        },
+        "en": {
+          "kitchen": "Picture a chef being asked to count the same portions again and again. A portion guide could do that job, leaving the chef to judge the meal. The method is accepted, but actual use and savings have not been established.",
+          "expert": "A merged method change in mattpocock/skills assigns fixed syntactic, import and location rules to deterministic checks while retaining context-dependent review for the LLM. The recorded change is dated 15 September 2026 in the next day's snapshot. It establishes a method update, not downstream deployment or measured savings."
+        }
+      }]
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "heading": {
+        "fr": {"cuisine": "La nouvelle répartition entre dans le cahier", "expert": "Chronologie"},
+        "en": {"kitchen": "The notebook changes before the service can be measured", "expert": "Timeline"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Le 15 septembre, la maison accepte de mieux répartir les vérifications. Le cahier distingue ce que le gabarit peut compter et ce que le chef doit apprécier. Nous n'avons pas encore le bilan d'un service appliquant cette méthode.",
+          "expert": "Le matériau examiné date la fusion du changement de méthode du 15 septembre. Il ne documente pas la mise en place de chaque contrôle dans des dépôts consommateurs. Le passage de l'instruction à un contrôle exécuté reste une étape distincte."
+        },
+        "en": {
+          "kitchen": "On 15 September, the house accepted a different way to divide the checking work. The notebook gives counting to the guide and judgment to the chef. We have no service results showing what that change achieved.",
+          "expert": "The 15 September merge is the dated event supported by the snapshot. Individual consumers' check implementations and execution are not established. Adoption must not be inferred from the presence of an updated instruction."
+        }
+      }]
+    },
+    {
+      "id": "mechanism",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {"cuisine": "Compter une part ne dit pas si le menu convient", "expert": "Mécanisme"},
+        "en": {"kitchen": "A correct portion does not settle the whole order", "expert": "Mechanism"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Le nombre de parts peut suivre une règle précise. Savoir si l'assiette répond à la commande demande de comprendre le repas attendu. Confier ces deux questions au même regard ne les rend pas identiques.",
+          "expert": "Le critère proposé est la nature de la décision : un motif fixe peut être spécifié, alors qu'une intention ou une cohérence dépend du contexte. Une règle impérative n'est pas nécessairement entièrement mécanisable. Le finding ne décrit pas une cause racine d'incident ni une automatisation de toute la revue."
+        },
+        "en": {
+          "kitchen": "A portion guide answers a narrow question about the plate. It cannot tell whether the guest ordered that meal. The chef's judgment remains necessary even when every portion is counted correctly.",
+          "expert": "Computable pattern checks and contextual judgments have different information requirements. The method separates them rather than replacing semantic review wholesale. Mandatory enforcement, inline checklists and deterministic predicates are not interchangeable mechanisms."
+        }
+      }]
+    },
+    {
+      "id": "response",
+      "kind": "paragraph",
+      "heading": {
+        "fr": {"cuisine": "Donner au gabarit une question précise", "expert": "Réponse"},
+        "en": {"kitchen": "Give the guide a bounded job, not the chef's whole role", "expert": "Response"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Écrivez exactement ce que le gabarit doit vérifier. Gardez au chef les questions que ce repère ne sait pas résoudre. Avant de retirer une consigne du cahier, vérifiez que le nouveau contrôle est réellement utilisé.",
+          "expert": "La méthode fusionnée oriente les motifs mécaniques vers des contrôles automatiques et maintient les décisions contextuelles dans les instructions de revue. Pour son application, vérifier l'exécution du contrôle et ses exceptions avant de retirer la consigne correspondante constitue une recommandation d'ARGH. Cette recommandation n'est pas une implémentation amont attestée."
+        },
+        "en": {
+          "kitchen": "Tell the guide which portion rule it is checking, and nothing more. Questions about the guest's meal stay with the chef. Check that the guide is actually used before removing the old reminder.",
+          "expert": "The upstream method recommends deterministic handling of fixed rules and semantic handling of context. ARGH's derived guidance is to test execution and contextual exceptions before retiring a review instruction. That guidance remains a research recommendation, not a claim about delivered upstream tooling."
+        }
+      }]
+    },
+    {
+      "id": "current",
+      "kind": "status",
+      "heading": {
+        "fr": {"cuisine": "Le cahier ne mesure pas encore le temps gagné", "expert": "État actuel"},
+        "en": {"kitchen": "An accepted method comes without a measured saving", "expert": "Current state"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "La nouvelle méthode est acceptée dans le cahier. Le récit disponible ne mesure ni le temps gagné ni les bonnes assiettes refusées par erreur ailleurs. Nous n'avons pas de témoin indépendant confirmant ces bénéfices.",
+          "expert": "L'état établi est une évolution de méthode fusionnée, soutenue par un seul artefact du projet. Le bundle ne mesure pas les économies ni les faux positifs dans d'autres dépôts et ne fournit pas de corroboration indépendante de l'efficacité. Les résultats d'un autre workflow de revue ne peuvent pas combler cette lacune."
+        },
+        "en": {
+          "kitchen": "The house has accepted the method, not proved its savings. The available account does not measure saved time or good plates rejected by mistake in other kitchens. No independent service report establishes those benefits.",
+          "expert": "One upstream artifact supports the merged method change. Savings, false-positive rates and effectiveness in other repositories are not established by this material. Measurements from a different review workflow cannot be transferred to this one."
+        }
+      }]
+    },
+    {
+      "id": "lesson",
+      "kind": "lesson",
+      "heading": {
+        "fr": {"cuisine": "Le bon gabarit aide le chef sans goûter à sa place", "expert": "Leçon"},
+        "en": {"kitchen": "A useful guide leaves room for the chef's judgment", "expert": "Lesson"}
+      },
+      "body": [{
+        "fr": {
+          "cuisine": "Un gabarit bien choisi évite de rediscuter une règle précise. Il ne remplace pas le chef devant une commande particulière. Mesurez le service avant d'affirmer que cette répartition fait mieux.",
+          "expert": "La leçon est de choisir l'exécutant d'après ce que la règle peut réellement spécifier, et non de déléguer toute vérification à une seule méthode. Un contrôle mécanique ne prouve pas la justesse d'une décision contextuelle. Le bénéfice de cette séparation doit encore être mesuré dans chaque contexte d'application."
+        },
+        "en": {
+          "kitchen": "Use the guide for the portion rule it can answer. Keep the chef where the order needs judgment. A better division of work is a proposal to test, not a saving to announce in advance.",
+          "expert": "Use deterministic checks for bounded predicates without allowing their success to stand in for contextual correctness. Keep semantic review where the specification does not capture the decision. The division is transferable guidance whose effectiveness still requires local measurement."
+        }
+      }]
+    }
+  ]
+}
