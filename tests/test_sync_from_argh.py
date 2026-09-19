@@ -92,6 +92,44 @@ class SyncTests(unittest.TestCase):
                 sync(source, website, "a" * 40, "2026-09-16T12:00:00Z")
             self.assertEqual(marker.read_text(), "unchanged")
 
+    def test_sync_copies_latest_generated_teaching_card_image(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            source = root / "source"
+            visuals = root / "visuals"
+            website = root / "website"
+            source_store(source, [entity("dossier", "one")])
+            revision = visuals / "card-one" / "r2"
+            revision.mkdir(parents=True)
+            image = b"fake-jpeg-bytes"
+            (revision / "image.jpg").write_bytes(image)
+            (revision / "contexte.json").write_text(json.dumps({
+                "schema": "argh/visual-brief/v1",
+                "teaching_card": {"public_entity_slug": "one"},
+            }) + "\n")
+            (revision / "generation.json").write_text(json.dumps({
+                "schema": "argh/visual-generation/v1",
+                "generated_at": "2026-09-19T07:00:00+02:00",
+                "outcome": "generated",
+                "image": {
+                    "path": "image.jpg",
+                    "sha256": hashlib.sha256(image).hexdigest(),
+                    "bytes": len(image),
+                },
+            }) + "\n")
+
+            result = sync(
+                source, website, "a" * 40, "2026-09-19T07:00:00Z",
+                source_visuals=visuals,
+            )
+
+            self.assertTrue(result["visuals_changed"])
+            self.assertEqual(result["visual_count"], 1)
+            self.assertEqual(
+                (website / "assets/illustrations/dossier-one-640.jpg").read_bytes(),
+                image,
+            )
+
     def test_sync_copies_public_navigation_from_argh(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
