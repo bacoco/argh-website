@@ -22,6 +22,10 @@ NAVIGATION_FILES = {
     "taxonomy.json": "argh/public-navigation/v1",
     "visual-taxonomy.json": "argh/visual-taxonomy/v1",
 }
+VISUAL_GENERATION_SCHEMA = "argh/visual-generation/v1"
+VISUAL_BRIEF_SCHEMA = "argh/visual-brief/v1"
+PUBLIC_SLUG = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")
+VISUAL_EXTENSIONS = {".webp", ".jpg", ".jpeg", ".png"}
 
 
 class SyncError(ValueError):
@@ -130,6 +134,66 @@ def _sync_navigation(source: Path, website: Path) -> bool:
     return True
 
 
+def _sync_visuals(source_visuals: Path, website: Path) -> dict[str, int | bool]:
+    """Copy only generated teaching-card images into the public illustration set."""
+    selected: dict[str, tuple[str, Path, bytes]] = {}
+    for generation_path in sorted(source_visuals.glob("*/*/generation.json")):
+        try:
+            generation = json.loads(generation_path.read_text(encoding="utf-8"))
+            context = json.loads((generation_path.parent / "contexte.json").read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            raise SyncError(f"invalid visual brief near {generation_path}") from exc
+        if generation.get("schema") != VISUAL_GENERATION_SCHEMA:
+            raise SyncError(f"wrong visual generation schema: {generation_path}")
+        if context.get("schema") != VISUAL_BRIEF_SCHEMA:
+            raise SyncError(f"wrong visual brief schema: {generation_path.parent}")
+        teaching = context.get("teaching_card")
+        if generation.get("outcome") != "generated" or not isinstance(teaching, dict):
+            continue
+        slug = teaching.get("public_entity_slug")
+        if not isinstance(slug, str) or not PUBLIC_SLUG.fullmatch(slug):
+            raise SyncError(f"invalid teaching-card public slug: {generation_path}")
+        image = generation.get("image")
+        if not isinstance(image, dict):
+            raise SyncError(f"invalid visual generation image record: {generation_path}")
+        rel = image.get("path")
+        if not isinstance(rel, str):
+            raise SyncError(f"generated visual has no image path: {generation_path}")
+        parsed = Path(rel)
+        if parsed.is_absolute() or ".." in parsed.parts or len(parsed.parts) != 1:
+            raise SyncError(f"unsafe visual image path: {generation_path}")
+        image_path = generation_path.parent / parsed
+        if image_path.suffix.lower() not in VISUAL_EXTENSIONS:
+            raise SyncError(f"unsupported visual image extension: {image_path}")
+        raw = image_path.read_bytes()
+        if hashlib.sha256(raw).hexdigest() != image.get("sha256") or len(raw) != image.get("bytes"):
+            raise SyncError(f"visual image receipt mismatch: {image_path}")
+        stamp = str(generation.get("generated_at") or "")
+        previous = selected.get(slug)
+        if previous is None or stamp > previous[0]:
+            selected[slug] = (stamp, image_path, raw)
+
+    target_root = website / "assets" / "illustrations"
+    target_root.mkdir(parents=True, exist_ok=True)
+    desired: dict[Path, bytes] = {}
+    for slug, (_, source, raw) in selected.items():
+        desired[target_root / f"dossier-{slug}-640{source.suffix.lower()}"] = raw
+
+    managed = {
+        path for path in target_root.glob("dossier-*-640.*")
+        if path.suffix.lower() in VISUAL_EXTENSIONS
+    }
+    changed = False
+    for stale in sorted(managed - set(desired)):
+        stale.unlink()
+        changed = True
+    for path, raw in desired.items():
+        if not path.exists() or path.read_bytes() != raw:
+            path.write_bytes(raw)
+            changed = True
+    return {"visuals_changed": changed, "visual_count": len(desired)}
+
+
 def _index_entries(root: Path) -> dict[str, str] | None:
     """Read a projection index when it is a usable comparison baseline."""
     try:
@@ -216,7 +280,8 @@ def _update_activity(
 
 
 def sync(source: Path, website: Path, source_head: str, generated_at: str,
-         source_navigation: Path | None = None) -> dict[str, object]:
+         source_navigation: Path | None = None,
+         source_visuals: Path | None = None) -> dict[str, object]:
     if not SHA.fullmatch(source_head):
         raise SyncError("source_head must be a full Git SHA")
     if not generated_at.strip():
@@ -276,9 +341,13 @@ def sync(source: Path, website: Path, source_head: str, generated_at: str,
     navigation_changed = (
         _sync_navigation(source_navigation, website) if source_navigation is not None else False
     )
+    visuals = (
+        _sync_visuals(source_visuals, website)
+        if source_visuals is not None else {"visuals_changed": False, "visual_count": 0}
+    )
     return {"source_head": source_head, "data_changed": changed,
             "meta_changed": meta_changed, "navigation_changed": navigation_changed,
-            **activity, **counts}
+            **visuals, **activity, **counts}
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -288,10 +357,11 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--source-head", required=True)
     parser.add_argument("--generated-at", required=True)
     parser.add_argument("--source-navigation", type=Path)
+    parser.add_argument("--source-visuals", type=Path)
     args = parser.parse_args(argv)
     try:
         print(json.dumps(sync(args.source, args.website, args.source_head, args.generated_at,
-                              args.source_navigation),
+                              args.source_navigation, args.source_visuals),
                          ensure_ascii=False, sort_keys=True))
         return 0
     except (OSError, ValueError, TypeError) as exc:
