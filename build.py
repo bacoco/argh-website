@@ -97,7 +97,7 @@ def header(section=""):
       '<button type="button" data-lang="fr">FR</button></div></div></div></header>')
 
 FOOT = ('<footer class="argh-foot"><span>ARGH — Agent Reliability &amp; Guard for Harnesses</span>'
-        '<a href="https://github.com/bacoco/argh-website">GitHub</a></footer>')
+        '<a href="https://github.com/bacoco/loriq-argh-website">GitHub</a></footer>')
 
 def page(title, body, desc=""):
     return ("<!doctype html>\n<html lang=\"fr-FR\">\n<head>\n"
