@@ -69,6 +69,32 @@ def visual(image, cls, loading="lazy"):
             'aria-hidden="true" loading="%s" decoding="async"%s></picture>'
             % (esc(cls), esc(image), loading, priority))
 
+def teaching_visual(image, alt):
+    if not image:
+        return ""
+    return ('<figure class="argh-teaching-card"><img src="%s" width="1536" height="1024" '
+            'alt="%s" loading="eager" decoding="async" fetchpriority="high"></figure>'
+            % (esc(image), esc(alt)))
+
+
+def is_teaching_card_image(image):
+    return bool(image and image.startswith("/assets/illustrations/dossier-"))
+
+
+def teaching_alt(e):
+    hero = slot_of(e, "hero")
+    lesson = slot_of(e, "lesson")
+    response = slot_of(e, "response")
+    parts = []
+    if hero:
+        parts.append(hero["heading"]["fr"]["cuisine"])
+    if response and response.get("body"):
+        parts.append(response["body"][0]["fr"]["cuisine"])
+    if lesson and lesson.get("body"):
+        parts.append(lesson["body"][0]["fr"]["cuisine"])
+    return " ".join(part.strip() for part in parts if isinstance(part, str) and part.strip())
+
+
 def nav(href, section, body, current):
     cur = ' aria-current="page"' if current == section else ""
     return '<a href="%s"%s>%s</a>' % (esc(href), cur, body)
@@ -189,13 +215,18 @@ def classification_badge(label, href):
 def detail(e, store):
     h = slot_of(e, "hero")
     image, label, href = entity_visual(e, store)
+    teaching = e.get("type") == "dossier" and is_teaching_card_image(image)
+    hero_class = "argh-detail-hero argh-detail-hero-text-only" if teaching else "argh-detail-hero"
+    hero_visual = "" if teaching else visual(image, "argh-detail-visual", "eager")
+    card = teaching_visual(image, teaching_alt(e)) if teaching else ""
     body = ('<div class="argh-site" data-argh-renderer="%s" data-argh-route="%s">%s'
             '<main class="argh-wrap"><article class="argh-article">'
-            '<div class="argh-detail-hero"><div class="argh-detail-hero-copy">%s%s%s%s</div>%s</div>%s'
-            % (VERSION, esc(e["route"]), header(PLURAL[e["type"]]), context(e["type"]),
-               quad(h["heading"], "h1"), quad((h.get("body") or [{}])[0], "p", "argh-standfirst"),
-               classification_badge(label, href), visual(image, "argh-detail-visual", "eager"),
-               relationships(e, store)))
+            '<div class="%s"><div class="argh-detail-hero-copy">%s%s%s%s</div>%s</div>%s%s'
+            % (VERSION, esc(e["route"]), header(PLURAL[e["type"]]), hero_class,
+               context(e["type"]), quad(h["heading"], "h1"),
+               quad((h.get("body") or [{}])[0], "p", "argh-standfirst"),
+               classification_badge(label, href), hero_visual,
+               relationships(e, store), card))
     for s in e.get("slots", []):
         if s.get("id") != "hero": body += render_slot(s)
     if e.get("type") != "dossier": body += related(e, store)
