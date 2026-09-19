@@ -39,7 +39,9 @@ runs `scripts/sync_from_argh.py`, the site tests, `build.py` and
 `scripts/verify_projection.py`, then commits the generated projection to `main`.
 The sync also imports validated generated teaching-card images from ARGH visual briefs.
 A dossier-specific asset named `dossier-<slug>-640.*` takes precedence over the
-generic taxonomy illustration on that dossier page. It may write no other public
+generic taxonomy illustration on that dossier page. Teaching-card assets are rendered
+full-width below the dossier introduction so their problem, solution and final rule
+remain legible; they are never squeezed into the ordinary 300 px decorative thumbnail. It may write no other public
 repository and never authors editorial prose here.
 
 The ARGH scheduler performs the deterministic projection directly from the active
