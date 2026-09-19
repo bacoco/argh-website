@@ -33,5 +33,25 @@ class CustomDossierVisualTests(unittest.TestCase):
             )
 
 
+    def test_teaching_card_renders_full_width_and_accessible(self):
+        entity = {
+            "type": "dossier",
+            "slug": "human-gate-timeout",
+            "slots": [
+                {"id": "hero", "heading": {"fr": {"cuisine": "Le chrono décide"}, "en": {}}, "body": []},
+                {"id": "response", "heading": {}, "body": [{"fr": {"cuisine": "Le plat attend le chef."}, "en": {}}]},
+                {"id": "lesson", "heading": {}, "body": [{"fr": {"cuisine": "Le silence ne vaut pas oui."}, "en": {}}]},
+            ],
+        }
+        image = "/assets/illustrations/dossier-human-gate-timeout-640.webp"
+        self.assertTrue(build.is_teaching_card_image(image))
+        alt = build.teaching_alt(entity)
+        self.assertIn("Le chrono décide", alt)
+        self.assertIn("Le plat attend le chef.", alt)
+        rendered = build.teaching_visual(image, alt)
+        self.assertIn('class="argh-teaching-card"', rendered)
+        self.assertIn('alt="Le chrono décide Le plat attend le chef. Le silence ne vaut pas oui."', rendered)
+
+
 if __name__ == "__main__":
     unittest.main()
