@@ -37,7 +37,10 @@ The primary delivery path is the scheduled ChatGPT `CONSUME_BUNDLE` action in
 `bacoco/loriq-argh`. After the validated ARGH commit, that action pins this repository,
 runs `scripts/sync_from_argh.py`, the site tests, `build.py` and
 `scripts/verify_projection.py`, then commits the generated projection to `main`.
-It may write no other public repository and never authors editorial prose here.
+The sync also imports validated generated teaching-card images from ARGH visual briefs.
+A dossier-specific asset named `dossier-<slug>-640.*` takes precedence over the
+generic taxonomy illustration on that dossier page. It may write no other public
+repository and never authors editorial prose here.
 
 The ARGH scheduler performs the deterministic projection directly from the active
 ChatGPT invocation and writes the verified result to `main` through the GitHub
