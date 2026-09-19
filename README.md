@@ -42,4 +42,5 @@ It may write no other public repository and never authors editorial prose here.
 The ARGH scheduler performs the deterministic projection directly from the active
 ChatGPT invocation and writes the verified result to `main` through the GitHub
 connector. GitHub Actions is not used for synchronization, recovery, validation,
-build or publication. GitHub Pages serves `main`.
+build or publication. No file may be added under `.github/workflows/`; a future
+workflow would violate this repository contract. GitHub Pages serves `main`.
