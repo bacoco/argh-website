@@ -161,6 +161,13 @@ def related(e, store):
 
 def entity_visual(e, store):
     if e.get("type") == "dossier":
+        for suffix in (".webp", ".jpg", ".jpeg", ".png"):
+            custom = ROOT / "assets" / "illustrations" / ("dossier-%s-640%s" % (e["slug"], suffix))
+            if custom.is_file():
+                place = store["place_by_id"].get(store["assignments"].get(e["slug"]))
+                label = place["label"] if place else None
+                href = "/places/%s/" % place["id"] if place else None
+                return ("/assets/illustrations/" + custom.name, label, href)
         place = store["place_by_id"].get(store["assignments"].get(e["slug"]))
         image = (place.get("image") or PLACE_ILLUSTRATIONS.get(place["id"])) if place else None
         return (image, place["label"], "/places/%s/" % place["id"]) if place else (None, None, None)
